@@ -41,7 +41,8 @@ DEF_THIRD_END = 100 / 3
 
 SHOT_TYPES = {13, 14, 15, 16}
 SHOT_NAMES = {13: "Missed", 14: "Hit Post", 15: "Saved", 16: "GOAL"}
-MIN_PASSES = 3
+MIN_PASSES = 5
+MIN_PLAYERS_PREFERRED = 5
 
 # start-zone options: (x lower bound, x upper bound, display label)
 ZONES = {
@@ -145,8 +146,9 @@ def collect_sequences(files, cid, zone_lo=0, zone_hi=100 / 3):
             n_passes = sum(1 for e in seq if e["typeId"] == 1)
             if n_passes < MIN_PASSES:
                 continue
-            qualifying.append({"seq": seq, "n_passes": n_passes, "shot": last_shot,
-                               "match": fn.split("/")[-1]})
+            n_players = len({e.get("playerName") for e in seq if e.get("playerName")})
+            qualifying.append({"seq": seq, "n_passes": n_passes, "n_players": n_players,
+                               "shot": last_shot, "match": fn.split("/")[-1]})
     return qualifying
 
 
@@ -197,11 +199,18 @@ def classify(item):
 
 
 def pick_representative(items):
-    lengths = sorted(i["n_passes"] for i in items)
-    median = statistics.median(lengths)
+    """Prefer a goal; among goals (or the whole pool if none scored), prefer
+    sequences with at least MIN_PLAYERS_PREFERRED distinct players on the
+    ball (falling back to the full pool if nothing meets that bar), then
+    take whichever has the most players and, tie-breaking, the most passes -
+    the fullest, most team-move-like example rather than a 2-player exchange
+    or a single long ball that happens to have enough "passes"."""
     goals = [i for i in items if i["shot"]["typeId"] == 16]
     pool = goals if goals else items
-    return min(pool, key=lambda i: abs(i["n_passes"] - median))
+    rich = [i for i in pool if i["n_players"] >= MIN_PLAYERS_PREFERRED]
+    if rich:
+        pool = rich
+    return max(pool, key=lambda i: (i["n_players"], i["n_passes"]))
 
 
 def make_plot(team_name, categories, total_n, out_path, zone_lo=0, zone_hi=100 / 3, zone_label="Defensive Third"):
