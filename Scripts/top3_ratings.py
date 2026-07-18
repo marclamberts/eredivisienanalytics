@@ -23,8 +23,14 @@ import matplotlib.pyplot as plt
 DANGER_CSV = 'Danger/all_eredivisie_danger_models.csv'
 TEAM_SUMMARY_CSV = 'xT/xt_team_summary.csv'
 OUT_PATH = 'Visuals/Rating/top3rating.png'
+OUT_DIR_INDIVIDUAL = 'Visuals/Rating'
 
 HIGHLIGHT_TEAMS = ['AFC Ajax', 'Feyenoord Rotterdam', 'PSV Eindhoven']
+TEAM_FILE_SLUG = {
+    'AFC Ajax':            'ajax',
+    'Feyenoord Rotterdam': 'feyenoord',
+    'PSV Eindhoven':       'psv',
+}
 MA_WINDOW = 5
 
 # ── housestyle (shared with Scripts/coach_profiling.py & formation_analysis.py) ──
@@ -262,20 +268,25 @@ def normalise(hist):
     return out
 
 
-def main():
-    matches = load_matches()
-    teams = sorted(set(matches.home) | set(matches.away))
-    league_avg = (matches.home_goals.sum() + matches.away_goals.sum()) / (2 * len(matches))
-    print(f'Matches reconstructed: {len(matches)}  |  Teams: {len(teams)}  |  league avg goals/match: {league_avg:.3f}')
+def draw_panel(ax, systems, team, dim, row_is_top):
+    ax.set_facecolor(Q_SURFACE)
+    ax.grid(color=Q_GRID, linewidth=0.6, zorder=0)
+    ax.set_axisbelow(True)
+    ax.axhline(50, color=Q_MUTED, linewidth=0.9, linestyle=(0, (2, 2)), zorder=1)
 
-    systems_raw = {
-        'PI':       compute_pi(matches, teams),
-        'ELO':      compute_elo(matches, teams, league_avg),
-        'Glicko-2': compute_glicko2(matches, teams, league_avg),
-        'Base-70':  compute_base70(matches, teams, league_avg),
-    }
-    systems = {name: normalise(hist) for name, hist in systems_raw.items()}
+    for method in METHOD_ORDER:
+        df_t = systems[method][team]
+        ax.plot(df_t['date'], df_t[dim], color=METHOD_COLORS[method],
+                 linewidth=2.0, label=method, zorder=3)
 
+    for spine in ax.spines.values():
+        spine.set_edgecolor(Q_GRID)
+    ax.tick_params(colors=Q_INK, labelsize=7.5)
+    ax.set_ylim(0, 100)
+    ax.tick_params(axis='x', rotation=25)
+
+
+def plot_combined(systems):
     fig, axes = plt.subplots(2, 3, figsize=(18, 9.5), facecolor=Q_SURFACE, sharex=False)
     fig.suptitle('Eredivisie 2025/26 — Attacking & Defensive Rating Trends',
                  color='white', fontsize=17, fontweight='bold', y=0.995)
@@ -288,21 +299,7 @@ def main():
     for dim, dim_label, row_i in dim_config:
         for col_i, team in enumerate(HIGHLIGHT_TEAMS):
             ax = axes[row_i, col_i]
-            ax.set_facecolor(Q_SURFACE)
-            ax.grid(color=Q_GRID, linewidth=0.6, zorder=0)
-            ax.set_axisbelow(True)
-            ax.axhline(50, color=Q_MUTED, linewidth=0.9, linestyle=(0, (2, 2)), zorder=1)
-
-            for method in METHOD_ORDER:
-                df_t = systems[method][team]
-                ax.plot(df_t['date'], df_t[dim], color=METHOD_COLORS[method],
-                         linewidth=2.0, label=method, zorder=3)
-
-            for spine in ax.spines.values():
-                spine.set_edgecolor(Q_GRID)
-            ax.tick_params(colors=Q_INK, labelsize=7.5)
-            ax.set_ylim(0, 100)
-            ax.tick_params(axis='x', rotation=25)
+            draw_panel(ax, systems, team, dim, row_i == 0)
 
             if row_i == 0:
                 short = TEAM_SHORT[team]
@@ -322,6 +319,56 @@ def main():
     plt.savefig(OUT_PATH, dpi=150, bbox_inches='tight', facecolor=Q_SURFACE)
     plt.close()
     print('Saved:', OUT_PATH)
+
+
+def plot_individual(systems, team):
+    short = TEAM_SHORT[team]
+    color = TEAM_COLORS[team]
+
+    fig, axes = plt.subplots(1, 2, figsize=(13, 5.6), facecolor=Q_SURFACE)
+    fig.suptitle(f'{short} — Attacking & Defensive Rating Trend, 2025/26',
+                 color='white', fontsize=15.5, fontweight='bold', y=1.02)
+    fig.text(0.5, 0.955,
+             f'{MA_WINDOW}-match rolling average  ·  4 rating systems, each normalised to a 0–100 index (vs. the full Eredivisie field)',
+             ha='center', color=Q_MUTED, fontsize=9)
+
+    dim_config = [('att', 'Attacking Rating Index'), ('def', 'Defensive Rating Index')]
+    for ax, (dim, dim_label) in zip(axes, dim_config):
+        draw_panel(ax, systems, team, dim, True)
+        ax.set_title(dim_label, color=color, fontsize=12, fontweight='bold', pad=10)
+
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc='lower center', ncol=4, facecolor=Q_SURFACE,
+               edgecolor=Q_GRID, labelcolor='white', fontsize=9.5, bbox_to_anchor=(0.5, -0.02))
+
+    fig.text(0.02, -0.06,
+             'Data: Opta (shot-event goals)  ·  ELO & Glicko-2 are opponent-adjusted, PI & Base-70 are not  ·  50 = league-average line',
+             ha='left', color=Q_MUTED, fontsize=7.5)
+
+    out_path = f'{OUT_DIR_INDIVIDUAL}/{TEAM_FILE_SLUG[team]}_rating.png'
+    plt.tight_layout(rect=(0, 0.08, 1, 0.92))
+    plt.savefig(out_path, dpi=150, bbox_inches='tight', facecolor=Q_SURFACE)
+    plt.close()
+    print('Saved:', out_path)
+
+
+def main():
+    matches = load_matches()
+    teams = sorted(set(matches.home) | set(matches.away))
+    league_avg = (matches.home_goals.sum() + matches.away_goals.sum()) / (2 * len(matches))
+    print(f'Matches reconstructed: {len(matches)}  |  Teams: {len(teams)}  |  league avg goals/match: {league_avg:.3f}')
+
+    systems_raw = {
+        'PI':       compute_pi(matches, teams),
+        'ELO':      compute_elo(matches, teams, league_avg),
+        'Glicko-2': compute_glicko2(matches, teams, league_avg),
+        'Base-70':  compute_base70(matches, teams, league_avg),
+    }
+    systems = {name: normalise(hist) for name, hist in systems_raw.items()}
+
+    plot_combined(systems)
+    for team in HIGHLIGHT_TEAMS:
+        plot_individual(systems, team)
 
 
 if __name__ == '__main__':
