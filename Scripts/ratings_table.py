@@ -18,6 +18,11 @@ that table's column header and footnote instead of being hidden by rescaling.
 Each metric cell shows the real value with a proportional data-bar underneath
 (length + shade = that team's rank within the column, in the system's own
 accent color — the same accent used for that system's line in top3_ratings.py).
+
+Values are whole-season (all matches played in 2025/26), not a recent-form
+snapshot: ELO/Glicko-2/Base-70 already accumulate every match, so their
+season value is just the rating after the last one; PI has no memory between
+matches, so its season value is the mean goal rate across every match played.
 """
 import numpy as np
 import pandas as pd
@@ -25,7 +30,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.colors import to_rgb
 
-from ratings_common import compute_all_systems_native, METHOD_ORDER
+from ratings_common import compute_all_systems_native_season, METHOD_ORDER
 
 OUT_DIR = 'Visuals/Rating'
 
@@ -141,8 +146,7 @@ def build_table(systems, teams, method):
     cfg = SYSTEM_CONFIG[method]
     rows = []
     for t in teams:
-        att = systems[method][t]['att'].iloc[-1]
-        deff = systems[method][t]['def'].iloc[-1]
+        att, deff = systems[method][t]
         rows.append(dict(team=t, att=att, deff=deff, composite=cfg['composite_fn'](att, deff)))
     df = pd.DataFrame(rows).sort_values('composite', ascending=False).reset_index(drop=True)
     df.index += 1
@@ -193,7 +197,7 @@ def plot_table(df, method):
     ax.text(pad_x, title_h * 0.36, f"Eredivisie 2025/26 — {cfg['title']}",
             ha='left', va='center', color=Q_INK, fontsize=17, fontweight='bold', zorder=2)
     ax.text(pad_x, title_h * 0.74,
-            f"Latest 5-match rolling average, in native units ({cfg['unit']})  ·  sorted by {cfg['composite_label']}",
+            f"Full 2025/26 season, in native units ({cfg['unit']})  ·  sorted by {cfg['composite_label']}",
             ha='left', va='center', color=Q_MUTED, fontsize=9.2, zorder=2)
 
     edges = col_edges()
@@ -296,7 +300,7 @@ def plot_table(df, method):
 
 
 def main():
-    systems, teams, league_avg = compute_all_systems_native()
+    systems, teams, league_avg = compute_all_systems_native_season()
     for method in METHOD_ORDER:
         df = build_table(systems, teams, method)
         plot_table(df, method)

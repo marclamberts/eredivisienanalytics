@@ -301,3 +301,29 @@ def compute_all_systems_native():
     systems_raw, teams, league_avg = _load_and_compute(pi_invert_defense=False)
     systems = {name: smooth_native(hist) for name, hist in systems_raw.items()}
     return systems, teams, league_avg
+
+
+# ── 3c. whole-season value per team (not a snapshot of recent form) ────────
+# ELO/Glicko-2/Base-70 already accumulate every match played, so their
+# "whole season" value is simply their rating after the last match. PI has
+# no memory between matches, so its whole-season value is the mean goal
+# rate across every match played, not just the most recent ones.
+def season_native(hist, method):
+    out = {}
+    for t, series in hist.items():
+        df_t = pd.DataFrame(series, columns=['date', 'att', 'def'])
+        if method == 'PI':
+            out[t] = (df_t['att'].mean(), df_t['def'].mean())
+        else:
+            out[t] = (df_t['att'].iloc[-1], df_t['def'].iloc[-1])
+    return out
+
+
+def compute_all_systems_native_season():
+    """Whole-2025/26-season value per team/system, in native units (no
+    rescaling, no recent-form windowing). Returns (systems, teams, league_avg)
+    where systems: {method_name: {team: (att_value, def_value)}}.
+    """
+    systems_raw, teams, league_avg = _load_and_compute(pi_invert_defense=False)
+    systems = {name: season_native(hist, name) for name, hist in systems_raw.items()}
+    return systems, teams, league_avg
