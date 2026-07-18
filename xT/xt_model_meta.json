@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-07-09T00:55:32",
+  "source": "/Users/marclamberts/Event data/Eredivisie",
+  "grid_x_bins": 16,
+  "grid_y_bins": 12,
+  "method": "Karun Singh-style xT: xT = P(shot)*P(goal|shot) + P(move)*sum(P(destination)*xT(destination))",
+  "move_types": {
+    "pass": "successful Opta pass events with end coordinates",
+    "carry": "inferred same-player same-team ball movement between consecutive touches",
+    "take_on": "successful Opta take-on movement where end coordinates imply movement"
+  },
+  "outputs": [
+    "xt_action_values.csv",
+    "xt_player_summary.csv",
+    "xt_team_summary.csv",
+    "xt_grid_values.csv",
+    "xt_move_type_summary.csv"
+  ]
+}
