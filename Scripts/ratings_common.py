@@ -4,8 +4,7 @@ Shared rating-engine pipeline for Eredivisie attacking/defensive ratings.
 Match results are reconstructed from the shot-level Danger models (goals via
 the is_goal flag), since no ready-made results table is checked into the repo.
 Four independent rating systems are then tracked match-by-match for every
-side and normalised onto a common 0-100 index (higher = better, for both the
-attacking AND the defensive dimension) so they're comparable on one axis:
+side:
 
   - PI        simple per-match goal rate (no opponent adjustment)
   - ELO       classic Elo, opponent-adjusted, unbounded
@@ -14,7 +13,13 @@ attacking AND the defensive dimension) so they're comparable on one axis:
   - Base-70   bounded scale anchored on 70, opponent-unadjusted with mild
               mean-reversion (a simple "current level" gauge)
 
-Used by top3_ratings.py (trend charts) and ratings_table.py (league table).
+Two output pipelines are exposed:
+  - compute_all_systems()        4 systems rescaled onto a shared 0-100 index
+                                  (needed to overlay them on one axis) — used
+                                  by top3_ratings.py (trend charts).
+  - compute_all_systems_native()  each system in its own real unit, no
+                                  rescaling — used by ratings_table.py
+                                  (per-system league tables).
 """
 import re
 import numpy as np
@@ -60,14 +65,22 @@ def continuous_score(goals, avg):
 
 
 # ── 2a. PI: raw per-match goal rate, no opponent adjustment ─────────────────
-def compute_pi(matches, teams):
+def compute_pi(matches, teams, invert_defense=False):
+    """PI's native unit is goals per match: attack = goals scored, defense =
+    goals conceded (so LOWER is better for defense here, unlike the other
+    three systems, which are constructed so higher is always better).
+
+    invert_defense=True negates the defensive value instead, so higher also
+    means better here — used only when this feeds a shared 0-100 index next
+    to systems that already use that convention (see normalise()/compute_all_
+    systems() for the chart pipeline). Native/table consumers should leave it
+    False and simply note that PI's defensive column reads low-is-better.
+    """
+    sign = -1 if invert_defense else 1
     hist = {t: [] for t in teams}
     for row in matches.itertuples():
-        # defense is stored negated so "higher raw value = fewer goals
-        # conceded", matching the higher-is-better convention of the other
-        # three systems ahead of normalise()
-        hist[row.home].append((row.date, row.home_goals, -row.away_goals))
-        hist[row.away].append((row.date, row.away_goals, -row.home_goals))
+        hist[row.home].append((row.date, row.home_goals, sign * row.away_goals))
+        hist[row.away].append((row.date, row.away_goals, sign * row.home_goals))
     return hist  # {team: [(date, att_raw, def_raw), ...]}
 
 
@@ -211,18 +224,26 @@ def compute_base70(matches, teams, league_avg, K=2.2, revert=0.04, lo=35, hi=99)
     return hist
 
 
-# ── 3. smooth each raw trajectory, then normalise onto a shared 0-100 index ─
-# (smoothing happens BEFORE normalisation so a single-match outlier — e.g. a
-# 6-0 rout — can't compress an entire noisy system like PI toward the bottom
-# of the shared axis; ELO/Glicko-2/Base-70 are already smooth so this barely
-# moves them.)
-def normalise(hist):
-    smoothed = {}
+# ── 3a. smooth each raw trajectory (native units, no rescaling) ─────────────
+# a rolling mean absorbs single-match outliers (e.g. a 6-0 rout) without
+# altering what the numbers actually mean — goals/match stay goals/match,
+# Elo points stay Elo points, etc.
+def smooth_native(hist):
+    out = {}
     for t, series in hist.items():
         df_t = pd.DataFrame(series, columns=['date', 'att', 'def'])
         df_t['att'] = df_t['att'].rolling(MA_WINDOW, min_periods=1).mean()
         df_t['def'] = df_t['def'].rolling(MA_WINDOW, min_periods=1).mean()
-        smoothed[t] = df_t
+        out[t] = df_t
+    return out
+
+
+# ── 3b. smooth, then normalise onto a shared 0-100 index ────────────────────
+# only used where 4 differently-scaled systems must share one axis (the
+# trend charts in top3_ratings.py); table/native consumers use smooth_native
+# directly and keep each system's real units.
+def normalise(hist):
+    smoothed = smooth_native(hist)
 
     all_att = np.concatenate([df_t['att'].values for df_t in smoothed.values()])
     all_def = np.concatenate([df_t['def'].values for df_t in smoothed.values()])
@@ -239,22 +260,44 @@ def normalise(hist):
     return out
 
 
-def compute_all_systems():
-    """Load matches and return (systems, teams, league_avg).
-
-    systems: {method_name: {team: DataFrame[date, att, def]}}, covering every
-    Eredivisie side (callers filter down to whichever teams they need).
-    """
+def _load_and_compute(pi_invert_defense):
     matches = load_matches()
     teams = sorted(set(matches.home) | set(matches.away))
     league_avg = (matches.home_goals.sum() + matches.away_goals.sum()) / (2 * len(matches))
     print(f'Matches reconstructed: {len(matches)}  |  Teams: {len(teams)}  |  league avg goals/match: {league_avg:.3f}')
 
     systems_raw = {
-        'PI':       compute_pi(matches, teams),
+        'PI':       compute_pi(matches, teams, invert_defense=pi_invert_defense),
         'ELO':      compute_elo(matches, teams, league_avg),
         'Glicko-2': compute_glicko2(matches, teams, league_avg),
         'Base-70':  compute_base70(matches, teams, league_avg),
     }
+    return systems_raw, teams, league_avg
+
+
+def compute_all_systems():
+    """Load matches and return (systems, teams, league_avg), normalised to a
+    shared 0-100 index (higher = better for every system/dimension).
+
+    systems: {method_name: {team: DataFrame[date, att, def]}}, covering every
+    Eredivisie side (callers filter down to whichever teams they need).
+    Used by top3_ratings.py, where 4 differently-scaled systems need to share
+    one axis per panel.
+    """
+    systems_raw, teams, league_avg = _load_and_compute(pi_invert_defense=True)
     systems = {name: normalise(hist) for name, hist in systems_raw.items()}
+    return systems, teams, league_avg
+
+
+def compute_all_systems_native():
+    """Same as compute_all_systems(), but keeps every system in its own real
+    unit (goals/match, Elo points, Glicko-2 rating, Base-70 score) — smoothed
+    (5-match rolling mean) but NOT rescaled onto a shared index.
+
+    Note PI's defensive column is goals conceded per match: LOWER is better
+    there, unlike every other column in every system, where higher is better.
+    Used by ratings_table.py.
+    """
+    systems_raw, teams, league_avg = _load_and_compute(pi_invert_defense=False)
+    systems = {name: smooth_native(hist) for name, hist in systems_raw.items()}
     return systems, teams, league_avg
