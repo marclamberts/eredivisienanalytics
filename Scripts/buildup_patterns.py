@@ -1,7 +1,7 @@
 """
 The 3 most common build-up patterns: possession sequences that start with
-a touch in the team's own defensive third (x<33.3) and end, without the
-ball changing possession, in a shot. Sequences are classified by which
+a touch in a given pitch third (defensive/middle/attacking) and end, without
+the ball changing possession, in a shot. Sequences are classified by which
 channel (left / center / right, using the average y of the pass chain)
 they progress through, and the most representative example from each of
 the 3 most common channels is drawn.
@@ -11,7 +11,8 @@ contestantId (same possession-chain heuristic as team_directness.py).
 Only sequences with >=3 completed passes are considered, to exclude
 scrappy loose-ball scrambles.
 
-Usage: python3 buildup_patterns.py "Nijmegen Eendracht Combinatie" [out.png]
+Usage: python3 buildup_patterns.py "Nijmegen Eendracht Combinatie" [zone] [out.png]
+       zone is one of: defensive (default), middle, attacking
 """
 import glob
 import json
@@ -41,6 +42,13 @@ DEF_THIRD_END = 100 / 3
 SHOT_TYPES = {13, 14, 15, 16}
 SHOT_NAMES = {13: "Missed", 14: "Hit Post", 15: "Saved", 16: "GOAL"}
 MIN_PASSES = 3
+
+# start-zone options: (x lower bound, x upper bound, display label)
+ZONES = {
+    "defensive": (0, 100 / 3, "Defensive Third"),
+    "middle": (100 / 3, 200 / 3, "Middle Third"),
+    "attacking": (200 / 3, 100, "Attacking Third"),
+}
 
 PREFIX_RE = re.compile(r"^(CSD|CD|CS|SD)\s+")
 
@@ -106,7 +114,7 @@ def minute_value(e):
     return float(e.get("timeMin") or 0) + float(e.get("timeSec") or 0) / 60.0
 
 
-def collect_sequences(files, cid):
+def collect_sequences(files, cid, zone_lo=0, zone_hi=100 / 3):
     qualifying = []
     for fn in files:
         with open(fn) as f:
@@ -129,7 +137,7 @@ def collect_sequences(files, cid):
 
         for seq in runs:
             first = seq[0]
-            if first.get("x") is None or first["x"] >= DEF_THIRD_END:
+            if first.get("x") is None or not (zone_lo <= first["x"] < zone_hi):
                 continue
             last_shot = next((e for e in reversed(seq) if e["typeId"] in SHOT_TYPES), None)
             if last_shot is None:
@@ -196,15 +204,15 @@ def pick_representative(items):
     return min(pool, key=lambda i: abs(i["n_passes"] - median))
 
 
-def make_plot(team_name, categories, total_n, out_path):
+def make_plot(team_name, categories, total_n, out_path, zone_lo=0, zone_hi=100 / 3, zone_label="Defensive Third"):
     fig = plt.figure(figsize=(19, 12.5))
     fig.patch.set_facecolor(BG)
 
     fig.text(0.03, 0.955, clean_name(team_name), fontsize=27, fontweight="bold", color="white")
-    fig.text(0.03, 0.918, "Most Common Build-Up Patterns  ·  Defensive Third → Shot  ·  Eredivisie 2025/26  ·  Season",
+    fig.text(0.03, 0.918, f"Most Common Build-Up Patterns  ·  {zone_label} → Shot  ·  Eredivisie 2025/26  ·  Season",
              fontsize=13.5, fontweight="bold", color="#c7ccd4")
     fig.text(0.03, 0.892, f"{total_n} qualifying sequences this season (uninterrupted possession, "
-             f"≥{MIN_PASSES} passes, starting in the defensive third and ending in a shot)",
+             f"≥{MIN_PASSES} passes, starting in the {zone_label.lower()} and ending in a shot)",
              fontsize=10, color="#9aa4b2")
 
     n_panels = len(categories)
@@ -239,7 +247,7 @@ def make_plot(team_name, categories, total_n, out_path):
                 pitch.annotate(str(i + 1), xy=(x, y), ax=ax, ha="center", va="center",
                                fontsize=8.5, fontweight="bold", color=BG, zorder=5)
 
-        pitch.polygon([[[0, 0], [0, 100], [DEF_THIRD_END, 100], [DEF_THIRD_END, 0]]],
+        pitch.polygon([[[zone_lo, 0], [zone_lo, 100], [zone_hi, 100], [zone_hi, 0]]],
                       ax=ax, facecolor="#1e3a5f", edgecolor="none", alpha=0.3, zorder=0.5)
 
         shot_label = SHOT_NAMES[item["shot"]["typeId"]]
@@ -264,7 +272,15 @@ def make_plot(team_name, categories, total_n, out_path):
 
 if __name__ == "__main__":
     team_name = sys.argv[1] if len(sys.argv) > 1 else "Nijmegen Eendracht Combinatie"
-    out = sys.argv[2] if len(sys.argv) > 2 else f"Visuals/BuildUp/{team_name.replace(' ', '_')}_buildup_patterns.png"
+    zone = sys.argv[2] if len(sys.argv) > 2 else "defensive"
+    if zone not in ZONES:
+        print(f"Unknown zone '{zone}'. Options: {list(ZONES)}")
+        sys.exit(1)
+    zone_lo, zone_hi, zone_label = ZONES[zone]
+
+    default_out = (f"Visuals/BuildUp/{team_name.replace(' ', '_')}_buildup_patterns"
+                   f"{'' if zone == 'defensive' else '_' + zone}.png")
+    out = sys.argv[3] if len(sys.argv) > 3 else default_out
 
     os.makedirs(os.path.dirname(out), exist_ok=True)
 
@@ -276,7 +292,7 @@ if __name__ == "__main__":
         sys.exit(1)
     cid = team_to_cid[match]
 
-    qualifying = collect_sequences(files, cid)
+    qualifying = collect_sequences(files, cid, zone_lo, zone_hi)
     by_cat = collections.defaultdict(list)
     for item in qualifying:
         cat = classify(item)
@@ -287,9 +303,10 @@ if __name__ == "__main__":
     categories = [{"name": name, "count": len(items), "example": pick_representative(items)}
                   for name, items in ranked]
 
+    print(f"Zone: {zone_label} ({zone_lo:.1f}-{zone_hi:.1f})")
     print(f"Total qualifying sequences: {len(qualifying)}")
     for c in categories:
         print(c["name"], c["count"], "example n_passes=", c["example"]["n_passes"],
               "match=", c["example"]["match"])
 
-    make_plot(match, categories, len(qualifying), out)
+    make_plot(match, categories, len(qualifying), out, zone_lo, zone_hi, zone_label)
