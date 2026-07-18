@@ -25,7 +25,6 @@ import matplotlib.pyplot as plt
 from mplsoccer import VerticalPitch
 
 DATA_DIR = "Events"
-LOGO_PATH = "Visuals/Waltzing Analytics Logo Type.png"
 
 C_NAVY = "#2f8fd1"
 C_INDIGO = "#7b7fd6"
@@ -50,24 +49,29 @@ def clean_name(name):
     return PREFIX_RE.sub("", name)
 
 
-def add_logo(fig, width=0.15, margin=0.014):
-    import matplotlib.image as mpimg
-    if not os.path.exists(LOGO_PATH):
-        return
-    img = mpimg.imread(LOGO_PATH)
-    fig_w, fig_h = fig.get_size_inches()
-    img_h, img_w = img.shape[0], img.shape[1]
-    width_in = width * fig_w
-    height_in = width_in * (img_h / img_w)
-    height = height_in / fig_h
-    left = 1 - margin - width
-    bottom = 1 - margin - height
-    logo_ax = fig.add_axes([left, bottom, width, height], zorder=10)
-    logo_ax.patch.set_alpha(0)
-    logo_ax.set_xlim(0, img_w)
-    logo_ax.set_ylim(img_h, 0)
-    logo_ax.imshow(img)
-    logo_ax.axis("off")
+def _tracked(text):
+    """Crude letter-spacing: matplotlib has no native tracking, so join with
+    a space (word breaks naturally end up with a wider gap, which is what we
+    want between WALTZING and ANALYTICS)."""
+    return " ".join(text)
+
+
+def add_logo(fig, y=0.966, margin=0.018):
+    """Waltzing Analytics wordmark: amber 'WA' monogram, a vertical divider,
+    then WALTZING ANALYTICS over MARC LAMBERTS, right-aligned in the top-right
+    corner (text-drawn, not an image, so there's no external asset to ship)."""
+    x_right = 1 - margin
+    fig.text(x_right, y + 0.009, _tracked("WALTZING ANALYTICS"), fontsize=11,
+              fontweight="bold", color="white", ha="right", va="center", zorder=10)
+    fig.text(x_right, y - 0.017, _tracked("MARC LAMBERTS"), fontsize=7.3,
+              color="#8a93a3", ha="right", va="center", zorder=10)
+
+    line_x = x_right - 0.148
+    fig.add_artist(plt.Line2D([line_x, line_x], [y - 0.024, y + 0.024], color="#3a4256",
+                              linewidth=1.3, transform=fig.transFigure, zorder=10))
+
+    fig.text(line_x - 0.012, y, "WA", fontsize=25, fontweight="bold", color=C_AMBER,
+              ha="right", va="center", zorder=10)
 
 
 def build_team_map(files):
@@ -242,7 +246,8 @@ def make_plot(team_name, categories, total_n, out_path):
 
     fig.text(0.03, 0.014, "Data via Opta | Eredivisie 2025/26 event data · numbers = pass sequence order · "
              "★ = shot location", fontsize=8.5, color="#6b7684")
-    fig.text(0.98, 0.014, "Marc Lamberts", fontsize=9.5, ha="right", color="#6b7684", style="italic")
+    fig.text(0.98, 0.014, "Marc Lamberts · Waltzing Analytics", fontsize=9.5, ha="right",
+             color="#6b7684", style="italic")
 
     add_logo(fig)
     fig.savefig(out_path, dpi=200, facecolor=BG)
