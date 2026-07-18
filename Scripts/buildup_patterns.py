@@ -59,14 +59,22 @@ def _tracked(text):
 def add_logo(fig, y=0.966, margin=0.018):
     """Waltzing Analytics wordmark: amber 'WA' monogram, a vertical divider,
     then WALTZING ANALYTICS over MARC LAMBERTS, right-aligned in the top-right
-    corner (text-drawn, not an image, so there's no external asset to ship)."""
+    corner (text-drawn, not an image, so there's no external asset to ship).
+
+    The divider/monogram position is derived from the wordmark's actual
+    rendered bounding box (not a hand-tuned offset) so the line always lands
+    in the gap before the "W", whatever font metrics the render environment
+    has, instead of risking it cutting through the letter."""
     x_right = 1 - margin
-    fig.text(x_right, y + 0.009, _tracked("WALTZING ANALYTICS"), fontsize=11,
-              fontweight="bold", color="white", ha="right", va="center", zorder=10)
+    wordmark = fig.text(x_right, y + 0.009, _tracked("WALTZING ANALYTICS"), fontsize=11,
+                        fontweight="bold", color="white", ha="right", va="center", zorder=10)
     fig.text(x_right, y - 0.017, _tracked("MARC LAMBERTS"), fontsize=7.3,
               color="#8a93a3", ha="right", va="center", zorder=10)
 
-    line_x = x_right - 0.148
+    fig.canvas.draw()
+    bbox_fig = wordmark.get_window_extent(renderer=fig.canvas.get_renderer()).transformed(fig.transFigure.inverted())
+
+    line_x = bbox_fig.x0 - 0.014
     fig.add_artist(plt.Line2D([line_x, line_x], [y - 0.024, y + 0.024], color="#3a4256",
                               linewidth=1.3, transform=fig.transFigure, zorder=10))
 
