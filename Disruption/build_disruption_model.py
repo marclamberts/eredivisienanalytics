@@ -96,17 +96,36 @@ def event_time(e):
     return e["timeMin"] * 60 + e["timeSec"]
 
 
-def build_team_map(events, home_name, away_name):
-    order = []
-    for e in events:
-        cid = e.get("contestantId")
-        if cid and cid not in order:
-            order.append(cid)
-        if len(order) == 2:
-            break
-    if len(order) < 2:
-        return {}
-    return {order[0]: home_name, order[1]: away_name}
+def build_global_cid_to_team(files):
+    """Map contestantId -> team name using every match, not just one.
+
+    A single match's event order does not reliably tell you which
+    contestantId is home vs away (Opta does not always emit the home team's
+    events first), so guessing per match mislabels some fixtures. Instead,
+    collect the set of contestantIds seen in each match a team name appears
+    in (home or away) and intersect across all of that team's matches: the
+    team's own id is the one constant across every match, so a single-team-id
+    intersection reliably resolves the true name for that id.
+    """
+    team_cid_sets = {}
+    for fn in files:
+        basename = os.path.basename(fn).replace(".json", "")
+        m = re.match(r"\d{4}-\d{2}-\d{2}_(.+) - (.+)$", basename)
+        if not m:
+            continue
+        home_name, away_name = m.group(1), m.group(2)
+        with open(fn) as f:
+            data = json.load(f)
+        cids = set(e["contestantId"] for e in data["event"] if e.get("contestantId"))
+        team_cid_sets.setdefault(home_name, []).append(cids)
+        team_cid_sets.setdefault(away_name, []).append(cids)
+
+    cid_to_team = {}
+    for team, sets in team_cid_sets.items():
+        inter = set.intersection(*sets) if sets else set()
+        if len(inter) == 1:
+            cid_to_team[next(iter(inter))] = team
+    return cid_to_team
 
 
 def pass_features(e, q):
@@ -148,15 +167,13 @@ def pass_features(e, q):
     }
 
 
-def load_match(fn):
+def load_match(fn, cid_to_team=None):
     with open(fn) as f:
         data = json.load(f)
     basename = os.path.basename(fn).replace(".json", "")
-    date_str, teams_str = basename.split("_", 1)
-    home_name, away_name = teams_str.split(" - ")
     events = data["event"]
-    team_map = build_team_map(events, home_name, away_name)
-    return basename, events, team_map
+    cid_to_team = cid_to_team or {}
+    return basename, events, cid_to_team
 
 
 def extract_passes(basename, events, team_map):
@@ -288,9 +305,12 @@ def main():
         files = files[: int(sys.argv[1])]
     print(f"Found {len(files)} match files in {DATA_DIR}")
 
+    cid_to_team = build_global_cid_to_team(files)
+    print(f"Resolved {len(cid_to_team)} team names from {len(files)} matches")
+
     all_pass_rows, all_def_rows = [], []
     for fn in files:
-        basename, events, team_map = load_match(fn)
+        basename, events, team_map = load_match(fn, cid_to_team)
         all_pass_rows.extend(extract_passes(basename, events, team_map))
         all_def_rows.extend(extract_defensive_actions(basename, events, team_map))
 
