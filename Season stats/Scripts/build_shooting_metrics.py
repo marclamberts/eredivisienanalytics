@@ -121,7 +121,7 @@ BODY_PARTS = ["Head", "Right Foot", "Left Foot", "Other"]
 
 
 def zero_split(keys):
-    return {k: {"shots": 0, "goals": 0, "xg": 0.0} for k in keys}
+    return {k: {"shots": 0, "goals": 0, "xg": 0.0, "danger": 0.0} for k in keys}
 
 
 agg = defaultdict(lambda: {
@@ -151,13 +151,15 @@ for r in shot_rows:
     a["npxg"] += 0.0 if is_pen else xg
     a["psxg"] += num(r["psxg"])
     a["xgot"] += num(r["xgot"])
-    a["danger"] += num(r["danger_score"])
+    danger = num(r["danger_score"])
+    a["danger"] += danger
 
     zone = "In Box" if in_box(num(r["x"]), num(r["y"])) else "Outside Box"
     z = a["zone"][zone]
     z["shots"] += 1
     z["goals"] += int(is_goal)
     z["xg"] += xg
+    z["danger"] += danger
 
     meta = shot_meta.get((r["match_file"], r["event_id"]))
     situation = meta["situation"] if meta else ("Penalty" if is_pen else "Open Play")
@@ -165,12 +167,14 @@ for r in shot_rows:
     s["shots"] += 1
     s["goals"] += int(is_goal)
     s["xg"] += xg
+    s["danger"] += danger
 
     body_part = meta["body_part"] if meta else "Other"
     b = a["body_part"][body_part]
     b["shots"] += 1
     b["goals"] += int(is_goal)
     b["xg"] += xg
+    b["danger"] += danger
 
 # --- player identity (name / team / matches / minutes), shared by every tab -
 player_info = {}
@@ -215,6 +219,7 @@ for pid, a in agg.items():
         "xGOT": round(xgot, 3),
         "Danger": round(danger, 3),
         "xG/Shot": round(xg / a["shots"], 3) if a["shots"] else 0.0,
+        "Danger/Shot": round(danger / a["shots"], 3) if a["shots"] else 0.0,
         "G-xG": round(goals - xg, 3),
         "npG-npxG": round(np_goals - npxg, 3),
         "G-PSxG": round(goals - psxg, 3),
@@ -225,6 +230,7 @@ for pid, a in agg.items():
             record[f"Shots ({cat})"] = c["shots"]
             record[f"Goals ({cat})"] = c["goals"]
             record[f"xG ({cat})"] = round(c["xg"], 3)
+            record[f"Danger ({cat})"] = round(c["danger"], 3)
     records.append(record)
 
 total_df = pd.DataFrame.from_records(records)
@@ -236,7 +242,7 @@ split_count_cols = [
     f"{metric} ({cat})"
     for categories in (ZONES, SITUATIONS, BODY_PARTS)
     for cat in categories
-    for metric in ("Shots", "Goals", "xG")
+    for metric in ("Shots", "Goals", "xG", "Danger")
 ]
 per90_cols = ["Shots", "SoT", "Goals", "Pen Goals", "Pen Att", "xG", "npxG", "PSxG", "xGOT", "Danger"] + split_count_cols
 per90_df = total_df.copy()
@@ -250,7 +256,7 @@ per90_df["G-PSxG/90"] = (per90_df["G-PSxG"] / factor).round(3)
 per90_keep = (
     ["Player", "Team", "Matches", "Minutes"]
     + [f"{c}/90" for c in per90_cols]
-    + ["SoT %", "xG/Shot", "G-xG/90", "npG-npxG/90", "G-PSxG/90"]
+    + ["SoT %", "xG/Shot", "Danger/Shot", "G-xG/90", "npG-npxG/90", "G-PSxG/90"]
 )
 per90_df = per90_df[per90_keep].fillna(0.0)
 per90_df.sort_values("xG/90", ascending=False, inplace=True)
