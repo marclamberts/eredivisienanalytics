@@ -80,6 +80,46 @@ def origin_third(x):
     return "Final Third"
 
 
+# Through/half-space/zone-14/cutback definitions replicate
+# PSV Season Report/Scripts/individual_metric_pitches.py's load_events() exactly
+# (success-only, no set-piece exclusion there). Central/Wide extend the same
+# start-or-end-in-channel pattern the repo already uses for half-space.
+def is_wide_start(y):
+    return y <= 21 or y >= 79
+
+
+def is_box_end(ex, ey):
+    return ex >= 83 and 21 <= ey <= 79
+
+
+def is_cross_hybrid(x, y, ex, ey, q):
+    return CROSS_QID in q or (x >= 55 and is_wide_start(y) and is_box_end(ex, ey) and abs(ey - y) >= 12)
+
+
+def is_through(ex, ey, dx):
+    return ex >= 66.7 and dx >= 12 and 33 <= ey <= 67
+
+
+def is_halfspace(y, ey):
+    return (21 <= y < 33 or 67 < y <= 79) or (21 <= ey < 33 or 67 < ey <= 79)
+
+
+def is_central(y, ey):
+    return (33 <= y <= 67) or (33 <= ey <= 67)
+
+
+def is_wide(y, ey):
+    return (y <= 21 or y >= 79) or (ey <= 21 or ey >= 79)
+
+
+def is_zone14(ex, ey):
+    return 66.7 <= ex < 83 and 33 <= ey <= 67
+
+
+def is_cutback(x, y, ex, ey, q):
+    return is_cross_hybrid(x, y, ex, ey, q) and x >= 83 and is_wide_start(y) and ex >= 83 and 33 <= ey <= 67
+
+
 # --- team names -------------------------------------------------------------
 team_names = {}
 for r in rows(os.path.join(ROOT, "xT", "xt_team_summary.csv")):
@@ -123,6 +163,7 @@ agg = defaultdict(lambda: {
     "crosses": 0, "crosses_completed": 0,
     "long_balls": 0, "long_balls_completed": 0,
     "switches": 0,
+    "through_balls": 0, "half_space": 0, "central": 0, "wide": 0, "zone14": 0, "cutbacks": 0,
     "origin_third": zero_split(ORIGIN_THIRDS), "type": zero_split(PASS_TYPES), "body_part": zero_split(BODY_PARTS),
 })
 
@@ -217,6 +258,21 @@ for path in sorted(glob.glob(os.path.join(ROOT, "Events", "*.json"))):
             if not (SET_PIECE_QIDS & set(q.keys())) and is_switch(y0, y1) and dist_m(x0, y0, x1, y1) >= SWITCH_MIN_DIST_M:
                 a["switches"] += 1
 
+        if success:
+            dx = x1 - x0
+            if is_through(x1, y1, dx):
+                a["through_balls"] += 1
+            if is_halfspace(y0, y1):
+                a["half_space"] += 1
+            if is_central(y0, y1):
+                a["central"] += 1
+            if is_wide(y0, y1):
+                a["wide"] += 1
+            if is_zone14(x1, y1):
+                a["zone14"] += 1
+            if is_cutback(x0, y0, x1, y1, q):
+                a["cutbacks"] += 1
+
         if CROSS_QID in q:
             a["crosses"] += 1
             a["crosses_completed"] += int(success)
@@ -275,6 +331,12 @@ for pid, a in agg.items():
         "Long Balls Completed": a["long_balls_completed"],
         "Long Ball %": round(a["long_balls_completed"] / a["long_balls"] * 100, 1) if a["long_balls"] else 0.0,
         "Switches of Play": a["switches"],
+        "Through Balls": a["through_balls"],
+        "Half-Space Passes": a["half_space"],
+        "Central Passes": a["central"],
+        "Wide Passes": a["wide"],
+        "Zone 14 Passes": a["zone14"],
+        "Cutbacks": a["cutbacks"],
     }
     for split_key, categories in (("origin_third", ORIGIN_THIRDS), ("type", PASS_TYPES), ("body_part", BODY_PARTS)):
         for cat in categories:
@@ -299,7 +361,8 @@ split_count_cols = [
 per90_cols = (
     ["Passes", "Passes Completed", "xT Added", "Progressive Passes", "Passes Final Third", "Passes Into Box",
      "Key Passes", "Assists", "xA", "Crosses", "Crosses Completed", "Long Balls", "Long Balls Completed",
-     "Switches of Play"]
+     "Switches of Play", "Through Balls", "Half-Space Passes", "Central Passes", "Wide Passes",
+     "Zone 14 Passes", "Cutbacks"]
     + split_count_cols
 )
 per90_df = total_df.copy()
