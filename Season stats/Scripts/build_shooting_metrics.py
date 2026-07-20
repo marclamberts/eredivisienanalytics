@@ -1,8 +1,16 @@
 """Build Season stats/Shooting Metrics.xlsx from the season's event-derived shot
 and minutes data (Danger/all_eredivisie_danger_models.csv, GDA/gda_player_summary.csv,
-xT/xt_team_summary.csv). Two tabs: Per 90 and Total.
+xT/xt_team_summary.csv, Events/*.json). Five tabs: Per 90, Total, Shot Zones,
+Shot Situations, Shot Body Part.
+
+Zone (in box / outside box) and situation (open play / corner / free kick /
+penalty) boundaries and detection windows match the conventions already used
+in PSV Season Report/Scripts/key_passes_into_box.py and
+PSV Season Report/Scripts/season_expansion_pitches.py.
 """
 import csv
+import glob
+import json
 import os
 from collections import defaultdict, Counter
 
@@ -13,6 +21,11 @@ from openpyxl.utils import get_column_letter
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT_DIR = os.path.join(ROOT, "Season stats")
 OUT_PATH = os.path.join(OUT_DIR, "Shooting Metrics.xlsx")
+
+BOX_X, BOX_Y_LO, BOX_Y_HI = 83.0, 21.1, 78.9
+SHOT_TYPES = {13, 14, 15, 16}
+HEAD_QID, RIGHT_QID, LEFT_QID = 15, 20, 72
+PENALTY_QID, CORNER_QID, FREEKICK_QID = 9, 6, 5
 
 
 def rows(path):
@@ -25,6 +38,61 @@ def num(v):
         return float(v)
     except (TypeError, ValueError):
         return 0.0
+
+
+def qmap(e):
+    return {q.get("qualifierId"): q.get("value") for q in e.get("qualifier", [])}
+
+
+def in_box(x, y):
+    return x >= BOX_X and BOX_Y_LO <= y <= BOX_Y_HI
+
+
+def build_shot_meta():
+    """(match_file, event_id) -> {"situation": ..., "body_part": ...} for every
+    shot, replaying each match's timeline to detect corner/free-kick sequences
+    exactly as season_expansion_pitches.py does."""
+    meta = {}
+    for path in sorted(glob.glob(os.path.join(ROOT, "Events", "*.json"))):
+        fn = os.path.basename(path)
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        events = [e for e in data.get("event", []) if e.get("periodId") in (1, 2)]
+        events.sort(key=lambda e: (e["periodId"], e.get("timeMin", 0), e.get("timeSec", 0), e.get("eventId", 0)))
+
+        last_corner_t, last_freekick_t = {}, {}
+        for e in events:
+            tid = e.get("typeId")
+            cid = e.get("contestantId")
+            q = qmap(e)
+            t_now = e.get("timeMin", 0) + e.get("timeSec", 0) / 60.0
+
+            if tid == 1:
+                if CORNER_QID in q:
+                    last_corner_t[cid] = t_now
+                if FREEKICK_QID in q:
+                    last_freekick_t[cid] = t_now
+
+            if tid in SHOT_TYPES:
+                situation = "Open Play"
+                if PENALTY_QID in q:
+                    situation = "Penalty"
+                elif cid in last_corner_t and 0 <= t_now - last_corner_t[cid] <= 0.75:
+                    situation = "Corner"
+                elif cid in last_freekick_t and 0 <= t_now - last_freekick_t[cid] <= 0.25:
+                    situation = "Free Kick"
+
+                if HEAD_QID in q:
+                    body_part = "Head"
+                elif RIGHT_QID in q:
+                    body_part = "Right Foot"
+                elif LEFT_QID in q:
+                    body_part = "Left Foot"
+                else:
+                    body_part = "Other"
+
+                meta[(fn, str(e.get("id")))] = {"situation": situation, "body_part": body_part}
+    return meta
 
 
 # --- team names -------------------------------------------------------------
@@ -44,12 +112,23 @@ for r in rows(os.path.join(ROOT, "GDA", "gda_player_summary.csv")):
 
 # --- shot-level shooting metrics ---------------------------------------------
 shot_rows = rows(os.path.join(ROOT, "Danger", "all_eredivisie_danger_models.csv"))
+shot_meta = build_shot_meta()
+
+ZONES = ["In Box", "Outside Box"]
+SITUATIONS = ["Open Play", "Corner", "Free Kick", "Penalty"]
+BODY_PARTS = ["Head", "Right Foot", "Left Foot", "Other"]
+
+
+def zero_split(keys):
+    return {k: {"shots": 0, "goals": 0, "xg": 0.0} for k in keys}
+
 
 agg = defaultdict(lambda: {
     "name": "", "contestant_ids": Counter(),
     "shots": 0, "sot": 0, "post": 0, "blocked": 0,
     "pen_att": 0, "pen_goals": 0, "goals": 0,
     "xg": 0.0, "npxg": 0.0, "psxg": 0.0, "xgot": 0.0, "danger": 0.0,
+    "zone": zero_split(ZONES), "situation": zero_split(SITUATIONS), "body_part": zero_split(BODY_PARTS),
 })
 for r in shot_rows:
     pid = r["player_id"]
@@ -58,6 +137,7 @@ for r in shot_rows:
     a["contestant_ids"][r["contestant_id"]] += 1
     is_pen = r["is_penalty"] == "1"
     is_goal = r["is_goal"] == "1"
+    xg = num(r["xg"])
 
     a["shots"] += 1
     a["sot"] += int(r["is_on_target"] == "1")
@@ -66,24 +146,53 @@ for r in shot_rows:
     a["goals"] += int(is_goal)
     a["pen_att"] += int(is_pen)
     a["pen_goals"] += int(is_pen and is_goal)
-    a["xg"] += num(r["xg"])
-    a["npxg"] += 0.0 if is_pen else num(r["xg"])
+    a["xg"] += xg
+    a["npxg"] += 0.0 if is_pen else xg
     a["psxg"] += num(r["psxg"])
     a["xgot"] += num(r["xgot"])
     a["danger"] += num(r["danger_score"])
+
+    zone = "In Box" if in_box(num(r["x"]), num(r["y"])) else "Outside Box"
+    z = a["zone"][zone]
+    z["shots"] += 1
+    z["goals"] += int(is_goal)
+    z["xg"] += xg
+
+    meta = shot_meta.get((r["match_file"], r["event_id"]))
+    situation = meta["situation"] if meta else ("Penalty" if is_pen else "Open Play")
+    s = a["situation"][situation]
+    s["shots"] += 1
+    s["goals"] += int(is_goal)
+    s["xg"] += xg
+
+    body_part = meta["body_part"] if meta else "Other"
+    b = a["body_part"][body_part]
+    b["shots"] += 1
+    b["goals"] += int(is_goal)
+    b["xg"] += xg
+
+# --- player identity (name / team / matches / minutes), shared by every tab -
+player_info = {}
+for pid, a in agg.items():
+    if a["shots"] == 0:
+        continue
+    m = minutes.get(pid)
+    cid_counter = m["contestant_ids"] if m and m["contestant_ids"] else a["contestant_ids"]
+    contestant_id = cid_counter.most_common(1)[0][0] if cid_counter else None
+    player_info[pid] = {
+        "name": (m["name"] if m else "") or a["name"],
+        "team": team_names.get(contestant_id, "Unknown"),
+        "matches": m["matches"] if m else 0,
+        "minutes": m["minutes"] if m else 0.0,
+    }
 
 # --- assemble one row per shooter -------------------------------------------
 records = []
 for pid, a in agg.items():
     if a["shots"] == 0:
         continue
-    m = minutes.get(pid)
-    mins = m["minutes"] if m else 0.0
-    matches = m["matches"] if m else 0
-    cid_counter = m["contestant_ids"] if m and m["contestant_ids"] else a["contestant_ids"]
-    contestant_id = cid_counter.most_common(1)[0][0] if cid_counter else None
-    team = team_names.get(contestant_id, "Unknown")
-    name = (m["name"] if m else "") or a["name"]
+    info = player_info[pid]
+    name, team, matches, mins = info["name"], info["team"], info["matches"], info["minutes"]
 
     goals, xg, npxg, psxg, xgot, danger = a["goals"], a["xg"], a["npxg"], a["psxg"], a["xgot"], a["danger"]
     np_goals = goals - a["pen_goals"]
@@ -133,11 +242,50 @@ per90_df = per90_df[per90_keep].fillna(0.0)
 per90_df.sort_values("xG/90", ascending=False, inplace=True)
 per90_df.reset_index(drop=True, inplace=True)
 
+
+def build_split_df(split_key, categories):
+    """One row per shooter with Shots / Goals / xG / xG per 90 for each
+    category of the given split (zone, situation, or body part)."""
+    recs = []
+    for pid, a in agg.items():
+        if a["shots"] == 0:
+            continue
+        info = player_info[pid]
+        row = {
+            "Player": info["name"], "Team": info["team"],
+            "Matches": info["matches"], "Minutes": round(info["minutes"], 1),
+        }
+        factor90 = info["minutes"] / 90.0 if info["minutes"] else None
+        for cat in categories:
+            c = a[split_key][cat]
+            row[f"Shots ({cat})"] = c["shots"]
+            row[f"Goals ({cat})"] = c["goals"]
+            row[f"xG ({cat})"] = round(c["xg"], 3)
+            row[f"xG/90 ({cat})"] = round(c["xg"] / factor90, 3) if factor90 else 0.0
+        recs.append(row)
+    df = pd.DataFrame.from_records(recs)
+    sort_col = f"xG ({categories[0]})"
+    df.sort_values(sort_col, ascending=False, inplace=True)
+    df.reset_index(drop=True, inplace=True)
+    return df
+
+
+zone_df = build_split_df("zone", ZONES)
+situation_df = build_split_df("situation", SITUATIONS)
+body_part_df = build_split_df("body_part", BODY_PARTS)
+
 # --- write workbook -------------------------------------------------------
 os.makedirs(OUT_DIR, exist_ok=True)
+SHEETS = {
+    "Per 90": per90_df,
+    "Total": total_df,
+    "Shot Zones": zone_df,
+    "Shot Situations": situation_df,
+    "Shot Body Part": body_part_df,
+}
 with pd.ExcelWriter(OUT_PATH, engine="openpyxl") as writer:
-    per90_df.to_excel(writer, sheet_name="Per 90", index=False)
-    total_df.to_excel(writer, sheet_name="Total", index=False)
+    for sheet_name, df in SHEETS.items():
+        df.to_excel(writer, sheet_name=sheet_name, index=False)
 
 # --- formatting -------------------------------------------------------------
 from openpyxl import load_workbook
@@ -147,7 +295,7 @@ header_font = Font(name="Arial", bold=True, color="FFFFFF")
 header_fill = PatternFill("solid", fgColor="1F4E78")
 body_font = Font(name="Arial")
 
-for sheet_name in ("Per 90", "Total"):
+for sheet_name in SHEETS:
     ws = wb[sheet_name]
     ws.freeze_panes = "C2"
     for col_idx, cell in enumerate(ws[1], start=1):
