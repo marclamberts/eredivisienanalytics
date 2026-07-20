@@ -1,11 +1,12 @@
 """Build Season stats/Shooting Metrics.xlsx from the season's event-derived shot
 and minutes data (Danger/all_eredivisie_danger_models.csv, GDA/gda_player_summary.csv,
-xT/xt_team_summary.csv, Events/*.json). Five tabs: Per 90, Total, Shot Zones,
-Shot Situations, Shot Body Part.
+xT/xt_team_summary.csv, Events/*.json). Two tabs: Per 90 and Total, each with
+shots/goals/xG broken out by zone (in box / outside box), situation (open play
+/ corner / free kick / penalty), and body part (head / right / left / other),
+alongside the overall shooting numbers.
 
-Zone (in box / outside box) and situation (open play / corner / free kick /
-penalty) boundaries and detection windows match the conventions already used
-in PSV Season Report/Scripts/key_passes_into_box.py and
+Zone and situation boundaries/detection windows match the conventions already
+used in PSV Season Report/Scripts/key_passes_into_box.py and
 PSV Season Report/Scripts/season_expansion_pitches.py.
 """
 import csv
@@ -197,7 +198,7 @@ for pid, a in agg.items():
     goals, xg, npxg, psxg, xgot, danger = a["goals"], a["xg"], a["npxg"], a["psxg"], a["xgot"], a["danger"]
     np_goals = goals - a["pen_goals"]
 
-    records.append({
+    record = {
         "Player": name,
         "Team": team,
         "Matches": matches,
@@ -217,14 +218,27 @@ for pid, a in agg.items():
         "G-xG": round(goals - xg, 3),
         "npG-npxG": round(np_goals - npxg, 3),
         "G-PSxG": round(goals - psxg, 3),
-    })
+    }
+    for split_key, categories in (("zone", ZONES), ("situation", SITUATIONS), ("body_part", BODY_PARTS)):
+        for cat in categories:
+            c = a[split_key][cat]
+            record[f"Shots ({cat})"] = c["shots"]
+            record[f"Goals ({cat})"] = c["goals"]
+            record[f"xG ({cat})"] = round(c["xg"], 3)
+    records.append(record)
 
 total_df = pd.DataFrame.from_records(records)
 total_df.sort_values("xG", ascending=False, inplace=True)
 total_df.reset_index(drop=True, inplace=True)
 
 # --- per-90 tab ---------------------------------------------------------------
-per90_cols = ["Shots", "SoT", "Goals", "Pen Goals", "Pen Att", "xG", "npxG", "PSxG", "xGOT", "Danger"]
+split_count_cols = [
+    f"{metric} ({cat})"
+    for categories in (ZONES, SITUATIONS, BODY_PARTS)
+    for cat in categories
+    for metric in ("Shots", "Goals", "xG")
+]
+per90_cols = ["Shots", "SoT", "Goals", "Pen Goals", "Pen Att", "xG", "npxG", "PSxG", "xGOT", "Danger"] + split_count_cols
 per90_df = total_df.copy()
 factor = per90_df["Minutes"].replace(0, pd.NA) / 90.0
 for col in per90_cols:
@@ -242,46 +256,11 @@ per90_df = per90_df[per90_keep].fillna(0.0)
 per90_df.sort_values("xG/90", ascending=False, inplace=True)
 per90_df.reset_index(drop=True, inplace=True)
 
-
-def build_split_df(split_key, categories):
-    """One row per shooter with Shots / Goals / xG / xG per 90 for each
-    category of the given split (zone, situation, or body part)."""
-    recs = []
-    for pid, a in agg.items():
-        if a["shots"] == 0:
-            continue
-        info = player_info[pid]
-        row = {
-            "Player": info["name"], "Team": info["team"],
-            "Matches": info["matches"], "Minutes": round(info["minutes"], 1),
-        }
-        factor90 = info["minutes"] / 90.0 if info["minutes"] else None
-        for cat in categories:
-            c = a[split_key][cat]
-            row[f"Shots ({cat})"] = c["shots"]
-            row[f"Goals ({cat})"] = c["goals"]
-            row[f"xG ({cat})"] = round(c["xg"], 3)
-            row[f"xG/90 ({cat})"] = round(c["xg"] / factor90, 3) if factor90 else 0.0
-        recs.append(row)
-    df = pd.DataFrame.from_records(recs)
-    sort_col = f"xG ({categories[0]})"
-    df.sort_values(sort_col, ascending=False, inplace=True)
-    df.reset_index(drop=True, inplace=True)
-    return df
-
-
-zone_df = build_split_df("zone", ZONES)
-situation_df = build_split_df("situation", SITUATIONS)
-body_part_df = build_split_df("body_part", BODY_PARTS)
-
 # --- write workbook -------------------------------------------------------
 os.makedirs(OUT_DIR, exist_ok=True)
 SHEETS = {
     "Per 90": per90_df,
     "Total": total_df,
-    "Shot Zones": zone_df,
-    "Shot Situations": situation_df,
-    "Shot Body Part": body_part_df,
 }
 with pd.ExcelWriter(OUT_PATH, engine="openpyxl") as writer:
     for sheet_name, df in SHEETS.items():
