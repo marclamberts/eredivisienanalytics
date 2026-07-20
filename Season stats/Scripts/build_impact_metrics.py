@@ -1,17 +1,23 @@
-"""Build Season stats/Impact Metrics.xlsx (GDA, VAEP, Goals Added, xT) from
-the season's already-computed GDA and xT player summaries
-(GDA/gda_player_summary.csv, xT/xt_player_summary.csv), plus position (same
-lineup-qualifier method as the other Season stats builders). Two tabs: Per 90
-and Total.
+"""Build Season stats/Impact Metrics.xlsx (GDA, RAPM, VAEP, Goals Added, xT)
+from this season's models. Two tabs: Per 90 and Total.
 
-IMPORTANT METHODOLOGY NOTE: this repo has no separately-trained VAEP model
-(Decroos et al.) or ASA-style "Goals Added" model. Both the "VAEP" and
-"Goals Added" columns below reuse GDA's own action-value component
-(action_gda_actual from GDA/gda_model_meta.json: "JSON-only Markov
-possession value over pitch zones; shot rewards learned from smoothed
-empirical goal rates by shot zone") -- i.e. this repo's own possession-value
-model, not the named academic/ASA frameworks. Header comments on those two
-columns repeat this note in the workbook itself.
+Prerequisite: run build_rapm.py, build_vaep.py, and build_goals_added.py
+first (in Season stats/Scripts/) -- each writes a small _*_cache.csv this
+script reads. They're kept separate rather than inlined here because each is
+a substantial, independently re-runnable model (RAPM: ridge regression over
+lineup segments; VAEP: two gradient-boosted classifiers trained on this
+season's ~410k actions; Goals Added: a from-scratch EPV/Markov possession-
+value grid). See each script's own docstring for full methodology and
+documented simplifications versus the published/described originals --
+none of these are the original authors' exact models or trained weights
+(Decroos et al.'s VAEP weights and ASA's real g+ model aren't public); they
+are this session's own implementations of the published/described methods,
+validated by cross-checking against GDA, against each other, and against
+known players' real positions where possible (see each script's inline
+validation notes).
+
+GDA and xT are this repo's own pre-existing, already-validated models
+(GDA/gda_player_summary.csv, xT/xt_player_summary.csv).
 """
 import csv
 import glob
@@ -22,17 +28,11 @@ from collections import defaultdict, Counter
 import pandas as pd
 from openpyxl.styles import Font, Alignment, PatternFill
 from openpyxl.utils import get_column_letter
-from openpyxl.comments import Comment
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+SCRIPTS_DIR = os.path.join(ROOT, "Season stats", "Scripts")
 OUT_DIR = os.path.join(ROOT, "Season stats")
 OUT_PATH = os.path.join(OUT_DIR, "Impact Metrics.xlsx")
-
-VALUE_MODEL_NOTE = (
-    "This repo has no separately-trained VAEP/Goals Added model. This column reuses "
-    "GDA's own action-value component (a Markov possession-value model over pitch "
-    "zones; see GDA/gda_model_meta.json), not the named academic/ASA framework."
-)
 
 LINEUP_TYPE_ID = 34
 POS_MAP = {1: "GK", 2: "DEF", 3: "MID", 4: "FWD"}
@@ -93,7 +93,8 @@ def build_positions():
     """player_id -> (position group, specific position). See the identical
     helper in build_shooting_metrics.py / build_passing_metrics.py for the
     full derivation notes (qualifier 44/131/30 on the Team Set Up event,
-    specific role approximated from average touch width per match)."""
+    specific role approximated from average touch width per match, then
+    restricted to the player's own winning position group)."""
     votes_group = defaultdict(Counter)
     votes_specific = defaultdict(Counter)
     for path in sorted(glob.glob(os.path.join(ROOT, "Events", "*.json"))):
@@ -144,6 +145,13 @@ def build_positions():
     return groups, specific
 
 
+def require_cache(name):
+    path = os.path.join(SCRIPTS_DIR, name)
+    if not os.path.exists(path):
+        raise SystemExit(f"Missing {path} -- run the matching build_*.py script in Season stats/Scripts/ first.")
+    return pd.read_csv(path)
+
+
 # --- team names -------------------------------------------------------------
 team_names = {}
 for r in rows(os.path.join(ROOT, "xT", "xt_team_summary.csv")):
@@ -157,8 +165,7 @@ position_groups, positions = build_positions()
 # straight off (that would silently keep only the last club's spell). -------
 gda = defaultdict(lambda: {
     "name": "", "contestant_ids": Counter(), "matches": 0, "minutes": 0.0,
-    "action_gda_expected": 0.0, "action_gda_actual": 0.0, "goal_difference_added": 0.0,
-    "rel_gda_per90_weighted": 0.0,
+    "goal_difference_added": 0.0, "rel_gda_per90_weighted": 0.0,
 })
 for r in rows(os.path.join(ROOT, "GDA", "gda_player_summary.csv")):
     pid = r["player_id"]
@@ -168,8 +175,6 @@ for r in rows(os.path.join(ROOT, "GDA", "gda_player_summary.csv")):
     mins = num(r["minutes"])
     g["matches"] += int(num(r["matches"]))
     g["minutes"] += mins
-    g["action_gda_expected"] += num(r["action_gda_expected"])
-    g["action_gda_actual"] += num(r["action_gda_actual"])
     g["goal_difference_added"] += num(r["goal_difference_added"])
     g["rel_gda_per90_weighted"] += num(r["relative_goal_difference_added_per90"]) * mins
 
@@ -181,6 +186,12 @@ for r in rows(os.path.join(ROOT, "xT", "xt_player_summary.csv")):
     x["positive_xT_added"] += num(r["positive_xT_added"])
     x["actions"] += int(num(r["actions"]))
 
+# --- RAPM / VAEP / Goals Added (this session's own models -- see docstring) -
+rapm_df = require_cache("_rapm_cache.csv").set_index("player_id")
+vaep_df = require_cache("_vaep_cache.csv").set_index("player_id")
+ga_df = require_cache("_goals_added_cache.csv").set_index("player_id")
+GA_CATEGORIES = ["Dribbling", "Passing", "Receiving", "Shooting", "Interrupting", "Fouling", "Goalkeeping"]
+
 # --- assemble one row per player ----------------------------------------------
 records = []
 for pid, g in gda.items():
@@ -188,12 +199,13 @@ for pid, g in gda.items():
     team = team_names.get(contestant_id, "Unknown")
     matches = g["matches"]
     mins = g["minutes"]
-
-    action_expected = g["action_gda_expected"]
-    action_actual = g["action_gda_actual"]
     x = xt.get(pid)
 
-    records.append({
+    r_row = rapm_df.loc[pid] if pid in rapm_df.index else None
+    v_row = vaep_df.loc[pid] if pid in vaep_df.index else None
+    ga_row = ga_df.loc[pid] if pid in ga_df.index else None
+
+    record = {
         "Player": g["name"],
         "Team": team,
         "Position Group": position_groups.get(pid, "Unknown"),
@@ -202,23 +214,33 @@ for pid, g in gda.items():
         "Minutes": round(mins, 1),
         "GDA": round(g["goal_difference_added"], 3),
         "GDA Relative /90": round(g["rel_gda_per90_weighted"] / mins, 3) if mins else 0.0,
-        "Action Value Expected": round(action_expected, 3),
-        "VAEP": round(action_actual, 3),
-        "Goals Added": round(action_actual, 3),
-        "Action Value Over Expected": round(action_actual - action_expected, 3),
+        "RAPM": round(float(r_row["RAPM"]), 4) if r_row is not None else 0.0,
+        "xRAPM": round(float(r_row["xRAPM"]), 4) if r_row is not None else 0.0,
+        "VAEP": round(float(v_row["VAEP"]), 3) if v_row is not None else 0.0,
+        "VAEP Offensive": round(float(v_row["vaep_offensive"]), 3) if v_row is not None else 0.0,
+        "VAEP Defensive": round(float(v_row["vaep_defensive"]), 3) if v_row is not None else 0.0,
+        "Goals Added": round(float(ga_row["Goals Added"]), 3) if ga_row is not None else 0.0,
         "xT Added": round(x["xT_added"], 3) if x else 0.0,
         "Positive xT Added": round(x["positive_xT_added"], 3) if x else 0.0,
         "xT per 100 Actions": round(x["xT_added"] / x["actions"] * 100, 3) if x and x["actions"] else 0.0,
         "Actions": x["actions"] if x else 0,
-    })
+    }
+    for cat in GA_CATEGORIES:
+        record[f"GA {cat}"] = round(float(ga_row[cat]), 3) if ga_row is not None else 0.0
+    records.append(record)
 
 total_df = pd.DataFrame.from_records(records)
 total_df.sort_values("GDA", ascending=False, inplace=True)
 total_df.reset_index(drop=True, inplace=True)
 
-# --- per-90 tab ---------------------------------------------------------------
-per90_cols = ["GDA", "Action Value Expected", "VAEP", "Goals Added", "Action Value Over Expected",
-              "xT Added", "Positive xT Added", "Actions"]
+# --- per-90 tab -----------------------------------------------------------
+# RAPM/xRAPM are already per-90 rates straight out of the regression (the
+# target they were fit on was goal/xG differential per 90), so they carry
+# through unscaled, same as GDA Relative /90 and xT per 100 Actions.
+per90_cols = (
+    ["GDA", "VAEP", "VAEP Offensive", "VAEP Defensive", "Goals Added", "xT Added", "Positive xT Added", "Actions"]
+    + [f"GA {cat}" for cat in GA_CATEGORIES]
+)
 per90_df = total_df.copy()
 factor = per90_df["Minutes"].replace(0, pd.NA) / 90.0
 for col in per90_cols:
@@ -227,7 +249,7 @@ for col in per90_cols:
 per90_keep = (
     ["Player", "Team", "Position Group", "Position", "Matches", "Minutes"]
     + [f"{c}/90" for c in per90_cols]
-    + ["GDA Relative /90", "xT per 100 Actions"]
+    + ["GDA Relative /90", "RAPM", "xRAPM", "xT per 100 Actions"]
 )
 per90_df = per90_df[per90_keep].fillna(0.0)
 per90_df.sort_values("GDA/90", ascending=False, inplace=True)
@@ -245,6 +267,25 @@ with pd.ExcelWriter(OUT_PATH, engine="openpyxl") as writer:
 
 # --- formatting -------------------------------------------------------------
 from openpyxl import load_workbook
+from openpyxl.comments import Comment
+
+METHOD_NOTES = {
+    "RAPM": "Ridge regression of goal differential per 90 on which players shared the pitch, over exact lineup "
+            "segments (GDA/gda_player_stints.csv). This season's data only -- wide uncertainty, especially for "
+            "low-minute players; the ridge penalty shrinks them toward 0. See build_rapm.py.",
+    "xRAPM": "Same as RAPM but the regression target is shot xG differential per 90 (Danger CSV) instead of goals "
+              "-- much less sparse than raw goals, so more stable read than RAPM. See build_rapm.py.",
+    "VAEP": "This session's own implementation of Decroos et al.'s VAEP framework (gradient-boosted classifiers "
+            "predicting goal-scored/conceded within the next 10 actions), trained on this season's ~410k actions. "
+            "Held-out AUC ~0.70 for both classifiers. Known limitation shared with the published method: vanilla "
+            "VAEP undervalues goalkeepers (their actions sit in states with elevated concede-probability by "
+            "construction). See build_vaep.py.",
+    "Goals Added": "This session's own from-scratch Expected Possession Value (EPV) model over a 16x12 pitch grid, "
+                   "inspired by (not identical to) American Soccer Analysis's publicly described g+ approach -- "
+                   "their exact model and category weights aren't public. See build_goals_added.py for documented "
+                   "simplifications (dribbling = take-ons only, 50/50 passer/receiver split, goalkeeping scored "
+                   "separately as PSxG minus goals conceded).",
+}
 
 wb = load_workbook(OUT_PATH)
 header_font = Font(name="Arial", bold=True, color="FFFFFF")
@@ -258,8 +299,9 @@ for sheet_name in SHEETS:
         cell.font = header_font
         cell.fill = header_fill
         cell.alignment = Alignment(horizontal="center")
-        if str(cell.value).startswith("VAEP") or str(cell.value).startswith("Goals Added"):
-            cell.comment = Comment(VALUE_MODEL_NOTE, "Season stats")
+        header_text = str(cell.value).split("/")[0].strip()
+        if header_text in METHOD_NOTES:
+            cell.comment = Comment(METHOD_NOTES[header_text], "Season stats")
         col_letter = get_column_letter(col_idx)
         max_len = max(len(str(cell.value)), 8)
         for row_cell in ws[col_letter][1:]:
