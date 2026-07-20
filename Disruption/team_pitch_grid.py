@@ -20,16 +20,17 @@ import pandas as pd
 from mplsoccer import VerticalPitch
 
 import build_disruption_model as bdm
-from league_disruption_visuals import compute_attack_directions, GOLD, BG, PITCH_LINE, TEXT_SUB, TEXT_FOOT, add_logo
+import league_disruption_visuals as ldv
+from league_disruption_visuals import compute_attack_directions, add_logo
 
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 N_COLS, N_ROWS = 6, 3
 
 
 def main():
-    out_path = sys.argv[1] if len(sys.argv) > 1 else os.path.join(OUT_DIR, "team_pitch_grid.png")
+    out_name = sys.argv[1] if len(sys.argv) > 1 else "team_pitch_grid.png"
 
-    disr = pd.read_csv(os.path.join(OUT_DIR, "all_eredivisie_disruption_models.csv"))
+    disr = pd.read_csv(os.path.join(ldv.CSV_DIR, "all_eredivisie_disruption_models.csv"))
     linked = disr[disr["linked"] == True].copy()  # noqa: E712
 
     print("Computing per-team attacking direction per period...")
@@ -41,52 +42,56 @@ def main():
     linked["x_own"] = np.where(dir_vals == 1, linked["x"], bdm.GOAL_X - linked["x"])
     linked["y_own"] = np.where(dir_vals == 1, linked["y"], 68.0 - linked["y"])
 
-    team_summary = pd.read_csv(os.path.join(OUT_DIR, "disruption_value_team_summary.csv"))
+    team_summary = pd.read_csv(os.path.join(ldv.CSV_DIR, "disruption_value_team_summary.csv"))
     team_order = team_summary.sort_values("total_disruption_value", ascending=False)["team_name"].tolist()
 
-    fig = plt.figure(figsize=(N_COLS * 3.6, N_ROWS * 4.6))
-    fig.patch.set_facecolor(BG)
-    fig.text(0.5, 0.975, "Where Every Team Disrupts Passes", fontsize=25, fontweight="bold",
-             ha="center", color="white")
-    fig.text(0.5, 0.952,
-             "Eredivisie 2025/26  ·  Season  ·  every linked defensive action, normalized to "
-             "\"distance from own goal\"  ·  ranked by total disruption value",
-             fontsize=11.5, ha="center", color=TEXT_SUB)
+    for theme in ("dark", "light"):
+        ldv.set_theme(theme)
+        out_path = os.path.join(ldv.visual_dir(theme), out_name)
 
-    grid_top, grid_bottom = 0.90, 0.05
-    grid_left, grid_right = 0.02, 0.98
-    cell_w = (grid_right - grid_left) / N_COLS
-    cell_h = (grid_top - grid_bottom) / N_ROWS
+        fig = plt.figure(figsize=(N_COLS * 3.6, N_ROWS * 4.6))
+        fig.patch.set_facecolor(ldv.BG)
+        fig.text(0.5, 0.975, "Where Every Team Disrupts Passes", fontsize=25, fontweight="bold",
+                 ha="center", color=ldv.TEXT_MAIN)
+        fig.text(0.5, 0.952,
+                 "Eredivisie 2025/26  ·  Season  ·  every linked defensive action, normalized to "
+                 "\"distance from own goal\"  ·  ranked by total disruption value",
+                 fontsize=11.5, ha="center", color=ldv.TEXT_SUB)
 
-    for i, team in enumerate(team_order):
-        row, col = divmod(i, N_COLS)
-        left = grid_left + col * cell_w
-        bottom = grid_top - (row + 1) * cell_h
-        ax = fig.add_axes([left + cell_w * 0.06, bottom + cell_h * 0.03,
-                           cell_w * 0.88, cell_h * 0.82])
+        grid_top, grid_bottom = 0.90, 0.05
+        grid_left, grid_right = 0.02, 0.98
+        cell_w = (grid_right - grid_left) / N_COLS
+        cell_h = (grid_top - grid_bottom) / N_ROWS
 
-        pitch = VerticalPitch(pitch_type="uefa", pitch_color=BG, line_color=PITCH_LINE,
-                              linewidth=0.8, half=False)
-        pitch.draw(ax=ax)
+        for i, team in enumerate(team_order):
+            row, col = divmod(i, N_COLS)
+            left = grid_left + col * cell_w
+            bottom = grid_top - (row + 1) * cell_h
+            ax = fig.add_axes([left + cell_w * 0.06, bottom + cell_h * 0.03,
+                               cell_w * 0.88, cell_h * 0.82])
 
-        sub = linked[linked["team_name"] == team]
-        pitch.scatter(sub["x_own"], sub["y_own"], ax=ax, s=22, color=GOLD, alpha=0.6,
-                     edgecolors="none", zorder=3)
+            pitch = VerticalPitch(pitch_type="uefa", pitch_color=ldv.BG, line_color=ldv.PITCH_LINE,
+                                  linewidth=0.8, half=False)
+            pitch.draw(ax=ax)
 
-        info = team_summary[team_summary["team_name"] == team].iloc[0]
-        ax.set_title(f"{team}", fontsize=10.5, fontweight="bold", color="white", pad=4)
-        fig.text(left + cell_w / 2, bottom + cell_h * 0.02,
-                 f"{int(info['actions_linked'])} actions  ·  {info['total_disruption_value_x1000']:.1f} value",
-                 fontsize=7.8, ha="center", color=TEXT_SUB)
+            sub = linked[linked["team_name"] == team]
+            pitch.scatter(sub["x_own"], sub["y_own"], ax=ax, s=22, color=ldv.GOLD, alpha=0.6,
+                         edgecolors="none", zorder=3)
 
-    fig.text(0.98, 0.012, "Marc Lamberts", fontsize=9.5, ha="right", color=TEXT_FOOT, style="italic")
-    fig.text(0.02, 0.012, "Data via Opta | pitch runs bottom = own goal, top = opponent goal",
-             fontsize=8, color=TEXT_FOOT)
+            info = team_summary[team_summary["team_name"] == team].iloc[0]
+            ax.set_title(f"{team}", fontsize=10.5, fontweight="bold", color=ldv.TEXT_MAIN, pad=4)
+            fig.text(left + cell_w / 2, bottom + cell_h * 0.02,
+                     f"{int(info['actions_linked'])} actions  ·  {info['total_disruption_value_x1000']:.1f} value",
+                     fontsize=7.8, ha="center", color=ldv.TEXT_SUB)
 
-    add_logo(fig, width=0.05)
-    fig.savefig(out_path, dpi=200, facecolor=BG)
-    plt.close(fig)
-    print("Saved:", out_path)
+        fig.text(0.98, 0.012, "Marc Lamberts", fontsize=9.5, ha="right", color=ldv.TEXT_FOOT, style="italic")
+        fig.text(0.02, 0.012, "Data via Opta | pitch runs bottom = own goal, top = opponent goal",
+                 fontsize=8, color=ldv.TEXT_FOOT)
+
+        add_logo(fig, width=0.05)
+        fig.savefig(out_path, dpi=200, facecolor=ldv.BG)
+        plt.close(fig)
+        print("Saved:", out_path)
 
 
 if __name__ == "__main__":

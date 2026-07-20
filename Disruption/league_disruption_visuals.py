@@ -20,14 +20,56 @@ from mplsoccer import VerticalPitch
 import build_disruption_model as bdm
 
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_DIR = os.path.join(OUT_DIR, "CSV")
 
-BG = "#0d1117"
-PITCH_LINE = "#2c3a4d"
-TEXT_SUB = "#9aa4b2"
-TEXT_FOOT = "#6b7684"
-GOLD = "#ffc247"
 
-GOLD_RAMP = LinearSegmentedColormap.from_list("gold_ramp", [BG, "#5a4415", GOLD, "#fff2cf"])
+def visual_dir(theme):
+    """Every chart-producing script writes into Visual - Dark/ or Visual -
+    Light/ depending on which palette is active, instead of the Disruption/
+    folder root."""
+    d = os.path.join(OUT_DIR, "Visual - Dark" if theme == "dark" else "Visual - Light")
+    os.makedirs(d, exist_ok=True)
+    return d
+
+
+# Two palettes, selected via set_theme(). Every chart script pulls its
+# colors from these module-level names (never hardcodes "white"/"black")
+# so a single set_theme() call retheme's everything that runs after it.
+_PALETTES = {
+    "dark": dict(
+        BG="#0d1117", PITCH_LINE="#2c3a4d", TEXT_MAIN="#e6e9ee", TEXT_SUB="#9aa4b2",
+        TEXT_FOOT="#6b7684", LEGEND_TEXT="#c7ccd4", GOLD="#ffc247", BLUE="#2f8fd1",
+        GREEN="#4a9e5c", RED="#e0765c", GOLD_RAMP_STOPS=["#0d1117", "#5a4415", "#ffc247", "#fff2cf"],
+    ),
+    "light": dict(
+        BG="#ffffff", PITCH_LINE="#c7ccd4", TEXT_MAIN="#12161c", TEXT_SUB="#4b5563",
+        TEXT_FOOT="#6b7280", LEGEND_TEXT="#374151", GOLD="#b45309", BLUE="#1d4ed8",
+        GREEN="#15803d", RED="#b91c1c", GOLD_RAMP_STOPS=["#ffffff", "#ffe3a8", "#f2a93c", "#7c3a05"],
+    ),
+}
+
+BG = PITCH_LINE = TEXT_MAIN = TEXT_SUB = TEXT_FOOT = LEGEND_TEXT = None
+GOLD = BLUE = GREEN = RED = GOLD_RAMP = None
+CURRENT_THEME = None
+
+
+def set_theme(theme="dark"):
+    """Reassign this module's color globals to the given palette. Dependent
+    scripts call this (with `global BG, PITCH_LINE, ...` in their own main())
+    and copy the values across so their own module-level names update too --
+    see any of the viz scripts' main() for the pattern."""
+    global BG, PITCH_LINE, TEXT_MAIN, TEXT_SUB, TEXT_FOOT, LEGEND_TEXT
+    global GOLD, BLUE, GREEN, RED, GOLD_RAMP, CURRENT_THEME
+    p = _PALETTES[theme]
+    BG, PITCH_LINE, TEXT_MAIN, TEXT_SUB, TEXT_FOOT, LEGEND_TEXT = (
+        p["BG"], p["PITCH_LINE"], p["TEXT_MAIN"], p["TEXT_SUB"], p["TEXT_FOOT"], p["LEGEND_TEXT"])
+    GOLD, BLUE, GREEN, RED = p["GOLD"], p["BLUE"], p["GREEN"], p["RED"]
+    GOLD_RAMP = LinearSegmentedColormap.from_list(f"gold_ramp_{theme}", p["GOLD_RAMP_STOPS"])
+    CURRENT_THEME = theme
+    return p
+
+
+set_theme("dark")
 
 
 def add_logo(fig, width=0.11, margin=0.014):
@@ -102,7 +144,7 @@ def make_heatmap(disr, out_path):
     pitch.draw(ax=ax)
 
     fig.text(0.5, 0.965, "Where Passes Get Disrupted", fontsize=24, fontweight="bold",
-             ha="center", color="white")
+             ha="center", color=TEXT_MAIN)
     fig.text(0.5, 0.935, f"Eredivisie 2025/26  ·  Season  ·  {len(linked)} passes directly",
              fontsize=11.5, ha="center", color=TEXT_SUB)
     fig.text(0.5, 0.915, "broken up by a tackle, interception, clearance, aerial duel, "
@@ -125,7 +167,7 @@ def make_heatmap(disr, out_path):
         "top = opponent goal) so directions aren't mixed",
     ]
     for i, line in enumerate(caption_lines):
-        fig.text(0.5, 0.058 - i * 0.017, line, fontsize=9.5, ha="center", color="#c7ccd4")
+        fig.text(0.5, 0.058 - i * 0.017, line, fontsize=9.5, ha="center", color=LEGEND_TEXT)
     fig.text(0.98, 0.006, "Marc Lamberts", fontsize=9.5, ha="right", color=TEXT_FOOT, style="italic")
     fig.text(0.02, 0.006, "Data via Opta | disruption = defensive action linked to the specific "
              "opponent pass it broke up (see Disruption/build_disruption_model.py)",
@@ -158,13 +200,13 @@ def make_leaderboard(player_summary, out_path, top_n=15, value_col="total_disrup
 
     labels = [f"{name}  ·  {team}" for name, team in zip(top["player_name"], top["team_name"])]
     ax.set_yticks(range(len(top)))
-    ax.set_yticklabels(labels, fontsize=9.3, color="white")
+    ax.set_yticklabels(labels, fontsize=9.3, color=TEXT_MAIN)
     ax.tick_params(axis="y", length=0)
     ax.tick_params(axis="x", colors=TEXT_SUB, labelsize=9)
 
     for i, (val, n_actions) in enumerate(zip(top[value_col], top[count_col])):
         ax.text(val + vmax * 0.012, i, f"{value_fmt.format(val)}  ({int(n_actions)} actions)",
-               va="center", fontsize=9.5, color="#c7ccd4")
+               va="center", fontsize=9.5, color=LEGEND_TEXT)
 
     for spine in ("top", "right", "left"):
         ax.spines[spine].set_visible(False)
@@ -172,7 +214,7 @@ def make_leaderboard(player_summary, out_path, top_n=15, value_col="total_disrup
     ax.grid(axis="x", color=PITCH_LINE, linewidth=0.6, alpha=0.5, zorder=0)
     ax.set_xlim(0, vmax * 1.22)
 
-    fig.text(0.5, 0.965, title, fontsize=24, fontweight="bold", ha="center", color="white")
+    fig.text(0.5, 0.965, title, fontsize=24, fontweight="bold", ha="center", color=TEXT_MAIN)
     fig.text(0.5, 0.935, subtitle, fontsize=10.5, ha="center", color=TEXT_SUB)
 
     fig.text(0.98, 0.012, "Marc Lamberts", fontsize=9.5, ha="right", color=TEXT_FOOT, style="italic")
@@ -186,14 +228,14 @@ def make_leaderboard(player_summary, out_path, top_n=15, value_col="total_disrup
 
 
 def main():
-    out_dir = sys.argv[1] if len(sys.argv) > 1 else OUT_DIR
-    os.makedirs(out_dir, exist_ok=True)
+    disr = pd.read_csv(os.path.join(CSV_DIR, "all_eredivisie_disruption_models.csv"))
+    player_summary = pd.read_csv(os.path.join(CSV_DIR, "disruption_player_summary.csv"))
 
-    disr = pd.read_csv(os.path.join(OUT_DIR, "all_eredivisie_disruption_models.csv"))
-    player_summary = pd.read_csv(os.path.join(OUT_DIR, "disruption_player_summary.csv"))
-
-    make_heatmap(disr, os.path.join(out_dir, "league_disruption_heatmap.png"))
-    make_leaderboard(player_summary, os.path.join(out_dir, "top_disruptors_leaderboard.png"))
+    for theme in ("dark", "light"):
+        set_theme(theme)
+        out_dir = visual_dir(theme)
+        make_heatmap(disr, os.path.join(out_dir, "league_disruption_heatmap.png"))
+        make_leaderboard(player_summary, os.path.join(out_dir, "top_disruptors_leaderboard.png"))
 
 
 if __name__ == "__main__":

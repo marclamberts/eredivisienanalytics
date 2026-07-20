@@ -54,6 +54,7 @@ import build_disruption_model as bdm
 ROOT = bdm.ROOT
 MODEL_DIR = bdm.MODEL_DIR
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_DIR = os.path.join(OUT_DIR, "CSV")
 
 PRESSURE_LOOKBACK_S = 20.0
 PRESSURE_DIST_MAX = 25.0
@@ -192,7 +193,8 @@ def main():
                 "pressure_completion_prob", "pressure_difficulty",
                 "disruption_difficulty_delta"]
     safe_name = player_name.replace(" ", "_").replace(".", "")
-    out_path = os.path.join(OUT_DIR, f"player_difficulty_{safe_name}.csv")
+    os.makedirs(CSV_DIR, exist_ok=True)
+    out_path = os.path.join(CSV_DIR, f"player_difficulty_{safe_name}.csv")
     player_df[out_cols].to_csv(out_path, index=False)
     print(f"Wrote {out_path} ({len(player_df)} passes)")
 

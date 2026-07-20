@@ -52,6 +52,7 @@ from sklearn.model_selection import train_test_split
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "Events")
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_DIR = os.path.join(OUT_DIR, "CSV")
 MODEL_DIR = os.path.join(ROOT, "Model")
 
 X_SCALE, Y_SCALE = 1.05, 0.68           # Opta 0-100 units -> metres (105 x 68 pitch)
@@ -381,9 +382,10 @@ def main():
                 "linked_pass_end_x", "linked_pass_end_y"]
     out_df = linked_def[out_cols].copy()
 
+    os.makedirs(CSV_DIR, exist_ok=True)
     for match_file, mgroup in out_df.groupby("match_file"):
-        mgroup.to_csv(os.path.join(OUT_DIR, f"{match_file}_disruption_models.csv"), index=False)
-    out_df.to_csv(os.path.join(OUT_DIR, "all_eredivisie_disruption_models.csv"), index=False)
+        mgroup.to_csv(os.path.join(CSV_DIR, f"{match_file}_disruption_models.csv"), index=False)
+    out_df.to_csv(os.path.join(CSV_DIR, "all_eredivisie_disruption_models.csv"), index=False)
     print(f"Wrote {out_df['match_file'].nunique()} per-match CSVs + aggregate "
           f"({len(out_df)} defensive actions, {int(out_df['linked'].sum())} linked "
           f"= {out_df['linked'].mean():.1%})")
@@ -403,7 +405,7 @@ def main():
     player_summary["disruption_per90"] = (
         player_summary["total_disruption"] / player_summary["matches"])
     player_summary = player_summary.sort_values("total_disruption", ascending=False)
-    player_summary.to_csv(os.path.join(OUT_DIR, "disruption_player_summary.csv"), index=False)
+    player_summary.to_csv(os.path.join(CSV_DIR, "disruption_player_summary.csv"), index=False)
 
     team_summary = linked_only.groupby("team_name").agg(
         matches=("match_file", "nunique"),
@@ -413,7 +415,7 @@ def main():
     ).reset_index()
     team_summary["disruption_per_match"] = team_summary["total_disruption"] / team_summary["matches"]
     team_summary = team_summary.sort_values("disruption_per_match", ascending=False)
-    team_summary.to_csv(os.path.join(OUT_DIR, "disruption_team_summary.csv"), index=False)
+    team_summary.to_csv(os.path.join(CSV_DIR, "disruption_team_summary.csv"), index=False)
 
     print("Wrote disruption_player_summary.csv + disruption_team_summary.csv")
     print("\nTop 10 disruptors (total disruption value):")

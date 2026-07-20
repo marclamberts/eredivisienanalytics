@@ -40,6 +40,7 @@ import numpy as np
 import pandas as pd
 
 import build_disruption_model as bdm
+import league_disruption_visuals as ldv
 from league_disruption_visuals import compute_attack_directions, make_leaderboard
 
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -68,7 +69,7 @@ def main():
     cid_to_team = bdm.build_global_cid_to_team(files)
     team_to_cid = {team: cid for cid, team in cid_to_team.items()}
 
-    disr = pd.read_csv(os.path.join(OUT_DIR, "all_eredivisie_disruption_models.csv"))
+    disr = pd.read_csv(os.path.join(ldv.CSV_DIR, "all_eredivisie_disruption_models.csv"))
     linked = disr[disr["linked"] == True].copy()  # noqa: E712
     print(f"{len(linked)} linked defensive actions to value")
 
@@ -104,7 +105,8 @@ def main():
                 "action_type", "x", "y", "link_type", "disruption_score",
                 "linked_pass_team", "linked_pass_player", "start_xT", "end_xT",
                 "positive_xT_added", "disruption_value"]
-    linked[out_cols].to_csv(os.path.join(OUT_DIR, "all_eredivisie_disruption_values.csv"),
+    os.makedirs(ldv.CSV_DIR, exist_ok=True)
+    linked[out_cols].to_csv(os.path.join(ldv.CSV_DIR, "all_eredivisie_disruption_values.csv"),
                             index=False)
     print("Wrote all_eredivisie_disruption_values.csv")
 
@@ -124,7 +126,7 @@ def main():
     player_summary["total_disruption_value_x1000"] = player_summary["total_disruption_value"] * 1000
     player_summary["disruption_value_per90_x1000"] = player_summary["disruption_value_per90"] * 1000
     player_summary = player_summary.sort_values("total_disruption_value", ascending=False)
-    player_summary.to_csv(os.path.join(OUT_DIR, "disruption_value_player_summary.csv"), index=False)
+    player_summary.to_csv(os.path.join(ldv.CSV_DIR, "disruption_value_player_summary.csv"), index=False)
 
     team_summary = linked.groupby("team_name").agg(
         matches=("match_file", "nunique"),
@@ -136,7 +138,7 @@ def main():
     team_summary["total_disruption_value_x1000"] = team_summary["total_disruption_value"] * 1000
     team_summary["disruption_value_per_match_x1000"] = team_summary["disruption_value_per_match"] * 1000
     team_summary = team_summary.sort_values("disruption_value_per_match", ascending=False)
-    team_summary.to_csv(os.path.join(OUT_DIR, "disruption_value_team_summary.csv"), index=False)
+    team_summary.to_csv(os.path.join(ldv.CSV_DIR, "disruption_value_team_summary.csv"), index=False)
 
     print("Wrote disruption_value_player_summary.csv + disruption_value_team_summary.csv")
     print("\nTop 10 by disruption VALUE (probability denied x threat it would have created):")
@@ -144,15 +146,17 @@ def main():
                                     "total_disruption_value", "disruption_value_per90"]]
           .to_string(index=False))
 
-    make_leaderboard(
-        player_summary, os.path.join(OUT_DIR, "top_disruptors_by_value_leaderboard.png"),
-        value_col="total_disruption_value_x1000",
-        title="Top Disruptors by Value",
-        subtitle="Eredivisie 2025/26  ·  Season  ·  disruption value = P(pass completes) x "
-                 "threat (xT) it would have added had it succeeded  ·  x1000 for readability",
-        footer="Data via Opta | rewards stopping progressive, threatening passes -- not just "
-               "any pass -- using the season's existing xT grid (xT/xt_grid_values.csv)",
-        value_fmt="{:.1f}")
+    for theme in ("dark", "light"):
+        ldv.set_theme(theme)
+        make_leaderboard(
+            player_summary, os.path.join(ldv.visual_dir(theme), "top_disruptors_by_value_leaderboard.png"),
+            value_col="total_disruption_value_x1000",
+            title="Top Disruptors by Value",
+            subtitle="Eredivisie 2025/26  ·  Season  ·  disruption value = P(pass completes) x "
+                     "threat (xT) it would have added had it succeeded  ·  x1000 for readability",
+            footer="Data via Opta | rewards stopping progressive, threatening passes -- not just "
+                   "any pass -- using the season's existing xT grid (xT/xt_grid_values.csv)",
+            value_fmt="{:.1f}")
 
 
 if __name__ == "__main__":

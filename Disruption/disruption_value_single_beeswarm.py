@@ -16,7 +16,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-from league_disruption_visuals import GOLD_RAMP, BG, PITCH_LINE, TEXT_SUB, TEXT_FOOT, add_logo
+import league_disruption_visuals as ldv
+from league_disruption_visuals import add_logo
 
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 MIN_ACTIONS = 5
@@ -24,10 +25,9 @@ N_LABELS = 10
 
 
 def main():
-    out_path = sys.argv[1] if len(sys.argv) > 1 else os.path.join(
-        OUT_DIR, "disruption_value_single_beeswarm.png")
+    out_name = sys.argv[1] if len(sys.argv) > 1 else "disruption_value_single_beeswarm.png"
 
-    df = pd.read_csv(os.path.join(OUT_DIR, "disruption_value_player_summary.csv"))
+    df = pd.read_csv(os.path.join(ldv.CSV_DIR, "disruption_value_player_summary.csv"))
     df = df[df["actions_linked"] >= MIN_ACTIONS].copy()
     df["row"] = "Value"
     vmax = df["total_disruption_value_x1000"].max()
@@ -62,46 +62,50 @@ def main():
     tier_step = 0.42
     y_top_data = 0.7 + max_tier * tier_step + 0.35
 
-    fig, ax = plt.subplots(figsize=(14, 6.5 + max_tier * 0.55))
-    fig.patch.set_facecolor(BG)
-    ax.set_facecolor(BG)
+    for theme in ("dark", "light"):
+        ldv.set_theme(theme)
+        out_path = os.path.join(ldv.visual_dir(theme), out_name)
 
-    sns.swarmplot(data=df, x="total_disruption_value_x1000", y="row", hue="total_disruption_value_x1000",
-                 palette=GOLD_RAMP, hue_norm=(0, vmax), size=8, edgecolor=BG, linewidth=0.5,
-                 ax=ax, legend=False)
+        fig, ax = plt.subplots(figsize=(14, 6.5 + max_tier * 0.55))
+        fig.patch.set_facecolor(ldv.BG)
+        ax.set_facecolor(ldv.BG)
 
-    for name, x, tier in placements:
-        y_label = 0.7 + tier * tier_step
-        ax.plot([x, x], [0.42, y_label - 0.1], color="#5a6070", lw=0.6, zorder=5)
-        ax.text(x, y_label, name, ha="center", va="bottom", fontsize=9.3, color="white",
-               fontweight="bold", zorder=6)
+        sns.swarmplot(data=df, x="total_disruption_value_x1000", y="row", hue="total_disruption_value_x1000",
+                     palette=ldv.GOLD_RAMP, hue_norm=(0, vmax), size=8, edgecolor=ldv.BG, linewidth=0.5,
+                     ax=ax, legend=False)
 
-    ax.set_yticks([])
-    ax.set_ylabel("")
-    ax.set_ylim(-1.1, y_top_data)
-    ax.set_xlabel("Disruption value this season, x1000  (P(pass completes) x xT denied, summed)",
-                 fontsize=10.5, color=TEXT_SUB)
-    ax.tick_params(axis="x", colors=TEXT_SUB, labelsize=10)
-    for spine in ("top", "right", "left"):
-        ax.spines[spine].set_visible(False)
-    ax.spines["bottom"].set_color(PITCH_LINE)
-    ax.grid(axis="x", color=PITCH_LINE, linewidth=0.5, alpha=0.4, zorder=0)
-    ax.set_xlim(left=-vmax * 0.02)
+        for name, x, tier in placements:
+            y_label = 0.7 + tier * tier_step
+            ax.plot([x, x], [0.42, y_label - 0.1], color="#5a6070", lw=0.6, zorder=5)
+            ax.text(x, y_label, name, ha="center", va="bottom", fontsize=9.3, color=ldv.TEXT_MAIN,
+                   fontweight="bold", zorder=6)
 
-    fig.text(0.5, 0.955, "Disruption Value", fontsize=25, fontweight="bold", ha="center", color="white")
-    fig.text(0.5, 0.90,
-             f"Eredivisie 2025/26  ·  Season  ·  every player with ≥{MIN_ACTIONS} linked "
-             f"disruptions ({len(df)} players)  ·  one dot = one player",
-             fontsize=11, ha="center", color=TEXT_SUB)
+        ax.set_yticks([])
+        ax.set_ylabel("")
+        ax.set_ylim(-1.1, y_top_data)
+        ax.set_xlabel("Disruption value this season, x1000  (P(pass completes) x xT denied, summed)",
+                     fontsize=10.5, color=ldv.TEXT_SUB)
+        ax.tick_params(axis="x", colors=ldv.TEXT_SUB, labelsize=10)
+        for spine in ("top", "right", "left"):
+            ax.spines[spine].set_visible(False)
+        ax.spines["bottom"].set_color(ldv.PITCH_LINE)
+        ax.grid(axis="x", color=ldv.PITCH_LINE, linewidth=0.5, alpha=0.4, zorder=0)
+        ax.set_xlim(left=-vmax * 0.02)
 
-    fig.text(0.98, 0.025, "Marc Lamberts", fontsize=9.5, ha="right", color=TEXT_FOOT, style="italic")
-    fig.text(0.02, 0.025, "Data via Opta | disruption_value_model.py", fontsize=7.5, color=TEXT_FOOT)
+        fig.text(0.5, 0.955, "Disruption Value", fontsize=25, fontweight="bold", ha="center", color=ldv.TEXT_MAIN)
+        fig.text(0.5, 0.90,
+                 f"Eredivisie 2025/26  ·  Season  ·  every player with ≥{MIN_ACTIONS} linked "
+                 f"disruptions ({len(df)} players)  ·  one dot = one player",
+                 fontsize=11, ha="center", color=ldv.TEXT_SUB)
 
-    fig.subplots_adjust(left=0.03, right=0.98, top=0.83, bottom=0.13)
-    add_logo(fig)
-    fig.savefig(out_path, dpi=200, facecolor=BG)
-    plt.close(fig)
-    print("Saved:", out_path)
+        fig.text(0.98, 0.025, "Marc Lamberts", fontsize=9.5, ha="right", color=ldv.TEXT_FOOT, style="italic")
+        fig.text(0.02, 0.025, "Data via Opta | disruption_value_model.py", fontsize=7.5, color=ldv.TEXT_FOOT)
+
+        fig.subplots_adjust(left=0.03, right=0.98, top=0.83, bottom=0.13)
+        add_logo(fig)
+        fig.savefig(out_path, dpi=200, facecolor=ldv.BG)
+        plt.close(fig)
+        print("Saved:", out_path)
 
 
 if __name__ == "__main__":

@@ -19,18 +19,17 @@ from matplotlib.patches import Rectangle
 from mplsoccer import VerticalPitch
 
 import build_disruption_model as bdm
-from league_disruption_visuals import (compute_attack_directions, GOLD_RAMP, GOLD, BG,
-                                       PITCH_LINE, TEXT_SUB, TEXT_FOOT, add_logo)
+import league_disruption_visuals as ldv
+from league_disruption_visuals import compute_attack_directions, add_logo
 
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 CENTRAL_LOW, CENTRAL_HIGH = 68 / 3, 2 * 68 / 3
 MIN_ACTIONS = 5
-BLUE = "#2f8fd1"
 
 
 def prep():
     files = sorted(glob.glob(os.path.join(bdm.DATA_DIR, "*.json")))
-    values = pd.read_csv(os.path.join(OUT_DIR, "all_eredivisie_disruption_values.csv"))
+    values = pd.read_csv(os.path.join(ldv.CSV_DIR, "all_eredivisie_disruption_values.csv"))
     directions = compute_attack_directions()
     dir_vals = np.array([
         directions.get((mf, cid, p), 1)
@@ -40,7 +39,7 @@ def prep():
     values["y_own"] = np.where(dir_vals == 1, values["y"], 68.0 - values["y"])
     values["value_x1000"] = values["disruption_value"] * 1000
     values["is_central"] = (values["y_own"] >= CENTRAL_LOW) & (values["y_own"] <= CENTRAL_HIGH)
-    team_matches = pd.read_csv(os.path.join(OUT_DIR, "disruption_value_team_summary.csv"))[
+    team_matches = pd.read_csv(os.path.join(ldv.CSV_DIR, "disruption_value_team_summary.csv"))[
         ["team_name", "matches"]]
     return values, team_matches
 
@@ -49,28 +48,28 @@ def hbar(g, value_col, count_col, out_path, title, subtitle, footer, value_fmt="
         label_col="team_name", figsize=(12.5, 9.5), left_margin=0.20):
     g = g.sort_values(value_col, ascending=True)
     fig, ax = plt.subplots(figsize=figsize)
-    fig.patch.set_facecolor(BG)
-    ax.set_facecolor(BG)
+    fig.patch.set_facecolor(ldv.BG)
+    ax.set_facecolor(ldv.BG)
     vmax = max(g[value_col].max(), 1e-9)
-    colors = [GOLD_RAMP(0.3 + 0.6 * (v / vmax)) for v in g[value_col]]
+    colors = [ldv.GOLD_RAMP(0.3 + 0.6 * (v / vmax)) for v in g[value_col]]
     ax.barh(g[label_col], g[value_col], color=colors, height=0.62, zorder=3)
     for i, (val, n) in enumerate(zip(g[value_col], g[count_col])):
         ax.text(val + vmax * 0.012, i, f"{value_fmt.format(val)}  ({int(n)})",
-               va="center", fontsize=9.3, color="#c7ccd4")
-    ax.tick_params(axis="y", colors="white", labelsize=10, length=0)
-    ax.tick_params(axis="x", colors=TEXT_SUB, labelsize=9)
+               va="center", fontsize=9.3, color=ldv.LEGEND_TEXT)
+    ax.tick_params(axis="y", colors=ldv.TEXT_MAIN, labelsize=10, length=0)
+    ax.tick_params(axis="x", colors=ldv.TEXT_SUB, labelsize=9)
     for spine in ("top", "right", "left"):
         ax.spines[spine].set_visible(False)
-    ax.spines["bottom"].set_color(PITCH_LINE)
-    ax.grid(axis="x", color=PITCH_LINE, linewidth=0.6, alpha=0.5, zorder=0)
+    ax.spines["bottom"].set_color(ldv.PITCH_LINE)
+    ax.grid(axis="x", color=ldv.PITCH_LINE, linewidth=0.6, alpha=0.5, zorder=0)
     ax.set_xlim(0, vmax * 1.2)
-    fig.text(0.5, 0.965, title, fontsize=23, fontweight="bold", ha="center", color="white")
-    fig.text(0.5, 0.935, subtitle, fontsize=10, ha="center", color=TEXT_SUB)
-    fig.text(0.98, 0.012, "Marc Lamberts", fontsize=9.5, ha="right", color=TEXT_FOOT, style="italic")
-    fig.text(0.02, 0.012, footer, fontsize=7.2, color=TEXT_FOOT)
+    fig.text(0.5, 0.965, title, fontsize=23, fontweight="bold", ha="center", color=ldv.TEXT_MAIN)
+    fig.text(0.5, 0.935, subtitle, fontsize=10, ha="center", color=ldv.TEXT_SUB)
+    fig.text(0.98, 0.012, "Marc Lamberts", fontsize=9.5, ha="right", color=ldv.TEXT_FOOT, style="italic")
+    fig.text(0.02, 0.012, footer, fontsize=7.2, color=ldv.TEXT_FOOT)
     fig.subplots_adjust(left=left_margin, right=0.95, top=0.90, bottom=0.07)
     add_logo(fig)
-    fig.savefig(out_path, dpi=200, facecolor=BG)
+    fig.savefig(out_path, dpi=200, facecolor=ldv.BG)
     plt.close(fig)
     print("Saved:", out_path)
 
@@ -97,31 +96,31 @@ def viz_central_vs_wide(values, team_matches, out_dir):
     g = g.sort_values("central_pm", ascending=True)
 
     fig, ax = plt.subplots(figsize=(13, 9.5))
-    fig.patch.set_facecolor(BG)
-    ax.set_facecolor(BG)
+    fig.patch.set_facecolor(ldv.BG)
+    ax.set_facecolor(ldv.BG)
     y = np.arange(len(g))
     h = 0.36
-    ax.barh(y + h / 2, g["central_pm"], height=h, color=GOLD, alpha=0.9, label="Central third", zorder=3)
-    ax.barh(y - h / 2, g["wide_pm"], height=h, color=BLUE, alpha=0.85, label="Flanks", zorder=3)
+    ax.barh(y + h / 2, g["central_pm"], height=h, color=ldv.GOLD, alpha=0.9, label="Central third", zorder=3)
+    ax.barh(y - h / 2, g["wide_pm"], height=h, color=ldv.BLUE, alpha=0.85, label="Flanks", zorder=3)
     ax.set_yticks(y)
-    ax.set_yticklabels(g["team_name"], fontsize=9.8, color="white")
-    ax.tick_params(axis="x", colors=TEXT_SUB, labelsize=9)
+    ax.set_yticklabels(g["team_name"], fontsize=9.8, color=ldv.TEXT_MAIN)
+    ax.tick_params(axis="x", colors=ldv.TEXT_SUB, labelsize=9)
     ax.tick_params(axis="y", length=0)
     for spine in ("top", "right", "left"):
         ax.spines[spine].set_visible(False)
-    ax.spines["bottom"].set_color(PITCH_LINE)
-    ax.grid(axis="x", color=PITCH_LINE, linewidth=0.5, alpha=0.4, zorder=0)
-    ax.legend(loc="lower right", frameon=False, fontsize=9.5, labelcolor="#c7ccd4")
-    fig.text(0.5, 0.965, "Central vs. Wide Defending", fontsize=23, fontweight="bold", ha="center", color="white")
+    ax.spines["bottom"].set_color(ldv.PITCH_LINE)
+    ax.grid(axis="x", color=ldv.PITCH_LINE, linewidth=0.5, alpha=0.4, zorder=0)
+    ax.legend(loc="lower right", frameon=False, fontsize=9.5, labelcolor=ldv.LEGEND_TEXT)
+    fig.text(0.5, 0.965, "Central vs. Wide Defending", fontsize=23, fontweight="bold", ha="center", color=ldv.TEXT_MAIN)
     fig.text(0.5, 0.935, "Eredivisie 2025/26 · Season · disruption value denied per match, by zone",
-             fontsize=10.5, ha="center", color=TEXT_SUB)
-    fig.text(0.98, 0.012, "Marc Lamberts", fontsize=9.5, ha="right", color=TEXT_FOOT, style="italic")
+             fontsize=10.5, ha="center", color=ldv.TEXT_SUB)
+    fig.text(0.98, 0.012, "Marc Lamberts", fontsize=9.5, ha="right", color=ldv.TEXT_FOOT, style="italic")
     fig.text(0.02, 0.012, "Data via Opta | central = middle third of pitch width, flanks = outer two thirds",
-             fontsize=7.2, color=TEXT_FOOT)
+             fontsize=7.2, color=ldv.TEXT_FOOT)
     fig.subplots_adjust(left=0.19, right=0.96, top=0.90, bottom=0.07)
     add_logo(fig)
     out_path = os.path.join(out_dir, "02_central_vs_wide.png")
-    fig.savefig(out_path, dpi=200, facecolor=BG)
+    fig.savefig(out_path, dpi=200, facecolor=ldv.BG)
     plt.close(fig)
     print("Saved:", out_path)
 
@@ -143,11 +142,11 @@ def viz_central_pitch_grid(values, team_matches, out_dir):
                  .sort_values(ascending=False).index.tolist())
     n_cols, n_rows = 6, 3
     fig = plt.figure(figsize=(n_cols * 3.4, n_rows * 4.4))
-    fig.patch.set_facecolor(BG)
+    fig.patch.set_facecolor(ldv.BG)
     fig.text(0.5, 0.975, "Central-Zone Disruptions, Every Team", fontsize=23, fontweight="bold",
-             ha="center", color="white")
+             ha="center", color=ldv.TEXT_MAIN)
     fig.text(0.5, 0.952, "Eredivisie 2025/26 · Season · linked disruptions inside the central third only",
-             fontsize=10.5, ha="center", color=TEXT_SUB)
+             fontsize=10.5, ha="center", color=ldv.TEXT_SUB)
     grid_top, grid_bottom, grid_left, grid_right = 0.90, 0.05, 0.02, 0.98
     cell_w, cell_h = (grid_right - grid_left) / n_cols, (grid_top - grid_bottom) / n_rows
     for i, team in enumerate(team_order):
@@ -155,19 +154,19 @@ def viz_central_pitch_grid(values, team_matches, out_dir):
         left = grid_left + col * cell_w
         bottom = grid_top - (row + 1) * cell_h
         ax = fig.add_axes([left + cell_w * 0.06, bottom + cell_h * 0.03, cell_w * 0.88, cell_h * 0.80])
-        pitch = VerticalPitch(pitch_type="uefa", pitch_color=BG, line_color=PITCH_LINE, linewidth=0.8, half=False)
+        pitch = VerticalPitch(pitch_type="uefa", pitch_color=ldv.BG, line_color=ldv.PITCH_LINE, linewidth=0.8, half=False)
         pitch.draw(ax=ax)
         sub = central[central["team_name"] == team]
-        pitch.scatter(sub["x_own"], sub["y_own"], ax=ax, s=20, color=GOLD, alpha=0.6, edgecolors="none", zorder=3)
-        ax.set_title(team, fontsize=10, fontweight="bold", color="white", pad=4)
+        pitch.scatter(sub["x_own"], sub["y_own"], ax=ax, s=20, color=ldv.GOLD, alpha=0.6, edgecolors="none", zorder=3)
+        ax.set_title(team, fontsize=10, fontweight="bold", color=ldv.TEXT_MAIN, pad=4)
         fig.text(left + cell_w / 2, bottom + cell_h * 0.01, f"{len(sub)} actions · {sub['value_x1000'].sum():.1f} value",
-                 fontsize=7.5, ha="center", color=TEXT_SUB)
-    fig.text(0.98, 0.012, "Marc Lamberts", fontsize=9.5, ha="right", color=TEXT_FOOT, style="italic")
+                 fontsize=7.5, ha="center", color=ldv.TEXT_SUB)
+    fig.text(0.98, 0.012, "Marc Lamberts", fontsize=9.5, ha="right", color=ldv.TEXT_FOOT, style="italic")
     fig.text(0.02, 0.012, "Data via Opta | pitch runs bottom = own goal, top = opponent goal",
-             fontsize=8, color=TEXT_FOOT)
+             fontsize=8, color=ldv.TEXT_FOOT)
     add_logo(fig, width=0.045)
     out_path = os.path.join(out_dir, "04_central_pitch_grid.png")
-    fig.savefig(out_path, dpi=200, facecolor=BG)
+    fig.savefig(out_path, dpi=200, facecolor=ldv.BG)
     plt.close(fig)
     print("Saved:", out_path)
 
@@ -200,31 +199,31 @@ def viz_central_quality_volume(values, team_matches, out_dir):
     central = values[values["is_central"]]
     g = central.groupby("team_name").agg(n=("value_x1000", "size"), mean=("value_x1000", "mean")).reset_index()
     fig, ax = plt.subplots(figsize=(11, 8.5))
-    fig.patch.set_facecolor(BG)
-    ax.set_facecolor(BG)
+    fig.patch.set_facecolor(ldv.BG)
+    ax.set_facecolor(ldv.BG)
     vmax = g["mean"].max()
-    colors = [GOLD_RAMP(0.3 + 0.6 * (v / vmax)) for v in g["mean"]]
+    colors = [ldv.GOLD_RAMP(0.3 + 0.6 * (v / vmax)) for v in g["mean"]]
     ax.scatter(g["n"], g["mean"], s=220, color=colors, edgecolors="#ffe9b8", linewidth=0.6, zorder=3)
     for _, r in g.iterrows():
         ax.annotate(r["team_name"], xy=(r["n"], r["mean"]), xytext=(6, 4), textcoords="offset points",
-                   fontsize=8.3, color="white")
-    ax.axvline(g["n"].median(), color=PITCH_LINE, lw=1)
-    ax.axhline(g["mean"].median(), color=PITCH_LINE, lw=1)
-    ax.set_xlabel("Central-zone actions (volume)", fontsize=10.5, color=TEXT_SUB)
-    ax.set_ylabel("Mean value per central action (quality)", fontsize=10.5, color=TEXT_SUB)
-    ax.tick_params(colors=TEXT_SUB, labelsize=9)
+                   fontsize=8.3, color=ldv.TEXT_MAIN)
+    ax.axvline(g["n"].median(), color=ldv.PITCH_LINE, lw=1)
+    ax.axhline(g["mean"].median(), color=ldv.PITCH_LINE, lw=1)
+    ax.set_xlabel("Central-zone actions (volume)", fontsize=10.5, color=ldv.TEXT_SUB)
+    ax.set_ylabel("Mean value per central action (quality)", fontsize=10.5, color=ldv.TEXT_SUB)
+    ax.tick_params(colors=ldv.TEXT_SUB, labelsize=9)
     for spine in ("top", "right"):
         ax.spines[spine].set_visible(False)
     for spine in ("left", "bottom"):
-        ax.spines[spine].set_color(PITCH_LINE)
-    ax.grid(color=PITCH_LINE, linewidth=0.4, alpha=0.4)
-    fig.text(0.5, 0.965, "Central Defending: Volume vs. Quality", fontsize=21, fontweight="bold", ha="center", color="white")
-    fig.text(0.5, 0.93, "Eredivisie 2025/26 · Season · one dot per team, central third only", fontsize=10.5, ha="center", color=TEXT_SUB)
-    fig.text(0.98, 0.015, "Marc Lamberts", fontsize=9.5, ha="right", color=TEXT_FOOT, style="italic")
+        ax.spines[spine].set_color(ldv.PITCH_LINE)
+    ax.grid(color=ldv.PITCH_LINE, linewidth=0.4, alpha=0.4)
+    fig.text(0.5, 0.965, "Central Defending: Volume vs. Quality", fontsize=21, fontweight="bold", ha="center", color=ldv.TEXT_MAIN)
+    fig.text(0.5, 0.93, "Eredivisie 2025/26 · Season · one dot per team, central third only", fontsize=10.5, ha="center", color=ldv.TEXT_SUB)
+    fig.text(0.98, 0.015, "Marc Lamberts", fontsize=9.5, ha="right", color=ldv.TEXT_FOOT, style="italic")
     fig.subplots_adjust(left=0.10, right=0.96, top=0.88, bottom=0.09)
     add_logo(fig)
     out_path = os.path.join(out_dir, "07_central_quality_vs_volume.png")
-    fig.savefig(out_path, dpi=200, facecolor=BG)
+    fig.savefig(out_path, dpi=200, facecolor=ldv.BG)
     plt.close(fig)
     print("Saved:", out_path)
 
@@ -239,25 +238,25 @@ def viz_top_central_defender_pitch(values, out_dir):
     sub = central[central["player_name"] == top_player["player_name"]]
 
     fig = plt.figure(figsize=(9, 11.5))
-    fig.patch.set_facecolor(BG)
-    pitch = VerticalPitch(pitch_type="uefa", pitch_color=BG, line_color=PITCH_LINE, linewidth=1.1,
+    fig.patch.set_facecolor(ldv.BG)
+    pitch = VerticalPitch(pitch_type="uefa", pitch_color=ldv.BG, line_color=ldv.PITCH_LINE, linewidth=1.1,
                           half=False, line_zorder=2)
     ax = fig.add_axes([0.06, 0.08, 0.88, 0.76])
     pitch.draw(ax=ax)
     vmax = max(sub["value_x1000"].max(), 1e-9)
     sizes = 120 + 900 * (sub["value_x1000"] / vmax)
-    colors = [GOLD_RAMP(0.3 + 0.6 * (v / vmax)) for v in sub["value_x1000"]]
-    pitch.scatter(sub["x_own"], sub["y_own"], ax=ax, s=sizes, color=colors, edgecolors=GOLD,
+    colors = [ldv.GOLD_RAMP(0.3 + 0.6 * (v / vmax)) for v in sub["value_x1000"]]
+    pitch.scatter(sub["x_own"], sub["y_own"], ax=ax, s=sizes, color=colors, edgecolors=ldv.GOLD,
                  linewidth=0.8, alpha=0.9, zorder=3)
-    fig.text(0.5, 0.965, top_player["player_name"], fontsize=25, fontweight="bold", ha="center", color="white")
+    fig.text(0.5, 0.965, top_player["player_name"], fontsize=25, fontweight="bold", ha="center", color=ldv.TEXT_MAIN)
     fig.text(0.5, 0.925, f"{top_player['team_name']} · Best Central Defender · Eredivisie 2025/26 · "
              f"{int(top_player['n'])} central actions, {top_player['total']:.1f} total value",
-             fontsize=11, ha="center", color=TEXT_SUB)
-    fig.text(0.98, 0.02, "Marc Lamberts", fontsize=9.5, ha="right", color=TEXT_FOOT, style="italic")
-    fig.text(0.02, 0.02, "Data via Opta | pitch runs bottom = own goal, top = opponent goal", fontsize=7.5, color=TEXT_FOOT)
+             fontsize=11, ha="center", color=ldv.TEXT_SUB)
+    fig.text(0.98, 0.02, "Marc Lamberts", fontsize=9.5, ha="right", color=ldv.TEXT_FOOT, style="italic")
+    fig.text(0.02, 0.02, "Data via Opta | pitch runs bottom = own goal, top = opponent goal", fontsize=7.5, color=ldv.TEXT_FOOT)
     add_logo(fig, width=0.09)
     out_path = os.path.join(out_dir, "08_top_central_defender_pitch.png")
-    fig.savefig(out_path, dpi=200, facecolor=BG)
+    fig.savefig(out_path, dpi=200, facecolor=ldv.BG)
     plt.close(fig)
     print("Saved:", out_path)
 
@@ -279,45 +278,47 @@ def viz_central_share(values, out_dir):
 def viz_central_corridor_heatmap(values, out_dir):
     central = values[values["is_central"]].copy()
     fig = plt.figure(figsize=(9, 12))
-    fig.patch.set_facecolor(BG)
-    pitch = VerticalPitch(pitch_type="uefa", pitch_color=BG, line_color=PITCH_LINE, linewidth=1.1,
+    fig.patch.set_facecolor(ldv.BG)
+    pitch = VerticalPitch(pitch_type="uefa", pitch_color=ldv.BG, line_color=ldv.PITCH_LINE, linewidth=1.1,
                           half=False, line_zorder=2)
     ax = fig.add_axes([0.06, 0.08, 0.80, 0.78])
     pitch.draw(ax=ax)
     stats = pitch.bin_statistic(central["x_own"], central["y_own"], statistic="count", bins=(14, 6))
-    hm = pitch.heatmap(stats, ax=ax, cmap=GOLD_RAMP, edgecolors=BG, linewidth=0.3, zorder=1)
+    hm = pitch.heatmap(stats, ax=ax, cmap=ldv.GOLD_RAMP, edgecolors=ldv.BG, linewidth=0.3, zorder=1)
     cax = fig.add_axes([0.88, 0.24, 0.02, 0.44])
     cb = fig.colorbar(hm, cax=cax)
-    cb.set_label("Disruptions", color=TEXT_SUB, fontsize=8)
-    cb.ax.yaxis.set_tick_params(color=TEXT_SUB, labelcolor=TEXT_SUB, labelsize=7.5)
-    fig.text(0.46, 0.965, "The Central Corridor, League-Wide", fontsize=21, fontweight="bold", ha="center", color="white")
+    cb.set_label("Disruptions", color=ldv.TEXT_SUB, fontsize=8)
+    cb.ax.yaxis.set_tick_params(color=ldv.TEXT_SUB, labelcolor=ldv.TEXT_SUB, labelsize=7.5)
+    fig.text(0.46, 0.965, "The Central Corridor, League-Wide", fontsize=21, fontweight="bold", ha="center", color=ldv.TEXT_MAIN)
     fig.text(0.46, 0.925, f"Eredivisie 2025/26 · Season · {len(central)} disruptions inside the central third only",
-             fontsize=10.5, ha="center", color=TEXT_SUB)
-    fig.text(0.98, 0.015, "Marc Lamberts", fontsize=9.5, ha="right", color=TEXT_FOOT, style="italic")
+             fontsize=10.5, ha="center", color=ldv.TEXT_SUB)
+    fig.text(0.98, 0.015, "Marc Lamberts", fontsize=9.5, ha="right", color=ldv.TEXT_FOOT, style="italic")
     fig.text(0.02, 0.015, "Data via Opta | zoomed into the central third, finer bins than the full-pitch heatmap",
-             fontsize=7.3, color=TEXT_FOOT)
+             fontsize=7.3, color=ldv.TEXT_FOOT)
     add_logo(fig, width=0.10)
     out_path = os.path.join(out_dir, "10_central_corridor_heatmap.png")
-    fig.savefig(out_path, dpi=200, facecolor=BG)
+    fig.savefig(out_path, dpi=200, facecolor=ldv.BG)
     plt.close(fig)
     print("Saved:", out_path)
 
 
 def main():
-    out_dir = sys.argv[1] if len(sys.argv) > 1 else OUT_DIR
-    os.makedirs(out_dir, exist_ok=True)
     values, team_matches = prep()
 
-    viz_wide_leaderboard(values, team_matches, out_dir)
-    viz_central_vs_wide(values, team_matches, out_dir)
-    viz_central_by_action_type(values, out_dir)
-    viz_central_pitch_grid(values, team_matches, out_dir)
-    viz_central_volume(values, team_matches, out_dir)
-    viz_central_player_leaderboard(values, out_dir)
-    viz_central_quality_volume(values, team_matches, out_dir)
-    viz_top_central_defender_pitch(values, out_dir)
-    viz_central_share(values, out_dir)
-    viz_central_corridor_heatmap(values, out_dir)
+    for theme in ("dark", "light"):
+        ldv.set_theme(theme)
+        out_dir = ldv.visual_dir(theme)
+
+        viz_wide_leaderboard(values, team_matches, out_dir)
+        viz_central_vs_wide(values, team_matches, out_dir)
+        viz_central_by_action_type(values, out_dir)
+        viz_central_pitch_grid(values, team_matches, out_dir)
+        viz_central_volume(values, team_matches, out_dir)
+        viz_central_player_leaderboard(values, out_dir)
+        viz_central_quality_volume(values, team_matches, out_dir)
+        viz_top_central_defender_pitch(values, out_dir)
+        viz_central_share(values, out_dir)
+        viz_central_corridor_heatmap(values, out_dir)
 
 
 if __name__ == "__main__":
