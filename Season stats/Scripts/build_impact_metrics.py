@@ -1,12 +1,17 @@
-"""Build Season stats/Defensive Metrics.xlsx from the season's event-derived
-defensive actions (Events/*.json), plus season minutes (GDA/gda_player_summary.csv)
-and position (same lineup-qualifier method as build_shooting_metrics.py /
-build_passing_metrics.py). Two tabs: Per 90 and Total.
+"""Build Season stats/Impact Metrics.xlsx (GDA, VAEP, Goals Added, xT) from
+the season's already-computed GDA and xT player summaries
+(GDA/gda_player_summary.csv, xT/xt_player_summary.csv), plus position (same
+lineup-qualifier method as the other Season stats builders). Two tabs: Per 90
+and Total.
 
-Defensive-action type IDs (tackle/interception/clearance/aerial/recovery/
-blocked pass) match the DEF_TYPES set already used in PSV Season Report/
-Scripts/season_expansion_pitches.py; the own-box threshold (x<=17) matches
-that script's box_defending zone.
+IMPORTANT METHODOLOGY NOTE: this repo has no separately-trained VAEP model
+(Decroos et al.) or ASA-style "Goals Added" model. Both the "VAEP" and
+"Goals Added" columns below reuse GDA's own action-value component
+(action_gda_actual from GDA/gda_model_meta.json: "JSON-only Markov
+possession value over pitch zones; shot rewards learned from smoothed
+empirical goal rates by shot zone") -- i.e. this repo's own possession-value
+model, not the named academic/ASA frameworks. Header comments on those two
+columns repeat this note in the workbook itself.
 """
 import csv
 import glob
@@ -17,17 +22,17 @@ from collections import defaultdict, Counter
 import pandas as pd
 from openpyxl.styles import Font, Alignment, PatternFill
 from openpyxl.utils import get_column_letter
+from openpyxl.comments import Comment
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT_DIR = os.path.join(ROOT, "Season stats")
-OUT_PATH = os.path.join(OUT_DIR, "Defensive Metrics.xlsx")
+OUT_PATH = os.path.join(OUT_DIR, "Impact Metrics.xlsx")
 
-DEF_THIRD_END, FINAL_THIRD_START = 100 / 3, 200 / 3
-OWN_BOX_X, OWN_BOX_Y_LO, OWN_BOX_Y_HI = 17.0, 21.0, 79.0  # season_expansion_pitches.py box_defending
-
-TACKLE, INTERCEPTION, CLEARANCE, FOUL, CARD, AERIAL = 7, 8, 12, 4, 17, 44
-RECOVERY, DISPOSSESSED, ERROR, OFFSIDE_PROVOKED, BLOCKED_PASS = 49, 50, 51, 55, 74
-DEFENSIVE_ACTION_TYPES = {TACKLE, INTERCEPTION, CLEARANCE, AERIAL, RECOVERY, BLOCKED_PASS}
+VALUE_MODEL_NOTE = (
+    "This repo has no separately-trained VAEP/Goals Added model. This column reuses "
+    "GDA's own action-value component (a Markov possession-value model over pitch "
+    "zones; see GDA/gda_model_meta.json), not the named academic/ASA framework."
+)
 
 LINEUP_TYPE_ID = 34
 POS_MAP = {1: "GK", 2: "DEF", 3: "MID", 4: "FWD"}
@@ -65,18 +70,6 @@ def num(v):
 
 def qmap(e):
     return {q.get("qualifierId"): q.get("value") for q in e.get("qualifier", []) or []}
-
-
-def origin_third(x):
-    if x < DEF_THIRD_END:
-        return "Defensive Third"
-    if x < FINAL_THIRD_START:
-        return "Middle Third"
-    return "Final Third"
-
-
-def in_own_box(x, y):
-    return x <= OWN_BOX_X and OWN_BOX_Y_LO <= y <= OWN_BOX_Y_HI
 
 
 def specific_position_labels(n, group):
@@ -156,158 +149,76 @@ team_names = {}
 for r in rows(os.path.join(ROOT, "xT", "xt_team_summary.csv")):
     team_names[r["contestant_id"]] = r["team_name"]
 
-# --- minutes / appearances per player (season totals) -----------------------
-minutes = defaultdict(lambda: {"name": "", "contestant_ids": Counter(), "minutes": 0.0, "matches": 0})
-for r in rows(os.path.join(ROOT, "GDA", "gda_player_summary.csv")):
-    pid = r["player_id"]
-    m = minutes[pid]
-    m["name"] = r["player_name"]
-    m["contestant_ids"][r["contestant_id"]] += 1
-    m["minutes"] += num(r["minutes"])
-    m["matches"] += int(num(r["matches"]))
-
 position_groups, positions = build_positions()
 
-ZONES = ["Defensive Third", "Middle Third", "Final Third"]
-
-
-def zero_split(keys):
-    return {k: 0 for k in keys}
-
-
-agg = defaultdict(lambda: {
-    "name": "", "contestant_ids": Counter(),
-    "tackles": 0, "tackles_won": 0, "dribbled_past": 0,
-    "interceptions": 0, "clearances": 0,
-    "aerials": 0, "aerials_won": 0,
-    "recoveries": 0, "blocked_passes": 0,
-    "fouls_committed": 0, "fouls_won": 0, "cards": 0,
-    "offsides_won": 0, "errors": 0,
-    "def_actions": 0, "pressures": 0, "own_box_actions": 0,
-    "zone": zero_split(ZONES),
+# --- GDA / xT (season-aggregated per player, but with one row per
+# player-per-club -- a mid-season transfer produces two rows for the same
+# player_id, so sum across rows rather than keying a dict by player_id
+# straight off (that would silently keep only the last club's spell). -------
+gda = defaultdict(lambda: {
+    "name": "", "contestant_ids": Counter(), "matches": 0, "minutes": 0.0,
+    "action_gda_expected": 0.0, "action_gda_actual": 0.0, "goal_difference_added": 0.0,
+    "rel_gda_per90_weighted": 0.0,
 })
+for r in rows(os.path.join(ROOT, "GDA", "gda_player_summary.csv")):
+    pid = r["player_id"]
+    g = gda[pid]
+    g["name"] = r["player_name"]
+    g["contestant_ids"][r["contestant_id"]] += 1
+    mins = num(r["minutes"])
+    g["matches"] += int(num(r["matches"]))
+    g["minutes"] += mins
+    g["action_gda_expected"] += num(r["action_gda_expected"])
+    g["action_gda_actual"] += num(r["action_gda_actual"])
+    g["goal_difference_added"] += num(r["goal_difference_added"])
+    g["rel_gda_per90_weighted"] += num(r["relative_goal_difference_added_per90"]) * mins
 
-# --- single pass over every match's events -----------------------------------
-for path in sorted(glob.glob(os.path.join(ROOT, "Events", "*.json"))):
-    with open(path, encoding="utf-8") as f:
-        data = json.load(f)
+xt = defaultdict(lambda: {"xT_added": 0.0, "positive_xT_added": 0.0, "actions": 0})
+for r in rows(os.path.join(ROOT, "xT", "xt_player_summary.csv")):
+    pid = r["player_id"]
+    x = xt[pid]
+    x["xT_added"] += num(r["xT_added"])
+    x["positive_xT_added"] += num(r["positive_xT_added"])
+    x["actions"] += int(num(r["actions"]))
 
-    for e in data.get("event", []):
-        pid = e.get("playerId")
-        tid = e.get("typeId")
-        if not pid or tid not in (DEFENSIVE_ACTION_TYPES | {FOUL, CARD, ERROR, OFFSIDE_PROVOKED}):
-            continue
-        a = agg[pid]
-        a["name"] = e.get("playerName") or a["name"] or "Unknown"
-        a["contestant_ids"][e.get("contestantId")] += 1
-
-        x = num(e.get("x"))
-        y = num(e.get("y"))
-        success = e.get("outcome") == 1
-
-        if tid == TACKLE:
-            a["tackles"] += 1
-            if success:
-                a["tackles_won"] += 1
-            else:
-                a["dribbled_past"] += 1
-        elif tid == INTERCEPTION:
-            a["interceptions"] += 1
-        elif tid == CLEARANCE:
-            a["clearances"] += 1
-        elif tid == AERIAL:
-            a["aerials"] += 1
-            if success:
-                a["aerials_won"] += 1
-        elif tid == RECOVERY:
-            a["recoveries"] += 1
-        elif tid == BLOCKED_PASS:
-            a["blocked_passes"] += 1
-        elif tid == FOUL:
-            if success:
-                a["fouls_committed"] += 1
-            else:
-                a["fouls_won"] += 1
-        elif tid == CARD:
-            a["cards"] += 1
-        elif tid == ERROR:
-            a["errors"] += 1
-        elif tid == OFFSIDE_PROVOKED:
-            a["offsides_won"] += 1
-
-        if tid in DEFENSIVE_ACTION_TYPES:
-            a["def_actions"] += 1
-            a["zone"][origin_third(x)] += 1
-            if x >= 50:
-                a["pressures"] += 1
-            if in_own_box(x, y):
-                a["own_box_actions"] += 1
-
-# --- player identity (name / team / matches / minutes), shared by every tab -
-player_info = {}
-for pid, a in agg.items():
-    m = minutes.get(pid)
-    cid_counter = m["contestant_ids"] if m and m["contestant_ids"] else a["contestant_ids"]
-    contestant_id = cid_counter.most_common(1)[0][0] if cid_counter else None
-    player_info[pid] = {
-        "name": (m["name"] if m else "") or a["name"],
-        "team": team_names.get(contestant_id, "Unknown"),
-        "position_group": position_groups.get(pid, "Unknown"),
-        "position": positions.get(pid, "Unknown"),
-        "matches": m["matches"] if m else 0,
-        "minutes": m["minutes"] if m else 0.0,
-    }
-
-# --- assemble one row per player ---------------------------------------------
+# --- assemble one row per player ----------------------------------------------
 records = []
-for pid, a in agg.items():
-    info = player_info[pid]
-    name, team, position_group, position, matches, mins = (
-        info["name"], info["team"], info["position_group"], info["position"], info["matches"], info["minutes"]
-    )
+for pid, g in gda.items():
+    contestant_id = g["contestant_ids"].most_common(1)[0][0] if g["contestant_ids"] else None
+    team = team_names.get(contestant_id, "Unknown")
+    matches = g["matches"]
+    mins = g["minutes"]
 
-    record = {
-        "Player": name,
+    action_expected = g["action_gda_expected"]
+    action_actual = g["action_gda_actual"]
+    x = xt.get(pid)
+
+    records.append({
+        "Player": g["name"],
         "Team": team,
-        "Position Group": position_group,
-        "Position": position,
+        "Position Group": position_groups.get(pid, "Unknown"),
+        "Position": positions.get(pid, "Unknown"),
         "Matches": matches,
         "Minutes": round(mins, 1),
-        "Defensive Actions": a["def_actions"],
-        "Tackles": a["tackles"],
-        "Tackles Won": a["tackles_won"],
-        "Tackle Win %": round(a["tackles_won"] / a["tackles"] * 100, 1) if a["tackles"] else 0.0,
-        "Dribbled Past": a["dribbled_past"],
-        "Interceptions": a["interceptions"],
-        "Clearances": a["clearances"],
-        "Aerial Duels": a["aerials"],
-        "Aerials Won": a["aerials_won"],
-        "Aerial Win %": round(a["aerials_won"] / a["aerials"] * 100, 1) if a["aerials"] else 0.0,
-        "Ball Recoveries": a["recoveries"],
-        "Blocked Passes": a["blocked_passes"],
-        "Pressures": a["pressures"],
-        "Actions In Own Box": a["own_box_actions"],
-        "Fouls Committed": a["fouls_committed"],
-        "Fouls Won": a["fouls_won"],
-        "Cards": a["cards"],
-        "Offsides Won": a["offsides_won"],
-        "Errors": a["errors"],
-    }
-    for cat in ZONES:
-        record[f"Defensive Actions ({cat})"] = a["zone"][cat]
-    records.append(record)
+        "GDA": round(g["goal_difference_added"], 3),
+        "GDA Relative /90": round(g["rel_gda_per90_weighted"] / mins, 3) if mins else 0.0,
+        "Action Value Expected": round(action_expected, 3),
+        "VAEP": round(action_actual, 3),
+        "Goals Added": round(action_actual, 3),
+        "Action Value Over Expected": round(action_actual - action_expected, 3),
+        "xT Added": round(x["xT_added"], 3) if x else 0.0,
+        "Positive xT Added": round(x["positive_xT_added"], 3) if x else 0.0,
+        "xT per 100 Actions": round(x["xT_added"] / x["actions"] * 100, 3) if x and x["actions"] else 0.0,
+        "Actions": x["actions"] if x else 0,
+    })
 
 total_df = pd.DataFrame.from_records(records)
-total_df.sort_values("Defensive Actions", ascending=False, inplace=True)
+total_df.sort_values("GDA", ascending=False, inplace=True)
 total_df.reset_index(drop=True, inplace=True)
 
 # --- per-90 tab ---------------------------------------------------------------
-per90_cols = (
-    ["Defensive Actions", "Tackles", "Tackles Won", "Dribbled Past", "Interceptions", "Clearances",
-     "Aerial Duels", "Aerials Won", "Ball Recoveries", "Blocked Passes", "Pressures", "Actions In Own Box",
-     "Fouls Committed", "Fouls Won", "Cards", "Offsides Won", "Errors"]
-    + [f"Defensive Actions ({cat})" for cat in ZONES]
-)
+per90_cols = ["GDA", "Action Value Expected", "VAEP", "Goals Added", "Action Value Over Expected",
+              "xT Added", "Positive xT Added", "Actions"]
 per90_df = total_df.copy()
 factor = per90_df["Minutes"].replace(0, pd.NA) / 90.0
 for col in per90_cols:
@@ -316,10 +227,10 @@ for col in per90_cols:
 per90_keep = (
     ["Player", "Team", "Position Group", "Position", "Matches", "Minutes"]
     + [f"{c}/90" for c in per90_cols]
-    + ["Tackle Win %", "Aerial Win %"]
+    + ["GDA Relative /90", "xT per 100 Actions"]
 )
 per90_df = per90_df[per90_keep].fillna(0.0)
-per90_df.sort_values("Defensive Actions/90", ascending=False, inplace=True)
+per90_df.sort_values("GDA/90", ascending=False, inplace=True)
 per90_df.reset_index(drop=True, inplace=True)
 
 # --- write workbook -------------------------------------------------------
@@ -347,6 +258,8 @@ for sheet_name in SHEETS:
         cell.font = header_font
         cell.fill = header_fill
         cell.alignment = Alignment(horizontal="center")
+        if str(cell.value).startswith("VAEP") or str(cell.value).startswith("Goals Added"):
+            cell.comment = Comment(VALUE_MODEL_NOTE, "Season stats")
         col_letter = get_column_letter(col_idx)
         max_len = max(len(str(cell.value)), 8)
         for row_cell in ws[col_letter][1:]:

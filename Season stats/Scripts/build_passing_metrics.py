@@ -35,6 +35,23 @@ HEAD_QID, RIGHT_QID, LEFT_QID = 15, 20, 72
 KEY_PASS_SHOT_LINK_QID = 55  # on the shot: local eventId of the assisting pass
 LINEUP_TYPE_ID = 34
 POS_MAP = {1: "GK", 2: "DEF", 3: "MID", 4: "FWD"}
+LABEL_GROUP = {
+    "GK": "GK",
+    "CB": "DEF", "LB": "DEF", "RB": "DEF", "LCB": "DEF", "RCB": "DEF", "CB3": "DEF", "LWB": "DEF", "RWB": "DEF",
+    "CM": "MID", "LCM": "MID", "RCM": "MID", "LM": "MID", "RM": "MID",
+    "ST": "FWD", "LST": "FWD", "RST": "FWD", "LW": "FWD", "RW": "FWD",
+}
+
+
+def label_group(label):
+    if label in LABEL_GROUP:
+        return LABEL_GROUP[label]
+    for prefix in ("DEF", "MID", "FWD"):
+        if label.startswith(prefix):
+            return prefix
+    return None
+
+
 TOUCH_EXCLUDE = {18, 19, 30, 32, 34, 37, 40, 70, 71, 90, 91}  # non-positional event types
 
 
@@ -201,7 +218,11 @@ def build_positions():
                     votes_specific[pid][label] += 1
 
     groups = {pid: POS_MAP[c.most_common(1)[0][0]] for pid, c in votes_group.items()}
-    specific = {pid: c.most_common(1)[0][0] for pid, c in votes_specific.items()}
+    specific = {}
+    for pid, c in votes_specific.items():
+        grp = groups.get(pid)
+        filtered = Counter({label: n for label, n in c.items() if label_group(label) == grp})
+        specific[pid] = (filtered or c).most_common(1)[0][0]
     return groups, specific
 
 
