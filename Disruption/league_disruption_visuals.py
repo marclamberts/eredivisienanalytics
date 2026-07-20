@@ -137,17 +137,24 @@ def make_heatmap(disr, out_path):
     print("Saved:", out_path)
 
 
-def make_leaderboard(player_summary, out_path, top_n=15):
-    top = player_summary.sort_values("total_disruption", ascending=False).head(top_n)
+def make_leaderboard(player_summary, out_path, top_n=15, value_col="total_disruption",
+                     count_col="actions_linked", title="Top Disruptors",
+                     subtitle="Eredivisie 2025/26  ·  Season  ·  total disruption value = sum "
+                              "of the pass completion probability denied by each linked "
+                              "defensive action",
+                     footer="Data via Opta | higher bar = denied more, harder-to-stop passes, "
+                            "not just more defensive actions",
+                     value_fmt="{:.1f}"):
+    top = player_summary.sort_values(value_col, ascending=False).head(top_n)
     top = top.iloc[::-1]  # smallest at bottom for a horizontal barh
 
     fig, ax = plt.subplots(figsize=(12.5, 9.5))
     fig.patch.set_facecolor(BG)
     ax.set_facecolor(BG)
 
-    vmax = top["total_disruption"].max()
-    colors = [GOLD_RAMP(0.35 + 0.55 * (v / vmax)) for v in top["total_disruption"]]
-    bars = ax.barh(range(len(top)), top["total_disruption"], color=colors, height=0.62, zorder=3)
+    vmax = top[value_col].max()
+    colors = [GOLD_RAMP(0.35 + 0.55 * (v / vmax)) for v in top[value_col]]
+    ax.barh(range(len(top)), top[value_col], color=colors, height=0.62, zorder=3)
 
     labels = [f"{name}  ·  {team}" for name, team in zip(top["player_name"], top["team_name"])]
     ax.set_yticks(range(len(top)))
@@ -155,8 +162,8 @@ def make_leaderboard(player_summary, out_path, top_n=15):
     ax.tick_params(axis="y", length=0)
     ax.tick_params(axis="x", colors=TEXT_SUB, labelsize=9)
 
-    for i, (val, n_actions) in enumerate(zip(top["total_disruption"], top["actions_linked"])):
-        ax.text(val + vmax * 0.012, i, f"{val:.1f}  ({int(n_actions)} actions)",
+    for i, (val, n_actions) in enumerate(zip(top[value_col], top[count_col])):
+        ax.text(val + vmax * 0.012, i, f"{value_fmt.format(val)}  ({int(n_actions)} actions)",
                va="center", fontsize=9.5, color="#c7ccd4")
 
     for spine in ("top", "right", "left"):
@@ -165,15 +172,11 @@ def make_leaderboard(player_summary, out_path, top_n=15):
     ax.grid(axis="x", color=PITCH_LINE, linewidth=0.6, alpha=0.5, zorder=0)
     ax.set_xlim(0, vmax * 1.22)
 
-    fig.text(0.5, 0.965, "Top Disruptors", fontsize=24, fontweight="bold", ha="center", color="white")
-    fig.text(0.5, 0.935,
-             "Eredivisie 2025/26  ·  Season  ·  total disruption value = sum of the pass "
-             "completion probability denied by each linked defensive action",
-             fontsize=10.5, ha="center", color=TEXT_SUB)
+    fig.text(0.5, 0.965, title, fontsize=24, fontweight="bold", ha="center", color="white")
+    fig.text(0.5, 0.935, subtitle, fontsize=10.5, ha="center", color=TEXT_SUB)
 
     fig.text(0.98, 0.012, "Marc Lamberts", fontsize=9.5, ha="right", color=TEXT_FOOT, style="italic")
-    fig.text(0.02, 0.012, "Data via Opta | higher bar = denied more, harder-to-stop passes, "
-             "not just more defensive actions", fontsize=7.5, color=TEXT_FOOT)
+    fig.text(0.02, 0.012, footer, fontsize=7.5, color=TEXT_FOOT)
 
     fig.subplots_adjust(left=0.40, right=0.95, top=0.90, bottom=0.07)
     add_logo(fig)
