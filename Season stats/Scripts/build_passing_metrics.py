@@ -33,6 +33,8 @@ SET_PIECE_QIDS = {CORNER_QID, FREEKICK_QID, THROWIN_QID}
 BOX_EXCLUDE_QIDS = {CORNER_QID, FREEKICK_QID}  # key_passes_into_box.py allows throw-ins
 HEAD_QID, RIGHT_QID, LEFT_QID = 15, 20, 72
 KEY_PASS_SHOT_LINK_QID = 55  # on the shot: local eventId of the assisting pass
+LINEUP_TYPE_ID = 34
+POS_MAP = {1: "GK", 2: "DEF", 3: "MID", 4: "FWD"}
 
 
 def rows(path):
@@ -120,6 +122,33 @@ def is_cutback(x, y, ex, ey, q):
     return is_cross_hybrid(x, y, ex, ey, q) and x >= 83 and is_wide_start(y) and ex >= 83 and 33 <= ey <= 67
 
 
+def build_positions():
+    """player_id -> GK/DEF/MID/FWD, from each match's Team Set Up event
+    (typeId 34): qualifier 44 gives each of the 23 squad slots' position code
+    (1=GK,2=DEF,3=MID,4=FWD,5=unassigned bench), qualifier 131 gives the
+    starting slot (1-11) or 0 for bench, and qualifier 30 lists the matching
+    player ids -- same lists/order used in Scripts/formation_analysis.py.
+    Only starting appearances carry a real position code, so a player's
+    most common code across the season is taken as their position."""
+    votes = defaultdict(Counter)
+    for path in sorted(glob.glob(os.path.join(ROOT, "Events", "*.json"))):
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        for e in data.get("event", []):
+            if e.get("typeId") != LINEUP_TYPE_ID:
+                continue
+            q = qmap(e)
+            pids = (q.get(30) or "").split(", ")
+            pos = (q.get(44) or "").split(", ")
+            slots = (q.get(131) or "").split(", ")
+            if not (len(pids) == len(pos) == len(slots)):
+                continue
+            for pid, p, s in zip(pids, pos, slots):
+                if s.strip() != "0" and p.strip() in ("1", "2", "3", "4"):
+                    votes[pid][int(p)] += 1
+    return {pid: POS_MAP[c.most_common(1)[0][0]] for pid, c in votes.items()}
+
+
 # --- team names -------------------------------------------------------------
 team_names = {}
 for r in rows(os.path.join(ROOT, "xT", "xt_team_summary.csv")):
@@ -144,6 +173,8 @@ pass_xt = {}
 for r in rows(os.path.join(ROOT, "xT", "xt_action_values.csv")):
     if r["move_type"] == "pass":
         pass_xt[(r["match_file"], r["event_id"])] = num(r["xT_added"])
+
+positions = build_positions()
 
 # --- splits -------------------------------------------------------------
 ORIGIN_THIRDS = ["Defensive Third", "Middle Third", "Final Third"]
@@ -297,6 +328,7 @@ for pid, a in agg.items():
     player_info[pid] = {
         "name": (m["name"] if m else "") or a["name"],
         "team": team_names.get(contestant_id, "Unknown"),
+        "position": positions.get(pid, "Unknown"),
         "matches": m["matches"] if m else 0,
         "minutes": m["minutes"] if m else 0.0,
     }
@@ -307,11 +339,12 @@ for pid, a in agg.items():
     if a["passes"] == 0:
         continue
     info = player_info[pid]
-    name, team, matches, mins = info["name"], info["team"], info["matches"], info["minutes"]
+    name, team, position, matches, mins = info["name"], info["team"], info["position"], info["matches"], info["minutes"]
 
     record = {
         "Player": name,
         "Team": team,
+        "Position": position,
         "Matches": matches,
         "Minutes": round(mins, 1),
         "Passes": a["passes"],
@@ -371,7 +404,7 @@ for col in per90_cols:
     per90_df[f"{col}/90"] = (per90_df[col] / factor).round(3)
 
 pct_cols = ["Completion %", "Cross %", "Long Ball %"] + [f"Completion % ({cat})" for categories in (ORIGIN_THIRDS, PASS_TYPES, BODY_PARTS) for cat in categories]
-per90_keep = ["Player", "Team", "Matches", "Minutes"] + [f"{c}/90" for c in per90_cols] + pct_cols
+per90_keep = ["Player", "Team", "Position", "Matches", "Minutes"] + [f"{c}/90" for c in per90_cols] + pct_cols
 per90_df = per90_df[per90_keep].fillna(0.0)
 per90_df.sort_values("xT Added/90", ascending=False, inplace=True)
 per90_df.reset_index(drop=True, inplace=True)
@@ -396,7 +429,7 @@ body_font = Font(name="Arial")
 
 for sheet_name in SHEETS:
     ws = wb[sheet_name]
-    ws.freeze_panes = "C2"
+    ws.freeze_panes = "D2"
     for col_idx, cell in enumerate(ws[1], start=1):
         cell.font = header_font
         cell.fill = header_fill
@@ -405,7 +438,7 @@ for sheet_name in SHEETS:
         max_len = max(len(str(cell.value)), 8)
         for row_cell in ws[col_letter][1:]:
             row_cell.font = body_font
-            if isinstance(row_cell.value, (int, float)) and col_idx > 2:
+            if isinstance(row_cell.value, (int, float)) and col_idx > 3:
                 row_cell.number_format = "0.0" if abs(row_cell.value) >= 10 or row_cell.value == int(row_cell.value) else "0.000"
             max_len = max(max_len, len(str(row_cell.value)))
         ws.column_dimensions[col_letter].width = min(max_len + 2, 30)
