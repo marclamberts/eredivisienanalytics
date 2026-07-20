@@ -35,6 +35,7 @@ HEAD_QID, RIGHT_QID, LEFT_QID = 15, 20, 72
 KEY_PASS_SHOT_LINK_QID = 55  # on the shot: local eventId of the assisting pass
 LINEUP_TYPE_ID = 34
 POS_MAP = {1: "GK", 2: "DEF", 3: "MID", 4: "FWD"}
+TOUCH_EXCLUDE = {18, 19, 30, 32, 34, 37, 40, 70, 71, 90, 91}  # non-positional event types
 
 
 def rows(path):
@@ -122,19 +123,56 @@ def is_cutback(x, y, ex, ey, q):
     return is_cross_hybrid(x, y, ex, ey, q) and x >= 83 and is_wide_start(y) and ex >= 83 and 33 <= ey <= 67
 
 
+def specific_position_labels(n, group):
+    """Left-to-right role names for `n` starters ranked by average touch
+    width within `group`. Approximate (there is no official per-role tag in
+    the data) -- see build_positions() docstring."""
+    if group == "DEF":
+        table = {1: ["CB"], 2: ["LB", "RB"], 3: ["LCB", "CB3", "RCB"],
+                 4: ["LB", "LCB", "RCB", "RB"], 5: ["LWB", "LCB", "CB", "RCB", "RWB"]}
+    elif group == "MID":
+        table = {1: ["CM"], 2: ["LCM", "RCM"], 3: ["LM", "CM", "RM"],
+                 4: ["LM", "LCM", "RCM", "RM"], 5: ["LM", "LCM", "CM", "RCM", "RM"]}
+    elif group == "FWD":
+        table = {1: ["ST"], 2: ["LST", "RST"], 3: ["LW", "ST", "RW"]}
+    else:
+        table = {}
+    return table.get(n, [f"{group}{i + 1}" for i in range(n)])
+
+
 def build_positions():
-    """player_id -> GK/DEF/MID/FWD, from each match's Team Set Up event
-    (typeId 34): qualifier 44 gives each of the 23 squad slots' position code
-    (1=GK,2=DEF,3=MID,4=FWD,5=unassigned bench), qualifier 131 gives the
-    starting slot (1-11) or 0 for bench, and qualifier 30 lists the matching
-    player ids -- same lists/order used in Scripts/formation_analysis.py.
-    Only starting appearances carry a real position code, so a player's
-    most common code across the season is taken as their position."""
-    votes = defaultdict(Counter)
+    """player_id -> (position group, specific position), from each match's
+    Team Set Up event (typeId 34): qualifier 44 gives each of the 23 squad
+    slots' position code (1=GK,2=DEF,3=MID,4=FWD,5=unassigned bench),
+    qualifier 131 gives the starting slot (1-11) or 0 for bench, and
+    qualifier 30 lists the matching player ids -- same lists/order used in
+    Scripts/formation_analysis.py. Only starting appearances carry a real
+    position code, so a player's most common code across the season becomes
+    their position group (GK/DEF/MID/FWD).
+
+    The specific role (e.g. LCB, RM, ST) is not tagged anywhere in the feed,
+    so it is approximated per match: within each team's starting XI, players
+    sharing a group are ranked by their average y (pitch width) across their
+    own touches that match (TOUCH_EXCLUDE mirrors the "touches" definition in
+    PSV Season Report/Scripts/season_expansion_pitches.py), then labelled
+    left-to-right by squad-role count (e.g. 4 defenders -> LB/LCB/RCB/RB, 3
+    -> LCB/CB3/RCB, 5 in a back-five -> LWB/LCB/CB/RCB/RWB). A player's most
+    common specific label across the season's starts is taken as their
+    position."""
+    votes_group = defaultdict(Counter)
+    votes_specific = defaultdict(Counter)
     for path in sorted(glob.glob(os.path.join(ROOT, "Events", "*.json"))):
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
-        for e in data.get("event", []):
+        events = data.get("event", [])
+
+        touch_y = defaultdict(list)
+        for e in events:
+            pid, tid, y = e.get("playerId"), e.get("typeId"), e.get("y")
+            if pid and y is not None and tid not in TOUCH_EXCLUDE:
+                touch_y[pid].append(float(y))
+
+        for e in events:
             if e.get("typeId") != LINEUP_TYPE_ID:
                 continue
             q = qmap(e)
@@ -143,10 +181,28 @@ def build_positions():
             slots = (q.get(131) or "").split(", ")
             if not (len(pids) == len(pos) == len(slots)):
                 continue
+
+            by_group = defaultdict(list)
             for pid, p, s in zip(pids, pos, slots):
-                if s.strip() != "0" and p.strip() in ("1", "2", "3", "4"):
-                    votes[pid][int(p)] += 1
-    return {pid: POS_MAP[c.most_common(1)[0][0]] for pid, c in votes.items()}
+                if s.strip() == "0" or p.strip() not in ("1", "2", "3", "4"):
+                    continue
+                p = int(p)
+                votes_group[pid][p] += 1
+                if p == 1:
+                    votes_specific[pid]["GK"] += 1
+                    continue
+                avg_y = sum(touch_y[pid]) / len(touch_y[pid]) if touch_y.get(pid) else 50.0
+                by_group[POS_MAP[p]].append((pid, avg_y))
+
+            for group, players in by_group.items():
+                players.sort(key=lambda t: t[1])
+                labels = specific_position_labels(len(players), group)
+                for (pid, _), label in zip(players, labels):
+                    votes_specific[pid][label] += 1
+
+    groups = {pid: POS_MAP[c.most_common(1)[0][0]] for pid, c in votes_group.items()}
+    specific = {pid: c.most_common(1)[0][0] for pid, c in votes_specific.items()}
+    return groups, specific
 
 
 # --- team names -------------------------------------------------------------
@@ -174,7 +230,7 @@ for r in rows(os.path.join(ROOT, "xT", "xt_action_values.csv")):
     if r["move_type"] == "pass":
         pass_xt[(r["match_file"], r["event_id"])] = num(r["xT_added"])
 
-positions = build_positions()
+position_groups, positions = build_positions()
 
 # --- splits -------------------------------------------------------------
 ORIGIN_THIRDS = ["Defensive Third", "Middle Third", "Final Third"]
@@ -328,6 +384,7 @@ for pid, a in agg.items():
     player_info[pid] = {
         "name": (m["name"] if m else "") or a["name"],
         "team": team_names.get(contestant_id, "Unknown"),
+        "position_group": position_groups.get(pid, "Unknown"),
         "position": positions.get(pid, "Unknown"),
         "matches": m["matches"] if m else 0,
         "minutes": m["minutes"] if m else 0.0,
@@ -339,11 +396,14 @@ for pid, a in agg.items():
     if a["passes"] == 0:
         continue
     info = player_info[pid]
-    name, team, position, matches, mins = info["name"], info["team"], info["position"], info["matches"], info["minutes"]
+    name, team, position_group, position, matches, mins = (
+        info["name"], info["team"], info["position_group"], info["position"], info["matches"], info["minutes"]
+    )
 
     record = {
         "Player": name,
         "Team": team,
+        "Position Group": position_group,
         "Position": position,
         "Matches": matches,
         "Minutes": round(mins, 1),
@@ -404,7 +464,7 @@ for col in per90_cols:
     per90_df[f"{col}/90"] = (per90_df[col] / factor).round(3)
 
 pct_cols = ["Completion %", "Cross %", "Long Ball %"] + [f"Completion % ({cat})" for categories in (ORIGIN_THIRDS, PASS_TYPES, BODY_PARTS) for cat in categories]
-per90_keep = ["Player", "Team", "Position", "Matches", "Minutes"] + [f"{c}/90" for c in per90_cols] + pct_cols
+per90_keep = ["Player", "Team", "Position Group", "Position", "Matches", "Minutes"] + [f"{c}/90" for c in per90_cols] + pct_cols
 per90_df = per90_df[per90_keep].fillna(0.0)
 per90_df.sort_values("xT Added/90", ascending=False, inplace=True)
 per90_df.reset_index(drop=True, inplace=True)
@@ -429,7 +489,7 @@ body_font = Font(name="Arial")
 
 for sheet_name in SHEETS:
     ws = wb[sheet_name]
-    ws.freeze_panes = "D2"
+    ws.freeze_panes = "E2"
     for col_idx, cell in enumerate(ws[1], start=1):
         cell.font = header_font
         cell.fill = header_fill
@@ -438,7 +498,7 @@ for sheet_name in SHEETS:
         max_len = max(len(str(cell.value)), 8)
         for row_cell in ws[col_letter][1:]:
             row_cell.font = body_font
-            if isinstance(row_cell.value, (int, float)) and col_idx > 3:
+            if isinstance(row_cell.value, (int, float)) and col_idx > 4:
                 row_cell.number_format = "0.0" if abs(row_cell.value) >= 10 or row_cell.value == int(row_cell.value) else "0.000"
             max_len = max(max_len, len(str(row_cell.value)))
         ws.column_dimensions[col_letter].width = min(max_len + 2, 30)
