@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-07-22T14:23:27.965523",
+  "source": "/home/user/eredivisienanalytics/Events",
+  "n_attempts": 13628,
+  "method": "Expected Box Entry (xBE): HistGradientBoostingClassifier predicting P(open-play pass into the penalty box succeeds) from pre-pass trajectory features. Alternative to xA -- values the pass itself (reaching the box) rather than the receiver's shot quality. Not a zone-transition (xT) or state-value (VAEP/EPV) framework.",
+  "universe": "Open-play passes (typeId 1) starting outside the box (x<83 or y outside [21.1, 78.9]) with intended end point (qualifiers 140/141) inside the box. Excludes free kicks/corners/throw-ins (qualifiers 5, 6, 107, 160).",
+  "feature_cols": [
+    "x",
+    "y",
+    "end_x",
+    "end_y",
+    "length",
+    "angle",
+    "minute",
+    "dist_to_goal_start",
+    "dist_to_goal_end",
+    "byline_proximity",
+    "lateral_shift",
+    "is_cross",
+    "is_through_ball",
+    "is_cutback",
+    "body_part",
+    "phase",
+    "origin_channel",
+    "entry_channel",
+    "period"
+  ],
+  "qualifier_mapping": {
+    "2": "CROSS",
+    "3": "THROUGH_BALL",
+    "5": "FREEKICK_TAKEN",
+    "6": "CORNER_TAKEN",
+    "15": "HEAD",
+    "20": "RIGHT_FOOT",
+    "23": "FAST_BREAK",
+    "72": "LEFT_FOOT",
+    "107": "THROW_IN",
+    "140": "PASS_END_X",
+    "141": "PASS_END_Y",
+    "160": "THROWIN_SETPIECE",
+    "195": "PULL_BACK",
+    "212": "LENGTH_M",
+    "213": "ANGLE_RAD"
+  },
+  "held_out_evaluation": {
+    "n_test": 2759,
+    "auc": 0.8163820025340172,
+    "brier": 0.16833247717183483,
+    "log_loss": 0.5057404567216573,
+    "actual_rate": 0.3936208771293947,
+    "mean_predicted": 0.39155467217156276
+  }
+}
