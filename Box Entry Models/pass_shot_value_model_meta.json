@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-07-22T15:38:17.135861",
+  "source": "/home/user/eredivisienanalytics/Events",
+  "n_attempts": 13607,
+  "method": "Pass Shot Value (PSV): HistGradientBoostingRegressor predicting a continuous target in [0, 1] per open-play box-entry attempt -- the xG of the shot the same team takes within the next 5 events, or 0 if none. A regression companion to the xBE classifier: xBE asks 'did it arrive', PSV asks 'how much shot value did it produce'.",
+  "lookahead_events": 5,
+  "feature_cols": [
+    "x",
+    "y",
+    "end_x",
+    "end_y",
+    "length",
+    "angle",
+    "minute",
+    "dist_to_goal_start",
+    "dist_to_goal_end",
+    "byline_proximity",
+    "lateral_shift",
+    "is_cross",
+    "is_through_ball",
+    "is_cutback",
+    "body_part",
+    "phase",
+    "origin_channel",
+    "entry_channel",
+    "period"
+  ],
+  "held_out_evaluation": {
+    "n_test": 2759,
+    "r2": 0.047209258950844046,
+    "mae": 0.041375667881335974,
+    "mean_actual": 0.02899253382317481,
+    "mean_predicted": 0.02652043714548517
+  }
+}
