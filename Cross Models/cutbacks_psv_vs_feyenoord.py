@@ -165,7 +165,7 @@ def main():
     )
     components.footer(
         fig,
-        source="Opta event data, Eredivisie 2025/26",
+        source="Opta/StatsPerform, Eredivisie 2025/26",
         palette=palette,
     )
 

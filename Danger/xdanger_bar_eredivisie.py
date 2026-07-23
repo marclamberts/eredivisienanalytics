@@ -93,12 +93,12 @@ def main():
         fig,
         kicker="Danger models",
         title=f"{clean(top_team)} generate more danger than anyone else in the league",
-        dek="Total xDanger (danger_score) from all shots, all 18 teams  ·  Eredivisie 2025/26",
+        dek="Total xDanger from all shots, all 18 teams  ·  Eredivisie 2025/26",
         palette=palette,
     )
     components.footer(
         fig,
-        source="Opta event data via danger model, Eredivisie 2025/26",
+        source="Opta/StatsPerform, Eredivisie 2025/26",
         palette=palette,
     )
 

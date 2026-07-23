@@ -176,7 +176,7 @@ def main():
     note = f"Top target: {top_player[0]} ({top_player[1]})" if top_player else None
     components.footer(
         fig,
-        source="Opta event data, Eredivisie 2025/26",
+        source="Opta/StatsPerform, Eredivisie 2025/26",
         note=note,
         palette=palette,
     )
