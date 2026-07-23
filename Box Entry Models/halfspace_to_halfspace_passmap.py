@@ -114,7 +114,8 @@ def load_halfspace_switches(cid):
 
 def main():
     team_name = sys.argv[1] if len(sys.argv) > 1 else "Alkmaar Zaanstreek"
-    out_dir = Path(sys.argv[2]) if len(sys.argv) > 2 else Path(__file__).parent
+    player_filter = sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] else None
+    out_dir = Path(sys.argv[3]) if len(sys.argv) > 3 else Path(__file__).parent
 
     files = sorted(glob.glob(str(EVENTS_DIR / "*.json")))
     team_map = build_team_map(files)
@@ -125,9 +126,19 @@ def main():
     cid = team_map[match]
 
     passes = load_halfspace_switches(cid)
+    if player_filter:
+        all_players = sorted({p["player"] for p in passes})
+        matched_player = next((p for p in all_players if player_filter.lower() in p.lower()), None)
+        if matched_player is None:
+            print(f"Player '{player_filter}' not found among {match} half-space switchers. "
+                  f"Options: {all_players}")
+            sys.exit(1)
+        passes = [p for p in passes if p["player"] == matched_player]
+        player_filter = matched_player
     completed = [p for p in passes if p["completed"]]
 
-    print(f"{len(passes)} half-space to half-space pass attempts, {len(completed)} completed "
+    scope = f"{match}" + (f" / {player_filter}" if player_filter else "")
+    print(f"{scope}: {len(passes)} half-space to half-space pass attempts, {len(completed)} completed "
           f"({len(completed) / max(len(passes), 1) * 100:.1f}%).")
 
     palette, cats = style.apply("light")
@@ -170,21 +181,31 @@ def main():
     pitch.scatter([p["x1"] for p in incomplete], [p["y1"] for p in incomplete], ax=pitch_ax,
                    s=16, facecolor="none", edgecolors=palette["ink_muted"], linewidths=0.8, zorder=3)
 
-    top_player = None
-    if completed:
-        top_player = collections.Counter(p["player"] for p in completed).most_common(1)[0]
-
     team_short = NICKNAMES.get(match, match)
+
+    if player_filter:
+        kicker = f"{team_short} · {player_filter}"
+        title = f"{player_filter} completes {len(completed)} half-space switches this season"
+        note = None
+        fname_suffix = f"{team_short}_{player_filter}".lower().replace(" ", "_").replace(".", "")
+    else:
+        top_player = None
+        if completed:
+            top_player = collections.Counter(p["player"] for p in completed).most_common(1)[0]
+        kicker = team_short
+        title = f"{team_short} switch play between half-spaces {len(completed)} times this season"
+        note = f"Top passer: {top_player[0]} ({top_player[1]})" if top_player else None
+        fname_suffix = team_short.lower().replace(" ", "_")
+
     components.header(
         fig,
-        kicker=team_short,
-        title=f"{team_short} switch play between half-spaces {len(completed)} times this season",
+        kicker=kicker,
+        title=title,
         dek=f"Passes from one half-space straight into the other  ·  "
             f"{len(completed)}/{len(passes)} completed "
             f"({len(completed) / max(len(passes), 1) * 100:.0f}%)  ·  Eredivisie 2025/26",
         palette=palette,
     )
-    note = f"Top passer: {top_player[0]} ({top_player[1]})" if top_player else None
     components.footer(
         fig,
         source="Opta/StatsPerform, Eredivisie 2025/26",
@@ -192,7 +213,7 @@ def main():
         palette=palette,
     )
 
-    out_path = out_dir / f"halfspace_to_halfspace_passmap_{team_short.lower().replace(' ', '_')}.png"
+    out_path = out_dir / f"halfspace_to_halfspace_passmap_{fname_suffix}.png"
     fig.savefig(out_path, dpi=200, facecolor=palette["surface"])
     plt.close(fig)
     print("Saved:", out_path)
