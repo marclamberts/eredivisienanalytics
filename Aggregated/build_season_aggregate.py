@@ -104,6 +104,7 @@ RAW_COUNT_FIELDS = [
     # discipline
     "fouls_committed", "fouls_won", "offsides", "yellow_cards", "red_cards_straight", "red_cards_second_yellow",
     # shooting
+    "shots", "goals",
     "shots_left_foot", "goals_left_foot", "shots_right_foot", "goals_right_foot",
     "shots_head", "goals_head", "shots_inside_box", "goals_inside_box", "shots_outside_box",
     "goals_outside_box", "shot_dist_total_m",
@@ -123,14 +124,30 @@ RAW_COUNT_FIELDS = [
 ]
 
 
-MISSING_FILES = []  # populated by load() when an optional per-metric file doesn't exist for this season
+MISSING_FILES = []  # populated by load() when a per-metric file isn't available for this season
+
+# Every file load() reads (xT/, GDA/, Danger/, Disruption/CSV/, Box Entry
+# Models/, Cross Models/, Analysis/Coach Profiling/, Analysis/Formation/) is a
+# single unified path with NO season in it anywhere -- it was computed once,
+# against whichever season's Events/ existed at the time (2025-2026). For any
+# other season these files still *exist* on disk (so a plain try/except
+# FileNotFoundError would silently load them anyway) but hold the wrong
+# season's player/team ids entirely -- that's real cross-season
+# contamination, not a graceful degradation. So: only read them at all when
+# this run's SEASON is the one they were actually built from.
+NEW_METRICS_SEASON = "2025-2026"
 
 
 def load(*parts):
-    """Load a CSV this repo's other pipelines already produced. These are all
-    optional 'new metric' sources -- only built for 2025-2026 so far -- so a
-    missing file degrades gracefully (empty list, noted in MISSING_FILES)
-    rather than crashing a season that doesn't have it yet."""
+    """Load a CSV one of this repo's other pipelines produced -- all of them
+    "new metric" sources that only exist for NEW_METRICS_SEASON. Returns []
+    (and notes it in MISSING_FILES) for every other season, and also if the
+    file is simply missing on disk."""
+    if SEASON != NEW_METRICS_SEASON:
+        rel = os.path.join(*parts)
+        if rel not in MISSING_FILES:
+            MISSING_FILES.append(rel)
+        return []
     path = os.path.join(ROOT, *parts)
     try:
         with open(path, encoding="utf-8-sig", newline="") as f:
@@ -503,6 +520,9 @@ def process_raw_events(events_dir, team_name_by_cid, danger_lookup):
             elif t == 55:
                 row["offsides"] += 1
             elif t in (13, 14, 15, 16):  # shots
+                row["shots"] += 1
+                if t == 16:
+                    row["goals"] += 1
                 if Q_HEAD in q:
                     row["shots_head"] += 1
                 elif Q_LEFT_FOOT in q:
@@ -883,7 +903,7 @@ def main():
                 saves, conceded = row.get("gk_saves", 0), row.get("goals_against_on", 0)
                 row[name] = pct(saves, saves + conceded) if (saves + conceded) else ""
                 continue
-            row[name] = pct(row.get(numer, 0), row.get(denom, 0))
+            row[name] = pct(row.get(numer, 0), row.get(denom, 0)) if numer in row else ""
         row["goal_involvement"] = (row.get("goals", 0) or 0) + (row.get("assists", 0) or 0)
         row["avg_shot_distance_m"] = round(row["shot_dist_total_m"] / row["shots"], 2) if row.get("shots") else ""
         row["total_duels"] = row.get("tackles_attempted", 0) + row.get("aerial_duels", 0) + row.get("take_ons_attempted", 0)
@@ -1056,6 +1076,9 @@ def main():
     metric_cols = [c for c in player_cols if c not in ("player_id", "player_name", "team_name")]
     print(f"Wrote {len(player_rows)} players ({len(metric_cols)} metric columns) "
           f"and {len(team_rows)} teams to {OUT_DIR}")
+    if MISSING_FILES:
+        print(f"Not available for {SEASON} (needs {NEW_METRICS_SEASON}'s pipeline; columns left blank): "
+              + ", ".join(sorted(set(MISSING_FILES))))
 
 
 if __name__ == "__main__":
