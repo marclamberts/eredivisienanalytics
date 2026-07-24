@@ -180,3 +180,29 @@ apart.
 - Team `matches` differ (34 vs 35 vs 36) because of end-of-season play-off
   matches; don't compare team per-match rates without checking `matches`
   first.
+- **`style_*` columns (team table) inherit a bug from their source.** They're
+  joined straight from `Analysis/Coach Profiling/team_metrics_aggregated.csv`,
+  which is *not* recomputed here. While building `wing_play_comparison.py`
+  (below) its source, `Scripts/coach_profiling.py`, turned out to have
+  several wrong qualifier constants for this feed -- e.g. its
+  `Q_GOAL_KICK = 72` is actually "left foot" (qualifier 72, verified earlier
+  in this README), and its `Q_END_X`/`Q_END_Y` (141/140) are swapped versus
+  the verified 140=end_x/141=end_y used everywhere else in `Aggregated/`.
+  That means its "open play" filter (meant to exclude goal kicks) is
+  silently excluding something else instead, which flows into
+  `style_wing_pct`, `style_long_ball_pct`, `style_deep_circulation_pct`, and
+  `style_territory`. Not fixed here -- fixing `coach_profiling.py` itself is
+  a separate task from this season's aggregate. `wing_play_comparison.py`
+  recomputes wing play independently with the verified qualifiers rather
+  than trusting `style_wing_pct`.
+
+## Wing play comparison
+
+`wing_play_comparison.py` builds `wing_play_by_team.csv` and
+`wing_play_comparison.png`: each team's share of open-play passes from the
+wide corridors (Opta y<25 or y>75), split left vs. right *from the attacking
+team's own perspective* -- which requires correcting for the second-half end
+swap, since Opta coordinates don't flip when a team switches ends (direction
+per team per half is inferred from their average pass x, same heuristic
+Coach Profiling uses). Built fresh from `Events/2025-2026`, not a re-read of
+`style_wing_pct` -- see the caveat above for why.
