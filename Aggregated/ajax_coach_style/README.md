@@ -77,6 +77,34 @@ unchanged; only the coordinates fed into them are corrected first.
 No composite "identity score" is produced -- these are read as a profile
 across six metrics, not collapsed into one number.
 
+## Long-ball retention (`ajax_long_ball_retention.{csv,png}`)
+
+A dedicated follow-up, scoped only to Ajax's own open-play long balls
+(not long balls played against Ajax), reusing `restart_analysis.py`'s
+own retention definitions directly via import rather than redefining them --
+DPR (direct: won first contact + a teammate touches the ball again within
+3s), IPR (indirect: lost first contact but still reached "established
+possession" -- 3 consecutive Ajax touches or 5 continuous seconds -- via
+the second ball), and ERR = DPR + IPR, the headline "how often does a long
+ball end with Ajax actually holding the ball" number. `ajax_long_ball_retention.py`
+also reports FCWR (first-contact win rate) as upstream context.
+
+Cross-checked against `Aggregated/2025-2026/restart_long_ball_team.csv`'s
+whole-season Ajax row (dpr=0.2681, ipr=0.3537, err=0.6218): the volume-weighted
+average of this script's three 2025-2026 regimes (Heitinga 60.3%, Grim 61.3%,
+Garcia 65.0%) comes out to ERR=62.1%, matching that already-validated
+season total almost exactly.
+
+Findings: ERR ranges from 60% (Heitinga) to 66% (Steijn) across full
+regimes -- Ajax has never systematically lost long-ball battles under any
+coach, but the *mix* shifts a lot. Van 't Schip and Heitinga won more
+first contacts outright (DPR ~30-31%) and needed the second ball less;
+Grim and Garcia won fewer first contacts (DPR 24-27%) but scrapped back
+more second balls (IPR 37-38%), landing at a similar overall retention
+rate through a different route. Maduro's single match (DPR 19%, IPR 27%,
+ERR 46%) is shown hatched -- lowest of any regime, but n=1, not a real
+signal.
+
 ## Files
 
 - `ajax_coach_style.csv` -- one row per coaching regime.
