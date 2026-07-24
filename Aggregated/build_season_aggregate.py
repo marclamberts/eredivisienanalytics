@@ -123,10 +123,22 @@ RAW_COUNT_FIELDS = [
 ]
 
 
+MISSING_FILES = []  # populated by load() when an optional per-metric file doesn't exist for this season
+
+
 def load(*parts):
+    """Load a CSV this repo's other pipelines already produced. These are all
+    optional 'new metric' sources -- only built for 2025-2026 so far -- so a
+    missing file degrades gracefully (empty list, noted in MISSING_FILES)
+    rather than crashing a season that doesn't have it yet."""
     path = os.path.join(ROOT, *parts)
-    with open(path, encoding="utf-8-sig", newline="") as f:
-        return list(csv.DictReader(f))
+    try:
+        with open(path, encoding="utf-8-sig", newline="") as f:
+            return list(csv.DictReader(f))
+    except FileNotFoundError:
+        rel = os.path.join(*parts)
+        MISSING_FILES.append(rel)
+        return []
 
 
 def num(v, default=0.0):
@@ -207,19 +219,104 @@ def event_time(e):
     return e["timeMin"] * 60 + e["timeSec"]
 
 
+def derive_team_name_by_cid(events_dir):
+    """contestantId -> team name, built directly from Events/<season> (no
+    dependency on xT/xt_team_summary.csv, which only exists for 2025-2026).
+
+    contestantId is an opaque hash with no name attached anywhere in the
+    feed; the only names are in each match filename ("Home - Away.json").
+    Resolve which contestantId is home vs. away per match by comparing goal
+    counts (typeId 16) against matchDetails' actual final score -- skipping
+    draws and any match where goals don't reconcile -- then take each
+    contestantId's majority-vote name across the whole season. Validated
+    against 2025-2026's known xT mapping: 18/18 correct from ~1 dozen
+    decisive matches per team; a full season gives far more than that.
+    """
+    votes = {}
+    for path in sorted(glob.glob(os.path.join(events_dir, "*.json"))):
+        raw = json.load(open(path, encoding="utf-8"))
+        stem = os.path.basename(path)[:-5]
+        _, fixture = stem.split("_", 1)
+        home, away = fixture.split(" - ", 1)
+        scores = raw.get("matchDetails", {}).get("scores", {})
+        ft = scores.get("total", scores.get("ft", {}))
+        h, a = ft.get("home"), ft.get("away")
+        if h is None or a is None or h == a:
+            continue
+        h, a = int(h), int(a)
+        events = raw.get("event", [])
+        all_cids = {e.get("contestantId") for e in events if e.get("contestantId")}
+        if len(all_cids) != 2:
+            continue
+        c1, c2 = tuple(all_cids)
+        goals = {}
+        for e in events:
+            if e.get("typeId") == 16:
+                goals[e["contestantId"]] = goals.get(e["contestantId"], 0) + 1
+        g1, g2 = goals.get(c1, 0), goals.get(c2, 0)
+        if g1 == h and g2 == a:
+            pair = ((c1, home), (c2, away))
+        elif g1 == a and g2 == h:
+            pair = ((c1, away), (c2, home))
+        else:
+            continue  # goals don't reconcile with the scoreline (e.g. own goals); skip
+        for cid, name in pair:
+            votes.setdefault(cid, {}).setdefault(name, 0)
+            votes[cid][name] += 1
+    return {cid: max(names.items(), key=lambda kv: kv[1])[0] for cid, names in votes.items()}
+
+
+def compute_match_minutes(events, match_length_min):
+    """Per-player minutes played in one match, from substitution (typeId 18
+    off / 19 on) and red-card (typeId 17, qualifier 32/33) events -- the
+    same stint concept GDA/gda_model_meta.json describes, computed directly
+    here so minutes don't depend on GDA's own (2025-2026-only) output."""
+    subbed_on, subbed_off, sent_off, seen = {}, {}, {}, set()
+    for e in events:
+        pid = e.get("playerId")
+        if not pid:
+            continue
+        t = e["typeId"]
+        tmin = event_time(e) / 60.0
+        if t in (1, 3, 4, 7, 8, 12, 13, 14, 15, 16, 17, 18, 19, 44, 49, 50, 61):
+            seen.add(pid)
+        if t == 19:
+            subbed_on[pid] = tmin
+        elif t == 18:
+            subbed_off[pid] = tmin
+        elif t == 17:
+            q = qmap(e)
+            if Q_SECOND_YELLOW in q or Q_RED in q:
+                sent_off[pid] = tmin
+    minutes = {}
+    for pid in seen:
+        start = subbed_on.get(pid, 0.0)
+        end = subbed_off.get(pid, match_length_min)
+        if pid in sent_off:
+            end = min(end, sent_off[pid])
+        if end > start:
+            minutes[pid] = end - start
+    return minutes
+
+
 def new_counter():
     return {f: 0 for f in RAW_COUNT_FIELDS}
 
 
-def process_raw_events(events_dir, team_name_by_cid, danger_by_match):
+def process_raw_events(events_dir, team_name_by_cid, danger_lookup):
     """One pass over every match file: league table, per-match possession
-    share, and every Wyscout-style player count listed in RAW_COUNT_FIELDS."""
+    share, self-computed minutes/matches, and every Wyscout-style player
+    count listed in RAW_COUNT_FIELDS."""
     league = {}
     player_counts = {}
     team_match_passes = {}  # team_name -> list of (own_pass_attempts, opp_pass_attempts) per match
 
     def acc_for(pid, pname, team):
-        return player_counts.setdefault(pid, {"player_name": pname, "team_name": team, **new_counter()})
+        row = player_counts.setdefault(pid, {"player_name": pname, "team_name": team,
+                                              "minutes": 0.0, "matches": 0, **new_counter()})
+        if pname and not row["player_name"]:
+            row["player_name"] = pname
+        return row
 
     for path in sorted(glob.glob(os.path.join(events_dir, "*.json"))):
         raw = json.load(open(path, encoding="utf-8"))
@@ -227,6 +324,8 @@ def process_raw_events(events_dir, team_name_by_cid, danger_by_match):
         stem = fn[:-5]
         _, fixture = stem.split("_", 1)
         home, away = fixture.split(" - ", 1)
+        match_length_min = raw.get("matchDetails", {}).get("matchLengthMin", 90) + \
+            raw.get("matchDetails", {}).get("matchLengthSec", 0) / 60.0
         scores = raw.get("matchDetails", {}).get("scores", {})
         ft = scores.get("total", scores.get("ft", {}))
         h, a = ft.get("home"), ft.get("away")
@@ -247,6 +346,19 @@ def process_raw_events(events_dir, team_name_by_cid, danger_by_match):
 
         events = raw.get("event", [])
 
+        match_minutes = compute_match_minutes(events, match_length_min)
+        player_info_this_match = {}
+        for e in events:
+            pid = e.get("playerId")
+            if pid and pid not in player_info_this_match:
+                team = team_name_by_cid.get(e.get("contestantId"), e.get("contestantId"))
+                player_info_this_match[pid] = (e.get("playerName", ""), team)
+        for pid, mins in match_minutes.items():
+            pname, team = player_info_this_match.get(pid, ("", ""))
+            row = acc_for(pid, pname, team)
+            row["minutes"] += mins
+            row["matches"] += 1
+
         # per-match pass counts by contestantId, for a season-average possession proxy
         match_pass_counts = {}
         for e in events:
@@ -263,7 +375,7 @@ def process_raw_events(events_dir, team_name_by_cid, danger_by_match):
 
         last_action = {}  # pid -> (x, y, time_s) end point of their last ball-action, for carry detection
 
-        for e in events:
+        for idx, e in enumerate(events):
             pid = e.get("playerId")
             if not pid:
                 continue
@@ -422,6 +534,60 @@ def process_raw_events(events_dir, team_name_by_cid, danger_by_match):
                     row[f"shots_{half}"] += 1
                 if t == 16:
                     row[f"goals_{'home' if is_home else 'away'}"] += 1
+
+                # key pass / assist / xA / SCA / GCA: anchored on this shot
+                # (detected directly from typeId, not from the Danger CSV --
+                # only the xG value itself, when available, comes from there)
+                is_goal = t == 16
+                shot_xg = danger_lookup.get((fn, str(e.get("id"))), 0.0)
+                for e2 in reversed(events[max(0, idx - 4):idx]):
+                    if e2.get("contestantId") == cid and e2.get("typeId") == 1 and \
+                            e2.get("outcome") == 1 and e2.get("playerId"):
+                        row2 = acc_for(e2["playerId"], e2.get("playerName", ""), team)
+                        row2["key_passes"] += 1
+                        row2["xa"] += shot_xg
+                        half2 = "1h" if e2.get("periodId") == 1 else ("2h" if e2.get("periodId") == 2 else None)
+                        if half2:
+                            row2[f"key_passes_{half2}"] += 1
+                        row2[f"key_passes_{'home' if is_home else 'away'}"] += 1
+                        if is_goal:
+                            row2["assists"] += 1
+
+                        eq = qmap(e2)
+                        if Q_PULL_BACK in eq:
+                            dtype = "cutback"
+                        elif Q_CROSS in eq:
+                            dtype = "cross"
+                        elif Q_THROUGH_BALL in eq:
+                            dtype = "through_ball"
+                        elif Q_FREE_KICK in eq or Q_CORNER in eq:
+                            dtype = "set_piece"
+                        else:
+                            dtype = "open_play"
+                        row2[f"key_passes_{dtype}"] += 1
+                        row2[f"xa_{dtype}"] += shot_xg
+                        if is_goal:
+                            row2[f"assists_{dtype}"] += 1
+                        break
+
+                credited = set()
+                for e2 in reversed(events[max(0, idx - 6):idx]):
+                    if len(credited) >= 2:
+                        break
+                    if e2.get("contestantId") != cid or not e2.get("playerId"):
+                        continue
+                    counts_as_action = (
+                        (e2.get("typeId") == 1 and e2.get("outcome") == 1) or
+                        (e2.get("typeId") == 3 and e2.get("outcome") == 1) or
+                        (e2.get("typeId") == 4 and e2.get("outcome") == 1)  # foul won
+                    )
+                    if not counts_as_action or e2["playerId"] in credited:
+                        continue
+                    credited.add(e2["playerId"])
+                    row2 = acc_for(e2["playerId"], e2.get("playerName", ""), team)
+                    row2["shot_creating_actions"] += 1
+                    if is_goal:
+                        row2["goal_creating_actions"] += 1
             elif t == 10:
                 row["gk_saves"] += 1
             elif t == 11:
@@ -493,64 +659,6 @@ def process_raw_events(events_dir, team_name_by_cid, danger_by_match):
                         recv["progressive_passes_received"] += 1
                 break
 
-        # key passes / assists / xA / shot-creating & goal-creating actions:
-        # walk back from each shot through up to 4 events for the immediate
-        # assist (completed same-team pass -> key pass/assist/xA, matching
-        # netlify-app/generate_data.py), and up to 2 *player-changing* prior
-        # actions (pass/take-on/foul-won) by the shooting team for SCA/GCA.
-        for sr in danger_by_match.get(fn, []):
-            idx = int(num(sr["event_index"]))
-            cid = sr["contestant_id"]
-            is_goal = num(sr["is_goal"]) == 1
-
-            for e in reversed(events[max(0, idx - 4):idx]):
-                if e.get("contestantId") == cid and e.get("typeId") == 1 and e.get("outcome") == 1 and e.get("playerId"):
-                    row = acc_for(e["playerId"], e.get("playerName", ""), team_name_by_cid.get(cid, cid))
-                    row["key_passes"] += 1
-                    row["xa"] += num(sr["xg"])
-                    half = "1h" if e.get("periodId") == 1 else ("2h" if e.get("periodId") == 2 else None)
-                    if half:
-                        row[f"key_passes_{half}"] += 1
-                    row[f"key_passes_{'home' if team_name_by_cid.get(cid, cid) == home else 'away'}"] += 1
-                    if is_goal:
-                        row["assists"] += 1
-
-                    eq = qmap(e)
-                    if Q_PULL_BACK in eq:
-                        dtype = "cutback"
-                    elif Q_CROSS in eq:
-                        dtype = "cross"
-                    elif Q_THROUGH_BALL in eq:
-                        dtype = "through_ball"
-                    elif Q_FREE_KICK in eq or Q_CORNER in eq:
-                        dtype = "set_piece"
-                    else:
-                        dtype = "open_play"
-                    row[f"key_passes_{dtype}"] += 1
-                    row[f"xa_{dtype}"] += num(sr["xg"])
-                    if is_goal:
-                        row[f"assists_{dtype}"] += 1
-                    break
-
-            credited = set()
-            for e in reversed(events[max(0, idx - 6):idx]):
-                if len(credited) >= 2:
-                    break
-                if e.get("contestantId") != cid or not e.get("playerId"):
-                    continue
-                counts_as_action = (
-                    (e.get("typeId") == 1 and e.get("outcome") == 1) or
-                    (e.get("typeId") == 3 and e.get("outcome") == 1) or
-                    (e.get("typeId") == 4 and e.get("outcome") == 1)  # foul won
-                )
-                if not counts_as_action or e["playerId"] in credited:
-                    continue
-                credited.add(e["playerId"])
-                row = acc_for(e["playerId"], e.get("playerName", ""), team_name_by_cid.get(cid, cid))
-                row["shot_creating_actions"] += 1
-                if is_goal:
-                    row["goal_creating_actions"] += 1
-
     for c in league.values():
         c["goal_diff"] = c["goals_for"] - c["goals_against"]
         c["points"] = c["wins"] * 3 + c["draws"]
@@ -567,16 +675,15 @@ def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     events_dir = os.path.join(ROOT, "Events", SEASON)
 
-    xt_team_rows = load("xT", "xt_team_summary.csv")
-    team_name_by_cid = {r["contestant_id"]: r["team_name"] for r in xt_team_rows}
+    print(f"Resolving team identities for {SEASON} from Events (goal-count vs. scoreline vote)...")
+    team_name_by_cid = derive_team_name_by_cid(events_dir)
 
-    danger_rows = load("Danger", "all_eredivisie_danger_models.csv")
-    danger_by_match = {}
-    for r in danger_rows:
-        danger_by_match.setdefault(r["match_file"], []).append(r)
+    xt_team_rows = load("xT", "xt_team_summary.csv")     # 2025-2026 only; [] otherwise
+    danger_rows = load("Danger", "all_eredivisie_danger_models.csv")  # 2025-2026 only; [] otherwise
+    danger_lookup = {(r["match_file"], r["event_id"]): num(r["xg"]) for r in danger_rows}
 
     print("Parsing raw events for the full Wyscout-style stat sheet (this takes a minute)...")
-    league_table, raw_counts, team_possession = process_raw_events(events_dir, team_name_by_cid, danger_by_match)
+    league_table, raw_counts, team_possession = process_raw_events(events_dir, team_name_by_cid, danger_lookup)
 
     # possession-adjusted defensive stats: teams that see less of the ball make
     # more raw defensive actions just by virtue of facing more opposition
@@ -597,6 +704,8 @@ def main():
     for pid, r in raw_counts.items():
         row = get_row(pid, r["player_name"], r["team_name"])
         row.update({f: r[f] for f in RAW_COUNT_FIELDS})
+        row["minutes"] = round(r["minutes"], 1)
+        row["matches"] = r["matches"]
 
     for r in load("GDA", "gda_player_summary.csv"):
         team = team_name_by_cid.get(r["contestant_id"], r["contestant_id"])

@@ -65,9 +65,12 @@ DEFINITIONS WORTH KNOWING BEFORE YOU USE A COLUMN
   already relies on for its own carry detection -- expect it to undercount
   or overcount in individual matches.
 - Key pass / Assist / xA: for every shot, walk back up to 4 events for the
-  nearest completed same-team pass (same convention netlify-app/
-  generate_data.py already used). xA sums the shot's own xG onto the
-  passer regardless of outcome; Assists only count shots that scored.
+  nearest completed same-team pass. xA sums the shot's own xG onto the
+  passer regardless of outcome; Assists only count shots that scored. A bug
+  in the original version (locating each shot via the Danger CSV's own
+  event_index, which turns out not to match its true position in the event
+  list) was found and fixed while making this pipeline season-portable --
+  see README.md for the details.
 - By delivery type (Cutback/Cross/Through Ball/Set Piece/Open Play on the
   Creativity tab): the same qualifying pass is classified by what it was
   (pull-back, cross, through ball, free-kick/corner, else open play), so

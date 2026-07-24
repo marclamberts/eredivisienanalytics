@@ -108,6 +108,19 @@ offside" in a normal stats sheet.
   the nearest completed same-team pass (same convention already used by
   `netlify-app/generate_data.py`). `xa` sums the shot's own xG onto the
   passer regardless of outcome; `assists` only counts shots that scored.
+  **Bug found and fixed while making this script season-portable**: the
+  original version (like `netlify-app/generate_data.py`) located the shot
+  inside its match's event list using the Danger CSV's own `event_index`
+  column -- which turns out *not* to be the event's true position in
+  `Events/<season>` (confirmed by matching `event_id`; the two numbers
+  diverge, e.g. 67 vs. the true 112 for one sampled shot, and the "4 events
+  before" window at the wrong index landed on action from a different part
+  of the match entirely). This build now locates each shot directly by its
+  real position while scanning events -- no dependency on Danger's index at
+  all -- so `key_passes`/`assists`/`xa`/`shot_creating_actions`/
+  `goal_creating_actions` are all recomputed correctly here. Only the `xG`
+  *value* itself (needed for `xa`, not for the counts) still comes from the
+  Danger CSV where available, matched by `event_id` this time.
 - **By delivery type** (`_cutback`, `_cross`, `_through_ball`, `_set_piece`,
   `_open_play` suffixes on `key_passes`/`assists`/`xa`): the same qualifying
   pass is classified by what it was -- pull-back (qualifier 195), cross
