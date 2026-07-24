@@ -142,3 +142,14 @@ Second-ball win rate off own long balls sits in a fairly narrow band across
 all six (28-35%), with NEC recovering second balls most often (35%, 670 of
 1908) and PSV/Ajax least often (28%). Needs `mplsoccer` (added to
 `requirements.txt`).
+
+## Second-ball recovery flow map (`second_ball_pass_map.py`)
+
+Same six teams, same season, same `second_ball_recovered` cut as
+`second_ball_pitch_map.py`, but rendered as the long ball itself (start
+point -> landing spot) rather than a single recovery dot. Plotting all
+400-670 individual arrows per team was tried first and was unreadable
+overplotted solid spaghetti -- replaced with mplsoccer's own binned flow-map
+tool (`Pitch.bin_statistic` + `Pitch.heatmap` + `Pitch.flow`, 6x4 zones):
+shading shows landing-zone density, arrows show the average direction long
+balls into that zone travelled. Output: `second_ball_pass_map.png`.
