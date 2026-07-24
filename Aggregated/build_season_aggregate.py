@@ -62,6 +62,7 @@ Q_LONG_BALL, Q_CROSS, Q_THROUGH_BALL, Q_FREE_KICK, Q_CORNER = 1, 2, 3, 5, 6
 Q_HEAD, Q_RIGHT_FOOT, Q_LEFT_FOOT, Q_THROW_IN = 15, 20, 72, 107
 Q_END_X, Q_END_Y = 140, 141
 Q_YELLOW, Q_SECOND_YELLOW, Q_RED = 31, 32, 33
+Q_PULL_BACK = 195
 
 BALL_ACTION_TYPES = {1, 3, 13, 14, 15, 16, 61}   # pass/take-on/shot/ball-touch: carry chain can run through these
 DEAD_BALL_QUALIFIERS = {Q_FREE_KICK, Q_CORNER, Q_THROW_IN}
@@ -83,6 +84,11 @@ RAW_COUNT_FIELDS = [
     "passes_received", "progressive_passes_received",
     # creativity
     "key_passes", "assists", "xa", "shot_creating_actions", "goal_creating_actions",
+    "key_passes_cutback", "assists_cutback", "xa_cutback",
+    "key_passes_cross", "assists_cross", "xa_cross",
+    "key_passes_through_ball", "assists_through_ball", "xa_through_ball",
+    "key_passes_set_piece", "assists_set_piece", "xa_set_piece",
+    "key_passes_open_play", "assists_open_play", "xa_open_play",
     # carries
     "carries_computed", "carry_distance_m", "progressive_carries", "carries_into_final_third",
     "carries_into_box",
@@ -508,6 +514,22 @@ def process_raw_events(events_dir, team_name_by_cid, danger_by_match):
                     row[f"key_passes_{'home' if team_name_by_cid.get(cid, cid) == home else 'away'}"] += 1
                     if is_goal:
                         row["assists"] += 1
+
+                    eq = qmap(e)
+                    if Q_PULL_BACK in eq:
+                        dtype = "cutback"
+                    elif Q_CROSS in eq:
+                        dtype = "cross"
+                    elif Q_THROUGH_BALL in eq:
+                        dtype = "through_ball"
+                    elif Q_FREE_KICK in eq or Q_CORNER in eq:
+                        dtype = "set_piece"
+                    else:
+                        dtype = "open_play"
+                    row[f"key_passes_{dtype}"] += 1
+                    row[f"xa_{dtype}"] += num(sr["xg"])
+                    if is_goal:
+                        row[f"assists_{dtype}"] += 1
                     break
 
             credited = set()

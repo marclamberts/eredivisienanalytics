@@ -15,6 +15,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from column_layout import categorize, PLAYER_TAB_RULES, TEAM_TAB_RULES
+from display_names import display_name
 
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
@@ -43,6 +44,10 @@ across tabs by category. Two different origins feed the same row:
     model outputs (xT/, GDA/, Disruption/CSV/, Box Entry Models/,
     Cross Models/), not recomputed here.
 
+Row 1 on every tab is a concise display name (e.g. "PAdj Tackles /90");
+row 2 (small, grey) is the exact snake_case CSV column it maps to, in case
+a formula needs the unambiguous name. See display_names.py for the mapping.
+
 DEFINITIONS WORTH KNOWING BEFORE YOU USE A COLUMN
 - Progressive pass/carry: cuts the distance to the opponent's goal by at
   least 30 yards if both ends are in the player's own half, 15 yards if it
@@ -63,6 +68,11 @@ DEFINITIONS WORTH KNOWING BEFORE YOU USE A COLUMN
   nearest completed same-team pass (same convention netlify-app/
   generate_data.py already used). xA sums the shot's own xG onto the
   passer regardless of outcome; Assists only count shots that scored.
+- By delivery type (Cutback/Cross/Through Ball/Set Piece/Open Play on the
+  Creativity tab): the same qualifying pass is classified by what it was
+  (pull-back, cross, through ball, free-kick/corner, else open play), so
+  "who creates from cutbacks" and "who creates from open play" don't blend
+  into one number. The five buckets sum exactly to the unbroken total.
 - Shot-Creating Actions (SCA) / Goal-Creating Actions (GCA): up to the 2
   most recent successful actions (completed pass, successful take-on, or
   a foul won) by the shooting team before a shot/goal, credited to up to 2
@@ -123,21 +133,32 @@ def autosize(ws, max_width=28):
         ws.column_dimensions[get_column_letter(i)].width = max(width, 8)
 
 
-def write_sheet(wb, title, headers, rows, identity_count):
+RAW_NAME_FONT = Font(color="9AA5B1", italic=True, size=8)
+
+
+def write_sheet(wb, title, raw_headers, rows, identity_count):
+    """Row 1 = concise display name (bold). Row 2 = the exact snake_case CSV
+    column name (small, grey) so a formula or a question about "which raw
+    field is this" always has an answer without leaving the tab."""
     title = title[:MAX_SHEET_NAME]
     ws = wb.create_sheet(title)
-    ws.append(headers)
+    ws.append([display_name(c) for c in raw_headers])
+    ws.append(raw_headers)
     for cell in ws[1]:
         cell.fill = HEADER_FILL
         cell.font = HEADER_FONT
+        cell.alignment = Alignment(horizontal="center", wrap_text=True)
+    for cell in ws[2]:
+        cell.font = RAW_NAME_FONT
         cell.alignment = Alignment(horizontal="center")
     for row in rows:
         ws.append(row)
     if identity_count:
         for r in range(1, ws.max_row + 1):
             for c in range(1, identity_count + 1):
-                ws.cell(row=r, column=c).fill = IDENTITY_FILL if r > 1 else HEADER_FILL
-    ws.freeze_panes = get_column_letter(identity_count + 1) + "2"
+                ws.cell(row=r, column=c).fill = IDENTITY_FILL if r > 2 else HEADER_FILL
+    ws.freeze_panes = get_column_letter(identity_count + 1) + "3"
+    ws.row_dimensions[1].height = 30
     autosize(ws)
     return ws
 

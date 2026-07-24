@@ -1,13 +1,29 @@
 # Season 2025-2026 aggregated data
 
-Three files, all built from the same numbers by `../build_season_aggregate.py`
-and `../build_workbook.py`:
+Five files, all built from the same numbers:
 
-- `player_season_aggregated.csv` -- 553 players x 363 metric columns, flat.
-- `team_season_aggregated.csv` -- 18 teams, flat.
+- `player_season_aggregated.csv` -- 553 players x 393 metric columns, flat,
+  exact snake_case names. Built by `../build_season_aggregate.py`.
+- `team_season_aggregated.csv` -- 18 teams, flat. Same script.
 - `eredivisie_2025-2026_aggregated.xlsx` -- the same numbers split across 13
   player tabs + 4 team tabs + a Glossary tab (below), so nobody has to scroll
-  a 363-column sheet to find "tackles."
+  a 393-column sheet to find "tackles." Built by `../build_workbook.py`.
+- `eredivisie_2025-2026_explore.ipynb` -- a short exploratory notebook
+  (leaderboards + 4 Meridian-house-style charts, including the xA-by-
+  delivery-type breakdown). Built by `../build_notebook.py`, executed with
+  `jupyter nbconvert --execute`.
+
+## Concise names vs. exact names
+
+The CSVs keep exact, unambiguous snake_case column names (`padj_tackles_
+attempted_per90_z`) -- that's what any script, formula, or the
+`column_layout.py` category rules key off. The **xlsx and notebook** relabel
+every column through `../display_names.py` for reading (`PAdj Tackles /90
+(Z)`): row 1 of every xlsx tab is the concise label, row 2 (small, grey) is
+the exact CSV column name it maps to, so a formula referencing a specific
+field always has an unambiguous answer without leaving the tab. Run
+`python3 display_names.py <csv path>` to print every column's exact name
+next to its display label (also flags any accidental collisions).
 
 Full season: 309 matches, 2025-08-08 to 2026-05-24. A few teams show 35-36
 matches instead of 34 because of the Eredivisie's end-of-season European-
@@ -92,6 +108,14 @@ offside" in a normal stats sheet.
   the nearest completed same-team pass (same convention already used by
   `netlify-app/generate_data.py`). `xa` sums the shot's own xG onto the
   passer regardless of outcome; `assists` only counts shots that scored.
+- **By delivery type** (`_cutback`, `_cross`, `_through_ball`, `_set_piece`,
+  `_open_play` suffixes on `key_passes`/`assists`/`xa`): the same qualifying
+  pass is classified by what it was -- pull-back (qualifier 195), cross
+  (qualifier 2), through ball (qualifier 3), free-kick/corner (qualifier 5
+  or 6), else open play -- so "who creates from cutbacks" and "who creates
+  from open play" don't get blended into one number. The five buckets sum
+  exactly to the unbroken `key_passes`/`assists`/`xa` total (checked, not
+  assumed).
 - **Shot-Creating Actions (SCA) / Goal-Creating Actions (GCA)**: up to the 2
   most recent successful actions (completed pass, successful take-on, or a
   won foul) by the shooting team before a shot/goal, credited to up to 2

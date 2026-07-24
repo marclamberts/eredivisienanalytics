@@ -42,12 +42,10 @@ PLAYER_TAB_RULES = [
 
     ("Discipline", lambda c: c.startswith(("fouls_", "yellow_card", "red_card")) or c.startswith("offside")),
 
-    ("Creativity", lambda c: c in (
-        "key_passes", "key_passes_per90", "assists", "assists_per90", "xa", "xa_per90",
-        "shot_creating_actions", "shot_creating_actions_per90",
-        "goal_creating_actions", "goal_creating_actions_per90",
-        "passes_received", "passes_received_per90",
-        "progressive_passes_received", "progressive_passes_received_per90",
+    ("Creativity", lambda c: (
+        c.startswith(("key_passes", "assists", "xa_", "xa_per90", "shot_creating_actions",
+                       "goal_creating_actions", "passes_received", "progressive_passes_received"))
+        or c in ("xa", "xa_per90")
     )),
 
     ("Progression (raw)", lambda c: (
