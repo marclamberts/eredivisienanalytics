@@ -68,6 +68,12 @@ PENALTY_XG = 0.79                        # fixed, ~league-average penalty conver
 DELIVERIES = ["corner", "freekick", "cross"]
 DELIVERY_LABELS = {"corner": "Corners", "freekick": "Attacking free kicks",
                     "cross": "Open-play crosses (attacking third)"}
+# Fixed, distinct color per line (not the usual single-accent/muted-rest
+# treatment) -- the point of this chart is telling all three series apart
+# at a glance. Accent (terracotta) still marks corners, the series the
+# analysis started from; the other two get their own categorical hues
+# rather than collapsing to one shared gray.
+DELIVERY_COLOR_SLOT = {"corner": "accent", "freekick": 0, "cross": 2}
 
 
 def qids(e):
@@ -232,17 +238,21 @@ def make_plot(results, out_path):
     x = list(range(len(SEASONS)))
     labels = [SEASON_LABELS[s] for s in SEASONS]
 
-    # Largest overall % change is the finding -> gets the accent.
+    # Largest overall % change is the finding -> drives the headline (color
+    # is fixed per delivery type below, independent of which one leads).
     changes = {k: (results[k][-1] / results[k][0] - 1) if results[k][0] else 0 for k in DELIVERIES}
     lead = max(changes, key=lambda k: abs(changes[k]))
-    accent_idx = DELIVERIES.index(lead)
+
+    line_colors = {}
+    for k in DELIVERIES:
+        slot = DELIVERY_COLOR_SLOT[k]
+        color = palette["accent"] if slot == "accent" else cats[slot]
+        line_colors[k] = color
+        ax.plot(x, results[k], marker="o", linewidth=2.4, color=color,
+                label=DELIVERY_LABELS[k], zorder=3)
 
     for k in DELIVERIES:
-        ax.plot(x, results[k], marker="o", linewidth=2.2, label=DELIVERY_LABELS[k], zorder=3)
-    components.highlight_lines(ax, accent_index=accent_idx, palette=palette)
-
-    for k in DELIVERIES:
-        color = palette["accent"] if k == lead else palette["ink_muted"]
+        color = line_colors[k]
         for xi, yi in zip(x, results[k]):
             ax.annotate(f"{yi:.3f}", (xi, yi), textcoords="offset points", xytext=(0, 9),
                         ha="center", fontsize=8.5, color=color,
