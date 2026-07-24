@@ -144,6 +144,45 @@ def team_directions(events, team_of_cid):
     return {k: (1 if statistics.fmean(v) < 50 else -1) for k, v in buckets.items()}
 
 
+def goal_kick_directions(events, team_of_cid):
+    """Same {(team, period): 1 or -1} shape as team_directions(), but pinned
+    to goal-kick location instead of average pass x.
+
+    team_directions()'s avg-pass-x heuristic silently breaks for a
+    territorially dominant team/period: their own average pass position can
+    drift to >=50 even while they're still attacking the same end they
+    always were, since it only takes one lopsided, heavily-favoured half to
+    pull the mean past the threshold. Caught this via a second_ball-to-shot
+    pitch map where roughly half of one team's plotted shots landed at
+    their OWN goal -- e.g. Feyenoord, 2025-10-05 vs FC Utrecht, period 1:
+    avg pass x = 51.6 (barely over 50, flips the heuristic to "attacks
+    toward lower x"), while their own goal kick that half was taken at
+    x=5.3 -- i.e. their goal is at the LOW end, so they demonstrably attack
+    toward higher x. A goal kick is always struck right next to the
+    kicking team's own goal regardless of how the run of play went, so it
+    can't be skewed by territorial dominance the way a pass average can.
+    Falls back to team_directions() for any (team, period) with no
+    recorded goal kick (rare, but not impossible)."""
+    fallback = team_directions(events, team_of_cid)
+    buckets = {}
+    for e in events:
+        if e.get("typeId") != 1 or not e.get("contestantId"):
+            continue
+        if Q_GOAL_KICK not in qmap(e):
+            continue
+        period = e.get("periodId")
+        if period not in (1, 2):
+            continue
+        team = team_of_cid.get(e["contestantId"])
+        if team is None:
+            continue
+        buckets.setdefault((team, period), []).append(e["x"])
+    directions = dict(fallback)
+    for key, xs in buckets.items():
+        directions[key] = 1 if statistics.fmean(xs) < 50 else -1
+    return directions
+
+
 def norm_x(x, team, period, directions):
     d = directions.get((team, period), 1)
     return x if d == 1 else 100 - x

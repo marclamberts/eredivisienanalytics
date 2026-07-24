@@ -39,7 +39,7 @@ sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.join(ROOT, "Aggregated"))
 from housestyle import style, components  # noqa: E402
 from restart_analysis import (  # noqa: E402
-    team_directions, find_restarts, walk_forward, walk_backward, analyse_restart,
+    goal_kick_directions, find_restarts, walk_forward, walk_backward, analyse_restart,
 )
 
 TEAMS = ["Feyenoord Rotterdam", "PSV Eindhoven", "AFC Ajax", "FC Twente",
@@ -76,7 +76,7 @@ def main():
         opp_of_team = {names[0]: names[1], names[1]: names[0]}
         team_of_cid = match_teams
 
-        directions = team_directions(events, team_of_cid)
+        directions = goal_kick_directions(events, team_of_cid)
         restarts = [r for r in find_restarts(events, team_of_cid, opp_of_team, directions)
                     if r.kind == "long_ball" and r.team in TEAMS]
 

@@ -9,11 +9,15 @@ ajax_coach_style/ (which also counts possession re-established a few
 touches later as "indirect retention"). Here we only plot the exact
 recovery event location for the strict second-ball case.
 
-Attack direction is normalised per team per half (same avg-x heuristic used
-throughout Aggregated/) with a full 180-degree rotation of (x, y) -- not
-just an x-flip -- so every team's own left/right sense is preserved while
-everyone attacks the same way on the shared pitch grid, and the six panels
-are directly comparable.
+Attack direction is normalised per team per half using goal_kick_directions()
+(pinned to each team's own goal-kick location, not average pass x -- see
+that function's docstring in restart_analysis.py for why: the avg-pass-x
+heuristic used elsewhere in Aggregated/ flips incorrectly for roughly a
+quarter of team-periods when a team's territorial dominance in a given
+half pulls their own average pass position past x=50) with a full
+180-degree rotation of (x, y) -- not just an x-flip -- so every team's own
+left/right sense is preserved while everyone attacks the same way on the
+shared pitch grid, and the six panels are directly comparable.
 
 Season: 2025-2026 only (xT/xt_team_summary.csv's team-name-by-contestantId
 lookup, reused from wing_play_comparison.py etc., is only built for that
@@ -39,7 +43,7 @@ sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.join(ROOT, "Aggregated"))
 from housestyle import style, components  # noqa: E402
 from restart_analysis import (  # noqa: E402
-    team_directions, find_restarts, walk_forward, walk_backward, analyse_restart,
+    goal_kick_directions, find_restarts, walk_forward, walk_backward, analyse_restart,
 )
 
 TEAMS = ["Feyenoord Rotterdam", "PSV Eindhoven", "AFC Ajax", "FC Twente",
@@ -76,7 +80,7 @@ def main():
         opp_of_team = {names[0]: names[1], names[1]: names[0]}
         team_of_cid = match_teams
 
-        directions = team_directions(events, team_of_cid)
+        directions = goal_kick_directions(events, team_of_cid)
         restarts = [r for r in find_restarts(events, team_of_cid, opp_of_team, directions)
                     if r.kind == "long_ball" and r.team in TEAMS]
 

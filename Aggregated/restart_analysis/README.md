@@ -153,3 +153,68 @@ overplotted solid spaghetti -- replaced with mplsoccer's own binned flow-map
 tool (`Pitch.bin_statistic` + `Pitch.heatmap` + `Pitch.flow`, 6x4 zones):
 shading shows landing-zone density, arrows show the average direction long
 balls into that zone travelled. Output: `second_ball_pass_map.png`.
+
+## Second-ball-to-shot pitch maps (`second_ball_to_shot_pitch_map.py`)
+
+Narrower again: of the `second_ball_recovered` cases above, only the ones
+where a shot followed within 20s (`shot_within_20`, the same window as the
+league-wide SCR20 metric, reused directly). For each: the long ball's own
+path (thin grey, origin -> landing) plus a bold arrow from landing to the
+actual shot location, star = goal. Six-team grid
+(`second_ball_to_shot_pitch_map.png`) plus a full-size single-team version
+(`second_ball_to_shot_<team>.png`, built for FC Twente, which had the most
+shots and goals off this pattern: 51 shots, 9 goals, 9% of its 594
+second-ball wins).
+
+Shot conversion (second-ball win -> shot within 20s) sits in a tight 6-9%
+band across all six teams; NEC and FC Twente convert most often into goals
+specifically (6 and 9 respectively) despite similar overall rates,
+suggesting better shot quality/location off the recovered ball rather than
+a higher shot volume.
+
+## Important correction: direction heuristic (found while building the shot map above)
+
+Building the shot map surfaced a real problem with the avg-pass-x
+direction heuristic (`team_directions()`) used everywhere else in this
+repo's direction-normalised charts: plotting shots gives a sharp sanity
+check (they should cluster near the attacking goal) that a generic
+recovery-location scatter doesn't, and roughly half of one team's plotted
+shots initially landed at their OWN goal.
+
+Root cause: `team_directions()` infers attack direction from whether a
+team's own average open-play pass x is above or below 50 that half. This
+breaks whenever a team's territorial dominance in a given half pulls their
+own average pass position past 50 despite still attacking the same end
+they always were -- e.g. Feyenoord vs. FC Utrecht, 2025-10-05, period 1:
+avg pass x = 51.6 (just over 50, flips the inferred direction), while
+Feyenoord's own goal kick that half was taken at x=5.3 -- i.e. their goal
+is at the LOW end, so they demonstrably attack toward higher x, the
+opposite of what the pass-average heuristic concluded.
+
+**Checked at scale, not just the one example**: comparing the two
+heuristics' direction call across every (team, period) in the 2025-2026
+season, they disagree on **331 of 1236 (26.8%)**. That is not occasional
+noise -- it is a real, systematic weakness whenever average pass position
+drifts close to the x=50 threshold, which territorially dominant teams do
+often.
+
+**Fix applied here**: `goal_kick_directions()` (new, in `restart_analysis.py`),
+which pins direction to each team's own goal-kick location instead --
+structurally anchored right next to their own goal regardless of how the
+run of play went, so it can't be skewed by territorial dominance the way a
+pass average can. Falls back to `team_directions()` only for the rare
+(team, period) with no recorded goal kick. All three `second_ball_*`
+scripts in this folder now use it.
+
+**Scope of this fix**: only applied to the three `second_ball_*` scripts
+above, where it was found. It was NOT retroactively applied to
+`restart_analysis.py`'s own league-wide three-season metrics, or to
+`wing_play_comparison.py` / `diagonal_vs_relationism.py` / the
+`ajax_coach_style/` scripts elsewhere in `Aggregated/` -- all of which use
+the same avg-pass-x heuristic and are exposed to the same failure mode.
+Their rate-type metrics (win rates, percentages) are less likely to flip
+sign from this than a raw x/y coordinate is, but the CTG/RTG/ETG/territory/
+wing-side numbers in particular could be affected and haven't been
+re-checked against the goal-kick method. Flagged here rather than silently
+patched everywhere, since re-running three seasons' worth of league-wide
+metrics is a bigger job than this task asked for.
