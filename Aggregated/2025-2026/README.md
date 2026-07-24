@@ -206,3 +206,33 @@ swap, since Opta coordinates don't flip when a team switches ends (direction
 per team per half is inferred from their average pass x, same heuristic
 Coach Profiling uses). Built fresh from `Events/2025-2026`, not a re-read of
 `style_wing_pct` -- see the caveat above for why.
+
+`wing_play_overall.py` builds `wing_play_overall.png`: the same underlying
+numbers with no left/right split -- one bar per team, combined wide-corridor
+share, standard leaderboard-with-one-highlight treatment.
+
+## Diagonal passing vs. the Relationism Index
+
+`diagonal_vs_relationism.py` builds `diagonal_vs_relationism.csv` and
+`diagonal_vs_relationism.png`: a scatter of each team's Relationism Index
+(the proxy score from `PSV Season Report/Scripts/relationism_index.py` --
+equal-weighted percentile blend of inverse average pass distance, central-
+third touch share, and passes per possession sequence) against a new
+**diagonal pass %** metric -- the share of a team's completed open-play
+passes (excluding free-kick/corner/throw-in) whose direction sits between
+25 deg and 65 deg off the horizontal, for passes of at least 5m. Neither
+near-straight upfield/backward nor a square ball across the pitch --
+theoretically the passing-lane signature relational, proximity-based
+combination play is supposed to produce, versus the fixed lines of a more
+positional structure.
+
+The Relationism Index is **recomputed here**, not read from
+`relationism_index.py`'s output -- that script's `pi_ratings_lib.py`
+hardcodes a Mac-only path that doesn't exist in this repo, so its method
+(same formula, same weights) is ported to run directly against
+`Events/2025-2026` instead. Both are proxy scores built from event data,
+not claims about a club's actual coaching philosophy.
+
+Correlation this season is weak (Pearson r = 0.34, stated in the chart
+title rather than implied) -- read as "a weak signal, not a strong
+relationship," not as evidence relationism causes diagonal passing.
