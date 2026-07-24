@@ -120,3 +120,25 @@ None of this is causal. It describes what happened, not why -- the brief's
 own required next step (controlling for competition, score state, opponent
 strength, game location) is a separate, further analysis this doesn't
 attempt.
+
+## Second-ball recovery pitch map (`second_ball_pitch_map.py`)
+
+A spatial follow-up for six teams (Feyenoord, PSV, Ajax, FC Twente, NEC,
+AZ), 2025-2026 only. Plots WHERE each team wins the strict "second ball"
+off its own open-play long balls -- `analyse_restart()`'s own
+`second_ball_recovered` flag (first contact lost or unproductive, but the
+very next touch belongs to the same team), located at that recovery
+event's own (x, y), not the flag alone. This is a narrower cut than
+`ajax_coach_style/ajax_long_ball_retention.py`'s indirect-retention number
+(which allows a few more touches before possession counts as
+"established") -- here it's specifically the immediate next touch.
+
+Direction is normalised with a full 180-degree (x, y) rotation per team
+per half (not just an x-flip), so each team's own left/right sense is
+preserved while every panel attacks the same way, keeping the six pitch
+maps visually comparable. Output: `second_ball_pitch_map.png`.
+
+Second-ball win rate off own long balls sits in a fairly narrow band across
+all six (28-35%), with NEC recovering second balls most often (35%, 670 of
+1908) and PSV/Ajax least often (28%). Needs `mplsoccer` (added to
+`requirements.txt`).

@@ -3,3 +3,4 @@ pandas>=2.0
 matplotlib>=3.7
 nbformat>=5.9
 jupyter>=1.0
+mplsoccer>=1.6
