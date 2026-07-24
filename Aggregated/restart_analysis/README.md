@@ -106,10 +106,11 @@ in brackets):
   rate itself hasn't moved in a straight line (53% -> 47% -> 51%) -- teams
   aren't just playing goal kicks shorter, the ones they do play (long or
   short) are gaining less ground on average.
-- Long-ball pressure-escape rate (PESR) has risen modestly (60% -> 65% ->
-  64%), alongside a stable first-contact win rate (~47-49%) -- teams are
-  slightly better at turning a long ball played under pressure into an
-  escape beyond it, without winning more first contacts outright.
+- Long-ball pressure-escape rate (PESR) has fallen (33% -> 35% -> 27%),
+  alongside a stable first-contact win rate (~47-49%) -- teams are winning
+  the first ball off a pressured long ball about as often as before, but
+  converting fewer of those into a genuine escape (20m+ gained, or beyond
+  halfway) once they do.
 - 2025-2026 PSV Eindhoven and Feyenoord Rotterdam lead both goal-kick and
   long-ball RDV -- consistent with them finishing 1st and 2nd -- with
   `rdv_core` spanning from the low 80s down to the low teens across the
