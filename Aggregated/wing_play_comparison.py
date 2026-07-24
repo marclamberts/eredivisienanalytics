@@ -165,7 +165,7 @@ def main():
         palette=palette,
     )
     components.footer(
-        fig, source=f"Events/{SEASON} (Opta), computed directly (not Coach Profiling's wing_pct)",
+        fig, source=f"Opta/StatsPerform {SEASON}",
         palette=palette,
     )
     fig.savefig(os.path.join(OUT_DIR, "wing_play_comparison.png"), facecolor=fig.get_facecolor(), dpi=150)

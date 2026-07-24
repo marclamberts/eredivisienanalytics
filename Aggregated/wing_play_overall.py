@@ -43,7 +43,7 @@ def main():
         dek=f"Wide-corridor share of open-play passes (left + right combined), {SEASON}",
         palette=palette,
     )
-    components.footer(fig, source=f"Events/{SEASON} (Opta), computed directly", palette=palette)
+    components.footer(fig, source=f"Opta/StatsPerform {SEASON}", palette=palette)
 
     out_path = os.path.join(OUT_DIR, "wing_play_overall.png")
     fig.savefig(out_path, facecolor=fig.get_facecolor(), dpi=150)

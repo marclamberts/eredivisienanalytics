@@ -86,7 +86,7 @@ components.header(fig, kicker="Progression",
                    title=f"{top10.iloc[-1]['player_name']} leads outfield progressive passing",
                    dek=f"Progressive passes /90, outfield players with 450+ minutes, {SEASON}",
                    palette=palette)
-components.footer(fig, source=f"Events/{SEASON} (Opta), aggregated in this repo", palette=palette)
+components.footer(fig, source=f"Opta/StatsPerform {SEASON}", palette=palette)
 plt.show()"""))
 
 cells.append(md("""## Creativity -- xA broken down by delivery type
@@ -117,7 +117,7 @@ components.header(fig, kicker="Creativity",
                    title="Where each creator's xA actually comes from",
                    dek=f"xA by delivery type, top 8 players by total xA, {SEASON}",
                    palette=palette)
-components.footer(fig, source=f"Events/{SEASON} (Opta), aggregated in this repo", palette=palette)
+components.footer(fig, source=f"Opta/StatsPerform {SEASON}", palette=palette)
 plt.show()"""))
 
 cells.append(md("""## Defensive volume, possession-adjusted (PAdj)
@@ -139,7 +139,7 @@ components.header(fig, kicker="Defensive Volume",
                    title=f"{top_padj.iloc[-1]['player_name']} tops PAdj tackles",
                    dek=f"Possession-adjusted tackles /90, 450+ minutes, {SEASON}",
                    palette=palette)
-components.footer(fig, source=f"Events/{SEASON} (Opta), aggregated in this repo", palette=palette)
+components.footer(fig, source=f"Opta/StatsPerform {SEASON}", palette=palette)
 plt.show()"""))
 
 cells.append(md("""## Team table -- does more of the ball mean more points?"""))
@@ -160,7 +160,7 @@ components.header(fig, kicker="Team Season",
                    title=f"{leader['team_name']} led the table without dominating possession everywhere",
                    dek=f"Team average possession % vs. points, {SEASON} ({len(teams)} teams)",
                    palette=palette)
-components.footer(fig, source=f"Events/{SEASON} (Opta), aggregated in this repo", palette=palette)
+components.footer(fig, source=f"Opta/StatsPerform {SEASON}", palette=palette)
 plt.show()"""))
 
 cells.append(md(f"""## Where to go from here

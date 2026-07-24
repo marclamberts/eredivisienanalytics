@@ -51,7 +51,7 @@ def chart_rdv_leaderboard(kind, label):
         dek=f"RDV-core (APER, ETG, FTS, HRR15, DTR weighted per the brief), {label}, {SEASON}",
         palette=palette,
     )
-    components.footer(fig, source=f"Events/{SEASON} (Opta), computed directly", palette=palette)
+    components.footer(fig, source=f"Opta/StatsPerform {SEASON}", palette=palette)
     out = os.path.join(OUT_DIR, f"rdv_leaderboard_{kind}.png")
     fig.savefig(out, facecolor=fig.get_facecolor(), dpi=150)
     print("Wrote", out)
@@ -87,7 +87,7 @@ def chart_fcwr_comparison():
         dek=f"League-wide first-contact win rate by restart type, {SEASONS[0]} to {SEASONS[-1]}",
         palette=palette,
     )
-    components.footer(fig, source="Events/2023-2024 to 2025-2026 (Opta), computed directly", palette=palette)
+    components.footer(fig, source="Opta/StatsPerform 2023-2026", palette=palette)
     out = os.path.join(OUT_DIR, "fcwr_goal_kick_vs_long_ball.png")
     fig.savefig(out, facecolor=fig.get_facecolor(), dpi=150)
     print("Wrote", out)
@@ -120,7 +120,7 @@ def chart_ctg_trend():
         dek=f"League-wide controlled territorial gain (CTG) per goal kick ({pct:.0f}% change, {SEASONS[0]} to {SEASONS[-1]})",
         palette=palette,
     )
-    components.footer(fig, source="Events/2023-2024 to 2025-2026 (Opta), computed directly", palette=palette)
+    components.footer(fig, source="Opta/StatsPerform 2023-2026", palette=palette)
     out = os.path.join(OUT_DIR, "ctg_trend_goal_kick.png")
     fig.savefig(out, facecolor=fig.get_facecolor(), dpi=150)
     print("Wrote", out)
@@ -152,7 +152,7 @@ def chart_pesr_trend():
         dek=f"League-wide long-ball pressure-escape rate, {SEASONS[0]} to {SEASONS[-1]}",
         palette=palette,
     )
-    components.footer(fig, source="Events/2023-2024 to 2025-2026 (Opta), computed directly", palette=palette)
+    components.footer(fig, source="Opta/StatsPerform 2023-2026", palette=palette)
     out = os.path.join(OUT_DIR, "pesr_trend_long_ball.png")
     fig.savefig(out, facecolor=fig.get_facecolor(), dpi=150)
     print("Wrote", out)

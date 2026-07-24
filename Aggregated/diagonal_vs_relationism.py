@@ -200,7 +200,7 @@ def main():
         dek=f"Relationism Index vs. diagonal pass share, {SEASON} (18 teams, {direction} diagonal at higher index)",
         palette=palette,
     )
-    components.footer(fig, source=f"Events/{SEASON} (Opta), computed directly", palette=palette)
+    components.footer(fig, source=f"Opta/StatsPerform {SEASON}", palette=palette)
 
     out_path = os.path.join(OUT_DIR, "diagonal_vs_relationism.png")
     fig.savefig(out_path, facecolor=fig.get_facecolor(), dpi=150)
