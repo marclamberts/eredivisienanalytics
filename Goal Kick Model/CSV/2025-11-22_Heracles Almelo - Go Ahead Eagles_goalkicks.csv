@@ -1,8 +1,8 @@
-match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
-2025-11-22_Heracles Almelo - Go Ahead Eagles,2875395317,1,7,15,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,5.565,30.464,0,turnover,False,
-2025-11-22_Heracles Almelo - Go Ahead Eagles,2875407529,1,20,49,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,4.9350000000000005,32.572,4,turnover,False,
-2025-11-22_Heracles Almelo - Go Ahead Eagles,2875438421,2,47,39,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,3.9899999999999998,39.848000000000006,1,turnover,False,
-2025-11-22_Heracles Almelo - Go Ahead Eagles,2875443473,2,56,1,dac758ef858jbq7pcb3gfwite,Heracles Almelo,2uw0batubkzwe3gcexxwa22cq,T. Jansink,4.41,37.944,1,turnover,False,
-2025-11-22_Heracles Almelo - Go Ahead Eagles,2875445609,2,59,0,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,5.1450000000000005,42.228,4,turnover,False,
-2025-11-22_Heracles Almelo - Go Ahead Eagles,2875446587,2,60,52,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,2.52,33.79600000000001,3,turnover,False,
-2025-11-22_Heracles Almelo - Go Ahead Eagles,2875460397,2,90,23,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,4.41,32.232,1,turnover,False,
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,end_x,end_y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875395317,1,7,15,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,5.565,30.464,70.77000000000001,35.564,0,turnover,False,
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875407529,1,20,49,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,4.9350000000000005,32.572,5.25,41.956,4,turnover,False,
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875438421,2,47,39,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,3.9899999999999998,39.848000000000006,4.515,34.952,1,turnover,False,
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875443473,2,56,1,dac758ef858jbq7pcb3gfwite,Heracles Almelo,2uw0batubkzwe3gcexxwa22cq,T. Jansink,4.41,37.944,78.435,52.496,1,turnover,False,
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875445609,2,59,0,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,5.1450000000000005,42.228,5.670000000000001,33.79600000000001,4,turnover,False,
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875446587,2,60,52,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,2.52,33.79600000000001,21.315,9.248000000000001,3,turnover,False,
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875460397,2,90,23,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,4.41,32.232,68.355,39.440000000000005,1,turnover,False,

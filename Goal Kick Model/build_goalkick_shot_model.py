@@ -73,6 +73,16 @@ def is_goal_kick(e):
     return any(q["qualifierId"] == Q_GOAL_KICK for q in e.get("qualifier", []) or [])
 
 
+def goal_kick_end_xy(e):
+    """Where the goal kick itself was aimed, for pitch maps -- separate from
+    the chain's later actions. None if Opta didn't tag end coordinates."""
+    q = bdm.qmap(e)
+    try:
+        return bdm.to_m(float(q[bdm.Q_END_X]), float(q[bdm.Q_END_Y]))
+    except (KeyError, TypeError, ValueError):
+        return None, None
+
+
 def build_goalkick_chains(basename, events, team_map):
     touches = event_ball_involvements(events)
 
@@ -83,6 +93,7 @@ def build_goalkick_chains(basename, events, team_map):
         cid = e["contestantId"]
         period = e["periodId"]
         x, y = bdm.to_m(e["x"], e["y"])
+        end_x, end_y = goal_kick_end_xy(e)
 
         chain_ids, reached_shot, end_reason = [], False, "period_end"
         for ev in touches[i + 1:]:
@@ -113,6 +124,7 @@ def build_goalkick_chains(basename, events, team_map):
             "player_id": e.get("playerId"),
             "player_name": e.get("playerName"),
             "x": x, "y": y,
+            "end_x": end_x, "end_y": end_y,
             "chain_n_actions": len(chain_ids),
             "chain_end_reason": end_reason,
             "reached_shot_within_5": reached_shot,

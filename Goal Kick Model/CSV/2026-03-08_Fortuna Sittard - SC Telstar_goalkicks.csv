@@ -1,12 +1,12 @@
-match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
-2026-03-08_Fortuna Sittard - SC Telstar,2908884685,1,1,14,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,4.83,37.264,1,turnover,False,
-2026-03-08_Fortuna Sittard - SC Telstar,2908886167,1,3,25,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,3.9899999999999998,37.672000000000004,2,turnover,False,
-2026-03-08_Fortuna Sittard - SC Telstar,2908890557,1,8,58,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,5.1450000000000005,39.57600000000001,3,turnover,False,
-2026-03-08_Fortuna Sittard - SC Telstar,2908901307,1,24,59,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,4.7250000000000005,39.304,2,turnover,False,
-2026-03-08_Fortuna Sittard - SC Telstar,2908912739,1,38,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,5.25,38.760000000000005,5,shot,True,5.0
-2026-03-08_Fortuna Sittard - SC Telstar,2908919433,1,44,2,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,4.620000000000001,39.916000000000004,5,action_limit,False,
-2026-03-08_Fortuna Sittard - SC Telstar,2908940689,2,47,46,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.620000000000001,33.592,0,turnover,False,
-2026-03-08_Fortuna Sittard - SC Telstar,2908951485,2,59,17,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.41,35.02,2,turnover,False,
-2026-03-08_Fortuna Sittard - SC Telstar,2908952991,2,62,3,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,5.25,34.068000000000005,0,turnover,False,
-2026-03-08_Fortuna Sittard - SC Telstar,2908958943,2,73,59,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,2.625,29.512,0,turnover,False,
-2026-03-08_Fortuna Sittard - SC Telstar,2908969785,2,85,58,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.515,31.484,0,turnover,False,
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,end_x,end_y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-03-08_Fortuna Sittard - SC Telstar,2908884685,1,1,14,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,4.83,37.264,10.920000000000002,21.692,1,turnover,False,
+2026-03-08_Fortuna Sittard - SC Telstar,2908886167,1,3,25,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,3.9899999999999998,37.672000000000004,28.14,38.556000000000004,2,turnover,False,
+2026-03-08_Fortuna Sittard - SC Telstar,2908890557,1,8,58,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,5.1450000000000005,39.57600000000001,5.04,31.688000000000002,3,turnover,False,
+2026-03-08_Fortuna Sittard - SC Telstar,2908901307,1,24,59,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,4.7250000000000005,39.304,4.9350000000000005,30.124,2,turnover,False,
+2026-03-08_Fortuna Sittard - SC Telstar,2908912739,1,38,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,5.25,38.760000000000005,6.615,32.300000000000004,5,shot,True,5.0
+2026-03-08_Fortuna Sittard - SC Telstar,2908919433,1,44,2,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,4.620000000000001,39.916000000000004,4.620000000000001,30.872,5,action_limit,False,
+2026-03-08_Fortuna Sittard - SC Telstar,2908940689,2,47,46,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.620000000000001,33.592,75.495,34.204,0,turnover,False,
+2026-03-08_Fortuna Sittard - SC Telstar,2908951485,2,59,17,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.41,35.02,20.265,49.028,2,turnover,False,
+2026-03-08_Fortuna Sittard - SC Telstar,2908952991,2,62,3,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,5.25,34.068000000000005,61.53,11.356,0,turnover,False,
+2026-03-08_Fortuna Sittard - SC Telstar,2908958943,2,73,59,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,2.625,29.512,66.78,33.592,0,turnover,False,
+2026-03-08_Fortuna Sittard - SC Telstar,2908969785,2,85,58,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.515,31.484,59.325,25.432000000000002,0,turnover,False,

@@ -1,7 +1,7 @@
-match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
-2025-09-27_AFC Ajax - NAC Breda,2852058845,1,17,48,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,4.2,33.864,1,turnover,False,
-2025-09-27_AFC Ajax - NAC Breda,2852067323,1,28,1,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,3.8850000000000002,32.572,4,turnover,False,
-2025-09-27_AFC Ajax - NAC Breda,2852164843,2,52,3,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,4.305,33.048,2,turnover,False,
-2025-09-27_AFC Ajax - NAC Breda,2852166997,2,53,3,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,3.3600000000000003,38.21600000000001,2,turnover,False,
-2025-09-27_AFC Ajax - NAC Breda,2852214541,2,83,9,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,3.57,36.38,1,turnover,False,
-2025-09-27_AFC Ajax - NAC Breda,2852227481,2,93,35,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,4.41,27.336000000000006,0,turnover,False,
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,end_x,end_y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-09-27_AFC Ajax - NAC Breda,2852058845,1,17,48,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,4.2,33.864,27.090000000000003,5.78,1,turnover,False,
+2025-09-27_AFC Ajax - NAC Breda,2852067323,1,28,1,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,3.8850000000000002,32.572,9.240000000000002,47.668,4,turnover,False,
+2025-09-27_AFC Ajax - NAC Breda,2852164843,2,52,3,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,4.305,33.048,12.915000000000001,50.79600000000001,2,turnover,False,
+2025-09-27_AFC Ajax - NAC Breda,2852166997,2,53,3,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,3.3600000000000003,38.21600000000001,3.6750000000000003,33.456,2,turnover,False,
+2025-09-27_AFC Ajax - NAC Breda,2852214541,2,83,9,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,3.57,36.38,59.64,47.53200000000001,1,turnover,False,
+2025-09-27_AFC Ajax - NAC Breda,2852227481,2,93,35,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,4.41,27.336000000000006,62.265,11.22,0,turnover,False,

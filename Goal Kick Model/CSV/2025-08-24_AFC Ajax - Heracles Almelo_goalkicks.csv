@@ -1,12 +1,12 @@
-match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
-2025-08-24_AFC Ajax - Heracles Almelo,2839123217,1,6,21,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,3.8850000000000002,27.268000000000004,0,turnover,False,
-2025-08-24_AFC Ajax - Heracles Almelo,2839126153,1,12,39,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,1.785,40.596000000000004,4,turnover,False,
-2025-08-24_AFC Ajax - Heracles Almelo,2839128709,1,17,11,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,3.2550000000000003,41.344,5,action_limit,False,
-2025-08-24_AFC Ajax - Heracles Almelo,2839140693,1,32,26,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,5.670000000000001,40.528000000000006,4,shot,True,4.0
-2025-08-24_AFC Ajax - Heracles Almelo,2839141249,1,33,12,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,2.94,32.504,0,turnover,False,
-2025-08-24_AFC Ajax - Heracles Almelo,2839141833,1,33,55,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,5.3549999999999995,41.480000000000004,2,turnover,False,
-2025-08-24_AFC Ajax - Heracles Almelo,2839149149,1,45,13,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,3.57,26.656000000000002,1,turnover,False,
-2025-08-24_AFC Ajax - Heracles Almelo,2839173171,2,50,55,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,4.9350000000000005,40.800000000000004,3,turnover,False,
-2025-08-24_AFC Ajax - Heracles Almelo,2839175807,2,54,18,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,4.41,39.984,4,turnover,False,
-2025-08-24_AFC Ajax - Heracles Almelo,2839204723,2,84,52,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,4.095,26.588000000000005,0,turnover,False,
-2025-08-24_AFC Ajax - Heracles Almelo,2839212683,2,92,29,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,4.095,26.452,1,turnover,False,
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,end_x,end_y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-08-24_AFC Ajax - Heracles Almelo,2839123217,1,6,21,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,3.8850000000000002,27.268000000000004,68.355,7.412000000000001,0,turnover,False,
+2025-08-24_AFC Ajax - Heracles Almelo,2839126153,1,12,39,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,1.785,40.596000000000004,2.7300000000000004,36.312000000000005,4,turnover,False,
+2025-08-24_AFC Ajax - Heracles Almelo,2839128709,1,17,11,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,3.2550000000000003,41.344,2.8350000000000004,36.448,5,action_limit,False,
+2025-08-24_AFC Ajax - Heracles Almelo,2839140693,1,32,26,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,5.670000000000001,40.528000000000006,4.305,35.496,4,shot,True,4.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839141249,1,33,12,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,2.94,32.504,12.075000000000001,45.15200000000001,0,turnover,False,
+2025-08-24_AFC Ajax - Heracles Almelo,2839141833,1,33,55,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,5.3549999999999995,41.480000000000004,2.205,32.844,2,turnover,False,
+2025-08-24_AFC Ajax - Heracles Almelo,2839149149,1,45,13,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,3.57,26.656000000000002,67.935,15.096,1,turnover,False,
+2025-08-24_AFC Ajax - Heracles Almelo,2839173171,2,50,55,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,4.9350000000000005,40.800000000000004,3.9899999999999998,33.048,3,turnover,False,
+2025-08-24_AFC Ajax - Heracles Almelo,2839175807,2,54,18,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,4.41,39.984,1.8900000000000001,33.932,4,turnover,False,
+2025-08-24_AFC Ajax - Heracles Almelo,2839204723,2,84,52,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,4.095,26.588000000000005,55.650000000000006,16.32,0,turnover,False,
+2025-08-24_AFC Ajax - Heracles Almelo,2839212683,2,92,29,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,4.095,26.452,71.08500000000001,36.652,1,turnover,False,
