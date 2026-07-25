@@ -1,0 +1,9 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-30_PSV Eindhoven - SC Telstar,2841283631,1,5,46,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1vn6w1mjdztfks75bxn0hk7x0,S. Hetli,64.47,66.504,1,1.0,turnover,False,0.0
+2025-08-30_PSV Eindhoven - SC Telstar,2841285731,1,7,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,3.9899999999999998,56.304,0,0.0,turnover,False,0.0
+2025-08-30_PSV Eindhoven - SC Telstar,2841298615,1,16,35,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,26.25,51.748,4,4.0,window_expired,False,9.895151881204878e-05
+2025-08-30_PSV Eindhoven - SC Telstar,2841300875,1,18,13,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,avv12sgcucblnbfb790xovf8,R. van Bommel,34.755,65.212,0,0.0,turnover,False,0.0
+2025-08-30_PSV Eindhoven - SC Telstar,2841306665,1,22,45,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,44.415,6.188000000000001,0,0.0,turnover,False,0.0
+2025-08-30_PSV Eindhoven - SC Telstar,2841329841,1,40,8,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,31.185000000000002,19.040000000000003,4,7.0,turnover,False,0.0
+2025-08-30_PSV Eindhoven - SC Telstar,2841407609,2,76,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,69.615,61.064,3,5.0,turnover,False,0.0
+2025-08-30_PSV Eindhoven - SC Telstar,2841414559,2,81,16,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,14.595,16.524,3,9.0,window_expired,False,0.0

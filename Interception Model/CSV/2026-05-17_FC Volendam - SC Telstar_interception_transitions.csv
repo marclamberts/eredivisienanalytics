@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-17_FC Volendam - SC Telstar,2938911843,1,10,57,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6svx5u21jrcch3ewpqqbxukmh,J. Bacuna,45.36000000000001,20.196,0,0.0,turnover,False,0.0
+2026-05-17_FC Volendam - SC Telstar,2938923245,1,22,28,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,35.910000000000004,56.916000000000004,1,0.0,window_expired,False,0.0
+2026-05-17_FC Volendam - SC Telstar,2938930405,1,31,45,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,43.995,50.456,0,0.0,turnover,False,0.0
+2026-05-17_FC Volendam - SC Telstar,2938943489,1,41,26,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,88.09500000000001,4.964,1,0.0,turnover,False,0.0
+2026-05-17_FC Volendam - SC Telstar,2938951527,1,47,16,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6svx5u21jrcch3ewpqqbxukmh,J. Bacuna,65.94,3.74,1,1.0,turnover,False,0.0
+2026-05-17_FC Volendam - SC Telstar,2938971931,2,45,40,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6svx5u21jrcch3ewpqqbxukmh,J. Bacuna,49.035000000000004,35.02,3,7.0,turnover,False,0.0
+2026-05-17_FC Volendam - SC Telstar,2938976813,2,48,40,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,27.51,4.08,0,0.0,turnover,False,0.0
+2026-05-17_FC Volendam - SC Telstar,2938976827,2,48,42,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,31.290000000000003,9.792000000000002,0,0.0,turnover,False,0.0
+2026-05-17_FC Volendam - SC Telstar,2938989535,2,50,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,71.08500000000001,61.47200000000001,0,0.0,turnover,False,0.0
+2026-05-17_FC Volendam - SC Telstar,2938983531,2,52,48,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,eu901b75l2ly5p48jdw6kwmad,M. Amevor,55.44,54.196000000000005,1,0.0,turnover,False,0.0
+2026-05-17_FC Volendam - SC Telstar,2939035803,2,91,42,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,23.94,61.132000000000005,4,4.0,turnover,False,0.0

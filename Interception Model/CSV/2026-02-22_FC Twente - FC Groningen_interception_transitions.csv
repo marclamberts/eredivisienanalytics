@@ -1,0 +1,10 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-22_FC Twente - FC Groningen,2903220867,1,5,1,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,51.55500000000001,50.592000000000006,2,4.0,turnover,False,0.0
+2026-02-22_FC Twente - FC Groningen,2903222163,1,8,48,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,56.7,53.040000000000006,6,10.0,turnover,False,0.0054949676095029
+2026-02-22_FC Twente - FC Groningen,2903229097,1,23,52,cos9hxi16eitbcbthof7zrm4m,FC Groningen,by85t8ssyumcjcks1jx3v96vo,Y. Taha,72.87,21.216,0,0.0,turnover,False,0.0
+2026-02-22_FC Twente - FC Groningen,2903231363,1,26,28,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5m8pflpgynidzk7d9507oujje,D. Rots,21.630000000000003,21.080000000000002,0,0.0,turnover,False,0.0
+2026-02-22_FC Twente - FC Groningen,2903252109,2,51,10,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,58.38,51.544000000000004,4,4.0,turnover,False,0.005490818644758
+2026-02-22_FC Twente - FC Groningen,2903254505,2,56,19,4tic29sox7m39fy1ztgv0jsiq,FC Twente,cocgd3hh74fq9c30x9bps4idw,S. Lemkin,72.24,21.012,0,0.0,turnover,False,0.0
+2026-02-22_FC Twente - FC Groningen,2903255065,2,57,22,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,27.72,29.580000000000002,0,0.0,turnover,False,0.0
+2026-02-22_FC Twente - FC Groningen,2903262441,2,68,47,4tic29sox7m39fy1ztgv0jsiq,FC Twente,9nix5y8xcj34ps62r34udtqwa,K. Hlynsson,49.665,51.408,0,0.0,turnover,False,0.0
+2026-02-22_FC Twente - FC Groningen,2903812125,2,74,7,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,47.25,38.624,3,9.0,window_expired,False,0.0009858810542153

@@ -1,0 +1,25 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878417549,1,1,2,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,25.62,9.792000000000002,1,1.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878425937,1,11,23,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,aajft01g5yggw0is5fbfh3105,B. Nieuwkoop,36.12,22.372,1,0.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878430117,1,16,22,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,28.245,13.124,1,0.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878430441,1,16,38,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1zybkcmp40td92a6yg8sw9uga,T. Owusu,25.200000000000003,4.692,1,0.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878434649,1,21,56,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,40.214999999999996,3.468,0,0.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878439005,1,29,33,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,22.05,50.388,3,6.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878439085,1,29,43,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e5xuwwa4qs6zxjd7y52tslih,Q. Timber,55.86000000000001,9.656,4,5.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878443177,1,35,0,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,25.830000000000002,59.636,2,1.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878444787,1,36,28,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e5xuwwa4qs6zxjd7y52tslih,Q. Timber,41.685,13.056000000000001,0,0.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878457223,1,40,27,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,70.14,51.544000000000004,0,0.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878452825,1,43,13,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,43.050000000000004,24.072,1,1.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878453373,1,43,42,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,38.325,19.448000000000004,0,0.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878479167,2,51,9,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,49.56,2.788,0,0.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878481497,2,53,15,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,22.155,26.248,3,3.0,turnover,False,3.72283735598361e-05
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878539489,2,53,58,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dtcvzfse83ztj96kiizwp6jqi,G. Smal,29.19,62.696000000000005,0,0.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878482409,2,54,2,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,5qvkwsnygz3zekwsdd1r994wk,G. Diarra,22.26,58.344,4,6.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878495815,2,67,19,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,34.02,62.764,2,1.0,turnover,False,9.419719852882258e-07
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878496533,2,68,14,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,27.51,38.624,4,9.0,window_expired,False,0.00024776324664825013
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878498751,2,71,43,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,8f3bhiy6r5eei1n25exhbwr8p,J. Lotomba,36.855000000000004,24.616000000000003,1,1.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878498937,2,72,1,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e5xuwwa4qs6zxjd7y52tslih,Q. Timber,78.015,59.568,2,2.0,turnover,False,0.0014074974447472
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878500881,2,75,9,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,65.31,62.83200000000001,0,0.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878501643,2,76,3,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,10.08,33.456,1,3.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878505295,2,79,41,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,68.985,25.364,0,0.0,turnover,False,0.0
+2025-11-30_SC Telstar - Feyenoord Rotterdam,2878517049,2,90,8,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,45.99,43.928,1,1.0,turnover,False,0.0

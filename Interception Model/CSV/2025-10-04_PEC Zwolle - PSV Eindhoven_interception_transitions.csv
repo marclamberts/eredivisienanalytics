@@ -1,0 +1,25 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855864203,1,7,59,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,23.52,15.572000000000001,2,2.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855866965,1,10,22,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,3.2550000000000003,55.080000000000005,1,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855868399,1,11,34,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,16.275000000000002,25.16,0,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855869991,1,12,48,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,b0me6l44boibnwpbtasxoy02x,S. Dest,14.805,8.84,5,4.0,turnover,False,5.920220280675181e-06
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855870085,1,12,53,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,80.955,61.268,2,3.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2856239971,1,20,20,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,66.57000000000001,31.484,2,2.0,turnover,False,0.0043383711872235
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855878149,1,20,35,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6u7z5qrlwzl9aug8awejq37xl,Jamiro Monteiro,22.05,48.75600000000001,0,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855881809,1,24,48,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,9vf02r3geinhsy732oxyrcacq,I. Saibari,32.34,11.696,1,1.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855893623,1,39,36,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,84.315,31.892000000000003,2,3.0,window_expired,True,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855900913,1,40,56,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,25.515,31.416000000000004,2,4.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855898069,1,44,35,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,74.55,15.572000000000001,0,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855914905,2,47,1,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,33.705000000000005,55.35200000000001,1,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855924363,2,55,58,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,41.055,32.028000000000006,3,3.0,turnover,False,3.717275278772303e-05
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855925083,2,56,45,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,dxmulnxbs11kpi1goq5hl9cve,A. Salah-Eddine,57.225,56.916000000000004,5,8.0,window_expired,False,0.006317922840355214
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855925525,2,57,13,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6u7z5qrlwzl9aug8awejq37xl,Jamiro Monteiro,18.69,52.768,0,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855926695,2,58,17,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,77.59500000000001,8.228,5,9.0,window_expired,False,0.002450894814009
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855928949,2,60,49,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,28.455000000000002,20.876,0,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855929193,2,61,2,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1x6fhuy49w4rpnyavwotbf504,T. Gooijer,15.855,25.16,0,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855933865,2,65,56,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,2072f0p9ful9u577gdvo89yw9,K. Kostons,24.465000000000003,15.708000000000002,0,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855943101,2,76,27,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,cczptju66ofuymrlsol11fpxw,D. Voute,32.76,3.74,0,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855945039,2,78,49,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,32.550000000000004,29.580000000000002,0,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855946703,2,80,45,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,21.21,26.588000000000005,0,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855947953,2,82,28,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,2072f0p9ful9u577gdvo89yw9,K. Kostons,30.765,55.624,0,0.0,turnover,False,0.0
+2025-10-04_PEC Zwolle - PSV Eindhoven,2855949785,2,84,53,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,24.990000000000002,60.928,1,1.0,turnover,False,0.0

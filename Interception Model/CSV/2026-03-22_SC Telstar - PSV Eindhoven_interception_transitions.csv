@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-22_SC Telstar - PSV Eindhoven,2915450697,1,4,36,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,22.155,29.580000000000002,4,2.0,turnover,False,1.2729673187772406e-05
+2026-03-22_SC Telstar - PSV Eindhoven,2915454407,1,8,5,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,dxmulnxbs11kpi1goq5hl9cve,A. Salah-Eddine,45.36000000000001,57.732000000000006,0,0.0,turnover,False,0.0
+2026-03-22_SC Telstar - PSV Eindhoven,2915481679,1,36,9,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,27.72,59.568,0,0.0,turnover,False,0.0
+2026-03-22_SC Telstar - PSV Eindhoven,2915487151,1,41,14,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,34.125,18.360000000000003,1,1.0,turnover,False,0.0
+2026-03-22_SC Telstar - PSV Eindhoven,2915492311,1,46,14,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,biee6dvb524juzai7iryyskix,D. Man,69.19500000000001,14.688000000000002,5,9.0,window_expired,False,0.0002750706482555
+2026-03-22_SC Telstar - PSV Eindhoven,2915517427,2,50,8,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,69.72000000000001,8.024000000000001,0,0.0,turnover,False,0.0
+2026-03-22_SC Telstar - PSV Eindhoven,2915518655,2,51,26,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,3ojwbw6v83g9b0u2wssnkzzzd,A. Obispo,17.85,26.520000000000003,0,0.0,turnover,False,0.0
+2026-03-22_SC Telstar - PSV Eindhoven,2915519201,2,52,32,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,28.455000000000002,21.080000000000002,4,4.0,turnover,False,0.004603586695482343
+2026-03-22_SC Telstar - PSV Eindhoven,2915539363,2,68,26,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,f5pgdha5h37xytbk1zq8q710,D. Koswal,5.1450000000000005,39.372,0,0.0,turnover,False,0.0
+2026-03-22_SC Telstar - PSV Eindhoven,2915543723,2,71,22,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,29.925,58.75200000000001,2,4.0,window_expired,False,0.0001242094770637
+2026-03-22_SC Telstar - PSV Eindhoven,2915567303,2,88,46,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,3ojwbw6v83g9b0u2wssnkzzzd,A. Obispo,58.275000000000006,44.948,3,8.0,window_expired,False,0.0057676610256442995

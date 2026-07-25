@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-08_FC Volendam - NAC Breda,2870888419,1,0,27,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6bklt91zc5vietmdc8r31zl2i,D. Payne,11.025,6.0520000000000005,3,4.0,turnover,False,9.960707013237367e-05
+2025-11-08_FC Volendam - NAC Breda,2870891535,1,2,58,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,24.990000000000002,54.74,5,5.0,turnover,False,2.7672997500366447e-05
+2025-11-08_FC Volendam - NAC Breda,2870896529,1,7,19,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,200chcevwu3znwew6xjyaof6d,F. Oldrup Jensen,56.28,17.34,0,0.0,turnover,False,0.0
+2025-11-08_FC Volendam - NAC Breda,2870897945,1,8,47,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,26.040000000000003,50.592000000000006,1,0.0,turnover,False,0.0
+2025-11-08_FC Volendam - NAC Breda,2871341985,1,20,56,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,61.74,11.152,2,1.0,turnover,False,0.0
+2025-11-08_FC Volendam - NAC Breda,2870910683,1,21,50,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,8r3k1iuul274c0ha0vy90jys,A. Oehlers,78.33,18.904000000000003,3,7.0,turnover,False,0.0129632479198216
+2025-11-08_FC Volendam - NAC Breda,2870915423,1,25,32,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,eu901b75l2ly5p48jdw6kwmad,M. Amevor,54.81,31.144000000000002,0,0.0,turnover,False,0.0
+2025-11-08_FC Volendam - NAC Breda,2870929221,1,38,2,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bdb33nwcpd2jufn9ggtl7gvzd,B. Lucassen,31.290000000000003,45.356,3,4.0,turnover,False,1.924335630963669e-05
+2025-11-08_FC Volendam - NAC Breda,2870930731,1,39,19,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,14.91,32.844,0,0.0,turnover,False,0.0
+2025-11-08_FC Volendam - NAC Breda,2870955191,2,46,46,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,200chcevwu3znwew6xjyaof6d,F. Oldrup Jensen,31.815,38.48800000000001,3,4.0,turnover,False,0.0002077188899977
+2025-11-08_FC Volendam - NAC Breda,2870956491,2,48,5,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,7053nqhl9wu2u1kegzo9aopg5,B. Kuwas,38.22,13.396,1,7.0,turnover,False,0.0
+2025-11-08_FC Volendam - NAC Breda,2870957467,2,49,12,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,19.425,26.860000000000003,3,2.0,turnover,False,0.0001329532168494
+2025-11-08_FC Volendam - NAC Breda,2870958355,2,50,14,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,200chcevwu3znwew6xjyaof6d,F. Oldrup Jensen,27.195,19.788000000000004,2,1.0,turnover,False,9.307713428877153e-05
+2025-11-08_FC Volendam - NAC Breda,2870959995,2,52,20,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,8.4,46.988,1,0.0,turnover,False,0.0
+2025-11-08_FC Volendam - NAC Breda,2870992687,2,86,41,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,26.880000000000003,19.448000000000004,0,0.0,turnover,False,0.0
+2025-11-08_FC Volendam - NAC Breda,2871002741,2,97,45,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6jqn5grsuhuo5at81pzahr6xh,R. Mühren,55.33500000000001,28.764,2,7.0,turnover,False,0.0

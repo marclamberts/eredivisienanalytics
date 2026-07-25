@@ -1,0 +1,9 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-01_FC Volendam - FC Groningen,2906040307,1,7,54,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,64kb0lmkr24rmh59hb01m268k,R. van Cruijsen,21.945,9.112,0,0.0,turnover,False,0.0
+2026-03-01_FC Volendam - FC Groningen,2906043325,1,12,24,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,14.91,29.92,0,0.0,turnover,False,0.0
+2026-03-01_FC Volendam - FC Groningen,2906046189,1,16,24,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,dej8tywq0npvbm25sfgtqur1m,O. Kökçü,37.589999999999996,21.76,0,0.0,turnover,False,0.0
+2026-03-01_FC Volendam - FC Groningen,2906046337,1,16,37,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,qx44xpf889ysyh0yh20uketw,B. Pauwels,48.195,37.400000000000006,5,10.0,window_expired,False,0.0109688890302157
+2026-03-01_FC Volendam - FC Groningen,2906069583,1,46,38,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,47.98500000000001,32.980000000000004,0,0.0,turnover,False,0.0
+2026-03-01_FC Volendam - FC Groningen,2906102235,2,63,8,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,17.325,31.076000000000004,0,0.0,turnover,False,0.0
+2026-03-01_FC Volendam - FC Groningen,2906103635,2,66,3,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,eu901b75l2ly5p48jdw6kwmad,M. Amevor,40.425000000000004,8.908000000000001,1,1.0,turnover,False,0.0
+2026-03-01_FC Volendam - FC Groningen,2906119819,2,86,27,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,25.200000000000003,55.01200000000001,0,0.0,turnover,False,0.0

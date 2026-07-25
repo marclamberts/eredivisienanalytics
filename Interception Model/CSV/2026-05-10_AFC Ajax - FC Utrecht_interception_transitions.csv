@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-10_AFC Ajax - FC Utrecht,2936051543,1,0,39,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,95.23500000000001,2.5160000000000005,1,0.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936051619,1,0,45,ccpscwdcm65czscrun048ecn5,FC Utrecht,8tqsvu5sw6kn014hdv88zppm1,N. Vesterlund,93.97500000000001,2.9920000000000004,1,0.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936054447,1,3,12,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,75.705,42.432,0,0.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936061003,1,10,49,ccpscwdcm65czscrun048ecn5,FC Utrecht,33yauarx84sam5u05vgyqxfxl,J. Karlsson,40.214999999999996,22.44,0,0.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936064989,1,15,54,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,61.11000000000001,49.164,3,5.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936068761,1,19,6,ccpscwdcm65czscrun048ecn5,FC Utrecht,cy0lv5u16obr2ne4xiins43x1,S. Haller,54.075,39.984,1,1.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936075145,1,24,10,ccpscwdcm65czscrun048ecn5,FC Utrecht,33yauarx84sam5u05vgyqxfxl,J. Karlsson,69.72000000000001,10.336,0,0.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936078741,1,26,58,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,cx6fxszjvjam6zb3c3p0dd1jo,M. Godts,71.4,40.46,0,0.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936086013,1,33,16,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7joybllup4h9oe6zfhcepjy6t,S. Berghuis,39.480000000000004,15.572000000000001,4,7.0,window_expired,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936099367,1,44,30,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,54.705000000000005,48.96,3,9.0,window_expired,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936123905,2,46,48,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,34.44,14.756,2,6.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936126313,2,48,53,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,47.25,37.944,4,7.0,window_expired,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936128429,2,51,8,ccpscwdcm65czscrun048ecn5,FC Utrecht,2tc8y9du64tjno62zll2jhy7e,Y. Cathline,23.31,48.07600000000001,0,0.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936129905,2,52,53,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,55.650000000000006,59.976000000000006,4,10.0,window_expired,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936131043,2,54,18,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,13.334999999999999,54.944,0,0.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936134199,2,57,53,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7joybllup4h9oe6zfhcepjy6t,S. Berghuis,25.935,3.3320000000000003,0,0.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936137647,2,60,42,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,22.89,30.532,1,1.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936158139,2,77,49,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,12.915000000000001,38.284,1,1.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936158327,2,78,0,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,48.615,46.104,3,2.0,turnover,False,0.0
+2026-05-10_AFC Ajax - FC Utrecht,2936185865,2,90,24,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,baakmd4ndnulbl9npvmq90mvp,D. Klaassen,23.1,24.956000000000003,1,1.0,turnover,False,0.0

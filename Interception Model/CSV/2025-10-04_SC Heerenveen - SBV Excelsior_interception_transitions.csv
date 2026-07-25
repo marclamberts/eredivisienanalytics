@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-04_SC Heerenveen - SBV Excelsior,2855940951,1,7,56,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,ar7llmzju08n8yrqu8xm1thck,O. Braude,36.015,4.284,0,0.0,turnover,False,0.0
+2025-10-04_SC Heerenveen - SBV Excelsior,2855941747,1,8,57,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,22.365000000000002,35.088,2,5.0,turnover,False,0.0
+2025-10-04_SC Heerenveen - SBV Excelsior,2855950689,1,20,2,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,21.735,46.104,0,0.0,turnover,False,0.0
+2025-10-04_SC Heerenveen - SBV Excelsior,2855955479,1,25,40,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,36.96000000000001,6.868,4,9.0,turnover,False,0.0110076123056142
+2025-10-04_SC Heerenveen - SBV Excelsior,2855956981,1,27,41,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,22.785,42.772000000000006,4,6.0,turnover,False,5.419905211855036e-05
+2025-10-04_SC Heerenveen - SBV Excelsior,2855975851,1,31,5,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,20.265,28.424,4,10.0,window_expired,False,3.329167180469994e-05
+2025-10-04_SC Heerenveen - SBV Excelsior,2855960367,1,33,20,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,2vfhae70oyyzm0qttlckworqi,A. Carlén,74.34,40.25600000000001,3,2.0,turnover,False,0.0
+2025-10-04_SC Heerenveen - SBV Excelsior,2855961203,1,34,42,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,eu6pfkiah7otafyryg6ll7y09,L. Brouwers,64.995,51.136,5,9.0,window_expired,False,0.0134781525095415
+2025-10-04_SC Heerenveen - SBV Excelsior,2855962287,1,36,27,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,76.54500000000002,49.776,0,0.0,turnover,False,0.0
+2025-10-04_SC Heerenveen - SBV Excelsior,2855962693,1,37,3,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,aqnr6l3f02hx0soadunxbjcpg,J. Trenskow,57.435,19.448000000000004,0,0.0,turnover,False,0.0
+2025-10-04_SC Heerenveen - SBV Excelsior,2855964567,1,39,33,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,48.089999999999996,9.792000000000002,0,0.0,turnover,False,0.0
+2025-10-04_SC Heerenveen - SBV Excelsior,2855985039,2,46,5,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,45.885000000000005,63.376000000000005,2,1.0,turnover,False,0.0
+2025-10-04_SC Heerenveen - SBV Excelsior,2855985857,2,47,20,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,21.0,61.744,4,6.0,window_expired,False,0.0004700813632462
+2025-10-04_SC Heerenveen - SBV Excelsior,2855993853,2,59,0,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,eu6pfkiah7otafyryg6ll7y09,L. Brouwers,37.065,54.128,3,7.0,window_expired,False,0.002104682064896
+2025-10-04_SC Heerenveen - SBV Excelsior,2855999477,2,66,56,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,13.755,13.464000000000002,1,1.0,turnover,False,0.0
+2025-10-04_SC Heerenveen - SBV Excelsior,2856001557,2,70,19,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,32.34,27.200000000000003,1,0.0,turnover,False,0.0
+2025-10-04_SC Heerenveen - SBV Excelsior,2856002031,2,71,19,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,46.2,62.83200000000001,5,8.0,turnover,False,0.0015824577966067
+2025-10-04_SC Heerenveen - SBV Excelsior,2856006747,2,84,10,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,30.345,45.967999999999996,3,10.0,window_expired,True,0.0005654822407766

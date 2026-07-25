@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849278439,1,0,46,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,50.08500000000001,18.632,3,8.0,window_expired,False,7.353426082101766e-06
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849281347,1,9,24,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,ekur9x1kzp8wq0lwfwev0b0bu,K. de Rooij,71.82000000000001,61.81200000000001,1,5.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849282863,1,13,32,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,26.775000000000002,3.468,0,0.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849285347,1,19,48,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,24.885,10.064000000000002,3,2.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849286315,1,22,34,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,67.72500000000001,14.280000000000001,3,3.0,turnover,False,0.0146893025376417
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849286401,1,22,39,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,13.86,45.764,2,2.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849291411,1,35,44,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1tmihr54maqj0h7785cg9ez56,M. Suray,42.839999999999996,60.248,0,0.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849292395,1,38,21,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d29ahwtvs7ls75wdtkf7xr8tm,Z. Buurmeester,13.965000000000002,30.804000000000002,2,3.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849295241,1,45,19,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,10.290000000000001,52.29200000000001,1,4.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849295407,1,45,36,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,a46irqckxabod18j2c0qfixre,K. Goudmijn,77.28,34.136,4,8.0,window_expired,False,0.003323585034013689
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849307723,2,47,16,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,90.405,2.5160000000000005,2,1.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849311241,2,53,3,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,69.405,33.660000000000004,2,1.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849319403,2,61,19,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1q0v3qpciql8rkyz4qrlvbuju,J. Breum,8.61,45.56,0,0.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849322323,2,64,26,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,2ekx0fvuf0dsat062oj430d05,G. Nauber,44.31,22.032,1,2.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849327251,2,69,11,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,20.16,56.37200000000001,5,9.0,window_expired,False,0.008906561484645605
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849329809,2,72,4,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,45.78,5.984000000000001,1,2.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849332395,2,75,32,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,66.045,24.14,2,2.0,turnover,False,0.0
+2025-09-21_PEC Zwolle - Go Ahead Eagles,2849343715,2,84,12,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,33.495,4.352,1,1.0,turnover,False,0.0

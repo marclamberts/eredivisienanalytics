@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932378653,1,5,40,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,8624hqd4nlbzcoqsetvsvla8k,D. Fonville,72.97500000000001,59.568,0,0.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932381039,1,7,34,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1zybkcmp40td92a6yg8sw9uga,T. Owusu,10.5,13.668000000000003,0,0.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932385623,1,11,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,24.465000000000003,37.604,0,0.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932391877,1,16,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,f5pgdha5h37xytbk1zq8q710,D. Koswal,22.575,48.348,1,1.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932392103,1,16,36,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,11.025,34.136,1,2.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932408587,1,31,33,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,7wjzrrcy3fp8nq6dlanfxvqhh,B. Nuytinck,7.035,28.628000000000004,0,0.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932410801,1,33,43,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,f5pgdha5h37xytbk1zq8q710,D. Koswal,11.55,22.916000000000004,0,0.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932439735,1,42,51,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,21.315,8.84,2,1.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932461577,2,52,53,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4kns22wbu3emy5oxbpr52rdud,E. Dasa,36.75,13.668000000000003,2,8.0,window_expired,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932467143,2,61,42,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,7wjzrrcy3fp8nq6dlanfxvqhh,B. Nuytinck,38.745,20.808000000000003,0,0.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932467955,2,63,2,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4kns22wbu3emy5oxbpr52rdud,E. Dasa,71.29500000000002,25.228,2,2.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932471149,2,68,20,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4mz9mhuv21kti5x38fb36q2g9,Y. El Kachati,68.88,60.99600000000001,5,7.0,window_expired,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932475955,2,79,11,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,11.025,39.984,1,4.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932475975,2,79,15,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,22.155,49.43600000000001,0,0.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932483733,2,96,37,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,13.545000000000002,16.184,3,3.0,turnover,False,0.0
+2026-05-02_Nijmegen Eendracht Combinatie - SC Telstar,2932484437,2,97,55,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,913pg8qqcjp99h5fjybbenob9,P. Sandler,30.03,12.444,0,0.0,turnover,False,0.0

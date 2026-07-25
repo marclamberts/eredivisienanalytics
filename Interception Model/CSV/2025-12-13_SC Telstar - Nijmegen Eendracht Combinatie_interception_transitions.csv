@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882761397,1,3,49,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,ds0hd4ezvb5rw6l95rhbxtq1g,B. Önal,26.355000000000004,43.52,0,0.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882783977,1,13,56,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,15.015,32.232,3,3.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882796173,1,22,23,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,40.53,17.748,3,10.0,window_expired,False,0.0009868810103638
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882801829,1,29,15,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,8624hqd4nlbzcoqsetvsvla8k,D. Fonville,55.650000000000006,45.628,4,9.0,window_expired,False,0.0039767583036083
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882809259,1,34,0,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,7.14,20.672,1,1.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882810589,1,34,39,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4pqi5vt820333t5zsj2refc2d,B. Linssen,28.35,33.32,2,9.0,window_expired,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882818859,1,38,15,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,42.0,3.468,2,3.0,turnover,False,0.000387056190603
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882822903,1,40,5,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,75.705,50.456,1,1.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882835225,1,45,38,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,8624hqd4nlbzcoqsetvsvla8k,D. Fonville,24.255000000000003,48.144,0,0.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882868195,2,45,20,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,69.19500000000001,21.692,0,0.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882868339,2,45,27,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,21.735,58.208,2,2.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882868775,2,45,41,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,17.745,58.684000000000005,3,6.0,turnover,False,6.056042517493809e-06
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2883157851,2,52,12,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,ds0hd4ezvb5rw6l95rhbxtq1g,B. Önal,38.64,44.47200000000001,0,0.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882885161,2,54,17,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,38.115,47.87200000000001,1,2.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882888175,2,55,45,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,30.765,17.272000000000002,0,0.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882898411,2,61,18,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,33.39,64.94,1,1.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882907459,2,69,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,34.44,17.272000000000002,0,0.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2882911757,2,74,15,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,33.6,2.924,0,0.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2883286601,2,93,2,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,73.29,66.164,0,0.0,turnover,False,0.0
+2025-12-13_SC Telstar - Nijmegen Eendracht Combinatie,2883290851,2,96,44,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,26.565,51.748,2,2.0,turnover,False,0.0

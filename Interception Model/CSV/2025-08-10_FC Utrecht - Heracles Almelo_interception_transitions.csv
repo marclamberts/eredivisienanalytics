@@ -1,0 +1,10 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-10_FC Utrecht - Heracles Almelo,2833756133,1,16,41,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6lyedmu2vuf7jig3jmhz9b4ve,D. van der Kust,61.425000000000004,51.816,2,3.0,turnover,False,0.0
+2025-08-10_FC Utrecht - Heracles Almelo,2833758969,1,19,47,dac758ef858jbq7pcb3gfwite,Heracles Almelo,f2snk84xy67ergwrwoblgt2ad,T. Bruns,54.075,9.928,0,0.0,turnover,False,0.0
+2025-08-10_FC Utrecht - Heracles Almelo,2833769801,1,30,45,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,38.115,3.808,5,8.0,turnover,False,2.7563880829195586e-07
+2025-08-10_FC Utrecht - Heracles Almelo,2833770275,1,31,17,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,69.3,12.376000000000001,1,1.0,turnover,False,0.0
+2025-08-10_FC Utrecht - Heracles Almelo,2833774393,1,35,59,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6lyedmu2vuf7jig3jmhz9b4ve,D. van der Kust,45.464999999999996,63.784000000000006,0,0.0,turnover,False,0.0
+2025-08-10_FC Utrecht - Heracles Almelo,2833779209,1,42,19,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,32.865,34.068000000000005,1,2.0,turnover,False,0.0
+2025-08-10_FC Utrecht - Heracles Almelo,2833806337,2,52,48,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,64.575,65.824,1,1.0,turnover,False,0.0
+2025-08-10_FC Utrecht - Heracles Almelo,2833828311,2,76,6,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,55.964999999999996,62.968,3,5.0,turnover,False,0.0019582013325754
+2025-08-10_FC Utrecht - Heracles Almelo,2834195919,2,78,20,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,56.7,48.824,6,10.0,window_expired,False,0.0047403398302491

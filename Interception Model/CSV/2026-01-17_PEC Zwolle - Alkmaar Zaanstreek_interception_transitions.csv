@@ -1,0 +1,20 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890330303,1,1,38,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,13.965000000000002,41.82,1,2.0,turnover,False,0.0
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890331179,1,3,4,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,73lwz4he5erpp25zi8crjvztg,I. Jensen,58.38,52.564,0,0.0,turnover,False,0.0
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890337637,1,13,25,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,46.935,35.088,0,0.0,turnover,False,0.0
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890339351,1,18,9,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,59.745000000000005,35.632000000000005,1,0.0,turnover,False,0.0
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890341993,1,22,15,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1x6fhuy49w4rpnyavwotbf504,T. Gooijer,41.79,9.724000000000002,3,5.0,turnover,False,4.085788995362993e-05
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890345299,1,27,0,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,56.07,36.856,0,0.0,turnover,False,0.0
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890346367,1,28,31,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,22.680000000000003,19.584000000000003,0,0.0,turnover,False,0.0
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890348571,1,32,3,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,31.815,43.112,0,0.0,turnover,False,0.0
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890351061,1,37,8,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,26.669999999999998,23.664,3,3.0,turnover,False,8.161436523698717e-06
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890351099,1,37,12,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,70.03500000000001,35.7,4,6.0,turnover,False,0.0274364664519741
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890354881,1,45,48,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,59.955000000000005,47.124,1,2.0,turnover,False,0.0
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890366581,2,45,54,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,4fsu74aeogf53l2g1tx89vuok,M. Šín,57.855000000000004,49.980000000000004,5,8.0,window_expired,False,0.0003119546776044
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890366933,2,46,23,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,46.725,12.988000000000001,0,0.0,turnover,False,0.0
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890372689,2,57,48,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,62.895,9.384,6,6.0,turnover,True,0.0077709056266893
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890373439,2,58,51,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,8u19xeh9ugvh8f1mh7jnbbhuc,K. Smit,69.825,62.628,1,1.0,turnover,False,0.0
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890382681,2,71,29,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,34.125,14.688000000000002,0,0.0,turnover,False,0.0
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890390871,2,84,41,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,32.655,52.768,4,4.0,turnover,False,2.477699849613713e-05
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890391437,2,85,40,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,33.495,42.432,4,6.0,turnover,False,1.3627716525022038e-05
+2026-01-17_PEC Zwolle - Alkmaar Zaanstreek,2890393279,2,88,41,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1x6fhuy49w4rpnyavwotbf504,T. Gooijer,22.365000000000002,23.46,2,2.0,turnover,False,0.0002519087078759

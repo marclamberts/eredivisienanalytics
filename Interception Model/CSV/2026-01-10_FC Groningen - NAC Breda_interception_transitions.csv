@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-10_FC Groningen - NAC Breda,2888712983,1,1,46,cos9hxi16eitbcbthof7zrm4m,FC Groningen,by85t8ssyumcjcks1jx3v96vo,Y. Taha,29.400000000000002,53.244,4,9.0,window_expired,False,0.0012810125260276
+2026-01-10_FC Groningen - NAC Breda,2888694749,1,4,41,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,9.870000000000001,58.344,0,0.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888696077,1,7,50,cos9hxi16eitbcbthof7zrm4m,FC Groningen,by85t8ssyumcjcks1jx3v96vo,Y. Taha,69.3,36.38,3,5.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888696111,1,7,56,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,7.7700000000000005,48.21200000000001,2,6.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888699751,1,17,2,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,20.580000000000002,12.308000000000002,1,0.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888700233,1,18,0,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,71.19,58.344,1,1.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888708563,1,39,33,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,39.06,41.004,0,0.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888714129,2,46,3,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,10.395000000000001,39.236000000000004,1,0.0,window_expired,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888715333,2,51,13,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,43.365,54.264,4,9.0,window_expired,False,0.0004749203687339
+2026-01-10_FC Groningen - NAC Breda,2888715727,2,52,33,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,35.910000000000004,18.360000000000003,3,6.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888716015,2,53,40,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bgzvhtk50gvmq6noheadmc34l,D. Odoi,28.875,51.204,0,0.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888717383,2,59,11,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,45.255,24.956000000000003,4,10.0,window_expired,False,4.580872337259234e-05
+2026-01-10_FC Groningen - NAC Breda,2888717541,2,60,15,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,34.44,17.136,0,0.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888718045,2,62,32,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,22.155,52.088,2,2.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888718461,2,63,47,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,72.45,21.624000000000002,0,0.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888721595,2,77,14,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,c3j7ddqg0yzporam6gieibgiy,C. Brym,24.990000000000002,11.016,4,5.0,turnover,False,0.0002992766795159
+2026-01-10_FC Groningen - NAC Breda,2888726379,2,89,16,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,57.855000000000004,24.276000000000003,0,0.0,turnover,False,0.0
+2026-01-10_FC Groningen - NAC Breda,2888725361,2,91,26,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7xovmwq2h4rcr9nuou4gi3g2c,W. Prins,11.445,58.548,4,9.0,window_expired,False,7.729107955800618e-05

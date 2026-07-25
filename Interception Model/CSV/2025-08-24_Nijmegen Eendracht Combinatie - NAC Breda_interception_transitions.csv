@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839038011,1,13,16,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8nnxi9lw3hso096kk81h0azh0,J. Talvitie,69.3,8.024000000000001,3,4.0,turnover,False,0.0
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839039487,1,15,0,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,35.385000000000005,19.652,5,9.0,window_expired,False,0.0003929804039955212
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839048649,1,29,46,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,2wkew38juoofry6oo3t1vcwyd,E. Mahmutović,22.47,27.064,0,0.0,turnover,False,0.0
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839057035,1,38,50,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,72.55499999999999,37.468,3,3.0,turnover,False,0.0248033282592452
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839088151,2,52,43,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,66.57000000000001,47.53200000000001,3,4.0,turnover,False,0.0054393398372859
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839089303,2,54,18,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,19.740000000000002,44.2,0,0.0,turnover,False,0.0
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839092027,2,58,4,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,913pg8qqcjp99h5fjybbenob9,P. Sandler,56.175000000000004,8.704,5,9.0,window_expired,False,3.663982117269038e-05
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839091997,2,58,30,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,25.62,63.03600000000001,3,7.0,turnover,False,7.180594721128975e-06
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839095753,2,67,8,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,a76yp8gkkg6frtuhh3d6l46i,D. Proper,35.385000000000005,24.14,0,0.0,turnover,False,0.0
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839099173,2,74,53,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,913pg8qqcjp99h5fjybbenob9,P. Sandler,50.400000000000006,63.648,1,0.0,turnover,False,0.0
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839099265,2,75,4,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,2wkew38juoofry6oo3t1vcwyd,E. Mahmutović,37.275,22.712,0,0.0,turnover,False,0.0
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839104671,2,85,34,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,6dd248q0adq6su677bw2kk2c5,C. Verdonk,59.43000000000001,51.61200000000001,0,0.0,turnover,False,0.0
+2025-08-24_Nijmegen Eendracht Combinatie - NAC Breda,2839105553,2,87,16,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,a76yp8gkkg6frtuhh3d6l46i,D. Proper,17.115000000000002,25.16,2,1.0,turnover,False,0.0

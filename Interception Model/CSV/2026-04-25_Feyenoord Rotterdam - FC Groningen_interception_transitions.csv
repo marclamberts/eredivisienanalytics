@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928805209,1,1,53,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,8.61,51.816,1,5.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928805505,1,2,3,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,eoodvdqfvhql03i8kv9l14qvo,T. Kraaijeveld,77.91000000000001,10.200000000000001,0,0.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928818213,1,7,42,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,54.285000000000004,18.224,1,1.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928818619,1,7,49,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,26.880000000000003,47.940000000000005,1,1.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928819453,1,8,12,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,69.405,57.528,0,0.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928821869,1,9,25,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ciguyr553yqapqfudim9af46h,M. Deijl,68.46000000000001,4.352,2,3.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928839403,1,17,56,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,74.55,45.084,3,6.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928847623,1,29,23,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,38.955000000000005,48.07600000000001,2,2.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928848883,1,31,20,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,eoodvdqfvhql03i8kv9l14qvo,T. Kraaijeveld,27.51,5.848,1,0.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928858657,1,38,10,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,63.73500000000001,3.74,1,1.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928866253,1,42,5,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,35.175000000000004,44.404,1,1.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928868619,1,43,25,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,eoodvdqfvhql03i8kv9l14qvo,T. Kraaijeveld,34.02,11.696,2,3.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928909419,2,47,44,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,5bjdj7hrhuxjbsa8wc1kw42c5,G. Trauner,52.815,35.564,2,1.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928934507,2,61,38,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,33.495,54.06,1,2.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928943939,2,69,9,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6hnzgiw8h1itz9l2j3sb6oeeh,J. St. Juste,64.05,9.792000000000002,1,2.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928945985,2,72,44,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6hnzgiw8h1itz9l2j3sb6oeeh,J. St. Juste,66.78,43.86000000000001,4,5.0,turnover,False,0.0
+2026-04-25_Feyenoord Rotterdam - FC Groningen,2928954013,2,84,4,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6hnzgiw8h1itz9l2j3sb6oeeh,J. St. Juste,18.69,36.176,0,0.0,turnover,False,0.0

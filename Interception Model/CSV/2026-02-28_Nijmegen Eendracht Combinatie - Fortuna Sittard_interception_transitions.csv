@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905687841,1,0,44,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,28.665000000000003,22.372,0,0.0,turnover,False,0.0
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905689789,1,2,42,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,32.025,26.384,3,7.0,turnover,False,0.0
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905697391,1,10,34,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,9zryne6aa951ltubvjo0gk12i,M. Ihattaren,43.365,19.244000000000003,4,6.0,turnover,True,0.0
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905706027,1,20,39,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,29.715000000000003,26.180000000000003,0,0.0,turnover,False,0.0
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905707425,1,22,20,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,29.82,62.016000000000005,1,0.0,turnover,False,0.0
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905709127,1,24,44,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,37.17,53.85600000000001,3,5.0,window_expired,False,3.62307808024348e-05
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905711951,1,29,2,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,14.385,18.768,2,0.0,turnover,False,0.0
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905712979,1,30,36,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,26.46,43.928,2,4.0,turnover,False,0.0
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905713037,1,30,42,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,48.300000000000004,58.61600000000001,1,1.0,turnover,False,0.0
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905721803,1,43,7,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,14.490000000000002,10.200000000000001,3,2.0,turnover,False,0.0002267030162303
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905722501,1,43,56,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2ifp36vdm0d6rb3xc7muuvv11,D. Limnios,38.43,56.304,3,3.0,turnover,False,3.427897354472964e-05
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905724525,1,46,30,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dp0q4f4gbj2buhcu1lb5dzxed,Ivo Pinto,36.225,2.788,0,0.0,turnover,False,0.0
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905740745,2,48,38,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,ccmmsnrfn58gwi1petlp08f3e,L. Duijvestijn,26.25,18.428,0,0.0,turnover,False,0.0
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905760831,2,74,53,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,25.095,17.476,3,5.0,turnover,False,0.00022525683630952785
+2026-02-28_Nijmegen Eendracht Combinatie - Fortuna Sittard,2905763759,2,79,23,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dp0q4f4gbj2buhcu1lb5dzxed,Ivo Pinto,16.38,4.216,1,1.0,turnover,False,0.0

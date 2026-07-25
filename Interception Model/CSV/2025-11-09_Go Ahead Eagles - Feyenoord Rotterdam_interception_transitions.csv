@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871884203,1,3,35,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,5shfqpd5fj05qrp1jlzd08ftg,C. Twigt,26.46,20.264000000000003,2,2.0,turnover,False,0.0
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871888829,1,8,58,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,72.45,10.200000000000001,0,0.0,turnover,False,0.0
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871893603,1,14,24,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,8.085,29.036000000000005,1,3.0,window_expired,False,0.0
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871894569,1,15,26,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,11.13,58.07200000000001,0,0.0,turnover,False,0.0
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871899665,1,20,34,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,25.725,62.424,3,6.0,window_expired,False,0.000243389500591721
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871903699,1,25,12,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,21.630000000000003,53.448,0,0.0,turnover,False,0.0
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871931879,2,45,31,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,34.86000000000001,33.932,4,6.0,window_expired,False,5.79275693653597e-05
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871935995,2,51,19,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,83.685,36.516000000000005,1,0.0,turnover,False,0.0
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871942917,2,60,4,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,5shfqpd5fj05qrp1jlzd08ftg,C. Twigt,20.685,19.720000000000002,3,6.0,turnover,False,0.0002464111870034
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871943869,2,61,10,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,58.48500000000001,54.74,0,0.0,turnover,False,0.0
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871948753,2,66,59,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,17.01,61.948,0,0.0,turnover,False,0.0
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871953835,2,73,45,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ecqjg6wtntf1guejvm10redck,G. Read,24.885,25.976000000000003,0,0.0,turnover,False,0.0
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871953913,2,73,51,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,14.91,31.008000000000003,4,7.0,window_expired,False,5.650635476650567e-05
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871959261,2,81,13,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,aajft01g5yggw0is5fbfh3105,B. Nieuwkoop,46.410000000000004,12.24,0,0.0,turnover,False,0.0
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871959375,2,81,23,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,11.445,25.432000000000002,2,7.0,turnover,False,0.0
+2025-11-09_Go Ahead Eagles - Feyenoord Rotterdam,2871961699,2,84,51,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,15.75,28.560000000000002,0,0.0,turnover,False,0.0

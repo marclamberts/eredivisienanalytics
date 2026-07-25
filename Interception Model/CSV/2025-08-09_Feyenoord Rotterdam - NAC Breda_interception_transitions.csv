@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833158273,1,4,3,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,48.300000000000004,59.092000000000006,2,2.0,turnover,False,0.0005520259445678
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833164937,1,15,45,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,56.595,53.584,2,3.0,turnover,False,0.0
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833171007,1,25,51,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dwyl0yii553i57u7azfa7d15g,A. Hadj Moussa,41.055,20.740000000000002,5,10.0,window_expired,False,2.4560201073900445e-05
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833172603,1,28,13,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,40.005,57.93600000000001,1,2.0,turnover,False,0.0
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833176549,1,33,7,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,26.355000000000004,39.372,1,1.0,turnover,False,0.0
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833180745,1,38,21,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,24.255000000000003,52.36000000000001,0,0.0,turnover,False,0.0
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833590595,1,40,35,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,2wkew38juoofry6oo3t1vcwyd,E. Mahmutović,61.11000000000001,29.036000000000005,0,0.0,turnover,False,0.0
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833184021,1,42,46,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,d785q9rpqlyuyswv8f9fx4cno,M. Nassoh,28.875,57.868,3,9.0,window_expired,False,3.955074352662846e-05
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833186149,1,45,39,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ecqjg6wtntf1guejvm10redck,G. Read,61.214999999999996,5.644000000000001,1,6.0,turnover,False,0.0
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833202985,2,50,45,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,25.095,57.188,3,3.0,turnover,False,6.028125550192054e-05
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833213951,2,65,10,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,37.695,51.952000000000005,0,0.0,turnover,False,0.0
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833214643,2,66,0,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,98.07000000000001,58.548,2,1.0,turnover,False,0.0
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833221911,2,74,4,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,b486fhu2s7pyi92yk1iczglp1,T. Kongolo,31.605000000000004,54.808,0,0.0,turnover,False,0.0
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833226357,2,78,33,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e5xuwwa4qs6zxjd7y52tslih,Q. Timber,35.28,38.964,2,2.0,turnover,False,0.0
+2025-08-09_Feyenoord Rotterdam - NAC Breda,2833252695,2,89,53,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8nnxi9lw3hso096kk81h0azh0,J. Talvitie,37.800000000000004,11.764000000000001,2,4.0,turnover,False,0.0

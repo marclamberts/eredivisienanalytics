@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-19_SC Telstar - SC Heerenveen,2861157973,1,6,18,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,61.845,62.56,3,2.0,turnover,False,0.0008589724790626
+2025-10-19_SC Telstar - SC Heerenveen,2861171005,1,31,59,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,45.99,3.808,1,2.0,turnover,False,0.0
+2025-10-19_SC Telstar - SC Heerenveen,2861172883,1,36,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,22.89,52.904,4,7.0,turnover,False,1.952869105532884e-05
+2025-10-19_SC Telstar - SC Heerenveen,2861173801,1,38,37,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,64.995,28.900000000000002,3,6.0,turnover,False,0.0016378555297554
+2025-10-19_SC Telstar - SC Heerenveen,2861173887,1,38,44,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,51.45,57.732000000000006,2,2.0,turnover,False,0.0
+2025-10-19_SC Telstar - SC Heerenveen,2861189889,2,50,6,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,28.980000000000004,10.948000000000002,3,8.0,turnover,False,0.0
+2025-10-19_SC Telstar - SC Heerenveen,2861191065,2,52,4,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,28.14,44.336000000000006,3,8.0,window_expired,False,0.00047256550087162026
+2025-10-19_SC Telstar - SC Heerenveen,2861191169,2,52,17,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,5oghztk07za2yuqq4jnav22y2,M. Rivera,55.650000000000006,64.05600000000001,1,0.0,turnover,False,0.0
+2025-10-19_SC Telstar - SC Heerenveen,2861195877,2,59,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,50130ztne7nsfs9fxf0am6vv9,D. Mertens,71.715,56.37200000000001,3,4.0,turnover,False,0.0010126945014298
+2025-10-19_SC Telstar - SC Heerenveen,2861195993,2,59,30,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,19.740000000000002,23.596000000000004,3,4.0,turnover,False,8.483152396483729e-05
+2025-10-19_SC Telstar - SC Heerenveen,2861197805,2,61,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,74.655,30.056000000000004,5,5.0,turnover,True,0.0044936711235385
+2025-10-19_SC Telstar - SC Heerenveen,2861199383,2,63,9,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,12.81,43.52,2,2.0,turnover,False,0.0
+2025-10-19_SC Telstar - SC Heerenveen,2861204023,2,67,59,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,61.635000000000005,13.600000000000001,0,0.0,turnover,False,0.0
+2025-10-19_SC Telstar - SC Heerenveen,2861210757,2,75,5,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1zybkcmp40td92a6yg8sw9uga,T. Owusu,49.455000000000005,22.712,4,10.0,window_expired,False,0.0
+2025-10-19_SC Telstar - SC Heerenveen,2861221181,2,87,10,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,68.14500000000001,4.216,1,0.0,turnover,False,0.0

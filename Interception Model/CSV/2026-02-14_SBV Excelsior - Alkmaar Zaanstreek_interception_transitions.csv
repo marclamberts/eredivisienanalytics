@@ -1,0 +1,25 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900257347,1,5,45,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,wuh8s4gfo9ro3nel3rormg44,R. Daal,44.625,61.81200000000001,2,7.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900258549,1,6,49,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,19.32,7.956,1,0.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900262443,1,11,23,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,59.325,4.216,1,2.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900263607,1,12,56,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,es363spp9pgd4hralx6ni2xw4,M. Chávez,54.705000000000005,61.608000000000004,0,0.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900269119,1,20,27,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,74.865,50.184000000000005,0,0.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900269575,1,21,5,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,e8ppjprlbi0yiofmb7mj72wwk,R. Robbemond,16.065,59.29600000000001,0,0.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900270905,1,22,43,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,57.435,58.004000000000005,3,6.0,window_expired,False,0.0004954628206251
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900271521,1,23,18,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,e8ppjprlbi0yiofmb7mj72wwk,R. Robbemond,74.44500000000001,34.204,1,3.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900271525,1,23,22,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,21.21,20.876,0,0.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900273623,1,25,45,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,21.419999999999998,13.872,4,9.0,window_expired,False,3.2275701035464066e-05
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900307737,2,55,56,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,27.51,3.944,0,0.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900308497,2,57,30,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,8.925,25.568,0,0.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900312857,2,63,23,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,27.72,21.692,1,2.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900317287,2,69,3,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,25.305000000000003,20.400000000000002,0,0.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900318953,2,71,9,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,69.72000000000001,40.188,3,7.0,window_expired,False,0.013463743958409801
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900319307,2,71,37,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,29.715000000000003,33.11600000000001,0,0.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900588751,2,72,44,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,33.39,53.65200000000001,3,8.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900323581,2,76,48,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5nhideyjwp2347ryi1n9wfq50,D. Sanches Fernandes,31.71,31.484,0,0.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900326001,2,79,32,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5pg02unrm16jaa8vt5ego9z6y,S. Janssen,74.34,2.3120000000000003,1,1.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900330757,2,85,6,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,27.51,45.764,4,5.0,turnover,False,0.0002130951371033
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900340833,2,86,12,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,71.715,60.79200000000001,4,5.0,window_expired,False,0.0003649101106785
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900334769,2,90,26,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,22alh32lu88yabxd4pl0opg5w,K. Boogaard,40.11000000000001,46.308,2,3.0,turnover,False,0.0
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900336403,2,92,33,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,14.175,39.848000000000006,3,6.0,turnover,False,4.98985297558846e-05
+2026-02-14_SBV Excelsior - Alkmaar Zaanstreek,2900338321,2,94,36,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,32.76,47.6,1,1.0,turnover,False,0.0

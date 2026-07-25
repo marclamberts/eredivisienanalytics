@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841833805,1,2,19,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,55.964999999999996,49.844,1,1.0,turnover,False,0.0
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841837211,1,6,39,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6yush35gfp1sgyyzicye73rp,P. van Aanholt,23.835,50.388,4,5.0,turnover,False,1.25170515678924e-05
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841837909,1,7,24,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,30.240000000000002,39.508,4,8.0,window_expired,False,0.0
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841845399,1,16,4,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,aajft01g5yggw0is5fbfh3105,B. Nieuwkoop,70.455,6.460000000000001,0,0.0,turnover,False,0.0
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841851499,1,25,35,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f57vs3qmmob743hdk2dxf56cq,S. Sambo,28.56,8.908000000000001,2,1.0,turnover,False,0.0003337464148884
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841852133,1,26,54,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e5xuwwa4qs6zxjd7y52tslih,Q. Timber,36.330000000000005,49.028,2,4.0,turnover,False,0.0048941627982839
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841867231,1,43,46,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,22.05,25.092000000000002,4,10.0,turnover,False,0.0
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841868267,1,44,44,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6yush35gfp1sgyyzicye73rp,P. van Aanholt,33.495,57.324000000000005,2,8.0,turnover,False,0.0
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841884737,2,45,59,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,56.07,28.084,0,0.0,turnover,False,0.0
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841902265,2,73,23,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ecmzlwu35vg4y64kidte9v0no,M. Kleijn,3.1500000000000004,50.864000000000004,1,1.0,turnover,False,0.0
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841906035,2,77,19,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,9lctm8txbd4n87mk61lwa0rf9,S. Bakari,12.285,22.644,2,1.0,turnover,False,0.0
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841909037,2,79,55,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,17.325,36.04,1,1.0,turnover,False,0.0
+2025-08-31_Sparta Rotterdam - Feyenoord Rotterdam,2841919103,2,89,26,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,891zjrm0zjc2e3ebjx11p2y38,J. Slory,65.10000000000001,60.99600000000001,3,5.0,turnover,False,0.0

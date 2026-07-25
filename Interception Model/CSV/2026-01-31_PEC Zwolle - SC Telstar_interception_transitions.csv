@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-31_PEC Zwolle - SC Telstar,2894898527,1,2,50,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,33.81,52.564,2,2.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894907065,1,14,14,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,22.680000000000003,13.056000000000001,0,0.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2895244255,1,14,28,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6u7z5qrlwzl9aug8awejq37xl,Jamiro Monteiro,19.32,10.064000000000002,3,7.0,turnover,False,0.0001851763159288
+2026-01-31_PEC Zwolle - SC Telstar,2894908409,1,16,22,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,40.845,54.33200000000001,5,6.0,window_expired,False,0.0006477094246293
+2026-01-31_PEC Zwolle - SC Telstar,2894911109,1,19,58,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,14.28,19.652,1,1.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894911379,1,20,15,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,30.240000000000002,9.792000000000002,1,1.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894911765,1,20,51,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,53.760000000000005,14.280000000000001,2,9.0,window_expired,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894915257,1,24,53,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,64.995,56.37200000000001,0,0.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894918337,1,28,46,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,15.540000000000001,58.61600000000001,2,2.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894918453,1,28,53,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,67.095,18.972,0,0.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894923913,1,35,55,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,24.675,17.068,2,5.0,window_expired,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894928307,1,42,49,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,41.265,53.38,0,0.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894930681,1,46,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,7.035,44.540000000000006,0,0.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894945025,2,45,42,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,59.85,18.632,0,0.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894946193,2,47,18,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,14.28,18.972,2,2.0,turnover,False,5.807420211324799e-05
+2026-01-31_PEC Zwolle - SC Telstar,2894946287,2,47,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,6.615,18.564,0,0.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894951069,2,56,6,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,13.334999999999999,13.872,4,9.0,window_expired,False,0.0036219636714086
+2026-01-31_PEC Zwolle - SC Telstar,2894953771,2,59,41,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,48.195,37.400000000000006,0,0.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894954903,2,61,13,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,38.115,49.844,4,10.0,window_expired,False,0.0001242094770637
+2026-01-31_PEC Zwolle - SC Telstar,2894955409,2,61,52,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,70.14,13.056000000000001,0,0.0,turnover,False,0.0
+2026-01-31_PEC Zwolle - SC Telstar,2894980553,2,96,0,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,62.05500000000001,23.256000000000004,4,7.0,turnover,False,0.0069947949891522

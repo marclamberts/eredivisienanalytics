@@ -1,0 +1,20 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-24_FC Twente - SBV Excelsior,2892523505,1,0,9,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,33.915,61.132000000000005,0,0.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892526191,1,5,0,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5pg02unrm16jaa8vt5ego9z6y,S. Janssen,32.76,56.57600000000001,1,1.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892528401,1,7,54,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5pg02unrm16jaa8vt5ego9z6y,S. Janssen,36.12,54.604,0,0.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892530169,1,10,9,4tic29sox7m39fy1ztgv0jsiq,FC Twente,9nix5y8xcj34ps62r34udtqwa,K. Hlynsson,68.88,12.648000000000001,2,2.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892536681,1,19,12,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,61.005,24.072,1,1.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892540769,1,25,16,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5m8pflpgynidzk7d9507oujje,D. Rots,38.85,7.752000000000001,1,0.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892544863,1,31,45,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,32.550000000000004,45.492000000000004,0,0.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892545727,1,33,7,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,43.575,55.488,0,0.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892546179,1,33,53,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,28.875,16.32,3,7.0,window_expired,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892547843,1,36,45,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,96.81,24.752000000000002,0,0.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892547953,1,36,55,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,56.385000000000005,52.496,1,2.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892549033,1,38,36,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bner5siqnwn1fqusfrgujt0fe,M. Bruns,41.580000000000005,12.58,5,10.0,window_expired,False,0.0100770465147998
+2026-01-24_FC Twente - SBV Excelsior,2892549531,1,39,21,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,1xwmx2ydxa5zeqo12778h83ro,N. Martens,40.11000000000001,8.568,1,0.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892550955,1,41,22,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,30t0ph1icrggc0x62om801ses,G. de Regt,30.975,56.57600000000001,2,1.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892561341,2,47,42,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,7y0acvcg9km8dz51t5ndy23md,M. van Duinen,32.13,34.408,0,0.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892562253,2,49,51,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,1xwmx2ydxa5zeqo12778h83ro,N. Martens,23.730000000000004,16.456,0,0.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892570633,2,66,1,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,2vfhae70oyyzm0qttlckworqi,A. Carlén,28.77,14.620000000000001,2,6.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892573871,2,72,28,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5nhideyjwp2347ryi1n9wfq50,D. Sanches Fernandes,32.025,22.916000000000004,0,0.0,turnover,False,0.0
+2026-01-24_FC Twente - SBV Excelsior,2892575001,2,74,48,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,27.51,5.372000000000001,0,0.0,turnover,False,0.0

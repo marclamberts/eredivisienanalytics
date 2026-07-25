@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849526485,1,3,15,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,b94d67jluhh4076wp2se5fqsq,D. Kasius,59.22,20.264000000000003,5,9.0,window_expired,False,0.0002186520950454
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849530055,1,6,45,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,68.565,48.620000000000005,0,0.0,turnover,False,0.0
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849561649,1,38,41,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,59.955000000000005,60.52,2,4.0,window_expired,False,0.0060158457999335
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849565663,1,42,8,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,68.355,24.82,3,7.0,window_expired,False,0.0099661203177768
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849594693,2,47,6,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e5xuwwa4qs6zxjd7y52tslih,Q. Timber,63.0,41.412,1,2.0,turnover,False,0.0
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849597221,2,49,17,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ecqjg6wtntf1guejvm10redck,G. Read,68.25,7.888,0,0.0,turnover,False,0.0
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849598237,2,50,12,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,40.53,36.38,1,1.0,turnover,False,0.0
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849600877,2,53,8,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ahwtdhrerarmljk9bh0tcpk6i,S. Steijn,44.52,59.160000000000004,0,0.0,turnover,False,0.0
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849603523,2,56,34,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,13.755,40.93600000000001,0,0.0,turnover,False,0.0
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849606031,2,59,24,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,27.51,43.928,3,4.0,turnover,False,0.0
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849606807,2,60,14,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,9.240000000000002,39.236000000000004,0,0.0,turnover,False,0.0
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849613021,2,66,49,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,36.645,56.168,2,8.0,window_expired,False,0.0
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849622677,2,76,23,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,65.10000000000001,14.076,1,0.0,turnover,False,0.0
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849634251,2,88,10,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,74.025,21.42,0,0.0,turnover,False,0.0
+2025-09-21_Alkmaar Zaanstreek - Feyenoord Rotterdam,2849641421,2,94,4,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,2tox45zgi16bvmn2xzdlvblsk,J. Plug,22.26,36.992000000000004,3,7.0,turnover,False,0.0

@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919278207,1,6,31,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,51.660000000000004,22.032,0,0.0,turnover,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919279095,1,7,25,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,20.580000000000002,12.24,6,9.0,turnover,False,0.0011584779830253
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919284651,1,12,15,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,8u19xeh9ugvh8f1mh7jnbbhuc,K. Smit,60.06,20.876,3,9.0,window_expired,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919295549,1,21,56,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jpreaads35pnnfqbn7hmrmy,S. Mijnans,29.925,27.132,0,0.0,turnover,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919301217,1,27,14,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,29.715000000000003,56.1,0,0.0,turnover,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919303725,1,29,33,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,14.28,61.336000000000006,5,6.0,window_expired,False,0.00036979148648866967
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919311129,1,36,3,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,32.025,13.056000000000001,3,3.0,turnover,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919311193,1,36,6,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,nw48ayorxrpxwcxbdhxy44k4,B. van Duijl,62.265,64.19200000000001,1,0.0,window_expired,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919317545,1,41,29,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,72.66000000000001,26.180000000000003,0,0.0,turnover,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919346155,2,52,21,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,38.43,60.18000000000001,0,0.0,turnover,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919349697,2,55,48,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,34258m1cvslz8r6d17nv4b90q,S. van Ottele,66.57000000000001,12.852,1,2.0,turnover,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919349823,2,55,54,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,69.615,5.644000000000001,3,6.0,turnover,True,0.0001099270461309
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919372357,2,79,5,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,20.895,13.668000000000003,0,0.0,turnover,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919372525,2,79,14,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,nw48ayorxrpxwcxbdhxy44k4,B. van Duijl,12.39,38.556000000000004,0,0.0,turnover,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919379041,2,86,7,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,45.57,21.488000000000003,0,0.0,turnover,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919384123,2,91,57,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jgtmmk4b2bgn0syidj6ve7kl,J. Clasie,58.065,10.200000000000001,0,0.0,turnover,False,0.0
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919384363,2,92,17,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,21.945,32.096000000000004,2,6.0,turnover,False,0.0

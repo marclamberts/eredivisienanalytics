@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838284407,1,10,21,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ely6vpyueden4b6ozfmspwgk5,J. Toornstra,81.48,59.024,0,0.0,turnover,False,0.0
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838290563,1,14,15,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,47.145,23.868000000000002,1,0.0,turnover,False,0.0
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838291865,1,15,2,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,48.089999999999996,41.82,1,2.0,turnover,False,0.0
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838301855,1,30,27,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,40.635000000000005,60.31600000000001,0,0.0,turnover,False,0.0
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838303439,1,32,7,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,ciguyr553yqapqfudim9af46h,M. Deijl,36.12,10.88,5,10.0,window_expired,False,0.0004955935741411
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838337379,1,47,13,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,2ekx0fvuf0dsat062oj430d05,G. Nauber,42.0,8.976,0,0.0,turnover,False,0.0
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838334717,1,48,48,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,29.82,61.404,0,0.0,turnover,False,0.0
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838372139,2,48,40,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,35.07,61.2,2,7.0,turnover,False,0.0
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838382213,2,54,0,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,17.115000000000002,18.428,4,8.0,window_expired,False,0.0009369095240822
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838386485,2,54,58,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1tmihr54maqj0h7785cg9ez56,M. Suray,39.27,58.956,0,0.0,turnover,False,0.0
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838386411,2,56,9,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,dbg4ducw8j747foxiexle1iad,P. Clement,23.205000000000002,18.904000000000003,4,10.0,window_expired,False,0.000334714121578
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838406299,2,73,23,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6yush35gfp1sgyyzicye73rp,P. van Aanholt,10.815000000000001,59.364000000000004,1,2.0,turnover,False,0.0
+2025-08-23_Go Ahead Eagles - Sparta Rotterdam,2838424849,2,95,53,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,11.235,38.012,0,0.0,turnover,False,0.0

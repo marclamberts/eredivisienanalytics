@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-11_Heracles Almelo - AFC Ajax,2922607955,1,1,13,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,48.615,6.188000000000001,0,0.0,turnover,False,0.0
+2026-04-11_Heracles Almelo - AFC Ajax,2922608959,1,2,15,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,44.625,8.84,1,1.0,turnover,False,0.0
+2026-04-11_Heracles Almelo - AFC Ajax,2922632139,1,24,22,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7joybllup4h9oe6zfhcepjy6t,S. Berghuis,55.650000000000006,18.768,4,10.0,window_expired,False,0.0
+2026-04-11_Heracles Almelo - AFC Ajax,2922634377,1,26,47,dac758ef858jbq7pcb3gfwite,Heracles Almelo,96om2im2vd1621ajcexlyekno,T. van Gilst,11.445,12.512,1,2.0,turnover,False,0.0
+2026-04-11_Heracles Almelo - AFC Ajax,2922639873,1,32,48,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,57btqxe5sy3ygzxpp55p4umdx,W. Weghorst,60.900000000000006,2.108,2,2.0,turnover,False,0.0
+2026-04-11_Heracles Almelo - AFC Ajax,2922650193,1,40,52,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,22.785,46.308,0,0.0,turnover,False,0.0
+2026-04-11_Heracles Almelo - AFC Ajax,2922665567,2,49,36,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,22.785,48.75600000000001,4,5.0,turnover,False,6.194690380156853e-06
+2026-04-11_Heracles Almelo - AFC Ajax,2922668105,2,52,39,dac758ef858jbq7pcb3gfwite,Heracles Almelo,69gzswoym4jqnrag1wdqfdkyy,J. Wieckhoff,49.35,49.43600000000001,2,4.0,turnover,False,0.0
+2026-04-11_Heracles Almelo - AFC Ajax,2922669847,2,54,46,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,62.160000000000004,3.6720000000000006,0,0.0,turnover,False,0.0
+2026-04-11_Heracles Almelo - AFC Ajax,2922670239,2,55,14,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,31.080000000000002,66.164,1,2.0,turnover,False,0.0
+2026-04-11_Heracles Almelo - AFC Ajax,2922670279,2,55,17,dac758ef858jbq7pcb3gfwite,Heracles Almelo,afdwdm1rkz1ir3c0tukfh3jhm,S. Čestić,72.66000000000001,5.304,0,0.0,turnover,False,0.0
+2026-04-11_Heracles Almelo - AFC Ajax,2922686607,2,74,25,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2922aevmtpw4qvcwohmxmqtbd,T. Tomiyasu,18.69,33.252,0,0.0,turnover,False,0.0
+2026-04-11_Heracles Almelo - AFC Ajax,2922698459,2,92,39,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,20.37,54.128,4,6.0,window_expired,False,4.06512583853158e-05

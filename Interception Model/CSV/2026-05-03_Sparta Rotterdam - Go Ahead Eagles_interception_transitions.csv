@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2932962785,1,6,56,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,69.09,51.408,3,5.0,turnover,True,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2932963435,1,7,57,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,536qjh4gcmpo5q68ti87e60kq,S. Mito,59.22,22.983999999999998,2,5.0,turnover,True,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2932967367,1,14,37,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,eytcfp4cu6qkar65kf0p5rm96,J. Dirksen,20.790000000000003,29.240000000000002,1,2.0,window_expired,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2932971189,1,19,34,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,2teefpvijsbzag4yi7fm1pyol,A. Sampsted,4.9350000000000005,29.92,0,0.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2932973103,1,21,38,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,56.595,41.888000000000005,0,0.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2932973179,1,21,42,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,29.085,28.220000000000002,0,0.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2932974155,1,22,48,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,536qjh4gcmpo5q68ti87e60kq,S. Mito,41.475,46.784,3,8.0,window_expired,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2932978837,1,27,54,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,a2psnkhu3h7m0ng8e7qdietey,S. Tengstedt,76.33500000000001,4.964,2,0.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2932987631,1,36,32,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,18.69,62.084,1,0.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2932990897,1,40,4,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,6.720000000000001,46.308,1,1.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2932995311,1,45,12,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,36.225,36.992000000000004,3,8.0,window_expired,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2933019285,2,49,39,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,29q4j9r2lgdsdkkq2fgh8l7o4,Ayoni Santos,22.05,12.104000000000001,4,5.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2933021453,2,52,31,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1tmihr54maqj0h7785cg9ez56,M. Suray,21.840000000000003,65.144,1,0.0,window_expired,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2933026793,2,58,56,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,65.205,59.228,3,2.0,window_expired,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2933031421,2,63,48,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,2nwthqvbk70e2qo35dgp35979,V. van Crooij,41.895,9.384,1,2.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2933033169,2,65,43,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,4.620000000000001,15.912,1,2.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2933034755,2,67,18,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,18.480000000000004,50.456,3,5.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2933035595,2,68,23,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,48.72,39.440000000000005,0,0.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2933044461,2,77,35,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,59.010000000000005,61.2,3,3.0,turnover,False,0.0
+2026-05-03_Sparta Rotterdam - Go Ahead Eagles,2933046945,2,80,9,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,21.315,61.268,3,2.0,turnover,False,0.0

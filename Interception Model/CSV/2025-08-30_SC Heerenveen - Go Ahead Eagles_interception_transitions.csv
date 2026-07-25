@@ -1,0 +1,11 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-30_SC Heerenveen - Go Ahead Eagles,2841203145,1,8,58,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,9najgqcaamqj0qtiicuq9hey,R. Meerveld,73.29,1.564,1,0.0,turnover,False,0.0
+2025-08-30_SC Heerenveen - Go Ahead Eagles,2841203649,1,9,31,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,46.095,13.056000000000001,5,5.0,turnover,False,0.021812502459782
+2025-08-30_SC Heerenveen - Go Ahead Eagles,2841204351,1,10,28,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,ciguyr553yqapqfudim9af46h,M. Deijl,40.845,1.972,3,9.0,turnover,False,0.0001537196800688
+2025-08-30_SC Heerenveen - Go Ahead Eagles,2841204475,1,10,44,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,ciguyr553yqapqfudim9af46h,M. Deijl,61.74,16.592,3,2.0,window_expired,False,0.0025841025125166
+2025-08-30_SC Heerenveen - Go Ahead Eagles,2841226777,1,31,33,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1mroid71v9bwpx0iaospei9gq,R. Margaret,36.96000000000001,11.628000000000002,1,2.0,turnover,False,0.0
+2025-08-30_SC Heerenveen - Go Ahead Eagles,2841229763,1,33,58,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1mroid71v9bwpx0iaospei9gq,R. Margaret,22.575,24.616000000000003,0,0.0,turnover,False,0.0
+2025-08-30_SC Heerenveen - Go Ahead Eagles,2841286025,2,53,0,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,42.105000000000004,59.84,0,0.0,turnover,False,0.0
+2025-08-30_SC Heerenveen - Go Ahead Eagles,2841312283,2,72,47,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,ar7llmzju08n8yrqu8xm1thck,O. Braude,8.4,16.32,0,0.0,turnover,False,0.0
+2025-08-30_SC Heerenveen - Go Ahead Eagles,2841317157,2,77,7,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,37.905,30.668000000000003,0,0.0,turnover,False,0.0
+2025-08-30_SC Heerenveen - Go Ahead Eagles,2841322477,2,80,51,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,ciguyr553yqapqfudim9af46h,M. Deijl,32.34,10.812000000000001,0,0.0,turnover,False,0.0

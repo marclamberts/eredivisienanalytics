@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-14_FC Twente - Go Ahead Eagles,2883233623,1,0,53,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5m8pflpgynidzk7d9507oujje,D. Rots,84.84,15.912,1,1.0,turnover,False,0.0
+2025-12-14_FC Twente - Go Ahead Eagles,2883240575,1,8,38,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,19.740000000000002,34.884,1,3.0,window_expired,False,0.0
+2025-12-14_FC Twente - Go Ahead Eagles,2883609045,1,14,18,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,70.665,58.004000000000005,1,1.0,turnover,False,0.0
+2025-12-14_FC Twente - Go Ahead Eagles,2883251297,1,21,12,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,21.630000000000003,28.424,2,1.0,window_expired,False,0.0
+2025-12-14_FC Twente - Go Ahead Eagles,2883257481,1,31,25,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,b157xbo2jovsxkgr3wie3rip6,T. Baeten,102.165,5.848,1,1.0,turnover,False,0.0
+2025-12-14_FC Twente - Go Ahead Eagles,2883262037,1,36,15,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,14.28,22.44,1,1.0,turnover,False,0.0
+2025-12-14_FC Twente - Go Ahead Eagles,2883267053,1,41,15,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,60.480000000000004,43.112,0,0.0,turnover,False,0.0
+2025-12-14_FC Twente - Go Ahead Eagles,2883298193,2,55,8,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,34.65,58.14000000000001,3,5.0,turnover,False,5.754379721049918e-05
+2025-12-14_FC Twente - Go Ahead Eagles,2883302735,2,59,52,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,42.0,52.428,1,1.0,turnover,False,0.0
+2025-12-14_FC Twente - Go Ahead Eagles,2883306687,2,66,13,4tic29sox7m39fy1ztgv0jsiq,FC Twente,2hbduprkyabq8g1nhe6b4g3bp,M. Pjaca,64.47,46.580000000000005,0,0.0,turnover,False,0.0
+2025-12-14_FC Twente - Go Ahead Eagles,2883317127,2,81,18,4tic29sox7m39fy1ztgv0jsiq,FC Twente,qobf1v5kwuz6hj2ooixfw4mi,B. van Rooij,23.415000000000003,5.78,0,0.0,turnover,False,0.0

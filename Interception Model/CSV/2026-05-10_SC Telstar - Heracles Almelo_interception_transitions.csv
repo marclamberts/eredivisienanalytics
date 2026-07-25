@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-10_SC Telstar - Heracles Almelo,2936055457,1,4,1,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,66.675,4.828,0,0.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936056005,1,4,40,dac758ef858jbq7pcb3gfwite,Heracles Almelo,96om2im2vd1621ajcexlyekno,T. van Gilst,33.495,10.676,0,0.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936068701,1,18,52,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,3.3600000000000003,47.6,1,1.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936087513,1,34,32,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,66.99,11.832,1,2.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936091027,1,37,44,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,27.195,52.564,1,1.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936095901,1,41,37,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,26.355000000000004,16.592,1,3.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936097249,1,42,46,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,28.56,12.24,4,10.0,window_expired,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936097523,1,42,58,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,11.97,45.967999999999996,2,7.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936162545,2,67,40,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6lyedmu2vuf7jig3jmhz9b4ve,D. van der Kust,22.785,44.608,0,0.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936162771,2,67,54,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,34.86000000000001,58.07200000000001,2,3.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936173799,2,73,51,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,69.72000000000001,38.692,0,0.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936178003,2,78,18,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,48.510000000000005,12.24,0,0.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936178213,2,78,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,69.405,63.85200000000001,1,3.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936190929,2,86,54,dac758ef858jbq7pcb3gfwite,Heracles Almelo,afdwdm1rkz1ir3c0tukfh3jhm,S. Čestić,30.135,46.92,0,0.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936193181,2,88,29,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,66.045,43.112,0,0.0,turnover,False,0.0
+2026-05-10_SC Telstar - Heracles Almelo,2936193965,2,89,7,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,6.720000000000001,24.616000000000003,0,0.0,turnover,False,0.0

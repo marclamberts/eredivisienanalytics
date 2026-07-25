@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-20_Fortuna Sittard - FC Utrecht,2848866429,1,1,57,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,55.650000000000006,36.924,3,8.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848868901,1,4,10,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,60jptu288hf6gcljkbzcdie39,K. Peterson,58.275000000000006,65.89200000000001,0,0.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848875971,1,10,20,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,79.275,64.87200000000001,1,1.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848876283,1,10,37,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,64.575,52.904,0,0.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848913197,1,45,41,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,33.6,30.668000000000003,4,9.0,turnover,False,0.0001955815877226
+2025-09-20_Fortuna Sittard - FC Utrecht,2848932255,2,48,17,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,64.78500000000001,15.3,0,0.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848939293,2,55,10,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,53.445,21.692,0,0.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848944871,2,60,40,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,28.245,8.432,4,8.0,window_expired,False,0.0002423888291977
+2025-09-20_Fortuna Sittard - FC Utrecht,2848945715,2,61,31,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,61.53,4.6240000000000006,0,0.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848950239,2,66,7,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,22.155,48.144,1,3.0,window_expired,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848951327,2,67,24,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,66.045,28.084,0,0.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848961633,2,77,36,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,24.990000000000002,22.848000000000003,2,3.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848967699,2,83,43,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,23.730000000000004,57.868,3,2.0,window_expired,False,0.00022317239944756657
+2025-09-20_Fortuna Sittard - FC Utrecht,2848970547,2,86,31,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,21.840000000000003,23.664,2,1.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848973029,2,88,57,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,42.42,4.896000000000001,0,0.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848974139,2,90,24,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,73.71000000000001,2.3800000000000003,0,0.0,turnover,False,0.0
+2025-09-20_Fortuna Sittard - FC Utrecht,2848978107,2,96,36,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,33.6,34.68,0,0.0,turnover,False,0.0

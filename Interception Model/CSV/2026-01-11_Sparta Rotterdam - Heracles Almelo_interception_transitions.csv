@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888930069,1,1,1,dac758ef858jbq7pcb3gfwite,Heracles Almelo,792zq4joba1qgt0lusvrjantg,L. Zeefuik,71.19,52.496,4,9.0,window_expired,False,0.0115486859537382
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888932777,1,4,17,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,49.245,37.672000000000004,1,2.0,turnover,False,0.0
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888935573,1,8,4,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,42.73500000000001,38.624,0,0.0,turnover,False,0.0
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888949813,1,35,5,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,24.78,48.688,0,0.0,turnover,False,0.0
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888963339,2,45,55,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f07qmqesi1rpw7eapoz9rb0gk,J. Baas,39.06,58.82000000000001,4,8.0,window_expired,False,0.0069051142317709
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888964597,2,48,53,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,26.669999999999998,51.61200000000001,0,0.0,turnover,False,0.0
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888967681,2,54,42,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,44.31,57.868,0,0.0,turnover,False,0.0
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888972955,2,62,32,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f07qmqesi1rpw7eapoz9rb0gk,J. Baas,43.995,35.428000000000004,4,9.0,window_expired,False,0.00013322764148998578
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2889185073,2,63,0,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,70.98,47.668,0,0.0,turnover,False,0.0
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888979359,2,73,51,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,37.48500000000001,44.540000000000006,0,0.0,turnover,False,0.0
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888979509,2,74,18,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,19.53,48.008,0,0.0,turnover,False,0.0
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888980549,2,76,56,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,7.455,38.964,2,4.0,turnover,False,0.0
+2026-01-11_Sparta Rotterdam - Heracles Almelo,2888983193,2,84,23,dac758ef858jbq7pcb3gfwite,Heracles Almelo,96om2im2vd1621ajcexlyekno,T. van Gilst,29.82,13.056000000000001,3,4.0,turnover,False,0.0

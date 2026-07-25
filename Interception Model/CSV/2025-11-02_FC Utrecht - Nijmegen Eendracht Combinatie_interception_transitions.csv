@@ -1,0 +1,25 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868192343,1,2,55,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,68.565,13.464000000000002,6,10.0,window_expired,False,0.0037308423458459997
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868196895,1,6,52,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,49.56,7.48,1,1.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868197365,1,7,20,ccpscwdcm65czscrun048ecn5,FC Utrecht,9ano8w4jrlk6zq92rxchzaru2,Miguel Rodríguez,65.73,7.548,3,8.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868199065,1,9,27,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,8kydif03gk6apce8xwl9w3ht5,T. Ouwejan,31.290000000000003,65.008,0,0.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868207017,1,16,24,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,25.41,25.024,2,3.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868207113,1,16,28,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,74.97000000000001,45.288,3,2.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868215355,1,20,55,ccpscwdcm65czscrun048ecn5,FC Utrecht,cy0lv5u16obr2ne4xiins43x1,S. Haller,61.635000000000005,59.50000000000001,1,2.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868214105,1,21,39,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,33.18,41.61600000000001,5,2.0,turnover,False,5.997703782095742e-07
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868218699,1,24,54,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4kns22wbu3emy5oxbpr52rdud,E. Dasa,60.06,5.032000000000001,0,0.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868221673,1,26,59,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,21.315,41.752,0,0.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868233041,1,35,10,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4kns22wbu3emy5oxbpr52rdud,E. Dasa,55.964999999999996,13.804000000000002,0,0.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868248925,1,46,43,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4kns22wbu3emy5oxbpr52rdud,E. Dasa,39.165,26.180000000000003,2,2.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868273981,2,45,39,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,6.405,14.212,1,3.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868807015,2,51,53,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,8gde39dg3u3kqhd8pa2mdcn2t,T. Chery,40.214999999999996,24.208000000000002,2,2.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868282497,2,54,7,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,58.065,2.72,4,8.0,window_expired,False,0.0071773052997029
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868289223,2,59,25,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4kns22wbu3emy5oxbpr52rdud,E. Dasa,19.635,35.02,0,0.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868289405,2,59,33,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2yivr64anye4c0p62m16l78yc,S. Ouaissa,31.71,14.824000000000002,2,3.0,turnover,False,0.0085881621230168
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868291185,2,60,56,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,27.405,52.7,2,4.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868292187,2,61,46,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,10.605,35.768,1,1.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868299159,2,67,43,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,28.35,17.816000000000003,0,0.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868828827,2,70,5,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,67.935,39.78,0,0.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868306395,2,73,1,ccpscwdcm65czscrun048ecn5,FC Utrecht,9ano8w4jrlk6zq92rxchzaru2,Miguel Rodríguez,19.425,8.364,0,0.0,turnover,False,0.0
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868310115,2,76,4,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,25.62,6.868,4,8.0,window_expired,False,4.862960470741751e-05
+2025-11-02_FC Utrecht - Nijmegen Eendracht Combinatie,2868330059,2,93,8,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,8624hqd4nlbzcoqsetvsvla8k,D. Fonville,4.305,64.396,1,0.0,turnover,False,0.0

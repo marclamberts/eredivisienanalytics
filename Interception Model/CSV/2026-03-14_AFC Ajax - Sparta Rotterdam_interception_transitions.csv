@@ -1,0 +1,23 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911478641,1,0,10,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,1ueqcjuatzazpmz765tru4zdg,L. Martes,36.75,10.88,0,0.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911480409,1,3,4,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,48.195,23.936000000000003,4,3.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911485029,1,8,1,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2922aevmtpw4qvcwohmxmqtbd,T. Tomiyasu,31.5,60.99600000000001,0,0.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911485473,1,8,27,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,47.67,33.048,4,7.0,window_expired,False,0.00014451850322963478
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911509973,1,30,19,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,48.825,41.208000000000006,2,4.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911513477,1,33,47,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,14.805,40.392,2,1.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911518849,1,39,10,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,baakmd4ndnulbl9npvmq90mvp,D. Klaassen,66.15,24.888,0,0.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911520525,1,40,45,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,67.515,28.696000000000005,1,3.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911523151,1,43,19,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,2nwthqvbk70e2qo35dgp35979,V. van Crooij,8.4,24.616000000000003,3,5.0,turnover,False,5.4490498881273886e-05
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911955663,1,45,51,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,1ueqcjuatzazpmz765tru4zdg,L. Martes,39.27,19.788000000000004,2,6.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911539441,2,47,15,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,50.08500000000001,5.984000000000001,1,0.0,window_expired,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911540609,2,49,34,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,29q4j9r2lgdsdkkq2fgh8l7o4,Ayoni Santos,39.165,4.284,1,1.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911540795,2,49,43,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,6.195,25.772000000000002,0,0.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911544731,2,55,25,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,71.925,7.616,3,6.0,window_expired,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911545409,2,55,51,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,13.65,29.784,0,0.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911551903,2,66,1,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2922aevmtpw4qvcwohmxmqtbd,T. Tomiyasu,42.0,64.328,0,0.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911563331,2,80,43,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,29q4j9r2lgdsdkkq2fgh8l7o4,Ayoni Santos,57.225,5.168,2,5.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911567763,2,85,57,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,26.565,20.468000000000004,2,3.0,window_expired,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911571153,2,90,36,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,50zbw9cb2gon7eb7w08ndfyms,M. Zonneveld,36.855000000000004,53.516000000000005,1,1.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911571359,2,90,57,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,5oqqifi0wo6xbjz0xjgwf89re,C. Terho,38.43,6.5280000000000005,2,1.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911572383,2,92,36,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,14.595,65.552,1,0.0,turnover,False,0.0
+2026-03-14_AFC Ajax - Sparta Rotterdam,2911572549,2,92,55,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,44.415,57.46,3,8.0,turnover,False,0.0023056568897506

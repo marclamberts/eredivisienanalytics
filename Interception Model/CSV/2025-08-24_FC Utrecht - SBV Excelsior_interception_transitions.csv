@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-24_FC Utrecht - SBV Excelsior,2839031111,1,5,28,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,27.195,41.548,2,2.0,turnover,False,0.0
+2025-08-24_FC Utrecht - SBV Excelsior,2839040113,1,15,42,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5nhideyjwp2347ryi1n9wfq50,D. Sanches Fernandes,64.68,18.156000000000002,2,2.0,turnover,False,0.0
+2025-08-24_FC Utrecht - SBV Excelsior,2839042657,1,19,8,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,82.84500000000001,64.464,1,1.0,turnover,False,0.0
+2025-08-24_FC Utrecht - SBV Excelsior,2839060927,1,42,50,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,63.42,46.71600000000001,3,7.0,turnover,False,0.0068197692237755
+2025-08-24_FC Utrecht - SBV Excelsior,2839063045,1,45,3,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,36.54,49.64,2,3.0,turnover,False,0.0
+2025-08-24_FC Utrecht - SBV Excelsior,2839079941,2,45,22,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,2vfhae70oyyzm0qttlckworqi,A. Carlén,57.855000000000004,49.43600000000001,0,0.0,turnover,False,0.0
+2025-08-24_FC Utrecht - SBV Excelsior,2839085561,2,52,11,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,42.21000000000001,24.072,2,3.0,turnover,False,0.0
+2025-08-24_FC Utrecht - SBV Excelsior,2839091165,2,59,29,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,38.745,20.672,2,5.0,turnover,False,0.0
+2025-08-24_FC Utrecht - SBV Excelsior,2839095405,2,68,40,ccpscwdcm65czscrun048ecn5,FC Utrecht,29s8wk0a2m66rebsfx1jfuuh,D. van den Berg,58.589999999999996,52.632000000000005,1,1.0,turnover,False,0.0
+2025-08-24_FC Utrecht - SBV Excelsior,2839096617,2,72,7,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,44.415,20.468000000000004,0,0.0,turnover,False,0.0
+2025-08-24_FC Utrecht - SBV Excelsior,2839097151,2,73,33,ccpscwdcm65czscrun048ecn5,FC Utrecht,9ano8w4jrlk6zq92rxchzaru2,Miguel Rodríguez,20.37,20.400000000000002,0,0.0,turnover,False,0.0
+2025-08-24_FC Utrecht - SBV Excelsior,2839097825,2,74,49,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,63.73500000000001,55.556000000000004,2,4.0,window_expired,False,0.0004652935345239
+2025-08-24_FC Utrecht - SBV Excelsior,2839099231,2,77,31,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,72.55499999999999,65.07600000000001,0,0.0,turnover,False,0.0
+2025-08-24_FC Utrecht - SBV Excelsior,2839102093,2,83,18,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,41.580000000000005,47.124,0,0.0,turnover,False,0.0

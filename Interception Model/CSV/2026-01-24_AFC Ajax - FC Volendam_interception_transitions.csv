@@ -1,0 +1,23 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-24_AFC Ajax - FC Volendam,2892261767,1,2,38,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,58.17,32.844,0,0.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892262577,1,3,2,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2wesmq2wuhnuwh2yhgkuaxqfo,A. Bouwman,14.07,36.176,4,10.0,window_expired,False,0.0002787168303809
+2026-01-24_AFC Ajax - FC Volendam,2892263765,1,3,41,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,45.464999999999996,6.460000000000001,3,3.0,window_expired,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892268045,1,5,56,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,9bgq1tfyfzc3wg9pfr8q510k4,D. Kwakman,21.21,33.728,6,10.0,window_expired,False,9.713955655270279e-05
+2026-01-24_AFC Ajax - FC Volendam,2892275013,1,9,37,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,66.25500000000001,60.31600000000001,5,10.0,window_expired,False,0.0162182836891844
+2026-01-24_AFC Ajax - FC Volendam,2892293279,1,19,34,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,37.38,58.412000000000006,1,1.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892294107,1,20,32,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,9bgq1tfyfzc3wg9pfr8q510k4,D. Kwakman,28.035,30.056000000000004,2,1.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892296259,1,23,20,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,eu901b75l2ly5p48jdw6kwmad,M. Amevor,55.650000000000006,28.016000000000005,3,3.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892300755,1,30,49,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,baakmd4ndnulbl9npvmq90mvp,D. Klaassen,55.33500000000001,52.156000000000006,2,2.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892304885,1,34,47,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,25.41,65.144,1,0.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892352459,2,45,58,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,28.665000000000003,63.784000000000006,1,0.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892353005,2,46,18,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,20.895,57.93600000000001,1,4.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892353267,2,46,30,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,9bgq1tfyfzc3wg9pfr8q510k4,D. Kwakman,37.275,51.68000000000001,3,3.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892356681,2,48,25,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4ezldqmn62ggasx6pniqbfwno,J. Ideho,67.83,26.520000000000003,0,0.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892371837,2,57,14,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,49.665,37.944,0,0.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892384611,2,65,26,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,baakmd4ndnulbl9npvmq90mvp,D. Klaassen,58.800000000000004,38.828,0,0.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892385281,2,65,59,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,27.090000000000003,51.816,4,5.0,turnover,False,7.78701433305079e-05
+2026-01-24_AFC Ajax - FC Volendam,2892387953,2,68,12,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4ezldqmn62ggasx6pniqbfwno,J. Ideho,64.47,8.432,1,4.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892410687,2,77,22,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,8q43q98due672rcbps12ih0d0,T. Codinha,65.52,19.652,5,10.0,window_expired,False,0.0005686058113811
+2026-01-24_AFC Ajax - FC Volendam,2892395045,2,78,45,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,58.800000000000004,41.61600000000001,0,0.0,turnover,False,0.0
+2026-01-24_AFC Ajax - FC Volendam,2892399813,2,84,51,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,89plvrt8pzppcclh4axvii0ru,A. Plat,8.085,33.728,3,8.0,window_expired,False,4.649740863553464e-05
+2026-01-24_AFC Ajax - FC Volendam,2892400077,2,85,11,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,14.595,49.776,0,0.0,turnover,False,0.0

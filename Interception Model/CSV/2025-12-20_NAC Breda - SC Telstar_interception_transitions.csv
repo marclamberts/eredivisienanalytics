@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-20_NAC Breda - SC Telstar,2885091861,1,4,29,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,70.77000000000001,9.928,2,2.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885096223,1,10,1,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bgzvhtk50gvmq6noheadmc34l,D. Odoi,21.105000000000004,41.548,0,0.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885108441,1,25,42,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bgzvhtk50gvmq6noheadmc34l,D. Odoi,48.510000000000005,31.416000000000004,4,9.0,window_expired,False,0.0001066827606251
+2025-12-20_NAC Breda - SC Telstar,2885114573,1,33,49,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,67.83,17.612000000000002,0,0.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885119397,1,39,46,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,47.775,39.644,0,0.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2887823229,2,45,55,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,7.7700000000000005,48.620000000000005,1,3.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885137691,2,50,57,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,47.25,66.096,1,1.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885139273,2,53,9,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,42.945,62.220000000000006,0,0.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885139745,2,53,51,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,70.665,2.652,0,0.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885140823,2,55,27,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,19.32,3.6720000000000006,3,1.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885141109,2,55,54,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,32.655,11.22,0,0.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885141353,2,56,13,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,6feheukom1kdo8w1hwrztpvro,B. Ghalidi,36.75,36.856,4,7.0,turnover,False,0.0002144952042916
+2025-12-20_NAC Breda - SC Telstar,2885142597,2,57,57,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1zybkcmp40td92a6yg8sw9uga,T. Owusu,33.18,6.800000000000001,1,0.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885144209,2,60,52,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,33.18,35.02,0,0.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885151283,2,74,6,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,32.76,5.1000000000000005,1,0.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885159941,2,89,27,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,9229789015kq0j5c85ug3ajv8,A. Lechkar,32.550000000000004,3.3320000000000003,1,1.0,turnover,False,0.0
+2025-12-20_NAC Breda - SC Telstar,2885159993,2,89,34,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,9229789015kq0j5c85ug3ajv8,A. Lechkar,11.235,6.936,2,2.0,turnover,False,0.0

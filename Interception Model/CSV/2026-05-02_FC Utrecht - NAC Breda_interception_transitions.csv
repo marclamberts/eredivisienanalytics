@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-02_FC Utrecht - NAC Breda,2932045955,1,3,2,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,59.955000000000005,4.284,1,1.0,turnover,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932048555,1,4,6,ccpscwdcm65czscrun048ecn5,FC Utrecht,ubuh5wgnl0o5bn3wirdmectm,M. Eerdhuijzen,33.495,64.668,0,0.0,turnover,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932067903,1,11,52,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,27.51,61.268,1,1.0,turnover,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932128607,1,50,36,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,2wkew38juoofry6oo3t1vcwyd,E. Mahmutović,27.405,43.79200000000001,0,0.0,turnover,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932165449,2,48,0,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,31.185000000000002,28.764,5,7.0,window_expired,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932170933,2,51,13,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,25.62,60.18000000000001,0,0.0,turnover,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932176373,2,54,22,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,22.47,13.940000000000001,4,6.0,window_expired,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932178175,2,55,25,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,30.87,29.580000000000002,0,0.0,turnover,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932179017,2,55,54,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,57.645,31.756000000000004,4,10.0,turnover,True,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932195831,2,72,27,ccpscwdcm65czscrun048ecn5,FC Utrecht,cy0lv5u16obr2ne4xiins43x1,S. Haller,94.71000000000001,60.99600000000001,1,0.0,turnover,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932196011,2,72,41,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,74.55,63.71600000000001,3,9.0,window_expired,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932198839,2,75,47,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,61.214999999999996,12.444,2,1.0,turnover,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932201009,2,78,24,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,22.155,15.436,0,0.0,turnover,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932201857,2,79,16,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,39.165,42.908,0,0.0,turnover,False,0.0
+2026-05-02_FC Utrecht - NAC Breda,2932204733,2,82,54,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,2wkew38juoofry6oo3t1vcwyd,E. Mahmutović,45.675000000000004,18.632,0,0.0,turnover,False,0.0

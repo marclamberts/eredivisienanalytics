@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864751795,1,4,36,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jpreaads35pnnfqbn7hmrmy,S. Mijnans,23.1,38.352000000000004,3,6.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864751973,1,4,43,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,57.645,5.1000000000000005,0,0.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2865269393,1,6,39,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,89.355,65.07600000000001,4,3.0,turnover,False,0.0005427516684229
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864759929,1,14,26,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,63.315,45.084,3,7.0,window_expired,False,4.580872337259234e-05
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864773449,1,26,56,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,74.025,59.772000000000006,0,0.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864773603,1,27,2,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,67.2,28.968000000000004,0,0.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864774161,1,27,33,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,52.080000000000005,62.696000000000005,0,0.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864774807,1,28,6,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,30.66,50.25200000000001,1,3.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864783017,1,35,20,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,47.25,10.200000000000001,0,0.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864788311,1,41,3,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,58.38,27.608000000000004,2,2.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864788515,1,41,14,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,62.370000000000005,19.176000000000002,5,5.0,window_expired,False,0.0038240501649067
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864814807,2,47,5,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jpreaads35pnnfqbn7hmrmy,S. Mijnans,43.47,57.800000000000004,1,1.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864821111,2,54,45,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,26.880000000000003,28.832,0,0.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864821253,2,54,56,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,8u19xeh9ugvh8f1mh7jnbbhuc,K. Smit,71.61,12.852,4,3.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864833135,2,67,27,ccpscwdcm65czscrun048ecn5,FC Utrecht,7o8auo4uu5mzh7f4a44ucdf8q,D. Min,41.475,54.264,0,0.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864833969,2,68,9,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,70.56,19.448000000000004,3,5.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864849503,2,83,12,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,28.77,65.348,1,1.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864852467,2,86,33,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,27.51,59.568,0,0.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864860681,2,94,52,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,21.735,22.44,0,0.0,turnover,False,0.0
+2025-10-26_Alkmaar Zaanstreek - FC Utrecht,2864861173,2,95,28,ccpscwdcm65czscrun048ecn5,FC Utrecht,2tc8y9du64tjno62zll2jhy7e,Y. Cathline,23.94,15.708000000000002,0,0.0,turnover,False,0.0

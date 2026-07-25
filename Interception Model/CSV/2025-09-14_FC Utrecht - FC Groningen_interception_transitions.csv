@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-14_FC Utrecht - FC Groningen,2846199923,1,1,50,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,57.855000000000004,21.896000000000004,2,2.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846202899,1,4,58,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,50.82,63.24,0,0.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846902991,1,26,57,ccpscwdcm65czscrun048ecn5,FC Utrecht,9ano8w4jrlk6zq92rxchzaru2,Miguel Rodríguez,68.775,20.400000000000002,2,2.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846231433,1,31,2,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,62.370000000000005,5.576,0,0.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846243393,1,38,18,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1nk0hcaa9o4jnyxc9ndz1lams,D. van der Werff,69.09,34.68,1,7.0,window_expired,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846244581,1,39,4,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,53.865,31.892000000000003,2,2.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846252353,1,43,51,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,23.205000000000002,23.8,0,0.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846280671,2,46,7,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,40.635000000000005,60.79200000000001,3,6.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846294901,2,58,8,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,45.255,3.3320000000000003,0,0.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846295157,2,58,30,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,38.325,4.556,0,0.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846296183,2,60,9,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,36.75,39.57600000000001,0,0.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846298069,2,63,37,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,36.015,53.992000000000004,3,6.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846299143,2,65,45,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,24.255000000000003,11.016,7,10.0,window_expired,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846315731,2,80,25,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,27.195,55.148,0,0.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846315899,2,80,30,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,9.240000000000002,49.844,3,7.0,turnover,False,0.0
+2025-09-14_FC Utrecht - FC Groningen,2846332375,2,92,22,cos9hxi16eitbcbthof7zrm4m,FC Groningen,679ax4aocvzlvj4i7a1bb8rv8,T. Mercera,44.83500000000001,29.988000000000003,2,4.0,turnover,False,0.0

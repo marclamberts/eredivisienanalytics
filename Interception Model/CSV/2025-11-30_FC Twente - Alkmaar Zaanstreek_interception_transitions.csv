@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878551509,1,2,13,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,13.965000000000002,8.704,0,0.0,turnover,False,0.0
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878559197,1,12,26,4tic29sox7m39fy1ztgv0jsiq,FC Twente,2hbduprkyabq8g1nhe6b4g3bp,M. Pjaca,56.07,11.016,1,0.0,turnover,False,0.0
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878562197,1,15,43,4tic29sox7m39fy1ztgv0jsiq,FC Twente,2hbduprkyabq8g1nhe6b4g3bp,M. Pjaca,5.565,12.784,1,2.0,turnover,False,0.0
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878564973,1,18,19,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,20.685,43.316,4,10.0,window_expired,False,0.00012433588973108367
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878582895,1,33,49,4tic29sox7m39fy1ztgv0jsiq,FC Twente,9nix5y8xcj34ps62r34udtqwa,K. Hlynsson,38.115,19.856,0,0.0,turnover,False,0.0
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878597139,1,46,14,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,32.13,59.43200000000001,5,10.0,window_expired,False,0.0002638851796047985
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878620505,2,46,16,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,45.78,67.524,1,0.0,turnover,False,0.0
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878621967,2,47,59,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,czlf1kiqdfepc61hwfutoydqs,Weslley Patati,26.040000000000003,3.808,1,4.0,turnover,False,0.0
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878626495,2,54,18,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,62.475,3.2640000000000002,0,0.0,turnover,False,0.0
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878630307,2,59,10,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,73lwz4he5erpp25zi8crjvztg,I. Jensen,39.06,57.732000000000006,0,0.0,turnover,False,0.0
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878638113,2,67,14,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,11.025,39.712,1,1.0,turnover,False,0.0
+2025-11-30_FC Twente - Alkmaar Zaanstreek,2878667079,2,93,4,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,8u19xeh9ugvh8f1mh7jnbbhuc,K. Smit,65.52,58.344,3,5.0,turnover,False,0.0047780424057355

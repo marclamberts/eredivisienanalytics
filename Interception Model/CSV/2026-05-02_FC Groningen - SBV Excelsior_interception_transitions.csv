@@ -1,0 +1,20 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-02_FC Groningen - SBV Excelsior,2932230717,1,0,54,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,66.675,17.204,0,0.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932231509,1,1,44,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,64.89,13.872,1,1.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932233555,1,4,38,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,31.395,17.34,4,10.0,turnover,True,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932237737,1,11,15,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,40.11000000000001,2.5160000000000005,0,0.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932242927,1,17,52,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6p6sdikmka45csxfw0i0q0l3p,E. Hansson,64.68,57.596000000000004,5,9.0,window_expired,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932246873,1,21,53,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,14.28,45.967999999999996,3,5.0,window_expired,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932257741,1,31,56,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,60.06,4.352,1,1.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932258963,1,33,5,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,42.525,7.48,4,9.0,window_expired,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932263875,1,38,21,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,47.88,38.760000000000005,3,8.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932780199,1,43,11,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,33.075,4.556,3,4.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932268389,1,43,24,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,13.334999999999999,39.984,0,0.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932269009,1,44,3,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,38.22,45.288,4,10.0,window_expired,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932292773,2,46,6,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,36.645,30.736000000000004,2,5.0,window_expired,True,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932298371,2,51,27,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,59.22,45.764,0,0.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932308235,2,60,23,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,64.89,58.684000000000005,4,6.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932310613,2,62,7,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,11.55,14.892,2,5.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932328775,2,75,55,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,38.43,50.388,0,0.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932335223,2,81,2,cos9hxi16eitbcbthof7zrm4m,FC Groningen,3aly8eihwfvtwde7dg0k18w7o,J. Schreuders,66.675,62.424,2,7.0,turnover,False,0.0
+2026-05-02_FC Groningen - SBV Excelsior,2932338105,2,83,44,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,36.96000000000001,14.144000000000002,4,7.0,window_expired,False,0.0

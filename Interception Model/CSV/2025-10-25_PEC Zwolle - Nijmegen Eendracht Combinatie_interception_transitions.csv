@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864143185,1,4,7,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,39.480000000000004,2.4480000000000004,0,0.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864154491,1,15,15,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,ds0hd4ezvb5rw6l95rhbxtq1g,B. Önal,62.265,59.228,5,10.0,window_expired,False,0.0171645197283528
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864159271,1,20,17,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,58.065,33.864,2,6.0,turnover,False,0.0263503804273905
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864159877,1,20,50,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,913pg8qqcjp99h5fjybbenob9,P. Sandler,44.625,23.323999999999998,0,0.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864161817,1,22,58,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,54.18000000000001,2.3120000000000003,1,0.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864163045,1,24,22,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,28.245,37.400000000000006,2,3.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864164395,1,25,44,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,23.730000000000004,47.940000000000005,1,1.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864177661,1,39,24,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,18.375,25.704,4,8.0,window_expired,False,0.0001739205264556
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864181213,1,43,8,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,19.845,63.308,2,1.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864199509,2,48,49,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,22.89,17.544,2,3.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864201723,2,51,33,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,76.02000000000001,2.8560000000000003,1,0.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864206021,2,56,39,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,55.02,39.78,0,0.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864209489,2,61,17,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,42.315,48.21200000000001,1,0.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864209709,2,61,35,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,913pg8qqcjp99h5fjybbenob9,P. Sandler,16.59,32.912,5,10.0,window_expired,False,0.000490266135943
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864211787,2,64,30,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,15.225000000000001,53.244,1,5.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864220525,2,76,27,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,53.655,44.47200000000001,4,7.0,turnover,True,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864223175,2,80,9,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,53.865,12.036,1,1.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864227317,2,83,31,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,42.315,12.852,0,0.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864228663,2,88,28,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,51.135000000000005,3.468,0,0.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864230273,2,90,45,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,45.885000000000005,15.844000000000001,0,0.0,turnover,False,0.0
+2025-10-25_PEC Zwolle - Nijmegen Eendracht Combinatie,2864232851,2,94,59,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,8624hqd4nlbzcoqsetvsvla8k,D. Fonville,21.735,61.81200000000001,0,0.0,turnover,False,0.0

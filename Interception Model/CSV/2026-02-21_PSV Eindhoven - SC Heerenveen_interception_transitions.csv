@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902824559,1,3,55,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,41.265,33.79600000000001,0,0.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902830201,1,11,18,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,aqnr6l3f02hx0soadunxbjcpg,J. Trenskow,41.79,24.616000000000003,2,7.0,window_expired,False,0.0039242612784555
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902831213,1,12,50,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,21.419999999999998,40.596000000000004,0,0.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902835427,1,18,34,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,aqnr6l3f02hx0soadunxbjcpg,J. Trenskow,24.78,26.384,1,1.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902835695,1,19,0,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,8.715000000000002,26.044,2,2.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2903568131,1,20,18,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,9vf02r3geinhsy732oxyrcacq,I. Saibari,20.475,8.568,1,2.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902841215,1,26,21,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,6.615,45.764,0,0.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902842577,1,28,8,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,6.615,37.944,2,2.0,window_expired,False,0.0017346507578795
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902842935,1,28,45,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,32.34,22.44,5,9.0,turnover,False,1.0720650743215043e-05
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902844509,1,30,52,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,51.975,42.636,0,0.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902844925,1,31,31,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,55.650000000000006,65.756,0,0.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902848817,1,37,59,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,aqnr6l3f02hx0soadunxbjcpg,J. Trenskow,70.56,10.472000000000001,0,0.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2903610861,1,45,29,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,aqnr6l3f02hx0soadunxbjcpg,J. Trenskow,70.455,14.96,3,9.0,window_expired,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902874699,2,56,13,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,2f8lk6lxav7hl7xlqt9an18x6,H. Petrov,22.995,55.35200000000001,1,1.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902875385,2,57,38,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,43.47,65.824,0,0.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902886807,2,68,2,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,31.605000000000004,45.83200000000001,0,0.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902901817,2,83,55,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,5oghztk07za2yuqq4jnav22y2,M. Rivera,13.965000000000002,43.18,1,0.0,turnover,False,0.0
+2026-02-21_PSV Eindhoven - SC Heerenveen,2902905767,2,88,50,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,44.94,31.144000000000002,1,0.0,turnover,False,0.0

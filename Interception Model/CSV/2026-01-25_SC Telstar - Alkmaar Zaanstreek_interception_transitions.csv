@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2893180855,1,3,55,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,28.56,66.572,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892687083,1,6,33,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,34.86000000000001,52.7,3,5.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892688753,1,14,50,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,11.025,61.2,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892692649,1,24,56,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,55.02,4.352,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892695341,1,30,51,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,66.78,26.792,1,1.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892698413,1,39,16,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,55.755,16.66,1,1.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892698673,1,39,44,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,63.0,46.92,5,6.0,turnover,False,0.004258760634841601
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892700205,1,42,58,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,4fsu74aeogf53l2g1tx89vuok,M. Šín,32.34,61.2,2,4.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892700271,1,43,7,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,82.635,25.500000000000004,3,3.0,turnover,False,0.0145452642075695
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892714037,2,48,18,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,46.410000000000004,53.924,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892714213,2,48,41,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1vn6w1mjdztfks75bxn0hk7x0,S. Hetli,92.82000000000001,60.248,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892714491,2,49,11,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,31.919999999999998,43.248000000000005,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892715523,2,51,21,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,41.475,19.176000000000002,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892715639,2,51,33,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,77.80499999999999,64.804,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892716151,2,52,48,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,68.88,7.208,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892717967,2,56,52,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,38.22,55.148,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892720727,2,61,10,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,31.815,41.480000000000004,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892725229,2,67,9,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,9229789015kq0j5c85ug3ajv8,A. Lechkar,70.03500000000001,1.4960000000000002,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892725783,2,67,44,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,42.839999999999996,22.44,0,0.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892728573,2,72,0,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,11.655,59.84,2,1.0,turnover,False,0.0
+2026-01-25_SC Telstar - Alkmaar Zaanstreek,2892741013,2,91,42,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,45.255,54.53600000000001,3,9.0,turnover,False,0.0010068579749376

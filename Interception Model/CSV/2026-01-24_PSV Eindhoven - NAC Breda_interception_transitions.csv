@@ -1,0 +1,27 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-24_PSV Eindhoven - NAC Breda,2892482007,1,1,47,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,33.81,13.872,0,0.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892484633,1,4,41,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,31.71,8.092,1,2.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892486435,1,6,30,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,40.845,38.964,0,0.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892679355,1,6,32,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,50.61000000000001,29.376000000000005,0,0.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892490103,1,10,2,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,68.985,58.412000000000006,1,2.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892490131,1,10,5,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,64x38pccgfsuz4ywoveh2ksbu,L. Greiml,45.464999999999996,50.456,0,0.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892491225,1,11,7,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,13.23,45.15200000000001,5,9.0,window_expired,False,0.0001648671764978851
+2026-01-24_PSV Eindhoven - NAC Breda,2892493849,1,13,42,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,64x38pccgfsuz4ywoveh2ksbu,L. Greiml,26.775000000000002,45.967999999999996,0,0.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892498635,1,18,22,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,12.705,39.644,1,1.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892503135,1,23,39,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,24.150000000000002,57.800000000000004,4,4.0,window_expired,False,0.0005449760268975681
+2026-01-24_PSV Eindhoven - NAC Breda,2892503969,1,24,37,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,61.95,47.736000000000004,0,0.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892504137,1,24,49,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,64x38pccgfsuz4ywoveh2ksbu,L. Greiml,15.855,39.984,0,0.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892510113,1,33,52,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,12.495000000000001,22.712,4,3.0,turnover,False,1.723560968683313e-05
+2026-01-24_PSV Eindhoven - NAC Breda,2892510143,1,33,55,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,72.66000000000001,41.82,2,3.0,turnover,True,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892511647,1,36,24,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,3ojwbw6v83g9b0u2wssnkzzzd,A. Obispo,15.120000000000001,48.96,0,0.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892527427,2,48,8,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bgzvhtk50gvmq6noheadmc34l,D. Odoi,6.405,25.092000000000002,0,0.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892529379,2,50,40,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,37.065,60.18000000000001,5,7.0,turnover,False,0.0001460717713966
+2026-01-24_PSV Eindhoven - NAC Breda,2892530193,2,51,38,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,30.345,6.392,2,1.0,turnover,False,0.0001179902001872
+2026-01-24_PSV Eindhoven - NAC Breda,2892536729,2,60,43,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,31.185000000000002,60.452000000000005,4,2.0,turnover,False,7.180594721128975e-06
+2026-01-24_PSV Eindhoven - NAC Breda,2892538915,2,63,44,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,d785q9rpqlyuyswv8f9fx4cno,M. Nassoh,16.59,3.74,1,1.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892543817,2,71,30,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,c3j7ddqg0yzporam6gieibgiy,C. Brym,36.645,19.856,3,7.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892547251,2,77,23,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,33.39,59.43200000000001,1,2.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892551631,2,83,58,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,79.17000000000002,44.268,2,3.0,turnover,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892552035,2,84,34,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,24sgu58uugxgy49el075dz21g,E. Bajraktarević,44.1,1.904,1,0.0,window_expired,False,0.0
+2026-01-24_PSV Eindhoven - NAC Breda,2892556757,2,92,47,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,31.5,50.79600000000001,6,8.0,window_expired,False,0.002927665910160334
+2026-01-24_PSV Eindhoven - NAC Breda,2892557331,2,93,56,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,7.3500000000000005,46.104,2,1.0,turnover,False,0.0

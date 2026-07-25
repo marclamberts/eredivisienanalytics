@@ -1,0 +1,8 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-23_SC Heerenveen - Alkmaar Zaanstreek,2875599671,1,1,16,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,ar7llmzju08n8yrqu8xm1thck,O. Braude,65.52,6.256,2,3.0,turnover,False,0.0
+2025-11-23_SC Heerenveen - Alkmaar Zaanstreek,2875613775,1,28,47,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,eu6pfkiah7otafyryg6ll7y09,L. Brouwers,74.34,15.436,0,0.0,turnover,False,0.0
+2025-11-23_SC Heerenveen - Alkmaar Zaanstreek,2875619839,1,41,16,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,26.565,43.452000000000005,2,2.0,turnover,False,0.0
+2025-11-23_SC Heerenveen - Alkmaar Zaanstreek,2875619859,1,41,19,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,8u19xeh9ugvh8f1mh7jnbbhuc,K. Smit,61.425000000000004,4.284,3,4.0,turnover,False,0.0
+2025-11-23_SC Heerenveen - Alkmaar Zaanstreek,2875638965,2,57,7,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,65.31,3.2640000000000002,0,0.0,turnover,False,0.0
+2025-11-23_SC Heerenveen - Alkmaar Zaanstreek,2876212457,2,80,4,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,d2698ncsatg6jtvb0l9ijhj4k,N. Hopland,41.580000000000005,25.636000000000003,5,8.0,window_expired,False,0.00029100706460512043
+2025-11-23_SC Heerenveen - Alkmaar Zaanstreek,2875656449,2,81,32,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,40.32,46.784,1,0.0,turnover,False,0.0

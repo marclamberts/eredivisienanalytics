@@ -1,0 +1,27 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-17_Heracles Almelo - FC Groningen,2938901515,1,1,24,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,64.47,17.0,4,9.0,window_expired,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938907625,1,6,12,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6lyedmu2vuf7jig3jmhz9b4ve,D. van der Kust,64.365,42.024,0,0.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938908389,1,6,48,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,41.265,26.656000000000002,5,9.0,window_expired,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938910679,1,8,39,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,44.94,53.516000000000005,1,1.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938911027,1,8,55,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,73.5,52.156000000000006,1,0.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938914389,1,11,43,dac758ef858jbq7pcb3gfwite,Heracles Almelo,80dk8iv6p0202z10qcqy8bfca,S. Scheperman,28.455000000000002,27.948000000000004,4,9.0,window_expired,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938922623,1,20,2,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6lyedmu2vuf7jig3jmhz9b4ve,D. van der Kust,30.765,57.25600000000001,0,0.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938923395,1,21,27,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,10.920000000000002,24.956000000000003,1,4.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938923655,1,21,56,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,78.855,61.336000000000006,1,0.0,window_expired,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938929515,1,29,33,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,37.38,62.016000000000005,1,0.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938934869,1,33,49,dac758ef858jbq7pcb3gfwite,Heracles Almelo,80dk8iv6p0202z10qcqy8bfca,S. Scheperman,40.53,52.156000000000006,0,0.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938935269,1,34,14,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,62.160000000000004,13.192,1,1.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938943229,1,39,55,dac758ef858jbq7pcb3gfwite,Heracles Almelo,80dk8iv6p0202z10qcqy8bfca,S. Scheperman,15.75,36.108000000000004,1,3.0,window_expired,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938948831,1,43,57,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,35.385000000000005,18.768,0,0.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938981453,2,52,6,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,7.3500000000000005,34.068000000000005,1,1.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938982691,2,52,49,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,35.07,66.096,1,0.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938991421,2,58,47,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,27.51,51.952000000000005,1,1.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938995961,2,62,3,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,73.92000000000002,41.956,1,0.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938996681,2,62,39,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,46.515,6.800000000000001,2,2.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938996761,2,62,43,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,45.675000000000004,60.52,0,0.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2938997521,2,63,20,dac758ef858jbq7pcb3gfwite,Heracles Almelo,80dk8iv6p0202z10qcqy8bfca,S. Scheperman,61.11000000000001,24.956000000000003,0,0.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2939007885,2,72,43,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,23.415000000000003,58.208,1,2.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2939013417,2,76,27,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,78.54,19.788000000000004,1,2.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2939023843,2,83,17,cos9hxi16eitbcbthof7zrm4m,FC Groningen,3aly8eihwfvtwde7dg0k18w7o,J. Schreuders,58.17,18.02,2,2.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2939031977,2,89,0,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,35.805,15.028000000000002,1,0.0,turnover,False,0.0
+2026-05-17_Heracles Almelo - FC Groningen,2939034551,2,91,4,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,56.595,32.708000000000006,1,1.0,turnover,False,0.0

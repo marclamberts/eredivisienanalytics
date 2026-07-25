@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864928521,1,10,13,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,c6ufljjgl050g9xn7e9ma7hg4,M. Smit,76.23,66.096,0,0.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864928763,1,10,32,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,30t0ph1icrggc0x62om801ses,G. de Regt,49.035000000000004,5.032000000000001,2,0.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864929083,1,10,50,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,1fs2iimaa97nzlw80yypcd6ju,S. Mitrović,72.34500000000001,3.808,0,0.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864929127,1,10,55,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cla6c6izphee9prb80c15baei,M. Tielemans,60.795,12.308000000000002,2,2.0,turnover,False,0.0002939018302979
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864931095,1,13,36,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,5shfqpd5fj05qrp1jlzd08ftg,C. Twigt,75.075,8.092,0,0.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864935859,1,19,55,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,31.080000000000002,60.99600000000001,4,8.0,window_expired,False,0.003994972361899
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864939049,1,23,59,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,20.475,41.548,0,0.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864946831,1,34,58,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,7.035,46.92,0,0.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864948721,1,37,57,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,37.065,60.79200000000001,0,0.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864949237,1,38,41,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1tmihr54maqj0h7785cg9ez56,M. Suray,31.080000000000002,38.42,5,9.0,window_expired,False,0.0002788427055542
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864969157,2,50,37,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,5shfqpd5fj05qrp1jlzd08ftg,C. Twigt,16.905,25.908,3,6.0,turnover,False,0.0001220172276438
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864973439,2,56,44,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cla6c6izphee9prb80c15baei,M. Tielemans,14.700000000000001,25.500000000000004,0,0.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864973833,2,57,19,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,31.815,48.89200000000001,0,0.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864979625,2,66,31,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,16.59,5.236000000000001,1,2.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864990319,2,81,35,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,7y0acvcg9km8dz51t5ndy23md,M. van Duinen,72.24,24.004,2,1.0,turnover,False,0.00174296169918
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864994527,2,86,58,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,badyafxn00m21tzbdff95o4k4,Y. Salah Rahmouni,25.095,48.28,3,5.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864998223,2,91,53,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1tmihr54maqj0h7785cg9ez56,M. Suray,57.75,47.53200000000001,1,1.0,turnover,False,0.0
+2025-10-26_Go Ahead Eagles - SBV Excelsior,2864998493,2,92,12,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,74.44500000000001,63.03600000000001,1,3.0,turnover,False,0.0

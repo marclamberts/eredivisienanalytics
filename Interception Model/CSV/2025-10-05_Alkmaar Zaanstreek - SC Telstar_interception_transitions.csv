@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856553023,1,9,20,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,55.545,5.372000000000001,0,0.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856554685,1,11,5,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,80.325,65.756,1,0.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2857128353,1,18,24,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,22.785,3.3320000000000003,6,9.0,window_expired,False,0.0012907690382616
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856566507,1,22,14,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,20.16,34.884,3,2.0,turnover,False,6.194690380156853e-06
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856568101,1,23,26,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,40.53,36.652,0,0.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856570915,1,25,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,38.955000000000005,28.356000000000005,0,0.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856577395,1,30,13,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,31.71,59.228,0,0.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856581655,1,33,18,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,es363spp9pgd4hralx6ni2xw4,M. Chávez,36.96000000000001,58.956,0,0.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856585309,1,36,5,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,es363spp9pgd4hralx6ni2xw4,M. Chávez,27.195,57.800000000000004,0,0.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856587867,1,37,59,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,18.585,34.952,3,5.0,turnover,False,8.161436523698717e-06
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856588647,1,38,37,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,42.73500000000001,45.356,0,0.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856596461,1,44,57,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,b94d67jluhh4076wp2se5fqsq,D. Kasius,20.790000000000003,35.088,1,0.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856625487,2,47,25,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,80.42999999999999,23.392,0,0.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856636217,2,60,29,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,55.545,18.632,1,1.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856637987,2,62,11,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jpreaads35pnnfqbn7hmrmy,S. Mijnans,44.205000000000005,59.228,0,0.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856645585,2,70,3,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,37.905,10.200000000000001,1,1.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856646375,2,70,50,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,32.13,48.144,3,9.0,window_expired,False,1.52859140498951e-05
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856651197,2,75,38,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jpreaads35pnnfqbn7hmrmy,S. Mijnans,36.330000000000005,34.748000000000005,4,5.0,turnover,False,0.0002008362618726
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856651391,2,75,52,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,45.78,58.344,4,5.0,turnover,False,1.3210291332846348e-05
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856651909,2,76,25,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jpreaads35pnnfqbn7hmrmy,S. Mijnans,33.075,43.928,2,2.0,turnover,False,0.0
+2025-10-05_Alkmaar Zaanstreek - SC Telstar,2856652185,2,76,41,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,6k6qt155b79yf36833pamwbxm,K. Tejan,59.115,21.216,1,1.0,turnover,False,0.0

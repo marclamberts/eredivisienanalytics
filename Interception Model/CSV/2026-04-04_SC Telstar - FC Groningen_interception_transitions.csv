@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-04_SC Telstar - FC Groningen,2919262595,1,2,7,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,40.214999999999996,20.536,2,7.0,window_expired,False,0.0
+2026-04-04_SC Telstar - FC Groningen,2919265427,1,5,27,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,4.41,48.21200000000001,0,0.0,turnover,False,0.0
+2026-04-04_SC Telstar - FC Groningen,2919266259,1,6,27,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,13.965000000000002,42.092,3,7.0,turnover,False,1.7622828720420536e-05
+2026-04-04_SC Telstar - FC Groningen,2919272593,1,14,13,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,25.305000000000003,2.788,1,0.0,turnover,False,0.0
+2026-04-04_SC Telstar - FC Groningen,2919287843,1,28,13,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,47.88,33.592,5,9.0,turnover,True,0.0238530260265162
+2026-04-04_SC Telstar - FC Groningen,2919335959,2,50,50,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,63.73500000000001,34.34,3,5.0,turnover,False,0.000723485317544
+2026-04-04_SC Telstar - FC Groningen,2919339193,2,54,32,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,22.680000000000003,22.168000000000003,3,3.0,turnover,False,0.0013076118115327
+2026-04-04_SC Telstar - FC Groningen,2919341733,2,56,53,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1nk0hcaa9o4jnyxc9ndz1lams,D. van der Werff,36.96000000000001,33.864,0,0.0,turnover,False,0.0
+2026-04-04_SC Telstar - FC Groningen,2919349983,2,64,56,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,37.695,9.860000000000001,0,0.0,turnover,False,0.0
+2026-04-04_SC Telstar - FC Groningen,2919375125,2,90,56,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,19.740000000000002,6.868,1,1.0,turnover,False,0.0
+2026-04-04_SC Telstar - FC Groningen,2919375179,2,91,0,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,66.99,66.572,0,0.0,turnover,False,0.0
+2026-04-04_SC Telstar - FC Groningen,2919375997,2,91,54,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,58.065,38.692,0,0.0,turnover,False,0.0

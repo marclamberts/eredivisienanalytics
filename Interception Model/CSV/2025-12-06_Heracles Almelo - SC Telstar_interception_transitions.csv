@@ -1,0 +1,10 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-06_Heracles Almelo - SC Telstar,2880612813,1,11,37,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,58.800000000000004,35.02,0,0.0,turnover,False,0.0
+2025-12-06_Heracles Almelo - SC Telstar,2880619513,1,20,4,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,57.75,11.288000000000002,0,0.0,turnover,False,0.0
+2025-12-06_Heracles Almelo - SC Telstar,2880655901,2,52,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,36.645,34.884,4,5.0,turnover,False,0.0011975413970195
+2025-12-06_Heracles Almelo - SC Telstar,2880662297,2,60,36,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,39.06,63.17200000000001,0,0.0,turnover,False,0.0
+2025-12-06_Heracles Almelo - SC Telstar,2880662377,2,60,43,dac758ef858jbq7pcb3gfwite,Heracles Almelo,96om2im2vd1621ajcexlyekno,T. van Gilst,77.385,53.108,2,2.0,turnover,False,0.0
+2025-12-06_Heracles Almelo - SC Telstar,2880668343,2,69,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,28.35,18.768,3,8.0,window_expired,False,0.0
+2025-12-06_Heracles Almelo - SC Telstar,2880675287,2,80,38,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,devvpv4u2vs2cofnwp4678mvp,D. Malone,65.83500000000001,8.908000000000001,0,0.0,turnover,False,0.0
+2025-12-06_Heracles Almelo - SC Telstar,2880676385,2,82,18,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,79.485,20.060000000000002,0,0.0,turnover,False,0.0
+2025-12-06_Heracles Almelo - SC Telstar,2880680347,2,88,40,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,39.165,24.072,0,0.0,turnover,False,0.0

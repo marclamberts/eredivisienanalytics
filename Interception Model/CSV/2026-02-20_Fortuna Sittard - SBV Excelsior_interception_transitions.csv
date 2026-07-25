@@ -1,0 +1,20 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902109935,1,5,28,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,34.230000000000004,64.94,3,3.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902131909,1,22,52,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,54.285000000000004,56.37200000000001,3,3.0,turnover,False,0.0011366119356455
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902151669,1,39,49,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,30t0ph1icrggc0x62om801ses,G. de Regt,39.795,64.05600000000001,3,3.0,turnover,False,0.000143924395425
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902152493,1,40,27,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,16.8,58.956,3,3.0,turnover,False,6.056042517493809e-06
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902152969,1,40,51,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,30t0ph1icrggc0x62om801ses,G. de Regt,32.76,59.160000000000004,1,1.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902339511,1,42,7,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,71.715,52.7,5,8.0,window_expired,False,0.0282521979436463
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902184689,2,48,17,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,22.155,36.788000000000004,0,0.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902184877,2,49,10,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,9zryne6aa951ltubvjo0gk12i,M. Ihattaren,44.415,20.264000000000003,4,9.0,turnover,False,0.00019018220903490492
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902187961,2,51,2,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,30t0ph1icrggc0x62om801ses,G. de Regt,48.300000000000004,57.596000000000004,0,0.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902193559,2,54,25,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,70.77000000000001,44.608,1,7.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902197307,2,56,42,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,5.775,46.376000000000005,0,0.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902202391,2,59,55,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,14.175,59.29600000000001,0,0.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902204245,2,61,11,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,32.025,33.524,0,0.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902207783,2,63,36,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,30.135,65.824,0,0.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902208593,2,64,11,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,44.1,5.576,0,0.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902213373,2,67,36,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,60jptu288hf6gcljkbzcdie39,K. Peterson,55.545,62.968,0,0.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902219471,2,72,10,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,25.62,30.736000000000004,0,0.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902238917,2,87,20,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dp0q4f4gbj2buhcu1lb5dzxed,Ivo Pinto,35.28,3.196,1,1.0,turnover,False,0.0
+2026-02-20_Fortuna Sittard - SBV Excelsior,2902241487,2,89,15,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,5ghvrbmlh0tqos9iohj8f7zzd,K. Sierhuis,66.465,16.32,2,7.0,turnover,True,0.0

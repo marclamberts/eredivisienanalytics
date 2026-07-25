@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-29_SBV Excelsior - NAC Breda,2877817521,1,1,53,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,69.72000000000001,38.624,5,7.0,turnover,False,0.0018397827804555369
+2025-11-29_SBV Excelsior - NAC Breda,2877823397,1,4,36,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,39.06,34.136,4,8.0,window_expired,False,4.98985297558846e-05
+2025-11-29_SBV Excelsior - NAC Breda,2877824349,1,5,2,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,32.235,12.308000000000002,1,2.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2877828861,1,7,11,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,25.62,62.084,3,9.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2877837169,1,10,39,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,59.22,2.924,0,0.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2877837281,1,10,42,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,41.79,5.712000000000001,2,4.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2877849679,1,16,12,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,26.669999999999998,62.628,4,8.0,window_expired,False,0.0197543525409892
+2025-11-29_SBV Excelsior - NAC Breda,2877863647,1,28,4,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,d785q9rpqlyuyswv8f9fx4cno,M. Nassoh,8.925,21.42,1,0.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2877870961,1,32,35,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,47.25,43.316,0,0.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2877876581,1,35,7,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,24.044999999999998,49.776,3,6.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2877878759,1,36,5,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,d785q9rpqlyuyswv8f9fx4cno,M. Nassoh,44.1,6.800000000000001,1,0.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2877896169,1,42,56,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,38.43,21.012,3,3.0,turnover,False,0.0003114797148409
+2025-11-29_SBV Excelsior - NAC Breda,2877940177,2,47,55,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,38.955000000000005,51.68000000000001,1,2.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2877949423,2,52,23,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,buhlcdwtnxeiqgy079kas7dw4,J. Bergraaf,24.150000000000002,7.752000000000001,0,0.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2877971101,2,63,14,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,24.885,22.644,0,0.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2877986007,2,77,17,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,30.240000000000002,51.816,3,5.0,window_expired,False,0.0001910649800502
+2025-11-29_SBV Excelsior - NAC Breda,2878003941,2,92,26,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,37.800000000000004,9.452000000000002,1,0.0,turnover,False,0.0
+2025-11-29_SBV Excelsior - NAC Breda,2878005323,2,93,52,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,27.825000000000003,6.732000000000001,1,1.0,turnover,False,0.0

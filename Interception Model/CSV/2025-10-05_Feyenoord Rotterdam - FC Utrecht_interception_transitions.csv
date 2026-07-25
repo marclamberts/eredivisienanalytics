@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856381873,1,12,52,ccpscwdcm65czscrun048ecn5,FC Utrecht,dmnk8dz6w8n4fcso88fuvusfe,Zidane Iqbal,52.605000000000004,55.760000000000005,2,2.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856384595,1,14,53,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,6.720000000000001,54.876000000000005,4,5.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856384869,1,15,5,ccpscwdcm65czscrun048ecn5,FC Utrecht,dmnk8dz6w8n4fcso88fuvusfe,Zidane Iqbal,36.015,60.656000000000006,2,0.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856384895,1,15,6,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,8d0ffyx2qnnp0limf5aou92ei,A. Ueda,71.715,20.196,3,8.0,window_expired,False,0.0022227483341478
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856385483,1,15,34,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,24.78,22.44,0,0.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2857173979,1,23,40,ccpscwdcm65czscrun048ecn5,FC Utrecht,dmnk8dz6w8n4fcso88fuvusfe,Zidane Iqbal,21.735,41.752,1,2.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856394747,1,27,0,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,45.78,26.588000000000005,5,10.0,window_expired,False,0.0009197787392245
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856398121,1,29,59,ccpscwdcm65czscrun048ecn5,FC Utrecht,9ano8w4jrlk6zq92rxchzaru2,Miguel Rodríguez,36.12,24.48,0,0.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856400907,1,31,57,ccpscwdcm65czscrun048ecn5,FC Utrecht,2t2mq9pun2hrdvadnpixxvlzo,A. Blake,28.56,45.696000000000005,1,0.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856413229,1,39,17,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,30.66,14.96,0,0.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856454417,2,47,34,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,31.290000000000003,65.348,1,2.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856458873,2,50,52,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dwyl0yii553i57u7azfa7d15g,A. Hadj Moussa,62.05500000000001,18.564,0,0.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856469607,2,58,30,ccpscwdcm65czscrun048ecn5,FC Utrecht,7o8auo4uu5mzh7f4a44ucdf8q,D. Min,58.275000000000006,8.228,0,0.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856496103,2,81,47,ccpscwdcm65czscrun048ecn5,FC Utrecht,2t2mq9pun2hrdvadnpixxvlzo,A. Blake,14.490000000000002,48.824,3,9.0,window_expired,False,0.014685895338954452
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856503069,2,86,19,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,16.59,18.836000000000002,1,1.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856509245,2,90,42,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,61.425000000000004,20.808000000000003,0,0.0,turnover,False,0.0
+2025-10-05_Feyenoord Rotterdam - FC Utrecht,2856509849,2,91,12,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,8f3bhiy6r5eei1n25exhbwr8p,J. Lotomba,17.01,4.896000000000001,4,5.0,turnover,False,0.0

@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908412163,1,3,16,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,32.34,31.008000000000003,3,2.0,turnover,False,0.0
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908419653,1,10,43,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,13.965000000000002,40.868,4,5.0,turnover,False,3.661358248044366e-05
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908426847,1,18,11,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,19.11,26.520000000000003,2,1.0,turnover,False,0.0003408392414262
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908428051,1,19,25,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,12.39,43.86000000000001,0,0.0,turnover,False,0.0
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908431297,1,22,48,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cs4aca71qkt1ru20ppmi6djl6,M. Kovář,9.135,28.832,4,8.0,turnover,False,4.1620079552981415e-05
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908432987,1,24,35,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d36na8jr6xcc8eronhy8mcz1m,K. Sildillia,46.2,3.944,0,0.0,turnover,False,0.0
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908433983,1,25,37,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,28.56,39.032000000000004,3,3.0,turnover,False,4.68563642887776e-05
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908435455,1,27,30,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,17.535,12.648000000000001,4,9.0,window_expired,False,4.862960470741751e-05
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908443015,1,36,31,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,16.59,28.968000000000004,1,2.0,turnover,False,0.0
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908444931,1,38,58,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,65.205,3.944,3,5.0,turnover,False,0.0
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908447231,1,41,47,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,wuh8s4gfo9ro3nel3rormg44,R. Daal,26.145,27.744,0,0.0,turnover,False,0.0
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908450283,1,45,10,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,62.475,7.140000000000001,1,1.0,turnover,False,0.0
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908467119,2,47,15,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,35.49,4.896000000000001,2,8.0,window_expired,False,0.0134545428570404
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908479119,2,57,24,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,42.0,6.392,1,0.0,turnover,False,0.0
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908492001,2,68,59,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,19.635,27.404,0,0.0,turnover,False,0.0
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908507775,2,85,14,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,42.42,54.944,5,7.0,window_expired,False,0.00036399942218266225
+2026-03-07_PSV Eindhoven - Alkmaar Zaanstreek,2908515461,2,93,42,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,23.730000000000004,20.876,3,7.0,turnover,False,1.6951244408799915e-05

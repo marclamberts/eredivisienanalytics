@@ -1,0 +1,28 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-31_PEC Zwolle - FC Utrecht,2841834245,1,3,23,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,32.235,1.4960000000000002,1,1.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841835067,1,4,34,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,58.065,59.228,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841835617,1,5,17,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6u7z5qrlwzl9aug8awejq37xl,Jamiro Monteiro,24.044999999999998,31.484,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841838393,1,8,21,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,25.41,28.764,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841839523,1,9,51,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,39.480000000000004,5.168,3,4.0,turnover,False,0.0001711752567014
+2025-08-31_PEC Zwolle - FC Utrecht,2842479457,1,14,8,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,74.235,7.82,3,6.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841843451,1,14,16,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,27.930000000000003,37.80800000000001,5,10.0,window_expired,False,3.536931424394374e-06
+2025-08-31_PEC Zwolle - FC Utrecht,2841845951,1,17,10,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,42.945,44.064,5,7.0,turnover,False,0.0019863200136163
+2025-08-31_PEC Zwolle - FC Utrecht,2841848293,1,20,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,32.76,22.508000000000003,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841854593,1,31,24,ccpscwdcm65czscrun048ecn5,FC Utrecht,29s8wk0a2m66rebsfx1jfuuh,D. van den Berg,46.62,47.328,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841855385,1,32,21,ccpscwdcm65czscrun048ecn5,FC Utrecht,7o8auo4uu5mzh7f4a44ucdf8q,D. Min,35.805,45.15200000000001,5,10.0,window_expired,False,0.0001029720986079
+2025-08-31_PEC Zwolle - FC Utrecht,2841858741,1,35,46,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,73.605,2.108,1,1.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841868393,1,45,14,ccpscwdcm65czscrun048ecn5,FC Utrecht,9ano8w4jrlk6zq92rxchzaru2,Miguel Rodríguez,63.839999999999996,18.224,1,2.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841868967,1,45,50,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,58.065,28.492,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2842488349,2,54,46,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,21.525000000000002,20.400000000000002,3,9.0,window_expired,False,9.994674596779109e-05
+2025-08-31_PEC Zwolle - FC Utrecht,2841893551,2,56,49,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6u7z5qrlwzl9aug8awejq37xl,Jamiro Monteiro,30.345,29.512,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841894463,2,57,58,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,68.775,4.216,1,1.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841897305,2,62,24,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,56.49,35.36,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2842489813,2,63,30,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,14.805,39.168000000000006,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841899795,2,67,56,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,64.89,45.15200000000001,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2842492575,2,71,40,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,45.36000000000001,17.816000000000003,1,4.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841901277,2,71,53,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,34.86000000000001,47.124,4,7.0,turnover,False,0.0001643826719176
+2025-08-31_PEC Zwolle - FC Utrecht,2841909823,2,80,36,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,58.905,16.796,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841914909,2,85,30,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,7h6w0i7ebl5pew0v1j8ipin10,G. Reiziger,42.73500000000001,20.468000000000004,4,4.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841928913,2,99,33,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,40.53,53.924,1,2.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841929017,2,99,39,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,18.794999999999998,23.936000000000003,0,0.0,turnover,False,0.0
+2025-08-31_PEC Zwolle - FC Utrecht,2841929347,2,99,58,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,10k3fz1ibikbugv4c45ewy87o,J. Pereira da Gama,19.005000000000003,60.044000000000004,1,2.0,turnover,False,0.0

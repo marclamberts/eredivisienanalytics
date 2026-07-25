@@ -1,0 +1,26 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883237319,1,4,27,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,56nbghr9snc79dt8h99wleej8,S. Steur,49.035000000000004,32.43600000000001,1,4.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883238813,1,5,58,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,73.185,45.764,2,3.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883241073,1,8,15,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,54.915,51.272000000000006,4,7.0,turnover,False,0.00035196231897541703
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883287385,1,10,16,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,67.62,48.824,0,0.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883249829,1,18,9,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,26.355000000000004,55.080000000000005,3,6.0,window_expired,False,2.83139299205315e-05
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883262841,1,36,12,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,baakmd4ndnulbl9npvmq90mvp,D. Klaassen,23.835,20.264000000000003,0,0.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883262913,1,36,18,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,19.845,45.356,3,1.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883263075,1,36,32,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,12.81,45.492000000000004,4,9.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883267525,1,40,49,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,38.955000000000005,7.956,1,0.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883289587,2,45,48,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,36.12,52.768,0,0.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883289877,2,46,8,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,13.65,35.428000000000004,0,0.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883302057,2,58,18,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,bpprd2haoafk6y0rjans4iytx,K. Dolberg,27.405,29.648000000000003,0,0.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883305917,2,64,9,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,8f3bhiy6r5eei1n25exhbwr8p,J. Lotomba,40.32,14.824000000000002,0,0.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883307661,2,67,32,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,12.915000000000001,15.164000000000001,3,6.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883307859,2,67,54,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,70.77000000000001,48.144,3,8.0,turnover,False,0.0078982855476185
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883311165,2,73,42,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,37.589999999999996,40.93600000000001,4,8.0,window_expired,False,0.00042945239789699403
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883311609,2,74,13,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,38.115,15.572000000000001,0,0.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883312255,2,75,1,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,60.69,46.647999999999996,2,1.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883312323,2,75,7,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,45.15,44.744,2,1.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883312367,2,75,10,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,66.25500000000001,25.568,0,0.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883319675,2,83,11,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,70.665,62.628,2,2.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883320165,2,83,31,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,14.91,51.61200000000001,4,8.0,turnover,False,0.0001917038997126
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883323503,2,86,54,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,18.27,20.876,0,0.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883323617,2,87,0,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,20.580000000000002,11.696,1,1.0,turnover,False,0.0
+2025-12-14_AFC Ajax - Feyenoord Rotterdam,2883330699,2,94,47,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,23.31,23.936000000000003,3,2.0,turnover,False,0.0

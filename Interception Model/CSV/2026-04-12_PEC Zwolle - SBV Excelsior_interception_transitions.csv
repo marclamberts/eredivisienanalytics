@@ -1,0 +1,11 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-12_PEC Zwolle - SBV Excelsior,2923063621,1,11,8,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,69.405,7.412000000000001,6,10.0,window_expired,False,0.0032732949334262
+2026-04-12_PEC Zwolle - SBV Excelsior,2923072425,1,20,22,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,37.48500000000001,18.360000000000003,2,3.0,turnover,False,0.0
+2026-04-12_PEC Zwolle - SBV Excelsior,2923077315,1,27,22,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,38.010000000000005,53.992000000000004,1,2.0,turnover,False,0.0
+2026-04-12_PEC Zwolle - SBV Excelsior,2923089321,1,40,14,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,49.77,27.132,2,2.0,turnover,False,0.0
+2026-04-12_PEC Zwolle - SBV Excelsior,2923112373,2,47,3,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,25.935,52.836000000000006,3,6.0,turnover,False,0.0
+2026-04-12_PEC Zwolle - SBV Excelsior,2923118275,2,51,27,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,27.3,52.02,0,0.0,turnover,False,0.0
+2026-04-12_PEC Zwolle - SBV Excelsior,2923121973,2,56,48,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5nhideyjwp2347ryi1n9wfq50,D. Sanches Fernandes,69.19500000000001,5.508,2,1.0,turnover,False,0.0
+2026-04-12_PEC Zwolle - SBV Excelsior,2923128779,2,64,48,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,58.17,44.744,1,1.0,turnover,False,0.0
+2026-04-12_PEC Zwolle - SBV Excelsior,2923138223,2,77,35,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d29ahwtvs7ls75wdtkf7xr8tm,Z. Buurmeester,60.375,62.016000000000005,0,0.0,turnover,False,0.0
+2026-04-12_PEC Zwolle - SBV Excelsior,2923155637,2,93,58,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,47.775,34.476000000000006,2,4.0,turnover,False,0.0

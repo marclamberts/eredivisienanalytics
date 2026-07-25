@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-21_FC Utrecht - PSV Eindhoven,2885226881,1,1,11,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,42.105000000000004,1.7680000000000002,2,4.0,turnover,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885227339,1,3,26,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,72.03,2.5160000000000005,8,8.0,window_expired,False,0.0029809006637475
+2025-12-21_FC Utrecht - PSV Eindhoven,2885245371,1,5,7,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,47.145,51.61200000000001,7,9.0,window_expired,False,0.0009138178018347917
+2025-12-21_FC Utrecht - PSV Eindhoven,2885231363,1,18,53,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,23.835,51.884,5,3.0,turnover,False,3.3914897866235694e-05
+2025-12-21_FC Utrecht - PSV Eindhoven,2885233085,1,24,7,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,55.33500000000001,63.376000000000005,0,0.0,turnover,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885233263,1,24,41,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,26.46,50.25200000000001,2,1.0,turnover,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885233963,1,27,25,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,63.105000000000004,57.46,5,9.0,turnover,True,0.00590109583182
+2025-12-21_FC Utrecht - PSV Eindhoven,2885242813,1,34,48,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,44.730000000000004,49.164,2,1.0,turnover,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885243199,1,34,51,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,48.300000000000004,21.42,0,0.0,turnover,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885236391,1,36,21,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,66.36,55.964,0,0.0,turnover,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885236829,1,38,2,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,56.910000000000004,60.31600000000001,3,5.0,turnover,False,0.0065033562109827
+2025-12-21_FC Utrecht - PSV Eindhoven,2885237879,1,41,22,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,24.044999999999998,62.968,1,0.0,turnover,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885239733,1,46,57,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,9.765,31.552,4,5.0,turnover,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885246379,2,54,56,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,b0me6l44boibnwpbtasxoy02x,S. Dest,39.9,2.72,1,0.0,window_expired,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885246973,2,56,17,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,38.43,42.024,0,0.0,turnover,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885248049,2,58,39,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,3.3600000000000003,60.11200000000001,3,4.0,turnover,False,4.173810780411236e-05
+2025-12-21_FC Utrecht - PSV Eindhoven,2885248507,2,59,44,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,57.12,65.62,1,3.0,turnover,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885252355,2,69,15,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,15.645000000000001,37.128,4,4.0,turnover,False,2.4212761676897787e-05
+2025-12-21_FC Utrecht - PSV Eindhoven,2885252981,2,70,57,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,43.89,17.34,1,0.0,turnover,False,0.0
+2025-12-21_FC Utrecht - PSV Eindhoven,2885254319,2,74,31,ccpscwdcm65czscrun048ecn5,FC Utrecht,egcs7b6ixb62ep08t7jznf9ih,V. Jensen,28.56,39.304,0,0.0,turnover,False,0.0

@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-02_AFC Ajax - PSV Eindhoven,2932317285,1,10,6,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,14.805,46.376000000000005,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932776127,1,17,19,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,44.83500000000001,2.9920000000000004,2,3.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932327433,1,17,56,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,67.41000000000001,4.08,1,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932328479,1,18,38,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,47.565,38.48800000000001,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932331161,1,20,44,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d36na8jr6xcc8eronhy8mcz1m,K. Sildillia,12.915000000000001,39.984,2,5.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932336019,1,24,33,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,4.515,28.968000000000004,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932340601,1,29,8,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,13.965000000000002,19.448000000000004,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932377987,2,46,12,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,50.505,25.500000000000004,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932382043,2,49,21,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,79.8,58.344,5,10.0,window_expired,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932387859,2,54,19,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,19.740000000000002,52.224000000000004,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932388465,2,54,50,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,53.760000000000005,27.676000000000005,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932390407,2,56,18,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,22.785,52.564,6,9.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932396031,2,60,55,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,oi8kw43rorvqooiencbnhxck,N. Fernandez,34.230000000000004,13.396,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932397427,2,61,56,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d36na8jr6xcc8eronhy8mcz1m,K. Sildillia,41.79,27.540000000000003,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932400393,2,64,38,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,81.48,46.580000000000005,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932412713,2,76,28,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,17.955000000000002,32.980000000000004,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932418329,2,78,18,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,47.98500000000001,39.78,0,0.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932417247,2,80,39,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,57.75,19.312,3,9.0,window_expired,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932424407,2,87,14,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,10.920000000000002,25.976000000000003,2,1.0,turnover,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932427957,2,91,10,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,9.03,38.48800000000001,5,9.0,window_expired,False,0.0
+2026-05-02_AFC Ajax - PSV Eindhoven,2932430753,2,93,0,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,48.510000000000005,59.84,0,0.0,turnover,False,0.0

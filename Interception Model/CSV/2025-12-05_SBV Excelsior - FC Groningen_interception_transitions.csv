@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-05_SBV Excelsior - FC Groningen,2880001281,1,0,14,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,60.900000000000006,24.548000000000002,3,8.0,window_expired,False,0.004711796572664406
+2025-12-05_SBV Excelsior - FC Groningen,2880002461,1,1,53,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,62.580000000000005,45.424,5,8.0,window_expired,False,0.0007120218453529
+2025-12-05_SBV Excelsior - FC Groningen,2880014891,1,15,17,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,34.230000000000004,56.508,4,10.0,window_expired,False,0.0003263708725484323
+2025-12-05_SBV Excelsior - FC Groningen,2880017247,1,17,48,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,36.54,63.03600000000001,2,4.0,turnover,True,0.0
+2025-12-05_SBV Excelsior - FC Groningen,2880018287,1,19,2,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,43.89,24.684,2,3.0,turnover,False,0.0
+2025-12-05_SBV Excelsior - FC Groningen,2880020825,1,21,55,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,51.87,50.388,4,3.0,turnover,False,0.0012511469920719
+2025-12-05_SBV Excelsior - FC Groningen,2880036109,1,40,1,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,44.31,50.93200000000001,1,0.0,turnover,False,0.0
+2025-12-05_SBV Excelsior - FC Groningen,2880052149,2,48,47,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,55.230000000000004,37.332,0,0.0,turnover,False,0.0
+2025-12-05_SBV Excelsior - FC Groningen,2880060187,2,57,40,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,35.385000000000005,57.39200000000001,0,0.0,turnover,False,0.0
+2025-12-05_SBV Excelsior - FC Groningen,2880062681,2,60,30,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,52.71000000000001,45.016000000000005,3,4.0,turnover,False,0.0
+2025-12-05_SBV Excelsior - FC Groningen,2880065117,2,63,17,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,27.825000000000003,25.024,0,0.0,turnover,False,0.0
+2025-12-05_SBV Excelsior - FC Groningen,2880073943,2,74,26,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,37.17,36.176,3,3.0,turnover,False,0.0
+2025-12-05_SBV Excelsior - FC Groningen,2880080255,2,81,51,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,34.86000000000001,47.804,0,0.0,turnover,False,0.0
+2025-12-05_SBV Excelsior - FC Groningen,2880090405,2,94,57,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5pg02unrm16jaa8vt5ego9z6y,S. Janssen,29.294999999999998,54.74,0,0.0,turnover,False,0.0

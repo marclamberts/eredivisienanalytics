@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-16_FC Groningen - SC Heerenveen,2835868445,1,17,14,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,57.435,64.12400000000001,1,1.0,turnover,False,0.0
+2025-08-16_FC Groningen - SC Heerenveen,2835884499,1,31,10,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,72.66000000000001,50.25200000000001,2,2.0,turnover,True,0.0
+2025-08-16_FC Groningen - SC Heerenveen,2835890057,1,37,25,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,35.28,62.49200000000001,0,0.0,turnover,False,0.0
+2025-08-16_FC Groningen - SC Heerenveen,2835892063,1,39,41,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,34.02,52.224000000000004,5,9.0,window_expired,False,4.190839902810939e-05
+2025-08-16_FC Groningen - SC Heerenveen,2835913115,2,47,50,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,64.575,1.904,1,1.0,turnover,False,0.0
+2025-08-16_FC Groningen - SC Heerenveen,2835915229,2,51,33,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,10.08,35.564,0,0.0,turnover,False,0.0
+2025-08-16_FC Groningen - SC Heerenveen,2835915611,2,52,12,cos9hxi16eitbcbthof7zrm4m,FC Groningen,by85t8ssyumcjcks1jx3v96vo,Y. Taha,78.54,5.78,0,0.0,turnover,False,0.0
+2025-08-16_FC Groningen - SC Heerenveen,2835921329,2,61,56,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,d2698ncsatg6jtvb0l9ijhj4k,N. Hopland,41.055,38.760000000000005,5,9.0,window_expired,False,0.00021216402181007226
+2025-08-16_FC Groningen - SC Heerenveen,2835922297,2,63,46,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,26.880000000000003,3.5360000000000005,0,0.0,turnover,False,0.0
+2025-08-16_FC Groningen - SC Heerenveen,2835924715,2,68,3,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,aqnr6l3f02hx0soadunxbjcpg,J. Trenskow,53.550000000000004,22.304,3,5.0,turnover,False,0.0014271941793355
+2025-08-16_FC Groningen - SC Heerenveen,2835925299,2,69,9,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,75.915,60.99600000000001,1,0.0,turnover,False,0.0
+2025-08-16_FC Groningen - SC Heerenveen,2835930965,2,83,20,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1nk0hcaa9o4jnyxc9ndz1lams,D. van der Werff,66.045,48.620000000000005,1,0.0,turnover,False,0.0

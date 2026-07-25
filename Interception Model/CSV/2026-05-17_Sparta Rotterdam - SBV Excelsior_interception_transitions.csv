@@ -1,0 +1,20 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938898883,1,0,13,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,28.980000000000004,13.056000000000001,1,1.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938909153,1,8,32,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,76.86,52.156000000000006,3,2.0,turnover,True,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938911067,1,10,2,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,9lctm8txbd4n87mk61lwa0rf9,S. Bakari,17.64,23.528000000000002,0,0.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938924453,1,24,13,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,55.44,58.07200000000001,0,0.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938928309,1,29,21,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,38.43,27.540000000000003,3,4.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938931699,1,32,38,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,35.7,29.784,0,0.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2939563723,1,44,20,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,dbg4ducw8j747foxiexle1iad,P. Clement,64.89,51.748,0,0.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938966331,2,45,11,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,29.715000000000003,42.29600000000001,3,5.0,window_expired,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938970533,2,48,16,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,57.75,24.208000000000002,2,10.0,window_expired,True,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938972021,2,49,8,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,32.76,58.07200000000001,2,5.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938972633,2,49,31,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,16.59,32.572,0,0.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938973129,2,49,52,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,6.09,32.980000000000004,0,0.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938988359,2,58,22,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,536qjh4gcmpo5q68ti87e60kq,S. Mito,59.43000000000001,60.99600000000001,0,0.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938989519,2,60,23,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,24.465000000000003,24.14,0,0.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938989749,2,60,32,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,cvoxwqoj3ak99w6wsp1yfbl04,G. Vianello,9.135,48.008,0,0.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2938999121,2,67,50,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,29.505000000000003,21.012,0,0.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2939008533,2,76,3,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,46.2,23.596000000000004,3,9.0,window_expired,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2939008805,2,76,15,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,18.165000000000003,23.46,3,6.0,turnover,False,0.0
+2026-05-17_Sparta Rotterdam - SBV Excelsior,2939025753,2,87,21,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6w59kdfilru1152bjutstu2fp,J. de Guzmán,59.43000000000001,25.636000000000003,4,7.0,window_expired,False,0.0

@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890414979,1,5,44,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,66.465,21.624000000000002,0,0.0,turnover,False,0.0
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890422117,1,15,31,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,c3j7ddqg0yzporam6gieibgiy,C. Brym,65.31,24.004,7,9.0,window_expired,False,0.0008638804111324225
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890718487,1,17,53,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4ported2opjp4xbp87bpqb6z8,M. Soumano,32.655,61.268,1,2.0,turnover,False,0.0
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890426047,1,21,12,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,73.39500000000001,32.572,2,1.0,turnover,False,0.0048180226278039
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890428709,1,25,42,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,913pg8qqcjp99h5fjybbenob9,P. Sandler,8.82,35.768,0,0.0,turnover,False,0.0
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890430961,1,29,40,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,64x38pccgfsuz4ywoveh2ksbu,L. Greiml,45.885000000000005,7.140000000000001,1,1.0,turnover,False,0.0
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890432361,1,32,1,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,a76yp8gkkg6frtuhh3d6l46i,D. Proper,14.91,25.296000000000003,1,1.0,turnover,False,0.0
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890730787,1,32,5,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dgex06nxjy9fdvc12o8keg99l,K. Ogawa,16.905,30.192,0,0.0,turnover,False,0.0
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890441655,1,47,36,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,a76yp8gkkg6frtuhh3d6l46i,D. Proper,26.669999999999998,39.78,0,0.0,turnover,False,0.0
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890476063,2,52,9,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,19.32,37.80800000000001,0,0.0,turnover,False,0.0
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890760471,2,56,36,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,34.86000000000001,42.432,4,10.0,window_expired,False,0.0010305009631170164
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890460233,2,64,24,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,ac3lkaa1lkbsa82tfylq5zcb8,N. Lebreton,35.175000000000004,29.376000000000005,0,0.0,turnover,False,0.0
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890766571,2,66,38,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,8624hqd4nlbzcoqsetvsvla8k,D. Fonville,70.03500000000001,51.408,5,10.0,window_expired,False,0.0172864021107986
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890473443,2,93,29,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bdb33nwcpd2jufn9ggtl7gvzd,B. Lucassen,38.325,4.284,0,0.0,turnover,False,0.0

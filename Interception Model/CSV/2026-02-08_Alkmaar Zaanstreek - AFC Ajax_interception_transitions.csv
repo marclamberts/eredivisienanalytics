@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898000195,1,0,19,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,62.370000000000005,11.084000000000001,6,10.0,window_expired,False,0.0007081658247571062
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898002685,1,2,24,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,22alh32lu88yabxd4pl0opg5w,K. Boogaard,10.815000000000001,36.108000000000004,0,0.0,turnover,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898005499,1,4,53,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,71.505,10.064000000000002,0,0.0,turnover,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898017249,1,14,54,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,14.490000000000002,43.588,4,8.0,window_expired,False,0.0003107389224314
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898022259,1,22,42,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,23.835,49.164,0,0.0,turnover,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898022537,1,23,20,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,64.155,15.3,0,0.0,turnover,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898028539,1,30,44,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,27.090000000000003,45.83200000000001,0,0.0,turnover,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898035979,1,35,38,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,56.910000000000004,59.772000000000006,2,3.0,turnover,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898076299,2,46,8,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,59ynmlwky3h6m9g2r7a8igi96,T. Parrott,56.385000000000005,32.504,3,7.0,window_expired,False,0.0004125114505712
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898081775,2,49,34,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,39.06,9.792000000000002,2,0.0,turnover,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898088919,2,53,55,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,22alh32lu88yabxd4pl0opg5w,K. Boogaard,66.99,25.908,2,4.0,turnover,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898103205,2,66,16,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,56.28,20.060000000000002,0,0.0,turnover,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898105359,2,69,8,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,38.955000000000005,49.43600000000001,0,0.0,window_expired,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898108079,2,71,47,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,66.57000000000001,5.984000000000001,0,0.0,turnover,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898132849,2,89,57,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,21.525000000000002,18.224,2,2.0,turnover,False,0.0
+2026-02-08_Alkmaar Zaanstreek - AFC Ajax,2898133407,2,90,23,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,14.07,8.024000000000001,1,1.0,turnover,False,0.0

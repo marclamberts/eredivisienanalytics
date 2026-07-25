@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-23_PSV Eindhoven - FC Groningen,2838450615,1,8,50,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,avv12sgcucblnbfb790xovf8,R. van Bommel,41.79,39.236000000000004,0,0.0,turnover,False,0.0
+2025-08-23_PSV Eindhoven - FC Groningen,2838453021,1,14,29,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,29.400000000000002,52.156000000000006,2,2.0,turnover,False,0.0
+2025-08-23_PSV Eindhoven - FC Groningen,2838453051,1,14,32,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,biee6dvb524juzai7iryyskix,D. Man,61.95,12.784,4,10.0,window_expired,False,0.0038240501649068
+2025-08-23_PSV Eindhoven - FC Groningen,2838467731,1,29,41,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,41.055,62.900000000000006,1,2.0,turnover,False,0.0
+2025-08-23_PSV Eindhoven - FC Groningen,2838478007,1,40,46,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,32.865,5.168,1,1.0,turnover,False,0.0
+2025-08-23_PSV Eindhoven - FC Groningen,2838479659,1,42,45,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,36.330000000000005,10.336,0,0.0,turnover,False,0.0
+2025-08-23_PSV Eindhoven - FC Groningen,2838500847,2,45,27,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,59.115,55.488,5,7.0,window_expired,False,0.0055333607011371
+2025-08-23_PSV Eindhoven - FC Groningen,2838503941,2,49,12,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,avv12sgcucblnbfb790xovf8,R. van Bommel,54.915,49.43600000000001,0,0.0,turnover,False,0.0
+2025-08-23_PSV Eindhoven - FC Groningen,2838507363,2,53,48,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,30.87,24.888,3,7.0,window_expired,False,0.0007338338628354007
+2025-08-23_PSV Eindhoven - FC Groningen,2838509193,2,56,31,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,55.650000000000006,48.416000000000004,0,0.0,turnover,False,0.0
+2025-08-23_PSV Eindhoven - FC Groningen,2838522003,2,69,50,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,32.445,23.256000000000004,1,0.0,turnover,False,0.0
+2025-08-23_PSV Eindhoven - FC Groningen,2838529195,2,76,44,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,b0me6l44boibnwpbtasxoy02x,S. Dest,61.11000000000001,62.49200000000001,1,1.0,turnover,False,0.0
+2025-08-23_PSV Eindhoven - FC Groningen,2838546263,2,92,58,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,3c3vzihvua5ap17aa27v1ve38,J. van den Berg,13.23,29.036000000000005,2,2.0,turnover,False,0.0

@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2938918079,1,15,30,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1q0v3qpciql8rkyz4qrlvbuju,J. Breum,29.085,38.012,3,7.0,window_expired,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2938924077,1,23,34,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,72.66000000000001,55.42,1,0.0,turnover,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2938924941,1,24,41,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,49.245,10.336,0,0.0,turnover,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2938931547,1,32,21,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,8624hqd4nlbzcoqsetvsvla8k,D. Fonville,57.54,59.364000000000004,0,0.0,turnover,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2938933259,1,33,43,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d4klz2gxqb1diw57z8c9ttixg,G. van Zwam,45.57,4.148,0,0.0,turnover,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2938936951,1,36,21,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,2teefpvijsbzag4yi7fm1pyol,A. Sampsted,12.81,46.172000000000004,3,3.0,turnover,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2938939119,1,37,51,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,2teefpvijsbzag4yi7fm1pyol,A. Sampsted,26.46,52.02,1,2.0,turnover,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2938941211,1,39,18,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,30.87,25.500000000000004,0,0.0,turnover,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2938949869,1,45,31,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d4klz2gxqb1diw57z8c9ttixg,G. van Zwam,7.455,9.928,1,2.0,turnover,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2938987239,2,53,8,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,31.71,36.992000000000004,0,0.0,turnover,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2939003559,2,66,46,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,62.79,42.636,1,3.0,window_expired,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2939010277,2,71,46,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,247ipjjd0cak2sggwbuorx4yy,B. Pereira,23.625,14.756,4,8.0,window_expired,False,0.0
+2026-05-17_Nijmegen Eendracht Combinatie - Go Ahead Eagles,2939014635,2,74,36,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,30.135,61.608000000000004,0,0.0,turnover,False,0.0

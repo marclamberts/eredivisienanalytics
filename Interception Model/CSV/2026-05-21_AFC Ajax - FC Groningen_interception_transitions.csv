@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-21_AFC Ajax - FC Groningen,2940308271,1,0,41,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,66.99,16.116,0,0.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940308445,1,1,30,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,64.68,66.23200000000001,1,1.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940308975,1,4,33,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,cx6fxszjvjam6zb3c3p0dd1jo,M. Godts,70.56,59.84,2,1.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940308985,1,4,35,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,27.51,16.252,0,0.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940309389,1,9,5,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,77.07000000000001,52.496,3,2.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940310673,1,19,30,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,42.21000000000001,5.644000000000001,0,0.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940310915,1,20,26,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,59.010000000000005,52.496,2,5.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940311233,1,21,43,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2wesmq2wuhnuwh2yhgkuaxqfo,A. Bouwman,23.31,14.076,0,0.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940312535,1,25,2,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,cx6fxszjvjam6zb3c3p0dd1jo,M. Godts,51.03,41.956,0,0.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940312227,1,25,50,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,63.21000000000001,7.412000000000001,1,1.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940315457,1,40,18,cos9hxi16eitbcbthof7zrm4m,FC Groningen,bm3k1knugkwa8z319dscr2yhg,T. Hernes,28.77,11.22,3,5.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940316825,1,47,6,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,67.935,60.99600000000001,4,10.0,window_expired,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940320561,2,45,44,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,26.040000000000003,59.43200000000001,4,9.0,window_expired,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940320827,2,47,21,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,22.785,62.424,2,7.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940321025,2,48,23,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,91.665,4.556,0,0.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940321611,2,53,46,cos9hxi16eitbcbthof7zrm4m,FC Groningen,bm3k1knugkwa8z319dscr2yhg,T. Hernes,81.58500000000001,18.360000000000003,4,3.0,turnover,True,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940321645,2,53,59,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,36.645,14.892,4,10.0,window_expired,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940329845,2,72,33,cos9hxi16eitbcbthof7zrm4m,FC Groningen,bjr31p4bny8vtlm8dc237boyc,R. Metu,75.81,11.832,0,0.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940334883,2,82,30,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7xovmwq2h4rcr9nuou4gi3g2c,W. Prins,41.37,60.11200000000001,3,4.0,turnover,False,0.0
+2026-05-21_AFC Ajax - FC Groningen,2940335945,2,84,53,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,8.925,32.572,1,1.0,turnover,False,0.0

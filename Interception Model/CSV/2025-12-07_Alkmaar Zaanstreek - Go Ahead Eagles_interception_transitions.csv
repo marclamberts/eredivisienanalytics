@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2880909477,1,0,53,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,73lwz4he5erpp25zi8crjvztg,I. Jensen,45.99,65.41600000000001,0,0.0,turnover,False,0.0
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2880925227,1,16,52,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,10.815000000000001,41.956,1,1.0,turnover,False,0.0
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2880925669,1,17,26,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,es363spp9pgd4hralx6ni2xw4,M. Chávez,57.330000000000005,59.636,0,0.0,turnover,False,0.0
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2880929253,1,21,54,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,43.68000000000001,34.408,4,8.0,window_expired,False,0.0015530040628575531
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2880932661,1,26,23,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,27.615000000000002,15.64,4,6.0,turnover,False,0.0001055018884385
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2880935451,1,30,22,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,ciguyr553yqapqfudim9af46h,M. Deijl,56.80500000000001,8.772,0,0.0,turnover,False,0.0
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2880944607,1,37,56,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,60.69,66.30000000000001,0,0.0,turnover,False,0.0
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2881518065,1,39,18,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,10.185,60.18000000000001,4,10.0,window_expired,False,7.021135001099299e-05
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2880972461,2,47,22,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,badyafxn00m21tzbdff95o4k4,Y. Salah Rahmouni,21.21,45.56,1,0.0,window_expired,False,0.0
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2880983459,2,56,49,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,63.63,34.068000000000005,3,4.0,turnover,False,0.0239971368344724
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2880989365,2,62,54,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,43.47,31.28,1,8.0,window_expired,False,0.0
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2880999189,2,77,54,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,9d4lofwg9ooaoldw2vpt4h36y,E. Linthorst,13.86,24.548000000000002,0,0.0,turnover,False,0.0
+2025-12-07_Alkmaar Zaanstreek - Go Ahead Eagles,2881002933,2,81,40,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,35.49,39.916000000000004,0,0.0,turnover,False,0.0

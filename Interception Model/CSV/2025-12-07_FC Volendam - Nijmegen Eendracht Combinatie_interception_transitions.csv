@@ -1,0 +1,6 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-07_FC Volendam - Nijmegen Eendracht Combinatie,2880915723,1,8,1,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4pqi5vt820333t5zsj2refc2d,B. Linssen,62.475,52.36000000000001,0,0.0,turnover,False,0.0
+2025-12-07_FC Volendam - Nijmegen Eendracht Combinatie,2880985931,2,57,3,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,48.510000000000005,21.080000000000002,4,5.0,turnover,False,0.0010636644743534
+2025-12-07_FC Volendam - Nijmegen Eendracht Combinatie,2880994167,2,69,27,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,64.47,13.056000000000001,0,0.0,turnover,False,0.0
+2025-12-07_FC Volendam - Nijmegen Eendracht Combinatie,2881005119,2,82,8,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,9.765,16.864,5,6.0,turnover,False,0.0001797090193168935
+2025-12-07_FC Volendam - Nijmegen Eendracht Combinatie,2881016187,2,93,5,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,eu901b75l2ly5p48jdw6kwmad,M. Amevor,11.97,21.42,3,4.0,turnover,False,6.218732950791228e-05

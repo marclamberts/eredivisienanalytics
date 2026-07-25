@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-08_Go Ahead Eagles - SC Telstar,2898458577,1,17,42,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,58.38,65.756,2,2.0,turnover,False,0.0004225191645667
+2026-02-08_Go Ahead Eagles - SC Telstar,2898022421,1,24,23,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,48.615,18.904000000000003,4,6.0,window_expired,False,6.724813027733645e-05
+2026-02-08_Go Ahead Eagles - SC Telstar,2898023449,1,26,43,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,29.294999999999998,58.888,2,2.0,turnover,False,0.0
+2026-02-08_Go Ahead Eagles - SC Telstar,2898023645,1,27,9,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,51.135000000000005,15.912,0,0.0,turnover,False,0.0
+2026-02-08_Go Ahead Eagles - SC Telstar,2898026613,1,30,14,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d4klz2gxqb1diw57z8c9ttixg,G. van Zwam,29.085,4.42,3,3.0,turnover,False,0.00043830124329561623
+2026-02-08_Go Ahead Eagles - SC Telstar,2898043471,1,41,41,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,83.265,63.104,4,6.0,window_expired,False,2.1224798021982072e-05
+2026-02-08_Go Ahead Eagles - SC Telstar,2898093951,2,58,16,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,eytcfp4cu6qkar65kf0p5rm96,J. Dirksen,57.330000000000005,23.868000000000002,5,9.0,window_expired,False,0.0014662378322561
+2026-02-08_Go Ahead Eagles - SC Telstar,2898096247,2,60,11,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,891zjrm0zjc2e3ebjx11p2y38,J. Slory,88.41000000000001,4.488,0,0.0,turnover,False,0.0
+2026-02-08_Go Ahead Eagles - SC Telstar,2898097827,2,61,34,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,46.830000000000005,23.323999999999998,0,0.0,turnover,False,0.0
+2026-02-08_Go Ahead Eagles - SC Telstar,2898098039,2,61,44,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1q0v3qpciql8rkyz4qrlvbuju,J. Breum,59.955000000000005,61.336000000000006,1,0.0,window_expired,False,0.0
+2026-02-08_Go Ahead Eagles - SC Telstar,2898100171,2,63,36,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,65.94,56.1,5,10.0,turnover,True,0.0519558326187506
+2026-02-08_Go Ahead Eagles - SC Telstar,2898101197,2,64,44,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,b157xbo2jovsxkgr3wie3rip6,T. Baeten,63.945,64.19200000000001,1,0.0,window_expired,False,0.0
+2026-02-08_Go Ahead Eagles - SC Telstar,2898109803,2,74,14,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4fu2agdclsyxx1boxxibauzo4,G. Alders,50.714999999999996,6.324000000000001,1,2.0,turnover,False,0.0
+2026-02-08_Go Ahead Eagles - SC Telstar,2898117211,2,79,17,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,19.740000000000002,11.288000000000002,5,10.0,window_expired,False,0.0009456347271684118
+2026-02-08_Go Ahead Eagles - SC Telstar,2898122825,2,83,26,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,3g0xd9rds9relghxanr1f5vc9,S. Sigurðarson,29.19,30.94,2,1.0,turnover,False,0.0
+2026-02-08_Go Ahead Eagles - SC Telstar,2898128457,2,87,37,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,16.485,44.744,6,9.0,window_expired,False,5.8067598603314674e-05
+2026-02-08_Go Ahead Eagles - SC Telstar,2898130471,2,89,1,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,11.97,55.148,1,3.0,turnover,False,0.0
+2026-02-08_Go Ahead Eagles - SC Telstar,2898131613,2,89,53,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,b157xbo2jovsxkgr3wie3rip6,T. Baeten,23.415000000000003,63.988,1,0.0,turnover,False,0.0
+2026-02-08_Go Ahead Eagles - SC Telstar,2898136145,2,93,21,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d4klz2gxqb1diw57z8c9ttixg,G. van Zwam,69.615,3.3320000000000003,1,2.0,turnover,False,0.0
+2026-02-08_Go Ahead Eagles - SC Telstar,2898141217,2,97,19,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,3g0xd9rds9relghxanr1f5vc9,S. Sigurðarson,32.025,56.57600000000001,2,1.0,window_expired,False,7.71675196020033e-05

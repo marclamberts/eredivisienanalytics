@@ -1,0 +1,20 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845738161,1,3,21,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e5xuwwa4qs6zxjd7y52tslih,Q. Timber,55.230000000000004,30.464,0,0.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845738367,1,3,34,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,26.775000000000002,47.056000000000004,1,1.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845741385,1,6,12,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,32.235,48.620000000000005,2,9.0,window_expired,False,0.0001707829629882
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845741895,1,6,41,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,45.36000000000001,11.288000000000002,4,5.0,turnover,False,1.8518210575538263e-05
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845749787,1,13,40,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,8.925,39.372,1,2.0,window_expired,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845756223,1,20,7,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,1pezvbb0n8z7hu5063jysg2s4,L. Sauer,72.97500000000001,54.468,6,10.0,window_expired,False,0.0008242912326551
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845762641,1,26,13,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,31.71,39.372,0,0.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845762757,1,26,20,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,68.67000000000002,30.668000000000003,0,0.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845765765,1,29,36,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,27.51,11.424000000000001,0,0.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845767095,1,30,52,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e5xuwwa4qs6zxjd7y52tslih,Q. Timber,12.81,31.96,0,0.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845769701,1,33,36,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,32.550000000000004,46.104,0,0.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2846069543,1,36,26,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,68.14500000000001,8.84,0,0.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845782445,1,47,17,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,c9shc6t28oroqthopifjvg9ux,D. Vente,79.17000000000002,51.00000000000001,1,1.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845782879,1,47,46,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e5xuwwa4qs6zxjd7y52tslih,Q. Timber,29.61,16.932,1,1.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845797327,2,46,57,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,24.990000000000002,17.408,3,7.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845799219,2,49,11,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dtcvzfse83ztj96kiizwp6jqi,G. Smal,20.685,54.604,1,1.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845800067,2,50,12,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,2f8lk6lxav7hl7xlqt9an18x6,H. Petrov,23.94,39.236000000000004,7,6.0,turnover,False,7.806371875418439e-06
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845813751,2,67,35,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,aajft01g5yggw0is5fbfh3105,B. Nieuwkoop,78.75,7.412000000000001,2,1.0,turnover,False,0.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845826211,2,86,10,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,34.964999999999996,67.388,1,1.0,turnover,False,0.0

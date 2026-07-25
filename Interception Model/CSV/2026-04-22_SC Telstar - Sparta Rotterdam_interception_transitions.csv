@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-22_SC Telstar - Sparta Rotterdam,2927577275,1,0,57,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,50zbw9cb2gon7eb7w08ndfyms,M. Zonneveld,35.595,45.56,0,0.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927577809,1,1,38,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,29.400000000000002,59.160000000000004,1,1.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927578613,1,2,36,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,1ueqcjuatzazpmz765tru4zdg,L. Martes,32.865,21.012,1,1.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927579257,1,3,16,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,1ueqcjuatzazpmz765tru4zdg,L. Martes,80.53500000000001,5.032000000000001,1,0.0,window_expired,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927582573,1,6,34,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,33.6,2.108,4,5.0,turnover,False,0.0006155138397478
+2026-04-22_SC Telstar - Sparta Rotterdam,2927585385,1,9,7,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,49.035000000000004,10.812000000000001,0,0.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927585809,1,9,29,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,7ty1wdxxnusgkl34k5raipbl5,M. van Bergen,81.9,7.208,4,5.0,window_expired,False,0.0093987160478601
+2026-04-22_SC Telstar - Sparta Rotterdam,2927589197,1,12,34,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,cvoxwqoj3ak99w6wsp1yfbl04,G. Vianello,61.32,31.96,0,0.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927594327,1,17,12,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,41.160000000000004,13.532,4,9.0,turnover,False,0.0001543321080241
+2026-04-22_SC Telstar - Sparta Rotterdam,2927598511,1,20,59,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,40.425000000000004,1.1560000000000001,1,1.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927612937,1,35,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,41.580000000000005,6.596,0,0.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927617075,1,39,7,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,16.59,37.264,2,5.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927617311,1,39,22,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,cvoxwqoj3ak99w6wsp1yfbl04,G. Vianello,30.765,17.272000000000002,0,0.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927620479,1,42,3,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,7ty1wdxxnusgkl34k5raipbl5,M. van Bergen,5.670000000000001,14.96,0,0.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927621373,1,42,59,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,57.75,62.288000000000004,1,1.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927644543,2,50,44,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,18.794999999999998,41.752,1,2.0,window_expired,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927658167,2,63,55,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,27.51,40.188,0,0.0,turnover,False,0.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927661899,2,69,12,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,40.32,40.93600000000001,3,3.0,turnover,False,0.0

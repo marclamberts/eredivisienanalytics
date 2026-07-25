@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-02_FC Groningen - FC Twente,2868023783,1,6,58,4tic29sox7m39fy1ztgv0jsiq,FC Twente,lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,25.725,56.236000000000004,0,0.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868030029,1,12,31,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,73.29,54.876000000000005,0,0.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868043227,1,26,0,4tic29sox7m39fy1ztgv0jsiq,FC Twente,qobf1v5kwuz6hj2ooixfw4mi,B. van Rooij,12.81,12.512,0,0.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868054957,1,34,28,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,68.88,58.61600000000001,0,0.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868067597,1,44,42,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,60.795,52.7,1,1.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868100209,2,53,18,4tic29sox7m39fy1ztgv0jsiq,FC Twente,lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,48.615,9.452000000000002,3,3.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868100883,2,53,48,4tic29sox7m39fy1ztgv0jsiq,FC Twente,qobf1v5kwuz6hj2ooixfw4mi,B. van Rooij,26.25,4.964,2,10.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868104355,2,56,20,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,61.11000000000001,27.404,3,3.0,turnover,False,0.0013465127571242
+2025-11-02_FC Groningen - FC Twente,2868104867,2,56,41,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,15.225000000000001,62.968,0,0.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868110067,2,61,29,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,66.25500000000001,58.412000000000006,0,0.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868110937,2,62,42,4tic29sox7m39fy1ztgv0jsiq,FC Twente,lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,29.925,2.5160000000000005,1,1.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868115175,2,68,41,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,47.04,52.224000000000004,5,10.0,window_expired,False,0.00013919346054884485
+2025-11-02_FC Groningen - FC Twente,2868117697,2,71,46,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,55.02,36.992000000000004,2,4.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868119705,2,73,28,cos9hxi16eitbcbthof7zrm4m,FC Groningen,by85t8ssyumcjcks1jx3v96vo,Y. Taha,35.385000000000005,37.196000000000005,2,4.0,turnover,False,0.0
+2025-11-02_FC Groningen - FC Twente,2868121355,2,74,55,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,26.25,28.424,3,3.0,turnover,False,0.0010673904432883
+2025-11-02_FC Groningen - FC Twente,2868144429,2,89,45,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,10.185,41.276,2,6.0,turnover,False,0.0

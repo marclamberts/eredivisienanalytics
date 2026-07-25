@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867583495,1,5,56,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6bklt91zc5vietmdc8r31zl2i,D. Payne,34.964999999999996,7.208,3,2.0,turnover,False,0.0001812864793287
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867589673,1,10,33,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dtcvzfse83ztj96kiizwp6jqi,G. Smal,49.245,28.832,0,0.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867589789,1,10,37,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,41.895,40.800000000000004,0,0.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867596229,1,15,26,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,1pezvbb0n8z7hu5063jysg2s4,L. Sauer,38.325,43.044000000000004,0,0.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867596591,1,15,39,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6bklt91zc5vietmdc8r31zl2i,D. Payne,39.795,3.06,1,1.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867597007,1,15,56,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,29.61,34.408,0,0.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867625503,1,40,6,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,21.945,30.464,0,0.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867630355,1,44,25,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,8.085,32.43600000000001,3,3.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867633099,1,46,57,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,34.230000000000004,46.03600000000001,1,5.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867646771,2,47,34,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,72.55499999999999,15.3,0,0.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867661717,2,61,17,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ecqjg6wtntf1guejvm10redck,G. Read,49.56,8.772,2,0.0,turnover,False,0.0002300533953099
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867666821,2,65,59,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,8f3bhiy6r5eei1n25exhbwr8p,J. Lotomba,28.245,64.12400000000001,1,0.0,window_expired,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867677203,2,76,56,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,15.540000000000001,51.61200000000001,1,1.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867677433,2,77,9,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,54.81,31.824,0,0.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867677537,2,77,14,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,8f3bhiy6r5eei1n25exhbwr8p,J. Lotomba,36.330000000000005,58.208,1,1.0,turnover,False,0.0
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867682133,2,81,30,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,62.160000000000004,21.624000000000002,5,9.0,window_expired,False,0.0026337333557872
+2025-11-01_Feyenoord Rotterdam - FC Volendam,2867692459,2,91,27,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,43ib46nh45n9oajf5rmaz4f6x,Hwang In-Beom,70.77000000000001,22.236000000000004,4,4.0,turnover,True,0.0012761945028433

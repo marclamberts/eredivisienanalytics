@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-05_SC Heerenveen - Heracles Almelo,2919886591,1,39,43,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,31.605000000000004,31.28,0,0.0,turnover,False,0.0
+2026-04-05_SC Heerenveen - Heracles Almelo,2919896905,1,41,7,dac758ef858jbq7pcb3gfwite,Heracles Almelo,1xsy3m0bzicto5ogxsd026bmy,E. Ahlstrand,43.47,15.232,2,4.0,turnover,False,0.0
+2026-04-05_SC Heerenveen - Heracles Almelo,2919926577,2,61,18,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,34.02,56.236000000000004,0,0.0,turnover,False,0.0
+2026-04-05_SC Heerenveen - Heracles Almelo,2919930051,2,67,8,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,56.07,49.64,4,9.0,window_expired,False,0.0299107365159352
+2026-04-05_SC Heerenveen - Heracles Almelo,2919930345,2,67,26,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6lyedmu2vuf7jig3jmhz9b4ve,D. van der Kust,25.935,43.656000000000006,1,2.0,turnover,False,0.0
+2026-04-05_SC Heerenveen - Heracles Almelo,2919930461,2,67,34,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,59.745000000000005,28.832,0,0.0,turnover,False,0.0
+2026-04-05_SC Heerenveen - Heracles Almelo,2919941263,2,78,27,dac758ef858jbq7pcb3gfwite,Heracles Almelo,1xsy3m0bzicto5ogxsd026bmy,E. Ahlstrand,63.73500000000001,60.452000000000005,1,1.0,turnover,False,0.0
+2026-04-05_SC Heerenveen - Heracles Almelo,2919943633,2,80,55,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,45.78,23.732,5,9.0,turnover,False,0.0120254403223011
+2026-04-05_SC Heerenveen - Heracles Almelo,2919944661,2,82,2,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6lyedmu2vuf7jig3jmhz9b4ve,D. van der Kust,13.020000000000001,60.79200000000001,2,2.0,turnover,False,0.0
+2026-04-05_SC Heerenveen - Heracles Almelo,2919948607,2,86,44,dac758ef858jbq7pcb3gfwite,Heracles Almelo,9y5kirmp6gcrsy2s1pinhkqy2,L. Kulenović,47.67,42.636,4,7.0,turnover,False,0.0007876380554688
+2026-04-05_SC Heerenveen - Heracles Almelo,2919951833,2,90,48,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6lyedmu2vuf7jig3jmhz9b4ve,D. van der Kust,12.705,39.57600000000001,2,2.0,window_expired,False,0.0016744241841004

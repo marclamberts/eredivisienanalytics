@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-22_AFC Ajax - SBV Excelsior,2875275437,1,6,44,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,48.089999999999996,58.004000000000005,1,1.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875279323,1,11,29,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,67.83,23.868000000000002,2,1.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875280299,1,12,56,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,22.155,40.324,4,10.0,window_expired,False,0.0002283174821931
+2025-11-22_AFC Ajax - SBV Excelsior,2875284383,1,18,25,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,54.6,18.768,3,7.0,window_expired,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875288733,1,22,51,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,53.865,33.11600000000001,3,3.0,turnover,False,0.0024039307543355
+2025-11-22_AFC Ajax - SBV Excelsior,2875292099,1,26,20,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,61.53,13.328000000000001,0,0.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875292817,1,27,5,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,62.370000000000005,20.400000000000002,3,3.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875295761,1,30,14,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,22.155,32.912,1,0.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875298067,1,32,27,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,19.95,32.776,5,10.0,turnover,False,9.133561847114724e-05
+2025-11-22_AFC Ajax - SBV Excelsior,2875303169,1,38,24,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,63.945,22.032,0,0.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875304995,1,40,39,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,20.37,34.408,0,0.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875307851,1,44,18,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,36.75,18.224,2,2.0,window_expired,False,0.0018664248866807
+2025-11-22_AFC Ajax - SBV Excelsior,2875325909,2,45,41,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,64.05,54.196000000000005,4,9.0,turnover,False,0.0197543525409892
+2025-11-22_AFC Ajax - SBV Excelsior,2875344095,2,65,46,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,1xwmx2ydxa5zeqo12778h83ro,N. Martens,48.300000000000004,64.464,1,0.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875345703,2,67,13,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7dkhv2l8y6jq20l1dc2ye17je,O. Edvardsen,72.97500000000001,7.752000000000001,0,0.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875350893,2,72,16,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,36.54,26.520000000000003,4,9.0,window_expired,False,0.000189941633974
+2025-11-22_AFC Ajax - SBV Excelsior,2875353355,2,74,32,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,cx6fxszjvjam6zb3c3p0dd1jo,M. Godts,74.34,60.384,1,1.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875357561,2,78,47,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,bpprd2haoafk6y0rjans4iytx,K. Dolberg,72.66000000000001,51.204,1,3.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875359387,2,81,0,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,20.055000000000003,38.080000000000005,2,2.0,turnover,False,0.0
+2025-11-22_AFC Ajax - SBV Excelsior,2875372109,2,95,48,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,28.77,51.272000000000006,2,1.0,turnover,False,0.0

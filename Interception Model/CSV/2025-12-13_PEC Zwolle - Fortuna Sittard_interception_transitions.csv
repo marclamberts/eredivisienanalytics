@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-13_PEC Zwolle - Fortuna Sittard,2883054379,1,19,11,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,20.055000000000003,57.528,4,5.0,turnover,False,0.0
+2025-12-13_PEC Zwolle - Fortuna Sittard,2883057905,1,24,16,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,24.990000000000002,53.244,3,4.0,window_expired,False,4.03960494416572e-05
+2025-12-13_PEC Zwolle - Fortuna Sittard,2883083329,2,55,45,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,56.175000000000004,31.008000000000003,0,0.0,turnover,False,0.0
+2025-12-13_PEC Zwolle - Fortuna Sittard,2883084201,2,57,38,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1x6fhuy49w4rpnyavwotbf504,T. Gooijer,19.32,9.996,4,5.0,turnover,False,0.0
+2025-12-13_PEC Zwolle - Fortuna Sittard,2883085943,2,61,13,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1x6fhuy49w4rpnyavwotbf504,T. Gooijer,44.94,4.08,1,2.0,turnover,False,0.0
+2025-12-13_PEC Zwolle - Fortuna Sittard,2883086163,2,61,44,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,33.495,13.940000000000001,2,3.0,turnover,False,0.0
+2025-12-13_PEC Zwolle - Fortuna Sittard,2883087251,2,64,20,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,5ghvrbmlh0tqos9iohj8f7zzd,K. Sierhuis,47.46000000000001,19.652,0,0.0,turnover,False,0.0
+2025-12-13_PEC Zwolle - Fortuna Sittard,2883089059,2,69,42,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,54.18000000000001,7.140000000000001,0,0.0,turnover,False,0.0
+2025-12-13_PEC Zwolle - Fortuna Sittard,2883089559,2,71,2,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,9zryne6aa951ltubvjo0gk12i,M. Ihattaren,21.525000000000002,32.300000000000004,0,0.0,turnover,False,0.0
+2025-12-13_PEC Zwolle - Fortuna Sittard,2883090465,2,73,42,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,3.8850000000000002,57.25600000000001,0,0.0,turnover,False,0.0
+2025-12-13_PEC Zwolle - Fortuna Sittard,2883095735,2,87,58,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,ekur9x1kzp8wq0lwfwev0b0bu,K. de Rooij,30.66,59.43200000000001,1,0.0,turnover,False,0.0

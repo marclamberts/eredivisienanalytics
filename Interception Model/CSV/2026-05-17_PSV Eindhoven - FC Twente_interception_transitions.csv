@@ -1,0 +1,25 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-17_PSV Eindhoven - FC Twente,2938904993,1,3,50,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5m8pflpgynidzk7d9507oujje,D. Rots,40.53,39.372,0,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938922107,1,19,4,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bvwaamcj0bpdrcuoffl6b9rf8,D. Weidmann,32.13,49.980000000000004,1,2.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938924467,1,22,58,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,37.38,5.712000000000001,0,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938925057,1,23,40,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,60.69,8.772,1,1.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938925245,1,23,57,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,29.715000000000003,57.324000000000005,1,1.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938925349,1,24,3,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,41.79,17.0,0,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938926221,1,25,12,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,13.125,49.844,2,3.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938929469,1,29,18,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,39.58500000000001,41.956,5,10.0,window_expired,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938937671,1,35,42,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,85.67999999999999,53.65200000000001,1,1.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938939533,1,36,58,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d36na8jr6xcc8eronhy8mcz1m,K. Sildillia,41.580000000000005,7.208,0,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938940347,1,37,30,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,39.06,20.672,0,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938946673,1,42,13,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,61.425000000000004,7.752000000000001,0,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2939561729,2,46,21,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,41.895,45.016000000000005,0,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938979151,2,49,55,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,7.3500000000000005,46.444,0,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938994367,2,60,0,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,24.885,56.71200000000001,1,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938996567,2,61,46,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,oi8kw43rorvqooiencbnhxck,N. Fernandez,19.32,58.07200000000001,2,1.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2938996855,2,61,59,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,25.41,60.79200000000001,1,1.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2939009403,2,72,59,4tic29sox7m39fy1ztgv0jsiq,FC Twente,9nix5y8xcj34ps62r34udtqwa,K. Hlynsson,35.28,9.588000000000001,0,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2939013739,2,75,53,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,61.11000000000001,36.38,1,1.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2939014029,2,76,3,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,31.395,11.832,1,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2939016221,2,77,30,4tic29sox7m39fy1ztgv0jsiq,FC Twente,qobf1v5kwuz6hj2ooixfw4mi,B. van Rooij,35.7,15.164000000000001,1,0.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2939023021,2,82,1,4tic29sox7m39fy1ztgv0jsiq,FC Twente,qobf1v5kwuz6hj2ooixfw4mi,B. van Rooij,6.195,17.816000000000003,1,1.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2939034473,2,90,13,4tic29sox7m39fy1ztgv0jsiq,FC Twente,723av2redj2ej6livx0g81wwl,A. Verschueren,59.955000000000005,27.336000000000006,1,2.0,turnover,False,0.0
+2026-05-17_PSV Eindhoven - FC Twente,2939034597,2,90,19,4tic29sox7m39fy1ztgv0jsiq,FC Twente,cocgd3hh74fq9c30x9bps4idw,S. Lemkin,25.830000000000002,27.948000000000004,4,4.0,turnover,False,0.0

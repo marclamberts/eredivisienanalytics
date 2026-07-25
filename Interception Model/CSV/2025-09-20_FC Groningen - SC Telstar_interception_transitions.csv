@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-20_FC Groningen - SC Telstar,2848792207,1,8,43,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,57.96000000000001,58.956,2,8.0,window_expired,False,0.0
+2025-09-20_FC Groningen - SC Telstar,2848794071,1,10,29,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,40.74,19.176000000000002,0,0.0,turnover,False,0.0
+2025-09-20_FC Groningen - SC Telstar,2848810399,1,25,21,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1vn6w1mjdztfks75bxn0hk7x0,S. Hetli,52.71000000000001,21.012,5,10.0,window_expired,False,5.962258049369007e-05
+2025-09-20_FC Groningen - SC Telstar,2848811649,1,26,17,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,57.435,37.672000000000004,0,0.0,turnover,False,0.0
+2025-09-20_FC Groningen - SC Telstar,2848816327,1,29,57,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,26.25,56.1,1,1.0,turnover,False,0.0
+2025-09-20_FC Groningen - SC Telstar,2848825437,1,37,47,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,34.964999999999996,33.11600000000001,3,6.0,turnover,False,0.0003504637944612
+2025-09-20_FC Groningen - SC Telstar,2848826365,1,38,31,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1nk0hcaa9o4jnyxc9ndz1lams,D. van der Werff,31.080000000000002,13.872,0,0.0,turnover,False,0.0
+2025-09-20_FC Groningen - SC Telstar,2848854559,2,45,53,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,devvpv4u2vs2cofnwp4678mvp,D. Malone,61.425000000000004,4.6240000000000006,1,1.0,turnover,False,0.0
+2025-09-20_FC Groningen - SC Telstar,2848858481,2,49,36,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,89.67000000000002,61.744,2,0.0,turnover,False,0.0
+2025-09-20_FC Groningen - SC Telstar,2848863267,2,55,0,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,23.625,12.648000000000001,1,2.0,turnover,False,0.0
+2025-09-20_FC Groningen - SC Telstar,2848866523,2,59,13,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,44.415,63.85200000000001,2,2.0,turnover,False,0.0
+2025-09-20_FC Groningen - SC Telstar,2848867181,2,59,47,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,32.445,11.22,2,5.0,window_expired,False,0.000141573226651
+2025-09-20_FC Groningen - SC Telstar,2848889801,2,79,28,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,25.41,52.632000000000005,3,3.0,turnover,False,0.0
+2025-09-20_FC Groningen - SC Telstar,2848901327,2,91,16,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,36.330000000000005,49.096000000000004,0,0.0,turnover,False,0.0

@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-08_FC Groningen - PSV Eindhoven,2898179629,1,14,31,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,b0me6l44boibnwpbtasxoy02x,S. Dest,13.334999999999999,8.228,0,0.0,turnover,False,0.0
+2026-02-08_FC Groningen - PSV Eindhoven,2898184919,1,20,6,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,70.77000000000001,37.944,0,0.0,turnover,False,0.0
+2026-02-08_FC Groningen - PSV Eindhoven,2898185125,1,20,16,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,24sgu58uugxgy49el075dz21g,E. Bajraktarević,18.794999999999998,34.884,1,4.0,turnover,False,0.0
+2026-02-08_FC Groningen - PSV Eindhoven,2898188975,1,24,19,cos9hxi16eitbcbthof7zrm4m,FC Groningen,ei9h1loyggj8fnf1q4jfdm710,T. van Bergen,37.695,22.712,3,4.0,turnover,False,0.0012691833161952
+2026-02-08_FC Groningen - PSV Eindhoven,2898212049,1,45,22,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,21k54i5a6d9bi4f6gplgzxiw9,G. Til,69.92999999999999,62.016000000000005,0,0.0,turnover,False,0.0
+2026-02-08_FC Groningen - PSV Eindhoven,2898233597,2,45,49,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,38.325,46.308,4,6.0,turnover,False,0.0012073497417882
+2026-02-08_FC Groningen - PSV Eindhoven,2898234885,2,47,7,cos9hxi16eitbcbthof7zrm4m,FC Groningen,ei9h1loyggj8fnf1q4jfdm710,T. van Bergen,82.84500000000001,2.584,1,1.0,turnover,False,0.0
+2026-02-08_FC Groningen - PSV Eindhoven,2898235775,2,48,4,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,41.475,13.260000000000002,1,3.0,turnover,False,0.0
+2026-02-08_FC Groningen - PSV Eindhoven,2898244853,2,59,21,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,47.98500000000001,37.944,2,4.0,window_expired,False,0.0002980257460787
+2026-02-08_FC Groningen - PSV Eindhoven,2898247137,2,61,53,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,40.53,51.068,3,9.0,turnover,False,0.0378946228596089
+2026-02-08_FC Groningen - PSV Eindhoven,2898249057,2,64,0,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,34.755,55.964,3,10.0,window_expired,False,0.0015824577966067
+2026-02-08_FC Groningen - PSV Eindhoven,2898253873,2,68,43,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,14.805,8.228,3,2.0,turnover,False,0.0
+2026-02-08_FC Groningen - PSV Eindhoven,2898262667,2,78,57,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,biee6dvb524juzai7iryyskix,D. Man,25.305000000000003,14.076,2,2.0,turnover,False,0.0
+2026-02-08_FC Groningen - PSV Eindhoven,2898263441,2,79,49,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,52.92,45.900000000000006,2,2.0,turnover,False,0.0

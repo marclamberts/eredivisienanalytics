@@ -1,0 +1,23 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2908995213,1,1,46,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,54.915,41.004,4,10.0,window_expired,False,0.0014804774957916
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909397559,1,16,3,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,63.63,63.308,0,0.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909008817,1,20,41,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e9l5r0txzrjbenli05rn3k4wl,R. Sterling,36.435,53.38,0,0.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909010923,1,23,1,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,30.66,46.784,4,7.0,window_expired,False,0.00018956421764954046
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909011049,1,23,13,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dwyl0yii553i57u7azfa7d15g,A. Hadj Moussa,39.165,7.548,5,9.0,window_expired,False,0.0003001458074425
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909013765,1,26,29,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,3c2wqlde0kovi9hii52egaimt,L. Holtby,31.395,29.648000000000003,4,6.0,window_expired,False,0.00016267904152846816
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909014799,1,27,43,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,55.125,10.200000000000001,0,0.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909019059,1,32,13,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,10.185,50.728,2,1.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909021263,1,34,41,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,36.96000000000001,43.452000000000005,4,8.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909021519,1,34,57,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,45.045,47.668,0,0.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909065195,2,60,57,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,8.61,55.284,1,1.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909071457,2,66,42,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,43ib46nh45n9oajf5rmaz4f6x,Hwang In-Beom,36.96000000000001,21.012,2,5.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909072991,2,68,18,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,17.115000000000002,56.03200000000001,4,5.0,turnover,False,3.9647082109642295e-05
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909073093,2,68,24,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,70.665,3.74,1,1.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909077089,2,72,10,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,48.72,40.596000000000004,2,3.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909078143,2,73,18,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,64x38pccgfsuz4ywoveh2ksbu,L. Greiml,22.365000000000002,34.748000000000005,2,4.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909081873,2,77,11,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,33.915,54.808,2,2.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909083573,2,78,54,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,67.62,35.632000000000005,0,0.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909096233,2,91,6,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,21.525000000000002,22.508000000000003,3,3.0,turnover,False,0.000576135244086
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909098115,2,92,52,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,32.025,61.88,3,5.0,turnover,False,0.0026417989694247
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909098603,2,93,18,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bgzvhtk50gvmq6noheadmc34l,D. Odoi,29.61,11.016,2,3.0,turnover,False,0.0
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909104785,2,98,32,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,30.555000000000003,53.584,0,0.0,turnover,False,0.0

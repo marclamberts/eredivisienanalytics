@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891433929,1,0,20,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,16.8,57.528,1,2.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891434473,1,2,33,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,45.045,63.92,2,1.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891435145,1,4,59,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,28.665000000000003,52.428,1,4.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891438101,1,16,44,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,27.195,32.776,0,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891438477,1,17,52,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5nhideyjwp2347ryi1n9wfq50,D. Sanches Fernandes,24.990000000000002,37.604,1,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891443597,1,30,20,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,30.03,62.764,3,3.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891443629,1,30,24,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,70.665,9.588000000000001,0,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891445001,1,33,51,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,61.74,25.432000000000002,0,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891446383,1,38,25,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,22alh32lu88yabxd4pl0opg5w,K. Boogaard,56.49,38.624,4,5.0,turnover,False,0.0062013431657081
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891447207,1,41,24,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,35.595,2.788,0,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891448277,1,45,11,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,15.435,31.552,0,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891448723,1,46,40,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,36.645,37.332,4,9.0,window_expired,False,0.0052905864897815
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891455645,2,56,4,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,73lwz4he5erpp25zi8crjvztg,I. Jensen,61.53,64.87200000000001,0,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891456677,2,60,22,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,619vlbweueymdkq1vu3jm2mwa,I. Sadiq,25.725,32.844,0,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891457377,2,63,8,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,72.03,64.19200000000001,0,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891458539,2,67,24,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,22alh32lu88yabxd4pl0opg5w,K. Boogaard,57.015,64.94,0,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891459851,2,71,25,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,35.910000000000004,17.136,0,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891462699,2,79,19,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,es363spp9pgd4hralx6ni2xw4,M. Chávez,27.615000000000002,62.628,1,1.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891462743,2,79,27,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,30.66,61.608000000000004,3,4.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891464223,2,84,27,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,3.1500000000000004,44.132000000000005,0,0.0,turnover,False,0.0
+2026-01-21_Alkmaar Zaanstreek - SBV Excelsior,2891464349,2,85,3,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,1xwmx2ydxa5zeqo12778h83ro,N. Martens,17.325,22.644,0,0.0,turnover,False,0.0

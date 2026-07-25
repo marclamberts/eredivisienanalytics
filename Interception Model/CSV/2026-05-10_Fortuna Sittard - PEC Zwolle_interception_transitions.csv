@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936050665,1,1,3,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,b23be312oxcbusvpjnnriukq2,Y. Oukili,80.955,26.248,2,1.0,turnover,True,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936052169,1,2,17,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,43.89,7.82,5,9.0,window_expired,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936055059,1,5,0,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,60jptu288hf6gcljkbzcdie39,K. Peterson,67.41000000000001,65.48400000000001,4,10.0,window_expired,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936059135,1,9,38,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,djekc2mhsntvqyvsq26ru115g,D. Bisschops,75.81,64.804,2,2.0,turnover,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936062193,1,13,44,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4mhahoh3a6rir882ug9hdb5nu,T. Velthuis,26.985,48.55200000000001,1,2.0,turnover,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936069165,1,20,31,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,53.445,22.983999999999998,2,6.0,turnover,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936121675,2,46,8,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,29.19,31.688000000000002,1,2.0,turnover,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936121823,2,46,16,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,45.255,35.224000000000004,2,2.0,turnover,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936124579,2,48,31,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4mhahoh3a6rir882ug9hdb5nu,T. Velthuis,7.875,61.540000000000006,1,2.0,turnover,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936129411,2,53,31,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,djekc2mhsntvqyvsq26ru115g,D. Bisschops,21.840000000000003,47.53200000000001,1,3.0,turnover,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936131825,2,56,32,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,b23be312oxcbusvpjnnriukq2,Y. Oukili,43.995,25.228,2,1.0,turnover,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936145043,2,67,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,21.419999999999998,24.14,5,7.0,window_expired,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936148457,2,70,6,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d29ahwtvs7ls75wdtkf7xr8tm,Z. Buurmeester,26.565,20.128000000000004,4,4.0,turnover,False,0.0
+2026-05-10_Fortuna Sittard - PEC Zwolle,2936179217,2,95,10,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,1bzrc169lsg8khaqy7a89oqok,G. Büyükhan,47.67,38.148,3,8.0,window_expired,False,0.0

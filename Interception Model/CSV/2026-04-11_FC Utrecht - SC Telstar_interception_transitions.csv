@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-11_FC Utrecht - SC Telstar,2922343021,1,28,17,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,26.565,35.904,3,5.0,turnover,False,0.0004084452767914
+2026-04-11_FC Utrecht - SC Telstar,2922344001,1,28,59,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,36.855000000000004,48.144,2,1.0,turnover,False,0.0
+2026-04-11_FC Utrecht - SC Telstar,2922350821,1,33,5,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,24.150000000000002,4.488,3,9.0,window_expired,False,0.003347705170747
+2026-04-11_FC Utrecht - SC Telstar,2922353049,1,34,11,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,33.075,17.0,1,2.0,turnover,False,0.0
+2026-04-11_FC Utrecht - SC Telstar,2922368801,1,42,50,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,21.945,5.372000000000001,0,0.0,turnover,False,0.0
+2026-04-11_FC Utrecht - SC Telstar,2922368903,1,42,54,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,13.23,12.172,2,3.0,turnover,False,0.0
+2026-04-11_FC Utrecht - SC Telstar,2922405441,2,45,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1zybkcmp40td92a6yg8sw9uga,T. Owusu,37.38,14.348000000000003,2,7.0,turnover,False,0.0
+2026-04-11_FC Utrecht - SC Telstar,2922426247,2,57,8,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,dk7zyk16nsnh0czeky7vi0x78,S. van Duijn,76.965,22.644,3,3.0,turnover,False,0.0087375790275476
+2026-04-11_FC Utrecht - SC Telstar,2922431935,2,60,33,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,31.185000000000002,21.556,0,0.0,turnover,False,0.0
+2026-04-11_FC Utrecht - SC Telstar,2922436103,2,64,5,ccpscwdcm65czscrun048ecn5,FC Utrecht,6narzhg4hjarzdm235jkcclxw,A. Stepanov,38.010000000000005,60.11200000000001,3,4.0,turnover,False,0.0
+2026-04-11_FC Utrecht - SC Telstar,2922440353,2,69,46,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,77.385,58.61600000000001,3,1.0,turnover,False,0.0014074974447472
+2026-04-11_FC Utrecht - SC Telstar,2923470791,2,73,37,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,65.10000000000001,3.06,2,7.0,turnover,False,0.0022156397147013
+2026-04-11_FC Utrecht - SC Telstar,2922448153,2,77,3,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,34.545,52.36000000000001,0,0.0,turnover,False,0.0
+2026-04-11_FC Utrecht - SC Telstar,2922448455,2,77,22,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,36.330000000000005,56.03200000000001,2,4.0,window_expired,False,0.0
+2026-04-11_FC Utrecht - SC Telstar,2922451003,2,79,43,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,56.80500000000001,19.448000000000004,0,0.0,turnover,False,0.0

@@ -1,0 +1,23 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-17_FC Utrecht - Fortuna Sittard,2938904001,1,1,50,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,14.385,61.608000000000004,0,0.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938904517,1,2,19,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,26.040000000000003,45.15200000000001,5,5.0,window_expired,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938911835,1,8,5,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,b23be312oxcbusvpjnnriukq2,Y. Oukili,14.175,21.556,0,0.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938913311,1,9,22,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,31.71,18.224,5,10.0,window_expired,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938913573,1,9,34,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,62.580000000000005,58.004000000000005,0,0.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938922367,1,18,10,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,34258m1cvslz8r6d17nv4b90q,S. van Ottele,15.540000000000001,9.996,1,1.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938922981,1,19,14,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,74.55,3.3320000000000003,2,2.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938925391,1,22,48,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,28.980000000000004,16.456,0,0.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938928203,1,26,39,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,b23be312oxcbusvpjnnriukq2,Y. Oukili,89.46000000000001,51.748,1,1.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938933825,1,31,38,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,70.455,59.636,1,1.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938976895,2,47,56,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,57.12,62.016000000000005,2,5.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938980491,2,50,7,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,23.835,28.356000000000005,1,1.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938985427,2,53,15,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,ccmmsnrfn58gwi1petlp08f3e,L. Duijvestijn,22.155,29.240000000000002,0,0.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938986507,2,53,58,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,36.855000000000004,40.800000000000004,2,3.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2938986801,2,54,8,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,34.86000000000001,31.96,6,10.0,window_expired,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2939000951,2,65,24,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,67.2,45.15200000000001,0,0.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2939004329,2,68,49,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,34258m1cvslz8r6d17nv4b90q,S. van Ottele,26.880000000000003,10.608,1,1.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2939010383,2,73,6,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,10.815000000000001,60.79200000000001,0,0.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2939019633,2,79,11,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,66kplyn4wfzukepup1ws0f1ed,A. Halilović,57.645,14.824000000000002,0,0.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2939029127,2,85,26,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,6sya8p154c3vtvr0dk0etg8wk,T. Schenkhuizen,67.2,55.148,3,4.0,turnover,True,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2939032587,2,88,3,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,15.435,32.164,1,1.0,turnover,False,0.0
+2026-05-17_FC Utrecht - Fortuna Sittard,2939034899,2,90,2,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,11.865000000000002,28.832,1,0.0,window_expired,False,0.0

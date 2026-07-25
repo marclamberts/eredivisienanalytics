@@ -1,0 +1,11 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-20_NAC Breda - Heracles Almelo,2848980395,1,2,53,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bdb33nwcpd2jufn9ggtl7gvzd,B. Lucassen,62.685,5.168,0,0.0,turnover,False,0.0
+2025-09-20_NAC Breda - Heracles Almelo,2848930255,1,6,12,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,61.95,53.040000000000006,2,3.0,turnover,False,0.0
+2025-09-20_NAC Breda - Heracles Almelo,2848935861,1,11,45,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,27.51,23.732,5,5.0,turnover,False,0.00011594781129922234
+2025-09-20_NAC Breda - Heracles Almelo,2848961433,1,37,10,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,46.62,9.384,1,1.0,turnover,False,0.0
+2025-09-20_NAC Breda - Heracles Almelo,2848972605,1,48,18,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,16.485,59.160000000000004,1,0.0,window_expired,False,0.0
+2025-09-20_NAC Breda - Heracles Almelo,2848984941,2,48,19,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,26.565,20.808000000000003,0,0.0,turnover,False,0.0
+2025-09-20_NAC Breda - Heracles Almelo,2848990883,2,55,16,dac758ef858jbq7pcb3gfwite,Heracles Almelo,2zwe056wfzof0v5jv01dv9uc5,A. Hrustić,34.964999999999996,8.772,1,1.0,turnover,False,0.0
+2025-09-20_NAC Breda - Heracles Almelo,2849000961,2,70,6,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8nnxi9lw3hso096kk81h0azh0,J. Talvitie,54.18000000000001,19.924000000000003,0,0.0,turnover,False,0.0
+2025-09-20_NAC Breda - Heracles Almelo,2849005729,2,77,32,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,37.905,13.668000000000003,1,1.0,turnover,False,0.0
+2025-09-20_NAC Breda - Heracles Almelo,2849017677,2,94,43,dac758ef858jbq7pcb3gfwite,Heracles Almelo,96om2im2vd1621ajcexlyekno,T. van Gilst,62.475,60.31600000000001,0,0.0,turnover,False,0.0

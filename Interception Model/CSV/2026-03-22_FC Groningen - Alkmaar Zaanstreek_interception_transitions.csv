@@ -1,0 +1,20 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915449717,1,2,41,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,30.345,12.172,4,4.0,window_expired,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915461513,1,15,57,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,wuh8s4gfo9ro3nel3rormg44,R. Daal,40.32,66.30000000000001,0,0.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915463151,1,17,46,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,64.78500000000001,8.024000000000001,2,0.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915478763,1,32,27,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,24.255000000000003,10.608,0,0.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915483777,1,36,56,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,73lwz4he5erpp25zi8crjvztg,I. Jensen,42.839999999999996,1.088,1,2.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915484121,1,37,13,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,wuh8s4gfo9ro3nel3rormg44,R. Daal,89.88,40.732,0,0.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915484129,1,37,16,cos9hxi16eitbcbthof7zrm4m,FC Groningen,cf70r39m2wgbijtw0co5t6yfp,H. Jurjus,12.915000000000001,32.504,5,9.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915510923,2,46,9,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,43.68000000000001,6.188000000000001,1,3.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915513275,2,48,23,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,38.85,19.584000000000003,1,3.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915517911,2,53,29,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,10.815000000000001,33.048,1,1.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915523303,2,60,4,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jpreaads35pnnfqbn7hmrmy,S. Mijnans,47.565,18.224,1,4.0,window_expired,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915526745,2,62,37,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,23.94,65.348,1,0.0,window_expired,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915533495,2,67,25,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,18.585,38.21600000000001,0,0.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915547995,2,77,12,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1nk0hcaa9o4jnyxc9ndz1lams,D. van der Werff,63.21000000000001,52.02,0,0.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915555693,2,83,2,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,5.1450000000000005,34.136,1,3.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915556709,2,83,47,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,f3saw9c9wzs4qda0rtkv9gidw,R. Ichihara,34.33500000000001,33.388000000000005,0,0.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915557369,2,84,19,cos9hxi16eitbcbthof7zrm4m,FC Groningen,by85t8ssyumcjcks1jx3v96vo,Y. Taha,48.300000000000004,2.8560000000000003,1,0.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915566843,2,91,16,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1nk0hcaa9o4jnyxc9ndz1lams,D. van der Werff,21.21,61.064,0,0.0,turnover,False,0.0
+2026-03-22_FC Groningen - Alkmaar Zaanstreek,2915568299,2,92,3,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,19.845,50.456,1,0.0,turnover,False,0.0

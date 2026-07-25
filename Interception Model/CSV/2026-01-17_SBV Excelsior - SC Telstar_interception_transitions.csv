@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-17_SBV Excelsior - SC Telstar,2890376285,1,5,57,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,35.07,6.868,0,0.0,turnover,False,0.0
+2026-01-17_SBV Excelsior - SC Telstar,2890546643,1,9,1,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,66.465,23.732,3,6.0,turnover,True,0.0014374653651843
+2026-01-17_SBV Excelsior - SC Telstar,2890380511,1,11,21,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,53.760000000000005,5.372000000000001,0,0.0,turnover,False,0.0
+2026-01-17_SBV Excelsior - SC Telstar,2890385389,1,18,34,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,13.125,39.712,0,0.0,turnover,False,0.0
+2026-01-17_SBV Excelsior - SC Telstar,2890386287,1,19,58,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,24.465000000000003,13.056000000000001,4,5.0,turnover,False,5.782351909255912e-05
+2026-01-17_SBV Excelsior - SC Telstar,2890391183,1,28,17,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,19.005000000000003,60.99600000000001,1,1.0,turnover,False,0.0
+2026-01-17_SBV Excelsior - SC Telstar,2890392537,1,30,33,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,10.815000000000001,61.81200000000001,5,5.0,turnover,False,6.005532136212077e-05
+2026-01-17_SBV Excelsior - SC Telstar,2890397879,1,39,58,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,f5pgdha5h37xytbk1zq8q710,D. Koswal,30.975,22.508000000000003,0,0.0,turnover,False,0.0
+2026-01-17_SBV Excelsior - SC Telstar,2890408485,2,45,9,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,29.82,61.948,0,0.0,turnover,False,0.0
+2026-01-17_SBV Excelsior - SC Telstar,2890549235,2,45,39,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,73.605,4.148,6,9.0,window_expired,False,0.014665268736855402
+2026-01-17_SBV Excelsior - SC Telstar,2890409017,2,46,11,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,37.695,7.004000000000001,4,6.0,window_expired,False,0.0002477621071375
+2026-01-17_SBV Excelsior - SC Telstar,2890412401,2,51,6,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,42.21000000000001,7.276,3,3.0,turnover,False,0.0
+2026-01-17_SBV Excelsior - SC Telstar,2890419277,2,60,36,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,34.65,54.604,0,0.0,turnover,False,0.0
+2026-01-17_SBV Excelsior - SC Telstar,2890419539,2,60,56,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,31.919999999999998,21.216,3,4.0,turnover,False,0.0001670974215589
+2026-01-17_SBV Excelsior - SC Telstar,2890428593,2,74,30,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,3.8850000000000002,27.948000000000004,1,1.0,turnover,False,0.0
+2026-01-17_SBV Excelsior - SC Telstar,2890431787,2,80,8,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,28.875,9.316,2,6.0,window_expired,False,0.0024776451831956
+2026-01-17_SBV Excelsior - SC Telstar,2890439159,2,91,52,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,30t0ph1icrggc0x62om801ses,G. de Regt,46.62,62.83200000000001,0,0.0,turnover,False,0.0

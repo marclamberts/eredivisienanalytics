@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890734137,1,8,10,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,53.97,50.728,0,0.0,turnover,False,0.0
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890735861,1,10,41,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,22.365000000000002,11.288000000000002,0,0.0,turnover,False,0.0
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890739495,1,15,59,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,1ueqcjuatzazpmz765tru4zdg,L. Martes,55.125,4.08,1,4.0,turnover,False,0.0
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890742299,1,19,54,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,43.47,48.416000000000004,0,0.0,turnover,False,0.0
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890746489,1,25,49,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,12.915000000000001,63.376000000000005,1,2.0,window_expired,False,0.0
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890775913,2,48,42,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,8f3bhiy6r5eei1n25exhbwr8p,J. Lotomba,26.46,13.532,3,10.0,window_expired,False,0.0002669490302716
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890781795,2,56,9,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,29q4j9r2lgdsdkkq2fgh8l7o4,Ayoni Santos,48.510000000000005,39.984,0,0.0,turnover,False,0.0
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890782011,2,56,27,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,536qjh4gcmpo5q68ti87e60kq,S. Mito,17.64,39.508,1,1.0,turnover,False,0.0
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890787013,2,63,11,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,43ib46nh45n9oajf5rmaz4f6x,Hwang In-Beom,45.045,21.284000000000002,4,7.0,turnover,False,0.0028884305669774
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890787099,2,63,19,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f07qmqesi1rpw7eapoz9rb0gk,J. Baas,19.635,32.43600000000001,0,0.0,turnover,False,0.0
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890791217,2,68,57,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,42.63,23.732,1,0.0,turnover,False,0.0
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890794953,2,74,9,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,43.155,47.668,2,1.0,turnover,False,0.0
+2026-01-18_Feyenoord Rotterdam - Sparta Rotterdam,2890798421,2,78,32,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,1.785,36.312000000000005,0,0.0,turnover,False,0.0

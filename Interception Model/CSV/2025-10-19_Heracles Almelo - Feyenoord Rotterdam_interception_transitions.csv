@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861428389,1,13,4,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,13.755,29.036000000000005,0,0.0,turnover,False,0.0
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861431631,1,16,39,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,57.75,19.176000000000002,0,0.0,turnover,False,0.0
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861435411,1,20,30,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,57.75,33.252,2,3.0,turnover,False,0.0
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861452847,1,34,56,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,23.415000000000003,41.344,3,9.0,window_expired,False,1.3241911521869045e-05
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861489125,2,45,11,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,38.22,64.19200000000001,1,1.0,turnover,False,0.0
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861489571,2,45,30,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,46.410000000000004,22.032,1,1.0,turnover,False,0.0
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861502711,2,57,45,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,32.445,27.812,5,9.0,window_expired,False,0.0009566150724467
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861519449,2,73,17,dac758ef858jbq7pcb3gfwite,Heracles Almelo,2zwe056wfzof0v5jv01dv9uc5,A. Hrustić,50.19,49.164,1,3.0,turnover,False,0.0
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861522655,2,76,25,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,28.875,32.096000000000004,4,5.0,turnover,False,0.0
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861530755,2,85,5,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,76.965,10.812000000000001,0,0.0,turnover,False,0.0
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861531039,2,85,22,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,34.44,59.908,1,1.0,turnover,False,0.0
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861531623,2,85,56,dac758ef858jbq7pcb3gfwite,Heracles Almelo,ait187bpr8we72jvfxxt6ttjp,M. te Wierik,21.630000000000003,17.272000000000002,3,6.0,turnover,False,0.0
+2025-10-19_Heracles Almelo - Feyenoord Rotterdam,2861539027,2,91,54,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,26.669999999999998,54.06,3,10.0,turnover,False,0.0

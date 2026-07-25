@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-24_AFC Ajax - Heracles Almelo,2839123241,1,6,26,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,37.275,64.736,2,1.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839126355,1,13,10,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,56.385000000000005,63.104,0,0.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839134771,1,25,15,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,31.185000000000002,23.936000000000003,1,2.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839138041,1,26,33,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,42.63,11.696,0,0.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839137715,1,28,57,dac758ef858jbq7pcb3gfwite,Heracles Almelo,69gzswoym4jqnrag1wdqfdkyy,J. Wieckhoff,34.545,8.092,0,0.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839140197,1,31,49,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,26.46,42.29600000000001,4,9.0,window_expired,False,9.467113422191586e-05
+2025-08-24_AFC Ajax - Heracles Almelo,2839140329,1,32,1,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6lyedmu2vuf7jig3jmhz9b4ve,D. van der Kust,3.9899999999999998,54.74,1,1.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839145513,1,34,17,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,34.545,40.800000000000004,0,0.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839148339,1,44,22,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,38.85,47.19200000000001,1,2.0,turnover,False,4.7765867776702886e-05
+2025-08-24_AFC Ajax - Heracles Almelo,2839169079,2,45,58,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,42.945,51.068,0,0.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839173449,2,51,20,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,90.3,5.644000000000001,3,2.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839175969,2,54,28,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7joybllup4h9oe6zfhcepjy6t,S. Berghuis,60.06,9.588000000000001,0,0.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839185227,2,64,30,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,21.945,30.328000000000003,3,3.0,turnover,False,4.692698477566648e-05
+2025-08-24_AFC Ajax - Heracles Almelo,2839190715,2,69,14,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,37.38,55.760000000000005,0,0.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839193879,2,72,16,dac758ef858jbq7pcb3gfwite,Heracles Almelo,80dk8iv6p0202z10qcqy8bfca,S. Scheperman,61.74,53.17600000000001,5,7.0,window_expired,False,0.0035111132555814164
+2025-08-24_AFC Ajax - Heracles Almelo,2839196299,2,75,2,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,baakmd4ndnulbl9npvmq90mvp,D. Klaassen,32.865,48.008,1,1.0,turnover,False,3.039691956482904e-05
+2025-08-24_AFC Ajax - Heracles Almelo,2839679947,2,86,12,dac758ef858jbq7pcb3gfwite,Heracles Almelo,ait187bpr8we72jvfxxt6ttjp,M. te Wierik,54.6,31.348000000000003,0,0.0,turnover,False,0.0
+2025-08-24_AFC Ajax - Heracles Almelo,2839215085,2,94,57,dac758ef858jbq7pcb3gfwite,Heracles Almelo,2zwe056wfzof0v5jv01dv9uc5,A. Hrustić,31.71,22.44,2,3.0,turnover,False,0.0

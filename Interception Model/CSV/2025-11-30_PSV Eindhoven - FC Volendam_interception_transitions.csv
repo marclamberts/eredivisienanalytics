@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-30_PSV Eindhoven - FC Volendam,2878357955,1,1,49,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,28.56,22.983999999999998,1,1.0,turnover,False,0.0
+2025-11-30_PSV Eindhoven - FC Volendam,2878380045,1,6,35,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,40.32,56.916000000000004,5,9.0,window_expired,False,0.00038581755193983454
+2025-11-30_PSV Eindhoven - FC Volendam,2878359499,1,10,50,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,39.375,42.84,1,2.0,turnover,False,0.0
+2025-11-30_PSV Eindhoven - FC Volendam,2878371515,1,14,51,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,21.630000000000003,58.344,1,2.0,turnover,False,0.0
+2025-11-30_PSV Eindhoven - FC Volendam,2878363355,1,26,11,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,eu901b75l2ly5p48jdw6kwmad,M. Amevor,16.38,21.284000000000002,0,0.0,turnover,False,0.0
+2025-11-30_PSV Eindhoven - FC Volendam,2878367189,1,37,23,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,37.17,60.52,0,0.0,turnover,False,0.0
+2025-11-30_PSV Eindhoven - FC Volendam,2878378843,2,55,57,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,31.290000000000003,41.61600000000001,3,1.0,turnover,False,6.194690380156853e-06
+2025-11-30_PSV Eindhoven - FC Volendam,2878379701,2,58,27,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,3ojwbw6v83g9b0u2wssnkzzzd,A. Obispo,52.815,52.088,3,4.0,turnover,False,0.0008996305502135
+2025-11-30_PSV Eindhoven - FC Volendam,2878381261,2,62,0,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,10.08,45.764,3,5.0,turnover,False,0.0
+2025-11-30_PSV Eindhoven - FC Volendam,2878382309,2,64,26,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,dej8tywq0npvbm25sfgtqur1m,O. Kökçü,26.775000000000002,32.504,0,0.0,turnover,False,0.0
+2025-11-30_PSV Eindhoven - FC Volendam,2879070829,2,67,54,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2yc1t7u26zctwjizi283g6q6s,P. Wanner,69.825,19.584000000000003,0,0.0,turnover,False,0.0
+2025-11-30_PSV Eindhoven - FC Volendam,2878384199,2,68,36,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,21.945,13.464000000000002,4,5.0,turnover,False,0.0003106815673447
+2025-11-30_PSV Eindhoven - FC Volendam,2878390487,2,79,29,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d36na8jr6xcc8eronhy8mcz1m,K. Sildillia,29.925,15.3,4,6.0,window_expired,False,0.000219115511993219
+2025-11-30_PSV Eindhoven - FC Volendam,2878391675,2,81,52,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,6jhavdnaitqn6ydme8a526aui,C. Driouech,73.39500000000001,62.35600000000001,0,0.0,turnover,False,0.0
+2025-11-30_PSV Eindhoven - FC Volendam,2878392705,2,83,42,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,24.150000000000002,24.14,3,8.0,turnover,False,2.0394180820781926e-05

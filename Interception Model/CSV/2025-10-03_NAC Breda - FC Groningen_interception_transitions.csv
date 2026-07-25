@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-03_NAC Breda - FC Groningen,2854990269,1,7,4,cos9hxi16eitbcbthof7zrm4m,FC Groningen,679ax4aocvzlvj4i7a1bb8rv8,T. Mercera,38.115,5.508,4,6.0,turnover,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2854994027,1,9,59,cos9hxi16eitbcbthof7zrm4m,FC Groningen,679ax4aocvzlvj4i7a1bb8rv8,T. Mercera,28.035,6.5280000000000005,1,0.0,window_expired,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2854999313,1,13,50,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1nk0hcaa9o4jnyxc9ndz1lams,D. van der Werff,38.22,4.692,0,0.0,turnover,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2855000301,1,14,40,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,48.510000000000005,43.52,5,10.0,window_expired,False,0.0130614921164708
+2025-10-03_NAC Breda - FC Groningen,2855004079,1,17,35,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bdb33nwcpd2jufn9ggtl7gvzd,B. Lucassen,45.255,19.584000000000003,1,3.0,turnover,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2855021077,1,31,34,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,200chcevwu3znwew6xjyaof6d,F. Oldrup Jensen,14.385,31.756000000000004,0,0.0,turnover,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2855028359,1,36,23,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,200chcevwu3znwew6xjyaof6d,F. Oldrup Jensen,56.385000000000005,5.984000000000001,0,0.0,turnover,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2855064563,2,49,23,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1nk0hcaa9o4jnyxc9ndz1lams,D. van der Werff,57.015,9.792000000000002,2,2.0,turnover,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2855065299,2,49,29,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,d785q9rpqlyuyswv8f9fx4cno,M. Nassoh,33.075,53.65200000000001,1,1.0,turnover,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2855077483,2,58,36,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,56.595,34.272,2,3.0,turnover,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2855080965,2,61,7,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,28.980000000000004,62.016000000000005,3,4.0,turnover,False,9.945423782385664e-05
+2025-10-03_NAC Breda - FC Groningen,2855085221,2,64,25,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,27.195,30.192,4,7.0,turnover,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2855098039,2,73,13,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,33.18,15.368000000000002,0,0.0,turnover,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2855105843,2,81,42,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7xovmwq2h4rcr9nuou4gi3g2c,W. Prins,32.445,10.064000000000002,0,0.0,turnover,False,0.0
+2025-10-03_NAC Breda - FC Groningen,2855116677,2,92,7,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,14.805,54.400000000000006,4,8.0,turnover,False,0.0001648421066638

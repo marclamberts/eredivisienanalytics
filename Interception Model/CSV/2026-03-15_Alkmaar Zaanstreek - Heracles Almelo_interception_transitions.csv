@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-15_Alkmaar Zaanstreek - Heracles Almelo,2911947215,1,1,31,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,27.930000000000003,20.740000000000002,0,0.0,turnover,False,0.0
+2026-03-15_Alkmaar Zaanstreek - Heracles Almelo,2911956095,1,9,20,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,30.975,41.14,1,0.0,turnover,False,0.0
+2026-03-15_Alkmaar Zaanstreek - Heracles Almelo,2911960633,1,13,20,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,32.550000000000004,64.804,3,5.0,turnover,False,5.097605076831435e-06
+2026-03-15_Alkmaar Zaanstreek - Heracles Almelo,2911960719,1,13,26,dac758ef858jbq7pcb3gfwite,Heracles Almelo,1xsy3m0bzicto5ogxsd026bmy,E. Ahlstrand,78.64500000000001,5.78,1,1.0,turnover,False,0.0
+2026-03-15_Alkmaar Zaanstreek - Heracles Almelo,2911970411,1,24,50,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,12.39,41.82,1,1.0,turnover,False,0.0
+2026-03-15_Alkmaar Zaanstreek - Heracles Almelo,2912025785,2,48,59,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,8u19xeh9ugvh8f1mh7jnbbhuc,K. Smit,27.3,20.196,0,0.0,turnover,False,0.0
+2026-03-15_Alkmaar Zaanstreek - Heracles Almelo,2912078281,2,70,28,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,nw48ayorxrpxwcxbdhxy44k4,B. van Duijl,37.695,33.79600000000001,0,0.0,turnover,False,0.0
+2026-03-15_Alkmaar Zaanstreek - Heracles Almelo,2912048807,2,72,21,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jpreaads35pnnfqbn7hmrmy,S. Mijnans,70.875,30.872,3,9.0,window_expired,False,0.013162838324011099
+2026-03-15_Alkmaar Zaanstreek - Heracles Almelo,2912049387,2,72,54,dac758ef858jbq7pcb3gfwite,Heracles Almelo,80dk8iv6p0202z10qcqy8bfca,S. Scheperman,61.425000000000004,51.68000000000001,3,6.0,window_expired,False,0.00015184051391389786
+2026-03-15_Alkmaar Zaanstreek - Heracles Almelo,2912049931,2,73,26,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,13.334999999999999,36.04,0,0.0,turnover,False,0.0
+2026-03-15_Alkmaar Zaanstreek - Heracles Almelo,2912064711,2,76,26,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,b94d67jluhh4076wp2se5fqsq,D. Kasius,76.125,15.096,2,3.0,turnover,True,0.0

@@ -1,0 +1,20 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-13_Go Ahead Eagles - FC Volendam,2845619941,1,1,11,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,8r3k1iuul274c0ha0vy90jys,A. Oehlers,49.14,14.076,5,10.0,window_expired,False,0.00027314909622452085
+2025-09-13_Go Ahead Eagles - FC Volendam,2845629985,1,8,54,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,89plvrt8pzppcclh4axvii0ru,A. Plat,32.655,52.496,4,8.0,window_expired,False,0.0002139433703243548
+2025-09-13_Go Ahead Eagles - FC Volendam,2845631855,1,10,32,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,55.964999999999996,47.328,0,0.0,turnover,False,0.0
+2025-09-13_Go Ahead Eagles - FC Volendam,2845634059,1,12,12,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,74.235,20.468000000000004,4,4.0,turnover,False,0.0061754019122853
+2025-09-13_Go Ahead Eagles - FC Volendam,2845634183,1,12,17,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,9d4lofwg9ooaoldw2vpt4h36y,E. Linthorst,24.255000000000003,46.104,4,5.0,turnover,False,0.0
+2025-09-13_Go Ahead Eagles - FC Volendam,2845634425,1,12,23,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,57.96000000000001,27.880000000000003,4,9.0,window_expired,False,8.696953536613261e-05
+2025-09-13_Go Ahead Eagles - FC Volendam,2845635935,1,13,35,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,9d4lofwg9ooaoldw2vpt4h36y,E. Linthorst,54.39,50.456,4,10.0,window_expired,False,0.0026500125956303
+2025-09-13_Go Ahead Eagles - FC Volendam,2845649345,1,24,29,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,9d4lofwg9ooaoldw2vpt4h36y,E. Linthorst,40.11000000000001,41.888000000000005,2,2.0,turnover,False,0.0
+2025-09-13_Go Ahead Eagles - FC Volendam,2845652059,1,26,33,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,35.49,44.676,2,3.0,window_expired,False,0.0015702121612486
+2025-09-13_Go Ahead Eagles - FC Volendam,2845655863,1,29,29,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,49.245,37.944,0,0.0,turnover,False,0.0
+2025-09-13_Go Ahead Eagles - FC Volendam,2845667527,1,38,50,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,59.43000000000001,29.036000000000005,4,4.0,turnover,False,0.0001814079438216
+2025-09-13_Go Ahead Eagles - FC Volendam,2845667629,1,38,55,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,9d4lofwg9ooaoldw2vpt4h36y,E. Linthorst,32.445,47.124,0,0.0,turnover,False,0.0
+2025-09-13_Go Ahead Eagles - FC Volendam,2845668259,1,39,27,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,89plvrt8pzppcclh4axvii0ru,A. Plat,66.045,18.836000000000002,6,9.0,window_expired,False,0.013761067092851267
+2025-09-13_Go Ahead Eagles - FC Volendam,2846394229,2,46,48,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,c9epkro6fot3km9zak1kswfhm,X. Mbuyamba,65.31,14.280000000000001,0,0.0,turnover,False,0.0
+2025-09-13_Go Ahead Eagles - FC Volendam,2845696613,2,46,56,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,30.135,36.176,0,0.0,turnover,False,0.0
+2025-09-13_Go Ahead Eagles - FC Volendam,2845699931,2,50,10,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4ezldqmn62ggasx6pniqbfwno,J. Ideho,13.65,56.168,5,10.0,window_expired,False,2.2086491418063514e-05
+2025-09-13_Go Ahead Eagles - FC Volendam,2845714819,2,64,48,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1q0v3qpciql8rkyz4qrlvbuju,J. Breum,19.53,35.768,1,1.0,turnover,False,0.0
+2025-09-13_Go Ahead Eagles - FC Volendam,2845722167,2,71,46,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,64kb0lmkr24rmh59hb01m268k,R. van Cruijsen,26.775000000000002,18.02,0,0.0,turnover,False,0.0
+2025-09-13_Go Ahead Eagles - FC Volendam,2845736359,2,88,37,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,9vyizhfym4y8vc07xrvba7skq,O. Pettersson,38.43,21.828000000000003,0,0.0,turnover,False,0.0

@@ -1,0 +1,23 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-13_PEC Zwolle - FC Groningen,2910581233,1,0,30,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,40.005,61.2,1,1.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910584453,1,3,3,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,27.930000000000003,11.628000000000002,0,0.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910584559,1,3,9,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,16.695,51.68000000000001,0,0.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910585759,1,4,9,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,43.575,25.704,3,4.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910909039,1,5,48,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,53.550000000000004,48.824,0,0.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910593809,1,10,40,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,31.71,38.556000000000004,2,1.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910594883,1,11,29,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,18.900000000000002,55.556000000000004,0,0.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910600269,1,15,46,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,96.075,34.952,0,0.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910608177,1,22,33,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,36.75,60.79200000000001,3,9.0,turnover,True,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910610579,1,24,52,cos9hxi16eitbcbthof7zrm4m,FC Groningen,bm3k1knugkwa8z319dscr2yhg,T. Hernes,39.27,60.86000000000001,2,2.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910616341,1,30,24,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,66.78,7.208,1,1.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910624551,1,36,34,cos9hxi16eitbcbthof7zrm4m,FC Groningen,ei9h1loyggj8fnf1q4jfdm710,T. van Bergen,28.455000000000002,8.772,0,0.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910625027,1,36,58,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1nk0hcaa9o4jnyxc9ndz1lams,D. van der Werff,28.455000000000002,3.2640000000000002,1,0.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910632491,1,42,23,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,39.06,54.196000000000005,2,4.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910669865,2,55,7,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,21.840000000000003,63.71600000000001,0,0.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910677549,2,60,10,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,20.16,26.996000000000002,0,0.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910679569,2,61,37,cos9hxi16eitbcbthof7zrm4m,FC Groningen,bm3k1knugkwa8z319dscr2yhg,T. Hernes,24.990000000000002,57.188,4,7.0,window_expired,False,0.01896328693736891
+2026-03-13_PEC Zwolle - FC Groningen,2910682253,2,62,5,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4mhahoh3a6rir882ug9hdb5nu,T. Velthuis,26.775000000000002,34.748000000000005,2,1.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910683089,2,63,49,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,40.32,59.364000000000004,0,0.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910685845,2,65,33,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,37.065,4.964,2,5.0,turnover,False,0.0001500654524897
+2026-03-13_PEC Zwolle - FC Groningen,2910700279,2,77,30,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,32.025,23.732,2,2.0,turnover,False,0.0
+2026-03-13_PEC Zwolle - FC Groningen,2910719921,2,93,55,cos9hxi16eitbcbthof7zrm4m,FC Groningen,3aly8eihwfvtwde7dg0k18w7o,J. Schreuders,5.775,9.248000000000001,3,7.0,turnover,False,0.0

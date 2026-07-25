@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2907616013,1,0,18,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,dk7zyk16nsnh0czeky7vi0x78,S. van Duijn,78.015,8.84,1,1.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903604437,1,10,51,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,4qr07cfbwquppkww057mb9tk9,J. Moder,65.10000000000001,11.832,2,5.0,window_expired,False,0.0025893045891685
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903613263,1,25,51,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dtcvzfse83ztj96kiizwp6jqi,G. Smal,41.055,39.57600000000001,2,4.0,turnover,False,0.0006096350097742
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903613297,1,25,56,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,44.1,47.804,0,0.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903619501,1,37,19,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dtcvzfse83ztj96kiizwp6jqi,G. Smal,29.085,25.16,0,0.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903619929,1,37,54,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,24.885,25.976000000000003,3,2.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903621797,1,41,7,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,42.315,27.404,5,8.0,window_expired,False,0.00012173253803597628
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903638135,2,49,16,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,aajft01g5yggw0is5fbfh3105,B. Nieuwkoop,73.29,30.6,3,10.0,window_expired,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903638967,2,50,35,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,4qr07cfbwquppkww057mb9tk9,J. Moder,46.830000000000005,62.696000000000005,0,0.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903641179,2,53,54,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,33.39,64.736,0,0.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903641959,2,55,8,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,14.07,46.376000000000005,0,0.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903643009,2,56,52,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4fu2agdclsyxx1boxxibauzo4,G. Alders,49.77,5.168,1,1.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903645211,2,60,32,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,43ib46nh45n9oajf5rmaz4f6x,Hwang In-Beom,82.425,59.364000000000004,0,0.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903645685,2,61,29,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6hnzgiw8h1itz9l2j3sb6oeeh,J. St. Juste,61.214999999999996,45.356,2,2.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903650063,2,70,24,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,3o4tq8qooplx2izq9rucgu7d,C. Tengstedt,83.47500000000001,64.53200000000001,0,0.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903652091,2,75,41,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,11.97,52.904,0,0.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903654085,2,80,50,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,aajft01g5yggw0is5fbfh3105,B. Nieuwkoop,34.230000000000004,5.712000000000001,3,3.0,turnover,False,0.0
+2026-02-22_Feyenoord Rotterdam - SC Telstar,2903656623,2,87,26,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,31.080000000000002,57.39200000000001,5,5.0,turnover,False,5.889043841927899e-05

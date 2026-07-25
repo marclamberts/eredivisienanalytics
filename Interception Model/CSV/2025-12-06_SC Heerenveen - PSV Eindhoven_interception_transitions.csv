@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880372691,1,0,15,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,c9shc6t28oroqthopifjvg9ux,D. Vente,78.855,3.74,1,1.0,turnover,False,0.0
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880374267,1,1,12,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,dxmulnxbs11kpi1goq5hl9cve,A. Salah-Eddine,44.205000000000005,45.424,5,9.0,window_expired,False,0.00187812665501685
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880375893,1,2,15,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,9vf02r3geinhsy732oxyrcacq,I. Saibari,43.575,61.268,0,0.0,turnover,False,0.0
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880392875,1,12,14,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,5oghztk07za2yuqq4jnav22y2,M. Rivera,55.650000000000006,55.624,0,0.0,turnover,False,0.0
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880393909,1,12,49,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,23.730000000000004,36.448,2,3.0,turnover,False,0.0
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880400887,1,18,48,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,12.81,39.372,0,0.0,turnover,False,0.0
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880410857,1,30,1,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,22.155,32.232,4,4.0,turnover,False,0.0002002371015931
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880424403,1,37,32,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,40.32,43.79200000000001,5,10.0,window_expired,False,0.00010920959199052505
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880433445,1,42,14,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,68.67000000000002,64.464,3,4.0,turnover,False,0.0025109093478305
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880469391,2,45,12,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,65.205,50.864000000000004,1,2.0,turnover,False,0.0
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880485687,2,54,58,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,80.01,53.65200000000001,3,5.0,turnover,False,0.0127090232231197
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880486601,2,55,37,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,32.445,54.196000000000005,5,10.0,window_expired,False,0.0006972111149059716
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880497903,2,67,3,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,b0me6l44boibnwpbtasxoy02x,S. Dest,23.625,41.61600000000001,0,0.0,turnover,False,0.0
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880512633,2,81,11,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,9najgqcaamqj0qtiicuq9hey,R. Meerveld,85.78500000000001,23.528000000000002,1,1.0,turnover,False,0.0
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880514867,2,83,6,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,37.589999999999996,32.708000000000006,1,2.0,turnover,False,0.0001728436766913
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880518855,2,86,32,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,9najgqcaamqj0qtiicuq9hey,R. Meerveld,27.825000000000003,50.32,0,0.0,turnover,False,0.0
+2025-12-06_SC Heerenveen - PSV Eindhoven,2880524099,2,90,52,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,f593mnttzie8gicqlig2zvzvu,A. van Axel Dongen,14.490000000000002,11.968000000000002,2,0.0,turnover,False,0.0

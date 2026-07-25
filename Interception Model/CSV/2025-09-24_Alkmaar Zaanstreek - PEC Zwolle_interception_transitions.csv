@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850900387,1,3,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,44.94,44.132000000000005,3,3.0,turnover,False,1.3210291332846348e-05
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850905389,1,9,11,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,11.97,60.52,1,1.0,turnover,False,0.0
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850910997,1,15,10,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,74.025,54.876000000000005,1,2.0,turnover,False,0.0
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850911065,1,15,14,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d29ahwtvs7ls75wdtkf7xr8tm,Z. Buurmeester,28.455000000000002,30.26,3,2.0,turnover,False,9.100227285896434e-07
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850916901,1,22,51,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,32.34,29.784,3,8.0,window_expired,False,0.0006280204749236
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850925911,1,34,33,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,20.16,48.008,0,0.0,turnover,False,0.0
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850927019,1,35,43,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,28.56,55.964,2,6.0,turnover,False,0.0
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850928133,1,36,51,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,wuh8s4gfo9ro3nel3rormg44,R. Daal,77.28,64.94,0,0.0,turnover,False,0.0
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850935047,1,45,3,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,12.81,9.384,4,3.0,turnover,False,0.0001141362251959
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850950275,2,46,0,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,33.495,26.180000000000003,0,0.0,turnover,False,0.0
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850956367,2,52,4,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,10k3fz1ibikbugv4c45ewy87o,J. Pereira da Gama,42.73500000000001,63.376000000000005,1,1.0,turnover,False,0.0
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850966115,2,61,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,cczptju66ofuymrlsol11fpxw,D. Voute,66.045,4.488,1,1.0,turnover,False,0.0
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850970089,2,64,39,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,10k3fz1ibikbugv4c45ewy87o,J. Pereira da Gama,2.625,59.228,0,0.0,turnover,False,0.0
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850988399,2,87,37,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,59.22,5.78,0,0.0,turnover,False,0.0
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850990795,2,90,46,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,22.995,52.632000000000005,3,4.0,window_expired,False,2.3216324843700065e-05
+2025-09-24_Alkmaar Zaanstreek - PEC Zwolle,2850991837,2,91,59,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1x6fhuy49w4rpnyavwotbf504,T. Gooijer,12.39,41.344,0,0.0,turnover,False,0.0

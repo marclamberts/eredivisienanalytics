@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888857587,1,0,11,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2yc1t7u26zctwjizi283g6q6s,P. Wanner,34.755,39.984,0,0.0,turnover,False,0.0
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888669833,1,13,16,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,biee6dvb524juzai7iryyskix,D. Man,23.52,16.592,2,2.0,turnover,False,0.0001332730171169
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888669971,1,13,24,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,58.695,61.47200000000001,3,4.0,turnover,False,0.0
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888674501,1,19,18,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,30t0ph1icrggc0x62om801ses,G. de Regt,60.165,63.92,0,0.0,turnover,False,0.0
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888674835,1,19,45,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,64.155,63.03600000000001,1,2.0,turnover,False,0.0
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888681397,1,30,17,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,39.165,58.888,4,7.0,window_expired,False,0.00042121821391656556
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888681527,1,30,33,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,45.78,55.760000000000005,0,0.0,turnover,False,0.0
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888684019,1,35,21,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,70.875,63.24,3,3.0,turnover,False,0.0004314799543041
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888684921,1,37,2,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,71.08500000000001,19.176000000000002,6,8.0,window_expired,False,0.0097501490224731
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888686575,1,40,40,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,buhlcdwtnxeiqgy079kas7dw4,J. Bergraaf,51.660000000000004,8.84,1,2.0,turnover,False,0.0
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888696775,2,49,50,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,57.435,9.384,3,10.0,window_expired,False,5.128259981986016e-05
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888696899,2,50,9,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,58.065,56.78,4,8.0,turnover,False,0.000723485317544
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888698969,2,55,8,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,69.92999999999999,30.192,1,3.0,turnover,False,0.0
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888699475,2,56,30,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,25.62,22.44,1,1.0,turnover,False,0.0
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888700533,2,58,52,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,67.62,6.392,0,0.0,turnover,False,0.0
+2026-01-10_PSV Eindhoven - SBV Excelsior,2888703709,2,66,40,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,9.240000000000002,39.440000000000005,1,1.0,turnover,False,0.0

@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-27_AFC Ajax - NAC Breda,2852022973,1,2,15,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,64x38pccgfsuz4ywoveh2ksbu,L. Greiml,43.260000000000005,43.656000000000006,1,1.0,turnover,False,0.0
+2025-09-27_AFC Ajax - NAC Breda,2852041579,1,10,17,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,68.775,49.776,1,2.0,turnover,False,0.0
+2025-09-27_AFC Ajax - NAC Breda,2852057483,1,17,1,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,57.54,47.328,4,7.0,window_expired,False,0.0005110801667345
+2025-09-27_AFC Ajax - NAC Breda,2852063121,1,21,25,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,58.589999999999996,52.02,3,4.0,turnover,False,0.0021493064370753
+2025-09-27_AFC Ajax - NAC Breda,2852065649,1,24,51,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bdb33nwcpd2jufn9ggtl7gvzd,B. Lucassen,29.61,18.02,1,2.0,turnover,False,0.0
+2025-09-27_AFC Ajax - NAC Breda,2852066623,1,26,34,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,32.235,6.664000000000001,1,3.0,turnover,False,0.0
+2025-09-27_AFC Ajax - NAC Breda,2852068297,1,29,51,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,3c2wqlde0kovi9hii52egaimt,L. Holtby,49.665,29.852,0,0.0,turnover,False,0.0
+2025-09-27_AFC Ajax - NAC Breda,2852183887,2,60,14,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,71.08500000000001,6.392,0,0.0,turnover,False,0.0
+2025-09-27_AFC Ajax - NAC Breda,2852192753,2,63,1,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,35qg0rrwtl00pycx468s62m3u,K. Taylor,12.075000000000001,30.396000000000004,0,0.0,turnover,False,0.0
+2025-09-27_AFC Ajax - NAC Breda,2852197407,2,70,21,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,40.635000000000005,19.652,0,0.0,turnover,False,0.0
+2025-09-27_AFC Ajax - NAC Breda,2852199793,2,72,19,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,31.5,8.092,0,0.0,turnover,False,0.0
+2025-09-27_AFC Ajax - NAC Breda,2852219335,2,86,38,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,21.419999999999998,10.200000000000001,4,6.0,turnover,False,0.00026694903027159024

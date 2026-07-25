@@ -1,0 +1,27 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-15_FC Twente - FC Utrecht,2911838729,1,0,11,4tic29sox7m39fy1ztgv0jsiq,FC Twente,qobf1v5kwuz6hj2ooixfw4mi,B. van Rooij,26.040000000000003,10.88,0,0.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911839019,1,0,48,ccpscwdcm65czscrun048ecn5,FC Utrecht,2tc8y9du64tjno62zll2jhy7e,Y. Cathline,31.395,39.168000000000006,0,0.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911840359,1,3,31,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,46.095,32.776,3,2.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911840375,1,3,34,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,49.035000000000004,30.736000000000004,0,0.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911841465,1,6,13,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,24.36,52.36000000000001,2,3.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911844019,1,11,19,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,28.77,63.51200000000001,1,2.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911849887,1,20,30,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,21.840000000000003,16.932,0,0.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911849989,1,20,38,ccpscwdcm65czscrun048ecn5,FC Utrecht,2tc8y9du64tjno62zll2jhy7e,Y. Cathline,25.095,45.492000000000004,1,1.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911853273,1,25,0,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,30.975,14.008000000000003,2,2.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911859845,1,34,20,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,38.535000000000004,53.992000000000004,0,0.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911864801,1,41,39,4tic29sox7m39fy1ztgv0jsiq,FC Twente,9nix5y8xcj34ps62r34udtqwa,K. Hlynsson,59.955000000000005,35.428000000000004,0,0.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911866503,1,43,50,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,38.85,39.57600000000001,0,0.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911866847,1,44,16,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,23.205000000000002,56.57600000000001,1,2.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911884953,2,48,16,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,22.575,30.056000000000004,1,2.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911886935,2,51,14,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,55.86000000000001,32.096000000000004,3,8.0,turnover,False,0.0001272071199315
+2026-03-15_FC Twente - FC Utrecht,2911889865,2,55,47,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,40.214999999999996,40.596000000000004,2,2.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911891345,2,57,55,4tic29sox7m39fy1ztgv0jsiq,FC Twente,cocgd3hh74fq9c30x9bps4idw,S. Lemkin,56.07,12.648000000000001,1,0.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911896787,2,64,31,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,33.285000000000004,40.188,0,0.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911901023,2,68,55,4tic29sox7m39fy1ztgv0jsiq,FC Twente,9nix5y8xcj34ps62r34udtqwa,K. Hlynsson,60.58500000000001,14.892,5,7.0,window_expired,False,0.0062066367642283
+2026-03-15_FC Twente - FC Utrecht,2911902007,2,70,9,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,32.34,46.647999999999996,4,8.0,window_expired,False,0.000411554611479327
+2026-03-15_FC Twente - FC Utrecht,2911902433,2,70,42,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,21.525000000000002,17.0,2,2.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911904681,2,73,44,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,68.775,3.808,1,0.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911905113,2,74,16,4tic29sox7m39fy1ztgv0jsiq,FC Twente,lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,42.0,55.21600000000001,0,0.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911905189,2,74,20,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,38.85,58.14000000000001,2,2.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911907207,2,77,27,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,13.020000000000001,42.432,1,1.0,turnover,False,0.0
+2026-03-15_FC Twente - FC Utrecht,2911915521,2,89,31,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,9.240000000000002,42.636,0,0.0,turnover,False,0.0

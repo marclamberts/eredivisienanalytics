@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895305477,1,0,49,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,22.680000000000003,60.31600000000001,0,0.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895305769,1,1,1,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,11.97,13.872,0,0.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895307551,1,2,46,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,33.39,41.14,1,1.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895313523,1,8,32,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,23.1,17.204,0,0.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895321107,1,16,3,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,29.925,19.584000000000003,4,5.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895321619,1,16,45,dac758ef858jbq7pcb3gfwite,Heracles Almelo,2zwe056wfzof0v5jv01dv9uc5,A. Hrustić,71.19,51.61200000000001,0,0.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895324183,1,21,34,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,22.680000000000003,30.26,2,2.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895324459,1,22,10,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,59.010000000000005,62.900000000000006,5,8.0,window_expired,False,0.0086399596797789
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895336479,1,34,25,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,64.89,3.944,3,6.0,window_expired,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895350419,1,45,7,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,46.30500000000001,60.18000000000001,3,2.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895350577,1,45,14,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,63.315,63.784000000000006,1,0.0,window_expired,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895380289,2,50,1,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,42.525,59.976000000000006,0,0.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895389051,2,57,37,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,9zryne6aa951ltubvjo0gk12i,M. Ihattaren,73.92000000000002,4.216,6,6.0,window_expired,False,0.021870638442635898
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895408727,2,81,59,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2ifp36vdm0d6rb3xc7muuvv11,D. Limnios,11.97,9.520000000000001,1,2.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895413953,2,86,17,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,23.415000000000003,62.220000000000006,0,0.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895842067,2,92,53,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,65.31,12.988000000000001,1,1.0,turnover,False,0.0
+2026-02-01_Heracles Almelo - Fortuna Sittard,2895423155,2,95,3,dac758ef858jbq7pcb3gfwite,Heracles Almelo,69gzswoym4jqnrag1wdqfdkyy,J. Wieckhoff,26.040000000000003,4.148,2,6.0,window_expired,False,0.0

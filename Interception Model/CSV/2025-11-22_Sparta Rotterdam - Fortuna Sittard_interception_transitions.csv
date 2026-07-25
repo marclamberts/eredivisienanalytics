@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875387179,1,1,7,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,32.865,8.568,2,3.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875432155,1,3,25,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,31.605000000000004,49.164,5,8.0,window_expired,False,0.00032470766471783403
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875395561,1,11,46,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2ifp36vdm0d6rb3xc7muuvv11,D. Limnios,21.945,54.468,3,5.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875397017,1,13,14,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f07qmqesi1rpw7eapoz9rb0gk,J. Baas,33.81,26.384,1,3.0,turnover,False,0.0002992766795159
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875397913,1,14,12,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,37.800000000000004,19.380000000000003,3,9.0,window_expired,False,0.0447320677469486
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875410367,1,28,27,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,21.21,50.592000000000006,2,3.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875410471,1,28,35,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6yush35gfp1sgyyzicye73rp,P. van Aanholt,59.535000000000004,47.124,2,5.0,window_expired,False,4.16348048684484e-05
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875412407,1,31,7,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,54.39,57.596000000000004,4,5.0,window_expired,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875417533,1,37,28,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,9.66,30.192,0,0.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875418897,1,39,20,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,31.395,5.78,0,0.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875419397,1,39,25,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,47.46000000000001,50.79600000000001,4,9.0,window_expired,False,7.1156540813743785e-06
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875420623,1,41,34,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,11.340000000000002,28.152,2,2.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875571099,2,51,7,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,9zryne6aa951ltubvjo0gk12i,M. Ihattaren,43.050000000000004,15.096,1,2.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875437079,2,51,54,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,58.695,24.208000000000002,1,1.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875437499,2,52,33,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,67.30499999999999,24.752000000000002,4,8.0,turnover,False,0.0130614921164707
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875442535,2,60,53,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,29.61,33.252,1,2.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875450415,2,74,45,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,9lctm8txbd4n87mk61lwa0rf9,S. Bakari,41.895,5.44,1,1.0,window_expired,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875450685,2,75,21,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,46.30500000000001,58.208,4,6.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875452767,2,79,31,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,9lctm8txbd4n87mk61lwa0rf9,S. Bakari,38.115,21.080000000000002,1,2.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875455543,2,85,28,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,32.76,54.876000000000005,0,0.0,turnover,False,0.0
+2025-11-22_Sparta Rotterdam - Fortuna Sittard,2875459261,2,93,53,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,29q4j9r2lgdsdkkq2fgh8l7o4,Ayoni Santos,61.53,39.644,3,7.0,window_expired,False,0.0013349593341836

@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-01_SC Heerenveen - FC Utrecht,2895454965,1,7,18,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,ar7llmzju08n8yrqu8xm1thck,O. Braude,5.88,14.280000000000001,1,1.0,turnover,False,0.0
+2026-02-01_SC Heerenveen - FC Utrecht,2895771201,1,16,10,ccpscwdcm65czscrun048ecn5,FC Utrecht,a02jtmvlc1tlstvt96pa1hisq,D. Murkin,56.28,61.404,0,0.0,turnover,False,0.0
+2026-02-01_SC Heerenveen - FC Utrecht,2895464467,1,18,36,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,21.525000000000002,56.168,4,5.0,window_expired,False,3.883954348347929e-05
+2026-02-01_SC Heerenveen - FC Utrecht,2895472301,1,29,25,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,34.545,38.42,4,3.0,turnover,False,9.839513369012952e-05
+2026-02-01_SC Heerenveen - FC Utrecht,2895478199,1,37,7,ccpscwdcm65czscrun048ecn5,FC Utrecht,8tqsvu5sw6kn014hdv88zppm1,N. Vesterlund,4.095,12.104000000000001,1,0.0,turnover,False,0.0
+2026-02-01_SC Heerenveen - FC Utrecht,2895481457,1,41,34,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,c9shc6t28oroqthopifjvg9ux,D. Vente,38.85,26.792,4,2.0,window_expired,False,0.0
+2026-02-01_SC Heerenveen - FC Utrecht,2895520261,2,73,32,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,26.040000000000003,29.240000000000002,3,9.0,turnover,False,1.0166173379275167e-05
+2026-02-01_SC Heerenveen - FC Utrecht,2895520881,2,74,23,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,46.62,53.788,3,7.0,turnover,False,0.0018078658208326
+2026-02-01_SC Heerenveen - FC Utrecht,2895523321,2,77,47,ccpscwdcm65czscrun048ecn5,FC Utrecht,a02jtmvlc1tlstvt96pa1hisq,D. Murkin,36.015,55.080000000000005,0,0.0,turnover,False,0.0
+2026-02-01_SC Heerenveen - FC Utrecht,2895525435,2,80,45,ccpscwdcm65czscrun048ecn5,FC Utrecht,9ano8w4jrlk6zq92rxchzaru2,Miguel Rodríguez,34.86000000000001,23.528000000000002,2,1.0,turnover,False,0.0
+2026-02-01_SC Heerenveen - FC Utrecht,2895526081,2,81,57,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,23.835,40.596000000000004,3,9.0,window_expired,False,0.000127589604521
+2026-02-01_SC Heerenveen - FC Utrecht,2895526445,2,82,36,ccpscwdcm65czscrun048ecn5,FC Utrecht,9ano8w4jrlk6zq92rxchzaru2,Miguel Rodríguez,29.61,3.74,1,0.0,turnover,False,0.0

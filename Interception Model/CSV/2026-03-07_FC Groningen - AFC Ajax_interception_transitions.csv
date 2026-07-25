@@ -1,0 +1,27 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-07_FC Groningen - AFC Ajax,2908176715,1,3,47,cos9hxi16eitbcbthof7zrm4m,FC Groningen,bm3k1knugkwa8z319dscr2yhg,T. Hernes,21.419999999999998,48.824,2,5.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908181837,1,6,33,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,28.875,24.276000000000003,2,0.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908192749,1,12,3,cos9hxi16eitbcbthof7zrm4m,FC Groningen,3aly8eihwfvtwde7dg0k18w7o,J. Schreuders,18.165000000000003,63.648,4,4.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908200961,1,16,16,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,56nbghr9snc79dt8h99wleej8,S. Steur,59.22,37.80800000000001,0,0.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908209233,1,23,25,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,56nbghr9snc79dt8h99wleej8,S. Steur,70.665,59.908,3,3.0,turnover,False,0.0014074974447472
+2026-03-07_FC Groningen - AFC Ajax,2908212623,1,28,22,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,34.44,8.092,0,0.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908212689,1,28,30,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,34.86000000000001,60.928,1,1.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908217835,1,33,43,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,49.77,59.636,5,10.0,window_expired,False,0.0010965657578934
+2026-03-07_FC Groningen - AFC Ajax,2908234221,1,43,17,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,56nbghr9snc79dt8h99wleej8,S. Steur,32.865,38.080000000000005,1,1.0,turnover,False,0.000169920333123
+2026-03-07_FC Groningen - AFC Ajax,2908234369,1,43,21,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,20.790000000000003,24.276000000000003,1,4.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908277887,2,50,34,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,66.465,35.7,3,1.0,turnover,False,0.0069947949891522
+2026-03-07_FC Groningen - AFC Ajax,2908282983,2,53,32,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,2.1,45.967999999999996,2,2.0,window_expired,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908285423,2,54,57,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,40.74,4.42,4,9.0,window_expired,False,3.151152090141718e-05
+2026-03-07_FC Groningen - AFC Ajax,2908286693,2,55,42,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,35.910000000000004,21.692,2,2.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908286821,2,55,45,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,50.08500000000001,21.692,0,0.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908288077,2,56,38,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,27.405,47.940000000000005,0,0.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908293739,2,60,10,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,10.395000000000001,38.89600000000001,0,0.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908296233,2,61,47,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,46.2,9.316,0,0.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908296623,2,62,2,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,19.425,7.276,0,0.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908298817,2,63,52,cos9hxi16eitbcbthof7zrm4m,FC Groningen,bm3k1knugkwa8z319dscr2yhg,T. Hernes,43.89,49.368,0,0.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908306699,2,71,37,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,18.585,27.404,0,0.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908310869,2,76,2,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,9.450000000000001,12.172,0,0.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908311523,2,76,43,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,21.840000000000003,44.47200000000001,1,1.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908312359,2,77,45,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,16.065,5.372000000000001,1,1.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908318367,2,83,55,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,46.2,18.768,2,1.0,turnover,False,0.0
+2026-03-07_FC Groningen - AFC Ajax,2908320523,2,86,18,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,13.545000000000002,17.612000000000002,1,2.0,turnover,False,0.0

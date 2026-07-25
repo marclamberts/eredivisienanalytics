@@ -1,0 +1,24 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852358759,1,0,13,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,71.19,4.6240000000000006,0,0.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852365235,1,5,10,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,20.265,43.044000000000004,0,0.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852379331,1,16,23,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,94.29,48.75600000000001,0,0.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852385869,1,21,16,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,26.355000000000004,29.716000000000005,0,0.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852393107,1,27,53,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,2vfhae70oyyzm0qttlckworqi,A. Carlén,66.36,13.396,0,0.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852394035,1,28,56,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,38.64,53.040000000000006,3,2.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852407741,1,42,36,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,39.375,47.804,2,3.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852407789,1,42,41,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,42.73500000000001,26.384,6,9.0,window_expired,False,0.0006667580485394
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852427979,2,47,15,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,69.405,54.196000000000005,5,9.0,window_expired,False,0.0040596570664326
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852429255,2,48,22,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,11.76,39.78,2,4.0,window_expired,False,0.0006711830101058
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852433819,2,52,21,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,30t0ph1icrggc0x62om801ses,G. de Regt,18.165000000000003,65.756,1,2.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852437307,2,55,26,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,2vfhae70oyyzm0qttlckworqi,A. Carlén,23.31,59.228,0,0.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852444529,2,61,13,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,31.5,39.236000000000004,0,0.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852444395,2,61,14,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,73.39500000000001,29.240000000000002,3,7.0,turnover,False,0.0014489552934651
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852984273,2,61,49,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,21.525000000000002,24.14,0,0.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852447573,2,64,6,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,26.355000000000004,26.588000000000005,5,10.0,window_expired,False,0.0002240505852884
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852448469,2,64,49,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,26.145,43.112,0,0.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852453109,2,68,39,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,72.135,52.088,6,10.0,window_expired,False,0.0279075284318515
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852452765,2,68,50,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,18.900000000000002,55.760000000000005,1,3.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852458413,2,75,1,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,66.57000000000001,56.37200000000001,0,0.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852465005,2,82,45,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,36.54,57.324000000000005,0,0.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852465053,2,82,47,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,35.805,62.35600000000001,5,4.0,turnover,False,0.0
+2025-09-27_SBV Excelsior - PSV Eindhoven,2852472855,2,91,48,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,13.020000000000001,50.728,1,2.0,turnover,False,0.0

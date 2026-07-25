@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892879717,1,0,52,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,1pezvbb0n8z7hu5063jysg2s4,L. Sauer,43.050000000000004,65.008,0,0.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892879913,1,1,7,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ciguyr553yqapqfudim9af46h,M. Deijl,46.725,3.944,0,0.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2893197249,1,7,49,dac758ef858jbq7pcb3gfwite,Heracles Almelo,5bm516z74pbsyfemsathj3umt,M. Engels,34.545,43.86000000000001,2,8.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892886215,1,7,57,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,29.925,34.612,2,3.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892895225,1,20,16,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,47.98500000000001,34.408,0,0.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892895257,1,20,18,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,46.410000000000004,43.044000000000004,0,0.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892907797,1,34,3,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,18.480000000000004,24.14,1,1.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892915441,1,42,44,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,56.385000000000005,18.02,4,6.0,turnover,False,0.0009672210178629
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892918949,1,46,6,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,11.340000000000002,35.224000000000004,2,6.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892940503,2,50,19,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,16.38,15.028000000000002,0,0.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892944051,2,55,53,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,57.645,65.008,1,1.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892945939,2,58,28,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,33.81,6.460000000000001,5,6.0,window_expired,False,9.342999911332583e-05
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892953027,2,68,15,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,62.79,44.132000000000005,0,0.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892955473,2,71,28,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,43.050000000000004,65.62,1,1.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892956119,2,72,21,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dwyl0yii553i57u7azfa7d15g,A. Hadj Moussa,51.345,14.076,0,0.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892965437,2,84,15,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,1pezvbb0n8z7hu5063jysg2s4,L. Sauer,38.85,53.516000000000005,0,0.0,turnover,False,0.0
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892967681,2,86,39,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,43.050000000000004,7.276,5,9.0,window_expired,False,0.0051943417911293
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892969537,2,88,16,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,43ib46nh45n9oajf5rmaz4f6x,Hwang In-Beom,28.665000000000003,50.048,2,2.0,turnover,False,7.806371875418439e-06
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892971845,2,90,27,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,49.665,55.01200000000001,3,3.0,turnover,False,4.081196505248408e-05
+2026-01-25_Feyenoord Rotterdam - Heracles Almelo,2892971963,2,90,30,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ciguyr553yqapqfudim9af46h,M. Deijl,55.86000000000001,4.828,0,0.0,turnover,False,0.0

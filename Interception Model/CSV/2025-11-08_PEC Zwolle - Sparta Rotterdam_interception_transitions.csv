@@ -1,0 +1,23 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871025811,1,10,20,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,7ty1wdxxnusgkl34k5raipbl5,M. van Bergen,36.96000000000001,2.72,3,2.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871025853,1,10,23,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,48.510000000000005,50.184000000000005,3,6.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871033429,1,17,52,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,33.6,33.11600000000001,2,7.0,window_expired,False,0.0067853424070721995
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871034111,1,18,31,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,33.81,53.244,1,2.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871041419,1,26,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,64.68,5.508,1,0.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871046301,1,31,39,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,32.34,36.584,6,8.0,turnover,False,4.6577438290784645e-05
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871047007,1,32,15,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,31.605000000000004,4.964,1,1.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871048527,1,33,39,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,13.334999999999999,24.072,0,0.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871049147,1,34,16,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,30.345,53.448,0,0.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871049827,1,35,0,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,24.465000000000003,50.25200000000001,5,5.0,turnover,False,4.0547209183158794e-05
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871049955,1,35,7,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6q77vt9bp8dsq48pa97mfzsa1,T. Lauritsen,85.47000000000001,6.5280000000000005,0,0.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871057183,1,43,5,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,41.580000000000005,57.120000000000005,0,0.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871057631,1,43,32,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,25.725,53.992000000000004,1,1.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871072161,2,46,12,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,45.885000000000005,18.836000000000002,0,0.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871085275,2,62,52,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,46.095,64.736,0,0.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871090845,2,70,30,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,22.785,34.476000000000006,1,2.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871094231,2,75,23,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6eg8vaxpqsd6cyh736h7bq4x6,D. Mbayo,48.405,7.072000000000001,1,1.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871098333,2,80,25,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,34.02,45.628,0,0.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871100035,2,82,41,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,26.46,56.57600000000001,5,8.0,turnover,False,7.027253436923953e-05
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871103057,2,86,30,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,53.97,36.584,0,0.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871105667,2,89,58,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,26.040000000000003,42.432,0,0.0,turnover,False,0.0
+2025-11-08_PEC Zwolle - Sparta Rotterdam,2871108975,2,94,24,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f07qmqesi1rpw7eapoz9rb0gk,J. Baas,23.31,25.500000000000004,1,0.0,window_expired,False,0.0

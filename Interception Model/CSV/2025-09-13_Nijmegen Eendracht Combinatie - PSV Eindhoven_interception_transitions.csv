@@ -1,0 +1,11 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845590315,1,2,41,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,21.630000000000003,22.1,0,0.0,turnover,False,0.0
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845598167,1,11,3,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,11.025,41.344,0,0.0,turnover,False,0.0
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845630955,1,37,37,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,a76yp8gkkg6frtuhh3d6l46i,D. Proper,6.09,27.540000000000003,2,5.0,turnover,False,0.0
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845637159,1,42,36,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,18.794999999999998,13.260000000000002,0,0.0,turnover,False,0.0
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845639721,1,44,51,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,247ipjjd0cak2sggwbuorx4yy,B. Pereira,31.290000000000003,8.908000000000001,1,3.0,turnover,False,0.0
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845682701,2,59,15,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,42.42,54.468,2,2.0,turnover,False,0.0
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845687689,2,63,30,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,3.7800000000000002,48.688,1,0.0,turnover,False,0.0
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845690499,2,65,57,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,22.26,29.988000000000003,0,0.0,turnover,False,0.0
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845716037,2,90,5,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,dxmulnxbs11kpi1goq5hl9cve,A. Salah-Eddine,10.709999999999999,43.112,4,8.0,window_expired,False,0.0
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845720863,2,94,39,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,ac3lkaa1lkbsa82tfylq5zcb8,N. Lebreton,11.865000000000002,45.764,0,0.0,turnover,False,0.0

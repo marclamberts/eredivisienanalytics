@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-15_SC Telstar - PEC Zwolle,2835089011,1,1,10,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,25.830000000000002,31.28,0,0.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835094031,1,6,49,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,61.214999999999996,9.792000000000002,3,3.0,turnover,False,3.5655813301865846e-05
+2025-08-15_SC Telstar - PEC Zwolle,2835103311,1,16,13,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,36.435,36.856,0,0.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835103549,1,16,29,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1zybkcmp40td92a6yg8sw9uga,T. Owusu,70.245,15.844000000000001,0,0.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835105597,1,18,25,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,27.72,32.912,0,0.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835106679,1,19,34,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,47.25,38.284,1,2.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835112655,1,26,35,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,65.10000000000001,17.408,0,0.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835119373,1,33,5,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,28.980000000000004,56.984,4,7.0,window_expired,False,5.452497541685864e-05
+2025-08-15_SC Telstar - PEC Zwolle,2835121253,1,34,42,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,88.41000000000001,3.3320000000000003,0,0.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835122785,1,36,18,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,33.075,10.948000000000002,3,3.0,turnover,False,0.0003094428528952
+2025-08-15_SC Telstar - PEC Zwolle,2835125431,1,38,47,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,42.105000000000004,52.7,1,1.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835153561,2,54,55,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6u7z5qrlwzl9aug8awejq37xl,Jamiro Monteiro,35.805,9.724000000000002,1,2.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835164419,2,65,56,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,16.17,58.548,2,3.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835166169,2,67,48,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,60.375,15.232,0,0.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835177031,2,79,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,50130ztne7nsfs9fxf0am6vv9,D. Mertens,63.42,48.484,3,5.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835182415,2,84,58,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,7h6w0i7ebl5pew0v1j8ipin10,G. Reiziger,31.815,19.040000000000003,1,2.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835183579,2,86,12,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,55.964999999999996,66.436,1,1.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835196903,2,89,10,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,7h6w0i7ebl5pew0v1j8ipin10,G. Reiziger,29.61,22.644,1,1.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835189253,2,91,54,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,10.605,9.724000000000002,0,0.0,turnover,False,0.0
+2025-08-15_SC Telstar - PEC Zwolle,2835190103,2,92,43,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,13.23,43.724000000000004,5,10.0,window_expired,False,1.1731856293231702e-05

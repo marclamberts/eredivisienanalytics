@@ -1,0 +1,7 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-21_FC Volendam - Sparta Rotterdam,2885395771,1,0,20,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,27.930000000000003,21.692,1,1.0,turnover,False,0.0
+2025-12-21_FC Volendam - Sparta Rotterdam,2885409263,1,21,33,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,26.46,40.800000000000004,1,1.0,turnover,False,0.0
+2025-12-21_FC Volendam - Sparta Rotterdam,2885411449,1,25,13,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,34.65,48.348,0,0.0,turnover,False,0.0
+2025-12-21_FC Volendam - Sparta Rotterdam,2885413079,1,28,5,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,32.76,61.404,1,1.0,turnover,False,0.0
+2025-12-21_FC Volendam - Sparta Rotterdam,2885618721,1,28,9,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,7ty1wdxxnusgkl34k5raipbl5,M. van Bergen,43.68000000000001,14.484000000000002,2,7.0,window_expired,False,0.0003968948877267
+2025-12-21_FC Volendam - Sparta Rotterdam,2885619805,2,46,51,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,29.294999999999998,61.744,0,0.0,turnover,False,0.0

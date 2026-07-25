@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883013753,1,4,54,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,35.385000000000005,55.828,2,3.0,turnover,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883014595,1,5,54,dac758ef858jbq7pcb3gfwite,Heracles Almelo,f2snk84xy67ergwrwoblgt2ad,T. Bruns,31.5,9.928,2,2.0,turnover,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883019305,1,11,49,dac758ef858jbq7pcb3gfwite,Heracles Almelo,f2snk84xy67ergwrwoblgt2ad,T. Bruns,12.495000000000001,61.744,1,0.0,turnover,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883027903,1,24,2,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,72.66000000000001,7.48,5,9.0,window_expired,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883028701,1,25,39,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,33.285000000000004,52.904,4,9.0,window_expired,False,0.00014844871437187657
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883028999,1,26,9,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,b0me6l44boibnwpbtasxoy02x,S. Dest,14.490000000000002,30.328000000000003,5,10.0,window_expired,False,0.00010131250230144273
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883030199,1,28,32,dac758ef858jbq7pcb3gfwite,Heracles Almelo,ait187bpr8we72jvfxxt6ttjp,M. te Wierik,30.345,6.596,7,10.0,window_expired,False,9.036988184628336e-05
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883037893,1,43,46,dac758ef858jbq7pcb3gfwite,Heracles Almelo,bzsoq42nf6sgdh9oe64n7rnfu,B. Limbombe,54.495,7.956,0,0.0,turnover,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883048571,2,45,18,dac758ef858jbq7pcb3gfwite,Heracles Almelo,ait187bpr8we72jvfxxt6ttjp,M. te Wierik,85.995,2.5160000000000005,3,9.0,window_expired,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883054651,2,54,25,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,40.74,19.380000000000003,0,0.0,turnover,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883059051,2,60,58,dac758ef858jbq7pcb3gfwite,Heracles Almelo,9y5kirmp6gcrsy2s1pinhkqy2,L. Kulenović,59.43000000000001,20.672,2,2.0,turnover,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883061341,2,64,56,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,b0me6l44boibnwpbtasxoy02x,S. Dest,59.745000000000005,5.372000000000001,0,0.0,turnover,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883074397,2,87,13,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6lyedmu2vuf7jig3jmhz9b4ve,D. van der Kust,38.85,61.744,2,1.0,turnover,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883074425,2,87,15,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,59.43000000000001,6.664000000000001,0,0.0,turnover,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883075283,2,89,5,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,15.120000000000001,26.044,1,1.0,turnover,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883075385,2,89,18,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,21.419999999999998,39.508,0,0.0,turnover,False,0.0
+2025-12-13_PSV Eindhoven - Heracles Almelo,2883075401,2,89,24,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,8.925,47.124,0,0.0,turnover,False,0.0

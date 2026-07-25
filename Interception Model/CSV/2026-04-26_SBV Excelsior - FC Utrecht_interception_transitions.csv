@@ -1,0 +1,24 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-26_SBV Excelsior - FC Utrecht,2929525317,1,2,39,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,34.545,4.08,1,1.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929526287,1,5,3,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,69.825,38.624,0,0.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929526559,1,5,39,ccpscwdcm65czscrun048ecn5,FC Utrecht,8tqsvu5sw6kn014hdv88zppm1,N. Vesterlund,79.69500000000001,2.652,3,8.0,window_expired,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929526681,1,5,55,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,33.18,45.492000000000004,1,1.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929527273,1,7,5,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,62.475,58.82000000000001,0,0.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929527551,1,7,45,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,39.06,9.792000000000002,3,3.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929529171,1,12,0,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,26.880000000000003,54.33200000000001,3,6.0,window_expired,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929529335,1,12,29,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,70.35000000000001,17.136,1,2.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929529999,1,14,0,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,32.76,43.044000000000004,0,0.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929533917,1,21,28,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,40.32,62.49200000000001,0,0.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929535127,1,23,7,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,44.625,64.736,3,7.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929537787,1,29,46,ccpscwdcm65czscrun048ecn5,FC Utrecht,2tc8y9du64tjno62zll2jhy7e,Y. Cathline,49.035000000000004,62.696000000000005,1,1.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929545281,1,45,46,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,45.885000000000005,49.368,0,0.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929559215,2,46,6,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,65.415,16.116,4,8.0,window_expired,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929560445,2,47,40,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,41.79,9.044,2,3.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929564481,2,53,3,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,36.855000000000004,55.488,5,9.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929568089,2,58,3,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5nhideyjwp2347ryi1n9wfq50,D. Sanches Fernandes,32.865,21.828000000000003,6,8.0,window_expired,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929573145,2,63,7,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,39.58500000000001,18.632,0,0.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929578913,2,68,28,ccpscwdcm65czscrun048ecn5,FC Utrecht,bw2pkqwfuxonrsgdpxr5f3384,E. Adiele,14.175,41.072,4,9.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929579033,2,68,38,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,66.15,41.61600000000001,3,4.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929604851,2,72,37,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5nhideyjwp2347ryi1n9wfq50,D. Sanches Fernandes,70.56,5.372000000000001,4,4.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929586689,2,77,22,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,61.635000000000005,3.5360000000000005,1,1.0,turnover,False,0.0
+2026-04-26_SBV Excelsior - FC Utrecht,2929596925,2,90,58,ccpscwdcm65czscrun048ecn5,FC Utrecht,bw2pkqwfuxonrsgdpxr5f3384,E. Adiele,39.795,54.944,3,3.0,turnover,False,0.0

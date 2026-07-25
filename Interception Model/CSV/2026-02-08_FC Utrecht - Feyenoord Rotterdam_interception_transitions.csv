@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897920551,1,4,38,ccpscwdcm65czscrun048ecn5,FC Utrecht,b33sm106xc7g3h4bcqtawja7e,C. Bozdoğan,13.965000000000002,46.784,2,1.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897923837,1,16,33,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,70.875,10.608,7,9.0,window_expired,False,0.0032087851977315
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897924185,1,17,52,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,15.540000000000001,8.364,1,0.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897924235,1,18,4,ccpscwdcm65czscrun048ecn5,FC Utrecht,8tqsvu5sw6kn014hdv88zppm1,N. Vesterlund,10.709999999999999,16.252,2,3.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897924257,1,18,9,ccpscwdcm65czscrun048ecn5,FC Utrecht,b33sm106xc7g3h4bcqtawja7e,C. Bozdoğan,32.97,19.244000000000003,1,3.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897926129,1,24,40,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,11.865000000000002,1.292,2,1.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897929361,1,36,4,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,38.115,61.608000000000004,0,0.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897929807,1,37,53,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,49.875,19.788000000000004,4,7.0,turnover,False,0.0562981682489534
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897930893,1,42,34,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,59.22,54.128,0,0.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897931299,1,44,30,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,34.230000000000004,45.016000000000005,3,6.0,window_expired,False,0.0012628300276657986
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897941389,2,47,17,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,41.475,17.0,0,0.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897943129,2,50,28,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,987w8p2dsxd9tm1phv18g6pec,A. Sliti,91.35000000000001,60.52,0,0.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897945611,2,54,36,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,70.14,60.11200000000001,1,3.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897946249,2,55,47,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,46.515,62.628,0,0.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897947827,2,58,29,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,1pezvbb0n8z7hu5063jysg2s4,L. Sauer,64.575,58.412000000000006,1,1.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897947873,2,58,32,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,33.915,44.132000000000005,2,6.0,window_expired,False,9.246090362786952e-05
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897952007,2,64,34,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,32.235,18.156000000000002,0,0.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897954337,2,67,52,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,66.885,28.560000000000002,4,4.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897954439,2,67,58,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,21.105000000000004,40.596000000000004,0,0.0,turnover,False,0.0
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897969281,2,91,51,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,17.85,28.424,2,0.0,turnover,False,2.4934608953697257e-05
+2026-02-08_FC Utrecht - Feyenoord Rotterdam,2897969387,2,91,54,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,74.76,29.988000000000003,1,2.0,turnover,False,0.0093383669386176

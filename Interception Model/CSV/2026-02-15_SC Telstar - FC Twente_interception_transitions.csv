@@ -1,0 +1,29 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-15_SC Telstar - FC Twente,2900731243,1,2,11,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,51.03,11.152,2,9.0,window_expired,False,0.0157921452127118
+2026-02-15_SC Telstar - FC Twente,2900681155,1,2,49,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,71.925,36.04,2,2.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900683063,1,4,46,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,36.645,51.34,3,8.0,turnover,False,0.0059439730144091995
+2026-02-15_SC Telstar - FC Twente,2900686777,1,8,33,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,69.615,12.512,2,1.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900696001,1,18,57,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4fu2agdclsyxx1boxxibauzo4,G. Alders,39.480000000000004,7.548,0,0.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900696871,1,20,0,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,dk7zyk16nsnh0czeky7vi0x78,S. van Duijn,45.675000000000004,59.976000000000006,4,10.0,window_expired,False,0.0005520259445678
+2026-02-15_SC Telstar - FC Twente,2900697345,1,20,33,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4fu2agdclsyxx1boxxibauzo4,G. Alders,19.635,12.376000000000001,0,0.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900697613,1,20,54,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,18.69,53.720000000000006,0,0.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900699777,1,24,14,4tic29sox7m39fy1ztgv0jsiq,FC Twente,cocgd3hh74fq9c30x9bps4idw,S. Lemkin,42.73500000000001,39.57600000000001,0,0.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900700893,1,26,5,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,48.195,54.67200000000001,1,2.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900702537,1,28,42,4tic29sox7m39fy1ztgv0jsiq,FC Twente,6wwk8y9mklkh8x606ynhe1lp0,S. Ørjasæter,25.41,64.328,0,0.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900704607,1,30,49,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4fu2agdclsyxx1boxxibauzo4,G. Alders,69.615,6.256,4,6.0,turnover,True,0.0717312889253926
+2026-02-15_SC Telstar - FC Twente,2900707275,1,33,0,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,18.27,22.644,1,2.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900707685,1,33,17,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,25.200000000000003,17.204,3,4.0,turnover,False,0.000191452652708
+2026-02-15_SC Telstar - FC Twente,2900707889,1,33,26,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,57.435,61.608000000000004,3,1.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900716529,1,40,6,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,27.51,61.744,4,10.0,window_expired,False,0.00048258939274814364
+2026-02-15_SC Telstar - FC Twente,2900753385,2,52,28,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,26.46,44.268,0,0.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900755253,2,53,58,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,dk7zyk16nsnh0czeky7vi0x78,S. van Duijn,40.74,46.852000000000004,2,4.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900755375,2,54,5,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,23.1,48.348,0,0.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900761573,2,59,0,4tic29sox7m39fy1ztgv0jsiq,FC Twente,cocgd3hh74fq9c30x9bps4idw,S. Lemkin,31.185000000000002,9.996,0,0.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900774069,2,75,0,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,1.5750000000000002,57.120000000000005,4,4.0,window_expired,False,0.0006800061441638
+2026-02-15_SC Telstar - FC Twente,2900804825,2,79,23,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,16.485,37.80800000000001,0,0.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900780059,2,79,45,4tic29sox7m39fy1ztgv0jsiq,FC Twente,qobf1v5kwuz6hj2ooixfw4mi,B. van Rooij,78.96000000000001,11.288000000000002,0,0.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900789357,2,86,38,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,7.9799999999999995,15.844000000000001,5,7.0,window_expired,False,3.292822515295335e-05
+2026-02-15_SC Telstar - FC Twente,2900790149,2,87,14,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,65.415,54.808,0,0.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900791563,2,88,20,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,61.425000000000004,55.624,3,9.0,window_expired,False,0.0030586219072524
+2026-02-15_SC Telstar - FC Twente,2900792031,2,88,41,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,50130ztne7nsfs9fxf0am6vv9,D. Mertens,10.5,47.19200000000001,1,1.0,turnover,False,0.0
+2026-02-15_SC Telstar - FC Twente,2900792969,2,89,22,4tic29sox7m39fy1ztgv0jsiq,FC Twente,qobf1v5kwuz6hj2ooixfw4mi,B. van Rooij,39.795,16.864,0,0.0,turnover,False,0.0

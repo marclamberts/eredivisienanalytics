@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-18_Heracles Almelo - FC Twente,2890632069,1,0,41,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,31.5,64.19200000000001,2,0.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890633027,1,2,5,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,36.96000000000001,16.32,0,0.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890633591,1,2,59,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,40.005,48.620000000000005,1,4.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890639751,1,12,36,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,19.215,7.752000000000001,1,2.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890641511,1,15,43,4tic29sox7m39fy1ztgv0jsiq,FC Twente,cocgd3hh74fq9c30x9bps4idw,S. Lemkin,62.580000000000005,9.588000000000001,2,1.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890643675,1,19,41,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,16.59,48.75600000000001,0,0.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890645983,1,25,9,4tic29sox7m39fy1ztgv0jsiq,FC Twente,qobf1v5kwuz6hj2ooixfw4mi,B. van Rooij,32.550000000000004,2.584,3,5.0,turnover,False,0.0001677758412666
+2026-01-18_Heracles Almelo - FC Twente,2890647177,1,28,10,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,27.72,16.592,3,4.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890647601,1,28,43,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,45.36000000000001,52.904,0,0.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890658645,1,30,55,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,65.94,10.948000000000002,0,0.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890660421,1,33,18,4tic29sox7m39fy1ztgv0jsiq,FC Twente,lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,37.800000000000004,46.308,0,0.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890660849,1,33,59,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,59.85,4.964,0,0.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890666597,1,42,47,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,77.59500000000001,40.392,0,0.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890667835,1,44,36,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,60.900000000000006,59.908,0,0.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890682643,2,49,40,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,41.685,13.600000000000001,3,8.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890699719,2,75,54,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,23.52,52.156000000000006,4,4.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890705847,2,82,57,dac758ef858jbq7pcb3gfwite,Heracles Almelo,1xsy3m0bzicto5ogxsd026bmy,E. Ahlstrand,12.600000000000001,6.256,1,0.0,turnover,False,0.0
+2026-01-18_Heracles Almelo - FC Twente,2890717315,2,95,19,dac758ef858jbq7pcb3gfwite,Heracles Almelo,f2snk84xy67ergwrwoblgt2ad,T. Bruns,11.97,48.620000000000005,1,2.0,turnover,False,0.0

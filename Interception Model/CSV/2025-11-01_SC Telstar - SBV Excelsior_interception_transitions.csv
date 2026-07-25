@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-01_SC Telstar - SBV Excelsior,2867647385,1,7,16,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,25.095,37.80800000000001,0,0.0,turnover,False,0.0
+2025-11-01_SC Telstar - SBV Excelsior,2867647987,1,7,50,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,63.0,60.79200000000001,4,6.0,turnover,False,0.0020104367720275
+2025-11-01_SC Telstar - SBV Excelsior,2867654389,1,13,40,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,66.045,61.268,0,0.0,turnover,False,0.0
+2025-11-01_SC Telstar - SBV Excelsior,2867663107,1,21,39,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,34.125,46.988,0,0.0,turnover,False,0.0
+2025-11-01_SC Telstar - SBV Excelsior,2867663267,1,21,44,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,65.52,48.96,0,0.0,turnover,False,0.0
+2025-11-01_SC Telstar - SBV Excelsior,2867665631,1,23,53,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1zybkcmp40td92a6yg8sw9uga,T. Owusu,37.905,46.92,2,2.0,turnover,False,0.0
+2025-11-01_SC Telstar - SBV Excelsior,2867686787,1,45,1,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,38.85,58.888,2,2.0,turnover,False,9.956792601253928e-06
+2025-11-01_SC Telstar - SBV Excelsior,2867689719,1,47,51,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,31.185000000000002,13.736,1,5.0,turnover,False,0.0
+2025-11-01_SC Telstar - SBV Excelsior,2868281923,2,57,18,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,14.91,38.624,0,0.0,turnover,False,0.0
+2025-11-01_SC Telstar - SBV Excelsior,2867727983,2,84,18,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1vn6w1mjdztfks75bxn0hk7x0,S. Hetli,4.83,45.288,1,1.0,turnover,False,0.0
+2025-11-01_SC Telstar - SBV Excelsior,2867734745,2,87,30,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,43.260000000000005,17.204,5,9.0,window_expired,False,0.0181405504065197
+2025-11-01_SC Telstar - SBV Excelsior,2867730379,2,88,59,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,69.405,31.416000000000004,0,0.0,turnover,False,0.0

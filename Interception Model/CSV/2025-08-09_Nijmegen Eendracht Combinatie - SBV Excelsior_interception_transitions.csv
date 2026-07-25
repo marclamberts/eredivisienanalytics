@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833008517,1,7,55,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,2vfhae70oyyzm0qttlckworqi,A. Carlén,13.86,27.064,2,1.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833009613,1,8,40,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,58.905,60.724000000000004,1,0.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833024231,1,24,49,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,35.175000000000004,40.93600000000001,2,2.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833027273,1,32,15,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,14.490000000000002,37.944,0,0.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833038405,1,39,6,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,45.255,21.012,0,0.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833043157,1,40,8,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,44.52,56.71200000000001,5,4.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833041825,1,41,15,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,f314a9y83ou7l9imhnbp4f6dw,S. Middendorp,76.02000000000001,7.548,1,1.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833049681,1,46,12,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,19.740000000000002,22.848000000000003,2,1.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833083165,2,48,5,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,45.36000000000001,62.628,0,0.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833095409,2,55,14,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5nhideyjwp2347ryi1n9wfq50,D. Sanches Fernandes,67.83,28.492,0,0.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833108125,2,63,36,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,a76yp8gkkg6frtuhh3d6l46i,D. Proper,24.675,23.596000000000004,2,2.0,turnover,False,0.0002423888291977
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833128431,2,86,31,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,424ohpqxpz31dlopxxamyk9as,Yoon Do-Young,40.005,24.072,4,5.0,turnover,False,9.748511096153988e-05
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833128555,2,86,40,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,247ipjjd0cak2sggwbuorx4yy,B. Pereira,57.12,24.956000000000003,0,0.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833131257,2,89,39,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,70.35000000000001,29.92,3,4.0,turnover,False,0.0
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833132901,2,91,21,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,amd4x99ed8bsx9kl01j0k12c4,S. de Laat,24.675,43.656000000000006,3,8.0,turnover,False,0.0001830704997852

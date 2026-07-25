@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899157757,1,8,36,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,15.225000000000001,20.060000000000002,4,7.0,window_expired,False,0.00047569340706870005
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899161015,1,22,14,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,31.290000000000003,15.028000000000002,1,0.0,turnover,False,0.0
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899161497,1,23,32,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,34.125,49.844,6,10.0,window_expired,False,0.0002704709091180656
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899163789,1,30,13,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,31.185000000000002,30.94,0,0.0,turnover,False,0.0
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899165011,1,33,17,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,30.765,57.800000000000004,0,0.0,turnover,False,0.0
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899164771,1,33,23,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d4klz2gxqb1diw57z8c9ttixg,G. van Zwam,48.615,4.284,1,1.0,turnover,False,0.0
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899166037,1,37,41,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,48.300000000000004,17.816000000000003,4,4.0,turnover,False,6.168074575772786e-05
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899166085,1,37,53,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,2teefpvijsbzag4yi7fm1pyol,A. Sampsted,11.865000000000002,37.196000000000005,0,0.0,turnover,False,0.0
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899166861,1,40,54,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,5oghztk07za2yuqq4jnav22y2,M. Rivera,15.015,34.136,0,0.0,turnover,False,0.0
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899168253,1,45,47,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,5oghztk07za2yuqq4jnav22y2,M. Rivera,68.04,41.548,0,0.0,turnover,False,0.0
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899168643,1,47,40,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,9.03,19.584000000000003,2,2.0,turnover,False,0.0
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899174115,2,48,45,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,49.56,12.376000000000001,1,2.0,turnover,False,0.0
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899178265,2,64,38,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,a2psnkhu3h7m0ng8e7qdietey,S. Tengstedt,57.015,24.276000000000003,4,9.0,turnover,False,0.0
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899178943,2,66,27,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b4efh7m2z28zc5gx250vvdzze,L. Nordås,81.06,48.620000000000005,3,10.0,window_expired,False,0.0080689594969739
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899180169,2,69,23,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,57.12,9.044,0,0.0,turnover,False,0.0
+2026-02-11_Go Ahead Eagles - SC Heerenveen,2899186483,2,86,52,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,ar7llmzju08n8yrqu8xm1thck,O. Braude,49.875,6.392,0,0.0,turnover,False,0.0

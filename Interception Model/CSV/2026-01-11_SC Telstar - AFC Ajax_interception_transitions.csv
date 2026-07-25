@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-11_SC Telstar - AFC Ajax,2888862837,1,6,23,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,29.925,58.412000000000006,0,0.0,turnover,False,0.0
+2026-01-11_SC Telstar - AFC Ajax,2888863521,1,8,1,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,44.625,36.720000000000006,4,4.0,turnover,False,0.002931501140478
+2026-01-11_SC Telstar - AFC Ajax,2888867149,1,16,13,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,cx6fxszjvjam6zb3c3p0dd1jo,M. Godts,42.105000000000004,40.93600000000001,5,8.0,window_expired,False,7.887268659821645e-05
+2026-01-11_SC Telstar - AFC Ajax,2888867307,1,16,48,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,20.790000000000003,26.928000000000004,1,2.0,turnover,False,0.0
+2026-01-11_SC Telstar - AFC Ajax,2888868253,1,19,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,13.23,25.296000000000003,4,6.0,turnover,False,0.0002247063360141
+2026-01-11_SC Telstar - AFC Ajax,2888870645,1,27,53,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,41.265,18.360000000000003,0,0.0,turnover,False,0.0
+2026-01-11_SC Telstar - AFC Ajax,2888870669,1,27,59,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,35.07,18.632,1,4.0,turnover,False,0.0
+2026-01-11_SC Telstar - AFC Ajax,2888871575,1,30,1,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,23.730000000000004,20.604000000000003,0,0.0,turnover,False,0.0
+2026-01-11_SC Telstar - AFC Ajax,2888872521,1,32,0,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,63.42,6.596,1,0.0,turnover,False,0.0
+2026-01-11_SC Telstar - AFC Ajax,2888872909,1,32,47,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,58.800000000000004,6.324000000000001,1,1.0,turnover,False,0.0
+2026-01-11_SC Telstar - AFC Ajax,2888877617,1,42,12,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,8hgpvnzy2mra3ps209tniq7f8,O. Gloukh,59.43000000000001,25.976000000000003,0,0.0,turnover,False,0.0
+2026-01-11_SC Telstar - AFC Ajax,2888878561,1,43,45,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,27.405,40.052,4,4.0,turnover,False,3.601381210223409e-05
+2026-01-11_SC Telstar - AFC Ajax,2888878897,1,44,42,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,14csdlb8p0tnj6zqrs148ct1w,J. Ritmeester van de Kamp,30.66,15.708000000000002,3,3.0,turnover,False,0.0001635760905518
+2026-01-11_SC Telstar - AFC Ajax,2888900481,2,62,22,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,33.495,55.964,1,1.0,turnover,False,0.0
+2026-01-11_SC Telstar - AFC Ajax,2888906823,2,75,31,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3rve12v22lh39aaqgjlwlmhas,D. Konadu,67.72500000000001,12.988000000000001,5,10.0,window_expired,False,0.00013238006577105665
+2026-01-11_SC Telstar - AFC Ajax,2888907655,2,77,6,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,2.94,30.464,1,3.0,window_expired,True,0.0
+2026-01-11_SC Telstar - AFC Ajax,2888914279,2,88,34,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,55.230000000000004,48.824,3,6.0,window_expired,False,0.0001871593777663
+2026-01-11_SC Telstar - AFC Ajax,2888915099,2,90,7,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,45.36000000000001,53.788,3,4.0,window_expired,False,0.0024513778373837993
+2026-01-11_SC Telstar - AFC Ajax,2888917779,2,95,21,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,14.700000000000001,19.584000000000003,4,10.0,window_expired,False,0.0
+2026-01-11_SC Telstar - AFC Ajax,2888918305,2,96,20,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7dkhv2l8y6jq20l1dc2ye17je,O. Edvardsen,32.97,8.364,3,3.0,turnover,False,4.991459910658192e-05

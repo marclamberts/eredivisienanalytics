@@ -1,0 +1,25 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-13_AFC Ajax - PEC Zwolle,2845351571,1,2,29,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,22.575,14.280000000000001,1,2.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845358483,1,5,20,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,61.53,9.996,0,0.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845358507,1,5,21,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,32.34,59.228,3,9.0,turnover,True,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845361513,1,6,39,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,24.465000000000003,18.836000000000002,1,1.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845391763,1,19,49,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,8.61,14.416,4,3.0,turnover,False,5.3106620141046834e-05
+2025-09-13_AFC Ajax - PEC Zwolle,2845393417,1,21,12,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,55.230000000000004,53.516000000000005,0,0.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845394549,1,22,15,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6u7z5qrlwzl9aug8awejq37xl,Jamiro Monteiro,18.375,47.39600000000001,0,0.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845413349,1,37,39,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,38.745,2.924,0,0.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845415911,1,38,49,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,24.78,52.088,1,0.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845416857,1,39,11,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,38.535000000000004,11.22,1,1.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845419703,1,40,23,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,68.67000000000002,34.476000000000006,2,1.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845428951,1,44,23,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7joybllup4h9oe6zfhcepjy6t,S. Berghuis,76.65,61.132000000000005,7,10.0,window_expired,False,0.0010184696111006
+2025-09-13_AFC Ajax - PEC Zwolle,2845430685,1,45,10,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,59.64,21.42,0,0.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845479045,2,48,25,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,65.94,13.260000000000002,0,0.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845488541,2,52,27,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,42.63,49.64,3,1.0,turnover,False,0.0010232447296330063
+2025-09-13_AFC Ajax - PEC Zwolle,2845489785,2,52,56,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,25.725,30.26,0,0.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845493527,2,54,35,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,31.395,30.872,3,3.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845493675,2,54,38,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,34.44,34.408,2,1.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845508893,2,61,14,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,cx6fxszjvjam6zb3c3p0dd1jo,M. Godts,15.75,44.744,1,1.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845512927,2,63,8,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,64.47,45.696000000000005,2,6.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845515811,2,64,34,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,34.33500000000001,30.94,0,0.0,turnover,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845516101,2,64,44,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,9.555,45.696000000000005,2,2.0,window_expired,False,0.0
+2025-09-13_AFC Ajax - PEC Zwolle,2845516843,2,65,6,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,66.885,23.12,6,9.0,window_expired,False,0.009613583603851
+2025-09-13_AFC Ajax - PEC Zwolle,2845530835,2,76,27,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,cx6fxszjvjam6zb3c3p0dd1jo,M. Godts,75.705,41.208000000000006,3,2.0,turnover,False,0.0

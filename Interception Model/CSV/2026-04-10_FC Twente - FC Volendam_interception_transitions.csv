@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-10_FC Twente - FC Volendam,2921747423,1,3,51,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,59.43000000000001,34.0,4,10.0,window_expired,False,0.0003245966365681
+2026-04-10_FC Twente - FC Volendam,2921761087,1,17,32,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,57.96000000000001,28.084,4,8.0,window_expired,False,0.0006536112885795134
+2026-04-10_FC Twente - FC Volendam,2921992725,1,24,52,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4ezldqmn62ggasx6pniqbfwno,J. Ideho,33.6,52.7,0,0.0,turnover,False,0.0
+2026-04-10_FC Twente - FC Volendam,2921770033,1,28,17,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,37.48500000000001,59.092000000000006,2,6.0,turnover,False,0.018110964858601
+2026-04-10_FC Twente - FC Volendam,2921773643,1,32,14,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,76.755,59.228,0,0.0,turnover,False,0.0
+2026-04-10_FC Twente - FC Volendam,2921777603,1,36,15,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,63.525000000000006,51.204,2,4.0,turnover,False,0.0
+2026-04-10_FC Twente - FC Volendam,2921801927,2,46,0,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,eu901b75l2ly5p48jdw6kwmad,M. Amevor,26.775000000000002,29.92,0,0.0,window_expired,False,0.0
+2026-04-10_FC Twente - FC Volendam,2921809115,2,51,47,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,19.425,34.476000000000006,1,1.0,turnover,False,0.0
+2026-04-10_FC Twente - FC Volendam,2921816999,2,58,21,4tic29sox7m39fy1ztgv0jsiq,FC Twente,36veg0wk1z3om89daf0clbl5h,R. van Wolfswinkel,47.88,18.088,0,0.0,turnover,False,0.0
+2026-04-10_FC Twente - FC Volendam,2921820945,2,62,0,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,9m3115fhbxgjwfr9stchwvytw,L. Blondeau,56.80500000000001,65.348,1,1.0,turnover,False,0.0
+2026-04-10_FC Twente - FC Volendam,2921826573,2,67,31,4tic29sox7m39fy1ztgv0jsiq,FC Twente,c7n2b2gq381k0o0jizqueii5m,M. Kjølø,78.855,41.276,0,0.0,turnover,False,0.0
+2026-04-10_FC Twente - FC Volendam,2921836055,2,76,51,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,41.895,52.496,1,2.0,turnover,False,0.0
+2026-04-10_FC Twente - FC Volendam,2921841217,2,82,13,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,32.025,62.016000000000005,0,0.0,turnover,False,0.0
+2026-04-10_FC Twente - FC Volendam,2921847593,2,89,8,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,30.135,59.976000000000006,1,2.0,turnover,False,0.0
+2026-04-10_FC Twente - FC Volendam,2922491609,2,92,39,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bner5siqnwn1fqusfrgujt0fe,M. Bruns,27.615000000000002,4.964,2,5.0,turnover,False,0.0

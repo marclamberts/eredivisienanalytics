@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-03_PEC Zwolle - Heracles Almelo,2932841791,1,5,51,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d29ahwtvs7ls75wdtkf7xr8tm,Z. Buurmeester,76.33500000000001,62.900000000000006,2,2.0,turnover,False,0.0
+2026-05-03_PEC Zwolle - Heracles Almelo,2932844683,1,8,7,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,12.705,59.636,1,1.0,turnover,False,0.0
+2026-05-03_PEC Zwolle - Heracles Almelo,2932845445,1,8,44,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,20.475,56.916000000000004,2,1.0,turnover,False,0.0
+2026-05-03_PEC Zwolle - Heracles Almelo,2932847269,1,10,15,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,22.155,62.628,1,2.0,window_expired,False,0.0
+2026-05-03_PEC Zwolle - Heracles Almelo,2932848037,1,10,52,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,48.510000000000005,56.168,0,0.0,turnover,False,0.0
+2026-05-03_PEC Zwolle - Heracles Almelo,2932858327,1,20,29,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,19.425,2.4480000000000004,2,3.0,turnover,False,0.0
+2026-05-03_PEC Zwolle - Heracles Almelo,2932861197,1,23,44,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,22.47,12.444,3,2.0,turnover,False,0.0
+2026-05-03_PEC Zwolle - Heracles Almelo,2932902493,2,50,56,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,42.945,4.760000000000001,5,8.0,turnover,False,0.0
+2026-05-03_PEC Zwolle - Heracles Almelo,2932906713,2,55,52,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,34.125,33.32,2,4.0,window_expired,False,0.0
+2026-05-03_PEC Zwolle - Heracles Almelo,2932908415,2,57,52,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6nd0ifv6ljza9nauxcpejqzft,O. Velanas,23.94,21.284000000000002,1,2.0,turnover,False,0.0
+2026-05-03_PEC Zwolle - Heracles Almelo,2932920309,2,76,15,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,41.685,55.35200000000001,0,0.0,turnover,False,0.0
+2026-05-03_PEC Zwolle - Heracles Almelo,2932930937,2,87,4,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,42.0,3.5360000000000005,0,0.0,turnover,False,0.0

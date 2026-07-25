@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836188245,1,0,23,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,35qg0rrwtl00pycx468s62m3u,K. Taylor,71.61,63.03600000000001,0,0.0,turnover,False,0.0
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836189577,1,9,3,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,14.175,29.104,1,2.0,turnover,False,0.0
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836192229,1,24,35,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7joybllup4h9oe6zfhcepjy6t,S. Berghuis,33.81,14.620000000000001,1,2.0,turnover,False,0.0
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836192321,1,25,3,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7joybllup4h9oe6zfhcepjy6t,S. Berghuis,39.375,11.356,0,0.0,turnover,False,0.0
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836195027,1,38,11,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,2ekx0fvuf0dsat062oj430d05,G. Nauber,81.375,7.004000000000001,5,5.0,turnover,False,0.0279598721819242
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836195889,1,42,18,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,2ekx0fvuf0dsat062oj430d05,G. Nauber,68.67000000000002,38.89600000000001,5,10.0,window_expired,False,0.0026299513150829
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836196003,1,42,40,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,9.975,7.004000000000001,1,1.0,turnover,False,0.0
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836206091,2,54,38,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,35qg0rrwtl00pycx468s62m3u,K. Taylor,34.964999999999996,47.668,0,0.0,turnover,False,0.0
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836205921,2,55,1,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,23.31,27.472,1,4.0,turnover,False,0.0
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836210839,2,65,0,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,35qg0rrwtl00pycx468s62m3u,K. Taylor,12.705,55.01200000000001,3,4.0,turnover,False,2.920973633716017e-05
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836211811,2,66,53,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,35qg0rrwtl00pycx468s62m3u,K. Taylor,65.625,39.848000000000006,4,4.0,turnover,True,0.0
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836216299,2,78,38,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,36.225,26.928000000000004,5,10.0,window_expired,False,0.0011271906008066
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836218551,2,83,28,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,23.625,4.692,0,0.0,turnover,False,0.0
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836219049,2,84,16,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,32.865,49.164,0,0.0,turnover,False,0.0
+2025-08-17_Go Ahead Eagles - AFC Ajax,2836222629,2,88,37,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7dkhv2l8y6jq20l1dc2ye17je,O. Edvardsen,69.405,26.588000000000005,0,0.0,turnover,False,0.0

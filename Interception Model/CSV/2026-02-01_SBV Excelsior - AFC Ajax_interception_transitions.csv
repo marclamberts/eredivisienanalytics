@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-01_SBV Excelsior - AFC Ajax,2895216329,1,7,5,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,57.330000000000005,36.652,2,2.0,turnover,False,0.0
+2026-02-01_SBV Excelsior - AFC Ajax,2895216621,1,8,42,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,36.96000000000001,26.248,0,0.0,turnover,False,0.0
+2026-02-01_SBV Excelsior - AFC Ajax,2895217641,1,14,25,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,74.865,47.804,4,7.0,turnover,False,0.0
+2026-02-01_SBV Excelsior - AFC Ajax,2895217973,1,15,50,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,12.075000000000001,51.61200000000001,2,3.0,turnover,False,0.0
+2026-02-01_SBV Excelsior - AFC Ajax,2895233417,1,17,43,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,70.77000000000001,45.764,5,9.0,window_expired,False,0.0015106484098239001
+2026-02-01_SBV Excelsior - AFC Ajax,2895232751,1,18,16,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,60.27,63.85200000000001,0,0.0,turnover,False,0.0
+2026-02-01_SBV Excelsior - AFC Ajax,2895223583,1,31,2,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,7.665,39.916000000000004,2,3.0,turnover,False,0.0
+2026-02-01_SBV Excelsior - AFC Ajax,2895224413,1,32,57,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,23.1,21.42,0,0.0,turnover,False,0.0
+2026-02-01_SBV Excelsior - AFC Ajax,2895225773,1,36,28,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,37.695,32.912,6,10.0,window_expired,False,7.062405866954669e-05
+2026-02-01_SBV Excelsior - AFC Ajax,2895244919,2,50,28,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,88.83,16.388,5,10.0,window_expired,False,0.0038451183198175
+2026-02-01_SBV Excelsior - AFC Ajax,2895248641,2,57,13,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,27.51,42.772000000000006,4,7.0,window_expired,False,0.0005226492767066
+2026-02-01_SBV Excelsior - AFC Ajax,2895249055,2,57,57,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,67.83,20.468000000000004,0,0.0,turnover,False,0.0
+2026-02-01_SBV Excelsior - AFC Ajax,2895253683,2,64,53,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,58.905,17.34,4,5.0,turnover,False,0.003961746179378
+2026-02-01_SBV Excelsior - AFC Ajax,2895263457,2,77,56,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,31.185000000000002,30.464,0,0.0,turnover,False,0.0
+2026-02-01_SBV Excelsior - AFC Ajax,2895264645,2,80,3,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,58.695,51.476000000000006,0,0.0,turnover,False,0.0
+2026-02-01_SBV Excelsior - AFC Ajax,2895265215,2,81,0,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,53.550000000000004,19.992,4,10.0,window_expired,False,0.0
+2026-02-01_SBV Excelsior - AFC Ajax,2895274807,2,94,1,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,18.480000000000004,33.524,3,5.0,turnover,False,0.0002268135315691

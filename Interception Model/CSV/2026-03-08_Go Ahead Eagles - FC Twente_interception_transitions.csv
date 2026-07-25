@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-08_Go Ahead Eagles - FC Twente,2908883755,1,0,38,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,46.30500000000001,15.368000000000002,0,0.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908895379,1,15,50,4tic29sox7m39fy1ztgv0jsiq,FC Twente,9nix5y8xcj34ps62r34udtqwa,K. Hlynsson,55.650000000000006,14.892,3,10.0,window_expired,False,0.000104300940994
+2026-03-08_Go Ahead Eagles - FC Twente,2908897709,1,19,20,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,83.16000000000001,5.576,1,2.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908907621,1,35,8,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,19.425,61.404,0,0.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908917301,1,43,28,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,86.73,55.556000000000004,2,2.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908919815,1,45,31,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5m8pflpgynidzk7d9507oujje,D. Rots,72.135,13.260000000000002,0,0.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908935937,2,45,47,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,eytcfp4cu6qkar65kf0p5rm96,J. Dirksen,25.305000000000003,38.964,2,3.0,turnover,False,0.0002008362618726
+2026-03-08_Go Ahead Eagles - FC Twente,2908938597,2,48,45,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,45.045,48.75600000000001,0,0.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908939193,2,49,24,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,eytcfp4cu6qkar65kf0p5rm96,J. Dirksen,15.75,23.664,0,0.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908947745,2,58,16,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,34.65,56.78,3,2.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908949285,2,59,40,4tic29sox7m39fy1ztgv0jsiq,FC Twente,qobf1v5kwuz6hj2ooixfw4mi,B. van Rooij,13.65,12.036,1,1.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908966419,2,85,48,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,30.87,45.83200000000001,2,1.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908973223,2,92,54,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5m8pflpgynidzk7d9507oujje,D. Rots,26.669999999999998,25.840000000000003,1,1.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908973911,2,93,38,4tic29sox7m39fy1ztgv0jsiq,FC Twente,lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,42.525,40.120000000000005,0,0.0,turnover,False,0.0
+2026-03-08_Go Ahead Eagles - FC Twente,2908974129,2,93,51,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,14.595,18.292,2,5.0,turnover,False,5.226869595555128e-05

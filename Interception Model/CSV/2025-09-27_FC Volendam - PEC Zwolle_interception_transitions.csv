@@ -1,0 +1,8 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-27_FC Volendam - PEC Zwolle,2852266163,1,5,29,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,89plvrt8pzppcclh4axvii0ru,A. Plat,54.915,18.156000000000002,0,0.0,turnover,False,0.0
+2025-09-27_FC Volendam - PEC Zwolle,2852273177,1,11,45,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,89plvrt8pzppcclh4axvii0ru,A. Plat,35.07,45.83200000000001,3,9.0,window_expired,False,0.00011402613782138249
+2025-09-27_FC Volendam - PEC Zwolle,2852315355,1,40,31,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,68.67000000000002,5.848,0,0.0,turnover,False,0.0
+2025-09-27_FC Volendam - PEC Zwolle,2852316445,1,41,30,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,26.040000000000003,60.99600000000001,3,4.0,turnover,False,0.0001630939337537
+2025-09-27_FC Volendam - PEC Zwolle,2852349403,2,48,31,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,49.245,9.520000000000001,0,0.0,turnover,False,0.0
+2025-09-27_FC Volendam - PEC Zwolle,2852351909,2,50,24,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,cczptju66ofuymrlsol11fpxw,D. Voute,65.415,3.944,3,8.0,turnover,True,0.0
+2025-09-27_FC Volendam - PEC Zwolle,2852380889,2,74,4,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,10.08,32.708000000000006,1,2.0,turnover,False,0.0

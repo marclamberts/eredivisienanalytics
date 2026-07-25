@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-07_SBV Excelsior - SC Heerenveen,2908460897,1,0,14,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,60.165,18.224,0,0.0,turnover,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908463745,1,3,44,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,58.065,25.432000000000002,5,3.0,turnover,False,0.008003407604434
+2026-03-07_SBV Excelsior - SC Heerenveen,2908466793,1,6,31,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,14.490000000000002,48.21200000000001,1,2.0,turnover,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908470127,1,9,15,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,eu6pfkiah7otafyryg6ll7y09,L. Brouwers,25.725,6.392,1,0.0,turnover,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908475897,1,14,11,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,68.67000000000002,65.41600000000001,4,9.0,window_expired,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908476987,1,15,4,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,eu6pfkiah7otafyryg6ll7y09,L. Brouwers,24.255000000000003,34.68,0,0.0,turnover,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908493281,1,29,55,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,59.115,12.444,0,0.0,turnover,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908499767,1,36,38,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,27.195,44.948,3,10.0,window_expired,False,0.22923674632206179
+2026-03-07_SBV Excelsior - SC Heerenveen,2908502041,1,39,8,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,9najgqcaamqj0qtiicuq9hey,R. Meerveld,54.81,26.588000000000005,1,1.0,turnover,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908505755,1,42,40,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,44.52,63.580000000000005,1,0.0,turnover,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908523495,2,46,24,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,25.935,17.0,4,7.0,turnover,False,0.0008242912326551
+2026-03-07_SBV Excelsior - SC Heerenveen,2908524205,2,47,24,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,49.245,36.176,3,6.0,window_expired,False,2.753542981140389e-06
+2026-03-07_SBV Excelsior - SC Heerenveen,2908534383,2,59,46,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,79.69500000000001,6.596,1,1.0,turnover,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908535141,2,60,40,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,55.755,29.784,1,2.0,turnover,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908541249,2,68,49,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5pg02unrm16jaa8vt5ego9z6y,S. Janssen,55.964999999999996,49.844,0,0.0,turnover,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908546595,2,75,56,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,ar7llmzju08n8yrqu8xm1thck,O. Braude,30.975,4.828,0,0.0,turnover,False,0.0
+2026-03-07_SBV Excelsior - SC Heerenveen,2908556043,2,89,23,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,69.92999999999999,62.220000000000006,0,0.0,turnover,False,0.0

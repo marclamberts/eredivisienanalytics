@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-19_FC Groningen - Sparta Rotterdam,2861263979,1,11,53,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ccmmsnrfn58gwi1petlp08f3e,L. Duijvestijn,38.955000000000005,39.57600000000001,3,10.0,window_expired,False,0.0006134038308843527
+2025-10-19_FC Groningen - Sparta Rotterdam,2861276163,1,26,52,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,26.145,60.248,2,2.0,turnover,False,0.0
+2025-10-19_FC Groningen - Sparta Rotterdam,2861277069,1,28,21,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ely6vpyueden4b6ozfmspwgk5,J. Toornstra,18.27,58.412000000000006,0,0.0,turnover,False,0.0
+2025-10-19_FC Groningen - Sparta Rotterdam,2861281559,1,32,39,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,45.36000000000001,53.108,5,10.0,window_expired,False,0.00014910749769764253
+2025-10-19_FC Groningen - Sparta Rotterdam,2861300977,1,45,37,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,58.17,43.928,0,0.0,turnover,False,0.0
+2025-10-19_FC Groningen - Sparta Rotterdam,2861327799,2,48,20,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f07qmqesi1rpw7eapoz9rb0gk,J. Baas,38.010000000000005,13.056000000000001,1,3.0,turnover,False,0.0
+2025-10-19_FC Groningen - Sparta Rotterdam,2861356235,2,65,38,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f57vs3qmmob743hdk2dxf56cq,S. Sambo,27.405,11.696,0,0.0,turnover,False,0.0
+2025-10-19_FC Groningen - Sparta Rotterdam,2861352213,2,71,58,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,21.105000000000004,10.812000000000001,0,0.0,turnover,False,0.0
+2025-10-19_FC Groningen - Sparta Rotterdam,2861359331,2,78,13,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,27.930000000000003,17.612000000000002,0,0.0,turnover,False,0.0
+2025-10-19_FC Groningen - Sparta Rotterdam,2861379817,2,92,58,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f07qmqesi1rpw7eapoz9rb0gk,J. Baas,63.0,10.676,2,4.0,turnover,False,0.0
+2025-10-19_FC Groningen - Sparta Rotterdam,2861382773,2,95,28,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,5lad0u653zzdmexdpvtkcaqui,S. Ltaief,34.44,55.89600000000001,4,10.0,turnover,True,0.0

@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846782241,1,0,11,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,78.64500000000001,8.636000000000001,1,2.0,turnover,False,0.0
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846115759,1,9,4,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,25.935,9.656,5,10.0,window_expired,False,5.226869595555128e-05
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846124367,1,33,39,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,40.53,50.456,3,6.0,turnover,False,0.0
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846126387,1,39,24,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,13.86,34.816,0,0.0,turnover,False,0.0
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846127761,1,43,26,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,28.455000000000002,30.056000000000004,0,0.0,turnover,False,0.0
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846129439,1,46,55,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,dbg4ducw8j747foxiexle1iad,P. Clement,40.214999999999996,19.652,0,0.0,turnover,False,0.0
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846139021,2,45,37,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,23.94,11.832,1,1.0,turnover,False,0.0
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846141319,2,50,7,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,48.405,21.76,1,1.0,turnover,False,0.0
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846158195,2,70,43,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,dbg4ducw8j747foxiexle1iad,P. Clement,66.78,2.584,1,1.0,turnover,False,0.0
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846158839,2,71,28,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,61.214999999999996,15.98,5,8.0,window_expired,False,0.00110860172378
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846166241,2,81,2,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,c0os20ujhb2hujvtp21093l04,A. Oufkir,24.150000000000002,26.452,2,3.0,turnover,False,0.0
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846168345,2,84,20,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,3.8850000000000002,52.02,0,0.0,turnover,False,0.0
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846171987,2,88,53,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,1fs2iimaa97nzlw80yypcd6ju,S. Mitrović,39.27,64.736,3,7.0,turnover,False,2.166960568196485e-05
+2025-09-14_SBV Excelsior - Sparta Rotterdam,2846173537,2,90,17,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,ucqemxwd5n13up4t16o6qot0,C. Nadje,23.835,43.656000000000006,0,0.0,turnover,False,0.0

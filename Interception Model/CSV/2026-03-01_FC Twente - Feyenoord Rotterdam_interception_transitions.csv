@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906036617,1,1,50,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dwyl0yii553i57u7azfa7d15g,A. Hadj Moussa,23.625,4.148,0,0.0,turnover,False,0.0
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906041551,1,9,20,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,30.87,46.51200000000001,0,0.0,turnover,False,0.0
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906043745,1,12,19,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,8.82,29.308000000000003,0,0.0,turnover,False,0.0
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906052897,1,28,47,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,58.589999999999996,45.288,1,1.0,turnover,False,0.0
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906056371,1,32,55,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,31.815,57.664,4,10.0,window_expired,False,0.0015309044278417
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906065455,1,42,1,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,41.475,39.1,3,9.0,window_expired,False,0.0044823298546008
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906070721,1,47,24,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,eoodvdqfvhql03i8kv9l14qvo,T. Kraaijeveld,44.415,13.600000000000001,4,3.0,turnover,False,0.0001270080251325
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906070871,1,47,33,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,4qr07cfbwquppkww057mb9tk9,J. Moder,66.675,35.292,0,0.0,turnover,False,0.0
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906090999,2,48,31,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,51.975,57.39200000000001,3,2.0,turnover,False,2.0150427912243862e-05
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906093073,2,50,32,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,22.995,33.32,1,2.0,turnover,False,0.0
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906093243,2,50,40,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,8f3bhiy6r5eei1n25exhbwr8p,J. Lotomba,26.985,47.6,0,0.0,turnover,False,0.0
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906098763,2,58,11,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,40.74,21.080000000000002,3,3.0,turnover,False,8.414914810990493e-05
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906101661,2,63,47,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,43ib46nh45n9oajf5rmaz4f6x,Hwang In-Beom,65.10000000000001,23.732,3,10.0,turnover,False,0.0035837434079697
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906102897,2,66,33,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,13.65,58.480000000000004,2,2.0,turnover,False,0.0
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906105301,2,70,42,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,43ib46nh45n9oajf5rmaz4f6x,Hwang In-Beom,59.535000000000004,47.736000000000004,0,0.0,turnover,False,0.0
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906108039,2,70,45,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e9l5r0txzrjbenli05rn3k4wl,R. Sterling,68.775,64.804,1,1.0,turnover,False,0.0
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906107503,2,73,49,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,30.66,30.872,3,3.0,turnover,False,0.0
+2026-03-01_FC Twente - Feyenoord Rotterdam,2906119727,2,87,55,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,3o4tq8qooplx2izq9rucgu7d,C. Tengstedt,18.69,62.83200000000001,1,5.0,turnover,False,0.0

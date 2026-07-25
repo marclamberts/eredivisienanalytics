@@ -1,0 +1,23 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861254151,1,3,0,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,9o10vhew3jar8tqnkabw0qoyx,J. Lonwijk,79.17000000000002,7.004000000000001,2,7.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861256795,1,5,59,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,88.30499999999999,63.444,0,0.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861266883,1,15,33,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,10.290000000000001,45.15200000000001,2,2.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861273009,1,23,16,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,9o10vhew3jar8tqnkabw0qoyx,J. Lonwijk,71.715,37.536,0,0.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861274907,1,26,1,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,13.440000000000001,38.48800000000001,2,2.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861277665,1,30,10,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,45.045,51.408,3,4.0,turnover,False,4.262356526782418e-05
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861277747,1,30,16,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,43.365,8.976,4,4.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861278749,1,31,15,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,59.010000000000005,48.416000000000004,3,5.0,window_expired,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861283241,1,34,52,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,38.325,65.41600000000001,1,0.0,window_expired,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861285677,1,36,35,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,2vfhae70oyyzm0qttlckworqi,A. Carlén,55.545,59.636,0,0.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861288517,1,37,12,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,75.495,10.608,0,0.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861296645,1,43,42,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dp0q4f4gbj2buhcu1lb5dzxed,Ivo Pinto,83.37,4.760000000000001,0,0.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861323501,2,45,37,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,ucqemxwd5n13up4t16o6qot0,C. Nadje,59.64,14.484000000000002,0,0.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861328161,2,49,8,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,37.17,63.03600000000001,0,0.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861330615,2,51,2,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,20.475,10.608,1,1.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861339781,2,57,41,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,9o10vhew3jar8tqnkabw0qoyx,J. Lonwijk,38.85,56.440000000000005,0,0.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861355761,2,76,7,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,59.64,56.78,0,0.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861356853,2,77,2,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,41.685,33.660000000000004,5,8.0,turnover,False,0.0008214772036655999
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861370631,2,86,45,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,60.58500000000001,55.760000000000005,0,0.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861370751,2,86,49,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,53.13,58.684000000000005,4,5.0,turnover,False,0.0006313621973971
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861370867,2,86,55,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,f314a9y83ou7l9imhnbp4f6dw,S. Middendorp,30.345,18.224,1,0.0,turnover,False,0.0
+2025-10-19_SBV Excelsior - Fortuna Sittard,2861375949,2,90,34,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,22.995,10.064000000000002,0,0.0,turnover,False,0.0

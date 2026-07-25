@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871469817,1,6,48,cos9hxi16eitbcbthof7zrm4m,FC Groningen,3aly8eihwfvtwde7dg0k18w7o,J. Schreuders,17.85,45.424,3,2.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871471451,1,8,9,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dgex06nxjy9fdvc12o8keg99l,K. Ogawa,72.765,52.632000000000005,0,0.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871472231,1,8,40,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2yivr64anye4c0p62m16l78yc,S. Ouaissa,28.665000000000003,22.848000000000003,1,2.0,window_expired,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871478341,1,13,45,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,26.46,38.42,2,2.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871481253,1,16,11,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,13.65,31.824,0,0.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871486855,1,21,52,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,36.015,28.220000000000002,1,1.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871486933,1,21,57,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,45.57,19.652,0,0.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871513125,1,40,35,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,50.08500000000001,45.15200000000001,0,0.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871553179,2,45,9,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4pqi5vt820333t5zsj2refc2d,B. Linssen,34.125,58.61600000000001,0,0.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871557275,2,47,30,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,62.580000000000005,41.548,2,2.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871569405,2,54,23,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2yivr64anye4c0p62m16l78yc,S. Ouaissa,34.230000000000004,7.548,0,0.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871581553,2,63,0,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,20.16,19.312,2,8.0,window_expired,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871586947,2,69,3,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,913pg8qqcjp99h5fjybbenob9,P. Sandler,32.550000000000004,61.336000000000006,0,0.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871621591,2,89,38,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,27.405,33.048,0,0.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871622883,2,90,18,cos9hxi16eitbcbthof7zrm4m,FC Groningen,5q8rvam8iv65g4wjb8rarw15,B. Willumsson,9.975,10.268,0,0.0,turnover,False,0.0
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2872131883,2,90,47,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,65.10000000000001,10.200000000000001,3,6.0,turnover,False,0.0037480306258934
+2025-11-09_Nijmegen Eendracht Combinatie - FC Groningen,2871627293,2,92,50,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,53.13,61.81200000000001,1,1.0,turnover,False,0.0

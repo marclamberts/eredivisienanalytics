@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-06_Heracles Almelo - FC Utrecht,2907687133,1,8,1,dac758ef858jbq7pcb3gfwite,Heracles Almelo,d5wx8rvjfaw1arn69fdd64d90,R. Bozinovski,59.22,53.17600000000001,0,0.0,turnover,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907710543,1,30,51,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,55.545,4.964,0,0.0,turnover,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907713057,1,33,24,dac758ef858jbq7pcb3gfwite,Heracles Almelo,d5wx8rvjfaw1arn69fdd64d90,R. Bozinovski,60.27,58.14000000000001,2,2.0,turnover,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907713723,1,34,2,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,26.565,32.028000000000006,3,10.0,window_expired,True,0.0018540859348913
+2026-03-06_Heracles Almelo - FC Utrecht,2907725809,1,44,46,dac758ef858jbq7pcb3gfwite,Heracles Almelo,69gzswoym4jqnrag1wdqfdkyy,J. Wieckhoff,18.27,12.172,0,0.0,turnover,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907726315,1,45,11,dac758ef858jbq7pcb3gfwite,Heracles Almelo,69gzswoym4jqnrag1wdqfdkyy,J. Wieckhoff,36.75,15.98,1,3.0,turnover,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907726411,1,45,17,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,29.925,47.328,2,6.0,turnover,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907753365,2,53,58,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,17.01,54.944,0,0.0,turnover,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907754987,2,55,3,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,3.7800000000000002,23.8,0,0.0,turnover,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907757123,2,56,34,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,30.345,8.024000000000001,3,3.0,window_expired,False,0.008494081613605601
+2026-03-06_Heracles Almelo - FC Utrecht,2907765085,2,62,10,dac758ef858jbq7pcb3gfwite,Heracles Almelo,80dk8iv6p0202z10qcqy8bfca,S. Scheperman,13.755,32.572,1,3.0,turnover,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907783139,2,76,52,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,62.160000000000004,3.128,0,0.0,turnover,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907785921,2,79,7,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,21.525000000000002,9.248000000000001,6,10.0,window_expired,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907789013,2,81,51,dac758ef858jbq7pcb3gfwite,Heracles Almelo,96om2im2vd1621ajcexlyekno,T. van Gilst,46.830000000000005,43.588,2,2.0,turnover,False,0.0
+2026-03-06_Heracles Almelo - FC Utrecht,2907789081,2,81,54,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,45.78,19.856,0,0.0,turnover,False,0.0

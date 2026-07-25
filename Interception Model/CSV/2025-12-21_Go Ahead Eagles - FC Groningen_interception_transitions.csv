@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-21_Go Ahead Eagles - FC Groningen,2885285733,1,8,28,cos9hxi16eitbcbthof7zrm4m,FC Groningen,3aly8eihwfvtwde7dg0k18w7o,J. Schreuders,23.415000000000003,6.0520000000000005,0,0.0,turnover,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885299817,1,27,40,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,9d4lofwg9ooaoldw2vpt4h36y,E. Linthorst,11.97,46.03600000000001,0,0.0,turnover,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885301235,1,29,22,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,56.49,18.564,2,6.0,turnover,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885312483,1,38,37,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1tmihr54maqj0h7785cg9ez56,M. Suray,7.7700000000000005,21.556,0,0.0,turnover,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885315111,1,40,46,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,71.4,43.996,0,0.0,turnover,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885337749,2,45,28,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,ciguyr553yqapqfudim9af46h,M. Deijl,66.36,12.24,0,0.0,turnover,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885348851,2,57,51,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,23.52,43.044000000000004,1,3.0,window_expired,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885352625,2,62,55,cos9hxi16eitbcbthof7zrm4m,FC Groningen,ei9h1loyggj8fnf1q4jfdm710,T. van Bergen,23.415000000000003,2.3800000000000003,1,0.0,turnover,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885358743,2,74,4,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,43.575,47.804,0,0.0,turnover,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885365797,2,82,4,cos9hxi16eitbcbthof7zrm4m,FC Groningen,ei9h1loyggj8fnf1q4jfdm710,T. van Bergen,63.839999999999996,15.504000000000001,1,1.0,turnover,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885383105,2,82,8,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,44.52,26.792,3,10.0,window_expired,False,0.0015930560757093
+2025-12-21_Go Ahead Eagles - FC Groningen,2885368037,2,84,33,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,16tmkyjtx7rr2rbb6ey9vasmi,O. Sivertsen,37.589999999999996,9.792000000000002,0,0.0,turnover,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885368937,2,85,33,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,9d4lofwg9ooaoldw2vpt4h36y,E. Linthorst,51.765,36.992000000000004,2,1.0,turnover,False,0.0
+2025-12-21_Go Ahead Eagles - FC Groningen,2885369611,2,86,17,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,35.7,48.75600000000001,0,0.0,turnover,False,0.0

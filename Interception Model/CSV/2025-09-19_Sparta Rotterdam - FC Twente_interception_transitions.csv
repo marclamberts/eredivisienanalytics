@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-19_Sparta Rotterdam - FC Twente,2848042205,1,9,48,4tic29sox7m39fy1ztgv0jsiq,FC Twente,lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,20.685,53.65200000000001,1,1.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848042479,1,10,0,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bvwaamcj0bpdrcuoffl6b9rf8,D. Weidmann,26.145,59.772000000000006,1,1.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848045403,1,12,21,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ely6vpyueden4b6ozfmspwgk5,J. Toornstra,47.775,29.716000000000005,0,0.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848052665,1,18,51,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,75.495,36.312000000000005,0,0.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848071437,1,37,45,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f57vs3qmmob743hdk2dxf56cq,S. Sambo,16.59,7.412000000000001,1,3.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848078181,1,43,58,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ely6vpyueden4b6ozfmspwgk5,J. Toornstra,12.495000000000001,24.344,1,1.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848098089,2,45,15,4tic29sox7m39fy1ztgv0jsiq,FC Twente,lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,42.42,32.028000000000006,3,8.0,window_expired,False,0.0013995322506664602
+2025-09-19_Sparta Rotterdam - FC Twente,2848099105,2,46,5,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,7ty1wdxxnusgkl34k5raipbl5,M. van Bergen,10.08,11.764000000000001,1,1.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848102411,2,48,43,4tic29sox7m39fy1ztgv0jsiq,FC Twente,9nix5y8xcj34ps62r34udtqwa,K. Hlynsson,29.715000000000003,16.388,1,1.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848103669,2,49,40,4tic29sox7m39fy1ztgv0jsiq,FC Twente,2hbduprkyabq8g1nhe6b4g3bp,M. Pjaca,28.875,18.224,3,2.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848108205,2,53,3,4tic29sox7m39fy1ztgv0jsiq,FC Twente,qobf1v5kwuz6hj2ooixfw4mi,B. van Rooij,15.855,8.84,0,0.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848109191,2,53,50,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,63.315,31.008000000000003,3,9.0,window_expired,False,0.00044098649484189997
+2025-09-19_Sparta Rotterdam - FC Twente,2848116359,2,59,6,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,19.005000000000003,20.264000000000003,0,0.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848117365,2,59,57,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,dbg4ducw8j747foxiexle1iad,P. Clement,19.53,40.800000000000004,1,0.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848125891,2,67,32,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,75.17999999999999,49.368,0,0.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848127305,2,68,43,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,19.635,50.388,2,1.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848128339,2,69,33,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bner5siqnwn1fqusfrgujt0fe,M. Bruns,23.835,16.592,0,0.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848139591,2,79,57,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,37.905,25.432000000000002,0,0.0,turnover,False,0.0
+2025-09-19_Sparta Rotterdam - FC Twente,2848140607,2,81,0,4tic29sox7m39fy1ztgv0jsiq,FC Twente,2hbduprkyabq8g1nhe6b4g3bp,M. Pjaca,66.36,12.444,5,7.0,turnover,True,0.0003596317467604
+2025-09-19_Sparta Rotterdam - FC Twente,2848146571,2,86,47,4tic29sox7m39fy1ztgv0jsiq,FC Twente,2hbduprkyabq8g1nhe6b4g3bp,M. Pjaca,59.115,25.092000000000002,2,4.0,turnover,False,0.0

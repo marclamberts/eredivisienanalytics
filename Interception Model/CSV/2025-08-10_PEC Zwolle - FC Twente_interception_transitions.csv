@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-10_PEC Zwolle - FC Twente,2833615713,1,11,1,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,21.105000000000004,25.228,1,3.0,turnover,False,0.0
+2025-08-10_PEC Zwolle - FC Twente,2833616139,1,12,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,62.265,22.916000000000004,2,2.0,turnover,False,0.0
+2025-08-10_PEC Zwolle - FC Twente,2833617437,1,16,35,4tic29sox7m39fy1ztgv0jsiq,FC Twente,cocgd3hh74fq9c30x9bps4idw,S. Lemkin,42.21000000000001,15.98,5,9.0,window_expired,False,6.5349828076155525e-06
+2025-08-10_PEC Zwolle - FC Twente,2833618189,1,18,51,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,56.07,66.30000000000001,1,1.0,turnover,False,0.0
+2025-08-10_PEC Zwolle - FC Twente,2833619513,1,20,48,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,74.235,49.776,0,0.0,turnover,False,0.0
+2025-08-10_PEC Zwolle - FC Twente,2833619031,1,21,14,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,58.065,46.444,4,7.0,turnover,False,0.0008596738904322
+2025-08-10_PEC Zwolle - FC Twente,2833620061,1,24,34,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,68.985,29.104,0,0.0,turnover,False,0.0
+2025-08-10_PEC Zwolle - FC Twente,2833620597,1,26,9,4tic29sox7m39fy1ztgv0jsiq,FC Twente,723av2redj2ej6livx0g81wwl,A. Verschueren,25.095,59.092000000000006,4,4.0,turnover,False,4.638066897182103e-05
+2025-08-10_PEC Zwolle - FC Twente,2833620849,1,26,47,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6u7z5qrlwzl9aug8awejq37xl,Jamiro Monteiro,27.51,59.228,1,3.0,turnover,False,0.0
+2025-08-10_PEC Zwolle - FC Twente,2833622681,1,32,31,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,66.045,29.716000000000005,3,7.0,turnover,False,0.0052905864897815
+2025-08-10_PEC Zwolle - FC Twente,2833623051,1,33,31,4tic29sox7m39fy1ztgv0jsiq,FC Twente,723av2redj2ej6livx0g81wwl,A. Verschueren,14.28,48.96,3,3.0,turnover,False,0.0
+2025-08-10_PEC Zwolle - FC Twente,2833624405,1,33,36,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,71.08500000000001,13.600000000000001,5,8.0,turnover,False,0.088067739071479
+2025-08-10_PEC Zwolle - FC Twente,2833624153,1,38,43,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,56.28,34.068000000000005,2,2.0,turnover,False,0.0003542777117233
+2025-08-10_PEC Zwolle - FC Twente,2833625121,1,43,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,55.33500000000001,52.088,1,2.0,turnover,False,0.0021493064370753
+2025-08-10_PEC Zwolle - FC Twente,2833631709,2,45,57,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,78.33,3.196,1,1.0,turnover,False,0.0
+2025-08-10_PEC Zwolle - FC Twente,2833632951,2,49,53,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,ekur9x1kzp8wq0lwfwev0b0bu,K. de Rooij,32.445,31.484,2,2.0,turnover,False,0.0003721320557521
+2025-08-10_PEC Zwolle - FC Twente,2833638435,2,60,34,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,ekur9x1kzp8wq0lwfwev0b0bu,K. de Rooij,38.115,12.24,3,3.0,turnover,False,0.0006431170444009
+2025-08-10_PEC Zwolle - FC Twente,2833644367,2,70,31,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,15.435,57.868,2,5.0,turnover,False,0.0
+2025-08-10_PEC Zwolle - FC Twente,2833645055,2,71,47,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,7.875,12.784,3,3.0,turnover,False,0.0
+2025-08-10_PEC Zwolle - FC Twente,2833645389,2,72,20,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,27.405,28.424,0,0.0,turnover,False,0.0
+2025-08-10_PEC Zwolle - FC Twente,2833653919,2,87,7,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6hpvm6ktb7nulhdph4497649g,D. van der Haar,21.525000000000002,56.848,1,1.0,turnover,False,0.0

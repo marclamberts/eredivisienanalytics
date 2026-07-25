@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860449929,1,6,26,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,48.93000000000001,35.088,4,8.0,window_expired,False,0.0006988559045272326
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860454311,1,9,54,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,68.67000000000002,49.368,4,5.0,window_expired,False,0.0049575260410613005
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860460587,1,16,22,4tic29sox7m39fy1ztgv0jsiq,FC Twente,36veg0wk1z3om89daf0clbl5h,R. van Wolfswinkel,38.955000000000005,25.364,2,4.0,turnover,False,0.0
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860463089,1,18,30,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,54.39,52.768,0,0.0,turnover,False,0.0
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860482775,1,27,17,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,35.385000000000005,52.768,1,1.0,turnover,False,0.0
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860496501,1,33,11,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,8kydif03gk6apce8xwl9w3ht5,T. Ouwejan,16.38,43.18,0,0.0,turnover,False,0.0
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860502839,1,36,7,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,29.19,60.11200000000001,2,0.0,turnover,False,0.0
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860502891,1,36,9,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,61.11000000000001,24.616000000000003,0,0.0,turnover,False,0.0
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860569419,2,46,14,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,37.48500000000001,57.25600000000001,0,0.0,turnover,False,0.0
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860574421,2,48,29,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,27.405,53.788,2,2.0,turnover,False,0.0
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860575945,2,49,10,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4kns22wbu3emy5oxbpr52rdud,E. Dasa,28.980000000000004,5.1000000000000005,0,0.0,turnover,False,0.0
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860595687,2,64,38,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2yivr64anye4c0p62m16l78yc,S. Ouaissa,35.805,22.848000000000003,0,0.0,turnover,False,0.0

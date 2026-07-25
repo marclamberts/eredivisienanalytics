@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836237653,1,0,18,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,21.315,57.664,1,1.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836238423,1,1,37,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ely6vpyueden4b6ozfmspwgk5,J. Toornstra,68.88,1.1560000000000001,0,0.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836241609,1,6,8,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,24.255000000000003,66.028,0,0.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836246689,1,13,41,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,67.41000000000001,63.03600000000001,5,9.0,window_expired,False,0.0006010662094235001
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836252577,1,24,12,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,62.895,50.524,0,0.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836256193,1,33,17,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6q77vt9bp8dsq48pa97mfzsa1,T. Lauritsen,89.565,44.676,0,0.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836257907,1,36,15,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,47.25,49.844,1,0.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836259577,1,38,45,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ely6vpyueden4b6ozfmspwgk5,J. Toornstra,35.175000000000004,19.040000000000003,1,2.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836259655,1,38,54,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,28.77,19.652,2,8.0,window_expired,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836262811,1,43,21,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,20.685,11.9,1,2.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836264187,1,45,27,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,68.88,41.61600000000001,2,2.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836278221,2,45,27,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,9lctm8txbd4n87mk61lwa0rf9,S. Bakari,36.225,18.632,0,0.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836279225,2,46,40,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ely6vpyueden4b6ozfmspwgk5,J. Toornstra,33.6,18.768,4,5.0,window_expired,False,0.000110075855504
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836279879,2,47,27,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ely6vpyueden4b6ozfmspwgk5,J. Toornstra,34.44,3.128,0,0.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836280557,2,48,15,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,57.645,47.668,3,9.0,window_expired,False,0.0052905864897815
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836285537,2,54,27,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,27.615000000000002,34.272,1,2.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836285971,2,54,54,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,46.62,36.04,5,7.0,turnover,False,0.00023371752629735407
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836286125,2,55,2,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,59.85,59.704,0,0.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836289401,2,59,24,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,37.17,16.456,2,5.0,turnover,False,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836289955,2,60,9,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,c0os20ujhb2hujvtp21093l04,A. Oufkir,30.03,14.484000000000002,3,10.0,window_expired,True,0.0
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836307933,2,84,1,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,72.66000000000001,36.924,0,0.0,turnover,False,0.0

@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-01_PEC Zwolle - AFC Ajax,2905978711,1,4,11,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,58.905,29.716000000000005,4,9.0,window_expired,False,0.0031512081909974
+2026-03-01_PEC Zwolle - AFC Ajax,2906125035,1,20,38,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1x6fhuy49w4rpnyavwotbf504,T. Gooijer,28.77,23.732,1,2.0,turnover,False,0.0
+2026-03-01_PEC Zwolle - AFC Ajax,2905992029,1,40,2,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,33.285000000000004,11.764000000000001,0,0.0,turnover,False,0.0
+2026-03-01_PEC Zwolle - AFC Ajax,2905992035,1,40,5,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,38.43,17.204,5,7.0,turnover,False,0.0
+2026-03-01_PEC Zwolle - AFC Ajax,2905995745,1,45,39,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,49.77,14.076,0,0.0,turnover,False,0.0
+2026-03-01_PEC Zwolle - AFC Ajax,2906001295,2,48,23,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,65.94,51.476000000000006,2,3.0,turnover,False,0.0
+2026-03-01_PEC Zwolle - AFC Ajax,2906001547,2,49,10,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,40.425000000000004,59.43200000000001,2,7.0,turnover,False,0.0
+2026-03-01_PEC Zwolle - AFC Ajax,2906002517,2,52,45,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,66.25500000000001,65.008,2,4.0,turnover,False,0.0
+2026-03-01_PEC Zwolle - AFC Ajax,2906002687,2,53,21,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,264gu641hrd38wqf28xolwhlg,R. Bounida,68.04,16.728,0,0.0,turnover,False,0.0
+2026-03-01_PEC Zwolle - AFC Ajax,2906005093,2,59,13,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,76.54500000000002,2.3120000000000003,2,2.0,turnover,False,0.0
+2026-03-01_PEC Zwolle - AFC Ajax,2906008309,2,65,35,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,37.065,58.548,0,0.0,turnover,False,0.0
+2026-03-01_PEC Zwolle - AFC Ajax,2906013265,2,72,28,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,59.955000000000005,8.228,0,0.0,turnover,False,0.0
+2026-03-01_PEC Zwolle - AFC Ajax,2906012923,2,75,0,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1x6fhuy49w4rpnyavwotbf504,T. Gooijer,23.625,11.56,4,5.0,turnover,False,6.748632063288684e-05
+2026-03-01_PEC Zwolle - AFC Ajax,2906018039,2,86,57,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,42.525,49.096000000000004,0,0.0,turnover,False,0.0

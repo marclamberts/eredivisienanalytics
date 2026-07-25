@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936055417,1,5,10,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,69.825,11.152,2,2.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936055481,1,5,13,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jgtmmk4b2bgn0syidj6ve7kl,J. Clasie,21.0,50.388,3,2.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936059285,1,9,36,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,wuh8s4gfo9ro3nel3rormg44,R. Daal,5.460000000000001,51.748,1,0.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936060407,1,10,58,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,67.62,42.432,5,10.0,window_expired,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936060753,1,11,22,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,38.535000000000004,4.6240000000000006,1,2.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936063913,1,15,35,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,5.88,8.432,1,0.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936064899,1,16,43,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,58.17,48.620000000000005,2,9.0,window_expired,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936082687,1,31,10,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,eoodvdqfvhql03i8kv9l14qvo,T. Kraaijeveld,12.39,27.268000000000004,2,2.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936085405,1,33,36,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,69.405,16.32,0,0.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936099491,1,45,28,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ciguyr553yqapqfudim9af46h,M. Deijl,11.97,21.828000000000003,0,0.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936099901,1,45,47,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,11.97,25.364,5,9.0,window_expired,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936123483,2,46,20,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,40.74,49.57200000000001,2,5.0,window_expired,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936126761,2,49,14,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,67.935,17.612000000000002,2,2.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936130109,2,53,1,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,72.24,43.724000000000004,0,0.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936130723,2,53,46,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ecqjg6wtntf1guejvm10redck,G. Read,43.155,7.956,5,6.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936139063,2,61,45,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,30.555000000000003,29.852,2,6.0,window_expired,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936139691,2,62,12,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,wuh8s4gfo9ro3nel3rormg44,R. Daal,31.080000000000002,51.272000000000006,2,1.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936140887,2,63,5,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,5bjdj7hrhuxjbsa8wc1kw42c5,G. Trauner,12.495000000000001,23.052,3,3.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936150237,2,70,27,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,434aulbxf50clnx57fxsqge8k,T. van den Elshout,17.64,35.632000000000005,0,0.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936158477,2,71,14,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,35.805,51.272000000000006,0,0.0,turnover,False,0.0
+2026-05-10_Feyenoord Rotterdam - Alkmaar Zaanstreek,2936156973,2,76,38,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jgtmmk4b2bgn0syidj6ve7kl,J. Clasie,58.17,30.464,0,0.0,turnover,False,0.0

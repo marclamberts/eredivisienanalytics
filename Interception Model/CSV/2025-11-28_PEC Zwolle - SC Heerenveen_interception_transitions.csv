@@ -1,0 +1,25 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-28_PEC Zwolle - SC Heerenveen,2877399787,1,1,43,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,67.515,3.6720000000000006,2,1.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877406043,1,8,12,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,44.52,8.364,1,1.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877412325,1,15,34,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,35.175000000000004,35.088,0,0.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877414141,1,17,41,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,29.085,21.828000000000003,3,8.0,window_expired,False,1.4245985580224609e-05
+2025-11-28_PEC Zwolle - SC Heerenveen,2877417443,1,21,33,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,71.4,60.452000000000005,2,1.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877424037,1,30,11,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,60.27,12.58,0,0.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877425565,1,31,54,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,26.985,28.968000000000004,0,0.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877426993,1,33,42,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,39.480000000000004,44.47200000000001,0,0.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877430635,1,37,25,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,11.445,42.024,0,0.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877580997,1,39,31,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,9najgqcaamqj0qtiicuq9hey,R. Meerveld,44.94,51.00000000000001,3,9.0,window_expired,False,0.00023185441361745293
+2025-11-28_PEC Zwolle - SC Heerenveen,2877437537,1,44,2,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,48.300000000000004,24.752000000000002,1,1.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877453143,2,45,47,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,58.800000000000004,14.96,2,2.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877460331,2,52,58,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,18.480000000000004,61.744,0,0.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877583423,2,55,19,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,eu6pfkiah7otafyryg6ll7y09,L. Brouwers,36.645,48.75600000000001,4,5.0,turnover,False,8.967426680481227e-05
+2025-11-28_PEC Zwolle - SC Heerenveen,2877462733,2,55,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,37.589999999999996,20.672,5,8.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877466293,2,59,18,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,40.005,12.852,0,0.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877466783,2,59,51,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,19.740000000000002,57.188,4,10.0,window_expired,False,0.0005133701746537756
+2025-11-28_PEC Zwolle - SC Heerenveen,2877472353,2,66,43,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,29.505000000000003,39.168000000000006,0,0.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877474899,2,70,6,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,66.36,20.672,0,0.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877483603,2,81,3,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,7.035,61.47200000000001,0,0.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877485733,2,83,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,37.275,65.212,2,4.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877487403,2,85,17,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,40.32,21.556,3,2.0,turnover,False,0.0002576565999629
+2025-11-28_PEC Zwolle - SC Heerenveen,2877495259,2,94,18,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,48.510000000000005,45.628,2,2.0,turnover,False,0.0
+2025-11-28_PEC Zwolle - SC Heerenveen,2877496243,2,95,20,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,25.935,57.800000000000004,1,1.0,turnover,False,0.0

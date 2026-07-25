@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875430421,1,0,52,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,5shfqpd5fj05qrp1jlzd08ftg,C. Twigt,56.49,41.956,1,1.0,turnover,False,0.0
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875431217,1,1,33,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1tmihr54maqj0h7785cg9ez56,M. Suray,61.74,52.836000000000006,4,6.0,window_expired,False,0.000595981624427989
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875403283,1,16,13,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,ciguyr553yqapqfudim9af46h,M. Deijl,59.115,21.352,0,0.0,turnover,False,0.0
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875406745,1,20,3,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1mroid71v9bwpx0iaospei9gq,R. Margaret,12.18,6.392,0,0.0,turnover,False,0.0
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875422245,1,39,34,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1mroid71v9bwpx0iaospei9gq,R. Margaret,34.964999999999996,3.2640000000000002,0,0.0,turnover,False,0.0
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875423573,1,41,19,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,33.81,41.61600000000001,2,1.0,turnover,False,0.0
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875437841,2,46,45,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,5shfqpd5fj05qrp1jlzd08ftg,C. Twigt,20.475,20.468000000000004,1,2.0,turnover,False,0.0
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875438743,2,48,10,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,5shfqpd5fj05qrp1jlzd08ftg,C. Twigt,45.255,18.632,2,10.0,window_expired,False,0.0056329288907672
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875441027,2,52,5,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,38.325,62.15200000000001,2,8.0,turnover,False,0.0
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875453521,2,74,46,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1tmihr54maqj0h7785cg9ez56,M. Suray,22.47,40.25600000000001,0,0.0,turnover,False,0.0
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875455259,2,78,45,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,34.33500000000001,34.408,1,3.0,turnover,False,0.0
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875459297,2,87,37,dac758ef858jbq7pcb3gfwite,Heracles Almelo,96om2im2vd1621ajcexlyekno,T. van Gilst,28.56,33.864,1,5.0,window_expired,False,0.0
+2025-11-22_Heracles Almelo - Go Ahead Eagles,2875460215,2,89,50,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,36.12,49.64,0,0.0,turnover,False,0.0

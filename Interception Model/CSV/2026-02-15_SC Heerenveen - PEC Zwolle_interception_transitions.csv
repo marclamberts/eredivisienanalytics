@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-15_SC Heerenveen - PEC Zwolle,2900687111,1,6,31,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1x6fhuy49w4rpnyavwotbf504,T. Gooijer,8.82,8.772,3,5.0,window_expired,False,1.6685724588766382e-05
+2026-02-15_SC Heerenveen - PEC Zwolle,2900687375,1,6,44,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,38.955000000000005,64.668,0,0.0,turnover,False,0.0
+2026-02-15_SC Heerenveen - PEC Zwolle,2900689881,1,9,27,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,24.150000000000002,48.824,0,0.0,turnover,False,0.0
+2026-02-15_SC Heerenveen - PEC Zwolle,2900693163,1,12,49,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,39.375,30.872,0,0.0,turnover,False,0.0
+2026-02-15_SC Heerenveen - PEC Zwolle,2900701163,1,24,2,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,ar7llmzju08n8yrqu8xm1thck,O. Braude,12.18,9.656,1,1.0,turnover,False,0.0
+2026-02-15_SC Heerenveen - PEC Zwolle,2900702463,1,26,15,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,67.30499999999999,9.248000000000001,1,1.0,turnover,False,0.0
+2026-02-15_SC Heerenveen - PEC Zwolle,2900704087,1,28,0,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,34.545,58.61600000000001,3,5.0,turnover,False,9.797274588137228e-05
+2026-02-15_SC Heerenveen - PEC Zwolle,2900715153,1,36,45,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,29.925,23.188000000000002,4,9.0,window_expired,False,2.784004172753929e-05
+2026-02-15_SC Heerenveen - PEC Zwolle,2900715541,1,37,0,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,ar7llmzju08n8yrqu8xm1thck,O. Braude,53.445,10.268,0,0.0,turnover,False,0.0
+2026-02-15_SC Heerenveen - PEC Zwolle,2900747567,2,45,59,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,40.11000000000001,55.624,0,0.0,turnover,False,0.0
+2026-02-15_SC Heerenveen - PEC Zwolle,2900759147,2,55,1,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,58.48500000000001,61.540000000000006,1,1.0,turnover,False,0.0
+2026-02-15_SC Heerenveen - PEC Zwolle,2900763499,2,58,46,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,62.580000000000005,59.364000000000004,3,4.0,turnover,False,0.0001145350564264
+2026-02-15_SC Heerenveen - PEC Zwolle,2900764405,2,59,38,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,78.96000000000001,31.96,0,0.0,turnover,False,0.0
+2026-02-15_SC Heerenveen - PEC Zwolle,2900767009,2,62,44,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d29ahwtvs7ls75wdtkf7xr8tm,Z. Buurmeester,36.015,56.78,3,3.0,turnover,False,0.0
+2026-02-15_SC Heerenveen - PEC Zwolle,2900784625,2,80,58,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,46.935,63.03600000000001,1,2.0,turnover,False,0.0
+2026-02-15_SC Heerenveen - PEC Zwolle,2900788075,2,83,26,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,88523fv89ozrqwnbhgphxual0,M. Egbring,45.885000000000005,10.268,0,0.0,turnover,False,0.0

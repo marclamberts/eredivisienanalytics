@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-20_Nijmegen Eendracht Combinatie - AFC Ajax,2885066567,1,6,33,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,19.635,39.236000000000004,0,0.0,turnover,False,0.0
+2025-12-20_Nijmegen Eendracht Combinatie - AFC Ajax,2885070805,1,14,1,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,12.81,45.83200000000001,1,2.0,turnover,False,0.0
+2025-12-20_Nijmegen Eendracht Combinatie - AFC Ajax,2885074561,1,21,19,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,16.8,55.148,4,4.0,turnover,False,1.1535086974268085e-05
+2025-12-20_Nijmegen Eendracht Combinatie - AFC Ajax,2885076225,1,25,25,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,62.370000000000005,18.428,1,1.0,turnover,False,0.0
+2025-12-20_Nijmegen Eendracht Combinatie - AFC Ajax,2885077251,1,28,9,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,913pg8qqcjp99h5fjybbenob9,P. Sandler,51.660000000000004,46.92,1,1.0,turnover,False,0.0
+2025-12-20_Nijmegen Eendracht Combinatie - AFC Ajax,2885079395,1,33,19,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,42.945,33.592,0,0.0,turnover,False,0.0
+2025-12-20_Nijmegen Eendracht Combinatie - AFC Ajax,2885083249,1,42,6,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,71.82000000000001,10.200000000000001,2,3.0,window_expired,False,0.0
+2025-12-20_Nijmegen Eendracht Combinatie - AFC Ajax,2885099639,2,53,57,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,67.83,3.944,1,1.0,turnover,False,0.0
+2025-12-20_Nijmegen Eendracht Combinatie - AFC Ajax,2885103059,2,58,6,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,46.935,55.21600000000001,0,0.0,turnover,False,0.0
+2025-12-20_Nijmegen Eendracht Combinatie - AFC Ajax,2885108931,2,65,53,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,34.44,51.272000000000006,3,6.0,window_expired,False,0.0004540685281275
+2025-12-20_Nijmegen Eendracht Combinatie - AFC Ajax,2885111591,2,69,33,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,9.555,41.208000000000006,2,2.0,turnover,False,0.0

@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-20_SBV Excelsior - PEC Zwolle,2885021571,1,9,44,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d29ahwtvs7ls75wdtkf7xr8tm,Z. Buurmeester,28.665000000000003,19.176000000000002,0,0.0,turnover,False,0.0
+2025-12-20_SBV Excelsior - PEC Zwolle,2885022015,1,10,42,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,71.29500000000002,16.32,2,1.0,turnover,False,0.0
+2025-12-20_SBV Excelsior - PEC Zwolle,2885022083,1,10,51,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,22.89,49.980000000000004,2,9.0,window_expired,False,0.0
+2025-12-20_SBV Excelsior - PEC Zwolle,2885022843,1,12,32,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5nhideyjwp2347ryi1n9wfq50,D. Sanches Fernandes,35.07,7.684000000000001,3,5.0,turnover,False,0.0
+2025-12-20_SBV Excelsior - PEC Zwolle,2885023645,1,14,16,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,2072f0p9ful9u577gdvo89yw9,K. Kostons,72.55499999999999,31.28,2,2.0,turnover,False,0.0147982872747077
+2025-12-20_SBV Excelsior - PEC Zwolle,2885025459,1,18,43,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,67.83,55.35200000000001,4,7.0,turnover,False,0.0
+2025-12-20_SBV Excelsior - PEC Zwolle,2885030377,1,25,2,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,19.845,47.736000000000004,3,3.0,window_expired,False,0.0002519165742100755
+2025-12-20_SBV Excelsior - PEC Zwolle,2885030981,1,25,45,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1x6fhuy49w4rpnyavwotbf504,T. Gooijer,24.150000000000002,13.736,1,3.0,turnover,False,0.0
+2025-12-20_SBV Excelsior - PEC Zwolle,2885032013,1,27,8,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,58.065,65.688,0,0.0,turnover,False,0.0
+2025-12-20_SBV Excelsior - PEC Zwolle,2885042213,1,42,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,30.66,8.432,0,0.0,turnover,False,0.0
+2025-12-20_SBV Excelsior - PEC Zwolle,2885042813,1,43,37,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,23.730000000000004,46.03600000000001,2,10.0,window_expired,False,0.0002241440107599
+2025-12-20_SBV Excelsior - PEC Zwolle,2885060725,2,51,28,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,65.83500000000001,27.608000000000004,4,10.0,turnover,False,0.0016063458845591
+2025-12-20_SBV Excelsior - PEC Zwolle,2885065475,2,62,5,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,26.145,21.012,2,2.0,turnover,False,0.0
+2025-12-20_SBV Excelsior - PEC Zwolle,2885067479,2,65,33,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,62.370000000000005,62.016000000000005,2,2.0,turnover,False,0.0014074974447472
+2025-12-20_SBV Excelsior - PEC Zwolle,2885071105,2,72,4,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5nhideyjwp2347ryi1n9wfq50,D. Sanches Fernandes,63.73500000000001,17.068,4,7.0,window_expired,False,0.0003088275885307
+2025-12-20_SBV Excelsior - PEC Zwolle,2885077131,2,85,23,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,23.730000000000004,50.048,1,1.0,turnover,False,0.0

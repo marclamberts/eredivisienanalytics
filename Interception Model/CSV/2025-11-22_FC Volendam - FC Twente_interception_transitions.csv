@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-22_FC Volendam - FC Twente,2875677033,1,4,32,4tic29sox7m39fy1ztgv0jsiq,FC Twente,2hbduprkyabq8g1nhe6b4g3bp,M. Pjaca,75.915,29.988000000000003,1,2.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875277883,1,7,15,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,64kb0lmkr24rmh59hb01m268k,R. van Cruijsen,21.735,37.06,0,0.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875280463,1,10,56,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,76.965,58.208,4,5.0,turnover,True,0.0070992540688937
+2025-11-22_FC Volendam - FC Twente,2875287561,1,19,27,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,31.605000000000004,49.368,6,9.0,turnover,False,0.00041958397850889995
+2025-11-22_FC Volendam - FC Twente,2875291007,1,22,57,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,31.919999999999998,49.776,0,0.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875298153,1,30,11,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5m8pflpgynidzk7d9507oujje,D. Rots,71.08500000000001,20.060000000000002,0,0.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875736713,1,31,49,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,21.525000000000002,42.636,3,7.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875305811,1,39,19,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,27.51,35.836000000000006,3,7.0,window_expired,False,0.0005072173803517897
+2025-11-22_FC Volendam - FC Twente,2875741559,1,39,31,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,20.37,61.132000000000005,1,2.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875308475,1,42,45,4tic29sox7m39fy1ztgv0jsiq,FC Twente,6wwk8y9mklkh8x606ynhe1lp0,S. Ørjasæter,76.125,63.784000000000006,2,1.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875330089,2,45,15,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,43.47,35.836000000000006,6,7.0,window_expired,False,0.0053010459209849176
+2025-11-22_FC Volendam - FC Twente,2875330337,2,49,22,4tic29sox7m39fy1ztgv0jsiq,FC Twente,6wwk8y9mklkh8x606ynhe1lp0,S. Ørjasæter,43.995,47.736000000000004,3,2.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875334977,2,55,55,4tic29sox7m39fy1ztgv0jsiq,FC Twente,2hbduprkyabq8g1nhe6b4g3bp,M. Pjaca,25.305000000000003,8.432,0,0.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875336295,2,57,4,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,59.43000000000001,32.776,0,0.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875360337,2,80,32,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,56.07,47.19200000000001,0,0.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875365697,2,86,59,4tic29sox7m39fy1ztgv0jsiq,FC Twente,c7n2b2gq381k0o0jizqueii5m,M. Kjølø,32.550000000000004,56.984,0,0.0,turnover,False,0.0
+2025-11-22_FC Volendam - FC Twente,2875368987,2,90,40,4tic29sox7m39fy1ztgv0jsiq,FC Twente,36veg0wk1z3om89daf0clbl5h,R. van Wolfswinkel,67.62,8.228,1,1.0,turnover,False,0.0

@@ -1,0 +1,30 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-01_AFC Ajax - SC Heerenveen,2867266657,1,3,35,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,6km3r9cspyz7g6343o9mri63u,Raúl Moro,56.07,10.336,3,4.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867267899,1,3,47,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,10.815000000000001,19.856,4,9.0,turnover,False,2.9864278858898752e-05
+2025-11-01_AFC Ajax - SC Heerenveen,2867275597,1,8,4,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,62.05500000000001,60.044000000000004,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867279593,1,9,55,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,40.53,59.092000000000006,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867281063,1,10,36,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,al7bdbzd91zkuh6ilsvw3fsru,V. Sejk,37.17,49.776,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867287285,1,13,22,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,58.905,62.968,2,3.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867300503,1,20,59,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,6km3r9cspyz7g6343o9mri63u,Raúl Moro,39.27,18.156000000000002,2,6.0,window_expired,False,3.0934016303219014e-05
+2025-11-01_AFC Ajax - SC Heerenveen,2867301405,1,21,39,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,ar7llmzju08n8yrqu8xm1thck,O. Braude,30.87,20.808000000000003,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867303917,1,24,10,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,35.28,59.092000000000006,6,9.0,window_expired,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867304089,1,24,21,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,29.925,19.856,1,2.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867332277,1,28,12,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,57btqxe5sy3ygzxpp55p4umdx,W. Weghorst,52.29,3.74,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867332603,1,28,21,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,aqnr6l3f02hx0soadunxbjcpg,J. Trenskow,46.62,41.82,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867334251,1,29,7,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,57.225,29.240000000000002,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867336041,1,29,51,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,61.425000000000004,9.520000000000001,2,6.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867337619,1,30,34,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,18.480000000000004,44.064,5,7.0,turnover,False,6.180169184503981e-05
+2025-11-01_AFC Ajax - SC Heerenveen,2867349209,1,35,59,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,35.805,33.79600000000001,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867356805,1,39,33,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,5oghztk07za2yuqq4jnav22y2,M. Rivera,72.135,63.648,3,3.0,turnover,False,0.0004225191645667
+2025-11-01_AFC Ajax - SC Heerenveen,2867360625,1,41,25,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,aqnr6l3f02hx0soadunxbjcpg,J. Trenskow,64.26,17.204,3,6.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867378001,1,48,42,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,19.740000000000002,5.984000000000001,1,1.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867412693,2,46,4,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,58.800000000000004,21.692,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867425313,2,56,0,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,75.28500000000001,63.03600000000001,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867427679,2,57,56,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,35qg0rrwtl00pycx468s62m3u,K. Taylor,74.76,25.772000000000002,4,7.0,window_expired,False,0.0032080498716977003
+2025-11-01_AFC Ajax - SC Heerenveen,2867431589,2,60,39,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,eu6pfkiah7otafyryg6ll7y09,L. Brouwers,64.47,45.084,1,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867454107,2,76,12,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,5oghztk07za2yuqq4jnav22y2,M. Rivera,96.28500000000001,57.05200000000001,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867461859,2,82,24,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,40.635000000000005,58.004000000000005,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867462887,2,83,17,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,34.44,21.488000000000003,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867463015,2,83,23,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,11.13,24.888,2,8.0,window_expired,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867478989,2,94,13,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,d2698ncsatg6jtvb0l9ijhj4k,N. Hopland,30.450000000000003,27.472,0,0.0,turnover,False,0.0
+2025-11-01_AFC Ajax - SC Heerenveen,2867479061,2,94,16,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,d2698ncsatg6jtvb0l9ijhj4k,N. Hopland,24.36,36.652,2,2.0,turnover,False,0.0

@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2911946637,1,0,14,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,18.69,32.504,0,0.0,turnover,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2911956639,1,9,5,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,66.885,6.5280000000000005,3,6.0,window_expired,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2911958367,1,10,32,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dwyl0yii553i57u7azfa7d15g,A. Hadj Moussa,25.62,12.784,0,0.0,turnover,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2911971157,1,25,53,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,4qr07cfbwquppkww057mb9tk9,J. Moder,40.53,32.368,0,0.0,turnover,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2911971301,1,26,9,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,54.81,60.044000000000004,1,1.0,turnover,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2912004365,1,35,23,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,33.6,57.664,1,1.0,turnover,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2912020479,2,45,31,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,61.95,7.752000000000001,2,1.0,turnover,False,0.0004600214119553
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2912022493,2,46,51,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,24.36,47.464,2,2.0,turnover,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2912031405,2,53,15,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,28.875,34.476000000000006,2,2.0,window_expired,False,0.0001714750575504
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2912041597,2,63,54,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,16.695,45.492000000000004,2,2.0,turnover,False,0.0002787168303809
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2912042941,2,65,54,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,59.64,6.256,1,1.0,turnover,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2912048463,2,72,14,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,9.240000000000002,60.928,1,3.0,turnover,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2912056557,2,75,13,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,18.480000000000004,29.716000000000005,0,0.0,turnover,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2912052269,2,75,43,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,eoodvdqfvhql03i8kv9l14qvo,T. Kraaijeveld,56.385000000000005,9.180000000000001,2,1.0,window_expired,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2912058575,2,80,59,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,33.285000000000004,63.85200000000001,1,2.0,turnover,False,0.0
+2026-03-15_Feyenoord Rotterdam - SBV Excelsior,2912069535,2,90,15,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,26.565,23.256000000000004,2,1.0,turnover,False,0.0

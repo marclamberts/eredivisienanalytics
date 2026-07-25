@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890374067,1,0,51,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,21.105000000000004,60.99600000000001,1,1.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890381657,1,11,14,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,ccmmsnrfn58gwi1petlp08f3e,L. Duijvestijn,37.905,22.032,0,0.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890383417,1,13,49,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,20.475,63.104,1,0.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890383611,1,14,7,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,60jptu288hf6gcljkbzcdie39,K. Peterson,22.155,50.592000000000006,0,0.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890383945,1,14,32,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,65.10000000000001,5.78,4,8.0,window_expired,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890387823,1,20,12,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,64.47,52.428,2,3.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890388403,1,21,6,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,48.300000000000004,5.984000000000001,5,9.0,window_expired,False,0.004552185484553201
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890390037,1,24,10,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dp0q4f4gbj2buhcu1lb5dzxed,Ivo Pinto,41.580000000000005,5.44,0,0.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890393919,1,31,0,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,41.265,21.556,0,0.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890401787,1,44,25,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,11.13,26.860000000000003,1,1.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890402119,1,45,7,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,6.825,56.984,4,6.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890421037,2,59,38,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,24sgu58uugxgy49el075dz21g,E. Bajraktarević,37.48500000000001,31.484,4,5.0,turnover,False,0.00015085858987
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890423365,2,63,8,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,47.04,57.39200000000001,2,1.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890424159,2,64,26,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,19.425,41.82,3,7.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890427079,2,68,38,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,36.75,42.568000000000005,0,0.0,turnover,False,0.0
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890433361,2,79,14,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,24.78,44.2,4,4.0,window_expired,False,0.0001242094770637775
+2026-01-17_Fortuna Sittard - PSV Eindhoven,2890435809,2,82,45,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,47.67,4.6240000000000006,2,2.0,turnover,False,0.0

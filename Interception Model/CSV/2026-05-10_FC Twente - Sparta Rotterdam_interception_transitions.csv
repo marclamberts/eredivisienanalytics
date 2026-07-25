@@ -1,0 +1,20 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-10_FC Twente - Sparta Rotterdam,2936055637,1,5,46,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,5.88,46.71600000000001,0,0.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936059107,1,9,48,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,29q4j9r2lgdsdkkq2fgh8l7o4,Ayoni Santos,54.18000000000001,56.03200000000001,1,0.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936069009,1,20,36,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,49.875,16.388,4,4.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936073959,1,24,31,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,66.15,60.18000000000001,6,8.0,window_expired,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936077615,1,27,22,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,4.305,47.53200000000001,2,3.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936083869,1,32,38,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,15.75,30.464,0,0.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936099073,1,45,35,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,36.015,54.128,0,0.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936099407,1,45,51,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,18.165000000000003,34.068000000000005,3,2.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936118927,2,45,13,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,536qjh4gcmpo5q68ti87e60kq,S. Mito,12.075000000000001,65.07600000000001,1,1.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936127689,2,52,56,4tic29sox7m39fy1ztgv0jsiq,FC Twente,cocgd3hh74fq9c30x9bps4idw,S. Lemkin,26.985,43.384,0,0.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936137781,2,63,27,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,29q4j9r2lgdsdkkq2fgh8l7o4,Ayoni Santos,14.595,37.128,2,4.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936141313,2,66,7,4tic29sox7m39fy1ztgv0jsiq,FC Twente,6wwk8y9mklkh8x606ynhe1lp0,S. Ørjasæter,27.51,52.836000000000006,0,0.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936149683,2,72,42,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,13.965000000000002,42.092,0,0.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936157127,2,79,31,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ybcevijvdov8qj1hxcbw3dd6,A. Roaldsøy,62.370000000000005,18.904000000000003,4,8.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936158691,2,80,57,4tic29sox7m39fy1ztgv0jsiq,FC Twente,2hbduprkyabq8g1nhe6b4g3bp,M. Pjaca,39.165,49.844,0,0.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936163167,2,85,55,4tic29sox7m39fy1ztgv0jsiq,FC Twente,2hbduprkyabq8g1nhe6b4g3bp,M. Pjaca,13.334999999999999,52.088,3,3.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936164027,2,86,56,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ely6vpyueden4b6ozfmspwgk5,J. Toornstra,27.3,21.080000000000002,4,3.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936164155,2,87,3,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,536qjh4gcmpo5q68ti87e60kq,S. Mito,38.010000000000005,34.0,2,7.0,turnover,False,0.0
+2026-05-10_FC Twente - Sparta Rotterdam,2936177319,2,93,44,4tic29sox7m39fy1ztgv0jsiq,FC Twente,36veg0wk1z3om89daf0clbl5h,R. van Wolfswinkel,50.82,44.268,0,0.0,turnover,False,0.0

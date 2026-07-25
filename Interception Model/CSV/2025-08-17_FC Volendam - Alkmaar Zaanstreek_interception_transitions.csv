@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836337689,1,3,23,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,27.930000000000003,22.848000000000003,3,10.0,window_expired,False,0.0024514124736647
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836350963,1,19,57,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6bklt91zc5vietmdc8r31zl2i,D. Payne,73.71000000000001,4.692,0,0.0,turnover,False,0.0
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836353629,1,22,20,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jpreaads35pnnfqbn7hmrmy,S. Mijnans,8.82,40.46,1,1.0,turnover,False,0.0
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836366187,1,33,6,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6jqn5grsuhuo5at81pzahr6xh,R. Mühren,29.505000000000003,33.660000000000004,2,3.0,window_expired,False,0.0063584658481308
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836783811,1,35,9,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,eu901b75l2ly5p48jdw6kwmad,M. Amevor,27.405,42.160000000000004,1,1.0,turnover,False,0.0
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836376709,1,43,51,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,c9epkro6fot3km9zak1kswfhm,X. Mbuyamba,29.505000000000003,19.788000000000004,3,6.0,window_expired,False,0.0
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836399917,2,47,43,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,48.825,63.71600000000001,3,10.0,window_expired,False,0.025811056390731
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836400739,2,48,52,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,23.415000000000003,28.016000000000005,3,8.0,window_expired,False,0.0015036220268846
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836404117,2,53,27,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,8u19xeh9ugvh8f1mh7jnbbhuc,K. Smit,83.89500000000001,5.848,3,5.0,window_expired,True,0.0519558326187506
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836409741,2,59,27,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,42.525,50.592000000000006,2,2.0,turnover,False,0.0001490500089404
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836410967,2,60,40,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,45.675000000000004,37.332,3,7.0,turnover,False,0.0446714965780227
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836412067,2,61,40,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,78.96000000000001,26.520000000000003,0,0.0,turnover,False,0.0
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836414139,2,63,34,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,3.8850000000000002,42.432,0,0.0,turnover,False,0.0
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836421013,2,70,46,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,15.645000000000001,33.932,0,0.0,turnover,False,0.0
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836425731,2,75,39,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,7053nqhl9wu2u1kegzo9aopg5,B. Kuwas,12.39,13.056000000000001,2,2.0,turnover,False,0.0
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836429863,2,80,22,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,es363spp9pgd4hralx6ni2xw4,M. Chávez,25.200000000000003,66.164,0,0.0,turnover,False,0.0
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836437263,2,88,21,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6bklt91zc5vietmdc8r31zl2i,D. Payne,78.75,3.468,3,3.0,turnover,False,0.0
+2025-08-17_FC Volendam - Alkmaar Zaanstreek,2836437335,2,88,27,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,es363spp9pgd4hralx6ni2xw4,M. Chávez,18.794999999999998,61.608000000000004,0,0.0,turnover,False,0.0

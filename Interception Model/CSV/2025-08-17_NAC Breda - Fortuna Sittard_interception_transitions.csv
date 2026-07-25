@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-17_NAC Breda - Fortuna Sittard,2836512295,1,3,32,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,72.03,12.24,0,0.0,turnover,False,0.0
+2025-08-17_NAC Breda - Fortuna Sittard,2836809125,1,12,13,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,41.160000000000004,54.06,0,0.0,turnover,False,0.0
+2025-08-17_NAC Breda - Fortuna Sittard,2836522281,1,15,47,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,54.18000000000001,51.61200000000001,1,2.0,turnover,False,0.0
+2025-08-17_NAC Breda - Fortuna Sittard,2836548177,1,43,44,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,d785q9rpqlyuyswv8f9fx4cno,M. Nassoh,74.97000000000001,63.580000000000005,6,8.0,window_expired,False,0.0025613362798805
+2025-08-17_NAC Breda - Fortuna Sittard,2836564981,2,45,18,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,37.800000000000004,52.768,5,10.0,turnover,True,0.0020396459780713232
+2025-08-17_NAC Breda - Fortuna Sittard,2836573429,2,55,24,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,2wkew38juoofry6oo3t1vcwyd,E. Mahmutović,27.825000000000003,21.624000000000002,4,4.0,turnover,False,0.0002669490302716
+2025-08-17_NAC Breda - Fortuna Sittard,2836574639,2,56,48,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,62.370000000000005,44.336000000000006,4,9.0,window_expired,True,0.0
+2025-08-17_NAC Breda - Fortuna Sittard,2836577617,2,59,42,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,67.935,30.464,0,0.0,turnover,False,0.0
+2025-08-17_NAC Breda - Fortuna Sittard,2836578845,2,61,0,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,42.63,42.5,5,10.0,window_expired,False,0.00012069161627971392
+2025-08-17_NAC Breda - Fortuna Sittard,2836587041,2,69,32,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,28.035,43.044000000000004,3,9.0,turnover,True,3.0871078655458906e-05
+2025-08-17_NAC Breda - Fortuna Sittard,2836588433,2,71,4,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8nnxi9lw3hso096kk81h0azh0,J. Talvitie,23.52,2.176,4,4.0,turnover,False,5.226869595555128e-05
+2025-08-17_NAC Breda - Fortuna Sittard,2836588517,2,71,9,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,68.46000000000001,51.61200000000001,2,1.0,turnover,False,0.0008981594450033
+2025-08-17_NAC Breda - Fortuna Sittard,2836853235,2,74,17,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,21.735,16.864,2,3.0,turnover,False,0.0
+2025-08-17_NAC Breda - Fortuna Sittard,2836592031,2,74,48,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,10.08,26.996000000000002,2,2.0,turnover,False,0.0
+2025-08-17_NAC Breda - Fortuna Sittard,2836597593,2,80,15,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,44.94,52.632000000000005,0,0.0,turnover,False,0.0
+2025-08-17_NAC Breda - Fortuna Sittard,2836598525,2,81,10,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,20.16,23.188000000000002,0,0.0,turnover,False,0.0
+2025-08-17_NAC Breda - Fortuna Sittard,2836605919,2,88,10,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,d785q9rpqlyuyswv8f9fx4cno,M. Nassoh,34.755,38.148,3,4.0,window_expired,False,0.0032790058098498753

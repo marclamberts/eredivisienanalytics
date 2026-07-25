@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-07_FC Utrecht - FC Twente,2880832119,1,8,24,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,66.36,55.624,0,0.0,turnover,False,0.0
+2025-12-07_FC Utrecht - FC Twente,2880833567,1,13,17,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,43.995,60.99600000000001,6,9.0,window_expired,False,0.0009368308847300713
+2025-12-07_FC Utrecht - FC Twente,2880836627,1,20,39,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,47.25,17.408,1,2.0,turnover,False,0.0
+2025-12-07_FC Utrecht - FC Twente,2880837013,1,21,39,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,78.22500000000001,60.99600000000001,0,0.0,turnover,False,0.0
+2025-12-07_FC Utrecht - FC Twente,2880837035,1,21,42,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,41.580000000000005,20.060000000000002,0,0.0,turnover,False,0.0
+2025-12-07_FC Utrecht - FC Twente,2880840937,1,31,1,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,21.945,23.664,0,0.0,turnover,False,0.0
+2025-12-07_FC Utrecht - FC Twente,2880841873,1,33,24,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5m8pflpgynidzk7d9507oujje,D. Rots,92.08500000000001,5.236000000000001,2,4.0,turnover,False,0.0
+2025-12-07_FC Utrecht - FC Twente,2880843553,1,38,39,ccpscwdcm65czscrun048ecn5,FC Utrecht,9ano8w4jrlk6zq92rxchzaru2,Miguel Rodríguez,84.73500000000001,4.08,0,0.0,turnover,False,0.0
+2025-12-07_FC Utrecht - FC Twente,2880845787,1,43,46,ccpscwdcm65czscrun048ecn5,FC Utrecht,2tc8y9du64tjno62zll2jhy7e,Y. Cathline,31.5,54.74,2,1.0,turnover,False,0.0
+2025-12-07_FC Utrecht - FC Twente,2880860295,2,47,16,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,18.480000000000004,43.656000000000006,2,2.0,turnover,False,0.0
+2025-12-07_FC Utrecht - FC Twente,2880862407,2,50,56,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,52.92,52.97200000000001,4,9.0,window_expired,False,0.0235594208159053
+2025-12-07_FC Utrecht - FC Twente,2880865161,2,54,56,4tic29sox7m39fy1ztgv0jsiq,FC Twente,cocgd3hh74fq9c30x9bps4idw,S. Lemkin,58.800000000000004,3.74,4,2.0,turnover,False,0.0007840184109186
+2025-12-07_FC Utrecht - FC Twente,2880874503,2,67,36,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,48.300000000000004,16.252,1,0.0,turnover,False,0.0
+2025-12-07_FC Utrecht - FC Twente,2880876869,2,70,44,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,45.99,41.956,0,0.0,turnover,False,0.0
+2025-12-07_FC Utrecht - FC Twente,2880879529,2,74,24,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,35.7,60.928,3,2.0,turnover,False,0.0

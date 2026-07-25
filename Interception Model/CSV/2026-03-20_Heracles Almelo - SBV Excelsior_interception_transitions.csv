@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-20_Heracles Almelo - SBV Excelsior,2913987727,1,7,26,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,3.6750000000000003,56.848,1,0.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914005893,1,26,14,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,30t0ph1icrggc0x62om801ses,G. de Regt,32.655,63.85200000000001,0,0.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914008023,1,28,48,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,30.345,16.66,0,0.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914009041,1,29,53,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,6.720000000000001,46.92,1,0.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914041685,2,46,38,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,39.9,64.94,1,2.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914044553,2,48,46,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,47.88,14.280000000000001,0,0.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914049713,2,52,52,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,38.85,50.456,3,6.0,turnover,True,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914056135,2,57,34,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,43.68000000000001,12.58,2,3.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914056217,2,57,39,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,41.265,50.660000000000004,3,9.0,window_expired,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914065907,2,65,27,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,60.06,54.74,0,0.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914074473,2,73,34,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,18.375,62.35600000000001,2,1.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914077009,2,76,16,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,42.63,61.540000000000006,0,0.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914088659,2,88,8,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,43.995,49.980000000000004,1,4.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914089245,2,88,40,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,34.44,55.284,0,0.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914090565,2,90,1,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,26.880000000000003,39.712,1,2.0,turnover,False,0.0
+2026-03-20_Heracles Almelo - SBV Excelsior,2914093165,2,93,16,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,aeqj9ogm0dntus0wl352w9z6y,C. Widell,33.18,4.148,0,0.0,turnover,False,0.0

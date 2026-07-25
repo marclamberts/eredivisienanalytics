@@ -1,0 +1,11 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-26_Heracles Almelo - FC Volendam,2929631527,1,5,1,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6svx5u21jrcch3ewpqqbxukmh,J. Bacuna,46.515,3.604,0,0.0,turnover,False,0.0
+2026-04-26_Heracles Almelo - FC Volendam,2929645813,1,16,44,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,21.0,62.83200000000001,1,1.0,turnover,False,0.0
+2026-04-26_Heracles Almelo - FC Volendam,2929649685,1,20,10,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,16.59,47.940000000000005,0,0.0,turnover,False,0.0
+2026-04-26_Heracles Almelo - FC Volendam,2929654831,1,26,41,dac758ef858jbq7pcb3gfwite,Heracles Almelo,96om2im2vd1621ajcexlyekno,T. van Gilst,54.495,1.292,0,0.0,turnover,False,0.0
+2026-04-26_Heracles Almelo - FC Volendam,2929656329,1,28,49,dac758ef858jbq7pcb3gfwite,Heracles Almelo,80dk8iv6p0202z10qcqy8bfca,S. Scheperman,58.695,17.136,0,0.0,turnover,False,0.0
+2026-04-26_Heracles Almelo - FC Volendam,2929657443,1,30,9,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6svx5u21jrcch3ewpqqbxukmh,J. Bacuna,30.240000000000002,24.684,5,10.0,window_expired,False,0.0
+2026-04-26_Heracles Almelo - FC Volendam,2929666187,1,36,41,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,27.825000000000003,39.984,3,3.0,turnover,False,0.0
+2026-04-26_Heracles Almelo - FC Volendam,2929709289,2,49,35,dac758ef858jbq7pcb3gfwite,Heracles Almelo,f2snk84xy67ergwrwoblgt2ad,T. Bruns,77.80499999999999,8.636000000000001,3,3.0,turnover,True,0.0
+2026-04-26_Heracles Almelo - FC Volendam,2929729413,2,71,34,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,29.715000000000003,12.920000000000002,0,0.0,turnover,False,0.0
+2026-04-26_Heracles Almelo - FC Volendam,2929733855,2,77,36,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,24.255000000000003,24.344,1,2.0,turnover,False,0.0

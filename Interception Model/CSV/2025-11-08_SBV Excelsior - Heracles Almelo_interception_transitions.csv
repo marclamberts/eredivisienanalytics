@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-08_SBV Excelsior - Heracles Almelo,2870688893,1,10,57,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,17.745,8.024000000000001,1,3.0,turnover,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2871420817,1,15,58,dac758ef858jbq7pcb3gfwite,Heracles Almelo,9y5kirmp6gcrsy2s1pinhkqy2,L. Kulenović,34.545,66.30000000000001,1,0.0,turnover,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2870711435,1,21,42,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,45.675000000000004,51.476000000000006,2,3.0,turnover,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2870742147,1,40,52,dac758ef858jbq7pcb3gfwite,Heracles Almelo,2zwe056wfzof0v5jv01dv9uc5,A. Hrustić,52.605000000000004,31.076000000000004,5,9.0,window_expired,False,9.48767351487273e-05
+2025-11-08_SBV Excelsior - Heracles Almelo,2870748091,1,43,33,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,55.230000000000004,35.156000000000006,4,7.0,window_expired,False,0.0007774339687937
+2025-11-08_SBV Excelsior - Heracles Almelo,2870752685,1,45,42,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,48.195,28.560000000000002,0,0.0,turnover,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2870755477,1,46,56,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,21.105000000000004,18.632,2,4.0,turnover,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2870788037,2,45,33,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5nhideyjwp2347ryi1n9wfq50,D. Sanches Fernandes,28.455000000000002,16.388,4,10.0,window_expired,True,0.0006141382825012
+2025-11-08_SBV Excelsior - Heracles Almelo,2870799163,2,51,16,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,30t0ph1icrggc0x62om801ses,G. de Regt,57.015,63.71600000000001,1,1.0,turnover,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2870806515,2,54,52,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,23.94,45.15200000000001,1,0.0,window_expired,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2870828437,2,66,22,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,27.51,48.348,2,3.0,turnover,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2870835245,2,72,1,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,56.07,17.136,2,3.0,turnover,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2870835293,2,72,5,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,35.175000000000004,37.80800000000001,0,0.0,turnover,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2870835671,2,72,25,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,buhlcdwtnxeiqgy079kas7dw4,J. Bergraaf,42.0,34.952,5,9.0,window_expired,False,0.000544461794237303
+2025-11-08_SBV Excelsior - Heracles Almelo,2870837439,2,74,12,dac758ef858jbq7pcb3gfwite,Heracles Almelo,ait187bpr8we72jvfxxt6ttjp,M. te Wierik,26.775000000000002,22.916000000000004,0,0.0,turnover,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2870852949,2,86,29,dac758ef858jbq7pcb3gfwite,Heracles Almelo,69gzswoym4jqnrag1wdqfdkyy,J. Wieckhoff,25.41,21.828000000000003,0,0.0,turnover,False,0.0
+2025-11-08_SBV Excelsior - Heracles Almelo,2870856119,2,88,58,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,424ohpqxpz31dlopxxamyk9as,Yoon Do-Young,15.120000000000001,18.768,0,0.0,turnover,False,0.0

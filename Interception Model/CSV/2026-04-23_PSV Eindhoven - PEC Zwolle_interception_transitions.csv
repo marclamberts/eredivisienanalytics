@@ -1,0 +1,23 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928015901,1,1,10,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,42.839999999999996,10.200000000000001,0,0.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928134963,1,4,18,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,33.81,58.888,2,2.0,window_expired,False,0.0005160204991726
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928020445,1,9,7,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,48.825,9.112,1,3.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928025465,1,16,37,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,24.465000000000003,43.248000000000005,2,5.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928027803,1,20,12,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,8.82,24.548000000000002,0,0.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928030295,1,23,30,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,3c3vzihvua5ap17aa27v1ve38,J. van den Berg,23.625,63.03600000000001,6,8.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928033969,1,30,54,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,74.34,6.188000000000001,6,10.0,window_expired,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928041337,1,43,43,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,3.045,21.488000000000003,1,0.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928052003,2,47,6,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,30.975,55.01200000000001,6,9.0,window_expired,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928054223,2,51,55,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,ekur9x1kzp8wq0lwfwev0b0bu,K. de Rooij,36.015,42.84,3,8.0,turnover,True,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928054639,2,52,54,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,33.18,21.42,3,9.0,window_expired,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928054739,2,53,5,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,20.580000000000002,7.956,1,1.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928055203,2,53,54,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,a7vlgirln231n3dqjhb72o0es,O. Aertssen,28.35,4.0120000000000005,1,1.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928061315,2,66,38,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,emglxnqrlqskt8krglv7sziwa,R. Pepi,64.26,49.43600000000001,3,7.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928140351,2,69,49,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,12.600000000000001,45.288,0,0.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928062961,2,70,35,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,17.64,61.404,1,0.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928065177,2,76,11,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d29ahwtvs7ls75wdtkf7xr8tm,Z. Buurmeester,27.195,41.344,0,0.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928141127,2,78,15,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,24sgu58uugxgy49el075dz21g,E. Bajraktarević,63.839999999999996,6.800000000000001,3,8.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928067203,2,83,11,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,39.58500000000001,19.584000000000003,0,0.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928142531,2,84,23,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,4i5i204kbg1we22h8cabtb1n8,J. Bawuah,32.025,19.176000000000002,1,1.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928067695,2,84,38,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,3c3vzihvua5ap17aa27v1ve38,J. van den Berg,70.77000000000001,61.2,0,0.0,turnover,False,0.0
+2026-04-23_PSV Eindhoven - PEC Zwolle,2928068031,2,85,44,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4mhahoh3a6rir882ug9hdb5nu,T. Velthuis,4.7250000000000005,30.056000000000004,1,2.0,turnover,False,0.0

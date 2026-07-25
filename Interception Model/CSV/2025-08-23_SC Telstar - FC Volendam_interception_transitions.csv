@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-23_SC Telstar - FC Volendam,2838588277,1,10,48,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,16.38,37.74,1,1.0,turnover,False,0.0
+2025-08-23_SC Telstar - FC Volendam,2838590785,1,15,2,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,56.7,20.604000000000003,1,1.0,turnover,False,0.0
+2025-08-23_SC Telstar - FC Volendam,2838603873,1,25,15,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,69.405,4.148,0,0.0,turnover,False,0.0
+2025-08-23_SC Telstar - FC Volendam,2838607159,1,28,12,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6bklt91zc5vietmdc8r31zl2i,D. Payne,26.040000000000003,12.376000000000001,1,1.0,turnover,False,0.0
+2025-08-23_SC Telstar - FC Volendam,2838619011,1,37,1,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6bklt91zc5vietmdc8r31zl2i,D. Payne,23.94,5.848,4,8.0,window_expired,False,0.0
+2025-08-23_SC Telstar - FC Volendam,2838620949,1,38,30,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,64.155,20.876,2,2.0,turnover,False,0.0007288898929515
+2025-08-23_SC Telstar - FC Volendam,2838628253,1,44,0,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,74.97000000000001,12.716000000000001,2,0.0,turnover,False,0.0
+2025-08-23_SC Telstar - FC Volendam,2838628919,1,44,30,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1zybkcmp40td92a6yg8sw9uga,T. Owusu,26.669999999999998,40.188,3,10.0,window_expired,False,0.0034604477192185998
+2025-08-23_SC Telstar - FC Volendam,2838656463,2,56,32,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1zybkcmp40td92a6yg8sw9uga,T. Owusu,70.14,43.248000000000005,1,0.0,turnover,False,0.0
+2025-08-23_SC Telstar - FC Volendam,2838656579,2,56,37,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,6.93,24.412,1,1.0,turnover,False,0.0
+2025-08-23_SC Telstar - FC Volendam,2838680353,2,85,53,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,32.025,56.304,2,2.0,turnover,False,0.0
+2025-08-23_SC Telstar - FC Volendam,2838680519,2,86,9,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,c9epkro6fot3km9zak1kswfhm,X. Mbuyamba,67.515,13.804000000000002,2,4.0,turnover,False,0.0
+2025-08-23_SC Telstar - FC Volendam,2838682603,2,89,6,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,25.305000000000003,63.17200000000001,0,0.0,turnover,False,0.0
+2025-08-23_SC Telstar - FC Volendam,2838683509,2,90,22,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,44.205000000000005,62.016000000000005,1,3.0,turnover,False,0.0

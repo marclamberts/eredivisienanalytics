@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-08_Fortuna Sittard - SC Heerenveen,2870964543,1,0,16,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,aqnr6l3f02hx0soadunxbjcpg,J. Trenskow,45.675000000000004,12.444,3,4.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2870971357,1,7,4,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,34.33500000000001,28.016000000000005,2,2.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2870988869,1,24,24,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,30.450000000000003,12.444,2,3.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2870991067,1,26,41,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,9o10vhew3jar8tqnkabw0qoyx,J. Lonwijk,7.14,8.364,1,1.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2870992249,1,28,7,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,25.41,24.276000000000003,0,0.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2870999269,1,35,54,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,8.925,41.072,0,0.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2871004765,1,41,53,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,70.98,59.024,0,0.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2871019259,2,46,8,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,39.9,48.55200000000001,0,0.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2871024871,2,52,22,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,66.885,51.272000000000006,3,1.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2871040571,2,68,17,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,73.71000000000001,50.93200000000001,3,6.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2871047209,2,75,18,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,30.66,56.71200000000001,2,5.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2871053855,2,82,1,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,74.76,64.94,0,0.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2871055571,2,83,59,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,60.69,62.424,0,0.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2871058983,2,87,54,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,26.355000000000004,62.628,1,1.0,turnover,False,0.0
+2025-11-08_Fortuna Sittard - SC Heerenveen,2871063441,2,92,58,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,30.03,55.284,0,0.0,turnover,False,0.0

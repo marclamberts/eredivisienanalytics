@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-29_FC Groningen - Heracles Almelo,2840540307,1,1,0,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,22.89,2.584,0,0.0,turnover,False,0.0
+2025-08-29_FC Groningen - Heracles Almelo,2840544227,1,4,0,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,49.665,38.964,1,4.0,turnover,False,0.0
+2025-08-29_FC Groningen - Heracles Almelo,2840562629,1,19,1,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,17.955000000000002,62.35600000000001,1,1.0,turnover,False,0.0
+2025-08-29_FC Groningen - Heracles Almelo,2840565627,1,21,38,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,23.625,34.748000000000005,1,4.0,turnover,False,0.0
+2025-08-29_FC Groningen - Heracles Almelo,2840573343,1,28,56,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,37.275,42.976000000000006,4,9.0,window_expired,False,0.00034299319244667626
+2025-08-29_FC Groningen - Heracles Almelo,2840580823,1,35,15,cos9hxi16eitbcbthof7zrm4m,FC Groningen,3aly8eihwfvtwde7dg0k18w7o,J. Schreuders,35.385000000000005,62.424,2,4.0,window_expired,False,9.346825549264026e-05
+2025-08-29_FC Groningen - Heracles Almelo,2840625967,2,56,53,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,49.035000000000004,21.828000000000003,0,0.0,turnover,False,0.0
+2025-08-29_FC Groningen - Heracles Almelo,2840627641,2,58,2,dac758ef858jbq7pcb3gfwite,Heracles Almelo,80dk8iv6p0202z10qcqy8bfca,S. Scheperman,49.56,17.816000000000003,3,7.0,window_expired,False,0.0
+2025-08-29_FC Groningen - Heracles Almelo,2840629889,2,59,30,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,38.010000000000005,66.504,0,0.0,turnover,False,0.0
+2025-08-29_FC Groningen - Heracles Almelo,2840634275,2,62,48,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,44.730000000000004,14.076,0,0.0,turnover,False,0.0
+2025-08-29_FC Groningen - Heracles Almelo,2840643833,2,69,13,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,55.86000000000001,19.176000000000002,6,9.0,window_expired,False,0.0004493009417727
+2025-08-29_FC Groningen - Heracles Almelo,2840649537,2,74,49,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,72.34500000000001,13.736,1,0.0,turnover,False,0.0

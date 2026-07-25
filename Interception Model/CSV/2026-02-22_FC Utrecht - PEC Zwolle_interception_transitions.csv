@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-22_FC Utrecht - PEC Zwolle,2903307811,1,11,35,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,41.580000000000005,38.964,3,3.0,turnover,False,0.000114894055983
+2026-02-22_FC Utrecht - PEC Zwolle,2903310053,1,13,52,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,25.935,61.2,5,8.0,window_expired,False,0.0007405329101628289
+2026-02-22_FC Utrecht - PEC Zwolle,2903317399,1,26,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,44.31,18.496000000000002,0,0.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903322657,1,32,47,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,25.62,13.260000000000002,4,10.0,window_expired,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903323645,1,33,39,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,67.41000000000001,58.956,0,0.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903329239,1,38,19,ccpscwdcm65czscrun048ecn5,FC Utrecht,c3j7m8kaoius8i6jihubgy6p6,Ángel Alarcón,34.44,7.616,2,2.0,turnover,False,4.227058985079024e-05
+2026-02-22_FC Utrecht - PEC Zwolle,2903333727,1,42,4,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,17.430000000000003,33.32,4,8.0,window_expired,False,5.273023259275145e-05
+2026-02-22_FC Utrecht - PEC Zwolle,2903335905,1,43,58,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,45.78,7.752000000000001,0,0.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903350705,1,45,6,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,5.04,35.768,0,0.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903364715,2,51,57,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,42.0,21.828000000000003,1,0.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903368655,2,55,34,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,36.330000000000005,50.048,0,0.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903371369,2,58,5,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,36.645,44.336000000000006,4,10.0,window_expired,False,1.447632772891283e-06
+2026-02-22_FC Utrecht - PEC Zwolle,2903372607,2,59,22,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,30.240000000000002,12.920000000000002,1,1.0,turnover,False,0.000108712816043
+2026-02-22_FC Utrecht - PEC Zwolle,2903374633,2,61,31,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,43.68000000000001,16.796,1,2.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903381137,2,71,59,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,cstlool8c2aoty5vhx77t4q38,J. Faberski,47.67,58.61600000000001,1,0.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903385387,2,76,37,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,26.565,33.184,0,0.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903390519,2,81,14,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,34.86000000000001,2.4480000000000004,0,0.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903391033,2,81,41,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,59.010000000000005,26.996000000000002,0,0.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903394621,2,84,53,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1x6fhuy49w4rpnyavwotbf504,T. Gooijer,8.925,10.200000000000001,1,1.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903401543,2,91,43,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,60.795,20.604000000000003,1,0.0,turnover,False,0.0
+2026-02-22_FC Utrecht - PEC Zwolle,2903402175,2,92,24,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,64.155,25.976000000000003,2,2.0,turnover,False,0.0

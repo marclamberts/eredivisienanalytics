@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-10_AFC Ajax - SC Telstar,2833667537,1,0,14,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,35qg0rrwtl00pycx468s62m3u,K. Taylor,17.01,62.15200000000001,0,0.0,turnover,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833667853,1,0,46,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,45.464999999999996,37.944,0,0.0,turnover,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2834200303,1,17,16,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,22.155,62.696000000000005,2,9.0,window_expired,False,7.022523898746191e-05
+2025-08-10_AFC Ajax - SC Telstar,2833682405,1,21,40,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,49.035000000000004,63.580000000000005,1,0.0,window_expired,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833685635,1,28,36,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,71.925,60.31600000000001,1,3.0,turnover,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833695379,1,42,3,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,11.025,32.43600000000001,2,7.0,window_expired,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833709991,2,47,46,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,8.505,21.692,1,1.0,turnover,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833715685,2,58,34,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9uo88sreasbyj41lg34hxy28l,B. Traoré,69.19500000000001,7.888,1,0.0,turnover,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833718481,2,64,35,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,47.355000000000004,54.53600000000001,1,2.0,turnover,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833721911,2,73,14,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,74.025,24.14,0,0.0,turnover,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833735855,2,73,57,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2wesmq2wuhnuwh2yhgkuaxqfo,A. Bouwman,63.945,16.932,0,0.0,turnover,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833730281,2,86,33,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,9229789015kq0j5c85ug3ajv8,A. Lechkar,73.185,19.040000000000003,0,0.0,turnover,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833730419,2,86,47,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,60.795,44.948,0,0.0,turnover,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833731651,2,88,23,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2wesmq2wuhnuwh2yhgkuaxqfo,A. Bouwman,65.415,17.408,5,10.0,window_expired,False,0.0293633114290941
+2025-08-10_AFC Ajax - SC Telstar,2833733283,2,90,59,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,cx6fxszjvjam6zb3c3p0dd1jo,M. Godts,63.945,52.97200000000001,3,2.0,turnover,False,0.0
+2025-08-10_AFC Ajax - SC Telstar,2833733301,2,91,2,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,devvpv4u2vs2cofnwp4678mvp,D. Malone,30.87,23.052,5,10.0,turnover,False,1.3600928166199178e-05
+2025-08-10_AFC Ajax - SC Telstar,2833733705,2,91,46,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,46.410000000000004,25.228,2,1.0,turnover,False,0.0003022718522162

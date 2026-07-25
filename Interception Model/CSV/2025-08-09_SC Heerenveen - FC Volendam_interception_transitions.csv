@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-09_SC Heerenveen - FC Volendam,2833209343,1,2,25,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,67.30499999999999,40.25600000000001,1,0.0,turnover,False,0.0
+2025-08-09_SC Heerenveen - FC Volendam,2833213959,1,7,18,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,22.575,48.824,6,8.0,window_expired,False,0.0002587144017578
+2025-08-09_SC Heerenveen - FC Volendam,2833214273,1,7,37,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6bklt91zc5vietmdc8r31zl2i,D. Payne,9.135,21.556,1,1.0,turnover,False,0.0
+2025-08-09_SC Heerenveen - FC Volendam,2833216927,1,10,44,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,23.835,50.79600000000001,0,0.0,turnover,False,0.0
+2025-08-09_SC Heerenveen - FC Volendam,2833220685,1,14,52,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,1.6800000000000002,46.580000000000005,0,0.0,turnover,False,0.0
+2025-08-09_SC Heerenveen - FC Volendam,2833228379,1,22,49,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,c5jk0pvcvqddy0xiqv6qkesph,H. Veerman,31.71,64.464,5,8.0,window_expired,False,6.107021326658137e-05
+2025-08-09_SC Heerenveen - FC Volendam,2833236801,1,31,47,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,5oghztk07za2yuqq4jnav22y2,M. Rivera,59.010000000000005,61.2,0,0.0,turnover,False,0.0
+2025-08-09_SC Heerenveen - FC Volendam,2833237709,1,32,36,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,89plvrt8pzppcclh4axvii0ru,A. Plat,19.11,17.68,5,8.0,turnover,False,9.355434096804116e-05
+2025-08-09_SC Heerenveen - FC Volendam,2833278081,2,57,14,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,6.300000000000001,52.36000000000001,1,0.0,turnover,False,0.0
+2025-08-09_SC Heerenveen - FC Volendam,2833289567,2,67,59,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,65.205,3.3320000000000003,2,1.0,turnover,False,0.0
+2025-08-09_SC Heerenveen - FC Volendam,2833311165,2,80,31,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,xvher4f1mb6otoui5k5gs3ro,N. Bukala,38.115,49.776,0,0.0,turnover,False,0.0
+2025-08-09_SC Heerenveen - FC Volendam,2833306741,2,85,57,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6ta1z3xjdmq81gwglcm9ghno4,M. de Haan,45.464999999999996,4.828,2,3.0,turnover,False,0.0
+2025-08-09_SC Heerenveen - FC Volendam,2833309597,2,88,51,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,eu901b75l2ly5p48jdw6kwmad,M. Amevor,9.450000000000001,42.568000000000005,1,2.0,turnover,False,0.0
+2025-08-09_SC Heerenveen - FC Volendam,2833492763,2,94,25,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,eu901b75l2ly5p48jdw6kwmad,M. Amevor,12.075000000000001,29.92,1,3.0,turnover,False,0.0

@@ -1,0 +1,8 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-14_Heracles Almelo - Alkmaar Zaanstreek,2846203573,1,5,29,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,65.31,43.384,3,5.0,window_expired,False,0.0003399341451068094
+2025-09-14_Heracles Almelo - Alkmaar Zaanstreek,2846204161,1,6,0,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jgtmmk4b2bgn0syidj6ve7kl,J. Clasie,67.935,59.228,1,1.0,turnover,False,0.0
+2025-09-14_Heracles Almelo - Alkmaar Zaanstreek,2846253785,1,44,40,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,33.495,8.228,0,0.0,turnover,False,0.0
+2025-09-14_Heracles Almelo - Alkmaar Zaanstreek,2846295101,2,59,20,dac758ef858jbq7pcb3gfwite,Heracles Almelo,80dk8iv6p0202z10qcqy8bfca,S. Scheperman,8.295,18.360000000000003,1,2.0,turnover,False,0.0
+2025-09-14_Heracles Almelo - Alkmaar Zaanstreek,2846315173,2,80,58,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,73lwz4he5erpp25zi8crjvztg,I. Jensen,34.86000000000001,56.984,5,4.0,turnover,False,2.685998814043467e-05
+2025-09-14_Heracles Almelo - Alkmaar Zaanstreek,2846316271,2,81,42,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,68.46000000000001,8.024000000000001,4,9.0,window_expired,False,0.022460208164331
+2025-09-14_Heracles Almelo - Alkmaar Zaanstreek,2846321889,2,85,31,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,73lwz4he5erpp25zi8crjvztg,I. Jensen,36.330000000000005,46.444,2,1.0,window_expired,False,0.0

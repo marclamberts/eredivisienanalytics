@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890157107,1,3,56,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,a46irqckxabod18j2c0qfixre,K. Goudmijn,21.105000000000004,32.232,0,0.0,turnover,False,0.0
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890158537,1,4,39,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,56nbghr9snc79dt8h99wleej8,S. Steur,61.74,56.984,0,0.0,turnover,False,0.0
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890168625,1,9,36,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,11.865000000000002,60.86000000000001,0,0.0,turnover,False,0.0
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890174951,1,12,51,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,c6ufljjgl050g9xn7e9ma7hg4,M. Smit,23.205000000000002,30.26,4,6.0,turnover,False,0.0011155797810201
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890191289,1,23,43,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,20.895,56.57600000000001,0,0.0,turnover,False,0.0
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890191589,1,24,5,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,41.160000000000004,17.544,3,3.0,turnover,False,2.4560201073900445e-05
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890193293,1,26,18,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,69.3,7.276,4,9.0,window_expired,False,0.0001103727076814
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890198217,1,32,16,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,4n18t6bixl6ba3bx76hym51qs,A. Gaaei,4.620000000000001,11.832,0,0.0,turnover,False,0.0
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890205751,1,36,43,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,70.35000000000001,52.29200000000001,2,4.0,turnover,False,0.0
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890217433,1,42,58,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,15.435,55.35200000000001,0,0.0,turnover,False,0.0
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890220817,1,44,50,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,3.3600000000000003,31.348000000000003,2,9.0,window_expired,False,0.0
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890254655,2,45,14,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,70.98,30.532,1,1.0,turnover,False,0.0
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890298429,2,76,21,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,40.214999999999996,62.628,1,3.0,turnover,False,0.0
+2026-01-17_AFC Ajax - Go Ahead Eagles,2890309605,2,90,57,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,35.49,48.688,0,0.0,turnover,False,0.0

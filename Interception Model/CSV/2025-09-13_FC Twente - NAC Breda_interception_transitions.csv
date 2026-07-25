@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-13_FC Twente - NAC Breda,2845737313,1,1,13,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,3c2wqlde0kovi9hii52egaimt,L. Holtby,38.955000000000005,45.900000000000006,3,2.0,turnover,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845739903,1,3,50,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,34.65,62.424,0,0.0,turnover,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845744953,1,8,2,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,c3j7ddqg0yzporam6gieibgiy,C. Brym,62.895,36.788000000000004,2,6.0,turnover,True,0.0054038758879056
+2025-09-13_FC Twente - NAC Breda,2845755669,1,18,27,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,c3j7ddqg0yzporam6gieibgiy,C. Brym,71.29500000000002,16.184,2,1.0,turnover,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845760949,1,23,26,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,29.61,53.448,0,0.0,turnover,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845762423,1,24,52,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,77.59500000000001,56.1,0,0.0,turnover,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845767303,1,30,5,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,20.475,46.92,2,5.0,window_expired,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845777757,1,40,48,4tic29sox7m39fy1ztgv0jsiq,FC Twente,lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,28.455000000000002,16.048000000000002,0,0.0,turnover,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845804243,2,54,23,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,64x38pccgfsuz4ywoveh2ksbu,L. Greiml,50.925000000000004,44.540000000000006,2,1.0,turnover,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845804535,2,54,42,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,c3j7ddqg0yzporam6gieibgiy,C. Brym,26.880000000000003,35.564,3,3.0,turnover,False,1.3493886383733613e-05
+2025-09-13_FC Twente - NAC Breda,2845812589,2,65,29,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bvwaamcj0bpdrcuoffl6b9rf8,D. Weidmann,37.48500000000001,19.584000000000003,2,2.0,turnover,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845813885,2,67,32,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,58.905,64.464,1,0.0,turnover,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845816749,2,72,10,4tic29sox7m39fy1ztgv0jsiq,FC Twente,lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,31.815,59.29600000000001,0,0.0,turnover,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845816777,2,72,12,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,36.855000000000004,62.83200000000001,0,0.0,turnover,False,0.0
+2025-09-13_FC Twente - NAC Breda,2845819599,2,75,51,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5r47vtvu418kae5j2rpv6w2dw,M. Rots,33.285000000000004,55.148,5,10.0,window_expired,False,0.0018078658208326
+2025-09-13_FC Twente - NAC Breda,2845820237,2,76,46,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,78.33,49.300000000000004,1,0.0,window_expired,False,0.0

@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-14_SC Heerenveen - SC Telstar,2911429015,1,1,24,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,25.200000000000003,4.692,3,3.0,turnover,False,0.0004736883668994
+2026-03-14_SC Heerenveen - SC Telstar,2911431363,1,3,37,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,65.10000000000001,59.568,2,2.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911437941,1,9,44,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,41.895,35.564,0,0.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911439297,1,11,2,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,83.89500000000001,39.372,3,5.0,turnover,False,0.0168701509488391
+2026-03-14_SC Heerenveen - SC Telstar,2911439409,1,11,9,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,30.03,36.788000000000004,5,9.0,window_expired,False,0.0482656377835825
+2026-03-14_SC Heerenveen - SC Telstar,2911439565,1,11,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,10.5,24.956000000000003,7,10.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911439799,1,11,30,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,5oghztk07za2yuqq4jnav22y2,M. Rivera,78.33,61.268,1,0.0,window_expired,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911441887,1,13,32,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,27.090000000000003,20.672,4,3.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911458931,1,24,47,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1zybkcmp40td92a6yg8sw9uga,T. Owusu,39.165,17.544,1,1.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911458521,1,30,39,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,37.800000000000004,62.900000000000006,3,3.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911460899,1,33,21,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,42.42,62.220000000000006,0,0.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911461517,1,34,0,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,28.56,43.316,1,1.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2912145107,1,35,29,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,22.47,28.152,4,8.0,window_expired,False,6.170557013798761e-05
+2026-03-14_SC Heerenveen - SC Telstar,2911487491,2,50,39,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,6k6qt155b79yf36833pamwbxm,K. Tejan,69.09,31.348000000000003,0,0.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911499149,2,60,41,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,5.460000000000001,54.67200000000001,3,4.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911499391,2,60,53,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,1k60tee702idfrp0ibca1s57u,G. Offerhaus,64.89,19.788000000000004,1,1.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911508443,2,69,6,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,36.330000000000005,57.188,3,1.0,turnover,False,1.016991762534114e-05
+2026-03-14_SC Heerenveen - SC Telstar,2911518615,2,79,13,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,14.490000000000002,22.644,4,5.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911525307,2,85,35,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,avyhrrfkeizd3za28ni67x82c,C. Hatenboer,69.72000000000001,4.964,0,0.0,turnover,False,0.0
+2026-03-14_SC Heerenveen - SC Telstar,2911531257,2,91,39,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,dk7zyk16nsnh0czeky7vi0x78,S. van Duijn,77.28,26.588000000000005,5,4.0,turnover,False,0.0

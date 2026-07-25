@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-21_PSV Eindhoven - AFC Ajax,2849381845,1,7,24,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,47.04,49.57200000000001,3,10.0,window_expired,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849387081,1,11,49,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,25.305000000000003,44.540000000000006,3,4.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849393981,1,19,26,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,12.81,14.688000000000002,2,2.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849399599,1,25,7,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,dxmulnxbs11kpi1goq5hl9cve,A. Salah-Eddine,47.25,63.104,0,0.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849408321,1,30,58,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,63.315,12.988000000000001,4,8.0,window_expired,False,0.0023540491172068
+2025-09-21_PSV Eindhoven - AFC Ajax,2849409927,1,31,58,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,35qg0rrwtl00pycx468s62m3u,K. Taylor,14.595,43.52,1,0.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849461555,2,47,57,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,dxmulnxbs11kpi1goq5hl9cve,A. Salah-Eddine,12.81,55.01200000000001,0,0.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849464983,2,50,23,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,9vf02r3geinhsy732oxyrcacq,I. Saibari,64.47,49.232000000000006,1,1.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849466995,2,55,53,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d4j19ipiaeuetyij08fofgs15,J. Veerman,2.1,31.552,0,0.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849467629,2,57,15,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,35qg0rrwtl00pycx468s62m3u,K. Taylor,68.25,41.412,2,2.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849473643,2,65,3,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,14.805,19.856,3,2.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849479109,2,69,25,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,9vf02r3geinhsy732oxyrcacq,I. Saibari,53.760000000000005,33.79600000000001,3,9.0,window_expired,False,7.111147708450949e-05
+2025-09-21_PSV Eindhoven - AFC Ajax,2849492205,2,79,12,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,33.81,47.6,2,2.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849493921,2,80,29,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,35qg0rrwtl00pycx468s62m3u,K. Taylor,29.294999999999998,24.548000000000002,1,2.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849498049,2,83,37,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,47.67,26.996000000000002,1,1.0,turnover,False,0.0
+2025-09-21_PSV Eindhoven - AFC Ajax,2849506603,2,91,19,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,12.075000000000001,63.24,4,4.0,turnover,False,2.8585356583066268e-05

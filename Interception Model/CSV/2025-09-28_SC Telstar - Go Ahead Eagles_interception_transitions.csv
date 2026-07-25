@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-28_SC Telstar - Go Ahead Eagles,2853033307,1,1,6,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,12.39,12.648000000000001,0,0.0,turnover,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853037235,1,4,20,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,66.57000000000001,24.956000000000003,0,0.0,turnover,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853041491,1,8,47,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,80.53500000000001,63.648,0,0.0,turnover,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853043473,1,11,3,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,55.755,34.952,3,4.0,turnover,False,0.0001544447995096
+2025-09-28_SC Telstar - Go Ahead Eagles,2853046469,1,15,14,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,32.235,16.184,5,9.0,turnover,False,0.000110075855504
+2025-09-28_SC Telstar - Go Ahead Eagles,2853047073,1,15,56,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,9vyizhfym4y8vc07xrvba7skq,O. Pettersson,68.565,6.12,0,0.0,turnover,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853047869,1,16,46,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,43.260000000000005,17.34,1,1.0,turnover,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853050835,1,19,55,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,38.010000000000005,62.900000000000006,0,0.0,turnover,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853051387,1,20,31,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,9d4lofwg9ooaoldw2vpt4h36y,E. Linthorst,14.28,41.480000000000004,1,2.0,window_expired,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853067827,1,35,23,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4cbhx91p3l265b2cejzd07gbu,P. Brouwer,20.37,49.980000000000004,2,1.0,turnover,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853071057,1,38,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,9.975,33.728,4,8.0,window_expired,False,0.0003201892584312434
+2025-09-28_SC Telstar - Go Ahead Eagles,2853111123,2,55,38,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,34.86000000000001,16.184,4,9.0,window_expired,False,0.0033561746958704
+2025-09-28_SC Telstar - Go Ahead Eagles,2853111547,2,56,11,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,52cqyvn8cfh83i5zwm3181pbe,T. Noslin,40.74,20.060000000000002,3,5.0,turnover,False,0.0025953147796322
+2025-09-28_SC Telstar - Go Ahead Eagles,2853116251,2,60,50,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,6.615,26.996000000000002,1,1.0,turnover,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853120413,2,65,2,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,30.450000000000003,35.768,0,0.0,turnover,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853124837,2,69,25,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,66.78,37.944,3,7.0,window_expired,False,0.0182145412928965
+2025-09-28_SC Telstar - Go Ahead Eagles,2853127823,2,72,5,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,cp866ucakmwqiwxrstkaxwgt0,N. Rossen,15.645000000000001,20.400000000000002,1,2.0,turnover,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853131845,2,75,53,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,29.925,44.47200000000001,1,4.0,turnover,False,0.0
+2025-09-28_SC Telstar - Go Ahead Eagles,2853144599,2,89,32,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,9229789015kq0j5c85ug3ajv8,A. Lechkar,20.16,43.112,4,3.0,turnover,False,0.0002000596638515
+2025-09-28_SC Telstar - Go Ahead Eagles,2853144673,2,89,36,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,41.685,33.456,3,6.0,turnover,False,0.0

@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-10_FC Twente - PEC Zwolle,2888613061,1,3,15,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,21.419999999999998,58.14000000000001,3,2.0,turnover,False,0.0
+2026-01-10_FC Twente - PEC Zwolle,2888613427,1,3,30,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,31.71,29.988000000000003,0,0.0,turnover,False,0.0
+2026-01-10_FC Twente - PEC Zwolle,2888618179,1,10,41,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bvwaamcj0bpdrcuoffl6b9rf8,D. Weidmann,47.88,29.036000000000005,2,3.0,turnover,False,0.0
+2026-01-10_FC Twente - PEC Zwolle,2888636967,1,33,52,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d29ahwtvs7ls75wdtkf7xr8tm,Z. Buurmeester,21.105000000000004,53.788,5,9.0,window_expired,False,2.6859988140434665e-05
+2026-01-10_FC Twente - PEC Zwolle,2888638063,1,35,54,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,76.86,25.772000000000002,0,0.0,turnover,False,0.0
+2026-01-10_FC Twente - PEC Zwolle,2888655021,2,47,37,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bvwaamcj0bpdrcuoffl6b9rf8,D. Weidmann,53.655,36.584,3,7.0,turnover,False,0.0017589678912273
+2026-01-10_FC Twente - PEC Zwolle,2888657577,2,51,41,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,15.959999999999999,43.52,1,1.0,turnover,False,0.0
+2026-01-10_FC Twente - PEC Zwolle,2888659777,2,55,29,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,4.9350000000000005,19.244000000000003,0,0.0,turnover,False,0.0
+2026-01-10_FC Twente - PEC Zwolle,2888673037,2,73,7,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,19.740000000000002,20.468000000000004,0,0.0,turnover,False,0.0
+2026-01-10_FC Twente - PEC Zwolle,2888675901,2,76,44,4tic29sox7m39fy1ztgv0jsiq,FC Twente,a339o11ut8s1o9odm6ybc4pka,T. van den Belt,38.43,59.024,4,4.0,turnover,False,9.419719852882258e-07
+2026-01-10_FC Twente - PEC Zwolle,2888685235,2,93,22,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d29ahwtvs7ls75wdtkf7xr8tm,Z. Buurmeester,21.105000000000004,10.608,1,0.0,turnover,False,0.0

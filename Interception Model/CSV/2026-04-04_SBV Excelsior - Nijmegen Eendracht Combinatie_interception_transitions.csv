@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919395183,1,6,30,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,40.214999999999996,24.072,3,5.0,turnover,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919402589,1,15,45,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,25.41,51.136,1,3.0,window_expired,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919403271,1,16,39,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2yivr64anye4c0p62m16l78yc,S. Ouaissa,43.89,12.172,2,2.0,turnover,False,0.000619340359153
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919404067,1,17,47,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2yivr64anye4c0p62m16l78yc,S. Ouaissa,72.66000000000001,2.4480000000000004,1,0.0,turnover,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919405177,1,19,21,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,54.705000000000005,21.216,0,0.0,turnover,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919408559,1,23,52,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,6coor7jll29drx4kgvyt499wq,N. Naujoks,41.685,56.03200000000001,1,0.0,turnover,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919417617,1,35,35,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2yivr64anye4c0p62m16l78yc,S. Ouaissa,62.160000000000004,7.276,2,1.0,turnover,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919418799,1,37,23,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1gl82ymzh9vpitix6v645awa,D. Nejašmić,68.775,55.89600000000001,2,3.0,turnover,False,0.0020104367720276
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919436297,2,52,33,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,ds0hd4ezvb5rw6l95rhbxtq1g,B. Önal,26.355000000000004,56.168,0,0.0,turnover,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919446239,2,69,23,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,42.315,2.652,0,0.0,turnover,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919446447,2,69,53,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,25.41,6.596,0,0.0,turnover,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919448371,2,73,33,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,dse071e8zbzm8l37m64g6e1p0,K. Sano,48.195,24.956000000000003,2,2.0,turnover,False,5.408565526884845e-05
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919451803,2,78,54,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,34.86000000000001,21.012,1,0.0,turnover,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919458667,2,89,16,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,26.880000000000003,39.984,2,4.0,turnover,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919458933,2,89,39,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,34.44,34.544000000000004,0,0.0,turnover,False,0.0
+2026-04-04_SBV Excelsior - Nijmegen Eendracht Combinatie,2919459135,2,89,58,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,35.175000000000004,2.584,0,0.0,turnover,False,0.0

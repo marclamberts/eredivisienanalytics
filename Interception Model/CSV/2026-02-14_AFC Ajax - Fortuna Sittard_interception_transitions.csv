@@ -1,0 +1,22 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-14_AFC Ajax - Fortuna Sittard,2900315573,1,7,42,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,ccmmsnrfn58gwi1petlp08f3e,L. Duijvestijn,64.365,23.528000000000002,3,8.0,window_expired,False,0.00011986031535611563
+2026-02-14_AFC Ajax - Fortuna Sittard,2900315967,1,8,12,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,bpprd2haoafk6y0rjans4iytx,K. Dolberg,71.4,26.724,0,0.0,turnover,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900318509,1,11,24,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,26.880000000000003,19.992,4,9.0,window_expired,False,0.0003054281730958
+2026-02-14_AFC Ajax - Fortuna Sittard,2900329855,1,24,51,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,25.305000000000003,31.076000000000004,2,4.0,turnover,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900332629,1,28,31,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,29.505000000000003,34.0,3,3.0,window_expired,False,9.437659994060432e-07
+2026-02-14_AFC Ajax - Fortuna Sittard,2900338547,1,35,39,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,19.215,19.992,7,8.0,turnover,False,9.196736184725884e-05
+2026-02-14_AFC Ajax - Fortuna Sittard,2900338943,1,36,7,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,63.0,58.208,0,0.0,turnover,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900359501,2,47,22,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,73.185,63.85200000000001,1,1.0,turnover,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900360299,2,48,15,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,56.80500000000001,8.364,2,6.0,turnover,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900361773,2,49,59,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,56nbghr9snc79dt8h99wleej8,S. Steur,49.14,66.98,1,0.0,turnover,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900364515,2,53,19,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,78.435,27.064,3,3.0,turnover,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900367949,2,57,37,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2ifp36vdm0d6rb3xc7muuvv11,D. Limnios,42.525,3.196,0,0.0,turnover,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900370431,2,60,57,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,33.6,23.052,5,9.0,window_expired,False,0.0001138612651725
+2026-02-14_AFC Ajax - Fortuna Sittard,2900370659,2,61,11,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,65.625,20.808000000000003,5,10.0,window_expired,False,0.0019455437286896
+2026-02-14_AFC Ajax - Fortuna Sittard,2900373703,2,65,20,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,60.58500000000001,57.664,5,10.0,window_expired,False,0.00019203203051254916
+2026-02-14_AFC Ajax - Fortuna Sittard,2900375181,2,67,20,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,41.580000000000005,13.872,3,2.0,turnover,False,0.0006912340393963
+2026-02-14_AFC Ajax - Fortuna Sittard,2900377933,2,71,36,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,15.435,19.448000000000004,0,0.0,turnover,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900380413,2,75,1,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,37.275,22.848000000000003,3,5.0,turnover,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900386039,2,82,37,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,21.945,42.84,2,3.0,window_expired,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900386967,2,83,45,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,b23be312oxcbusvpjnnriukq2,Y. Oukili,14.175,26.248,2,4.0,turnover,False,0.0
+2026-02-14_AFC Ajax - Fortuna Sittard,2900389767,2,87,54,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,32.025,40.528000000000006,2,2.0,turnover,False,1.824094399099918e-05

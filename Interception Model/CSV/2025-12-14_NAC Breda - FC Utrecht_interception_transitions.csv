@@ -1,0 +1,31 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-14_NAC Breda - FC Utrecht,2883351995,1,0,8,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,59.85,53.65200000000001,3,3.0,turnover,False,0.000129506780001
+2025-12-14_NAC Breda - FC Utrecht,2883352809,1,0,57,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,22.155,23.12,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883358523,1,7,37,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,36.645,60.928,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883360359,1,10,25,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,53.445,26.044,4,9.0,window_expired,False,0.0042556753567488
+2025-12-14_NAC Breda - FC Utrecht,2883361001,1,11,12,ccpscwdcm65czscrun048ecn5,FC Utrecht,8ymqihdfqc7esda7y407lebx1,D. de Wit,32.34,42.432,2,5.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883364953,1,16,37,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,26.46,58.548,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883366361,1,18,27,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,49.245,31.824,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883368303,1,20,42,ccpscwdcm65czscrun048ecn5,FC Utrecht,2tc8y9du64tjno62zll2jhy7e,Y. Cathline,76.33500000000001,63.17200000000001,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883370263,1,22,48,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,58.065,58.82000000000001,3,10.0,window_expired,False,0.0003568904718938
+2025-12-14_NAC Breda - FC Utrecht,2883371131,1,23,56,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,41.37,6.5280000000000005,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883382075,1,35,32,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,65.73,7.072000000000001,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883389595,1,44,57,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,37.38,56.37200000000001,2,2.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883408157,2,46,44,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,48.510000000000005,15.028000000000002,3,2.0,turnover,False,0.000472287838914
+2025-12-14_NAC Breda - FC Utrecht,2883408383,2,46,48,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,46.62,42.024,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883408909,2,47,43,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,56.49,40.93600000000001,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883412259,2,52,38,ccpscwdcm65czscrun048ecn5,FC Utrecht,9ano8w4jrlk6zq92rxchzaru2,Miguel Rodríguez,16.17,32.572,1,1.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883413701,2,55,8,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,65.625,52.768,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883414017,2,55,40,ccpscwdcm65czscrun048ecn5,FC Utrecht,egcs7b6ixb62ep08t7jznf9ih,V. Jensen,73.29,34.816,4,6.0,turnover,False,0.0032308347047541
+2025-12-14_NAC Breda - FC Utrecht,2883415127,2,57,41,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,76.02000000000001,22.848000000000003,5,8.0,window_expired,False,0.0138377565150515
+2025-12-14_NAC Breda - FC Utrecht,2883447551,2,57,56,ccpscwdcm65czscrun048ecn5,FC Utrecht,9ano8w4jrlk6zq92rxchzaru2,Miguel Rodríguez,11.025,6.664000000000001,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883417741,2,61,16,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,38.535000000000004,19.176000000000002,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883418989,2,63,13,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,64.995,20.876,1,2.0,turnover,False,0.0179103777722393
+2025-12-14_NAC Breda - FC Utrecht,2883419099,2,63,24,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bgzvhtk50gvmq6noheadmc34l,D. Odoi,69.615,10.132000000000001,4,4.0,turnover,False,0.0032354008496409
+2025-12-14_NAC Breda - FC Utrecht,2883427751,2,74,3,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,57.75,58.004000000000005,6,5.0,window_expired,False,0.00041736927816169995
+2025-12-14_NAC Breda - FC Utrecht,2883428127,2,74,27,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8nnxi9lw3hso096kk81h0azh0,J. Talvitie,30.240000000000002,13.532,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883428791,2,75,18,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,38.745,45.900000000000006,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883430221,2,77,3,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bgzvhtk50gvmq6noheadmc34l,D. Odoi,63.945,19.244000000000003,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883430469,2,77,25,ccpscwdcm65czscrun048ecn5,FC Utrecht,egcs7b6ixb62ep08t7jznf9ih,V. Jensen,30.555000000000003,21.828000000000003,4,10.0,window_expired,False,0.0012704427598662
+2025-12-14_NAC Breda - FC Utrecht,2883434699,2,83,20,ccpscwdcm65czscrun048ecn5,FC Utrecht,3gczyjwrkpu7ht35di1g09s0k,E. Demircan,66.36,26.044,0,0.0,turnover,False,0.0
+2025-12-14_NAC Breda - FC Utrecht,2883438487,2,88,3,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,20.475,20.808000000000003,4,6.0,window_expired,False,0.0001242094770637

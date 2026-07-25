@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-02_Heracles Almelo - PEC Zwolle,2867912393,1,2,26,dac758ef858jbq7pcb3gfwite,Heracles Almelo,ait187bpr8we72jvfxxt6ttjp,M. te Wierik,45.36000000000001,5.644000000000001,3,7.0,turnover,False,0.0032631487271169
+2025-11-02_Heracles Almelo - PEC Zwolle,2867916541,1,11,12,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,66.675,60.248,1,3.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867918445,1,15,9,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,63.42,17.612000000000002,1,2.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867921039,1,18,55,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,37.695,20.468000000000004,6,7.0,turnover,False,0.0005292193363264
+2025-11-02_Heracles Almelo - PEC Zwolle,2867924883,1,23,59,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,26.355000000000004,57.39200000000001,0,0.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867931071,1,32,26,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,46.62,45.15200000000001,0,0.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867932445,1,33,34,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,72.135,14.212,1,3.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867936951,1,42,31,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,56.175000000000004,64.05600000000001,0,0.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2868716555,2,45,21,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,28.455000000000002,48.21200000000001,1,2.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867954225,2,45,44,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,31.5,53.17600000000001,0,0.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867960269,2,54,29,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,38.22,65.008,3,4.0,turnover,False,0.0002218778066611
+2025-11-02_Heracles Almelo - PEC Zwolle,2867961841,2,56,56,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,10k3fz1ibikbugv4c45ewy87o,J. Pereira da Gama,16.695,55.42,0,0.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867967977,2,64,39,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,41.160000000000004,64.60000000000001,0,0.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867968329,2,65,4,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,53.655,52.496,2,4.0,turnover,True,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867981751,2,80,21,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4phgw75cred5p93hjq8hiou6t,S. Floranus,34.125,63.24,1,1.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867983763,2,83,48,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,48.825,47.328,0,0.0,turnover,False,0.0
+2025-11-02_Heracles Almelo - PEC Zwolle,2867983885,2,84,0,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,71.08500000000001,61.132000000000005,0,0.0,turnover,False,0.0

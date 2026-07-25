@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-24_SC Heerenveen - FC Twente,2838966091,1,3,11,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,49.56,46.580000000000005,1,1.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838968735,1,13,20,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,55.230000000000004,27.404,1,3.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838970051,1,19,12,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,36.54,50.388,0,0.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838970871,1,23,3,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,47.145,51.68000000000001,0,0.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838971453,1,25,15,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bner5siqnwn1fqusfrgujt0fe,M. Bruns,61.32,22.916000000000004,3,4.0,window_expired,False,0.0012853956323364
+2025-08-24_SC Heerenveen - FC Twente,2838972537,1,29,24,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,73.5,46.104,0,0.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838973471,1,33,15,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,46.2,4.6240000000000006,5,10.0,window_expired,False,0.0003775988951177
+2025-08-24_SC Heerenveen - FC Twente,2838974897,1,40,0,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,40.11000000000001,23.664,0,0.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838975525,1,43,24,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,59.745000000000005,66.096,0,0.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838975653,1,44,8,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,67.2,27.064,0,0.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838975701,1,44,15,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,63.42,64.396,2,2.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838986437,2,58,37,4tic29sox7m39fy1ztgv0jsiq,FC Twente,9nix5y8xcj34ps62r34udtqwa,K. Hlynsson,18.480000000000004,15.096,2,2.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838987529,2,60,52,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,41.265,21.624000000000002,3,4.0,window_expired,False,0.0003189414764906
+2025-08-24_SC Heerenveen - FC Twente,2838992707,2,70,22,4tic29sox7m39fy1ztgv0jsiq,FC Twente,dc119ejc7lls2rd3ywigl2smi,R. Zerrouki,72.135,53.312000000000005,2,2.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838993239,2,71,20,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,61.214999999999996,62.15200000000001,0,0.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2838994899,2,74,17,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,ar7llmzju08n8yrqu8xm1thck,O. Braude,34.545,3.74,0,0.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2839008105,2,94,41,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,ar7llmzju08n8yrqu8xm1thck,O. Braude,30.555000000000003,3.944,1,1.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2839009675,2,96,15,4tic29sox7m39fy1ztgv0jsiq,FC Twente,6ydojoa3581jgszpjqj7i8zpx,B. Kuipers,63.73500000000001,52.904,4,4.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2839009753,2,96,20,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,d2698ncsatg6jtvb0l9ijhj4k,N. Hopland,29.715000000000003,35.496,2,2.0,turnover,False,0.0
+2025-08-24_SC Heerenveen - FC Twente,2839009927,2,96,30,4tic29sox7m39fy1ztgv0jsiq,FC Twente,723av2redj2ej6livx0g81wwl,A. Verschueren,31.395,45.15200000000001,2,4.0,turnover,False,0.0

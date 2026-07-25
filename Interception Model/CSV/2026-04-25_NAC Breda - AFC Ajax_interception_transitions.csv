@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-25_NAC Breda - AFC Ajax,2929054707,1,0,59,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,58.275000000000006,61.2,4,7.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929056645,1,2,54,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,30.87,20.944000000000003,2,4.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929073329,1,20,58,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7joybllup4h9oe6zfhcepjy6t,S. Berghuis,58.17,28.492,0,0.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929076665,1,24,47,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,69.51,62.220000000000006,0,0.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929077831,1,26,1,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,cx6fxszjvjam6zb3c3p0dd1jo,M. Godts,46.830000000000005,65.824,0,0.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929078417,1,26,52,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,43.995,35.768,5,9.0,window_expired,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929080553,1,29,40,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,11.235,25.16,1,1.0,window_expired,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929082555,1,32,1,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,61.214999999999996,45.288,0,0.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929090353,1,40,34,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,31.71,34.068000000000005,4,8.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929092951,1,43,16,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,9.870000000000001,35.02,0,0.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929094075,1,44,12,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,51.135000000000005,50.184000000000005,3,9.0,window_expired,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929095235,1,45,21,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,32.76,64.53200000000001,5,10.0,window_expired,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929114715,2,48,30,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,27.615000000000002,23.392,7,9.0,window_expired,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929125927,2,59,19,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,78.75,15.368000000000002,0,0.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929133497,2,68,3,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,9tp35qqu1heburu0g5wa6jv56,Lucas Rosa,33.705000000000005,60.11200000000001,1,1.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929144169,2,80,17,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,34.02,1.4960000000000002,4,2.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929144583,2,80,42,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,200chcevwu3znwew6xjyaof6d,F. Oldrup Jensen,38.010000000000005,41.684000000000005,0,0.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929154299,2,93,50,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,d785q9rpqlyuyswv8f9fx4cno,M. Nassoh,14.595,31.824,1,0.0,turnover,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929154453,2,94,7,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,264gu641hrd38wqf28xolwhlg,R. Bounida,44.52,44.744,5,5.0,window_expired,False,0.0
+2026-04-25_NAC Breda - AFC Ajax,2929154631,2,94,26,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,200chcevwu3znwew6xjyaof6d,F. Oldrup Jensen,33.81,28.152,3,5.0,turnover,False,0.0

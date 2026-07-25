@@ -1,0 +1,6 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-30_Go Ahead Eagles - FC Utrecht,2878419167,1,1,52,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,30.555000000000003,13.056000000000001,3,4.0,turnover,False,0.0001635760905518
+2025-11-30_Go Ahead Eagles - FC Utrecht,2878419267,1,2,0,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,57.96000000000001,57.39200000000001,1,1.0,turnover,False,0.0
+2025-11-30_Go Ahead Eagles - FC Utrecht,2878429611,1,14,25,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,a46irqckxabod18j2c0qfixre,K. Goudmijn,28.035,7.48,5,5.0,turnover,False,5.226869595555128e-05
+2025-11-30_Go Ahead Eagles - FC Utrecht,2878440205,1,29,53,ccpscwdcm65czscrun048ecn5,FC Utrecht,c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,20.580000000000002,46.92,0,0.0,turnover,False,0.0
+2025-11-30_Go Ahead Eagles - FC Utrecht,2878485021,2,54,44,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,65.52,64.396,0,0.0,turnover,False,0.0

@@ -1,0 +1,20 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-11_NAC Breda - SC Heerenveen,2936053823,1,4,27,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bgzvhtk50gvmq6noheadmc34l,D. Odoi,60.69,7.548,3,7.0,window_expired,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936062227,1,14,34,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,54.285000000000004,49.57200000000001,0,0.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936070789,1,22,39,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,37c696bwovmn1x8lc8z4wp53o,C. Valerius,62.79,5.984000000000001,1,0.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936072245,1,23,42,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,3.57,40.596000000000004,1,1.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936719099,1,33,30,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,9najgqcaamqj0qtiicuq9hey,R. Meerveld,37.800000000000004,64.736,2,2.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936084675,1,33,57,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,29.82,59.772000000000006,0,0.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936088063,1,37,8,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,9najgqcaamqj0qtiicuq9hey,R. Meerveld,16.8,43.52,1,2.0,window_expired,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936096139,1,43,54,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,2wkew38juoofry6oo3t1vcwyd,E. Mahmutović,26.775000000000002,46.988,5,10.0,window_expired,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936121007,2,46,0,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,412l28fqhx21ivpcxzn1kpilm,V. Zagaritis,14.595,57.528,1,1.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936128491,2,52,52,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,3c2wqlde0kovi9hii52egaimt,L. Holtby,40.11000000000001,3.3320000000000003,1,0.0,window_expired,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936129691,2,54,16,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,aqnr6l3f02hx0soadunxbjcpg,J. Trenskow,79.905,9.860000000000001,2,1.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936129763,2,54,21,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,11.235,38.964,5,8.0,window_expired,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936131437,2,56,29,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,4f8xb5sbyksacxmifi375h7qi,K. Sowah,18.375,48.824,2,5.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936174809,2,79,18,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,28.455000000000002,8.16,1,1.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936618977,2,84,43,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,64oi87vu8r3cxx2fvtr442gwk,J. Candelaria,12.915000000000001,17.136,0,0.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936619863,2,87,20,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,74.865,32.776,0,0.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936620613,2,89,32,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,18.480000000000004,45.900000000000006,2,2.0,turnover,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936621429,2,91,47,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,2f8lk6lxav7hl7xlqt9an18x6,H. Petrov,60.795,47.53200000000001,5,7.0,window_expired,False,0.0
+2026-05-11_NAC Breda - SC Heerenveen,2936622773,2,95,52,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,eu6pfkiah7otafyryg6ll7y09,L. Brouwers,77.7,13.464000000000002,3,1.0,turnover,False,0.0

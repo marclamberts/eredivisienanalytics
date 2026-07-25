@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852431103,1,5,16,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,14.700000000000001,32.64,0,0.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852459685,1,31,43,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f57vs3qmmob743hdk2dxf56cq,S. Sambo,21.315,2.5160000000000005,0,0.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852462365,1,34,54,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,34.755,15.98,1,2.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852796601,1,39,14,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,40.845,31.144000000000002,0,0.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852470587,1,44,39,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,41.895,23.664,0,0.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852497897,2,60,39,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,27.195,52.496,0,0.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852501905,2,65,52,dac758ef858jbq7pcb3gfwite,Heracles Almelo,69gzswoym4jqnrag1wdqfdkyy,J. Wieckhoff,49.455000000000005,36.38,1,1.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852505355,2,71,7,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,55.755,32.776,1,2.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852510675,2,78,9,dac758ef858jbq7pcb3gfwite,Heracles Almelo,69gzswoym4jqnrag1wdqfdkyy,J. Wieckhoff,39.165,8.908000000000001,5,9.0,turnover,False,0.0144876840390961
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852510919,2,78,28,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,c0os20ujhb2hujvtp21093l04,A. Oufkir,7.9799999999999995,19.652,0,0.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852514043,2,82,54,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,27.615000000000002,53.924,0,0.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852514069,2,82,56,dac758ef858jbq7pcb3gfwite,Heracles Almelo,5bm516z74pbsyfemsathj3umt,M. Engels,36.855000000000004,46.376000000000005,1,1.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852517981,2,88,37,dac758ef858jbq7pcb3gfwite,Heracles Almelo,69gzswoym4jqnrag1wdqfdkyy,J. Wieckhoff,14.91,11.016,1,0.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852520695,2,91,51,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,32.97,25.228,0,0.0,turnover,False,0.0
+2025-09-27_Heracles Almelo - Sparta Rotterdam,2852520105,2,92,24,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f07qmqesi1rpw7eapoz9rb0gk,J. Baas,56.910000000000004,12.716000000000001,0,0.0,turnover,False,0.0

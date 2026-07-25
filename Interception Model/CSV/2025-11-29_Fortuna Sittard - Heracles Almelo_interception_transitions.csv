@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878033217,1,0,15,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,27.090000000000003,57.868,2,2.0,turnover,False,0.0
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878038017,1,4,11,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,12.705,54.400000000000006,5,10.0,window_expired,False,0.0
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878038367,1,4,27,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,44m4s9f1ckgdavmqjo0icx016,R. Fosso,35.385000000000005,47.87200000000001,0,0.0,turnover,False,0.0
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878046215,1,12,25,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,29.925,34.612,4,3.0,turnover,False,0.0
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878051031,1,18,6,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,62.05500000000001,58.684000000000005,1,2.0,turnover,False,0.0
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878052181,1,19,19,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,38.85,47.39600000000001,4,4.0,turnover,False,3.717275278772303e-05
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878058837,1,26,2,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,64.05,45.56,6,7.0,turnover,False,0.0004578378603079071
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878061467,1,28,46,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,29.925,49.43600000000001,0,0.0,turnover,False,0.0
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878093865,2,51,53,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dp0q4f4gbj2buhcu1lb5dzxed,Ivo Pinto,39.375,18.564,0,0.0,turnover,False,0.0
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878093981,2,52,0,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dp0q4f4gbj2buhcu1lb5dzxed,Ivo Pinto,8.085,11.968000000000002,1,0.0,window_expired,False,0.0
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878101637,2,60,57,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,27.3,43.79200000000001,5,8.0,window_expired,False,0.0008619109587061035
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878105067,2,64,48,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,24.36,46.852000000000004,1,1.0,turnover,False,0.0
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878108135,2,68,3,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,30.450000000000003,55.556000000000004,0,0.0,turnover,False,0.0
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878111731,2,72,12,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,62.79,19.856,4,8.0,turnover,True,0.0111351344795263
+2025-11-29_Fortuna Sittard - Heracles Almelo,2878122225,2,88,3,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,70.665,19.856,2,2.0,turnover,False,0.0009011617394708

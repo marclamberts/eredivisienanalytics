@@ -1,0 +1,21 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-14_FC Volendam - Fortuna Sittard,2911170745,1,0,46,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,43.365,15.096,0,0.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911175935,1,3,15,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dp0q4f4gbj2buhcu1lb5dzxed,Ivo Pinto,27.195,18.360000000000003,2,3.0,window_expired,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911179093,1,4,41,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,33.915,27.472,3,9.0,turnover,False,9.100227285896434e-07
+2026-03-14_FC Volendam - Fortuna Sittard,2911183677,1,6,42,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,64kb0lmkr24rmh59hb01m268k,R. van Cruijsen,25.62,8.636000000000001,3,6.0,turnover,False,2.7563880829195586e-07
+2026-03-14_FC Volendam - Fortuna Sittard,2911187049,1,8,17,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,9.66,20.060000000000002,2,4.0,turnover,False,0.0001777739473714
+2026-03-14_FC Volendam - Fortuna Sittard,2911188767,1,9,2,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,3.1500000000000004,56.168,1,1.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911190311,1,9,43,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,55.44,51.61200000000001,2,2.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2912049187,1,13,55,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,34.33500000000001,53.516000000000005,3,3.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911228279,1,37,28,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,15.015,33.32,2,2.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911244457,1,45,48,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,22.155,41.412,3,5.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911279137,2,45,48,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,32.13,59.29600000000001,1,0.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911288197,2,50,36,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,32.34,17.952,1,4.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911292201,2,52,40,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,9.240000000000002,58.004000000000005,0,0.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911298811,2,56,13,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,24.150000000000002,24.548000000000002,2,1.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911311187,2,62,59,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,54.81,29.92,0,0.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911318249,2,68,1,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,89plvrt8pzppcclh4axvii0ru,A. Plat,42.839999999999996,12.920000000000002,0,0.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911320859,2,71,47,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,89plvrt8pzppcclh4axvii0ru,A. Plat,68.14500000000001,5.916,0,0.0,turnover,False,0.0
+2026-03-14_FC Volendam - Fortuna Sittard,2911321195,2,72,19,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,eu901b75l2ly5p48jdw6kwmad,M. Amevor,49.980000000000004,28.424,1,6.0,window_expired,False,0.0051464680525662
+2026-03-14_FC Volendam - Fortuna Sittard,2911335775,2,87,46,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,89plvrt8pzppcclh4axvii0ru,A. Plat,32.76,42.704,4,8.0,window_expired,False,0.0041473974608371
+2026-03-14_FC Volendam - Fortuna Sittard,2911342737,2,94,59,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,btrg844mxkl6kbn89s7aecj8q,G. Yah,32.025,57.93600000000001,0,0.0,turnover,False,0.0

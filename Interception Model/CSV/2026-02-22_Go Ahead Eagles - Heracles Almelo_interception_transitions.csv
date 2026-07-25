@@ -1,0 +1,20 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903298179,1,2,0,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,45.78,37.80800000000001,0,0.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903300999,1,5,22,dac758ef858jbq7pcb3gfwite,Heracles Almelo,d5wx8rvjfaw1arn69fdd64d90,R. Bozinovski,31.605000000000004,16.116,4,4.0,turnover,False,0.00018541541434336303
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903312145,1,17,52,dac758ef858jbq7pcb3gfwite,Heracles Almelo,d5wx8rvjfaw1arn69fdd64d90,R. Bozinovski,38.43,59.704,1,1.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903315975,1,24,16,dac758ef858jbq7pcb3gfwite,Heracles Almelo,a185wef6iz1nun1wry40jcgoa,N. Ünüvar,62.79,14.416,2,2.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903318013,1,28,39,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,71.61,63.03600000000001,0,0.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903320691,1,31,57,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,31.71,42.704,4,5.0,turnover,False,5.680744877498145e-05
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903329427,1,39,39,dac758ef858jbq7pcb3gfwite,Heracles Almelo,7d8qc47gy4mb9mo67e1ic448a,M. Benita,18.27,5.576,9,9.0,turnover,False,0.0011509398230885957
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903330311,1,40,20,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,62.265,57.25600000000001,1,3.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903359561,2,49,10,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,76.02000000000001,36.652,3,3.0,turnover,True,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903361031,2,50,26,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,36.96000000000001,30.056000000000004,1,1.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903365009,2,53,58,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,eytcfp4cu6qkar65kf0p5rm96,J. Dirksen,27.51,26.928000000000004,0,0.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903377711,2,68,26,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,34.86000000000001,22.032,4,5.0,turnover,False,0.0002465177642123
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903379797,2,72,2,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,37.38,33.932,0,0.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903380047,2,72,18,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,18.794999999999998,31.96,2,5.0,window_expired,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903382513,2,75,12,dac758ef858jbq7pcb3gfwite,Heracles Almelo,1xsy3m0bzicto5ogxsd026bmy,E. Ahlstrand,45.36000000000001,60.248,0,0.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903383771,2,76,31,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,2teefpvijsbzag4yi7fm1pyol,A. Sampsted,25.830000000000002,23.664,0,0.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903384463,2,77,12,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,29.925,63.17200000000001,0,0.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903394771,2,86,43,dac758ef858jbq7pcb3gfwite,Heracles Almelo,8oetnmi8kejwwy37rhlelw2ne,W. Ould-Chikh,55.755,7.548,0,0.0,turnover,False,0.0
+2026-02-22_Go Ahead Eagles - Heracles Almelo,2903896731,2,86,59,dac758ef858jbq7pcb3gfwite,Heracles Almelo,ait187bpr8we72jvfxxt6ttjp,M. te Wierik,43.68000000000001,14.484000000000002,1,1.0,turnover,False,0.0

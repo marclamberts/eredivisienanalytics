@@ -1,0 +1,23 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915303271,1,7,54,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,bn8dwm2y9a8i9a10rba3dmm3u,D. James,47.145,64.87200000000001,1,2.0,turnover,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915304291,1,8,45,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1tmihr54maqj0h7785cg9ez56,M. Suray,29.925,56.37200000000001,1,1.0,turnover,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915314759,1,19,17,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,72.55499999999999,20.468000000000004,4,9.0,window_expired,False,0.0009833455983526
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915314835,1,20,30,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1q0v3qpciql8rkyz4qrlvbuju,J. Breum,65.10000000000001,10.812000000000001,4,8.0,window_expired,False,0.0168667347311494
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915315313,1,21,21,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,15.33,48.824,0,0.0,turnover,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915317427,1,25,15,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,65.415,53.924,2,2.0,turnover,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915318989,1,28,2,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,891zjrm0zjc2e3ebjx11p2y38,J. Slory,21.735,18.360000000000003,0,0.0,turnover,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915325565,1,33,39,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,25.41,7.004000000000001,0,0.0,turnover,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915328981,1,36,5,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,40.425000000000004,49.980000000000004,0,0.0,turnover,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915337381,1,41,52,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,66.25500000000001,20.672,4,9.0,window_expired,False,0.0172864021107986
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915339119,1,43,1,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,31.080000000000002,9.996,3,9.0,window_expired,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915366383,2,45,49,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,35.175000000000004,2.244,4,5.0,turnover,False,0.0006782109003089
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915371107,2,49,10,ccpscwdcm65czscrun048ecn5,FC Utrecht,2tc8y9du64tjno62zll2jhy7e,Y. Cathline,64.26,63.308,2,5.0,window_expired,False,0.0077803630320019
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915379353,2,54,53,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,7.035,61.336000000000006,0,0.0,turnover,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915943757,2,59,30,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,48.615,34.544000000000004,5,10.0,window_expired,False,4.389681016009339e-05
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915944097,2,62,46,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,40.845,9.044,0,0.0,turnover,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915388481,2,62,53,ccpscwdcm65czscrun048ecn5,FC Utrecht,c3j7m8kaoius8i6jihubgy6p6,Ángel Alarcón,65.94,33.524,0,0.0,turnover,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915388673,2,63,10,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,69.825,14.008000000000003,1,0.0,turnover,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915390621,2,65,22,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1rmox6tf7r283dca2vi844kr8,A. Adelgaard,72.87,26.928000000000004,4,9.0,window_expired,False,0.0034858385160528287
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915394743,2,71,7,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,18.900000000000002,56.168,2,3.0,window_expired,False,0.0001065866483433
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915412495,2,85,58,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,22.680000000000003,49.028,2,8.0,window_expired,False,0.0
+2026-03-22_FC Utrecht - Go Ahead Eagles,2915416679,2,89,9,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,22.680000000000003,24.548000000000002,3,6.0,turnover,False,0.0

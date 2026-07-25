@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903434427,1,12,48,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,24.044999999999998,25.704,0,0.0,turnover,False,0.0
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903438119,1,18,48,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,es363spp9pgd4hralx6ni2xw4,M. Chávez,22.785,29.444,4,5.0,window_expired,False,0.00024689977791369036
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903449429,1,33,5,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,46.935,59.636,0,0.0,turnover,False,0.0
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903461353,1,46,19,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,22alh32lu88yabxd4pl0opg5w,K. Boogaard,28.14,46.104,0,0.0,turnover,False,0.0
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903465689,1,46,56,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,16.38,61.2,2,2.0,turnover,False,0.0
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903485101,2,49,24,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,es363spp9pgd4hralx6ni2xw4,M. Chávez,16.59,45.900000000000006,0,0.0,turnover,False,0.0
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903487225,2,52,10,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,59.43000000000001,36.584,2,1.0,turnover,False,0.0008676730939931
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903500735,2,68,24,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,29q4j9r2lgdsdkkq2fgh8l7o4,Ayoni Santos,33.39,42.772000000000006,4,9.0,turnover,False,0.0004022113111938
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903500873,2,68,34,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,73lwz4he5erpp25zi8crjvztg,I. Jensen,57.435,50.32,2,4.0,turnover,False,0.0
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903503749,2,71,55,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,1ueqcjuatzazpmz765tru4zdg,L. Martes,33.495,20.196,3,7.0,window_expired,False,0.0003001458074425
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903506643,2,75,8,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ybcevijvdov8qj1hxcbw3dd6,A. Roaldsøy,12.285,27.608000000000004,2,1.0,turnover,False,0.0
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903509577,2,78,51,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,c0os20ujhb2hujvtp21093l04,A. Oufkir,66.465,7.548,1,0.0,turnover,False,0.0
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903510147,2,79,35,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f07qmqesi1rpw7eapoz9rb0gk,J. Baas,56.385000000000005,14.824000000000002,0,0.0,turnover,False,0.0
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903514949,2,86,0,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,5ylwgfqvaobru2lxqvlhpxul0,E. Dijkstra,46.515,6.664000000000001,2,1.0,turnover,False,0.0
+2026-02-22_Alkmaar Zaanstreek - Sparta Rotterdam,2903522621,2,93,11,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,8u19xeh9ugvh8f1mh7jnbbhuc,K. Smit,58.800000000000004,11.152,2,3.0,turnover,False,0.0

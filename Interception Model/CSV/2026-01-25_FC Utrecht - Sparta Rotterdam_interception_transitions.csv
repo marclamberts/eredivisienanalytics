@@ -1,0 +1,11 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-25_FC Utrecht - Sparta Rotterdam,2892893033,1,18,45,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,32.34,44.88,0,0.0,turnover,False,0.0
+2026-01-25_FC Utrecht - Sparta Rotterdam,2892913119,1,41,20,ccpscwdcm65czscrun048ecn5,FC Utrecht,b33sm106xc7g3h4bcqtawja7e,C. Bozdoğan,23.52,20.468000000000004,1,2.0,turnover,False,0.0
+2026-01-25_FC Utrecht - Sparta Rotterdam,2892914225,1,42,37,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,29q4j9r2lgdsdkkq2fgh8l7o4,Ayoni Santos,58.905,42.568000000000005,4,9.0,turnover,False,0.0360748861171807
+2026-01-25_FC Utrecht - Sparta Rotterdam,2892922041,1,50,19,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,32.34,65.89200000000001,1,1.0,turnover,False,0.0
+2026-01-25_FC Utrecht - Sparta Rotterdam,2892941837,2,49,42,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,70.56,17.544,0,0.0,turnover,False,0.0
+2026-01-25_FC Utrecht - Sparta Rotterdam,2892941845,2,49,44,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,68.46000000000001,22.372,0,0.0,turnover,False,0.0
+2026-01-25_FC Utrecht - Sparta Rotterdam,2892947437,2,57,47,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,28.245,17.952,4,6.0,turnover,False,0.0001594916556208
+2026-01-25_FC Utrecht - Sparta Rotterdam,2892950799,2,62,28,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,1ueqcjuatzazpmz765tru4zdg,L. Martes,62.79,3.6720000000000006,3,7.0,window_expired,False,0.0
+2026-01-25_FC Utrecht - Sparta Rotterdam,2892952091,2,64,18,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6q77vt9bp8dsq48pa97mfzsa1,T. Lauritsen,61.635000000000005,31.144000000000002,2,6.0,window_expired,False,0.0031605164504733
+2026-01-25_FC Utrecht - Sparta Rotterdam,2892967021,2,83,11,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,28.455000000000002,56.37200000000001,0,0.0,turnover,False,0.0

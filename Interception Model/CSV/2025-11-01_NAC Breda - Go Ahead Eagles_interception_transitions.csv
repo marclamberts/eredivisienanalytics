@@ -1,0 +1,11 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-01_NAC Breda - Go Ahead Eagles,2867504439,1,7,47,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8nnxi9lw3hso096kk81h0azh0,J. Talvitie,26.565,13.328000000000001,0,0.0,turnover,False,0.0
+2025-11-01_NAC Breda - Go Ahead Eagles,2867507401,1,10,58,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,70.875,42.432,0,0.0,turnover,False,0.0
+2025-11-01_NAC Breda - Go Ahead Eagles,2867507467,1,11,1,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,59.955000000000005,57.664,0,0.0,turnover,False,0.0
+2025-11-01_NAC Breda - Go Ahead Eagles,2867510131,1,13,6,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,32.97,38.692,6,10.0,window_expired,False,0.0011158703675179906
+2025-11-01_NAC Breda - Go Ahead Eagles,2867572839,2,50,15,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bdb33nwcpd2jufn9ggtl7gvzd,B. Lucassen,31.395,35.156000000000006,1,1.0,turnover,False,0.0
+2025-11-01_NAC Breda - Go Ahead Eagles,2867574171,2,51,43,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,dc4n5ylytswddlvd82snkb90q,S. van Hooijdonk,33.39,32.028000000000006,2,4.0,turnover,False,0.0002669490302716
+2025-11-01_NAC Breda - Go Ahead Eagles,2867587297,2,62,42,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,20.475,58.61600000000001,0,0.0,turnover,False,0.0
+2025-11-01_NAC Breda - Go Ahead Eagles,2867921351,2,86,3,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,64.575,4.760000000000001,3,5.0,window_expired,False,0.0029996581256199
+2025-11-01_NAC Breda - Go Ahead Eagles,2867618739,2,87,51,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,32.34,21.42,0,0.0,turnover,False,0.0
+2025-11-01_NAC Breda - Go Ahead Eagles,2867628105,2,96,23,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,1mroid71v9bwpx0iaospei9gq,R. Margaret,9.450000000000001,64.804,1,2.0,turnover,False,0.0

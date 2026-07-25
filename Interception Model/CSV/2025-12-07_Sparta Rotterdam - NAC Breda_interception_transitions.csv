@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-07_Sparta Rotterdam - NAC Breda,2881043265,1,6,16,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,56.7,17.952,0,0.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881046451,1,10,7,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,42.42,66.912,1,0.0,window_expired,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881046885,1,10,39,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,60.795,26.656000000000002,0,0.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881047125,1,10,53,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7bqajkmno3ox004kdbusxv9ey,R. Paula,42.315,47.804,6,8.0,window_expired,False,0.00021974606001323374
+2025-12-07_Sparta Rotterdam - NAC Breda,2881355735,1,12,31,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f57vs3qmmob743hdk2dxf56cq,S. Sambo,90.72000000000001,10.132000000000001,0,0.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881067527,1,33,38,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,12.495000000000001,37.876000000000005,0,0.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881067899,1,33,54,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ecmzlwu35vg4y64kidte9v0no,M. Kleijn,24.150000000000002,67.116,0,0.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881069445,1,35,30,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,41.685,36.04,4,9.0,window_expired,False,0.0003791386972663043
+2025-12-07_Sparta Rotterdam - NAC Breda,2881070707,1,37,6,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,75.60000000000001,64.12400000000001,0,0.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881097591,2,46,3,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,48.72,0.952,1,0.0,window_expired,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881100501,2,49,24,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,70.77000000000001,56.644000000000005,0,0.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881107507,2,58,55,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,80.64,21.964,0,0.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881109413,2,61,5,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,bgzvhtk50gvmq6noheadmc34l,D. Odoi,11.76,36.312000000000005,1,1.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881116539,2,67,55,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,d785q9rpqlyuyswv8f9fx4cno,M. Nassoh,30.345,19.040000000000003,0,0.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881129969,2,82,28,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,12.915000000000001,30.464,0,0.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881136821,2,89,32,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,c3j7ddqg0yzporam6gieibgiy,C. Brym,70.56,43.18,1,1.0,turnover,False,0.0
+2025-12-07_Sparta Rotterdam - NAC Breda,2881138529,2,91,6,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ccmmsnrfn58gwi1petlp08f3e,L. Duijvestijn,18.375,37.468,0,0.0,turnover,False,0.0

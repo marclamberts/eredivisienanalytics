@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932837733,1,2,25,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ciguyr553yqapqfudim9af46h,M. Deijl,56.80500000000001,19.788000000000004,0,0.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932838641,1,3,16,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,43.68000000000001,60.248,6,10.0,window_expired,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932841457,1,5,35,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,74.13,63.92,2,3.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932841967,1,5,58,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,6.825,10.676,1,2.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932844511,1,7,57,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,30.765,64.05600000000001,1,1.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932847979,1,10,49,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,ccmmsnrfn58gwi1petlp08f3e,L. Duijvestijn,26.565,50.79600000000001,0,0.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932852273,1,14,27,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,eoodvdqfvhql03i8kv9l14qvo,T. Kraaijeveld,71.715,11.084000000000001,0,0.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932855549,1,17,30,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,64.05,2.72,3,5.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932858777,1,20,59,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,5bjdj7hrhuxjbsa8wc1kw42c5,G. Trauner,38.325,35.02,3,2.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932882337,1,44,59,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ciguyr553yqapqfudim9af46h,M. Deijl,32.13,10.268,3,10.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932909107,2,54,54,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,34258m1cvslz8r6d17nv4b90q,S. van Ottele,37.17,40.664,0,0.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932911777,2,58,4,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,36.75,35.564,2,3.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2933459839,2,61,27,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,bnkzwpd607re6s01oa77wcodm,J. Dahlhaus,43.995,48.824,4,9.0,window_expired,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932918435,2,70,18,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,7b4jmfu1ejoeci2zmvwuejnys,P. Brittijn,35.385000000000005,53.516000000000005,3,3.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932930221,2,82,34,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,36.015,61.132000000000005,4,6.0,window_expired,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932930699,2,83,1,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,13.125,35.768,1,1.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932939285,2,92,39,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,70.875,64.94,0,0.0,turnover,False,0.0
+2026-05-03_Fortuna Sittard - Feyenoord Rotterdam,2932942609,2,97,16,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,49.56,35.904,1,3.0,turnover,False,0.0

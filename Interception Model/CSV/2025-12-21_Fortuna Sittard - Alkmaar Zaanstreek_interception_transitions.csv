@@ -1,0 +1,9 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-21_Fortuna Sittard - Alkmaar Zaanstreek,2885395535,1,0,24,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,16.905,7.208,2,2.0,turnover,False,0.0
+2025-12-21_Fortuna Sittard - Alkmaar Zaanstreek,2885407459,1,18,39,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3uq3lrjyj4mnvq6162b0jyhnt,M. de Wit,57.330000000000005,13.872,3,5.0,window_expired,True,0.0
+2025-12-21_Fortuna Sittard - Alkmaar Zaanstreek,2885415111,1,31,55,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,9lixevzo8exxiia17altfw8ic,W. Goes,32.865,15.028000000000002,0,0.0,turnover,False,0.0
+2025-12-21_Fortuna Sittard - Alkmaar Zaanstreek,2885415535,1,32,41,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7jpreaads35pnnfqbn7hmrmy,S. Mijnans,27.3,26.520000000000003,4,5.0,turnover,False,0.0
+2025-12-21_Fortuna Sittard - Alkmaar Zaanstreek,2885415595,1,32,49,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,61.53,65.48400000000001,2,4.0,turnover,False,0.0
+2025-12-21_Fortuna Sittard - Alkmaar Zaanstreek,2885665391,2,46,39,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,33.495,27.812,0,0.0,turnover,False,0.0
+2025-12-21_Fortuna Sittard - Alkmaar Zaanstreek,2885450071,2,55,46,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,3dx91sb6ktg8z1xmoti25kru,P. Koopmeiners,25.200000000000003,42.772000000000006,0,0.0,turnover,False,0.0
+2025-12-21_Fortuna Sittard - Alkmaar Zaanstreek,2885476569,2,93,20,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,619vlbweueymdkq1vu3jm2mwa,I. Sadiq,85.47000000000001,30.94,0,0.0,turnover,False,0.0

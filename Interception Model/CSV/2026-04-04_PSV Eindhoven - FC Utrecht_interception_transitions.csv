@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-04_PSV Eindhoven - FC Utrecht,2919137745,1,14,23,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,53.339999999999996,15.504000000000001,2,2.0,turnover,False,0.0002922578673393
+2026-04-04_PSV Eindhoven - FC Utrecht,2919142547,1,17,2,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,d36na8jr6xcc8eronhy8mcz1m,K. Sildillia,15.855,31.28,2,2.0,turnover,False,0.0
+2026-04-04_PSV Eindhoven - FC Utrecht,2919144977,1,19,38,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,28.980000000000004,63.104,2,2.0,turnover,False,0.0
+2026-04-04_PSV Eindhoven - FC Utrecht,2919505265,1,20,0,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,49.980000000000004,8.5,0,0.0,turnover,False,0.0
+2026-04-04_PSV Eindhoven - FC Utrecht,2919148001,1,22,59,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,38.010000000000005,20.468000000000004,3,8.0,window_expired,False,0.0100019542069358
+2026-04-04_PSV Eindhoven - FC Utrecht,2919149283,1,24,24,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,79.38,41.684000000000005,1,2.0,turnover,False,0.0
+2026-04-04_PSV Eindhoven - FC Utrecht,2919150585,1,26,4,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,42.63,21.964,4,9.0,window_expired,False,0.0029577848506486
+2026-04-04_PSV Eindhoven - FC Utrecht,2919153889,1,30,42,ccpscwdcm65czscrun048ecn5,FC Utrecht,8tqsvu5sw6kn014hdv88zppm1,N. Vesterlund,13.965000000000002,21.284000000000002,0,0.0,turnover,False,0.0
+2026-04-04_PSV Eindhoven - FC Utrecht,2919158651,1,35,42,ccpscwdcm65czscrun048ecn5,FC Utrecht,3r6elcuru7no13hrfczmwbmy1,S. Horemans,15.855,19.652,1,1.0,turnover,False,0.0
+2026-04-04_PSV Eindhoven - FC Utrecht,2919163667,1,39,32,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,28.56,42.636,5,9.0,turnover,False,2.229656976317218e-05
+2026-04-04_PSV Eindhoven - FC Utrecht,2919201803,2,57,31,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,74.025,58.956,3,7.0,turnover,False,0.0054006232560171
+2026-04-04_PSV Eindhoven - FC Utrecht,2919203797,2,59,22,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,39.58500000000001,13.668000000000003,0,0.0,turnover,False,0.0
+2026-04-04_PSV Eindhoven - FC Utrecht,2919205755,2,61,17,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,33.705000000000005,50.660000000000004,5,6.0,window_expired,False,0.005702572983762579
+2026-04-04_PSV Eindhoven - FC Utrecht,2919210899,2,67,38,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,56.7,31.756000000000004,0,0.0,turnover,False,0.0
+2026-04-04_PSV Eindhoven - FC Utrecht,2919212107,2,70,7,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,35.28,49.844,2,6.0,window_expired,False,0.0054393398372859
+2026-04-04_PSV Eindhoven - FC Utrecht,2919217249,2,77,29,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,53.97,48.75600000000001,0,0.0,turnover,False,0.0
+2026-04-04_PSV Eindhoven - FC Utrecht,2919231893,2,91,48,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,38.745,57.800000000000004,0,0.0,turnover,False,0.0
+2026-04-04_PSV Eindhoven - FC Utrecht,2919240721,2,91,51,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,37.589999999999996,51.408,4,4.0,turnover,False,0.00037197120788041635

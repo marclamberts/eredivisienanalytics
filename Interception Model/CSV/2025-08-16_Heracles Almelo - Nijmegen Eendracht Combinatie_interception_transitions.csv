@@ -1,0 +1,8 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-16_Heracles Almelo - Nijmegen Eendracht Combinatie,2835765235,1,0,35,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,67.30499999999999,20.060000000000002,2,1.0,turnover,False,0.0
+2025-08-16_Heracles Almelo - Nijmegen Eendracht Combinatie,2835772531,1,8,52,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6lyedmu2vuf7jig3jmhz9b4ve,D. van der Kust,61.53,61.744,0,0.0,turnover,False,0.0
+2025-08-16_Heracles Almelo - Nijmegen Eendracht Combinatie,2835782711,1,18,57,dac758ef858jbq7pcb3gfwite,Heracles Almelo,e3akocgpppdty3ayxty1gf6xh,D. Mirani,69.405,14.620000000000001,0,0.0,turnover,False,0.0
+2025-08-16_Heracles Almelo - Nijmegen Eendracht Combinatie,2835797809,1,35,36,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,32.550000000000004,32.096000000000004,0,0.0,turnover,False,0.0
+2025-08-16_Heracles Almelo - Nijmegen Eendracht Combinatie,2835804759,1,42,5,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,6dd248q0adq6su677bw2kk2c5,C. Verdonk,30.240000000000002,53.17600000000001,1,2.0,turnover,False,0.0
+2025-08-16_Heracles Almelo - Nijmegen Eendracht Combinatie,2835807697,1,42,48,dac758ef858jbq7pcb3gfwite,Heracles Almelo,bzsoq42nf6sgdh9oe64n7rnfu,B. Limbombe,17.535,9.928,0,0.0,turnover,False,0.0
+2025-08-16_Heracles Almelo - Nijmegen Eendracht Combinatie,2835864443,2,77,25,dac758ef858jbq7pcb3gfwite,Heracles Almelo,ait187bpr8we72jvfxxt6ttjp,M. te Wierik,4.83,15.436,0,0.0,turnover,False,0.0

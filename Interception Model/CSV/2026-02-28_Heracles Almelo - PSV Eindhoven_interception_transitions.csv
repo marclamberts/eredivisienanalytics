@@ -1,0 +1,11 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-28_Heracles Almelo - PSV Eindhoven,2905587369,1,11,49,dac758ef858jbq7pcb3gfwite,Heracles Almelo,1xsy3m0bzicto5ogxsd026bmy,E. Ahlstrand,18.375,11.016,0,0.0,turnover,False,0.0
+2026-02-28_Heracles Almelo - PSV Eindhoven,2905602705,1,30,16,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,c6ip6gwp8yvchd1n3dv42go9,Mauro Júnior,41.055,48.55200000000001,1,2.0,turnover,False,0.0
+2026-02-28_Heracles Almelo - PSV Eindhoven,2905603109,1,30,42,dac758ef858jbq7pcb3gfwite,Heracles Almelo,ait187bpr8we72jvfxxt6ttjp,M. te Wierik,33.705000000000005,35.292,3,3.0,turnover,False,0.0
+2026-02-28_Heracles Almelo - PSV Eindhoven,2905603763,1,31,27,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,b0me6l44boibnwpbtasxoy02x,S. Dest,23.52,23.12,1,2.0,turnover,False,0.0
+2026-02-28_Heracles Almelo - PSV Eindhoven,2905604341,1,32,16,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,2gsq05yyxwe4f8t79j6d49q6t,I. Perišić,24.36,43.112,0,0.0,turnover,False,0.0
+2026-02-28_Heracles Almelo - PSV Eindhoven,2905605065,1,33,7,dac758ef858jbq7pcb3gfwite,Heracles Almelo,d5wx8rvjfaw1arn69fdd64d90,R. Bozinovski,10.815000000000001,38.828,1,3.0,window_expired,False,0.0
+2026-02-28_Heracles Almelo - PSV Eindhoven,2905606477,1,35,10,dac758ef858jbq7pcb3gfwite,Heracles Almelo,do5gstk4ks97daehnudehyjxm,J. Žambůrek,16.17,37.536,1,2.0,turnover,False,0.0
+2026-02-28_Heracles Almelo - PSV Eindhoven,2905650215,2,68,16,dac758ef858jbq7pcb3gfwite,Heracles Almelo,1xsy3m0bzicto5ogxsd026bmy,E. Ahlstrand,11.865000000000002,11.016,1,0.0,turnover,False,0.0
+2026-02-28_Heracles Almelo - PSV Eindhoven,2905654847,2,73,56,dac758ef858jbq7pcb3gfwite,Heracles Almelo,ait187bpr8we72jvfxxt6ttjp,M. te Wierik,25.515,20.400000000000002,2,5.0,turnover,False,0.0
+2026-02-28_Heracles Almelo - PSV Eindhoven,2905672505,2,93,22,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,49.56,59.636,1,1.0,turnover,False,0.0

@@ -1,0 +1,11 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-04-05_NAC Breda - Sparta Rotterdam,2919971773,1,5,3,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,1ueqcjuatzazpmz765tru4zdg,L. Martes,69.09,12.444,2,4.0,turnover,False,0.0
+2026-04-05_NAC Breda - Sparta Rotterdam,2920304449,1,8,44,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,200chcevwu3znwew6xjyaof6d,F. Oldrup Jensen,41.37,36.176,3,5.0,turnover,False,0.0
+2026-04-05_NAC Breda - Sparta Rotterdam,2919984519,1,26,19,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,34.44,51.61200000000001,4,6.0,turnover,False,0.0
+2026-04-05_NAC Breda - Sparta Rotterdam,2920305059,1,30,1,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,7qwmlcxsxlxmq01g7dkt7v14a,M. Balard,12.915000000000001,3.944,1,1.0,turnover,False,0.0
+2026-04-05_NAC Breda - Sparta Rotterdam,2919988647,1,31,27,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,32.13,9.588000000000001,0,0.0,turnover,False,0.0
+2026-04-05_NAC Breda - Sparta Rotterdam,2919991513,1,34,55,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,1ueqcjuatzazpmz765tru4zdg,L. Martes,30.66,11.968000000000002,3,10.0,window_expired,False,0.0033730757732479
+2026-04-05_NAC Breda - Sparta Rotterdam,2920017423,2,50,54,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,58.275000000000006,10.336,0,0.0,turnover,False,0.0
+2026-04-05_NAC Breda - Sparta Rotterdam,2920022529,2,58,30,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,f57vs3qmmob743hdk2dxf56cq,S. Sambo,61.005,8.296,0,0.0,turnover,False,0.0
+2026-04-05_NAC Breda - Sparta Rotterdam,2920029299,2,67,35,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,2nwthqvbk70e2qo35dgp35979,V. van Crooij,58.905,47.53200000000001,3,8.0,window_expired,False,0.0
+2026-04-05_NAC Breda - Sparta Rotterdam,2920037807,2,79,21,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,11.025,27.064,2,2.0,turnover,False,0.0

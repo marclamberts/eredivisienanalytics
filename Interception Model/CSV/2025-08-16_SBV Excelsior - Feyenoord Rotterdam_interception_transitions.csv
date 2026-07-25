@@ -1,0 +1,10 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-08-16_SBV Excelsior - Feyenoord Rotterdam,2835724829,1,27,33,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,22.680000000000003,42.568000000000005,0,0.0,turnover,False,0.0
+2025-08-16_SBV Excelsior - Feyenoord Rotterdam,2835735715,1,41,2,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,1xwmx2ydxa5zeqo12778h83ro,N. Martens,20.37,12.036,2,2.0,turnover,False,0.0
+2025-08-16_SBV Excelsior - Feyenoord Rotterdam,2835775945,2,68,30,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dwyl0yii553i57u7azfa7d15g,A. Hadj Moussa,73.605,18.632,5,7.0,window_expired,False,0.0018323023263471
+2025-08-16_SBV Excelsior - Feyenoord Rotterdam,2835776433,2,69,3,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,46.2,21.012,0,0.0,turnover,False,0.0
+2025-08-16_SBV Excelsior - Feyenoord Rotterdam,2835781755,2,74,11,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,22.995,9.112,0,0.0,turnover,False,0.0
+2025-08-16_SBV Excelsior - Feyenoord Rotterdam,2835782787,2,75,8,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,9.135,28.356000000000005,1,2.0,turnover,False,0.0
+2025-08-16_SBV Excelsior - Feyenoord Rotterdam,2835782957,2,75,20,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,f314a9y83ou7l9imhnbp4f6dw,S. Middendorp,15.959999999999999,22.236000000000004,2,1.0,turnover,False,0.0002051386524621
+2025-08-16_SBV Excelsior - Feyenoord Rotterdam,2835785877,2,78,33,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cdhqb1a4h246hu0u13pm0tqay,I. Bronkhorst,56.49,4.760000000000001,1,1.0,turnover,False,0.0
+2025-08-16_SBV Excelsior - Feyenoord Rotterdam,2835789247,2,82,23,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,dtcvzfse83ztj96kiizwp6jqi,G. Smal,39.9,59.092000000000006,3,6.0,turnover,True,0.0

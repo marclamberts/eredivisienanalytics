@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-05-10_SBV Excelsior - FC Volendam,2936050013,1,0,15,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,cs49ec8y6cubrlo5nmu3j3jtg,L. Schouten,50.400000000000006,39.984,1,5.0,turnover,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936067567,1,19,3,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,49xsd6e4oyjrhtwsdbdm4rj84,L. Hartjes,18.480000000000004,5.508,2,1.0,turnover,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936072673,1,23,3,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,23.625,26.928000000000004,0,0.0,turnover,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936076729,1,26,18,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,5wwqe546ohp130rvi8x8pt0tm,A. Zagré,21.525000000000002,58.412000000000006,4,6.0,window_expired,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936080625,1,29,35,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,3dc82sro077by40u3qdmhw0r9,B. Ould-Chikh,18.06,5.984000000000001,1,1.0,turnover,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936082315,1,30,57,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,28rtnolu3a2au3on0jtwzhu6s,P. Ugwu,68.355,7.616,2,2.0,turnover,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936084535,1,32,48,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,ealh7n21gctxxw5ol3l3yxzze,Y. Leliendal,38.22,63.03600000000001,1,1.0,turnover,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936085413,1,33,35,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,11.865000000000002,44.47200000000001,1,3.0,turnover,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936092065,1,39,44,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,3hu6e9wa0nt4ekubxye6l4pas,I. Yegoian,43.365,55.488,1,2.0,turnover,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936127345,2,51,19,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,c6i4usq34m3389rtbqptahrai,R. Meissen,20.580000000000002,19.448000000000004,1,3.0,window_expired,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936155791,2,76,59,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,28rtnolu3a2au3on0jtwzhu6s,P. Ugwu,26.25,14.076,2,2.0,turnover,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936156339,2,77,30,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,6svx5u21jrcch3ewpqqbxukmh,J. Bacuna,28.77,11.9,3,7.0,turnover,False,0.0
+2026-05-10_SBV Excelsior - FC Volendam,2936161445,2,82,44,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,21.945,31.824,0,0.0,turnover,False,0.0

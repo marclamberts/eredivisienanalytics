@@ -1,0 +1,24 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-12-02_AFC Ajax - FC Groningen,2878732949,1,0,56,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,66.25500000000001,27.540000000000003,1,1.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2878729823,1,4,35,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,73.71000000000001,10.88,0,0.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2878730033,1,4,50,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,31.080000000000002,59.568,5,8.0,window_expired,False,0.0001744550392136
+2025-12-02_AFC Ajax - FC Groningen,2879179713,1,8,5,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,45.15,61.608000000000004,0,0.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879180307,1,10,48,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2wesmq2wuhnuwh2yhgkuaxqfo,A. Bouwman,61.005,30.192,1,1.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879180753,1,12,42,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,33.18,18.428,4,4.0,window_expired,False,0.0006379149677491
+2025-12-02_AFC Ajax - FC Groningen,2879182729,1,22,48,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,54.915,28.832,2,3.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879183217,1,24,49,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,10.5,11.152,0,0.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879183649,1,26,41,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,8hgpvnzy2mra3ps209tniq7f8,O. Gloukh,64.26,33.456,0,0.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879183797,1,27,16,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,baakmd4ndnulbl9npvmq90mvp,D. Klaassen,27.930000000000003,22.916000000000004,3,4.0,window_expired,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879184773,1,32,44,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,35qg0rrwtl00pycx468s62m3u,K. Taylor,23.625,48.824,0,0.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879185649,1,38,48,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,39.69,65.48400000000001,4,9.0,window_expired,False,0.0266410626231301
+2025-12-02_AFC Ajax - FC Groningen,2879531847,1,40,29,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,62.475,47.328,4,10.0,window_expired,False,8.988076758906227e-05
+2025-12-02_AFC Ajax - FC Groningen,2879186229,1,45,18,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2zkaf848fjcdhuii8783pkm7e,Y. Regeer,40.005,9.656,0,0.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879188053,2,46,15,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dafbvyorudvujxw7zswicykmh,O. Wijndal,28.14,52.156000000000006,4,9.0,window_expired,False,0.0002451243391492341
+2025-12-02_AFC Ajax - FC Groningen,2879188581,2,48,20,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,baakmd4ndnulbl9npvmq90mvp,D. Klaassen,26.985,14.280000000000001,3,2.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879192037,2,62,40,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,baakmd4ndnulbl9npvmq90mvp,D. Klaassen,37.38,34.204,1,3.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879192121,2,62,55,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,21.525000000000002,17.272000000000002,2,2.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879196069,2,76,11,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,44.415,35.156000000000006,3,8.0,window_expired,False,0.0007876380554688
+2025-12-02_AFC Ajax - FC Groningen,2879196717,2,78,4,cos9hxi16eitbcbthof7zrm4m,FC Groningen,d1dq7upxtawnps3wljz6wf9jo,S. Resink,30.765,4.352,0,0.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879197925,2,81,49,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,35.175000000000004,29.988000000000003,3,6.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879201011,2,90,45,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,40.32,35.292,2,1.0,turnover,False,0.0
+2025-12-02_AFC Ajax - FC Groningen,2879201317,2,91,19,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,30.555000000000003,7.412000000000001,1,1.0,turnover,False,0.0

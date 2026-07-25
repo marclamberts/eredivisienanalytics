@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-14_FC Groningen - FC Utrecht,2900354727,1,1,2,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,65.83500000000001,55.488,5,9.0,window_expired,False,0.0041277309645002
+2026-02-14_FC Groningen - FC Utrecht,2900356787,1,3,53,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,48.615,43.248000000000005,0,0.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900369033,1,18,35,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,29.294999999999998,52.564,0,0.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900393159,1,19,25,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,63.0,7.140000000000001,0,0.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900370239,1,20,21,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,73.185,35.768,2,9.0,window_expired,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900375827,1,27,55,ccpscwdcm65czscrun048ecn5,FC Utrecht,4ej8uchqe3rt1s5h6phjo3310,G. Zechiël,33.915,45.016000000000005,1,1.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900380241,1,34,27,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,29.505000000000003,15.64,1,1.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900384857,1,40,46,ccpscwdcm65czscrun048ecn5,FC Utrecht,8lt54ei6pcu25u8uerigmx5yi,A. Engwanda,32.34,38.556000000000004,2,4.0,turnover,False,0.0001795335683608
+2026-02-14_FC Groningen - FC Utrecht,2900398031,2,47,14,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,70.56,56.508,1,2.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900399451,2,49,45,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,58.695,65.48400000000001,0,0.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900403229,2,56,27,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,28.875,54.264,3,3.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900411669,2,72,49,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,46.30500000000001,3.128,0,0.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900413275,2,76,0,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,23.94,39.168000000000006,3,8.0,window_expired,False,3.876554825196776e-05
+2026-02-14_FC Groningen - FC Utrecht,2900416099,2,82,1,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,27.090000000000003,27.404,0,0.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900419173,2,87,2,ccpscwdcm65czscrun048ecn5,FC Utrecht,7o8auo4uu5mzh7f4a44ucdf8q,D. Min,11.55,32.980000000000004,2,2.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900420037,2,90,24,cos9hxi16eitbcbthof7zrm4m,FC Groningen,bm3k1knugkwa8z319dscr2yhg,T. Hernes,9.975,4.284,2,2.0,turnover,False,0.0
+2026-02-14_FC Groningen - FC Utrecht,2900420849,2,92,13,ccpscwdcm65czscrun048ecn5,FC Utrecht,enimk3ibb10vk3f8vrmmhq7oq,S. El Karouani,17.01,57.05200000000001,1,1.0,window_expired,False,0.0

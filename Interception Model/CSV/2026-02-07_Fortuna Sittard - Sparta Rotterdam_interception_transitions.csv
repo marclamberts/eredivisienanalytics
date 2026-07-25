@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897616433,1,1,30,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,28.035,39.440000000000005,3,1.0,turnover,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897616461,1,1,32,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,62.160000000000004,39.236000000000004,0,0.0,turnover,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897622599,1,9,10,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,22.680000000000003,24.956000000000003,0,0.0,turnover,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897622977,1,9,33,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,14.490000000000002,63.988,1,0.0,turnover,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897625555,1,12,29,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,7ty1wdxxnusgkl34k5raipbl5,M. van Bergen,78.015,64.804,1,0.0,window_expired,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897637967,1,27,27,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,9zryne6aa951ltubvjo0gk12i,M. Ihattaren,51.135000000000005,28.832,2,2.0,turnover,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897638073,1,27,36,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,9zryne6aa951ltubvjo0gk12i,M. Ihattaren,47.25,52.428,5,6.0,turnover,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897640021,1,30,8,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dp0q4f4gbj2buhcu1lb5dzxed,Ivo Pinto,17.22,35.768,0,0.0,turnover,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897640481,1,30,39,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,29q4j9r2lgdsdkkq2fgh8l7o4,Ayoni Santos,38.325,20.196,4,9.0,window_expired,False,8.414914810990493e-05
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897641399,1,31,44,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,8n9t52eeli3s39r8ujjhjt7je,J. Kitolano,51.345,58.548,0,0.0,turnover,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897644381,1,35,1,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,64.47,20.400000000000002,5,9.0,window_expired,False,0.0044713897250756
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897646491,1,37,9,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,ccmmsnrfn58gwi1petlp08f3e,L. Duijvestijn,22.155,50.184000000000005,5,8.0,window_expired,False,2.860780086058612e-05
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897890601,1,37,23,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,ass524umdrpsq324wksaqef4k,M. Young,68.355,8.228,3,3.0,turnover,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897646757,1,37,27,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,20.475,59.160000000000004,1,1.0,turnover,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897666115,2,45,29,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,ccmmsnrfn58gwi1petlp08f3e,L. Duijvestijn,73.185,15.028000000000002,4,10.0,window_expired,False,0.0005624980755499
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897671985,2,53,40,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,38.535000000000004,47.940000000000005,3,4.0,turnover,False,8.691197213692159e-05
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897678839,2,63,56,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,39.165,5.984000000000001,0,0.0,turnover,False,0.0
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897683037,2,70,31,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,2ifp36vdm0d6rb3xc7muuvv11,D. Limnios,23.205000000000002,26.656000000000002,1,3.0,turnover,False,0.0

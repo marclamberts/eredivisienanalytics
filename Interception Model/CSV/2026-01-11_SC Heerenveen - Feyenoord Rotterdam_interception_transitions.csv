@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2888824745,1,1,23,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,aqnr6l3f02hx0soadunxbjcpg,J. Trenskow,70.98,14.824000000000002,2,4.0,turnover,False,0.0
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2888807631,1,4,5,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,ecqjg6wtntf1guejvm10redck,G. Read,26.25,33.388000000000005,0,0.0,turnover,False,0.0
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2888807797,1,4,42,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,38.535000000000004,45.56,4,6.0,window_expired,False,6.299543626113457e-05
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2888808027,1,5,26,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,10.185,27.472,3,3.0,turnover,False,6.218732950791228e-05
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2888817895,1,38,58,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,47.67,52.904,6,8.0,turnover,False,0.0008589724790626
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2888818091,1,39,33,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,eu6pfkiah7otafyryg6ll7y09,L. Brouwers,39.165,24.82,3,4.0,window_expired,False,7.51624949840296e-05
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2889082171,2,50,9,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,9najgqcaamqj0qtiicuq9hey,R. Meerveld,37.38,56.984,2,6.0,window_expired,False,0.0155875737856726
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2888836207,2,58,30,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,56.385000000000005,63.17200000000001,1,1.0,turnover,False,0.0
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2888837315,2,60,49,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,e5xuwwa4qs6zxjd7y52tslih,Q. Timber,26.040000000000003,38.48800000000001,4,7.0,turnover,False,3.304165582886098e-05
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2889085079,2,64,32,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,75.915,29.172,0,0.0,turnover,False,0.0
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2888841317,2,70,6,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,35.28,56.440000000000005,2,1.0,turnover,False,0.0
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2888842833,2,73,41,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,5.565,29.172,3,6.0,turnover,False,4.024451330104928e-05
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2888844753,2,80,18,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,e5hzt8nmhu2ktn69dsv67ga38,M. Linday,65.52,40.392,2,3.0,turnover,False,0.0062013431657081
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2889091401,2,82,36,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,43ib46nh45n9oajf5rmaz4f6x,Hwang In-Beom,13.125,19.856,1,1.0,turnover,False,0.0
+2026-01-11_SC Heerenveen - Feyenoord Rotterdam,2889093101,2,89,2,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,57.435,28.900000000000002,1,1.0,turnover,False,0.0

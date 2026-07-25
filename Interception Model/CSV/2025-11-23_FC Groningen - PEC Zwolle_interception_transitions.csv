@@ -1,0 +1,19 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2025-11-23_FC Groningen - PEC Zwolle,2875833437,1,5,6,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,1rd0zzpp3dn0y7qtxwc57g7h1,R. Thomas,62.580000000000005,7.684000000000001,2,3.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875851243,1,13,23,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,6u7z5qrlwzl9aug8awejq37xl,Jamiro Monteiro,34.33500000000001,44.404,2,9.0,window_expired,False,2.7406881704217238e-05
+2025-11-23_FC Groningen - PEC Zwolle,2875859567,1,20,9,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,56.49,32.912,2,2.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875861709,1,21,47,cos9hxi16eitbcbthof7zrm4m,FC Groningen,f4liap69r76gyc8pnxsergbqi,T. de Jonge,66.15,46.580000000000005,0,0.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875864995,1,24,33,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,5.88,9.452000000000002,1,1.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875866371,1,25,35,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,68.985,14.892,4,5.0,turnover,False,0.0140546826371622
+2025-11-23_FC Groningen - PEC Zwolle,2875874923,1,32,28,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,28.35,64.12400000000001,1,1.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875887323,1,42,0,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,47.355000000000004,34.748000000000005,1,0.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875911689,2,46,39,cos9hxi16eitbcbthof7zrm4m,FC Groningen,9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,5.1450000000000005,23.323999999999998,0,0.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875915613,2,50,38,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,29.925,11.628000000000002,5,8.0,turnover,False,2.123737845585727e-05
+2025-11-23_FC Groningen - PEC Zwolle,2875917937,2,52,50,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,19.32,46.988,0,0.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875917959,2,52,52,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,16.59,46.580000000000005,1,3.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875925683,2,60,46,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,36.330000000000005,41.548,1,2.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875925879,2,61,4,cos9hxi16eitbcbthof7zrm4m,FC Groningen,98qi4clazqen9kimkxt3jb6j9,M. Peersman,57.75,60.248,1,2.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875934001,2,69,1,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,684nd3xjli51z43pbla0mwa21,T. Oosting,9.975,19.652,0,0.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2875936071,2,71,4,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,16.8,6.460000000000001,4,7.0,turnover,False,7.030390488800553e-05
+2025-11-23_FC Groningen - PEC Zwolle,2875966269,2,83,34,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,awsbedog2zaz7zpjucbcba82y,S. Shoretire,16.17,22.236000000000004,1,1.0,turnover,False,0.0
+2025-11-23_FC Groningen - PEC Zwolle,2876402521,2,87,9,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,5mqog8k9eyi248jvrrp9fo8wk,N. Fichtinger,35.385000000000005,62.900000000000006,0,0.0,turnover,False,0.0

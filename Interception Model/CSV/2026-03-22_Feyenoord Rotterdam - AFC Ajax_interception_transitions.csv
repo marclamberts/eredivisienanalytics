@@ -1,0 +1,15 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915310515,1,15,1,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,bwxn7o8ved1xo5bmfkfgzekiy,J. Bos,75.17999999999999,61.47200000000001,1,0.0,window_expired,False,0.0
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915932135,1,20,9,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,9d4ald4f0m2imaastzen4j8mi,O. Targhalline,71.4,61.268,7,9.0,turnover,False,0.0005485249656845
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915314401,1,20,19,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2922aevmtpw4qvcwohmxmqtbd,T. Tomiyasu,27.615000000000002,44.336000000000006,0,0.0,turnover,False,0.0
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915316119,1,23,23,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,51.135000000000005,44.336000000000006,3,6.0,turnover,False,0.0
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915316619,1,24,17,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,15.435,34.884,0,0.0,turnover,False,0.0
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915317355,1,25,33,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,8.505,57.664,0,0.0,turnover,False,0.0
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915317577,1,26,0,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,baakmd4ndnulbl9npvmq90mvp,D. Klaassen,15.015,57.868,1,4.0,turnover,False,0.0
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915330857,1,37,48,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,2922aevmtpw4qvcwohmxmqtbd,T. Tomiyasu,41.160000000000004,59.908,0,0.0,turnover,False,0.0
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915373643,2,50,9,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,18.27,20.604000000000003,4,4.0,turnover,False,0.0001141362251959
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915385451,2,58,51,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,48.510000000000005,7.276,0,0.0,turnover,False,0.0
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915386599,2,60,18,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,brfa9yhy2llgt9l75unddogk,J. Mokio,45.255,39.1,3,10.0,window_expired,False,0.0004490657955852
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915389093,2,62,52,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,29fr98or3mqippn84z3p9ihhw,L. Valente,68.67000000000002,32.980000000000004,4,7.0,turnover,False,0.0054122717790282
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915389329,2,63,6,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,19.005000000000003,33.11600000000001,0,0.0,turnover,False,0.0
+2026-03-22_Feyenoord Rotterdam - AFC Ajax,2915414529,2,86,44,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,b8ixf31bdyfqqcwoy4ulai73e,K. Fitz-Jim,37.17,58.684000000000005,4,6.0,turnover,False,6.492751240097516e-05

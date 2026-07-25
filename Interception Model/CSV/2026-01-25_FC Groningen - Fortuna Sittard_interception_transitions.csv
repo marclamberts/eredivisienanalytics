@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_duration_sec,chain_end_reason,chain_reached_shot,transition_threat
+2026-01-25_FC Groningen - Fortuna Sittard,2892773879,1,14,31,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,45.675000000000004,46.988,0,0.0,turnover,False,0.0
+2026-01-25_FC Groningen - Fortuna Sittard,2892778735,1,24,7,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,27.405,32.43600000000001,3,3.0,turnover,False,0.0
+2026-01-25_FC Groningen - Fortuna Sittard,2892779335,1,25,40,cos9hxi16eitbcbthof7zrm4m,FC Groningen,4dk7h575fifmw2lhslevhmhux,M. Rente,39.06,11.832,0,0.0,turnover,False,0.0
+2026-01-25_FC Groningen - Fortuna Sittard,2892815899,2,45,53,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,ccmmsnrfn58gwi1petlp08f3e,L. Duijvestijn,29.715000000000003,63.308,0,0.0,turnover,False,0.0
+2026-01-25_FC Groningen - Fortuna Sittard,2892816095,2,46,5,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,17.535,11.016,2,4.0,turnover,False,0.0
+2026-01-25_FC Groningen - Fortuna Sittard,2892816677,2,46,38,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,60.58500000000001,48.824,0,0.0,turnover,False,0.0
+2026-01-25_FC Groningen - Fortuna Sittard,2892817209,2,47,10,cos9hxi16eitbcbthof7zrm4m,FC Groningen,e6x3hs6v8cq74ojgluyny72fo,T. Land,63.945,8.568,0,0.0,turnover,False,0.0
+2026-01-25_FC Groningen - Fortuna Sittard,2892820517,2,50,26,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,eyzcfyn1crjcgmm98uk9u8oyy,É. Michut,24.78,19.040000000000003,0,0.0,turnover,False,0.0
+2026-01-25_FC Groningen - Fortuna Sittard,2892831597,2,63,43,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,8przxwwothu3crflys7ahl4dm,S. Adewoye,35.07,7.412000000000001,0,0.0,turnover,False,0.0
+2026-01-25_FC Groningen - Fortuna Sittard,2892835567,2,75,5,cos9hxi16eitbcbthof7zrm4m,FC Groningen,by85t8ssyumcjcks1jx3v96vo,Y. Taha,43.89,6.868,1,0.0,turnover,False,0.0
+2026-01-25_FC Groningen - Fortuna Sittard,2892836189,2,75,52,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1nk0hcaa9o4jnyxc9ndz1lams,D. van der Werff,27.72,54.33200000000001,3,9.0,window_expired,False,6.668539752424651e-05
