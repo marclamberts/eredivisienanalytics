@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-08-29_FC Groningen - Heracles Almelo,2840549441,1,8,8,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,4.305,30.94,2,turnover,False,
+2025-08-29_FC Groningen - Heracles Almelo,2840555037,1,12,34,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,5.1450000000000005,41.956,5,action_limit,False,
+2025-08-29_FC Groningen - Heracles Almelo,2840561161,1,17,36,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,5.460000000000001,41.888000000000005,1,turnover,False,
+2025-08-29_FC Groningen - Heracles Almelo,2840586599,1,39,18,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,5.25,35.36,0,turnover,False,
+2025-08-29_FC Groningen - Heracles Almelo,2840589837,1,41,40,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,5.460000000000001,26.996000000000002,0,turnover,False,
+2025-08-29_FC Groningen - Heracles Almelo,2840594295,1,45,2,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,5.04,28.220000000000002,0,turnover,False,
+2025-08-29_FC Groningen - Heracles Almelo,2840614623,2,48,55,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,4.83,41.548,5,action_limit,False,
+2025-08-29_FC Groningen - Heracles Almelo,2840625573,2,56,34,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,5.88,41.004,1,turnover,False,
+2025-08-29_FC Groningen - Heracles Almelo,2840633073,2,61,54,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,4.83,28.764,0,turnover,False,
+2025-08-29_FC Groningen - Heracles Almelo,2840638733,2,66,2,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,5.460000000000001,42.160000000000004,4,turnover,False,
+2025-08-29_FC Groningen - Heracles Almelo,2840661661,2,86,13,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,4.9350000000000005,33.456,0,turnover,False,

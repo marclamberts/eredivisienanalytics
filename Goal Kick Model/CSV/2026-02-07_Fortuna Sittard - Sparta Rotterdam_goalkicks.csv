@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897622189,1,8,35,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,5.88,41.548,5,action_limit,False,
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897627337,1,14,19,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,4.83,37.06,0,turnover,False,
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897632145,1,20,4,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,5.04,36.38,0,turnover,False,
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897643365,1,33,58,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,4.7250000000000005,36.992000000000004,2,turnover,False,
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897669961,2,50,49,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,5.670000000000001,38.964,0,turnover,False,
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897670457,2,51,31,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,3.8850000000000002,40.052,3,turnover,False,
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897671931,2,53,29,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,3.57,39.644,2,turnover,False,
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897678653,2,63,38,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.2550000000000003,40.052,1,turnover,False,
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897689559,2,79,35,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,5.25,37.06,1,turnover,False,
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897691407,2,81,51,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,5.3549999999999995,39.440000000000005,2,turnover,False,
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897696497,2,89,24,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,5.25,39.848000000000006,4,turnover,False,
+2026-02-07_Fortuna Sittard - Sparta Rotterdam,2897697721,2,91,50,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,5.1450000000000005,38.352000000000004,3,turnover,False,

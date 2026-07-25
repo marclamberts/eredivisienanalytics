@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-09-14_SC Telstar - Fortuna Sittard,2846370429,1,7,4,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,5.775,40.664,2,turnover,False,
+2025-09-14_SC Telstar - Fortuna Sittard,2846376217,1,15,25,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,f5pgdha5h37xytbk1zq8q710,D. Koswal,5.1450000000000005,26.724,3,turnover,False,
+2025-09-14_SC Telstar - Fortuna Sittard,2846378887,1,18,11,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.305,34.612,2,turnover,False,
+2025-09-14_SC Telstar - Fortuna Sittard,2846382721,1,21,42,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,5.04,40.664,3,turnover,False,
+2025-09-14_SC Telstar - Fortuna Sittard,2846388655,1,27,3,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,5.670000000000001,38.012,1,turnover,False,
+2025-09-14_SC Telstar - Fortuna Sittard,2846410817,1,45,17,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,4.620000000000001,31.552,0,turnover,False,
+2025-09-14_SC Telstar - Fortuna Sittard,2846434577,2,47,17,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,570htztcvfsu947xw6fvtzmc5,Iván Márquez,5.04,41.208000000000006,1,turnover,False,
+2025-09-14_SC Telstar - Fortuna Sittard,2846457981,2,70,23,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.305,40.46,0,turnover,False,
+2025-09-14_SC Telstar - Fortuna Sittard,2846466259,2,77,42,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,5.3549999999999995,39.78,2,turnover,False,
+2025-09-14_SC Telstar - Fortuna Sittard,2846474939,2,85,26,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,5.3549999999999995,39.508,0,turnover,False,
+2025-09-14_SC Telstar - Fortuna Sittard,2846482691,2,92,10,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,5.88,39.440000000000005,1,turnover,False,
+2025-09-14_SC Telstar - Fortuna Sittard,2846484837,2,93,52,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,5.04,40.324,2,turnover,False,

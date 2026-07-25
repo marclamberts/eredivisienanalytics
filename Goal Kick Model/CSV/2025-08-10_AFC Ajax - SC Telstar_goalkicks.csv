@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-08-10_AFC Ajax - SC Telstar,2833669579,1,4,1,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,3.7800000000000002,40.93600000000001,4,turnover,False,
+2025-08-10_AFC Ajax - SC Telstar,2833670313,1,4,53,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,5.25,42.84,5,action_limit,False,
+2025-08-10_AFC Ajax - SC Telstar,2833673859,1,9,20,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.41,33.524,1,turnover,False,
+2025-08-10_AFC Ajax - SC Telstar,2833678489,1,15,18,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.515,34.272,1,turnover,False,
+2025-08-10_AFC Ajax - SC Telstar,2833683983,1,25,19,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,f5pgdha5h37xytbk1zq8q710,D. Koswal,4.515,25.840000000000003,3,turnover,False,
+2025-08-10_AFC Ajax - SC Telstar,2833689679,1,35,9,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,f5pgdha5h37xytbk1zq8q710,D. Koswal,4.305,27.744,4,turnover,False,
+2025-08-10_AFC Ajax - SC Telstar,2833691933,1,37,53,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,3.8850000000000002,35.836000000000006,4,turnover,False,
+2025-08-10_AFC Ajax - SC Telstar,2833714013,2,55,18,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,f5pgdha5h37xytbk1zq8q710,D. Koswal,4.9350000000000005,26.996000000000002,2,turnover,False,
+2025-08-10_AFC Ajax - SC Telstar,2833718183,2,63,53,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,5.25,42.84,5,action_limit,False,
+2025-08-10_AFC Ajax - SC Telstar,2833724887,2,78,7,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,4.515,30.124,3,turnover,False,
+2025-08-10_AFC Ajax - SC Telstar,2833729391,2,85,6,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,3.7800000000000002,38.284,5,action_limit,False,
+2025-08-10_AFC Ajax - SC Telstar,2833733047,2,90,28,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.83,33.864,1,turnover,False,

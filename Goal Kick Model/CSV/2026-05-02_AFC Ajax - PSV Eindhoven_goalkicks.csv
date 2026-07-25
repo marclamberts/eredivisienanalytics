@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-05-02_AFC Ajax - PSV Eindhoven,2932324243,1,15,29,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,5.1450000000000005,41.344,2,turnover,False,
+2026-05-02_AFC Ajax - PSV Eindhoven,2932333483,1,22,29,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dunp2ilud32z4lf3f8vvwjca1,M. Paes,4.7250000000000005,32.844,0,turnover,False,
+2026-05-02_AFC Ajax - PSV Eindhoven,2932358787,1,44,38,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,5.565,40.664,1,turnover,False,
+2026-05-02_AFC Ajax - PSV Eindhoven,2932359491,1,45,22,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cs4aca71qkt1ru20ppmi6djl6,M. Kovář,4.41,27.200000000000003,0,turnover,False,
+2026-05-02_AFC Ajax - PSV Eindhoven,2932360203,1,45,59,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dunp2ilud32z4lf3f8vvwjca1,M. Paes,5.04,33.864,1,turnover,False,
+2026-05-02_AFC Ajax - PSV Eindhoven,2932379265,2,47,9,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,dunp2ilud32z4lf3f8vvwjca1,M. Paes,4.83,33.32,1,turnover,False,
+2026-05-02_AFC Ajax - PSV Eindhoven,2932385689,2,52,26,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,5.460000000000001,41.888000000000005,1,turnover,False,
+2026-05-02_AFC Ajax - PSV Eindhoven,2932394055,2,59,14,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,4.9350000000000005,41.412,1,turnover,False,
+2026-05-02_AFC Ajax - PSV Eindhoven,2932401871,2,65,54,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,4.305,39.984,2,turnover,False,
+2026-05-02_AFC Ajax - PSV Eindhoven,2932411625,2,71,25,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,4.2,41.072,1,turnover,False,
+2026-05-02_AFC Ajax - PSV Eindhoven,2932419123,2,82,23,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cs4aca71qkt1ru20ppmi6djl6,M. Kovář,4.515,33.864,0,turnover,False,
+2026-05-02_AFC Ajax - PSV Eindhoven,2932423335,2,86,8,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cs4aca71qkt1ru20ppmi6djl6,M. Kovář,5.3549999999999995,29.104,0,turnover,False,

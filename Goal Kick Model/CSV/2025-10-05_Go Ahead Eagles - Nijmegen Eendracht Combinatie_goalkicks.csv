@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-10-05_Go Ahead Eagles - Nijmegen Eendracht Combinatie,2856762505,1,4,43,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,5.04,41.004,5,action_limit,False,
+2025-10-05_Go Ahead Eagles - Nijmegen Eendracht Combinatie,2856764221,1,6,47,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.095,32.43600000000001,1,turnover,False,
+2025-10-05_Go Ahead Eagles - Nijmegen Eendracht Combinatie,2856781473,1,22,6,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,5.25,29.852,1,turnover,False,
+2025-10-05_Go Ahead Eagles - Nijmegen Eendracht Combinatie,2856789291,1,30,19,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,2ekx0fvuf0dsat062oj430d05,G. Nauber,4.515,26.724,1,turnover,False,
+2025-10-05_Go Ahead Eagles - Nijmegen Eendracht Combinatie,2856825149,2,48,16,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.41,36.924,0,turnover,False,
+2025-10-05_Go Ahead Eagles - Nijmegen Eendracht Combinatie,2856825743,2,49,3,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,2ekx0fvuf0dsat062oj430d05,G. Nauber,4.7250000000000005,28.356000000000005,5,action_limit,False,
+2025-10-05_Go Ahead Eagles - Nijmegen Eendracht Combinatie,2856835613,2,61,49,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.095,35.564,1,turnover,False,
+2025-10-05_Go Ahead Eagles - Nijmegen Eendracht Combinatie,2856841733,2,70,37,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.9350000000000005,36.176,0,turnover,False,
+2025-10-05_Go Ahead Eagles - Nijmegen Eendracht Combinatie,2856846939,2,77,37,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,4.7250000000000005,39.644,5,action_limit,False,
+2025-10-05_Go Ahead Eagles - Nijmegen Eendracht Combinatie,2856849205,2,81,2,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.83,34.476000000000006,0,turnover,False,
+2025-10-05_Go Ahead Eagles - Nijmegen Eendracht Combinatie,2856858855,2,95,33,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.9350000000000005,38.624,1,turnover,False,

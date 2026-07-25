@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-10-25_FC Volendam - Heracles Almelo,2864095311,1,2,48,dac758ef858jbq7pcb3gfwite,Heracles Almelo,2uw0batubkzwe3gcexxwa22cq,T. Jansink,2.52,32.164,1,turnover,False,
+2025-10-25_FC Volendam - Heracles Almelo,2864110767,1,16,50,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,3.8850000000000002,40.596000000000004,3,turnover,False,
+2025-10-25_FC Volendam - Heracles Almelo,2864111711,1,17,40,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,4.83,41.412,1,turnover,False,
+2025-10-25_FC Volendam - Heracles Almelo,2864113337,1,19,27,dac758ef858jbq7pcb3gfwite,Heracles Almelo,mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,4.83,41.004,2,turnover,False,
+2025-10-25_FC Volendam - Heracles Almelo,2864115391,1,21,51,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,7qzban9gm72aznhn11qyxwtg4,K. van Oevelen,5.25,25.16,0,turnover,False,
+2025-10-25_FC Volendam - Heracles Almelo,2864118133,1,25,32,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,5.3549999999999995,42.84,1,turnover,False,
+2025-10-25_FC Volendam - Heracles Almelo,2864120291,1,28,31,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,5.25,41.684000000000005,4,turnover,False,
+2025-10-25_FC Volendam - Heracles Almelo,2864123475,1,32,48,dac758ef858jbq7pcb3gfwite,Heracles Almelo,2uw0batubkzwe3gcexxwa22cq,T. Jansink,4.41,34.612,5,action_limit,False,
+2025-10-25_FC Volendam - Heracles Almelo,2864129245,1,39,56,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,7qzban9gm72aznhn11qyxwtg4,K. van Oevelen,2.625,34.544000000000004,5,action_limit,False,
+2025-10-25_FC Volendam - Heracles Almelo,2864160629,2,60,6,dac758ef858jbq7pcb3gfwite,Heracles Almelo,2uw0batubkzwe3gcexxwa22cq,T. Jansink,4.620000000000001,26.588000000000005,0,turnover,False,
+2025-10-25_FC Volendam - Heracles Almelo,2864180817,2,81,0,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,7qzban9gm72aznhn11qyxwtg4,K. van Oevelen,4.305,36.584,0,turnover,False,
+2025-10-25_FC Volendam - Heracles Almelo,2864187323,2,88,53,dac758ef858jbq7pcb3gfwite,Heracles Almelo,2uw0batubkzwe3gcexxwa22cq,T. Jansink,2.625,36.720000000000006,1,turnover,False,

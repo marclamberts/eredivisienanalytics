@@ -1,0 +1,8 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-04-10_FC Twente - FC Volendam,2921764467,1,21,16,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,7qzban9gm72aznhn11qyxwtg4,K. van Oevelen,3.8850000000000002,33.932,1,turnover,False,
+2026-04-10_FC Twente - FC Volendam,2921768463,1,26,9,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,7qzban9gm72aznhn11qyxwtg4,K. van Oevelen,3.7800000000000002,36.108000000000004,2,turnover,False,
+2026-04-10_FC Twente - FC Volendam,2921786591,1,44,58,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,4.620000000000001,26.316000000000003,0,turnover,False,
+2026-04-10_FC Twente - FC Volendam,2921818247,2,47,31,6g9qrm72224jrk6tkxxxi8a9n,FC Volendam,7qzban9gm72aznhn11qyxwtg4,K. van Oevelen,3.9899999999999998,35.7,5,action_limit,False,
+2026-04-10_FC Twente - FC Volendam,2921820867,2,61,56,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,4.620000000000001,41.208000000000006,1,turnover,False,
+2026-04-10_FC Twente - FC Volendam,2921823227,2,64,3,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,5.1450000000000005,34.136,2,turnover,False,
+2026-04-10_FC Twente - FC Volendam,2921849021,2,90,31,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,5.565,40.664,0,turnover,False,

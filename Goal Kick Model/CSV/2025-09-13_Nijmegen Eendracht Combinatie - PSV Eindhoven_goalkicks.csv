@@ -1,0 +1,11 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845600271,1,14,11,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,3ojwbw6v83g9b0u2wssnkzzzd,A. Obispo,5.25,35.564,1,turnover,False,
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845606893,1,20,26,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,3ojwbw6v83g9b0u2wssnkzzzd,A. Obispo,4.41,39.984,1,turnover,False,
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845607617,1,21,3,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,5.04,40.052,1,turnover,False,
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845608737,1,21,53,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,3ojwbw6v83g9b0u2wssnkzzzd,A. Obispo,4.095,40.596000000000004,5,action_limit,False,
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845630643,1,37,17,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,4.620000000000001,39.644,1,turnover,False,
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845670835,2,46,52,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cgsmk5437f466uoqvol7devze,R. Flamingo,4.095,27.676000000000005,1,turnover,False,
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845672175,2,48,15,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,5.670000000000001,39.644,4,turnover,False,
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845700229,2,74,36,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,5.88,33.456,0,turnover,False,
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845707513,2,81,51,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.095,31.416000000000004,1,turnover,False,
+2025-09-13_Nijmegen Eendracht Combinatie - PSV Eindhoven,2845712709,2,86,58,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cs4aca71qkt1ru20ppmi6djl6,M. Kovář,3.7800000000000002,31.824,1,turnover,False,

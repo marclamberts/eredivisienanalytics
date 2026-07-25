@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-02-01_SBV Excelsior - AFC Ajax,2895215665,1,3,22,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,5.04,29.240000000000002,1,turnover,False,
+2026-02-01_SBV Excelsior - AFC Ajax,2895216213,1,6,29,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,5.25,42.160000000000004,2,turnover,False,
+2026-02-01_SBV Excelsior - AFC Ajax,2895218347,1,17,8,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,5.25,34.068000000000005,0,turnover,False,
+2026-02-01_SBV Excelsior - AFC Ajax,2895220621,1,23,38,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,5.25,34.204,0,turnover,False,
+2026-02-01_SBV Excelsior - AFC Ajax,2895226345,1,37,44,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,2.625,39.712,2,turnover,False,
+2026-02-01_SBV Excelsior - AFC Ajax,2895226719,1,38,43,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,5.460000000000001,30.056000000000004,1,turnover,False,
+2026-02-01_SBV Excelsior - AFC Ajax,2895228773,1,42,49,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,5.460000000000001,32.504,1,turnover,False,
+2026-02-01_SBV Excelsior - AFC Ajax,2895229451,1,44,5,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,2.8350000000000004,26.792,0,turnover,False,
+2026-02-01_SBV Excelsior - AFC Ajax,2895245873,2,51,48,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,5.3549999999999995,34.068000000000005,0,turnover,False,
+2026-02-01_SBV Excelsior - AFC Ajax,2895249465,2,58,34,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,3.7800000000000002,33.524,0,turnover,False,
+2026-02-01_SBV Excelsior - AFC Ajax,2895256399,2,68,31,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,4.9350000000000005,34.068000000000005,1,turnover,False,
+2026-02-01_SBV Excelsior - AFC Ajax,2895265117,2,80,43,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,5.3549999999999995,34.068000000000005,1,turnover,False,

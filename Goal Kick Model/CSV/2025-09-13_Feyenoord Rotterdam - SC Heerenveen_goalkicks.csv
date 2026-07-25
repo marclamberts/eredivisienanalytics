@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845736767,1,1,42,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,11ceernyer8po8soj8dmygatx,T. Wellenreuther,3.57,33.524,5,action_limit,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845749019,1,12,48,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,a40zl71xh862o3qqxy89mp8q2,B. Klaverboer,3.3600000000000003,39.78,1,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845751233,1,15,6,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,a40zl71xh862o3qqxy89mp8q2,B. Klaverboer,3.1500000000000004,31.008000000000003,2,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845754527,1,18,16,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,4.620000000000001,29.444,5,action_limit,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845757503,1,21,13,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,idvh0ac1f8wv39640pyl4esp,S. Kersten,3.8850000000000002,27.540000000000003,2,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845770851,1,34,55,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,a40zl71xh862o3qqxy89mp8q2,B. Klaverboer,5.3549999999999995,33.456,1,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845772377,1,36,22,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,a40zl71xh862o3qqxy89mp8q2,B. Klaverboer,3.2550000000000003,34.476000000000006,1,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845780053,1,44,24,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,11ceernyer8po8soj8dmygatx,T. Wellenreuther,4.305,39.57600000000001,2,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845811793,2,64,34,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,a40zl71xh862o3qqxy89mp8q2,B. Klaverboer,3.465,34.136,5,action_limit,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845813065,2,66,25,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,11ceernyer8po8soj8dmygatx,T. Wellenreuther,4.515,26.656000000000002,0,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845818315,2,74,32,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,a40zl71xh862o3qqxy89mp8q2,B. Klaverboer,4.305,39.848000000000006,3,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845823167,2,81,20,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,5.25,39.712,3,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845826547,2,86,34,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,a40zl71xh862o3qqxy89mp8q2,B. Klaverboer,4.095,35.156000000000006,1,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845828133,2,89,3,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,11ceernyer8po8soj8dmygatx,T. Wellenreuther,3.9899999999999998,37.196000000000005,1,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845834025,2,100,50,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,11ceernyer8po8soj8dmygatx,T. Wellenreuther,3.1500000000000004,40.324,2,shot,True,2.0
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845834141,2,101,5,4vd2t5schmvvufrfib7f2vjdf,SC Heerenveen,a40zl71xh862o3qqxy89mp8q2,B. Klaverboer,4.305,30.6,0,turnover,False,
+2025-09-13_Feyenoord Rotterdam - SC Heerenveen,2845834997,2,103,38,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,11ceernyer8po8soj8dmygatx,T. Wellenreuther,3.7800000000000002,27.200000000000003,1,turnover,False,

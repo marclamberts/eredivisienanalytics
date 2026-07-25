@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836239237,1,2,54,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,5.25,42.160000000000004,4,turnover,False,
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836243799,1,9,12,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.41,35.428000000000004,1,turnover,False,
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836246103,1,12,36,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.620000000000001,35.904,3,turnover,False,
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836248001,1,15,26,ccpscwdcm65czscrun048ecn5,FC Utrecht,dmsmbn9a1qucwf100o3v77nbp,M. Brouwer,4.620000000000001,34.272,1,turnover,False,
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836253487,1,26,42,ccpscwdcm65czscrun048ecn5,FC Utrecht,dmsmbn9a1qucwf100o3v77nbp,M. Brouwer,5.3549999999999995,35.428000000000004,4,turnover,False,
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836257877,1,36,7,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.25,35.292,0,turnover,False,
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836261459,1,41,26,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.57,30.464,1,turnover,False,
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836281181,2,49,8,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,3.8850000000000002,41.61600000000001,1,turnover,False,
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836290421,2,60,50,ccpscwdcm65czscrun048ecn5,FC Utrecht,dmsmbn9a1qucwf100o3v77nbp,M. Brouwer,4.620000000000001,33.592,2,turnover,False,
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836292419,2,64,4,ccpscwdcm65czscrun048ecn5,FC Utrecht,dmsmbn9a1qucwf100o3v77nbp,M. Brouwer,5.670000000000001,39.304,0,turnover,False,
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836306205,2,82,7,ccpscwdcm65czscrun048ecn5,FC Utrecht,dmsmbn9a1qucwf100o3v77nbp,M. Brouwer,4.9350000000000005,34.204,2,turnover,False,
+2025-08-17_Sparta Rotterdam - FC Utrecht,2836316075,2,95,16,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.41,34.68,1,turnover,False,

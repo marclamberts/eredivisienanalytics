@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-08-10_FC Utrecht - Heracles Almelo,2833750627,1,3,41,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,4.620000000000001,39.168000000000006,1,turnover,False,
+2025-08-10_FC Utrecht - Heracles Almelo,2833755829,1,16,17,dac758ef858jbq7pcb3gfwite,Heracles Almelo,6ok4k757utbtswx5618xffsru,I. Mesík,4.620000000000001,39.984,1,turnover,False,
+2025-08-10_FC Utrecht - Heracles Almelo,2833773845,1,35,17,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,5.04,26.248,2,turnover,False,
+2025-08-10_FC Utrecht - Heracles Almelo,2833779133,1,42,12,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,4.41,37.876000000000005,1,turnover,False,
+2025-08-10_FC Utrecht - Heracles Almelo,2833779791,1,43,9,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,4.83,27.880000000000003,0,turnover,False,
+2025-08-10_FC Utrecht - Heracles Almelo,2833819023,2,67,14,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,4.305,30.872,0,turnover,False,
+2025-08-10_FC Utrecht - Heracles Almelo,2833824161,2,72,1,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,4.305,28.696000000000005,1,turnover,False,
+2025-08-10_FC Utrecht - Heracles Almelo,2833826539,2,74,8,ccpscwdcm65czscrun048ecn5,FC Utrecht,aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,4.9350000000000005,27.676000000000005,3,turnover,False,
+2025-08-10_FC Utrecht - Heracles Almelo,2833830017,2,77,45,dac758ef858jbq7pcb3gfwite,Heracles Almelo,c1krps0yssh477m8umrruiqjt,F. de Keijzer,3.7800000000000002,28.084,0,turnover,False,
+2025-08-10_FC Utrecht - Heracles Almelo,2833833755,2,82,33,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,4.9350000000000005,28.016000000000005,2,turnover,False,
+2025-08-10_FC Utrecht - Heracles Almelo,2833838865,2,89,22,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,4.41,36.516000000000005,4,turnover,False,
+2025-08-10_FC Utrecht - Heracles Almelo,2833840525,2,91,10,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,4.095,29.240000000000002,2,turnover,False,

@@ -1,0 +1,18 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908820237,1,8,59,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4mhahoh3a6rir882ug9hdb5nu,T. Velthuis,5.460000000000001,27.268000000000004,5,action_limit,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908821401,1,13,13,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4mhahoh3a6rir882ug9hdb5nu,T. Velthuis,3.7800000000000002,26.656000000000002,2,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908823397,1,19,14,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4mhahoh3a6rir882ug9hdb5nu,T. Velthuis,4.620000000000001,27.132,2,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908826209,1,26,36,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4mhahoh3a6rir882ug9hdb5nu,T. Velthuis,4.515,27.268000000000004,1,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908830019,1,37,28,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.25,42.84,4,shot,True,4.0
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908831035,1,40,59,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.9899999999999998,31.96,0,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908831901,1,43,25,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.7250000000000005,34.34,0,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908832549,1,45,16,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,68hoounwudpjrr2wmovkyvswk,T. de Graaff,4.9350000000000005,26.656000000000002,0,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908841081,2,48,21,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.305,38.352000000000004,3,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908843663,2,54,9,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,4mhahoh3a6rir882ug9hdb5nu,T. Velthuis,3.7800000000000002,29.104,1,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908846457,2,59,47,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.095,32.980000000000004,1,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908849531,2,65,0,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,68hoounwudpjrr2wmovkyvswk,T. de Graaff,3.045,29.376000000000005,1,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908851629,2,68,2,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,68hoounwudpjrr2wmovkyvswk,T. de Graaff,2.52,31.348000000000003,2,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908857083,2,76,34,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.305,40.596000000000004,3,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908857777,2,78,1,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.515,35.904,1,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908859127,2,80,59,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,68hoounwudpjrr2wmovkyvswk,T. de Graaff,3.9899999999999998,40.528000000000006,1,turnover,False,
+2026-03-08_Sparta Rotterdam - PEC Zwolle,2908860087,2,82,42,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.095,34.544000000000004,2,turnover,False,

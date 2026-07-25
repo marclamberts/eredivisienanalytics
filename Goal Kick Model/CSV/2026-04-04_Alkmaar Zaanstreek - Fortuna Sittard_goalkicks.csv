@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919297381,1,23,36,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,4.41,29.172,5,action_limit,False,
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919301203,1,27,8,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,5.1450000000000005,29.444,1,turnover,False,
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919305891,1,31,28,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,5.04,29.240000000000002,2,turnover,False,
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919315653,1,39,56,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,5.25,32.028000000000006,2,turnover,False,
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919318667,1,42,18,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,bmqg7owjivu1f3grdigkid0b9,J. Zoet,4.41,33.728,1,turnover,False,
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919366915,2,73,2,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,5.3549999999999995,34.408,0,turnover,False,
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919370485,2,76,58,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,bmqg7owjivu1f3grdigkid0b9,J. Zoet,3.045,34.068000000000005,5,action_limit,False,
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919373493,2,80,13,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,nw48ayorxrpxwcxbdhxy44k4,B. van Duijl,4.9350000000000005,42.84,1,turnover,False,
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919377155,2,84,1,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,nw48ayorxrpxwcxbdhxy44k4,B. van Duijl,4.83,42.568000000000005,2,turnover,False,
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919381327,2,88,34,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,4.41,38.42,2,turnover,False,
+2026-04-04_Alkmaar Zaanstreek - Fortuna Sittard,2919385841,2,94,19,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,bmqg7owjivu1f3grdigkid0b9,J. Zoet,5.3549999999999995,39.78,0,turnover,False,

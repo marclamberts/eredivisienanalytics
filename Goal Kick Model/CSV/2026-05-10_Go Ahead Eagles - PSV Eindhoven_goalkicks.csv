@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-05-10_Go Ahead Eagles - PSV Eindhoven,2936068167,1,17,13,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,5.670000000000001,42.092,1,turnover,False,
+2026-05-10_Go Ahead Eagles - PSV Eindhoven,2936098209,1,42,16,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,5.460000000000001,41.004,1,turnover,False,
+2026-05-10_Go Ahead Eagles - PSV Eindhoven,2936131061,2,51,32,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,5.1450000000000005,41.548,1,turnover,False,
+2026-05-10_Go Ahead Eagles - PSV Eindhoven,2936133035,2,53,58,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,61a5bh5xw947nv4mxx62gqaqx,J. Kramer,5.25,41.480000000000004,2,turnover,False,
+2026-05-10_Go Ahead Eagles - PSV Eindhoven,2936134599,2,55,33,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,4.41,36.38,4,turnover,False,
+2026-05-10_Go Ahead Eagles - PSV Eindhoven,2936137805,2,58,5,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,5.3549999999999995,27.336000000000006,2,turnover,False,
+2026-05-10_Go Ahead Eagles - PSV Eindhoven,2936139595,2,59,34,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cs4aca71qkt1ru20ppmi6djl6,M. Kovář,4.620000000000001,39.57600000000001,0,turnover,False,
+2026-05-10_Go Ahead Eagles - PSV Eindhoven,2936143999,2,62,47,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,5.3549999999999995,41.684000000000005,1,turnover,False,
+2026-05-10_Go Ahead Eagles - PSV Eindhoven,2936155105,2,72,10,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cs4aca71qkt1ru20ppmi6djl6,M. Kovář,5.1450000000000005,40.732,0,turnover,False,
+2026-05-10_Go Ahead Eagles - PSV Eindhoven,2936170261,2,86,4,b79uipsy57y1jqpy07h4i5ovk,Go Ahead Eagles,lp9kyx4408kpoey40zv9mga1,J. De Busser,4.9350000000000005,35.292,1,turnover,False,
+2026-05-10_Go Ahead Eagles - PSV Eindhoven,2936174379,2,88,24,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cs4aca71qkt1ru20ppmi6djl6,M. Kovář,3.8850000000000002,39.304,0,turnover,False,

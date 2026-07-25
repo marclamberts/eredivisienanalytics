@@ -1,0 +1,11 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-09-26_FC Twente - Fortuna Sittard,2851496567,1,18,55,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,4.83,39.984,2,turnover,False,
+2025-09-26_FC Twente - Fortuna Sittard,2851500573,1,22,38,4tic29sox7m39fy1ztgv0jsiq,FC Twente,lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,3.8850000000000002,40.596000000000004,1,turnover,False,
+2025-09-26_FC Twente - Fortuna Sittard,2851526513,1,45,21,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,5.460000000000001,40.25600000000001,1,turnover,False,
+2025-09-26_FC Twente - Fortuna Sittard,2851553539,2,52,49,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,4.620000000000001,35.972,1,turnover,False,
+2025-09-26_FC Twente - Fortuna Sittard,2851555339,2,54,9,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,5.670000000000001,39.236000000000004,2,turnover,False,
+2025-09-26_FC Twente - Fortuna Sittard,2851561519,2,58,33,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,5.670000000000001,40.800000000000004,2,turnover,False,
+2025-09-26_FC Twente - Fortuna Sittard,2851563937,2,60,25,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,5.3549999999999995,39.78,1,turnover,False,
+2025-09-26_FC Twente - Fortuna Sittard,2851570373,2,65,15,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,5.565,36.788000000000004,0,turnover,False,
+2025-09-26_FC Twente - Fortuna Sittard,2851587249,2,79,40,3ebril33e08ddzob4bhq8awsr,Fortuna Sittard,16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,5.775,37.332,1,turnover,False,
+2025-09-26_FC Twente - Fortuna Sittard,2851592349,2,84,21,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,5.3549999999999995,31.076000000000004,0,turnover,False,

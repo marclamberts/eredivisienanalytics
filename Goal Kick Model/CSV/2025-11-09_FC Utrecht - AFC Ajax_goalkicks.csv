@@ -1,0 +1,10 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-11-09_FC Utrecht - AFC Ajax,2871345721,1,8,0,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,4.7250000000000005,40.120000000000005,5,action_limit,False,
+2025-11-09_FC Utrecht - AFC Ajax,2871351447,1,18,15,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7w5ivtmbqzi4hfte330r1a505,R. Pasveer,3.465,31.28,1,turnover,False,
+2025-11-09_FC Utrecht - AFC Ajax,2871360007,1,30,29,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7w5ivtmbqzi4hfte330r1a505,R. Pasveer,4.83,30.872,0,turnover,False,
+2025-11-09_FC Utrecht - AFC Ajax,2871365865,1,39,45,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,5.460000000000001,29.240000000000002,0,turnover,False,
+2025-11-09_FC Utrecht - AFC Ajax,2871399875,2,59,8,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7w5ivtmbqzi4hfte330r1a505,R. Pasveer,4.41,36.924,5,action_limit,False,
+2025-11-09_FC Utrecht - AFC Ajax,2871403079,2,62,24,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,5.25,28.288000000000004,3,turnover,False,
+2025-11-09_FC Utrecht - AFC Ajax,2871410653,2,69,17,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,5.1450000000000005,26.384,0,turnover,False,
+2025-11-09_FC Utrecht - AFC Ajax,2871415445,2,73,42,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,7w5ivtmbqzi4hfte330r1a505,R. Pasveer,2.94,32.504,2,turnover,False,
+2025-11-09_FC Utrecht - AFC Ajax,2871435823,2,92,44,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,5.460000000000001,26.996000000000002,1,turnover,False,

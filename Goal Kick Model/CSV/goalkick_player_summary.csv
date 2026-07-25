@@ -1,0 +1,128 @@
+player_id,player_name,team_name,matches,goal_kicks,shots_within_5,mean_actions_to_shot,shot_rate
+6ok4k757utbtswx5618xffsru,I. Mesík,Heracles Almelo,4,10,1,4.0,0.1
+e3akocgpppdty3ayxty1gf6xh,D. Mirani,Heracles Almelo,5,10,1,4.0,0.1
+cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,PSV Eindhoven,21,50,2,4.5,0.04
+7w5ivtmbqzi4hfte330r1a505,R. Pasveer,Heracles Almelo,11,51,2,5.0,0.0392156862745098
+7qzban9gm72aznhn11qyxwtg4,K. van Oevelen,FC Volendam,32,245,5,2.2,0.02040816326530612
+mlqit2c8my1ewqy6avrfhf8q,A. Van Hoorenbeeck,Heracles Almelo,22,55,1,4.0,0.01818181818181818
+4utx4h5jz14whtjawxn7ox0r8,N. Verschuren,FC Volendam,24,58,1,3.0,0.017241379310344827
+ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,Alkmaar Zaanstreek,20,59,1,3.0,0.01694915254237288
+axhjtqfa2xxud2tdle8zfxrkl,L. Koopmans,Fortuna Sittard,10,65,1,2.0,0.015384615384615385
+lp9kyx4408kpoey40zv9mga1,J. De Busser,Go Ahead Eagles,33,208,3,3.6666666666666665,0.014423076923076924
+8l31bne12p5cp51o46h92zjrp,R. Koeman,SC Telstar,32,161,2,3.0,0.012422360248447204
+4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,SC Telstar,24,81,1,5.0,0.012345679012345678
+9ugpnnovqttl8lguv7wdyiezu,S. Graves,PEC Zwolle,24,83,1,2.0,0.012048192771084338
+16mtjri8tz6vmxtxwr34y2tp1,M. Branderhorst,Fortuna Sittard,24,181,2,1.5,0.011049723756906077
+7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,FC Groningen,29,126,1,3.0,0.007936507936507936
+11ceernyer8po8soj8dmygatx,T. Wellenreuther,Feyenoord Rotterdam,33,142,1,2.0,0.007042253521126761
+bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,FC Twente,31,183,1,4.0,0.00546448087431694
+d5v47kueisvcjjz4f69m83sut,J. Drommel,Sparta Rotterdam,34,222,1,4.0,0.0045045045045045045
+2uw0batubkzwe3gcexxwa22cq,T. Jansink,Heracles Almelo,15,81,0,,0.0
+3hhca66jtxt3c1iw10nfmhtnu,D. Reiziger,SC Telstar,2,3,0,,0.0
+3l7amac6wdv9yztupg7ur3kl,O. Zinchenko,AFC Ajax,1,1,0,,0.0
+3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,AFC Ajax,18,72,0,,0.0
+2tox45zgi16bvmn2xzdlvblsk,J. Plug,Feyenoord Rotterdam,1,1,0,,0.0
+2ifp36vdm0d6rb3xc7muuvv11,D. Limnios,Fortuna Sittard,1,1,0,,0.0
+2p6h6ivyzp1fzsayw7r2xn2dx,H. Verhulst,Alkmaar Zaanstreek,1,2,0,,0.0
+1wse4b1hxu37e7t5ty5ykn7c9,J. Šutalo,AFC Ajax,5,7,0,,0.0
+1x6fhuy49w4rpnyavwotbf504,T. Gooijer,PEC Zwolle,1,3,0,,0.0
+1c4fzmrwmlwaqmqomge14rqc4,D. Janse,FC Groningen,28,72,0,,0.0
+1k60tee702idfrp0ibca1s57u,G. Offerhaus,SC Telstar,1,1,0,,0.0
+1l6pokz0idh52sh8seqkznms4,T. Holla,SBV Excelsior,1,4,0,,0.0
+1asrguqxyo7rmoyamggwd9oq2,A. Kaplan,Nijmegen Eendracht Combinatie,12,20,0,,0.0
+4mhahoh3a6rir882ug9hdb5nu,T. Velthuis,PEC Zwolle,4,10,0,,0.0
+4kns22wbu3emy5oxbpr52rdud,E. Dasa,Nijmegen Eendracht Combinatie,1,1,0,,0.0
+4fcmk1x7n95o7owons6mc5a1g,S. Henderikx,SBV Excelsior,2,3,0,,0.0
+47l204bkq2qqjhtazusr0019m,Y. Baas,AFC Ajax,29,65,0,,0.0
+3ypxn1nvgv8e321sq5394w3my,M. Didden,FC Utrecht,8,10,0,,0.0
+447abno2j0ux8fsxzs6fel7th,A. Ahmedhodžić,Feyenoord Rotterdam,8,12,0,,0.0
+4qr07cfbwquppkww057mb9tk9,J. Moder,Feyenoord Rotterdam,1,1,0,,0.0
+4phgw75cred5p93hjq8hiou6t,S. Floranus,PEC Zwolle,1,7,0,,0.0
+61a5bh5xw947nv4mxx62gqaqx,J. Kramer,Go Ahead Eagles,31,114,0,,0.0
+684nd3xjli51z43pbla0mwa21,T. Oosting,PEC Zwolle,1,1,0,,0.0
+6ab5gq2owk86qs5zjottfhwmi,T. Quintero,Sparta Rotterdam,6,14,0,,0.0
+68hoounwudpjrr2wmovkyvswk,T. de Graaff,PEC Zwolle,31,195,0,,0.0
+570htztcvfsu947xw6fvtzmc5,Iván Márquez,Fortuna Sittard,8,16,0,,0.0
+5g0q7azk54eryl8vcgyb2oj4l,P. Tytoń,FC Twente,3,9,0,,0.0
+5lvdnoyknuoyr6kdruposgctl,J. Schouten,PSV Eindhoven,2,2,0,,0.0
+4u12cln8rmtkwlu5q36ypjl2i,N. Schiks,PSV Eindhoven,2,5,0,,0.0
+6zzcoo9k4ebqtlux49rbb5fro,M. Dekker,Alkmaar Zaanstreek,3,4,0,,0.0
+6q72mpmc478hlf4f7ths9ez56,N. Bakker,SC Heerenveen,1,3,0,,0.0
+6fdwd71dx2qu7uzzs3ozm9x7u,T. Watanabe,Feyenoord Rotterdam,19,46,0,,0.0
+6dd248q0adq6su677bw2kk2c5,C. Verdonk,Nijmegen Eendracht Combinatie,1,1,0,,0.0
+7ckkvggtampx9s3nklr1u62vo,M. Jeng,Feyenoord Rotterdam,1,2,0,,0.0
+790v7fu7f2s40e160mlrb6dt6,C. Raatsie,SBV Excelsior,2,11,0,,0.0
+7w5ivtmbqzi4hfte330r1a505,R. Pasveer,AFC Ajax,4,19,0,,0.0
+2wesmq2wuhnuwh2yhgkuaxqfo,A. Bouwman,AFC Ajax,3,3,0,,0.0
+3ojwbw6v83g9b0u2wssnkzzzd,A. Obispo,PSV Eindhoven,8,18,0,,0.0
+3xlkchrk28u0cb620cajre1hw,R. Nijstad,FC Twente,11,18,0,,0.0
+200chcevwu3znwew6xjyaof6d,F. Oldrup Jensen,NAC Breda,2,3,0,,0.0
+2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,Nijmegen Eendracht Combinatie,31,137,0,,0.0
+2ekx0fvuf0dsat062oj430d05,G. Nauber,Go Ahead Eagles,4,6,0,,0.0
+2f8lk6lxav7hl7xlqt9an18x6,H. Petrov,SC Heerenveen,2,2,0,,0.0
+2fbolmn7pyvn5oto4zoeqguwa,N. Kasanwirjo,Fortuna Sittard,1,1,0,,0.0
+1vn6w1mjdztfks75bxn0hk7x0,S. Hetli,SC Telstar,1,1,0,,0.0
+8z4wdv767cv7ddqgrkz5txsrt,B. Kemper,NAC Breda,1,1,0,,0.0
+8przxwwothu3crflys7ahl4dm,S. Adewoye,Fortuna Sittard,1,1,0,,0.0
+8p3x0sm735fru6nthc87pjrbo,Neville Ogidi Nwankwo,SC Telstar,4,8,0,,0.0
+8jm8a7w3a5b5nzikcom7cvf2s,M. Willemsen,SC Heerenveen,29,97,0,,0.0
+8624hqd4nlbzcoqsetvsvla8k,D. Fonville,Nijmegen Eendracht Combinatie,3,4,0,,0.0
+8f3bhiy6r5eei1n25exhbwr8p,J. Lotomba,Feyenoord Rotterdam,1,2,0,,0.0
+7wrulbqqdeecd5vegsbb1905w,R. Owusu-Oduro,Alkmaar Zaanstreek,23,98,0,,0.0
+7wjzrrcy3fp8nq6dlanfxvqhh,B. Nuytinck,Nijmegen Eendracht Combinatie,1,1,0,,0.0
+70tsvrcmklvp4ecdhxlugf8ix,K. Itakura,AFC Ajax,7,17,0,,0.0
+a40zl71xh862o3qqxy89mp8q2,B. Klaverboer,SC Heerenveen,30,150,0,,0.0
+aeqj9ogm0dntus0wl352w9z6y,C. Widell,SBV Excelsior,5,10,0,,0.0
+aafz6q5ggn9e6m5hprc71lgph,M. van der Hoorn,FC Utrecht,11,15,0,,0.0
+9lixevzo8exxiia17altfw8ic,W. Goes,Alkmaar Zaanstreek,2,2,0,,0.0
+913pg8qqcjp99h5fjybbenob9,P. Sandler,Nijmegen Eendracht Combinatie,5,5,0,,0.0
+98qi4clazqen9kimkxt3jb6j9,M. Peersman,FC Groningen,3,5,0,,0.0
+969cpy2geokwer9gjapk7zj3e,R. Hillen,NAC Breda,12,32,0,,0.0
+ass524umdrpsq324wksaqef4k,M. Young,Sparta Rotterdam,4,4,0,,0.0
+am19rcub89k9bleldiqps7845,S. van Gassel,SBV Excelsior,32,251,0,,0.0
+alkcbccyfsjddm897cgz7wel1,J. Cillessen,Nijmegen Eendracht Combinatie,2,18,0,,0.0
+b5sf6wcogrvlwuwbd8xsyyfh1,J. van Overeem,SC Heerenveen,2,2,0,,0.0
+bmqg7owjivu1f3grdigkid0b9,J. Zoet,Alkmaar Zaanstreek,11,68,0,,0.0
+bn8dwm2y9a8i9a10rba3dmm3u,D. James,Go Ahead Eagles,1,1,0,,0.0
+bvwaamcj0bpdrcuoffl6b9rf8,D. Weidmann,FC Twente,1,1,0,,0.0
+awih1xkabe5o6afn6d85ilxw5,A. Noppert,SC Heerenveen,4,16,0,,0.0
+byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,Sparta Rotterdam,18,55,0,,0.0
+c1krps0yssh477m8umrruiqjt,F. de Keijzer,Heracles Almelo,8,50,0,,0.0
+c6i4usq34m3389rtbqptahrai,R. Meissen,SBV Excelsior,1,1,0,,0.0
+afdwdm1rkz1ir3c0tukfh3jhm,S. Čestić,Heracles Almelo,2,10,0,,0.0
+ajs5py826pvol60tokraxrpey,D. Bielica,NAC Breda,31,192,0,,0.0
+9q90ls3k1i2739wd6a20fku6t,V. Barkas,FC Utrecht,35,260,0,,0.0
+9wwud2tglhtdocmjgl2u5ib6c,T. Blokzijl,FC Groningen,3,3,0,,0.0
+a3m4r77behilkcznll07b7d1x,C. Leemans,NAC Breda,6,12,0,,0.0
+cgsmk5437f466uoqvol7devze,R. Flamingo,PSV Eindhoven,4,7,0,,0.0
+cf70r39m2wgbijtw0co5t6yfp,H. Jurjus,FC Groningen,7,30,0,,0.0
+cetavjue5femoxid9fmcd0zjd,J. Schendelaar,PEC Zwolle,2,15,0,,0.0
+c9epkro6fot3km9zak1kswfhm,X. Mbuyamba,FC Volendam,2,2,0,,0.0
+c2an5ksdu6jbap3x3jp3z9c5x,N. Viergever,FC Utrecht,2,2,0,,0.0
+d2698ncsatg6jtvb0l9ijhj4k,N. Hopland,SC Heerenveen,1,1,0,,0.0
+cstlool8c2aoty5vhx77t4q38,J. Faberski,PEC Zwolle,1,1,0,,0.0
+cs4aca71qkt1ru20ppmi6djl6,M. Kovář,PSV Eindhoven,30,157,0,,0.0
+d5g7rl9a83vu3cyyzvu5yveqy,A. MacNulty,PEC Zwolle,8,10,0,,0.0
+d8cxurdt9g5gezqlfwae7ooru,M. Meulensteen,Go Ahead Eagles,1,1,0,,0.0
+doldjju9tkhyzz6mj9deenobt,S. Benda,Feyenoord Rotterdam,1,5,0,,0.0
+dmsmbn9a1qucwf100o3v77nbp,M. Brouwer,FC Utrecht,2,8,0,,0.0
+dsh8ta4q6v5ews2e19p9xh6y2,J. Hubner,Fortuna Sittard,1,3,0,,0.0
+dtcvzfse83ztj96kiizwp6jqi,G. Smal,Feyenoord Rotterdam,2,2,0,,0.0
+d4klz2gxqb1diw57z8c9ttixg,G. van Zwam,Go Ahead Eagles,2,2,0,,0.0
+cocgd3hh74fq9c30x9bps4idw,S. Lemkin,FC Twente,2,2,0,,0.0
+e6x3hs6v8cq74ojgluyny72fo,T. Land,FC Groningen,1,1,0,,0.0
+dunp2ilud32z4lf3f8vvwjca1,M. Paes,AFC Ajax,13,72,0,,0.0
+eamuyjut271ytghb2q4ljqbpx,N. Olij,PSV Eindhoven,1,2,0,,0.0
+eoodvdqfvhql03i8kv9l14qvo,T. Kraaijeveld,Feyenoord Rotterdam,3,13,0,,0.0
+eytcfp4cu6qkar65kf0p5rm96,J. Dirksen,Go Ahead Eagles,3,3,0,,0.0
+f5pgdha5h37xytbk1zq8q710,D. Koswal,SC Telstar,5,8,0,,0.0
+etvamcwttnlg4sfxfulgzm7yt,K. Lamprou,NAC Breda,1,10,0,,0.0
+eu901b75l2ly5p48jdw6kwmad,M. Amevor,FC Volendam,7,8,0,,0.0
+lduqoe45t2fnbn9s9rbvlnf9,R. Pröpper,FC Twente,12,25,0,,0.0
+idvh0ac1f8wv39640pyl4esp,S. Kersten,SC Heerenveen,8,17,0,,0.0
+nw48ayorxrpxwcxbdhxy44k4,B. van Duijl,Alkmaar Zaanstreek,4,14,0,,0.0
+sk7z843dcqvmdf1tkoaoysr8,D. Verduin,PEC Zwolle,1,8,0,,0.0
+ubuh5wgnl0o5bn3wirdmectm,M. Eerdhuijzen,FC Utrecht,1,1,0,,0.0
+uru1h5pzgwy9cvbele1piei,R. Janse,Nijmegen Eendracht Combinatie,1,7,0,,0.0
+vrkanoideipif70wo4adb5lg,R. Steur,FC Volendam,3,17,0,,0.0
+y1ky8sp8scl05mmfr7byy3md,J. Hardeveld,SC Telstar,5,19,0,,0.0

@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890413109,1,3,13,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.515,36.856,5,action_limit,False,
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890414581,1,5,10,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,5.3549999999999995,41.548,1,turnover,False,
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890420687,1,13,25,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,5.25,25.16,0,turnover,False,
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890436073,1,37,16,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,3.8850000000000002,34.68,5,action_limit,False,
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890438927,1,42,25,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.9350000000000005,35.02,1,turnover,False,
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890442027,1,48,16,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,3.9899999999999998,37.672000000000004,0,turnover,False,
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890452765,2,50,33,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,5.25,25.16,2,turnover,False,
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890459885,2,63,46,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,5.3549999999999995,36.584,0,turnover,False,
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890464239,2,71,37,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,5.670000000000001,38.624,0,turnover,False,
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890466193,2,75,18,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.2,33.32,0,turnover,False,
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890467723,2,78,9,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,4kns22wbu3emy5oxbpr52rdud,E. Dasa,4.305,26.180000000000003,1,turnover,False,
+2026-01-17_NAC Breda - Nijmegen Eendracht Combinatie,2890471105,2,85,56,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.305,33.184,0,turnover,False,

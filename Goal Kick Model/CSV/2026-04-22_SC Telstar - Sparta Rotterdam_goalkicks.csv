@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-04-22_SC Telstar - Sparta Rotterdam,2927576841,1,0,23,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.095,28.016000000000005,1,turnover,False,
+2026-04-22_SC Telstar - Sparta Rotterdam,2927581079,1,5,4,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.8850000000000002,36.924,3,turnover,False,
+2026-04-22_SC Telstar - Sparta Rotterdam,2927583753,1,7,33,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,4.83,37.80800000000001,2,turnover,False,
+2026-04-22_SC Telstar - Sparta Rotterdam,2927585169,1,8,53,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.57,40.868,2,turnover,False,
+2026-04-22_SC Telstar - Sparta Rotterdam,2927598485,1,20,53,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.3549999999999995,37.400000000000006,1,turnover,False,
+2026-04-22_SC Telstar - Sparta Rotterdam,2927600103,1,22,11,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,5.3549999999999995,39.440000000000005,1,turnover,False,
+2026-04-22_SC Telstar - Sparta Rotterdam,2927605473,1,28,2,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.7250000000000005,34.748000000000005,0,turnover,False,
+2026-04-22_SC Telstar - Sparta Rotterdam,2927617073,1,39,3,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.305,34.544000000000004,0,turnover,False,
+2026-04-22_SC Telstar - Sparta Rotterdam,2927645761,2,51,53,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,1.9949999999999999,32.368,0,turnover,False,
+2026-04-22_SC Telstar - Sparta Rotterdam,2927648885,2,55,19,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,4.305,34.476000000000006,3,shot,True,3.0
+2026-04-22_SC Telstar - Sparta Rotterdam,2927655029,2,61,27,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.6750000000000003,27.472,0,turnover,False,
+2026-04-22_SC Telstar - Sparta Rotterdam,2927658909,2,65,46,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,5.565,34.0,5,action_limit,False,
+2026-04-22_SC Telstar - Sparta Rotterdam,2927669905,2,80,13,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,5.460000000000001,28.560000000000002,1,turnover,False,

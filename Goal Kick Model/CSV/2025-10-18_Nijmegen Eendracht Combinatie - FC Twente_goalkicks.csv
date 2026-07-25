@@ -1,0 +1,7 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860449831,1,6,18,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.83,33.660000000000004,1,turnover,False,
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860500751,1,35,10,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.620000000000001,35.904,5,action_limit,False,
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860517693,1,42,11,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.095,33.388000000000005,1,turnover,False,
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860579875,2,51,5,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,4.620000000000001,33.11600000000001,1,turnover,False,
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860602523,2,71,21,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.095,34.884,2,turnover,False,
+2025-10-18_Nijmegen Eendracht Combinatie - FC Twente,2860608761,2,77,11,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,5.985,27.744,1,turnover,False,

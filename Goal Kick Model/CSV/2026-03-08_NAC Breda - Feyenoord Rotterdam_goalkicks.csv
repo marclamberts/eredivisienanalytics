@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2908997873,1,2,23,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,5.3549999999999995,40.596000000000004,3,turnover,False,
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909002477,1,11,5,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,3.3600000000000003,34.0,0,turnover,False,
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909004637,1,14,25,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,4.83,38.624,1,turnover,False,
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909022477,1,35,58,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,4.620000000000001,40.732,2,turnover,False,
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909026815,1,40,36,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,1.05,35.836000000000006,0,turnover,False,
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909052157,2,45,53,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,11ceernyer8po8soj8dmygatx,T. Wellenreuther,4.41,27.744,5,action_limit,False,
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909060217,2,56,15,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,4.305,34.68,2,turnover,False,
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909072013,2,67,14,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,3.8850000000000002,33.11600000000001,0,turnover,False,
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909076977,2,72,5,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,ajs5py826pvol60tokraxrpey,D. Bielica,1.5750000000000002,32.504,0,turnover,False,
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909081481,2,76,43,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,11ceernyer8po8soj8dmygatx,T. Wellenreuther,4.83,36.992000000000004,0,turnover,False,
+2026-03-08_NAC Breda - Feyenoord Rotterdam,2909083323,2,78,38,20vymiy7bo8wkyxai3ew494fz,Feyenoord Rotterdam,11ceernyer8po8soj8dmygatx,T. Wellenreuther,4.305,40.188,2,turnover,False,

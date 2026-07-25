@@ -1,0 +1,17 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922489575,1,10,26,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,3.6750000000000003,39.78,1,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922498041,1,19,42,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,6ab5gq2owk86qs5zjottfhwmi,T. Quintero,4.7250000000000005,40.392,3,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922504927,1,25,14,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cs4aca71qkt1ru20ppmi6djl6,M. Kovář,5.565,36.176,5,action_limit,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922514237,1,30,49,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.515,27.064,3,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922516003,1,32,30,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.25,25.16,0,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922520997,1,37,30,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,4.7250000000000005,40.392,1,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922521509,1,38,12,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,2.94,30.668000000000003,0,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922554417,2,54,48,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,4.7250000000000005,41.752,5,shot,True,5.0
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922560323,2,60,38,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,4.9350000000000005,40.800000000000004,4,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922563811,2,63,35,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cmdeqxibr6holfqg17ap9uihg,Yarek Gąsiorowski,5.25,42.84,3,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922576719,2,76,0,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.04,40.528000000000006,5,action_limit,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922583749,2,83,20,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.9899999999999998,38.21600000000001,0,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922588281,2,87,50,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.3549999999999995,39.372,1,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922589071,2,88,40,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cs4aca71qkt1ru20ppmi6djl6,M. Kovář,4.41,40.188,0,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922589911,2,89,35,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.7250000000000005,30.668000000000003,1,turnover,False,
+2026-04-11_Sparta Rotterdam - PSV Eindhoven,2922590843,2,90,42,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,cs4aca71qkt1ru20ppmi6djl6,M. Kovář,4.620000000000001,40.800000000000004,0,turnover,False,

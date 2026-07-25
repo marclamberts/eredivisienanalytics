@@ -1,0 +1,10 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-02-08_FC Groningen - PSV Eindhoven,2898181523,1,16,38,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,5.1450000000000005,33.660000000000004,1,turnover,False,
+2026-02-08_FC Groningen - PSV Eindhoven,2898186821,1,22,11,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,5lvdnoyknuoyr6kdruposgctl,J. Schouten,4.515,27.880000000000003,3,turnover,False,
+2026-02-08_FC Groningen - PSV Eindhoven,2898190497,1,25,32,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,3.9899999999999998,30.6,1,turnover,False,
+2026-02-08_FC Groningen - PSV Eindhoven,2898194851,1,29,39,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,4.9350000000000005,30.192,1,turnover,False,
+2026-02-08_FC Groningen - PSV Eindhoven,2898241307,2,54,58,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,4u12cln8rmtkwlu5q36ypjl2i,N. Schiks,4.2,35.904,2,turnover,False,
+2026-02-08_FC Groningen - PSV Eindhoven,2898254463,2,69,22,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,4.2,33.932,3,turnover,False,
+2026-02-08_FC Groningen - PSV Eindhoven,2898255155,2,70,16,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,4u12cln8rmtkwlu5q36ypjl2i,N. Schiks,2.8350000000000004,38.556000000000004,5,action_limit,False,
+2026-02-08_FC Groningen - PSV Eindhoven,2898258167,2,73,51,24fvcruwqrqvqa3aonf8c3zuy,PSV Eindhoven,4u12cln8rmtkwlu5q36ypjl2i,N. Schiks,3.465,32.43600000000001,2,turnover,False,
+2026-02-08_FC Groningen - PSV Eindhoven,2898269337,2,86,44,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,4.620000000000001,38.964,3,turnover,False,

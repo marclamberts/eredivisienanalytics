@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-01-10_FC Twente - PEC Zwolle,2888616195,1,7,47,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,68hoounwudpjrr2wmovkyvswk,T. de Graaff,3.57,31.28,2,turnover,False,
+2026-01-10_FC Twente - PEC Zwolle,2888618053,1,10,29,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,2.94,30.668000000000003,3,turnover,False,
+2026-01-10_FC Twente - PEC Zwolle,2888619109,1,12,4,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,4.9350000000000005,30.464,2,turnover,False,
+2026-01-10_FC Twente - PEC Zwolle,2888621093,1,14,41,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,4.305,29.240000000000002,3,turnover,False,
+2026-01-10_FC Twente - PEC Zwolle,2888625469,1,19,56,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,4.2,36.788000000000004,2,turnover,False,
+2026-01-10_FC Twente - PEC Zwolle,2888631215,1,26,26,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,9ugpnnovqttl8lguv7wdyiezu,S. Graves,3.8850000000000002,29.852,4,turnover,False,
+2026-01-10_FC Twente - PEC Zwolle,2888642449,1,45,4,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,4.515,29.308000000000003,0,turnover,False,
+2026-01-10_FC Twente - PEC Zwolle,2888654285,2,46,34,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,68hoounwudpjrr2wmovkyvswk,T. de Graaff,3.1500000000000004,34.204,1,turnover,False,
+2026-01-10_FC Twente - PEC Zwolle,2888671885,2,71,32,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,3.7800000000000002,34.476000000000006,2,turnover,False,
+2026-01-10_FC Twente - PEC Zwolle,2888675641,2,76,22,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,68hoounwudpjrr2wmovkyvswk,T. de Graaff,3.3600000000000003,29.648000000000003,1,turnover,False,
+2026-01-10_FC Twente - PEC Zwolle,2888677883,2,79,46,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,68hoounwudpjrr2wmovkyvswk,T. de Graaff,3.57,27.812,1,turnover,False,
+2026-01-10_FC Twente - PEC Zwolle,2888684829,2,92,32,2uuh2bir8ktof0uxfo06lb4ox,PEC Zwolle,68hoounwudpjrr2wmovkyvswk,T. de Graaff,3.1500000000000004,30.804000000000002,1,turnover,False,

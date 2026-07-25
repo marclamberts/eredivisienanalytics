@@ -1,0 +1,16 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860782267,1,7,44,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,5.460000000000001,41.82,5,action_limit,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860788159,1,13,39,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,4.83,42.024,3,turnover,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860791335,1,16,11,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,5.25,41.61600000000001,1,turnover,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860793725,1,18,22,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,5.3549999999999995,42.160000000000004,1,turnover,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860797709,1,22,24,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,5.460000000000001,41.82,3,shot,True,3.0
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860803043,1,27,32,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,5.04,41.412,5,action_limit,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860808823,1,33,24,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,4.515,35.768,0,turnover,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860814237,1,39,16,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7wrulbqqdeecd5vegsbb1905w,R. Owusu-Oduro,4.620000000000001,34.612,0,turnover,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860837185,2,49,10,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,4.620000000000001,34.136,0,turnover,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860834759,2,50,17,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,ck3l6a262hves3v6nywarx9pm,Alexandre Penetra,5.25,41.82,2,turnover,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860840921,2,56,34,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,3.57,33.252,0,turnover,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860844569,2,61,11,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,5.04,42.228,2,turnover,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860852109,2,69,29,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7wrulbqqdeecd5vegsbb1905w,R. Owusu-Oduro,5.460000000000001,33.592,0,turnover,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860858301,2,76,32,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,5.04,34.068000000000005,5,action_limit,False,
+2025-10-18_AFC Ajax - Alkmaar Zaanstreek,2860862609,2,80,55,3kfktv64h7kg7zryax1wktr5r,Alkmaar Zaanstreek,7wrulbqqdeecd5vegsbb1905w,R. Owusu-Oduro,5.25,28.968000000000004,1,turnover,False,

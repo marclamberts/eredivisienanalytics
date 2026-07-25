@@ -1,0 +1,12 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2832998053,1,1,1,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,913pg8qqcjp99h5fjybbenob9,P. Sandler,4.2,41.82,5,action_limit,False,
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833003367,1,4,30,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,3.57,34.0,2,turnover,False,
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833021863,1,18,4,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,4.620000000000001,34.068000000000005,0,turnover,False,
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833023815,1,23,11,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,4.83,29.444,1,turnover,False,
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833024619,1,27,2,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,am19rcub89k9bleldiqps7845,S. van Gassel,3.8850000000000002,39.916000000000004,5,action_limit,False,
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833025549,1,30,19,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,1l6pokz0idh52sh8seqkznms4,T. Holla,4.7250000000000005,27.608000000000004,0,turnover,False,
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833032881,1,35,54,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,1l6pokz0idh52sh8seqkznms4,T. Holla,4.620000000000001,33.11600000000001,1,turnover,False,
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833080311,2,46,21,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,1l6pokz0idh52sh8seqkznms4,T. Holla,4.095,28.016000000000005,0,turnover,False,
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833094069,2,54,24,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,5.3549999999999995,36.04,1,turnover,False,
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833104117,2,60,28,8iawijq7s9s6d85mjz8wdslki,Nijmegen Eendracht Combinatie,2by23cpjtr9tsw1m4ak1w73oq,G. Crettaz,4.41,33.592,0,turnover,False,
+2025-08-09_Nijmegen Eendracht Combinatie - SBV Excelsior,2833125927,2,84,3,dqk062lu0vm8epvytbm6r4mmf,SBV Excelsior,1l6pokz0idh52sh8seqkznms4,T. Holla,4.83,26.452,0,turnover,False,

@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-02-14_FC Groningen - FC Utrecht,2900368167,1,17,32,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,4.620000000000001,28.220000000000002,1,turnover,False,
+2026-02-14_FC Groningen - FC Utrecht,2900372881,1,23,46,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,4.620000000000001,33.932,4,turnover,False,
+2026-02-14_FC Groningen - FC Utrecht,2900373705,1,24,55,ccpscwdcm65czscrun048ecn5,FC Utrecht,3ypxn1nvgv8e321sq5394w3my,M. Didden,5.3549999999999995,25.772000000000002,3,turnover,False,
+2026-02-14_FC Groningen - FC Utrecht,2900893749,2,53,4,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,5.04,42.5,2,turnover,False,
+2026-02-14_FC Groningen - FC Utrecht,2900406531,2,61,59,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,4.7250000000000005,27.200000000000003,3,shot,True,3.0
+2026-02-14_FC Groningen - FC Utrecht,2900406933,2,62,46,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,4.305,30.192,0,turnover,False,
+2026-02-14_FC Groningen - FC Utrecht,2900410499,2,70,26,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,4.83,28.968000000000004,1,turnover,False,
+2026-02-14_FC Groningen - FC Utrecht,2900412973,2,75,22,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,5.565,42.29600000000001,2,turnover,False,
+2026-02-14_FC Groningen - FC Utrecht,2900414019,2,77,42,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,3.8850000000000002,30.328000000000003,5,action_limit,False,
+2026-02-14_FC Groningen - FC Utrecht,2900417849,2,85,29,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,4.095,30.804000000000002,0,turnover,False,
+2026-02-14_FC Groningen - FC Utrecht,2900419281,2,88,33,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,4.9350000000000005,27.540000000000003,1,turnover,False,
+2026-02-14_FC Groningen - FC Utrecht,2900419583,2,89,17,ccpscwdcm65czscrun048ecn5,FC Utrecht,9q90ls3k1i2739wd6a20fku6t,V. Barkas,4.83,27.540000000000003,0,turnover,False,

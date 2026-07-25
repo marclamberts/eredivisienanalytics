@@ -1,0 +1,14 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2025-11-02_FC Groningen - FC Twente,2868026213,1,8,59,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,5.3549999999999995,42.29600000000001,5,action_limit,False,
+2025-11-02_FC Groningen - FC Twente,2868026823,1,9,33,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,5.1450000000000005,41.684000000000005,5,action_limit,False,
+2025-11-02_FC Groningen - FC Twente,2868034407,1,16,12,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,5.565,28.152,1,turnover,False,
+2025-11-02_FC Groningen - FC Twente,2868039103,1,21,8,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,5.1450000000000005,42.024,3,turnover,False,
+2025-11-02_FC Groningen - FC Twente,2868042225,1,24,47,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,4.620000000000001,34.272,1,turnover,False,
+2025-11-02_FC Groningen - FC Twente,2868049047,1,31,25,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,5.04,34.544000000000004,0,turnover,False,
+2025-11-02_FC Groningen - FC Twente,2868052261,1,33,41,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,5.460000000000001,28.016000000000005,4,shot,True,4.0
+2025-11-02_FC Groningen - FC Twente,2868114413,2,67,30,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,3.3600000000000003,31.62,5,action_limit,False,
+2025-11-02_FC Groningen - FC Twente,2868117679,2,71,43,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,4.83,33.660000000000004,2,turnover,False,
+2025-11-02_FC Groningen - FC Twente,2868127403,2,78,45,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,4.515,31.416000000000004,5,action_limit,False,
+2025-11-02_FC Groningen - FC Twente,2868128789,2,79,43,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,4.7250000000000005,37.80800000000001,2,turnover,False,
+2025-11-02_FC Groningen - FC Twente,2868141975,2,88,3,4tic29sox7m39fy1ztgv0jsiq,FC Twente,bzanwdo4ihqd6d7vr06bd3845,L. Unnerstall,5.25,28.220000000000002,1,turnover,False,
+2025-11-02_FC Groningen - FC Twente,2868149083,2,92,59,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,4.9350000000000005,30.192,0,turnover,False,

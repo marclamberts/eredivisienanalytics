@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-01-31_Sparta Rotterdam - FC Groningen,2895005897,1,6,59,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,4.620000000000001,33.79600000000001,1,turnover,False,
+2026-01-31_Sparta Rotterdam - FC Groningen,2895005087,1,12,54,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.515,30.124,0,turnover,False,
+2026-01-31_Sparta Rotterdam - FC Groningen,2895008691,1,17,7,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,4.83,41.344,3,turnover,False,
+2026-01-31_Sparta Rotterdam - FC Groningen,2895012131,1,21,51,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,5.670000000000001,42.5,1,turnover,False,
+2026-01-31_Sparta Rotterdam - FC Groningen,2895013841,1,24,41,cos9hxi16eitbcbthof7zrm4m,FC Groningen,7wo4627xo1mx5k0vpwhe8hqll,E. Vaessen,2.94,26.316000000000003,0,turnover,False,
+2026-01-31_Sparta Rotterdam - FC Groningen,2895019905,1,33,57,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,byirjks50zw1eefkcy8p4hd5h,B. Martins Indi,4.515,41.956,1,turnover,False,
+2026-01-31_Sparta Rotterdam - FC Groningen,2895047483,2,48,14,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,5.460000000000001,42.228,3,turnover,False,
+2026-01-31_Sparta Rotterdam - FC Groningen,2895050947,2,51,51,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,5.775,42.024,4,turnover,False,
+2026-01-31_Sparta Rotterdam - FC Groningen,2895056933,2,58,33,cos9hxi16eitbcbthof7zrm4m,FC Groningen,1c4fzmrwmlwaqmqomge14rqc4,D. Janse,5.25,41.888000000000005,1,turnover,False,
+2026-01-31_Sparta Rotterdam - FC Groningen,2895062877,2,65,25,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.620000000000001,27.404,0,turnover,False,
+2026-01-31_Sparta Rotterdam - FC Groningen,2895068253,2,73,35,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.04,41.004,1,turnover,False,
+2026-01-31_Sparta Rotterdam - FC Groningen,2895077791,2,91,44,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.41,35.428000000000004,1,turnover,False,

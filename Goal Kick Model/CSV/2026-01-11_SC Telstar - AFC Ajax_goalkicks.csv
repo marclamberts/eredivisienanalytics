@@ -1,0 +1,7 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-01-11_SC Telstar - AFC Ajax,2888867789,1,18,2,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,5.25,33.864,1,turnover,False,
+2026-01-11_SC Telstar - AFC Ajax,2888869663,1,25,30,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,5.565,41.480000000000004,3,turnover,False,
+2026-01-11_SC Telstar - AFC Ajax,2888893143,2,49,24,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,47l204bkq2qqjhtazusr0019m,Y. Baas,5.460000000000001,41.004,3,turnover,False,
+2026-01-11_SC Telstar - AFC Ajax,2888897007,2,55,43,d0zdg647gvgc95xdtk1vpbkys,AFC Ajax,3mctpepmqunc1a8zro2nq1wtm,V. Jaroš,3.465,38.21600000000001,2,turnover,False,
+2026-01-11_SC Telstar - AFC Ajax,2888902351,2,66,52,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,4bkb8qjb5n33wxfopju8r1mtx,D. Bakker,5.670000000000001,39.78,5,action_limit,False,
+2026-01-11_SC Telstar - AFC Ajax,2888916071,2,92,0,zjawy6qdzk3y69v5pa3zl2cb,SC Telstar,8l31bne12p5cp51o46h92zjrp,R. Koeman,5.1450000000000005,34.544000000000004,0,turnover,False,

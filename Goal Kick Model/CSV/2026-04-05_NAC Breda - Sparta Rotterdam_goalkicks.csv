@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-04-05_NAC Breda - Sparta Rotterdam,2919980577,1,20,42,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,5.670000000000001,42.432,1,turnover,False,
+2026-04-05_NAC Breda - Sparta Rotterdam,2919983319,1,24,25,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,5.3549999999999995,41.82,3,turnover,False,
+2026-04-05_NAC Breda - Sparta Rotterdam,2919984257,1,25,53,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.460000000000001,33.524,4,turnover,False,
+2026-04-05_NAC Breda - Sparta Rotterdam,2919986711,1,29,14,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.25,35.564,5,action_limit,False,
+2026-04-05_NAC Breda - Sparta Rotterdam,2919989263,1,32,10,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.04,34.952,5,action_limit,False,
+2026-04-05_NAC Breda - Sparta Rotterdam,2920017375,2,50,47,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,4.620000000000001,41.412,1,turnover,False,
+2026-04-05_NAC Breda - Sparta Rotterdam,2920021449,2,57,3,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,969cpy2geokwer9gjapk7zj3e,R. Hillen,4.9350000000000005,41.752,1,turnover,False,
+2026-04-05_NAC Breda - Sparta Rotterdam,2920024995,2,61,47,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.460000000000001,28.628000000000004,2,turnover,False,
+2026-04-05_NAC Breda - Sparta Rotterdam,2920028007,2,65,33,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.8850000000000002,30.668000000000003,0,turnover,False,
+2026-04-05_NAC Breda - Sparta Rotterdam,2920031975,2,71,20,59t7flioj4w4mpwnrwbm0m8ck,NAC Breda,a3m4r77behilkcznll07b7d1x,C. Leemans,3.465,42.568000000000005,2,turnover,False,
+2026-04-05_NAC Breda - Sparta Rotterdam,2920046111,2,89,6,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.460000000000001,30.804000000000002,1,turnover,False,
+2026-04-05_NAC Breda - Sparta Rotterdam,2920049277,2,92,18,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.460000000000001,33.932,1,turnover,False,

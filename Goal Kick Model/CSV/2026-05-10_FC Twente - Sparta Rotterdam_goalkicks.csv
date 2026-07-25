@@ -1,0 +1,13 @@
+match_file,event_id,period_id,time_min,time_sec,contestant_id,team_name,player_id,player_name,x,y,chain_n_actions,chain_end_reason,reached_shot_within_5,n_actions_to_shot
+2026-05-10_FC Twente - Sparta Rotterdam,2936073245,1,23,56,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.6750000000000003,28.084,5,action_limit,False,
+2026-05-10_FC Twente - Sparta Rotterdam,2936076497,1,26,26,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.6750000000000003,33.524,5,action_limit,False,
+2026-05-10_FC Twente - Sparta Rotterdam,2936083725,1,32,32,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,5.1450000000000005,36.652,1,turnover,False,
+2026-05-10_FC Twente - Sparta Rotterdam,2936089709,1,37,56,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.2550000000000003,36.312000000000005,4,turnover,False,
+2026-05-10_FC Twente - Sparta Rotterdam,2936092423,1,40,26,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.2,30.804000000000002,2,turnover,False,
+2026-05-10_FC Twente - Sparta Rotterdam,2936095265,1,42,28,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5g0q7azk54eryl8vcgyb2oj4l,P. Tytoń,5.1450000000000005,31.348000000000003,0,turnover,False,
+2026-05-10_FC Twente - Sparta Rotterdam,2936121645,2,47,28,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.6750000000000003,33.864,1,turnover,False,
+2026-05-10_FC Twente - Sparta Rotterdam,2936128013,2,53,16,4tic29sox7m39fy1ztgv0jsiq,FC Twente,3xlkchrk28u0cb620cajre1hw,R. Nijstad,5.1450000000000005,42.024,1,turnover,False,
+2026-05-10_FC Twente - Sparta Rotterdam,2936142565,2,67,1,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5g0q7azk54eryl8vcgyb2oj4l,P. Tytoń,4.095,36.04,0,turnover,False,
+2026-05-10_FC Twente - Sparta Rotterdam,2936151383,2,74,10,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,4.095,35.632000000000005,4,turnover,False,
+2026-05-10_FC Twente - Sparta Rotterdam,2936161751,2,84,15,4tic29sox7m39fy1ztgv0jsiq,FC Twente,5g0q7azk54eryl8vcgyb2oj4l,P. Tytoń,5.3549999999999995,36.04,0,turnover,False,
+2026-05-10_FC Twente - Sparta Rotterdam,2936168711,2,90,23,89w5c6pw7vn0dxypi61tt0g4k,Sparta Rotterdam,d5v47kueisvcjjz4f69m83sut,J. Drommel,3.9899999999999998,39.304,1,turnover,False,
