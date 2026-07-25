@@ -1,15 +1,15 @@
 """
 League-wide interception transition-threat visuals - Eredivisie 2025/26
 ===========================================================================
-Two charts built on build_interception_transition_model.py's output:
+Two charts built on build_interception_transition_model.py's output, in
+Marc Lamberts' Meridian house style (housestyle/ package at the repo
+root -- warm paper/ink-navy surface, one terracotta accent spent once,
+serif kicker-headline-dek header, Waltzing Analytics logo + dated credit
+line on every chart):
   1. A pitch heatmap of WHERE interceptions that kick off the most
      transition threat happen (value-weighted bins, not just counts).
   2. A leaderboard of the top individual interceptors by total transition
      threat created.
-
-Reuses Disruption/league_disruption_visuals.py's theming/plotting helpers
-(same palette, same add_logo/make_leaderboard machinery) so this reads as
-one visual family with the rest of the repo rather than a one-off style.
 
 Usage: python3 interception_transition_visuals.py
 """
@@ -17,17 +17,22 @@ import os
 import sys
 
 import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
 import pandas as pd
 from mplsoccer import VerticalPitch
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from housestyle import style, components  # noqa: E402
+from housestyle.colors import SEQUENTIAL_BLUE_LIGHT, SEQUENTIAL_BLUE_DARK  # noqa: E402
+
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "Disruption"))
 import build_disruption_model as bdm  # noqa: E402
-import league_disruption_visuals as ldv  # noqa: E402
-from league_disruption_visuals import compute_attack_directions, add_logo  # noqa: E402
+from league_disruption_visuals import compute_attack_directions  # noqa: E402
 
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 CSV_DIR = os.path.join(OUT_DIR, "CSV")
+SOURCE = "Opta event data, Eredivisie 2025/26"
 
 
 def visual_dir(theme):
@@ -36,7 +41,15 @@ def visual_dir(theme):
     return d
 
 
-def make_value_heatmap(interceptions, out_path):
+def sequential_cmap(mode):
+    steps = SEQUENTIAL_BLUE_LIGHT if mode == "light" else SEQUENTIAL_BLUE_DARK
+    hexes = [steps[k] for k in sorted(steps)]
+    return LinearSegmentedColormap.from_list(f"meridian_blue_{mode}", hexes)
+
+
+def make_value_heatmap(interceptions, mode, out_path):
+    palette, _ = style.apply(mode)
+
     print("Computing per-team attacking direction per period to normalize "
           "interception x/y onto a common 'distance from own goal' axis...")
     directions = compute_attack_directions()
@@ -50,44 +63,75 @@ def make_value_heatmap(interceptions, out_path):
     interceptions["y_own"] = np.where(dir_vals == 1, interceptions["y"], 68.0 - interceptions["y"])
     interceptions["value_x1000"] = interceptions["transition_threat"] * 1000
 
-    fig = plt.figure(figsize=(11, 13.7))
-    fig.patch.set_facecolor(ldv.BG)
-    pitch = VerticalPitch(pitch_type="uefa", pitch_color=ldv.BG, line_color=ldv.PITCH_LINE,
+    own_third = (interceptions["x_own"] < 35).mean()
+    mid_third = ((interceptions["x_own"] >= 35) & (interceptions["x_own"] < 70)).mean()
+    att_third = (interceptions["x_own"] >= 70).mean()
+    thirds = {"defensive": own_third, "midfield": mid_third, "attacking": att_third}
+    lead_third = max(thirds, key=thirds.get)
+
+    fig = plt.figure(figsize=(8.2, 10.4))
+    fig.patch.set_facecolor(palette["surface"])
+    pitch = VerticalPitch(pitch_type="uefa", pitch_color=palette["surface"], line_color=palette["axis"],
                           linewidth=1.1, half=False, line_zorder=2)
-    ax = fig.add_axes([0.04, 0.09, 0.92, 0.78])
+    ax = fig.add_axes([0.07, 0.10, 0.80, 0.66])
     pitch.draw(ax=ax)
 
     stats = pitch.bin_statistic(interceptions["x_own"], interceptions["y_own"],
                                 values=interceptions["value_x1000"], statistic="sum", bins=(16, 12))
-    hm = pitch.heatmap(stats, ax=ax, cmap=ldv.GOLD_RAMP, edgecolors=ldv.BG, linewidth=0.15, zorder=1)
-    cax = fig.add_axes([0.90, 0.24, 0.016, 0.45])
+    hm = pitch.heatmap(stats, ax=ax, cmap=sequential_cmap(mode), edgecolors=palette["surface"],
+                       linewidth=0.15, zorder=1)
+    cax = fig.add_axes([0.90, 0.22, 0.022, 0.42])
     cb = fig.colorbar(hm, cax=cax)
-    cb.set_label("Transition threat, x1000 (summed per zone)", color=ldv.TEXT_SUB, fontsize=8.5)
-    cb.ax.yaxis.set_tick_params(color=ldv.TEXT_SUB, labelcolor=ldv.TEXT_SUB, labelsize=7.5)
+    cb.set_label("Transition threat, x1000", color=palette["ink_secondary"], fontsize=8.5)
+    cb.ax.yaxis.set_tick_params(color=palette["ink_muted"], labelcolor=palette["ink_muted"], labelsize=7.5)
+    cb.outline.set_visible(False)
 
-    fig.text(0.5, 0.965, "Where Interceptions Spark Transitions", fontsize=23, fontweight="bold",
-             ha="center", color=ldv.TEXT_MAIN)
-    fig.text(0.5, 0.935, f"Eredivisie 2025/26  ·  Season  ·  {len(interceptions)} interceptions",
-             fontsize=11.5, ha="center", color=ldv.TEXT_SUB)
-    fig.text(0.5, 0.915, "cell = total xT the intercepting team generated within "
-             "10s of winning the ball back there", fontsize=11.5, ha="center", color=ldv.TEXT_SUB)
+    components.header(
+        fig, kicker="Interceptions",
+        title=f"Most transition threat starts in the {lead_third} third",
+        dek=f"{own_third:.0%} defensive, {mid_third:.0%} midfield, {att_third:.0%} attacking third  ·  "
+            f"{len(interceptions):,} interceptions this season",
+        palette=palette)
+    components.footer(fig, source=SOURCE, palette=palette)
 
-    own_third = (interceptions["x_own"] < 35).mean()
-    mid_third = ((interceptions["x_own"] >= 35) & (interceptions["x_own"] < 70)).mean()
-    att_third = (interceptions["x_own"] >= 70).mean()
-    fig.text(0.5, 0.058,
-             f"{own_third:.0%} of interceptions in the defensive third, {mid_third:.0%} in "
-             f"midfield, {att_third:.0%} in the attacking third",
-             fontsize=9.5, ha="center", color=ldv.LEGEND_TEXT)
-    fig.text(0.5, 0.041, "x normalized per team per period to \"distance from own goal\" "
-             "(bottom = own goal, top = opponent goal)", fontsize=9.5, ha="center", color=ldv.LEGEND_TEXT)
-    fig.text(0.98, 0.006, "Marc Lamberts", fontsize=9.5, ha="right", color=ldv.TEXT_FOOT, style="italic")
-    fig.text(0.02, 0.006, "Data via Opta | transition threat = positive xT added by the intercepting "
-             "team's own actions in the 10s after the interception, before losing the ball back",
-             fontsize=7.0, color=ldv.TEXT_FOOT)
+    fig.savefig(out_path, dpi=200, facecolor=palette["surface"])
+    plt.close(fig)
+    print("Saved:", out_path)
 
-    add_logo(fig)
-    fig.savefig(out_path, dpi=200, facecolor=ldv.BG)
+
+def make_leaderboard(player_summary, mode, out_path, top_n=15):
+    palette, _ = style.apply(mode)
+    top = player_summary.sort_values("total_transition_threat_x1000", ascending=False).head(top_n)
+    top = top.iloc[::-1]  # smallest at bottom for a horizontal barh
+    leader = top.iloc[-1]
+
+    fig = plt.figure(figsize=(9.5, 9))
+    ax = fig.add_axes([0.34, 0.10, 0.58, 0.66])
+    ax.set_facecolor(palette["surface"])
+
+    bars = ax.barh(range(len(top)), top["total_transition_threat_x1000"], height=0.62, zorder=3)
+    components.highlight_bars(bars, accent_index=len(top) - 1, palette=palette)
+
+    labels = [f"{name}  ·  {team}" for name, team in zip(top["player_name"], top["team_name"])]
+    ax.set_yticks(range(len(top)))
+    ax.set_yticklabels(labels, fontsize=9.3, color=palette["ink_primary"])
+    ax.tick_params(axis="y", length=0)
+
+    vmax = top["total_transition_threat_x1000"].max()
+    for i, (val, n) in enumerate(zip(top["total_transition_threat_x1000"], top["interceptions"])):
+        ax.text(val + vmax * 0.02, i, f"{val:.1f}  ({int(n)} interceptions)",
+                va="center", fontsize=9, color=palette["ink_secondary"])
+    ax.set_xlim(0, vmax * 1.28)
+    ax.grid(axis="x", zorder=0)
+
+    components.header(
+        fig, kicker="Interceptions",
+        title=f"{leader['player_name']} sparks the most dangerous transitions",
+        dek=f"Top {top_n} interceptors by transition threat created, x1000 for readability",
+        palette=palette)
+    components.footer(fig, source=SOURCE, palette=palette)
+
+    fig.savefig(out_path, dpi=200, facecolor=palette["surface"])
     plt.close(fig)
     print("Saved:", out_path)
 
@@ -96,21 +140,12 @@ def main():
     interceptions = pd.read_csv(os.path.join(CSV_DIR, "all_eredivisie_interception_transitions.csv"))
     player_summary = pd.read_csv(os.path.join(CSV_DIR, "interception_transition_player_summary.csv"))
 
-    for theme in ("dark", "light"):
-        ldv.set_theme(theme)
-        out_dir = visual_dir(theme)
-        make_value_heatmap(interceptions, os.path.join(out_dir, "league_interception_transition_heatmap.png"))
-        ldv.make_leaderboard(
-            player_summary, os.path.join(out_dir, "top_interceptors_by_transition_threat_leaderboard.png"),
-            value_col="total_transition_threat_x1000",
-            count_col="interceptions",
-            title="Top Interceptors by Transition Threat",
-            subtitle="Eredivisie 2025/26  ·  Season  ·  transition threat = xT the intercepting "
-                     "team created in the 10s after the regain, before losing the ball back  ·  "
-                     "x1000 for readability",
-            footer="Data via Opta | rewards interceptions that spark a real counter, not just "
-                   "winning the ball back",
-            value_fmt="{:.1f}")
+    for mode in ("light", "dark"):
+        out_dir = visual_dir(mode)
+        make_value_heatmap(interceptions, mode,
+                           os.path.join(out_dir, "league_interception_transition_heatmap.png"))
+        make_leaderboard(player_summary, mode,
+                         os.path.join(out_dir, "top_interceptors_by_transition_threat_leaderboard.png"))
 
 
 if __name__ == "__main__":
