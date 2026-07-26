@@ -1,0 +1,102 @@
+{
+  "title": "Eredivisie 2025-2026",
+  "output": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/eredivisie_2025_2026_metrics_by_category.xlsx",
+  "position_output": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/eredivisie_2025_2026_derived_positions.csv",
+  "sheets": [
+    {
+      "name": "Info",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/info.csv",
+      "kind": "info"
+    },
+    {
+      "name": "Player Standard",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_standard.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Player Shooting",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_shooting.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Player Passing",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_passing.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Player Possession",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_possession.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Player Progression",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_progression.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Player Defending",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_defending.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Player Goalkeeping",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_goalkeeping.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Player GDA",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_gda.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Player xT Danger",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_xt_danger.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Player Impact",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_impact.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Profile Definitions",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/profile_definitions.csv",
+      "kind": "profile"
+    },
+    {
+      "name": "Profile Radar Data",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/profile_radar_data.csv",
+      "kind": "profile"
+    },
+    {
+      "name": "Team Standard",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/team_standard.csv",
+      "kind": "team"
+    },
+    {
+      "name": "Team Attack",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/team_attack.csv",
+      "kind": "team"
+    },
+    {
+      "name": "Team Passing",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/team_passing.csv",
+      "kind": "team"
+    },
+    {
+      "name": "Team Possession",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/team_possession.csv",
+      "kind": "team"
+    },
+    {
+      "name": "Team Defending",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/team_defending.csv",
+      "kind": "team"
+    },
+    {
+      "name": "Metric Dictionary",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/metric_dictionary.csv",
+      "kind": "dictionary"
+    }
+  ]
+}

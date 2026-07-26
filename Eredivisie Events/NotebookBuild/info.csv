@@ -1,0 +1,8 @@
+item,value
+source,/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026
+season,Eredivisie 2025-2026
+matches_loaded,309
+players,535
+teams,18
+position_method,Lineup position code + stint minutes + touch geography + goalkeeper evidence
+note,Workbook topology follows ecuador_2026_metrics_by_category.xlsx.

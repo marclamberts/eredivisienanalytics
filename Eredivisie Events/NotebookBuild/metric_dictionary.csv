@@ -1,0 +1,436 @@
+metric,family,description
+position_group,Position,Dominant broad position from lineup position code; goalkeeper events override ambiguity.
+position_detail,Position,Detailed role from broad lineup position plus median on-ball x/y location.
+secondary_position,Position,Second lineup position when it accounts for at least 20% of recorded stint minutes.
+position_confidence,Position,75% dominant lineup share plus 25% on-ball sample confidence; goalkeeper evidence floors confidence at 95%.
+position_source,Position,Evidence used for classification.
+position_versatility,Position,"Normalized entropy of minutes across recorded lineup position codes; 0 is stable, 1 is highly varied."
+dominant_formation_slot,Position,"Most frequently occupied formation slot, weighted by recorded stint minutes."
+non_penalty_goals_per90,Shooting,Non-penalty goals per 90 minutes.
+shots_on_target_per90,Shooting,Shots on target per 90 minutes.
+shots_in_box_per90,Shooting,Shots taken from inside the penalty area per 90 minutes.
+shots_outside_box_per90,Shooting,Shots taken from outside the penalty area per 90 minutes.
+headed_shots_per90,Shooting,Headed shots per 90 minutes.
+big_chance_shots_per90,Shooting,Big-chance shots per 90 minutes.
+penalty_shots_per90,Shooting,Penalty shots per 90 minutes.
+non_penalty_xg_per90,Shooting,Non-penalty expected goals per 90 minutes.
+danger_psxg_per90,Shooting,Post-shot expected goals per 90 minutes.
+danger_xgot_per90,Shooting,Expected goals on target per 90 minutes.
+goals_minus_xg_per90,Shooting,Goals above or below expected goals per 90 minutes.
+non_penalty_goals_minus_xg,Shooting,Non-penalty goals minus non-penalty expected goals.
+non_penalty_goals_minus_xg_per90,Shooting,Non-penalty goals minus non-penalty expected goals per 90 minutes.
+xgot_minus_xg_per90,Shooting,Expected goals on target minus expected goals per 90 minutes.
+xgot_per_shot_on_target,Shooting,Expected goals on target per shot on target.
+psxg_per_shot_on_target,Shooting,Post-shot expected goals per shot on target.
+non_penalty_conversion_pct,Shooting,Non-penalty goals divided by non-penalty shots.
+goals_per_shot_on_target,Shooting,Goals divided by shots on target.
+box_shot_share,Shooting,Share of all shots taken from inside the penalty area.
+big_chance_shot_share,Shooting,Share of all shots classified as big chances.
+headed_shot_share,Shooting,Share of all shots that were headers.
+xg_conversion_index,Shooting,Goals divided by expected goals; 1.00 indicates output in line with xG.
+forward_pass_completion_pct,Passing,Completed forward passes divided by attempted forward passes.
+backward_pass_completion_pct,Passing,Completed backward passes divided by attempted backward passes.
+short_pass_completion_pct,Passing,Completed short passes divided by attempted short passes.
+medium_pass_completion_pct,Passing,Completed medium passes divided by attempted medium passes.
+long_pass_completion_pct,Passing,Completed long-distance passes divided by attempted long-distance passes.
+pressured_pass_completion_pct,Passing,Completed pressured passes divided by attempted pressured passes.
+through_ball_completion_pct,Passing,Completed through balls divided by attempted through balls.
+set_piece_pass_completion_pct,Passing,Completed set-piece passes divided by attempted set-piece passes.
+forward_pass_share,Passing,Forward passes as a share of all attempted passes.
+backward_pass_share,Passing,Backward passes as a share of all attempted passes.
+lateral_pass_share,Passing,Lateral passes as a share of all attempted passes.
+short_pass_share,Passing,Short passes as a share of all attempted passes.
+medium_pass_share,Passing,Medium passes as a share of all attempted passes.
+long_pass_share,Passing,Long-distance passes as a share of all attempted passes.
+central_pass_share,Passing,Central passes as a share of all attempted passes.
+wide_pass_share,Passing,Wide passes as a share of all attempted passes.
+pressured_pass_share,Passing,Passes attempted under pressure as a share of all attempted passes.
+final_third_entry_pass_share,Passing,Passes into the final third as a share of all attempted passes.
+box_entry_pass_share,Passing,Passes into the penalty area as a share of all attempted passes.
+second_assists,Passing,Completed passes immediately before the direct assist in a consecutive same-team goal sequence.
+second_assists_per90,Passing,Second assists per 90 minutes.
+third_assists,Passing,Completed passes immediately before the second assist in a consecutive same-team goal sequence.
+third_assists_per90,Passing,Third assists per 90 minutes.
+assist_chain_contributions,Passing,Direct assists plus second assists plus third assists.
+assist_chain_contributions_per90,Passing,"Direct, second, and third assist-chain contributions per 90 minutes."
+events_per90,Possession,Recorded on-ball events per 90 minutes.
+non_turnover_actions,Possession,Recorded on-ball events minus turnovers.
+non_turnover_actions_per90,Possession,Recorded on-ball events excluding turnovers per 90 minutes.
+take_ons_unsuccessful,Possession,Attempted take-ons minus completed take-ons.
+take_ons_unsuccessful_per90,Possession,Unsuccessful take-ons per 90 minutes.
+turnovers_per_100_actions,Possession,Turnovers per 100 recorded on-ball events.
+dangerous_turnover_share,Possession,Dangerous turnovers as a share of all turnovers.
+take_on_action_share,Possession,Take-ons as a share of all recorded on-ball events.
+box_action_share,Possession,Penalty-area actions as a share of final-third actions.
+xt_carries,Possession,Expected-threat value added through carries.
+xt_take_ons,Possession,Expected-threat value added through take-ons.
+final_third_entries_per_progressive_pass,Progression,Passes into the final third divided by progressive passes.
+box_entries_per_progressive_pass,Progression,Passes into the penalty area divided by progressive passes.
+deep_completion_per_box_entry,Progression,Deep completions divided by passes into the penalty area.
+xt_passes,Progression,Expected-threat value added through passes.
+xt_added_per_progressive_pass,Progression,Expected-threat value added per progressive pass.
+positive_xt_share,Progression,Positive expected-threat added divided by the absolute net expected-threat added.
+carries,Possession,Ordinary carries inferred from consecutive same-player located touches 3–45 metres apart and 1.2–21 seconds apart.
+carry_distance,Possession,Total inferred carry distance in Opta pitch units.
+progressive_carries,Progression,Carries advancing at least 10 pitch units or crossing a major attacking-zone boundary.
+carries_into_final_third,Progression,Carries starting outside and ending inside the final third.
+carries_into_box,Progression,Carries starting outside and ending inside the penalty area.
+xt_from_all_passes,Progression,Expected-threat value added by all passes.
+xt_from_progressive_passes_est,Progression,"Estimated progressive-pass xT, allocating all-pass xT by the progressive-pass share of attempted passes; not directly observed event-level xT."
+xt_per_pass,Progression,Expected-threat value from all passes divided by attempted passes.
+xt_per_progressive_pass_est,Progression,Estimated progressive-pass xT divided by progressive passes.
+impact_sample_reliability,Impact,Minutes divided by 900 and capped at 1; a transparent sample-size reliability indicator.
+balanced_impact_score,Impact,"Mean of shooting, creation, progression, and defensive impact scores."
+attacking_impact_score,Impact,"Mean of shooting, creation, and progression impact scores."
+impact_above_50,Impact,Total football impact score minus the neutral reference level of 50.
+profile,Radar Profiles,Role-specific radar profile assigned from the player's detailed position.
+position_details,Radar Profiles,Detailed positions mapped into the radar profile.
+axis_order,Radar Profiles,Clockwise axis order used when constructing the radar.
+axis_label,Radar Profiles,Reader-facing label displayed on the radar axis.
+metric,Radar Profiles,Underlying workbook metric used for the radar axis.
+direction,Radar Profiles,Whether higher or lower raw values produce a stronger percentile.
+unit,Radar Profiles,Display unit for the raw metric value.
+minimum_minutes,Radar Profiles,Minimum minutes required for inclusion in the percentile reference pool.
+reference_players,Radar Profiles,Number of players with usable data in the profile reference pool.
+rationale,Radar Profiles,Reason the metric is included in the role-specific radar.
+eligible_for_reference,Radar Profiles,Whether the player meets the minimum-minutes threshold for the comparison pool.
+raw_value,Radar Profiles,Original metric value before percentile normalization.
+percentile,Radar Profiles,Role-specific 0–100 percentile after applying the stated metric direction.
+comparison_pool,Radar Profiles,Profile and minutes-qualified group used to calculate the percentile.
+shots,shooting,Season aggregate for shots.
+non_penalty_shots,shooting,Season aggregate for non penalty shots.
+goals,shooting,Season aggregate for goals.
+non_penalty_goals,shooting,Season aggregate for non penalty goals.
+shots_on_target,shooting,Season aggregate for shots on target.
+shots_in_box,shooting,Season aggregate for shots in box.
+shots_outside_box,shooting,Season aggregate for shots outside box.
+headed_shots,shooting,Season aggregate for headed shots.
+right_foot_shots,shooting,Season aggregate for right foot shots.
+left_foot_shots,shooting,Season aggregate for left foot shots.
+big_chance_shots,shooting,Season aggregate for big chance shots.
+fast_break_shots,shooting,Season aggregate for fast break shots.
+direct_free_kick_shots,shooting,Direct Free Kick Shots
+penalty_shots,shooting,Season aggregate for penalty shots.
+danger_xg,shooting,Season aggregate for danger xg.
+non_penalty_xg,shooting,Season aggregate for non penalty xg.
+danger_psxg,shooting,Season aggregate for danger psxg.
+danger_xgot,shooting,Season aggregate for danger xgot.
+danger_danger_score_sum,shooting,Danger Danger Score Sum
+xg_per_shot,shooting,Season aggregate for xg per shot.
+xgot_per_on_target_shot,shooting,Xgot Per On Target Shot
+goals_minus_xg,shooting,Season aggregate for goals minus xg.
+non_penalty_goals_minus_npxg,shooting,Non Penalty Goals Minus Npxg
+xgot_minus_xg,shooting,Season aggregate for xgot minus xg.
+shots_per90,shooting,Shots per 90 minutes.
+goals_per90,shooting,Goals per 90 minutes.
+danger_xg_per90,shooting,Danger xg per 90 minutes.
+shot_accuracy_pct,shooting,Percentage measure for shot accuracy.
+conversion_pct,shooting,Percentage measure for conversion.
+shooting_impact_score,shooting,Shooting Impact Score
+assists,attacking,Season aggregate for assists.
+goal_contributions,attacking,Season aggregate for goal contributions.
+goal_contributions_per90,attacking,Goal Contributions Per90
+expected_goal_contribution,attacking,Expected Goal Contribution
+expected_goal_contribution_per90,attacking,Expected Goal Contribution Per90
+key_passes,attacking,Season aggregate for key passes.
+passes_to_shot,attacking,Season aggregate for passes to shot.
+expected_assists,attacking,Season aggregate for expected assists.
+take_ons,attacking,Season aggregate for take ons.
+take_ons_completed,attacking,Season aggregate for take ons completed.
+take_on_success_pct,attacking,Percentage measure for take on success.
+box_actions,attacking,Season aggregate for box actions.
+final_third_actions,attacking,Season aggregate for final third actions.
+deep_completions,attacking,Season aggregate for deep completions.
+cutbacks,attacking,Season aggregate for cutbacks.
+turnovers,attacking,Season aggregate for turnovers.
+dangerous_turnovers,attacking,Season aggregate for dangerous turnovers.
+ball_security,attacking,Season aggregate for ball security.
+shot_creation_actions_proxy,attacking,Shot Creation Actions Proxy
+shot_creation_actions_proxy_per90,attacking,Shot Creation Actions Proxy Per90
+xt_added,attacking,Season aggregate for xt added.
+creation_impact_score,attacking,Creation Impact Score
+decision_quality_index,attacking,Decision Quality Index
+passes_attempted,passing,Season aggregate for passes attempted.
+passes_completed,passing,Season aggregate for passes completed.
+pass_completion_pct,passing,Percentage measure for pass completion.
+pass_distance,passing,Season aggregate for pass distance.
+forward_passes,passing,Season aggregate for forward passes.
+forward_passes_completed,passing,Forward Passes Completed
+backward_passes,passing,Season aggregate for backward passes.
+backward_passes_completed,passing,Backward Passes Completed
+lateral_passes,passing,Season aggregate for lateral passes.
+short_passes,passing,Season aggregate for short passes.
+short_passes_completed,passing,Short Passes Completed
+medium_passes,passing,Season aggregate for medium passes.
+medium_passes_completed,passing,Medium Passes Completed
+long_distance_passes,passing,Long Distance Passes
+long_distance_passes_completed,passing,Long Distance Passes Completed
+long_balls,passing,Season aggregate for long balls.
+long_balls_completed,passing,Long Balls Completed
+switches,passing,Season aggregate for switches.
+central_passes,passing,Season aggregate for central passes.
+wide_passes,passing,Season aggregate for wide passes.
+pressured_passes,passing,Season aggregate for pressured passes.
+pressured_passes_completed,passing,Pressured Passes Completed
+press_resistance_proxy,passing,Press Resistance Proxy
+passes_attempted_per90,passing,Passes Attempted Per90
+passes_completed_per90,passing,Passes Completed Per90
+progressive_passes,progressive_passing,Season aggregate for progressive passes.
+progressive_passes_per90,progressive_passing,Progressive Passes Per90
+progressive_pass_distance,progressive_passing,Progressive Pass Distance
+passes_into_final_third,progressive_passing,Passes Into Final Third
+passes_into_box,progressive_passing,Season aggregate for passes into box.
+deep_completions_per90,progressive_passing,Deep Completions Per90
+switches_per90,progressive_passing,Switches per 90 minutes.
+cutbacks_per90,progressive_passing,Cutbacks per 90 minutes.
+progressive_pass_share,progressive_passing,Progressive Pass Share
+progressive_accuracy,progressive_passing,Progressive Accuracy
+deep_entry_efficiency,progressive_passing,Deep Entry Efficiency
+xt_added_per90,progressive_passing,Xt added per 90 minutes.
+progression_impact_score,progressive_passing,Progression Impact Score
+passes_to_goal,key_passing,Season aggregate for passes to goal.
+post_shot_expected_assists,key_passing,Post Shot Expected Assists
+expected_assists_per90,key_passing,Expected Assists Per90
+passes_to_shot_per90,key_passing,Passes To Shot Per90
+through_balls,key_passing,Season aggregate for through balls.
+through_balls_completed,key_passing,Through Balls Completed
+key_pass_rate,key_passing,Rate measure for key pass.
+chance_creation_efficiency,key_passing,Chance Creation Efficiency
+defensive_actions,defensive_actions,Season aggregate for defensive actions.
+tackles,defensive_actions,Season aggregate for tackles.
+tackles_won,defensive_actions,Season aggregate for tackles won.
+tackle_success_pct,defensive_actions,Percentage measure for tackle success.
+interceptions,defensive_actions,Season aggregate for interceptions.
+clearances,defensive_actions,Season aggregate for clearances.
+aerial_duels,defensive_actions,Season aggregate for aerial duels.
+aerial_duels_won,defensive_actions,Season aggregate for aerial duels won.
+aerial_success_pct,defensive_actions,Percentage measure for aerial success.
+ball_recoveries,defensive_actions,Season aggregate for ball recoveries.
+blocked_passes,defensive_actions,Season aggregate for blocked passes.
+possession_wins,defensive_actions,Season aggregate for possession wins.
+possession_wins_per90,defensive_actions,Possession Wins Per90
+defensive_retention,defensive_actions,Season aggregate for defensive retention.
+counterpress_recoveries,defensive_actions,Counterpress Recoveries
+def_actions_def_third,defensive_actions,Def Actions Def Third
+def_actions_mid_third,defensive_actions,Def Actions Mid Third
+def_actions_att_third,defensive_actions,Def Actions Att Third
+def_actions_to_shot,defensive_actions,Season aggregate for def actions to shot.
+def_actions_to_goal,defensive_actions,Season aggregate for def actions to goal.
+defensive_chain_value,defensive_actions,Defensive Chain Value
+fouls,defensive_actions,Season aggregate for fouls.
+fouls_def_third,defensive_actions,Season aggregate for fouls def third.
+errors,defensive_actions,Season aggregate for errors.
+turnover_risk,defensive_actions,Season aggregate for turnover risk.
+defensive_actions_per90,defensive_actions,Defensive Actions Per90
+defensive_impact_score,defensive_actions,Defensive Impact Score
+set_piece_passes,set_pieces,Season aggregate for set piece passes.
+set_piece_passes_completed,set_pieces,Set Piece Passes Completed
+set_piece_shots,set_pieces,Season aggregate for set piece shots.
+corners,set_pieces,Season aggregate for corners.
+free_kicks,set_pieces,Season aggregate for free kicks.
+throw_ins,set_pieces,Season aggregate for throw ins.
+set_piece_passes_per90,set_pieces,Set Piece Passes Per90
+set_piece_shots_per90,set_pieces,Set Piece Shots Per90
+goalkeeper_actions,goalkeeping,Season aggregate for goalkeeper actions.
+saves,goalkeeping,Season aggregate for saves.
+claims,goalkeeping,Season aggregate for claims.
+punches,goalkeeping,Season aggregate for punches.
+keeper_pickups,goalkeeping,Season aggregate for keeper pickups.
+danger_shots_faced,goalkeeping,Season aggregate for danger shots faced.
+danger_xg_faced,goalkeeping,Season aggregate for danger xg faced.
+danger_psxg_faced,goalkeeping,Season aggregate for danger psxg faced.
+danger_xgot_faced,goalkeeping,Season aggregate for danger xgot faced.
+goals_for_faced,goalkeeping,Season aggregate for goals for faced.
+goals_prevented_xgot,goalkeeping,Goals Prevented Xgot
+goals_prevented_psxg,goalkeeping,Goals Prevented Psxg
+save_pct_model,goalkeeping,Season aggregate for save pct model.
+cross_claim_rate,goalkeeping,Rate measure for cross claim.
+saves_per90,goalkeeping,Saves per 90 minutes.
+claims_per90,goalkeeping,Claims per 90 minutes.
+xt_positive_added,value_models,Season aggregate for xt positive added.
+epv_added,value_models,Season aggregate for epv added.
+vaep_value,value_models,Season aggregate for vaep value.
+goals_added,value_models,Season aggregate for goals added.
+goals_added_per90,value_models,Goals added per 90 minutes.
+gda_action_gda_expected,value_models,Gda Action Gda Expected
+gda_action_gda_actual,value_models,Gda Action Gda Actual
+gda_goal_difference_added,value_models,Gda Goal Difference Added
+gda_goal_difference_added_per90,value_models,Gda Goal Difference Added Per90
+raw_plus_minus,value_models,Season aggregate for raw plus minus.
+raw_plus_minus_per90,value_models,Raw Plus Minus Per90
+rapm_per90,value_models,Rapm per 90 minutes.
+total_football_impact_score,value_models,Total Football Impact Score
+pct_expected_goal_contribution_per90,composite_scores,Pct Expected Goal Contribution Per90
+pct_danger_xg_per90,composite_scores,Pct danger xg per 90 minutes.
+pct_expected_assists_per90,composite_scores,Pct Expected Assists Per90
+pct_xt_added_per90,composite_scores,Pct xt added per 90 minutes.
+pct_gda_goal_difference_added_per90,composite_scores,Pct Gda Goal Difference Added Per90
+pct_rapm_per90,composite_scores,Pct rapm per 90 minutes.
+pct_progressive_passes_per90,composite_scores,Pct Progressive Passes Per90
+pct_defensive_actions_per90,composite_scores,Pct Defensive Actions Per90
+gda_goal_difference_on_per90,indexes_ratios,Gda Goal Difference On Per90
+gda_action_gda_expected_per90,indexes_ratios,Gda Action Gda Expected Per90
+gda_goals_for_on_per90,indexes_ratios,Gda Goals For On Per90
+gda_goals_against_on_per90,indexes_ratios,Gda Goals Against On Per90
+xt_positive_added_per90,indexes_ratios,Xt Positive Added Per90
+post_shot_expected_assists_per90,indexes_ratios,Post Shot Expected Assists Per90
+passes_to_goal_per90,indexes_ratios,Passes To Goal Per90
+def_actions_to_shot_per90,indexes_ratios,Def Actions To Shot Per90
+dangerous_turnovers_per90,indexes_ratios,Dangerous Turnovers Per90
+counterpress_recoveries_per90,indexes_ratios,Counterpress Recoveries Per90
+pass_distance_per90,indexes_ratios,Pass distance per 90 minutes.
+forward_passes_per90,indexes_ratios,Forward Passes Per90
+backward_passes_per90,indexes_ratios,Backward Passes Per90
+lateral_passes_per90,indexes_ratios,Lateral Passes Per90
+forward_passes_completed_per90,indexes_ratios,Forward Passes Completed Per90
+backward_passes_completed_per90,indexes_ratios,Backward Passes Completed Per90
+short_passes_per90,indexes_ratios,Short passes per 90 minutes.
+medium_passes_per90,indexes_ratios,Medium passes per 90 minutes.
+long_distance_passes_per90,indexes_ratios,Long Distance Passes Per90
+short_passes_completed_per90,indexes_ratios,Short Passes Completed Per90
+medium_passes_completed_per90,indexes_ratios,Medium Passes Completed Per90
+long_distance_passes_completed_per90,indexes_ratios,Long Distance Passes Completed Per90
+central_passes_per90,indexes_ratios,Central Passes Per90
+wide_passes_per90,indexes_ratios,Wide passes per 90 minutes.
+passes_from_def_third_per90,indexes_ratios,Passes From Def Third Per90
+passes_from_mid_third_per90,indexes_ratios,Passes From Mid Third Per90
+passes_from_att_third_per90,indexes_ratios,Passes From Att Third Per90
+def_actions_mid_third_per90,indexes_ratios,Def Actions Mid Third Per90
+aerial_duels_per90,indexes_ratios,Aerial duels per 90 minutes.
+aerial_duels_won_per90,indexes_ratios,Aerial Duels Won Per90
+progressive_pass_distance_per90,indexes_ratios,Progressive Pass Distance Per90
+fouls_per90,indexes_ratios,Fouls per 90 minutes.
+final_third_actions_per90,indexes_ratios,Final Third Actions Per90
+turnovers_per90,indexes_ratios,Turnovers per 90 minutes.
+def_actions_att_third_per90,indexes_ratios,Def Actions Att Third Per90
+box_actions_per90,indexes_ratios,Box actions per 90 minutes.
+def_actions_def_third_per90,indexes_ratios,Def Actions Def Third Per90
+clearances_per90,indexes_ratios,Clearances per 90 minutes.
+goalkeeper_actions_per90,indexes_ratios,Goalkeeper Actions Per90
+ball_recoveries_per90,indexes_ratios,Ball Recoveries Per90
+take_ons_per90,indexes_ratios,Take ons per 90 minutes.
+take_ons_completed_per90,indexes_ratios,Take Ons Completed Per90
+set_piece_passes_completed_per90,indexes_ratios,Set Piece Passes Completed Per90
+throw_ins_per90,indexes_ratios,Throw ins per 90 minutes.
+long_balls_per90,indexes_ratios,Long balls per 90 minutes.
+long_balls_completed_per90,indexes_ratios,Long Balls Completed Per90
+passes_into_final_third_per90,indexes_ratios,Passes Into Final Third Per90
+crosses_per90,indexes_ratios,Crosses per 90 minutes.
+crosses_completed_per90,indexes_ratios,Crosses Completed Per90
+interceptions_per90,indexes_ratios,Interceptions per 90 minutes.
+tackles_per90,indexes_ratios,Tackles per 90 minutes.
+tackles_won_per90,indexes_ratios,Tackles won per 90 minutes.
+fouls_def_third_per90,indexes_ratios,Fouls Def Third Per90
+passes_into_box_per90,indexes_ratios,Passes Into Box Per90
+def_actions_to_goal_per90,indexes_ratios,Def Actions To Goal Per90
+key_passes_per90,indexes_ratios,Key passes per 90 minutes.
+non_penalty_shots_per90,indexes_ratios,Non Penalty Shots Per90
+right_foot_shots_per90,indexes_ratios,Right Foot Shots Per90
+left_foot_shots_per90,indexes_ratios,Left Foot Shots Per90
+fast_break_shots_per90,indexes_ratios,Fast Break Shots Per90
+direct_free_kick_shots_per90,indexes_ratios,Direct Free Kick Shots Per90
+free_kicks_per90,indexes_ratios,Free kicks per 90 minutes.
+corners_per90,indexes_ratios,Corners per 90 minutes.
+errors_per90,indexes_ratios,Errors per 90 minutes.
+punches_per90,indexes_ratios,Punches per 90 minutes.
+blocked_passes_per90,indexes_ratios,Blocked Passes Per90
+assists_per90,indexes_ratios,Assists per 90 minutes.
+keeper_pickups_per90,indexes_ratios,Keeper Pickups Per90
+through_balls_per90,indexes_ratios,Through balls per 90 minutes.
+through_balls_completed_per90,indexes_ratios,Through Balls Completed Per90
+pressured_passes_per90,indexes_ratios,Pressured Passes Per90
+pressured_passes_completed_per90,indexes_ratios,Pressured Passes Completed Per90
+passes_attempted_opp_per90,indexes_ratios,Passes Attempted Opp Per90
+passes_completed_opp_per90,indexes_ratios,Passes Completed Opp Per90
+passes_from_att_third_opp_per90,indexes_ratios,Passes From Att Third Opp Per90
+defensive_actions_opp_per90,indexes_ratios,Defensive Actions Opp Per90
+shots_opp_per90,indexes_ratios,Shots opp per 90 minutes.
+goals_opp_per90,indexes_ratios,Goals opp per 90 minutes.
+danger_goals_per90,indexes_ratios,Danger goals per 90 minutes.
+danger_is_post_sum_per90,indexes_ratios,Danger Is Post Sum Per90
+danger_is_on_target_sum_per90,indexes_ratios,Danger Is On Target Sum Per90
+danger_is_outfield_block_sum_per90,indexes_ratios,Danger Is Outfield Block Sum Per90
+danger_is_penalty_sum_per90,indexes_ratios,Danger Is Penalty Sum Per90
+danger_situation_danger_sum_per90,indexes_ratios,Danger Situation Danger Sum Per90
+danger_p_on_target_sum_per90,indexes_ratios,Danger P On Target Sum Per90
+danger_multi_miss_sum_per90,indexes_ratios,Danger Multi Miss Sum Per90
+danger_multi_post_sum_per90,indexes_ratios,Danger Multi Post Sum Per90
+danger_multi_on_target_sum_per90,indexes_ratios,Danger Multi On Target Sum Per90
+danger_multi_goal_sum_per90,indexes_ratios,Danger Multi Goal Sum Per90
+danger_danger_score_sum_per90,indexes_ratios,Danger Danger Score Sum Per90
+danger_shots_per90,indexes_ratios,Danger shots per 90 minutes.
+danger_xg_per_shot_per90,indexes_ratios,Danger Xg Per Shot Per90
+danger_psxg_per_shot_per90,indexes_ratios,Danger Psxg Per Shot Per90
+gda_minutes_per90,indexes_ratios,Gda minutes per 90 minutes.
+gda_stint_count_per90,indexes_ratios,Gda Stint Count Per90
+gda_team_goals_per90,indexes_ratios,Gda Team Goals Per90
+gda_team_goals_against_per90,indexes_ratios,Gda Team Goals Against Per90
+gda_off_minutes_per90,indexes_ratios,Gda Off Minutes Per90
+gda_goals_for_off_per90,indexes_ratios,Gda Goals For Off Per90
+gda_goals_against_off_per90,indexes_ratios,Gda Goals Against Off Per90
+gda_goal_difference_off_per90,indexes_ratios,Gda Goal Difference Off Per90
+gda_action_count_per90,indexes_ratios,Gda Action Count Per90
+gda_action_gda_actual_per90,indexes_ratios,Gda Action Gda Actual Per90
+gda_xg_json_per90,indexes_ratios,Gda xg json per 90 minutes.
+gda_action_shots_per90,indexes_ratios,Gda Action Shots Per90
+gda_action_goals_per90,indexes_ratios,Gda Action Goals Per90
+gda_score_component_per90,indexes_ratios,Gda Score Component Per90
+xt_actions_per90,indexes_ratios,Xt actions per 90 minutes.
+xt_avg_action_per90,indexes_ratios,Xt avg action per 90 minutes.
+xt_move_distance_per90,indexes_ratios,Xt Move Distance Per90
+xt_passes_per90,indexes_ratios,Xt passes per 90 minutes.
+xt_carries_per90,indexes_ratios,Xt carries per 90 minutes.
+xt_take_ons_per90,indexes_ratios,Xt take ons per 90 minutes.
+xt_per_100_actions_per90,indexes_ratios,Xt Per 100 Actions Per90
+xt_positive_per_100_actions_per90,indexes_ratios,Xt Positive Per 100 Actions Per90
+gda_goal_difference_added_per90_match_per90,indexes_ratios,Gda Goal Difference Added Per90 Match Per90
+is_primary_goalkeeper_per90,indexes_ratios,Is Primary Goalkeeper Per90
+danger_xg_faced_per90,indexes_ratios,Danger Xg Faced Per90
+danger_psxg_faced_per90,indexes_ratios,Danger Psxg Faced Per90
+danger_xgot_faced_per90,indexes_ratios,Danger Xgot Faced Per90
+danger_shots_faced_per90,indexes_ratios,Danger Shots Faced Per90
+goals_for_faced_per90,indexes_ratios,Goals For Faced Per90
+goals_prevented_xgot_per90,indexes_ratios,Goals Prevented Xgot Per90
+goals_prevented_psxg_per90,indexes_ratios,Goals Prevented Psxg Per90
+save_pct_model_per90,indexes_ratios,Save Pct Model Per90
+non_penalty_goals_minus_npxg_per90,indexes_ratios,Non Penalty Goals Minus Npxg Per90
+xg_per_shot_per90,indexes_ratios,Xg per shot per 90 minutes.
+xgot_per_on_target_shot_per90,indexes_ratios,Xgot Per On Target Shot Per90
+ball_security_per90,indexes_ratios,Ball security per 90 minutes.
+progressive_accuracy_per90,indexes_ratios,Progressive Accuracy Per90
+defensive_retention_per90,indexes_ratios,Defensive Retention Per90
+defensive_chain_value_per90,indexes_ratios,Defensive Chain Value Per90
+turnover_risk_per90,indexes_ratios,Turnover risk per 90 minutes.
+cross_completion_pct,indexes_ratios,Cross Completion Pct
+danger_on_target_rate,indexes_ratios,Danger On Target Rate
+gda_reliability_adjusted_per90,indexes_ratios,Gda Reliability Adjusted Per90
+pct_deep_completions_per90,indexes_ratios,Pct Deep Completions Per90
+pct_possession_wins_per90,indexes_ratios,Pct Possession Wins Per90
+pct_dangerous_turnovers_per90,indexes_ratios,Pct Dangerous Turnovers Per90
+matches,Shooting,Season aggregate for matches.
+minutes,Shooting,Season aggregate for minutes.
+events,Possession,Season aggregate for events.
+carries_per90,Possession,Carries per 90 minutes.
+carry_distance_per90,Possession,Carry distance per 90 minutes.
+average_carry_distance,Possession,Season aggregate for average carry distance.
+progressive_carries_per90,Possession,Progressive carries per 90 minutes.
+progressive_carry_share,Possession,Progressive carry as a share of the relevant action total.
+carries_into_final_third_per90,Possession,Carries into final third per 90 minutes.
+carries_into_box_per90,Possession,Carries into box per 90 minutes.
+xt_from_all_passes_per90,Progression,Xt from all passes per 90 minutes.
+xt_from_progressive_passes_est_per90,Progression,Xt from progressive passes est per 90 minutes.
+high_defensive_action_share,Defending,High defensive action as a share of the relevant action total.
+def_actions_to_shot_rate,Defending,Rate measure for def actions to shot.
+def_actions_to_goal_rate,Defending,Rate measure for def actions to goal.
+errors_per_100_def_actions,Defending,Season aggregate for errors per 100 def actions.
+fouls_per_100_def_actions,Defending,Season aggregate for fouls per 100 def actions.
+xgot_faced_per_shot,Goalkeeping,Season aggregate for xgot faced per shot.
+goals_prevented_xgot_per_shot,Goalkeeping,Season aggregate for goals prevented xgot per shot.
+goals_prevented_psxg_per_shot,Goalkeeping,Season aggregate for goals prevented psxg per shot.
+save_rate,Goalkeeping,Rate measure for save.
+claim_action_share,Goalkeeping,Claim action as a share of the relevant action total.
+pass_share,Team,Pass as a share of the relevant action total.
+field_tilt_proxy,Team,Season aggregate for field tilt proxy.
+territorial_dominance,Team,Season aggregate for territorial dominance.
+direct_possession_index,Team,Modelled index for direct possession index; consult methodology and sample size when comparing players.
+ppda_proxy,Team,Season aggregate for ppda proxy.

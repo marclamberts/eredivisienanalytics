@@ -1,0 +1,65 @@
+profile,position_details,axis_order,axis_label,metric,direction,unit,minimum_minutes,reference_players,rationale
+Attacking Midfielder,Attacking Midfielder,1,Expected assists,expected_assists_per90,higher,xA/90,450,47,Expected assists per 90.
+Attacking Midfielder,Attacking Midfielder,2,Key passes,key_passes_per90,higher,passes/90,450,47,Key passes per 90.
+Attacking Midfielder,Attacking Midfielder,3,Box entries,passes_into_box_per90,higher,passes/90,450,47,Passes into the penalty area per 90.
+Attacking Midfielder,Attacking Midfielder,4,Pass xT,xt_from_all_passes_per90,higher,xT/90,450,47,Expected threat added by passes per 90.
+Attacking Midfielder,Attacking Midfielder,5,Take-ons,take_ons_completed_per90,higher,actions/90,450,47,Completed take-ons per 90.
+Attacking Midfielder,Attacking Midfielder,6,Shot creation,shot_creation_actions_proxy_per90,higher,actions/90,450,47,Shot-creation actions per 90.
+Attacking Midfielder,Attacking Midfielder,7,Second assists,second_assists_per90,higher,assists/90,450,47,Second assists per 90.
+Attacking Midfielder,Attacking Midfielder,8,Ball security,turnovers_per_100_actions,lower,turnovers/100,450,47,Turnovers per 100 actions; lower is better.
+Central Midfielder,Central Midfielder,1,Progressive passing,progressive_passes_per90,higher,passes/90,450,72,Progressive passes per 90.
+Central Midfielder,Central Midfielder,2,Pass xT,xt_from_all_passes_per90,higher,xT/90,450,72,Expected threat added by passes per 90.
+Central Midfielder,Central Midfielder,3,Final-third entries,passes_into_final_third_per90,higher,passes/90,450,72,Passes into the final third per 90.
+Central Midfielder,Central Midfielder,4,Expected assists,expected_assists_per90,higher,xA/90,450,72,Expected assists per 90.
+Central Midfielder,Central Midfielder,5,Progressive carries,progressive_carries_per90,higher,carries/90,450,72,Progressive carries per 90.
+Central Midfielder,Central Midfielder,6,Pressure passing,pressured_pass_completion_pct,higher,%,450,41,Completion rate when pressured.
+Central Midfielder,Central Midfielder,7,Possession wins,possession_wins_per90,higher,actions/90,450,72,Possession wins per 90.
+Central Midfielder,Central Midfielder,8,Ball security,turnovers_per_100_actions,lower,turnovers/100,450,72,Turnovers per 100 actions; lower is better.
+Centre-Back,Centre Back,1,Defensive activity,defensive_actions_per90,higher,actions/90,450,17,Defensive actions per 90.
+Centre-Back,Centre Back,2,Interceptions,interceptions_per90,higher,actions/90,450,17,Interceptions per 90.
+Centre-Back,Centre Back,3,Aerial success,aerial_success_pct,higher,%,450,17,Share of aerial duels won.
+Centre-Back,Centre Back,4,Possession wins,possession_wins_per90,higher,actions/90,450,17,Possession wins per 90.
+Centre-Back,Centre Back,5,Pass completion,pass_completion_pct,higher,%,450,17,Overall pass completion.
+Centre-Back,Centre Back,6,Progressive passing,progressive_passes_per90,higher,passes/90,450,17,Progressive passes per 90.
+Centre-Back,Centre Back,7,Pass xT,xt_from_all_passes_per90,higher,xT/90,450,17,Expected threat added by all passes per 90.
+Centre-Back,Centre Back,8,Error control,errors_per_100_def_actions,lower,errors/100,450,17,Errors per 100 defensive actions; lower is better.
+Centre-Forward,Centre Forward,1,Non-penalty goals,non_penalty_goals_per90,higher,goals/90,450,55,Non-penalty goals per 90.
+Centre-Forward,Centre Forward,2,Non-penalty xG,non_penalty_xg_per90,higher,xG/90,450,55,Non-penalty expected goals per 90.
+Centre-Forward,Centre Forward,3,Shooting,shots_per90,higher,shots/90,450,55,Shots per 90.
+Centre-Forward,Centre Forward,4,Shot quality,xg_per_shot,higher,xG/shot,450,55,Expected goals per shot.
+Centre-Forward,Centre Forward,5,Conversion,non_penalty_conversion_pct,higher,%,450,55,Non-penalty shot conversion.
+Centre-Forward,Centre Forward,6,Box activity,box_actions_per90,higher,actions/90,450,55,Penalty-area actions per 90.
+Centre-Forward,Centre Forward,7,Expected assists,expected_assists_per90,higher,xA/90,450,55,Expected assists per 90.
+Centre-Forward,Centre Forward,8,Link play,second_assists_per90,higher,assists/90,450,55,Second assists per 90.
+Defensive Midfielder,Defensive Midfielder,1,Possession wins,possession_wins_per90,higher,actions/90,450,20,Possession wins per 90.
+Defensive Midfielder,Defensive Midfielder,2,Interceptions,interceptions_per90,higher,actions/90,450,20,Interceptions per 90.
+Defensive Midfielder,Defensive Midfielder,3,Recoveries,ball_recoveries_per90,higher,actions/90,450,20,Ball recoveries per 90.
+Defensive Midfielder,Defensive Midfielder,4,Pressure passing,pressured_pass_completion_pct,higher,%,450,14,Completion rate when pressured.
+Defensive Midfielder,Defensive Midfielder,5,Progressive passing,progressive_passes_per90,higher,passes/90,450,20,Progressive passes per 90.
+Defensive Midfielder,Defensive Midfielder,6,Pass xT,xt_from_all_passes_per90,higher,xT/90,450,20,Expected threat added by passes per 90.
+Defensive Midfielder,Defensive Midfielder,7,Pass completion,pass_completion_pct,higher,%,450,20,Overall pass completion.
+Defensive Midfielder,Defensive Midfielder,8,Ball security,turnovers_per_100_actions,lower,turnovers/100,450,20,Turnovers per 100 actions; lower is better.
+Full-Back,"Left Back, Right Back",1,Defensive activity,defensive_actions_per90,higher,actions/90,450,119,Defensive actions per 90.
+Full-Back,"Left Back, Right Back",2,Tackle success,tackle_success_pct,higher,%,450,119,Share of tackles won.
+Full-Back,"Left Back, Right Back",3,Progressive passing,progressive_passes_per90,higher,passes/90,450,119,Progressive passes per 90.
+Full-Back,"Left Back, Right Back",4,Final-third entries,passes_into_final_third_per90,higher,passes/90,450,119,Passes into the final third per 90.
+Full-Back,"Left Back, Right Back",5,Box entries,passes_into_box_per90,higher,passes/90,450,119,Passes into the penalty area per 90.
+Full-Back,"Left Back, Right Back",6,Progressive carries,progressive_carries_per90,higher,carries/90,450,119,Progressive carries per 90.
+Full-Back,"Left Back, Right Back",7,Pass xT,xt_from_all_passes_per90,higher,xT/90,450,119,Expected threat added by passes per 90.
+Full-Back,"Left Back, Right Back",8,Ball security,turnovers_per_100_actions,lower,turnovers/100,450,119,Turnovers per 100 actions; lower is better.
+Goalkeeper,Goalkeeper,1,Shot stopping,goals_prevented_xgot_per90,higher,goals/90,450,30,Goals prevented versus xGOT.
+Goalkeeper,Goalkeeper,2,Save rate,save_rate,higher,%,450,30,Saves divided by danger shots faced.
+Goalkeeper,Goalkeeper,3,Claiming,claims_per90,higher,actions/90,450,30,Claims per 90 minutes.
+Goalkeeper,Goalkeeper,4,Keeper activity,goalkeeper_actions_per90,higher,actions/90,450,30,Total goalkeeper actions per 90.
+Goalkeeper,Goalkeeper,5,Distribution,pass_completion_pct,higher,%,450,30,Overall pass completion.
+Goalkeeper,Goalkeeper,6,Long distribution,long_pass_completion_pct,higher,%,450,30,Long-pass completion.
+Goalkeeper,Goalkeeper,7,Sweep & collect,keeper_pickups_per90,higher,actions/90,450,30,Keeper pickups per 90.
+Goalkeeper,Goalkeeper,8,Error control,errors_per90,lower,errors/90,450,30,Errors per 90; lower is better.
+Wide Player,"Left Midfielder, Left Winger, Right Midfielder, Right Winger",1,Expected assists,expected_assists_per90,higher,xA/90,450,82,Expected assists per 90.
+Wide Player,"Left Midfielder, Left Winger, Right Midfielder, Right Winger",2,Key passes,key_passes_per90,higher,passes/90,450,82,Key passes per 90.
+Wide Player,"Left Midfielder, Left Winger, Right Midfielder, Right Winger",3,Box entries,passes_into_box_per90,higher,passes/90,450,82,Passes into the penalty area per 90.
+Wide Player,"Left Midfielder, Left Winger, Right Midfielder, Right Winger",4,Take-ons,take_ons_completed_per90,higher,actions/90,450,82,Completed take-ons per 90.
+Wide Player,"Left Midfielder, Left Winger, Right Midfielder, Right Winger",5,Take-on xT,xt_take_ons_per90,higher,xT/90,450,82,Expected threat added by take-ons per 90.
+Wide Player,"Left Midfielder, Left Winger, Right Midfielder, Right Winger",6,Shooting,shots_per90,higher,shots/90,450,82,Shots per 90.
+Wide Player,"Left Midfielder, Left Winger, Right Midfielder, Right Winger",7,Box activity,box_actions_per90,higher,actions/90,450,82,Penalty-area actions per 90.
+Wide Player,"Left Midfielder, Left Winger, Right Midfielder, Right Winger",8,Ball security,turnovers_per_100_actions,lower,turnovers/100,450,82,Turnovers per 100 actions; lower is better.
