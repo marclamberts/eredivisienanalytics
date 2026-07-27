@@ -803,8 +803,11 @@ def defensive_actions(defs):
             pts = [d for d in team_defs if d["action"] == action]
             if not pts:
                 continue
-            xs = [105 - p["x"] for p in pts]
-            ys = [68 - p["y"] for p in pts]
+            # p["x"]/p["y"] are already normalized (norm_xy) so this team's
+            # own goal sits at x=0 -- plot as-is, own goal left, attacking
+            # right, same convention as every other pitch page in this deck.
+            xs = [p["x"] for p in pts]
+            ys = [p["y"] for p in pts]
             pitch.scatter(xs, ys, ax=ax, s=80, marker=marker, color=action_colors[action],
                           edgecolors=palette["surface"], linewidth=0.6, alpha=0.9, zorder=4)
         counts = {a: sum(1 for d in team_defs if d["action"] == a) for a in markers}
@@ -818,7 +821,7 @@ def defensive_actions(defs):
 
     components.header(fig, kicker="Defending",
                        title="Both sides defended at similar volume; Pardubice cleared more under pressure",
-                       dek="Tackles, interceptions and clearances, own goal on the left",
+                       dek="Tackles, interceptions and clearances, own goal on the left, attacking right",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "19_defensive_actions.png")
