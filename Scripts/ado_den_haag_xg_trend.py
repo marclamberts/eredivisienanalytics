@@ -249,8 +249,8 @@ def make_plot(rows, out_path, team_name):
     )
     components.footer(
         fig,
-        source="Opta event data",
-        note="xG: Waltzing Analytics xG Model (calibrated XGBoost)",
+        source="Opta/StatsPerform",
+        note="xG: Waltzing Analytics xG Model",
         palette=palette,
     )
 
