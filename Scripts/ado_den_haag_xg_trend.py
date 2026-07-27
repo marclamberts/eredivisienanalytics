@@ -1,18 +1,19 @@
 """
-ADO Den Haag - xG For vs xG Against by match, Eerste Divisie 2025/26,
+xG For vs xG Against by match for a given Eerste Divisie 2025/26 team,
 with a rolling-average trend line for each.
 
 xG per shot comes from a distance/angle logistic regression fitted on
 ~34k shots across four Eredivisie seasons (2022/23-2025/26, see
 train_xg_model() below) -- the Eerste Divisie itself has no pre-existing
 shot-xg model in this repo, so this fits a simple, standard geometry-based
-model and applies it to ADO Den Haag's Eerste Divisie shots. Penalties are
+model and applies it to the team's Eerste Divisie shots. Penalties are
 assigned the empirical penalty conversion rate instead of the geometry
 model (all penalties share the same distance/angle, so the regression
 would otherwise blend them into ordinary open-play shots). Own goals are
 excluded from shot xG entirely, in line with standard practice.
 
-Usage: python3 ado_den_haag_xg_trend.py [out.png]
+Usage: python3 ado_den_haag_xg_trend.py ["HFC ADO Den Haag"] [out.png]
+Team name must match the filename spelling, e.g. "VVV Venlo", "SV Roda JC".
 """
 import glob
 import json
@@ -32,7 +33,6 @@ from housestyle import style, components
 REPO_ROOT = Path(__file__).resolve().parent.parent
 EREDIVISIE_DIR = REPO_ROOT / "Eredivisie Events"
 EERSTE_DIVISIE_DIR = REPO_ROOT / "Eerste Divisie Events" / "Eerste Divisie 2025-2026"
-TEAM_NAME = "HFC ADO Den Haag"
 ROLL_WINDOW = 5
 
 SHOT_TYPES = {13, 14, 15, 16}
@@ -153,17 +153,20 @@ def rolling_mean(values, window):
     return out
 
 
-def collect_match_rows(clf, penalty_xg):
+def collect_match_rows(clf, penalty_xg, team_name):
     files = sorted(glob.glob(f"{EERSTE_DIVISIE_DIR}/*.json"))
     team_to_cid = build_team_map(files)
-    cid = team_to_cid[TEAM_NAME]
+    if team_name not in team_to_cid:
+        print(f"Team '{team_name}' not found. Options: {sorted(team_to_cid)}")
+        sys.exit(1)
+    cid = team_to_cid[team_name]
 
     rows = []
     for fn in files:
         base = fn.split("/")[-1]
         m = re.match(r"(\d{4}-\d{2}-\d{2})_(.+) - (.+)\.json$", base)
         date, home, away = m.group(1), m.group(2), m.group(3)
-        if TEAM_NAME not in (home, away):
+        if team_name not in (home, away):
             continue
         shots = extract_shots([fn])
         if shots.empty:
@@ -172,15 +175,15 @@ def collect_match_rows(clf, penalty_xg):
         xg_for = shots.loc[shots["contestant_id"] == cid, "xg"].sum()
         xg_against = shots.loc[shots["contestant_id"] != cid, "xg"].sum()
         rows.append({
-            "date": date, "opponent": opponent_name(base, TEAM_NAME),
-            "venue": "H" if home == TEAM_NAME else "A",
+            "date": date, "opponent": opponent_name(base, team_name),
+            "venue": "H" if home == team_name else "A",
             "xg_for": xg_for, "xg_against": xg_against,
         })
     rows.sort(key=lambda r: r["date"])
     return rows
 
 
-def make_plot(rows, out_path, n_train_shots):
+def make_plot(rows, out_path, n_train_shots, team_name):
     n = len(rows)
     xs = list(range(1, n + 1))
     xgf = [r["xg_for"] for r in rows]
@@ -218,7 +221,7 @@ def make_plot(rows, out_path, n_train_shots):
     trend_word = "improved" if improving else "faded"
     components.header(
         fig,
-        kicker="ADO Den Haag",
+        kicker=team_name,
         title=f"Attacking output {trend_word} relative to xG conceded over the season",
         dek=f"Eerste Divisie 2025/26 · rolling {ROLL_WINDOW}-match average · "
             f"season avg {avg_f:.2f} xG for / {avg_a:.2f} xG against per match",
@@ -237,10 +240,12 @@ def make_plot(rows, out_path, n_train_shots):
 
 
 if __name__ == "__main__":
-    out = sys.argv[1] if len(sys.argv) > 1 else str(REPO_ROOT / "Eerste Divisie Events" / "ado_den_haag_xg_trend.png")
+    team_name = sys.argv[1] if len(sys.argv) > 1 else "HFC ADO Den Haag"
+    default_out = REPO_ROOT / "Eerste Divisie Events" / f"{team_name.lower().replace(' ', '_')}_xg_trend.png"
+    out = sys.argv[2] if len(sys.argv) > 2 else str(default_out)
     clf, penalty_xg, n_train_shots = train_xg_model()
-    rows = collect_match_rows(clf, penalty_xg)
+    rows = collect_match_rows(clf, penalty_xg, team_name)
     if not rows:
-        print("No matches found for", TEAM_NAME)
+        print("No matches found for", team_name)
         sys.exit(1)
-    make_plot(rows, out, n_train_shots)
+    make_plot(rows, out, n_train_shots, team_name)
