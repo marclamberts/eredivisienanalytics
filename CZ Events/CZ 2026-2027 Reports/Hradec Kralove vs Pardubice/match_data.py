@@ -53,12 +53,28 @@ DEFENSIVE_TYPES = {T_TACKLE: "Tackle", T_INTERCEPTION: "Interception", T_CLEARAN
 # which most public PPDA definitions leave out.
 PRESSING_TYPES = {T_TACKLE: "Tackle", T_INTERCEPTION: "Interception", T_CHALLENGE: "Challenge"}
 
-Q_HEAD, Q_CROSS, Q_THROUGH, Q_FREE_KICK, Q_CORNER = 1, 2, 3, 5, 6
+
+# Verified empirically against this match's own data (see build_charts.py
+# session notes) rather than trusted from the Disruption module's constants,
+# which mislabel Q_HEAD as qualifier 1:
+#   - qualifier 1: 0/21 shots carry it, but 143/841 passes do, at ~3x the
+#     average length of untagged passes (44.2m vs 15.2m) -> Long ball.
+#   - qualifier 15: present on exactly the match's 2 headed shot attempts,
+#     including F. Čech's headed goal from a corner -> Head.
+#   - qualifier 20 / 72: right-footed / left-footed (18 and 1 of 21 shots).
+Q_LONG_BALL = 1
+Q_CROSS, Q_THROUGH, Q_FREE_KICK, Q_CORNER = 2, 3, 5, 6
+Q_HEAD = 15
+Q_RIGHT_FOOT, Q_LEFT_FOOT = 20, 72
 Q_END_X, Q_END_Y = 140, 141
 Q_ZONE = 56
 Q_REGULAR_PLAY, Q_FAST_BREAK, Q_SET_PIECE, Q_FROM_CORNER = 22, 23, 24, 25
 Q_BIG_CHANCE = 80
 Q_YELLOW_CARD, Q_SECOND_YELLOW, Q_RED_CARD = 31, 32, 33
+# Shot->Save/Block link, NOT an assist link (verified: e.g. shot eventId 25's
+# qualifier-233 target eventId 47 resolves to the goalkeeper's Save record,
+# not a preceding pass) -- do not use this for shot-assist detection.
+Q_RELATED_EVENT = 233
 
 # Standard PPDA zone cutoff: only count opposition passes/pressing actions
 # in the defending-from-possession team's own 60% of the pitch (105m pitch
@@ -146,6 +162,24 @@ def shot_xg(x_m, y_m, is_header):
     return max(0.015, min(0.94, xg))
 
 
+# ---------------------------------------------------------------------------
+# Threat surface for "xT flow" -- NOT the repo's pre-trained Eredivisie xT
+# grid (xT/xt_grid_values.csv). That grid was checked before use here: it is
+# essentially flat (~0.12) across the whole pitch, own box included, with a
+# small bump only in the last two columns near goal -- not a usable spatial
+# gradient, so using it would dress up noise as insight. Instead this reuses
+# the same, already-verified distance+angle geometry as shot_xg: the value
+# of a location is "the xG of a shot taken from here" (is_header=False),
+# smooth and monotonic own-goal-to-opponent-goal. This is a threat PROXY,
+# not a possession-value model (no pass-completion or continuation term) --
+# labelled as such on every chart that uses it.
+# ---------------------------------------------------------------------------
+
+def xt_value(x100, y100):
+    x_m, y_m = to_m(x100, y100)
+    return shot_xg(x_m, y_m, is_header=False)
+
+
 def build_shots(events, directions):
     rows = []
     for e in events:
@@ -168,6 +202,7 @@ def build_shots(events, directions):
             "contestantId": e["contestantId"],
             "team": team_name(e["contestantId"]),
             "player": e.get("playerName", "Unknown"),
+            "eventId": e["eventId"],
             "minute": e["timeMin"],
             "period": e["periodId"],
             "x": xm, "y": ym,
@@ -191,7 +226,7 @@ def build_passes(events, directions):
         x, y = norm_xy(e, directions)
         xm, ym = to_m(x, y)
         completed = e["outcome"] == 1
-        end_x = end_y = None
+        end_x = end_y = ex = ey = None
         if Q_END_X in q and Q_END_Y in q:
             d = directions.get((e["contestantId"], e["periodId"]), 1)
             ex, ey = float(q[Q_END_X]), float(q[Q_END_Y])
@@ -202,6 +237,9 @@ def build_passes(events, directions):
         end_dist = math.hypot(GOAL_X - end_x, GOAL_Y - end_y) if end_x is not None else None
         progressive = (completed and end_dist is not None and
                        end_dist <= start_dist * 0.75 and end_x > xm)
+        xt_start = xt_value(x, y)
+        xt_end = xt_value(ex, ey) if ex is not None else None
+        xt_added = (xt_end - xt_start) if (completed and xt_end is not None) else 0.0
         rows.append({
             "contestantId": e["contestantId"],
             "team": team_name(e["contestantId"]),
@@ -215,10 +253,12 @@ def build_passes(events, directions):
             "completed": completed,
             "is_cross": has_q(e, Q_CROSS),
             "is_corner": has_q(e, Q_CORNER),
+            "is_long_ball": has_q(e, Q_LONG_BALL),
             "progressive": progressive,
             "final_third_entry": completed and start_dist > 35.0 and end_dist is not None and end_dist <= 35.0,
             "box_entry": (completed and end_x is not None and end_x >= 88.5
                           and 13.84 <= end_y <= 54.16 and not (xm >= 88.5 and 13.84 <= ym <= 54.16)),
+            "xt_added": xt_added,
         })
     return rows
 
@@ -339,6 +379,95 @@ def build_substitutions(events):
     return rows
 
 
+def build_shot_assists(events, directions, shots):
+    """For each shot, the most recent completed pass by the shooting team
+    since the ball last changed teams -- i.e. "who set this shot up", not
+    the shot's own qualifier-233 "related event", which links to its
+    Save/Block counterpart, not an assist (verified: shot eventId 25's
+    qualifier-233 target, eventId 47, resolves to the goalkeeper's Save
+    record). A shot straight off a loose-ball duel or the shooter's own
+    take-on with no intervening teammate pass gets no assist credited."""
+    ball_events = [e for e in events if e.get("x") is not None and e.get("contestantId")
+                   and (e["typeId"] in (T_PASS, T_TAKE_ON, T_TACKLE, T_INTERCEPTION, T_CLEARANCE,
+                                        T_AERIAL, T_BALL_RECOVERY, T_DISPOSSESSED, 61)
+                        or e["typeId"] in SHOT_TYPES)]
+    ball_events.sort(key=lambda e: (e["periodId"], event_time(e), e["eventId"]))
+
+    assists = {}
+    current_team, pending_pass = None, None
+    for e in ball_events:
+        cid = e["contestantId"]
+        if cid != current_team:
+            current_team, pending_pass = cid, None
+        if e["typeId"] in SHOT_TYPES:
+            if pending_pass is not None and pending_pass.get("playerName") != e.get("playerName"):
+                assists[e["eventId"]] = pending_pass
+        elif e["typeId"] == T_PASS and e.get("outcome") == 1:
+            pending_pass = e
+
+    xg_by_eventid = {s["eventId"]: s["xg"] for s in shots}
+    rows = []
+    for e in events:
+        if e["typeId"] not in SHOT_TYPES or e.get("x") is None:
+            continue
+        ap = assists.get(e["eventId"])
+        if ap is None:
+            continue
+        x, y = norm_xy(ap, directions)
+        xm, ym = to_m(x, y)
+        q = qmap(ap)
+        end_x = end_y = None
+        if Q_END_X in q and Q_END_Y in q:
+            d = directions.get((ap["contestantId"], ap["periodId"]), 1)
+            ex, ey = float(q[Q_END_X]), float(q[Q_END_Y])
+            if d == -1:
+                ex, ey = 100.0 - ex, 100.0 - ey
+            end_x, end_y = to_m(ex, ey)
+        sx, sy = norm_xy(e, directions)
+        sxm, sym = to_m(sx, sy)
+        rows.append({
+            "contestantId": e["contestantId"],
+            "team": team_name(e["contestantId"]),
+            "shooter": e.get("playerName", "Unknown"),
+            "assister": ap.get("playerName", "Unknown"),
+            "minute": e["timeMin"],
+            "x": xm, "y": ym, "end_x": end_x if end_x is not None else sxm,
+            "end_y": end_y if end_y is not None else sym,
+            "shot_x": sxm, "shot_y": sym,
+            "shot_xg": xg_by_eventid.get(e["eventId"], 0.0),
+            "is_goal": e["typeId"] == T_GOAL,
+        })
+    return rows
+
+
+def build_turnovers(events, directions):
+    """A team's own failed pass or Dispossessed event -- i.e. the moment
+    they lost the ball -- located in their own attacking half. Losing it
+    that far forward is what "dangerous area" means here: it hands the
+    opponent the ball already deep in their own attacking third."""
+    rows = []
+    for e in events:
+        if e.get("x") is None or not e.get("contestantId"):
+            continue
+        is_failed_pass = e["typeId"] == T_PASS and e.get("outcome") == 0
+        is_dispossessed = e["typeId"] == T_DISPOSSESSED
+        if not (is_failed_pass or is_dispossessed):
+            continue
+        x, y = norm_xy(e, directions)
+        xm, ym = to_m(x, y)
+        if xm < 52.5:
+            continue
+        rows.append({
+            "contestantId": e["contestantId"],
+            "team": team_name(e["contestantId"]),
+            "player": e.get("playerName", "Unknown"),
+            "minute": e["timeMin"], "period": e["periodId"],
+            "x": xm, "y": ym,
+            "kind": "Failed pass" if is_failed_pass else "Dispossessed",
+        })
+    return rows
+
+
 def build_touches(events, directions):
     """Any ball-involvement event -- used for possession/touch-share and
     field-tilt/thirds proxies (this feed has no official live-possession
@@ -359,6 +488,38 @@ def build_touches(events, directions):
             "typeId": e["typeId"],
         })
     return rows
+
+
+def simulate_scorelines(shots, n=20000, seed=42, cap=6):
+    """Monte Carlo match simulation: each shot converts independently with
+    probability = its own xG (Bernoulli), summed per team per draw. Returns
+    (score_counts, home_goal_counts, away_goal_counts) where score_counts
+    is a dict {(home_goals, away_goals): count} with goals capped at `cap`
+    for a bounded scoreline grid (any game with more goals than that from
+    a side folds into the `cap` row/column)."""
+    import random
+    rng = random.Random(seed)
+    home_xgs = [s["xg"] for s in shots if s["contestantId"] == HOME_ID]
+    away_xgs = [s["xg"] for s in shots if s["contestantId"] == AWAY_ID]
+
+    score_counts = {}
+    home_goals, away_goals = [], []
+    for _ in range(n):
+        h = sum(1 for xg in home_xgs if rng.random() < xg)
+        a = sum(1 for xg in away_xgs if rng.random() < xg)
+        home_goals.append(h)
+        away_goals.append(a)
+        key = (min(h, cap), min(a, cap))
+        score_counts[key] = score_counts.get(key, 0) + 1
+
+    home_win = sum(1 for h, a in zip(home_goals, away_goals) if h > a) / n
+    draw = sum(1 for h, a in zip(home_goals, away_goals) if h == a) / n
+    away_win = sum(1 for h, a in zip(home_goals, away_goals) if h < a) / n
+    return {
+        "score_counts": score_counts, "n": n, "cap": cap,
+        "home_win": home_win, "draw": draw, "away_win": away_win,
+        "home_goal_dist": home_goals, "away_goal_dist": away_goals,
+    }
 
 
 if __name__ == "__main__":

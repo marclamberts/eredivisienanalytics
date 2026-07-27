@@ -28,6 +28,7 @@ import sys
 
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
+from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
 from mplsoccer import Pitch
 
@@ -1282,6 +1283,766 @@ def impact_leaderboard(shots, passes, defs):
     save(fig, "30_impact_leaderboard.png")
 
 
+# ---------------------------------------------------------------------------
+# 31. Win probability & xG by situation
+# ---------------------------------------------------------------------------
+
+def _donut(ax, frac, color, palette, label, sublabel):
+    ax.pie([frac, 1 - frac], radius=1.0, startangle=90, counterclock=False,
+           colors=[color, palette["axis"]], wedgeprops=dict(width=0.32, edgecolor=palette["surface"], linewidth=1.5))
+    ax.text(0, 0.12, f"{frac:.0%}", ha="center", va="center", fontsize=20, fontweight="bold", color=palette["ink_primary"])
+    ax.text(0, -0.12, sublabel, ha="center", va="center", fontsize=8.5, color=palette["ink_muted"])
+    ax.set_title(label, color=color, fontsize=11.5, fontweight="bold", family="sans-serif", pad=2)
+
+
+def win_probability_situation(shots, sim):
+    fig, palette = new_fig()
+    ax1 = fig.add_axes([0.06, 0.34, 0.19, 0.32])
+    ax2 = fig.add_axes([0.28, 0.34, 0.19, 0.32])
+    _donut(ax1, sim["home_win"], HOME_C, palette, HOME_SHORT, "WIN PROBABILITY")
+    _donut(ax2, sim["away_win"], AWAY_C, palette, AWAY_SHORT, "WIN PROBABILITY")
+    fig.text(0.275, 0.30, f"Draw: {sim['draw']:.0%}", ha="center", fontsize=10.5,
+              color=palette["ink_secondary"], fontweight="bold")
+
+    ax3 = fig.add_axes([0.56, 0.20, 0.38, 0.52])
+    situations = ["Open play", "Fast break", "Set piece", "Corner"]
+    home_vals = [sum(s["xg"] for s in shots if s["contestantId"] == md.HOME_ID and s["situation"] == sit)
+                 for sit in situations]
+    away_vals = [sum(s["xg"] for s in shots if s["contestantId"] == md.AWAY_ID and s["situation"] == sit)
+                 for sit in situations]
+    n = len(situations)
+    ypos = np.arange(n)[::-1]
+    maxval = max(home_vals + away_vals) * 1.25 or 1
+    for y, h, a in zip(ypos, home_vals, away_vals):
+        ax3.barh(y + 0.18, h, height=0.32, color=HOME_C)
+        ax3.barh(y - 0.18, a, height=0.32, color=AWAY_C)
+        ax3.text(h + maxval * 0.02, y + 0.18, f"{h:.2f}", va="center", fontsize=9.5, color=palette["ink_primary"])
+        ax3.text(a + maxval * 0.02, y - 0.18, f"{a:.2f}", va="center", fontsize=9.5, color=palette["ink_primary"])
+    ax3.set_yticks(ypos)
+    ax3.set_yticklabels(situations, fontsize=10.5, color=palette["ink_primary"])
+    ax3.set_xlim(0, maxval)
+    ax3.set_xlabel("xG")
+    ax3.grid(axis="x")
+    ax3.set_axisbelow(True)
+    ax3.set_title("xG by situation", color=palette["ink_primary"], fontsize=11.5, fontweight="bold", family="sans-serif")
+
+    legend_elems = [Line2D([0], [0], marker="s", color=palette["surface"], markerfacecolor=HOME_C,
+                            markersize=12, label=md.HOME_NAME, linewidth=0),
+                    Line2D([0], [0], marker="s", color=palette["surface"], markerfacecolor=AWAY_C,
+                            markersize=12, label=md.AWAY_NAME, linewidth=0)]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 0.10), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Match Odds",
+                       title=f"{md.HOME_NAME} were the heavy favourite on chances created ({sim['home_win']:.0%} win probability)",
+                       dek=f"{sim['n']:,}-simulation Monte Carlo from shot xG  ·  actual result 2-1",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "31_win_probability.png")
+
+
+# ---------------------------------------------------------------------------
+# 32. xG scoreline matrix
+# ---------------------------------------------------------------------------
+
+def xg_scoreline_matrix(sim, match_details):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.14, 0.14, 0.66, 0.58])
+
+    cap = sim["cap"]
+    n = sim["n"]
+    grid = np.zeros((cap + 1, cap + 1))
+    for (h, a), c in sim["score_counts"].items():
+        grid[h, a] = c / n
+
+    cmap = LinearSegmentedColormap.from_list("wa_seq", [palette["surface"], palette["accent"]])
+    im = ax.imshow(grid, cmap=cmap, origin="lower", vmin=0, aspect="equal")
+    for h in range(cap + 1):
+        for a in range(cap + 1):
+            v = grid[h, a]
+            if v < 0.001:
+                continue
+            txt_color = palette["surface"] if v > grid.max() * 0.5 else palette["ink_primary"]
+            ax.text(a, h, f"{v:.1%}", ha="center", va="center", fontsize=8.2, color=txt_color)
+
+    labels = [str(i) for i in range(cap)] + [f"{cap}+"]
+    ax.set_xticks(range(cap + 1))
+    ax.set_xticklabels(labels)
+    ax.set_yticks(range(cap + 1))
+    ax.set_yticklabels(labels)
+    ax.set_xlabel(f"{AWAY_SHORT} goals")
+    ax.set_ylabel(f"{HOME_SHORT} goals")
+    ax.grid(False)
+
+    fth, fta = match_details["scores"]["ft"]["home"], match_details["scores"]["ft"]["away"]
+    rect = plt.Rectangle((min(fta, cap) - 0.5, min(fth, cap) - 0.5), 1, 1, fill=False,
+                          edgecolor=palette["ink_primary"], linewidth=2.6, zorder=5)
+    ax.add_patch(rect)
+    ax.annotate("Actual result", xy=(min(fta, cap), min(fth, cap)), xytext=(cap * 0.55, cap * 0.15),
+                fontsize=9.5, color=palette["ink_primary"], fontweight="bold",
+                arrowprops=dict(arrowstyle="->", color=palette["ink_primary"]))
+
+    components.header(fig, kicker="Scoreline Probability",
+                       title=("2-1 was the single most likely scoreline from these chances"
+                              if grid[min(fth, cap), min(fta, cap)] == grid.max()
+                              else "2-1 was a plausible outcome from these chances, but not the likeliest"),
+                       dek=f"Simulated scoreline probabilities from shot xG, {n:,} runs  ·  own xG model",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "32_xg_scoreline_matrix.png")
+
+
+# ---------------------------------------------------------------------------
+# 33. xT flow
+# ---------------------------------------------------------------------------
+
+def xt_flow(passes, shots):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.08, 0.16, 0.78, 0.60])
+
+    def series(cid):
+        team_passes = sorted([p for p in passes if p["contestantId"] == cid and p["completed"]],
+                              key=lambda p: (p["period"], p["minute"] * 60 + p["second"]))
+        mins, cum, total = [0.0], [0.0], 0.0
+        for p in team_passes:
+            total += p["xt_added"]
+            mins.append(p["minute"])
+            cum.append(total)
+        mins.append(96)
+        cum.append(total)
+        return mins, cum
+
+    for cid, color, name in ((md.HOME_ID, HOME_C, HOME_SHORT), (md.AWAY_ID, AWAY_C, AWAY_SHORT)):
+        mins, cum = series(cid)
+        ax.plot(mins, cum, color=color, linewidth=2.0, zorder=4)
+        ax.fill_between(mins, cum, step=None, color=color, alpha=0.10, zorder=1)
+        ax.annotate(f"{name}\n{cum[-1]:.2f}", xy=(1, cum[-1]), xycoords=("axes fraction", "data"),
+                    xytext=(10, 0), textcoords="offset points", color=color, fontsize=10,
+                    fontweight="bold", va="center", ha="left", annotation_clip=False)
+
+    for s in shots:
+        if s["is_goal"]:
+            ax.axvline(s["minute"], color=palette["axis"], linewidth=0.8, linestyle=":", zorder=1)
+
+    ax.axhline(0, color=palette["axis"], linewidth=0.8)
+    ax.set_xlim(0, 100)
+    ax.set_xlabel("Minute")
+    ax.set_ylabel("Cumulative threat added")
+
+    components.header(fig, kicker="xT Flow",
+                       title="Threat generated from passing, minute by minute",
+                       dek="Cumulative threat added by completed passes  ·  own simplified threat surface "
+                           "(shot-xG geometry, not a possession-value model)  ·  dotted lines mark goals",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "33_xt_flow.png")
+
+
+# ---------------------------------------------------------------------------
+# 34. xT leaderboard
+# ---------------------------------------------------------------------------
+
+def xt_leaderboard(passes):
+    fig, palette = new_fig()
+    ax1 = fig.add_axes([0.08, 0.20, 0.40, 0.54])
+    ax2 = fig.add_axes([0.56, 0.20, 0.40, 0.54])
+
+    def top_players(cid):
+        scores = {}
+        for p in passes:
+            if p["contestantId"] != cid or not p["completed"]:
+                continue
+            scores[p["player"]] = scores.get(p["player"], 0.0) + p["xt_added"]
+        return sorted(scores.items(), key=lambda kv: -kv[1])[:6]
+
+    for ax, cid, color, name in ((ax1, md.HOME_ID, HOME_C, md.HOME_NAME), (ax2, md.AWAY_ID, AWAY_C, md.AWAY_NAME)):
+        top = top_players(cid)[::-1]
+        ypos = np.arange(len(top))
+        vals = [v for _, v in top]
+        ax.barh(ypos, vals, color=color)
+        ax.set_yticks(ypos)
+        ax.set_yticklabels([p for p, _ in top], fontsize=10, color=palette["ink_primary"])
+        for y, v in zip(ypos, vals):
+            ax.text(v + max(vals, default=0.01) * 0.02, y, f"{v:.2f}", va="center", fontsize=9,
+                    color=palette["ink_secondary"])
+        ax.set_title(name, color=color, fontsize=12.5, fontweight="bold", family="sans-serif")
+        ax.set_xlabel("Threat added (completed passes)")
+        ax.axvline(0, color=palette["axis"], linewidth=0.8)
+
+    components.header(fig, kicker="xT Leaderboard",
+                       title="Which passers generated the most threat",
+                       dek="Total threat added by completed passes, own simplified threat surface",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "34_xt_leaderboard.png")
+
+
+# ---------------------------------------------------------------------------
+# 35. Shot assists map
+# ---------------------------------------------------------------------------
+
+def shot_assists_map(assists):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    ax1 = fig.add_axes([0.02, 0.10, 0.47, 0.62])
+    ax2 = fig.add_axes([0.51, 0.10, 0.47, 0.62])
+    pitch.draw(ax=ax1)
+    pitch.draw(ax=ax2)
+
+    for ax, cid in ((ax1, md.HOME_ID), (ax2, md.AWAY_ID)):
+        color = team_color(cid)
+        team_assists = [a for a in assists if a["contestantId"] == cid]
+        for a in team_assists:
+            is_goal = a["is_goal"]
+            pitch.arrows(a["x"], a["y"], a["end_x"], a["end_y"], ax=ax,
+                        color=GOOD_C if is_goal else color, alpha=0.95 if is_goal else 0.6,
+                        width=2.6 if is_goal else 1.5, headwidth=6, headlength=6,
+                        zorder=4 if is_goal else 3)
+        ax.set_title(f"{md.team_name(cid)}  ({len(team_assists)} shot assists)", color=color,
+                     fontsize=12, fontweight="bold", family="sans-serif")
+
+    legend_elems = [Line2D([0], [0], color=palette["ink_muted"], lw=1.8, label="Led to a shot"),
+                    Line2D([0], [0], color=GOOD_C, lw=2.6, label="Led to a goal")]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 0.02), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Shot Assists",
+                       title="The pass that unlocked each shot",
+                       dek="Most recent completed pass by the shooting team before the shot, attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "35_shot_assists_map.png")
+
+
+# ---------------------------------------------------------------------------
+# 36. Key passes / xA leaderboard
+# ---------------------------------------------------------------------------
+
+def key_passes_leaderboard(assists):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.05, 0.12, 0.90, 0.62])
+    ax.axis("off")
+
+    by_player = {}
+    for a in assists:
+        d = by_player.setdefault((a["contestantId"], a["assister"]), {"n": 0, "xa": 0.0, "goals": 0})
+        d["n"] += 1
+        d["xa"] += a["shot_xg"]
+        d["goals"] += int(a["is_goal"])
+    rows = sorted(by_player.items(), key=lambda kv: -kv[1]["xa"])
+
+    cols = ["Player", "Team", "Shot assists", "Goal assists", "xA (shot xG created)"]
+    widths = [0.30, 0.22, 0.16, 0.16, 0.16]
+    x0 = [sum(widths[:i]) for i in range(len(widths))]
+    header_y = 1.0
+    for x, label in zip(x0, cols):
+        ax.text(x, header_y, label, fontsize=10.5, fontweight="bold", color=palette["ink_primary"], va="top")
+    ax.axhline(header_y - 0.03, xmin=0, xmax=1, color=palette["axis"], linewidth=1.0)
+
+    row_h = 0.9 / max(len(rows), 1)
+    for i, ((cid, player), d) in enumerate(rows):
+        y = header_y - 0.06 - i * row_h
+        color = team_color(cid)
+        vals = [player, team_short(cid), str(d["n"]), str(d["goals"]), f"{d['xa']:.2f}"]
+        for x, v in zip(x0, vals):
+            ax.text(x, y, v, fontsize=9.5, color=color if x == x0[1] else palette["ink_primary"], va="top")
+    ax.set_xlim(0, 1)
+    ax.set_ylim(header_y - 0.06 - len(rows) * row_h, 1.03)
+
+    components.header(fig, kicker="Key Passes",
+                       title="Who created the most from open play",
+                       dek="xA proxy = sum of xG on shots created by that player's pass",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "36_key_passes_leaderboard.png")
+
+
+# ---------------------------------------------------------------------------
+# 37-38. Passes ORIGINATING from Zone 14 / half-spaces
+# ---------------------------------------------------------------------------
+
+def origin_zone14_team_page(passes, cid, page_num):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    color = team_color(cid)
+    name = md.team_name(cid)
+    ax = fig.add_axes([0.05, 0.10, 0.90, 0.62])
+    pitch.draw(ax=ax)
+
+    z14x0, z14x1, z14y0, z14y1 = ZONE14
+    pitch.polygon([np.array([(z14x0, z14y0), (z14x1, z14y0), (z14x1, z14y1), (z14x0, z14y1)])],
+                  ax=ax, color=CATEGORICAL_DARK[6], alpha=0.18, zorder=1)
+    for hx0, hx1, hy0, hy1 in HALF_SPACES:
+        pitch.polygon([np.array([(hx0, hy0), (hx1, hy0), (hx1, hy1), (hx0, hy1)])],
+                      ax=ax, color=color, alpha=0.10, zorder=1)
+
+    team_passes = [p for p in passes if p["contestantId"] == cid and p["completed"] and p["end_x"] is not None]
+    z14 = [p for p in team_passes if z14x0 <= p["x"] <= z14x1 and z14y0 <= p["y"] <= z14y1]
+    hs = [p for p in team_passes
+          if any(hx0 <= p["x"] <= hx1 and hy0 <= p["y"] <= hy1 for hx0, hx1, hy0, hy1 in HALF_SPACES)
+          and p not in z14]
+
+    for p in hs:
+        pitch.arrows(p["x"], p["y"], p["end_x"], p["end_y"], ax=ax, color=color, alpha=0.55,
+                    width=1.4, headwidth=5, headlength=5, zorder=3)
+    for p in z14:
+        pitch.arrows(p["x"], p["y"], p["end_x"], p["end_y"], ax=ax, color=palette["ink_primary"], alpha=0.9,
+                    width=2.0, headwidth=6, headlength=6, zorder=4)
+
+    legend_elems = [Line2D([0], [0], color=palette["ink_primary"], lw=2.0, label=f"From Zone 14 ({len(z14)})"),
+                    Line2D([0], [0], color=color, lw=1.6, label=f"From a half-space ({len(hs)})")]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 0.06), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Central Progression",
+                       title=f"{name}: what did they do once the ball reached Zone 14 or a half-space?",
+                       dek="Completed passes originating in the central Zone 14 box or either half-space channel",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_origin_zone14_halfspace_{'home' if cid == md.HOME_ID else 'away'}.png")
+
+
+# ---------------------------------------------------------------------------
+# 39. Box entries map (combined)
+# ---------------------------------------------------------------------------
+
+def box_entries_map(passes):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    ax1 = fig.add_axes([0.02, 0.10, 0.47, 0.62])
+    ax2 = fig.add_axes([0.51, 0.10, 0.47, 0.62])
+    pitch.draw(ax=ax1)
+    pitch.draw(ax=ax2)
+
+    zone_colors = {"Left": CATEGORICAL_DARK[0], "Central": CATEGORICAL_DARK[2], "Right": CATEGORICAL_DARK[1]}
+
+    def zone_of(y):
+        if y >= 45.33:
+            return "Left"
+        if y <= 22.67:
+            return "Right"
+        return "Central"
+
+    for ax, cid in ((ax1, md.HOME_ID), (ax2, md.AWAY_ID)):
+        entries = [p for p in passes if p["contestantId"] == cid and p["box_entry"]]
+        counts = {"Left": 0, "Central": 0, "Right": 0}
+        for p in entries:
+            zone = zone_of(p["y"])
+            counts[zone] += 1
+            pitch.arrows(p["x"], p["y"], p["end_x"], p["end_y"], ax=ax, color=zone_colors[zone],
+                        width=1.8, headwidth=5, headlength=5, alpha=0.85, zorder=3)
+        title = (f"{md.team_name(cid)}  ({len(entries)} entries)\n"
+                 f"L: {counts['Left']}  ·  C: {counts['Central']}  ·  R: {counts['Right']}")
+        ax.set_title(title, color=team_color(cid), fontsize=11.5, fontweight="bold", family="sans-serif")
+
+    legend_elems = [Line2D([0], [0], color=zone_colors[z], lw=2.4, label=z) for z in ("Left", "Central", "Right")]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=3, frameon=False,
+               bbox_to_anchor=(0.5, 0.02), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Box Entries",
+                       title="Completed passes into the penalty area",
+                       dek="By pass origin lane, attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "39_box_entries_map.png")
+
+
+# ---------------------------------------------------------------------------
+# 40-41. Long balls -- one page per team
+# ---------------------------------------------------------------------------
+
+def long_balls_team_page(passes, cid, page_num):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    color = team_color(cid)
+    name = md.team_name(cid)
+    ax = fig.add_axes([0.05, 0.10, 0.90, 0.62])
+    pitch.draw(ax=ax)
+
+    long_balls = [p for p in passes if p["contestantId"] == cid and p["is_long_ball"] and p["end_x"] is not None]
+    completed = [p for p in long_balls if p["completed"]]
+    incomplete = [p for p in long_balls if not p["completed"]]
+    for p in incomplete:
+        pitch.arrows(p["x"], p["y"], p["end_x"], p["end_y"], ax=ax, color=palette["axis"],
+                    alpha=0.55, width=1.4, headwidth=5, headlength=5, zorder=2)
+    for p in completed:
+        pitch.arrows(p["x"], p["y"], p["end_x"], p["end_y"], ax=ax, color=color,
+                    alpha=0.9, width=2.2, headwidth=6, headlength=6, zorder=3)
+
+    acc = len(completed) / len(long_balls) if long_balls else 0
+    legend_elems = [Line2D([0], [0], color=color, lw=2.2, label="Completed"),
+                    Line2D([0], [0], color=palette["axis"], lw=1.4, label="Incomplete")]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 0.06), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Direct Play",
+                       title=f"{name}: {len(completed)} of {len(long_balls)} long balls found a teammate ({acc:.0%})",
+                       dek="Passes tagged long ball by Opta, attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_long_balls_{'home' if cid == md.HOME_ID else 'away'}.png")
+
+
+# ---------------------------------------------------------------------------
+# 42-43. Aerial duels -- one page per team
+# ---------------------------------------------------------------------------
+
+def aerial_duels_team_page(duels, cid, page_num):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    color = team_color(cid)
+    name = md.team_name(cid)
+    ax = fig.add_axes([0.05, 0.10, 0.90, 0.62])
+    pitch.draw(ax=ax)
+
+    team_duels = [d for d in duels if d["contestantId"] == cid and d["action"] == "Aerial"]
+    won = [d for d in team_duels if d["success"]]
+    lost = [d for d in team_duels if not d["success"]]
+    if lost:
+        pitch.scatter([d["x"] for d in lost], [d["y"] for d in lost], ax=ax, s=90, marker="x",
+                      color=palette["ink_muted"], linewidth=1.6, alpha=0.85, zorder=3)
+    if won:
+        pitch.scatter([d["x"] for d in won], [d["y"] for d in won], ax=ax, s=110, marker="o",
+                      color=color, edgecolors=palette["surface"], linewidth=1.0, zorder=4)
+
+    win_rate = len(won) / len(team_duels) if team_duels else 0
+    legend_elems = [Line2D([0], [0], marker="o", color=palette["surface"], markerfacecolor=color,
+                            markersize=10, label="Won", linewidth=0),
+                    Line2D([0], [0], marker="x", color=palette["ink_muted"], markersize=10, label="Lost", linewidth=0)]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 0.06), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Aerial Duels",
+                       title=f"{name} won {len(won)} of {len(team_duels)} aerial duels ({win_rate:.0%})",
+                       dek="Own goal on the left, attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_aerial_duels_{'home' if cid == md.HOME_ID else 'away'}.png")
+
+
+# ---------------------------------------------------------------------------
+# 44. Turnovers in dangerous areas
+# ---------------------------------------------------------------------------
+
+def turnovers_dangerous(turnovers):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    ax1 = fig.add_axes([0.02, 0.10, 0.47, 0.62])
+    ax2 = fig.add_axes([0.51, 0.10, 0.47, 0.62])
+    pitch.draw(ax=ax1)
+    pitch.draw(ax=ax2)
+
+    markers = {"Failed pass": "o", "Dispossessed": "X"}
+    for ax, cid in ((ax1, md.HOME_ID), (ax2, md.AWAY_ID)):
+        color = team_color(cid)
+        team_t = [t for t in turnovers if t["contestantId"] == cid]
+        for kind, marker in markers.items():
+            pts = [t for t in team_t if t["kind"] == kind]
+            if not pts:
+                continue
+            pitch.scatter([p["x"] for p in pts], [p["y"] for p in pts], ax=ax, s=80, marker=marker,
+                          color=color, edgecolors=palette["surface"], linewidth=0.8, alpha=0.85, zorder=3)
+        ax.set_title(f"{md.team_name(cid)}  ({len(team_t)} lost in their own attacking half)", color=color,
+                     fontsize=11.5, fontweight="bold", family="sans-serif")
+
+    legend_elems = [Line2D([0], [0], marker=markers[k], color=palette["surface"], markerfacecolor=palette["ink_secondary"],
+                            markeredgecolor=palette["ink_secondary"], markersize=10, label=k, linewidth=0) for k in markers]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 0.02), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Turnovers",
+                       title="Where each side gave the ball away going forward",
+                       dek="Failed passes and dispossessions in the team's own attacking half, own goal on the left",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "44_turnovers_dangerous.png")
+
+
+# ---------------------------------------------------------------------------
+# 45. Set piece analysis (corners)
+# ---------------------------------------------------------------------------
+
+def set_piece_analysis(passes, shots):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    ax1 = fig.add_axes([0.02, 0.10, 0.47, 0.62])
+    ax2 = fig.add_axes([0.51, 0.10, 0.47, 0.62])
+    pitch.draw(ax=ax1)
+    pitch.draw(ax=ax2)
+
+    for ax, cid in ((ax1, md.HOME_ID), (ax2, md.AWAY_ID)):
+        color = team_color(cid)
+        corners = [p for p in passes if p["contestantId"] == cid and p["is_corner"] and p["end_x"] is not None]
+        completed = [c for c in corners if c["completed"]]
+        for c in corners:
+            pitch.arrows(c["x"], c["y"], c["end_x"], c["end_y"], ax=ax,
+                        color=color if c["completed"] else palette["axis"],
+                        alpha=0.85 if c["completed"] else 0.5, width=1.8, headwidth=5, headlength=5,
+                        zorder=3 if c["completed"] else 2)
+        shots_from_corner = sum(1 for s in shots if s["contestantId"] == cid and s["situation"] == "Corner")
+        title = (f"{md.team_name(cid)}  ({len(corners)} corners, {len(completed)} found a teammate)\n"
+                 f"{shots_from_corner} shot(s) from a corner")
+        ax.set_title(title, color=color, fontsize=11, fontweight="bold", family="sans-serif")
+
+    components.header(fig, kicker="Set Pieces",
+                       title="Corner delivery and what it produced",
+                       dek="Every corner kick, completed (solid) vs not, attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "45_set_piece_analysis.png")
+
+
+# ---------------------------------------------------------------------------
+# 46. Defensive line height
+# ---------------------------------------------------------------------------
+
+def defensive_line_height(pressing_actions):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.10, 0.16, 0.80, 0.58])
+
+    bucket = 15
+    edges = list(range(0, 96, bucket)) + [96]
+    centers = [(edges[i] + min(edges[i + 1], 96)) / 2 for i in range(len(edges) - 1)]
+
+    for cid, color, name in ((md.HOME_ID, HOME_C, HOME_SHORT), (md.AWAY_ID, AWAY_C, AWAY_SHORT)):
+        heights = []
+        for i in range(len(edges) - 1):
+            lo, hi = edges[i], edges[i + 1]
+            xs = [d["x"] for d in pressing_actions if d["contestantId"] == cid and lo <= d["minute"] < hi]
+            heights.append(np.mean(xs) if xs else np.nan)
+        ax.plot(centers, heights, color=color, linewidth=2.4, marker="o", markersize=6, zorder=3)
+        valid = [(c, h) for c, h in zip(centers, heights) if not math.isnan(h)]
+        if valid:
+            ax.annotate(name, xy=valid[-1], xytext=(8, 0), textcoords="offset points",
+                        color=color, fontsize=10, fontweight="bold", va="center")
+
+    ax.set_xlim(0, 100)
+    ax.set_ylim(0, 70)
+    ax.set_xlabel("Minute")
+    ax.set_ylabel("Average distance from own goal (m)")
+    ax.axvline(45, color=palette["axis"], linewidth=0.8, linestyle=":")
+
+    components.header(fig, kicker="Defensive Line",
+                       title="How high up the pitch each team defended, over time",
+                       dek="Average location of tackles, interceptions and challenges, 15-minute buckets",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "46_defensive_line_height.png")
+
+
+# ---------------------------------------------------------------------------
+# 47. Shot zones heatmap
+# ---------------------------------------------------------------------------
+
+def shot_zones_heatmap(shots):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    ax1 = fig.add_axes([0.02, 0.10, 0.47, 0.62])
+    ax2 = fig.add_axes([0.51, 0.10, 0.47, 0.62])
+
+    for ax, cid, color in ((ax1, md.HOME_ID, HOME_C), (ax2, md.AWAY_ID, AWAY_C)):
+        pitch.draw(ax=ax)
+        team_shots = [s for s in shots if s["contestantId"] == cid]
+        xs = [s["x"] for s in team_shots]
+        ys = [s["y"] for s in team_shots]
+        if xs:
+            stats = pitch.bin_statistic(xs, ys, statistic="count", bins=(6, 5))
+            # zero-count bins must stay fully transparent (not the palette
+            # surface colour at alpha, which would still show a visible
+            # tile edge against the pitch), and a single shot shouldn't
+            # already read as "hot" -- so grade from surface (low) to the
+            # team's own brand colour (high) with vmin pinned at 0, rather
+            # than a generic Blues/Oranges colormap whose pale low end
+            # washed out the dark pitch surface.
+            stats["statistic"] = np.where(stats["statistic"] == 0, np.nan, stats["statistic"])
+            cmap_obj = LinearSegmentedColormap.from_list("wa_shots", [palette["surface"], color])
+            cmap_obj.set_bad(alpha=0)
+            pitch.heatmap(stats, ax=ax, cmap=cmap_obj, vmin=0, edgecolors="none", alpha=0.9, zorder=1)
+        pitch.scatter(xs, ys, ax=ax, s=40, color=palette["ink_primary"], edgecolors=palette["surface"],
+                      linewidth=0.6, zorder=3)
+        ax.set_title(f"{md.team_name(cid)}  ({len(team_shots)} shots)", color=team_color(cid), fontsize=12,
+                     fontweight="bold", family="sans-serif")
+
+    components.header(fig, kicker="Shot Locations",
+                       title="Where each team took its shots from",
+                       dek="Shot density with individual attempts marked, attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "47_shot_zones_heatmap.png")
+
+
+# ---------------------------------------------------------------------------
+# 48. Passing direction breakdown
+# ---------------------------------------------------------------------------
+
+def passing_direction(passes):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.16, 0.24, 0.68, 0.40])
+
+    dir_colors = [CATEGORICAL_DARK[0], CATEGORICAL_DARK[3], CATEGORICAL_DARK[1]]
+    dir_labels = ["Forward", "Sideways", "Backward"]
+
+    def classify(p):
+        dx = p["end_x"] - p["x"]
+        dy = abs(p["end_y"] - p["y"])
+        if dx > 5 and dx > dy:
+            return "Forward"
+        if dx < -5 and abs(dx) > dy:
+            return "Backward"
+        return "Sideways"
+
+    def fracs(cid):
+        team_passes = [p for p in passes if p["contestantId"] == cid and p["completed"] and p["end_x"] is not None]
+        counts = {k: 0 for k in dir_labels}
+        for p in team_passes:
+            counts[classify(p)] += 1
+        total = sum(counts.values()) or 1
+        return [counts[k] / total for k in dir_labels], total
+
+    for i, (cid, name, color) in enumerate(((md.HOME_ID, md.HOME_NAME, HOME_C), (md.AWAY_ID, md.AWAY_NAME, AWAY_C))):
+        vals, total = fracs(cid)
+        y = 1 - i
+        left = 0
+        for frac, dc, dl in zip(vals, dir_colors, dir_labels):
+            ax.barh(y, frac, left=left, height=0.6, color=dc)
+            if frac > 0.06:
+                ax.text(left + frac / 2, y, f"{frac:.0%}", ha="center", va="center",
+                        fontsize=10.5, fontweight="bold", color=palette["surface"])
+            left += frac
+        ax.text(-0.02, y, f"{name}\n({total} passes)", ha="right", va="center", fontsize=10.5,
+                fontweight="bold", color=color)
+
+    ax.set_xlim(0, 1)
+    ax.set_ylim(-0.7, 1.7)
+    ax.set_yticks([])
+    ax.set_xlabel("Share of completed passes")
+    ax.set_axisbelow(True)
+
+    legend_elems = [Line2D([0], [0], marker="s", color=palette["surface"], markerfacecolor=dc,
+                            markersize=12, label=dl, linewidth=0) for dc, dl in zip(dir_colors, dir_labels)]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=3, frameon=False,
+               bbox_to_anchor=(0.5, 0.06), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Passing Style",
+                       title="How direct was each team's passing?",
+                       dek="Forward/sideways/backward classified from each pass's start/end location (≥5m threshold)",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "48_passing_direction.png")
+
+
+# ---------------------------------------------------------------------------
+# 49. Team radar comparison
+# ---------------------------------------------------------------------------
+
+def team_radar(shots, passes, defs, touches, ppda_home, ppda_away):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.26, 0.18, 0.48, 0.58], polar=True)
+
+    home_pass = [p for p in passes if p["contestantId"] == md.HOME_ID]
+    away_pass = [p for p in passes if p["contestantId"] == md.AWAY_ID]
+    home_xg = sum(s["xg"] for s in shots if s["contestantId"] == md.HOME_ID)
+    away_xg = sum(s["xg"] for s in shots if s["contestantId"] == md.AWAY_ID)
+    h_touch = sum(1 for t in touches if t["contestantId"] == md.HOME_ID and t["x"] >= 70)
+    a_touch = sum(1 for t in touches if t["contestantId"] == md.AWAY_ID and t["x"] >= 70)
+
+    metrics = [
+        ("xG", home_xg, away_xg),
+        ("Shots", sum(1 for s in shots if s["contestantId"] == md.HOME_ID),
+         sum(1 for s in shots if s["contestantId"] == md.AWAY_ID)),
+        ("Progressive passes", sum(1 for p in home_pass if p["progressive"]),
+         sum(1 for p in away_pass if p["progressive"])),
+        ("Box entries", sum(1 for p in home_pass if p["box_entry"]),
+         sum(1 for p in away_pass if p["box_entry"])),
+        ("Final-third touches", h_touch, a_touch),
+        ("Pass accuracy", sum(1 for p in home_pass if p["completed"]) / len(home_pass),
+         sum(1 for p in away_pass if p["completed"]) / len(away_pass)),
+        ("Pressing (inv. PPDA)", 1 / ppda_home, 1 / ppda_away),
+    ]
+    labels = [m[0] for m in metrics]
+    n = len(labels)
+    home_norm = [m[1] / max(m[1], m[2], 1e-9) for m in metrics]
+    away_norm = [m[2] / max(m[1], m[2], 1e-9) for m in metrics]
+
+    angles = [i / n * 2 * math.pi for i in range(n)] + [0]
+    for vals, color, name in ((home_norm, HOME_C, md.HOME_NAME), (away_norm, AWAY_C, md.AWAY_NAME)):
+        pts = vals + [vals[0]]
+        ax.plot(angles, pts, color=color, linewidth=2.2, marker="o", markersize=4, label=name, zorder=3)
+        ax.fill(angles, pts, color=color, alpha=0.15, zorder=2)
+
+    ax.set_xticks(angles[:-1])
+    ax.set_xticklabels(labels, fontsize=9.5, color=palette["ink_primary"])
+    ax.set_yticks([])
+    ax.set_ylim(0, 1.15)
+    ax.spines["polar"].set_color(palette["axis"])
+    ax.grid(color=palette["grid"])
+
+    fig.legend(loc="lower center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 0.02),
+               fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Head to Head",
+                       title="A shape comparison across the game's key numbers",
+                       dek="Each axis normalized to the better of the two teams that match (=1.0)",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "49_team_radar.png")
+
+
+# ---------------------------------------------------------------------------
+# 50. Report card (closing summary)
+# ---------------------------------------------------------------------------
+
+def report_card(match_details, shots, passes, defs, touches, ppda_home, ppda_away):
+    palette, _ = style.apply("dark")
+    fig = plt.figure(figsize=FIGSIZE)
+    fig.patch.set_facecolor(palette["surface"])
+
+    scores = match_details["scores"]
+    fig.text(0.5, 0.90, f"{md.HOME_NAME}  {scores['ft']['home']}-{scores['ft']['away']}  {md.AWAY_NAME}",
+              fontsize=18, fontweight="bold", color=palette["ink_primary"], family="serif",
+              ha="center", va="center")
+    fig.text(0.5, 0.855, f"{md.COMPETITION}  ·  {md.VENUE}  ·  {md.MATCH_DATE}", fontsize=10.5,
+              color=palette["ink_secondary"], ha="center", va="center")
+
+    home_xg = sum(s["xg"] for s in shots if s["contestantId"] == md.HOME_ID)
+    away_xg = sum(s["xg"] for s in shots if s["contestantId"] == md.AWAY_ID)
+    home_pass = [p for p in passes if p["contestantId"] == md.HOME_ID]
+    away_pass = [p for p in passes if p["contestantId"] == md.AWAY_ID]
+    h_touch = sum(1 for t in touches if t["contestantId"] == md.HOME_ID)
+    a_touch = sum(1 for t in touches if t["contestantId"] == md.AWAY_ID)
+
+    rows = [
+        ("Expected goals", f"{home_xg:.2f}", f"{away_xg:.2f}"),
+        ("Shots", str(sum(1 for s in shots if s["contestantId"] == md.HOME_ID)),
+         str(sum(1 for s in shots if s["contestantId"] == md.AWAY_ID))),
+        ("Touch share", f"{h_touch / (h_touch + a_touch):.0%}", f"{a_touch / (h_touch + a_touch):.0%}"),
+        ("Pass accuracy",
+         f"{sum(1 for p in home_pass if p['completed']) / len(home_pass):.0%}",
+         f"{sum(1 for p in away_pass if p['completed']) / len(away_pass):.0%}"),
+        ("PPDA", f"{ppda_home:.1f}", f"{ppda_away:.1f}"),
+        ("Tackles + interceptions",
+         str(sum(1 for d in defs if d["contestantId"] == md.HOME_ID and d["action"] in ("Tackle", "Interception"))),
+         str(sum(1 for d in defs if d["contestantId"] == md.AWAY_ID and d["action"] in ("Tackle", "Interception")))),
+    ]
+
+    ax = fig.add_axes([0.14, 0.20, 0.72, 0.55])
+    ax.axis("off")
+    ax.text(0.0, 1.0, md.HOME_NAME, fontsize=12.5, fontweight="bold", color=HOME_C, ha="left", va="top")
+    ax.text(1.0, 1.0, md.AWAY_NAME, fontsize=12.5, fontweight="bold", color=AWAY_C, ha="right", va="top")
+    n = len(rows)
+    for i, (label, hval, aval) in enumerate(rows):
+        y = 0.85 - i * (0.85 / n)
+        ax.text(0.0, y, hval, fontsize=13, fontweight="bold", color=palette["ink_primary"], ha="left", va="top")
+        ax.text(0.5, y, label, fontsize=10.5, color=palette["ink_muted"], ha="center", va="top")
+        ax.text(1.0, y, aval, fontsize=13, fontweight="bold", color=palette["ink_primary"], ha="right", va="top")
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+
+    components.brand_mark(fig, palette=palette, right=0.94, y=0.965)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "50_report_card.png")
+
+
 def main():
     match_details, events = md.load_events()
     directions = md.compute_attack_directions(events)
@@ -1293,6 +2054,11 @@ def main():
     cards = md.build_cards(events)
     subs = md.build_substitutions(events)
     touches = md.build_touches(events, directions)
+    assists = md.build_shot_assists(events, directions, shots)
+    turnovers = md.build_turnovers(events, directions)
+    sim = md.simulate_scorelines(shots)
+    ppda_home = md.compute_ppda(passes, pressing_actions, md.HOME_ID, md.AWAY_ID)
+    ppda_away = md.compute_ppda(passes, pressing_actions, md.AWAY_ID, md.HOME_ID)
     # Tackle + Aerial + Challenge, each with a win/loss flag -- a dedicated
     # duels set for the duels-summary page (separate from pressing_actions,
     # which excludes Aerial since PPDA's standard action set doesn't use it).
@@ -1328,6 +2094,27 @@ def main():
     discipline(pressing_actions, cards)
     momentum_timeline(shots, cards, subs)
     impact_leaderboard(shots, passes, defs)
+
+    win_probability_situation(shots, sim)
+    xg_scoreline_matrix(sim, match_details)
+    xt_flow(passes, shots)
+    xt_leaderboard(passes)
+    shot_assists_map(assists)
+    key_passes_leaderboard(assists)
+    origin_zone14_team_page(passes, md.HOME_ID, "37")
+    origin_zone14_team_page(passes, md.AWAY_ID, "38")
+    box_entries_map(passes)
+    long_balls_team_page(passes, md.HOME_ID, "40")
+    long_balls_team_page(passes, md.AWAY_ID, "41")
+    aerial_duels_team_page(duels, md.HOME_ID, "42")
+    aerial_duels_team_page(duels, md.AWAY_ID, "43")
+    turnovers_dangerous(turnovers)
+    set_piece_analysis(passes, shots)
+    defensive_line_height(pressing_actions)
+    shot_zones_heatmap(shots)
+    passing_direction(passes)
+    team_radar(shots, passes, defs, touches, ppda_home, ppda_away)
+    report_card(match_details, shots, passes, defs, touches, ppda_home, ppda_away)
 
 
 def _build_duels(events, directions):
