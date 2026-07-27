@@ -361,6 +361,147 @@ def build_cards(events):
     return rows
 
 
+def build_substitutions(events):
+    rows = []
+    for e in events:
+        if e["typeId"] != T_SUB_OFF:
+            continue
+        rows.append({"contestantId": e["contestantId"], "team": team_name(e["contestantId"]),
+                      "player_off": e.get("playerName", "Unknown"), "minute": e["timeMin"]})
+    return rows
+
+
+def build_recoveries(events, directions):
+    rows = []
+    for e in events:
+        if e["typeId"] != T_BALL_RECOVERY or e.get("x") is None:
+            continue
+        x, y = norm_xy(e, directions)
+        xm, ym = to_m(x, y)
+        rows.append({"contestantId": e["contestantId"], "team": team_name(e["contestantId"]),
+                      "player": e.get("playerName", "Unknown"), "minute": e["timeMin"], "period": e["periodId"],
+                      "x": xm, "y": ym})
+    return rows
+
+
+def build_duels(events, directions):
+    """Tackle + Aerial + Challenge, each contestantId's own outcome."""
+    rows = []
+    for e in events:
+        if e.get("x") is None or not e.get("contestantId"):
+            continue
+        if e["typeId"] not in (T_TACKLE, T_AERIAL, T_CHALLENGE):
+            continue
+        x, y = norm_xy(e, directions)
+        xm, ym = to_m(x, y)
+        rows.append({"contestantId": e["contestantId"], "team": team_name(e["contestantId"]),
+                      "player": e.get("playerName", "Unknown"), "minute": e["timeMin"], "period": e["periodId"],
+                      "x": xm, "y": ym,
+                      "action": {T_TACKLE: "Tackle", T_AERIAL: "Aerial", T_CHALLENGE: "Challenge"}[e["typeId"]],
+                      "success": e.get("outcome", 1) == 1})
+    return rows
+
+
+def build_turnovers(events, directions):
+    """A team's own failed pass or Dispossessed event in their own attacking
+    half -- the moment they lost the ball already deep in the opponent's
+    territory, handing it straight back in a dangerous area."""
+    rows = []
+    for e in events:
+        if e.get("x") is None or not e.get("contestantId"):
+            continue
+        is_failed_pass = e["typeId"] == T_PASS and e.get("outcome") == 0
+        is_dispossessed = e["typeId"] == T_DISPOSSESSED
+        if not (is_failed_pass or is_dispossessed):
+            continue
+        x, y = norm_xy(e, directions)
+        xm, ym = to_m(x, y)
+        if xm < 52.5:
+            continue
+        rows.append({"contestantId": e["contestantId"], "team": team_name(e["contestantId"]),
+                      "player": e.get("playerName", "Unknown"), "minute": e["timeMin"], "period": e["periodId"],
+                      "x": xm, "y": ym, "kind": "Failed pass" if is_failed_pass else "Dispossessed"})
+    return rows
+
+
+def build_shot_assists(events, directions, shots):
+    """For each shot, the most recent completed pass by the shooting team
+    since the ball last changed teams -- "who set this shot up"."""
+    ball_events = [e for e in events if e.get("x") is not None and e.get("contestantId")
+                   and (e["typeId"] in (T_PASS, T_TAKE_ON, T_TACKLE, T_INTERCEPTION, T_CLEARANCE,
+                                        T_AERIAL, T_BALL_RECOVERY, T_DISPOSSESSED, 61)
+                        or e["typeId"] in SHOT_TYPES)]
+    ball_events.sort(key=lambda e: (e["periodId"], event_time(e), e["eventId"]))
+
+    assists = {}
+    current_team, pending_pass = None, None
+    for e in ball_events:
+        cid = e["contestantId"]
+        if cid != current_team:
+            current_team, pending_pass = cid, None
+        if e["typeId"] in SHOT_TYPES:
+            if pending_pass is not None and pending_pass.get("playerName") != e.get("playerName"):
+                assists[e["eventId"]] = pending_pass
+        elif e["typeId"] == T_PASS and e.get("outcome") == 1:
+            pending_pass = e
+
+    xg_by_eventid = {s["eventId"]: s["xg"] for s in shots}
+    rows = []
+    for e in events:
+        if e["typeId"] not in SHOT_TYPES or e.get("x") is None:
+            continue
+        ap = assists.get(e["eventId"])
+        if ap is None:
+            continue
+        x, y = norm_xy(ap, directions)
+        xm, ym = to_m(x, y)
+        q = qmap(ap)
+        end_x = end_y = None
+        if Q_END_X in q and Q_END_Y in q:
+            d = directions.get((ap["contestantId"], ap["periodId"]), 1)
+            ex, ey = float(q[Q_END_X]), float(q[Q_END_Y])
+            if d == -1:
+                ex, ey = 100.0 - ex, 100.0 - ey
+            end_x, end_y = to_m(ex, ey)
+        sx, sy = norm_xy(e, directions)
+        sxm, sym = to_m(sx, sy)
+        rows.append({
+            "contestantId": e["contestantId"], "team": team_name(e["contestantId"]),
+            "shooter": e.get("playerName", "Unknown"), "assister": ap.get("playerName", "Unknown"),
+            "minute": e["timeMin"], "x": xm, "y": ym,
+            "end_x": end_x if end_x is not None else sxm, "end_y": end_y if end_y is not None else sym,
+            "shot_x": sxm, "shot_y": sym, "shot_xg": xg_by_eventid.get(e["eventId"], 0.0),
+            "is_goal": e["typeId"] == T_GOAL,
+        })
+    return rows
+
+
+def simulate_match_scorelines(home_shots, away_shots, n=20000, seed=42, cap=6):
+    """Monte Carlo simulation from THIS match's own shots (not the league
+    sample): each shot converts independently with probability = its own
+    xG. Same mechanic as the sibling post-match reports' simulate_scorelines."""
+    import random
+    rng = random.Random(seed)
+    home_xgs = [s["xg"] for s in home_shots]
+    away_xgs = [s["xg"] for s in away_shots]
+
+    score_counts = {}
+    home_goals, away_goals = [], []
+    for _ in range(n):
+        h = sum(1 for xg in home_xgs if rng.random() < xg)
+        a = sum(1 for xg in away_xgs if rng.random() < xg)
+        home_goals.append(h)
+        away_goals.append(a)
+        key = (min(h, cap), min(a, cap))
+        score_counts[key] = score_counts.get(key, 0) + 1
+
+    home_win = sum(1 for h, a in zip(home_goals, away_goals) if h > a) / n
+    draw = sum(1 for h, a in zip(home_goals, away_goals) if h == a) / n
+    away_win = sum(1 for h, a in zip(home_goals, away_goals) if h < a) / n
+    return {"score_counts": score_counts, "n": n, "cap": cap,
+            "home_win": home_win, "draw": draw, "away_win": away_win}
+
+
 class TeamMatch:
     """Everything derived from ONE team's matchday-1 event feed: shots,
     passes, defensive/pressing actions, touches, cards, indexable by that
@@ -381,6 +522,11 @@ class TeamMatch:
         self.pressing = build_pressing_actions(self.events, self.directions)
         self.cards = build_cards(self.events)
         self.touches = build_touches(self.events, self.directions)
+        self.subs = build_substitutions(self.events)
+        self.recoveries = build_recoveries(self.events, self.directions)
+        self.duels = build_duels(self.events, self.directions)
+        self.turnovers = build_turnovers(self.events, self.directions)
+        self.assists = build_shot_assists(self.events, self.directions, self.shots)
 
     def own(self, rows):
         return [r for r in rows if r["contestantId"] == self.team_id]
@@ -427,6 +573,41 @@ class TeamMatch:
         h = sum(1 for t in self.own(self.touches) if t["x"] >= 70)
         a = sum(1 for t in self.against(self.touches) if t["x"] >= 70)
         return h / (h + a) if (h + a) else float("nan")
+
+    def pass_tempo_mps(self):
+        """Avg metres/second of this team's completed passes -- pass
+        distance divided by the time gap to the next event in the match
+        (any team), used as a proxy for how quickly the pass was played.
+        Gaps > 8s (stoppages, fouls, VAR checks) are excluded as noise,
+        not genuine tempo."""
+        ordered = sorted(self.events, key=lambda e: (e["periodId"], event_time(e), e["eventId"]))
+        speeds = []
+        for i in range(len(ordered) - 1):
+            e = ordered[i]
+            if e["typeId"] != T_PASS or e.get("contestantId") != self.team_id or e.get("outcome") != 1:
+                continue
+            nxt = ordered[i + 1]
+            if nxt["periodId"] != e["periodId"]:
+                continue
+            dt = event_time(nxt) - event_time(e)
+            if dt <= 0 or dt > 8:
+                continue
+            q = qmap(e)
+            if Q_END_X not in q or Q_END_Y not in q:
+                continue
+            x, y = norm_xy(e, self.directions)
+            xm, ym = to_m(x, y)
+            d = directions_val = self.directions.get((e["contestantId"], e["periodId"]), 1)
+            ex, ey = float(q[Q_END_X]), float(q[Q_END_Y])
+            if d == -1:
+                ex, ey = 100.0 - ex, 100.0 - ey
+            exm, eym = to_m(ex, ey)
+            dist = math.hypot(exm - xm, eym - ym)
+            speeds.append(dist / dt)
+        return sum(speeds) / len(speeds) if speeds else 0.0
+
+    def pass_volume(self):
+        return len(self.own(self.passes))
 
 
 class LeagueMW1:
