@@ -2,7 +2,7 @@
 xG For vs xG Against by match for a given Eerste Divisie 2025/26 team,
 with a rolling-average trend line for each.
 
-xG per shot comes from the repo's own pre-trained production model
+xG per shot comes from the Waltzing Analytics xG Model
 (Model/model_xg.pkl + Model/model_meta.pkl) -- a calibrated XGBoost
 classifier (CalibratedXGB = XGBClassifier + IsotonicRegression calibrator)
 fit on distance/angle/y_sym plus qualifier-derived shot context (body
@@ -250,7 +250,7 @@ def make_plot(rows, out_path, team_name):
     components.footer(
         fig,
         source="Opta event data",
-        note="xG: repo production model (Model/model_xg.pkl, calibrated XGBoost)",
+        note="xG: Waltzing Analytics xG Model (calibrated XGBoost)",
         palette=palette,
     )
 
