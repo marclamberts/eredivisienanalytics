@@ -16,6 +16,18 @@ one match of data per team; every page is scoped to what a single match
 can honestly support (team-level shape and volume, not multi-game trend
 lines), and is labelled as such.
 
+Expanded from an initial 19-page scope to a full 50-page deck: xG flow,
+an xT flow + leaderboard, and a pass-tempo (m/s) vs pass volume scatter
+were explicitly requested and are new to this report, on top of the full
+per-team repertoire this repo's post-match reports already establish
+(shot log, goal build-ups, pass networks, progressive passes, passing
+directness, touch heatmaps, field tilt over time, crossing, zone-14/
+half-space maps, long balls, shot assists, key passes) plus a handful of
+combined-team and 14-team league-sample pages (recoveries, turnovers,
+shot zones, verticality ranking). The 14-team league sample reuses the
+same matchday-1 event feeds and "single round, not a season" framing as
+the sibling Sparta Praha report's LeagueMW1.
+
 Data: Opta MA3 event feed (CZ Events/CZ 2026-2027), parsed in
 match_data.py; shots scored with the same own distance+angle xG model as
 the sibling post-match report (no provider xG in this feed).
@@ -46,6 +58,7 @@ BOH_C = CATEGORICAL_DARK[2]    # teal -- Bohemians 1905
 HKR_C = CATEGORICAL_DARK[0]    # ink blue -- FC Hradec Kralove (same slot as the sibling post-match report)
 GOOD_C = STATUS_DARK["good"]
 WARN_C = STATUS_DARK["warning"]
+LEAGUE_MUTED = "#5A6672"      # league-context gray, distinct from house axis gray
 BOH_SHORT, HKR_SHORT = "Bohemians", "Hradec Kr."
 
 BOX_Y = (13.84, 54.16)
@@ -104,7 +117,7 @@ def cover():
     fig.text(0.5, 0.30, f"{md.COMPETITION}  ·  {md.VENUE}", fontsize=12,
               color=palette["ink_secondary"], family="sans-serif", ha="center", va="center")
 
-    fig.text(0.5, 0.19, f"{components.MARK} PRE-MATCH PREVIEW  ·  19 PAGES", fontsize=13, fontweight="bold",
+    fig.text(0.5, 0.19, f"{components.MARK} PRE-MATCH PREVIEW  ·  50 PAGES", fontsize=13, fontweight="bold",
               color=palette["accent"], family="sans-serif", ha="center", va="center")
     fig.text(0.5, 0.145, "Built from each team's matchday-1 fixture -- early-season form, not head-to-head",
               fontsize=9.5, color=palette["ink_muted"], family="sans-serif", ha="center", va="center")
@@ -424,7 +437,7 @@ def possession_thirds(boh, hkr):
                        dek="Distribution of touches across pitch thirds, own attacking direction",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
-    save(fig, "09_possession_thirds.png")
+    save(fig, "19_possession_thirds.png")
 
 
 # ---------------------------------------------------------------------------
@@ -472,7 +485,7 @@ def progression_bars(boh, hkr):
                        dek="Progressive pass = completed pass cutting ≥25% off the distance to goal",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
-    save(fig, "10_progression_bars.png")
+    save(fig, "20_progression_bars.png")
 
 
 # ---------------------------------------------------------------------------
@@ -516,7 +529,7 @@ def ppda_pressing(boh, hkr):
                        dek="Passes per defensive action in the opponent's own 60%  ·  lower = more intense press",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
-    save(fig, "11_ppda_pressing.png")
+    save(fig, "23_ppda_pressing.png")
 
 
 # ---------------------------------------------------------------------------
@@ -559,7 +572,7 @@ def defensive_actions(boh, hkr):
                        dek="Tackles, interceptions and clearances, own goal on the left, attacking right",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
-    save(fig, "12_defensive_actions.png")
+    save(fig, "24_defensive_actions.png")
 
 
 # ---------------------------------------------------------------------------
@@ -639,7 +652,7 @@ def duels_discipline(boh, hkr):
                        dek="Tackle, aerial and loose-ball duels, plus fouls and cards",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
-    save(fig, "13_duels_discipline.png")
+    save(fig, "25_duels_discipline.png")
 
 
 # ---------------------------------------------------------------------------
@@ -732,7 +745,7 @@ def team_radar(boh, hkr):
                        dek="Each axis normalized to the better of the two teams that match (=1.0)  ·  different opponents",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
-    save(fig, "16_team_radar.png")
+    save(fig, "45_team_radar.png")
 
 
 # ---------------------------------------------------------------------------
@@ -791,7 +804,7 @@ def keys_to_the_game(boh, hkr):
                        dek="Reasoned from each side's matchday-1 numbers",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
-    save(fig, "17_keys_to_the_game.png")
+    save(fig, "48_keys_to_the_game.png")
 
 
 # ---------------------------------------------------------------------------
@@ -846,7 +859,7 @@ def win_probability(boh, hkr, sim):
                            "-- an early-season projection, not a fitted model",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
-    save(fig, "18_win_probability.png")
+    save(fig, "49_win_probability.png")
 
 
 # ---------------------------------------------------------------------------
@@ -891,30 +904,753 @@ def report_card(boh, hkr, sim):
 
     components.brand_mark(fig, palette=palette, right=0.94, y=0.965)
     components.footer(fig, source=md.SOURCE, palette=palette)
-    save(fig, "19_report_card.png")
+    save(fig, "50_report_card.png")
+
+
+# ---------------------------------------------------------------------------
+# 05-06. xG flow -- one page per team's own matchday-1 fixture
+# ---------------------------------------------------------------------------
+
+def xg_flow_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.08, 0.16, 0.78, 0.60])
+
+    def series(rows):
+        team_shots = sorted(rows, key=lambda s: s["minute"])
+        mins, cum, total = [0.0], [0.0], 0.0
+        for s in team_shots:
+            mins.append(s["minute"]); cum.append(total)
+            total += s["xg"]
+            mins.append(s["minute"]); cum.append(total)
+        mins.append(96); cum.append(total)
+        return mins, cum
+
+    own_shots = snap.own(snap.shots)
+    opp_shots = snap.against(snap.shots)
+    for rows, color_, label in ((own_shots, color, name), (opp_shots, palette["ink_muted"], snap.opponent_name)):
+        mins, cum = series(rows)
+        ax.plot(mins, cum, color=color_, linewidth=2.4, zorder=4)
+        ax.fill_between(mins, cum, step=None, color=color_, alpha=0.10, zorder=1)
+        ax.annotate(f"{label}\n{cum[-1]:.2f} xG", xy=(1, cum[-1]), xycoords=("axes fraction", "data"),
+                    xytext=(10, 0), textcoords="offset points", color=color_, fontsize=10,
+                    fontweight="bold", va="center", ha="left", annotation_clip=False)
+
+    for rows, color_ in ((own_shots, color), (opp_shots, palette["ink_muted"])):
+        running = 0.0
+        for s in sorted(rows, key=lambda s: s["minute"]):
+            if s["is_goal"]:
+                ax.scatter([s["minute"]], [running], marker="*", s=200, color=palette["ink_primary"],
+                           edgecolors=color_, linewidth=1.6, zorder=6)
+            running += s["xg"]
+
+    ax.axvline(45, color=palette["axis"], linewidth=0.8, linestyle=":")
+    ax.set_xlim(0, 100)
+    ax.set_xlabel("Minute")
+    ax.set_ylabel("Cumulative xG")
+
+    components.header(fig, kicker="xG Flow",
+                       title=f"{name}: cumulative xG at matchday 1 ({snap.result})",
+                       dek=f"vs {snap.opponent_name}  ·  own xG model, this team's coloured, opponent muted",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_xg_flow_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 07-08. Shot quality table -- one page per team's own matchday-1 fixture
+# ---------------------------------------------------------------------------
+
+def shot_quality_table_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.05, 0.12, 0.90, 0.62])
+    ax.axis("off")
+
+    both = snap.own(snap.shots) + snap.against(snap.shots)
+    ordered = sorted(both, key=lambda s: s["minute"])
+    cols = ["Min", "Team", "Player", "Situation", "Body", "Outcome", "xG"]
+    widths = [0.06, 0.20, 0.24, 0.16, 0.12, 0.12, 0.10]
+    x0 = [sum(widths[:i]) for i in range(len(widths))]
+
+    header_y = 1.0
+    for x, w, label in zip(x0, widths, cols):
+        ax.text(x, header_y, label, fontsize=10.5, fontweight="bold", color=palette["ink_primary"],
+                va="top", ha="left")
+    ax.axhline(header_y - 0.025, xmin=0, xmax=1, color=palette["axis"], linewidth=1.0)
+
+    row_h = 0.95 / max(len(ordered), 1)
+    for i, s in enumerate(ordered):
+        y = header_y - 0.05 - i * row_h
+        is_own = s["contestantId"] == snap.team_id
+        c = color if is_own else palette["ink_muted"]
+        weight = "bold" if s["is_goal"] else "normal"
+        vals = [f"{s['minute']}'", name.split(" ")[-1] if is_own else snap.opponent_name.split(" ")[-1],
+                s["player"], s["situation"], "Head" if s["is_header"] else "Foot", s["outcome"], f"{s['xg']:.2f}"]
+        for x, w, v in zip(x0, widths, vals):
+            ax.text(x, y, v, fontsize=9.5, color=c if x == x0[1] else palette["ink_primary"],
+                    fontweight=weight, va="top", ha="left")
+        if s["is_goal"]:
+            ax.text(0.985, y, "★", fontsize=11, color=GOOD_C, va="top", ha="right")
+    ax.set_xlim(0, 1)
+    ax.set_ylim(header_y - 0.05 - len(ordered) * row_h, 1.03)
+
+    components.header(fig, kicker="Shot Log",
+                       title=f"{name}: all {len(ordered)} shots of their matchday-1 fixture",
+                       dek=f"vs {snap.opponent_name}  ·  own xG model: distance + angle to goal, header penalty applied",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_shot_quality_table_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 09-10. Goal build-ups -- one page per team's own matchday-1 fixture
+# ---------------------------------------------------------------------------
+
+def goal_buildups_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+
+    both = snap.own(snap.shots) + snap.against(snap.shots)
+    goals = sorted([s for s in both if s["is_goal"]], key=lambda s: s["minute"])
+    n = max(len(goals), 1)
+    axes = [fig.add_axes([0.02 + i * (0.96 / n), 0.10, 0.96 / n - 0.02, 0.62]) for i in range(len(goals))]
+
+    for ax, g in zip(axes, goals):
+        pitch.draw(ax=ax)
+        is_own = g["contestantId"] == snap.team_id
+        c = color if is_own else palette["ink_muted"]
+        team_events = [e for e in snap.events if e["contestantId"] == g["contestantId"]
+                       and e.get("x") is not None and e["typeId"] in (1, 3, 61)
+                       and md.event_time(e) <= g["minute"] * 60 + 59]
+        team_events.sort(key=lambda e: (e["periodId"], md.event_time(e), e["eventId"]))
+        chain = team_events[-4:]
+        pts = []
+        for e in chain:
+            x, y = md.norm_xy(e, snap.directions)
+            xm, ym = md.to_m(x, y)
+            pts.append((xm, ym))
+        pts.append((g["x"], g["y"]))
+
+        for j in range(len(pts) - 1):
+            x1, y1 = pts[j]
+            x2, y2 = pts[j + 1]
+            alpha = 0.45 + 0.55 * (j / (len(pts) - 1))
+            pitch.arrows(x1, y1, x2, y2, ax=ax, color=c, alpha=alpha, width=2.2,
+                        headwidth=6, headlength=6, zorder=3)
+        pitch.scatter(g["x"], g["y"], ax=ax, s=260, marker="*", color=palette["ink_primary"],
+                      edgecolors=c, linewidth=1.6, zorder=6)
+        team_label = name if is_own else snap.opponent_name
+        ax.set_title(f"{g['minute']}'  {g['player']}\n{team_label}", color=c,
+                     fontsize=11, fontweight="bold", family="sans-serif")
+
+    fig.text(0.5, 0.085, "Last 4 touches before each goal, both teams, this team's own matchday-1 fixture",
+              ha="center", fontsize=9, color=palette["ink_muted"])
+
+    components.header(fig, kicker="Goal Build-Ups",
+                       title=f"{name}'s matchday 1: how all {len(goals)} goals were made",
+                       dek=f"{snap.result} vs {snap.opponent_name}",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_goal_buildups_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 13-14. Progressive passes -- one page per team
+# ---------------------------------------------------------------------------
+
+def progressive_passes_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    team_passes = snap.own(snap.passes)
+    prog = [p for p in team_passes if p["progressive"]]
+
+    ax = fig.add_axes([0.02, 0.10, 0.96, 0.62])
+    pitch.draw(ax=ax)
+    for p in prog:
+        is_box = p["box_entry"]
+        pitch.arrows(p["x"], p["y"], p["end_x"], p["end_y"], ax=ax,
+                    color=GOOD_C if is_box else color, alpha=0.9 if is_box else 0.55,
+                    width=2.4 if is_box else 1.4, headwidth=6, headlength=6,
+                    zorder=4 if is_box else 3)
+
+    legend_elems = [Line2D([0], [0], color=color, lw=2.0, label="Progressive pass"),
+                    Line2D([0], [0], color=GOOD_C, lw=2.4, label="...into the box")]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 0.06), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    n_box = sum(1 for p in prog if p["box_entry"])
+    components.header(fig, kicker="Progression",
+                       title=f"{name}: {len(prog)} progressive passes, {n_box} of them straight into the box",
+                       dek="Progressive pass = completed pass cutting ≥25% off the distance to goal, attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_progressive_passes_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 15-16. Passing directness -- one page per team
+# ---------------------------------------------------------------------------
+
+def passing_directness_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.10, 0.16, 0.82, 0.58])
+
+    by_player = {}
+    for p in snap.own(snap.passes):
+        d = by_player.setdefault(p["player"], {"gain": 0.0, "att": 0, "comp": 0})
+        d["att"] += 1
+        d["comp"] += int(p["completed"])
+        if p["completed"] and p["end_x"] is not None:
+            d["gain"] += p["end_x"] - p["x"]
+
+    items = [(pl, d) for pl, d in by_player.items() if d["att"] >= 5]
+    xs = [d["gain"] for _, d in items]
+    ys = [d["comp"] / d["att"] for _, d in items]
+    sizes = [40 + d["att"] * 6 for _, d in items]
+    ax.scatter(xs, ys, s=sizes, color=color, alpha=0.85, edgecolors=palette["surface"], linewidth=0.8, zorder=3)
+    for (pl, d), x, y in zip(items, xs, ys):
+        ax.annotate(pl.split(" ")[-1], xy=(x, y), xytext=(6, 4), textcoords="offset points",
+                    fontsize=8.5, color=palette["ink_secondary"])
+    ax.axhline(np.mean(ys) if ys else 0, color=palette["axis"], linewidth=0.8, linestyle="--")
+    ax.set_xlabel("Net metres gained by completed passes (forward - backward)")
+    ax.set_ylabel("Pass completion %")
+    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0%}"))
+
+    components.header(fig, kicker="Passing Profile",
+                       title=f"{name}: who progressed the ball, and how safely",
+                       dek="Players with ≥ 5 pass attempts  ·  bubble size = passes attempted",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_passing_directness_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 21-22. Field tilt over time -- one page per team's own matchday-1 fixture
+# ---------------------------------------------------------------------------
+
+def field_tilt_over_time_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.16, 0.16, 0.78, 0.58])
+
+    bucket = 5
+    max_min = 95
+    edges = list(range(0, max_min + bucket, bucket))
+    tilt, centers = [], []
+    own_t = snap.own(snap.touches)
+    opp_t = snap.against(snap.touches)
+    for i in range(len(edges) - 1):
+        lo, hi = edges[i], edges[i + 1]
+        o = sum(1 for t in own_t if lo <= t["minute"] < hi and t["x"] >= 70)
+        a = sum(1 for t in opp_t if lo <= t["minute"] < hi and t["x"] >= 70)
+        total = o + a
+        tilt.append((o / total - 0.5) * 100 if total else 0.0)
+        centers.append((lo + hi) / 2)
+
+    tilt = np.array(tilt)
+    centers = np.array(centers)
+    ax.fill_between(centers, tilt, 0, where=(tilt >= 0), color=color, alpha=0.75, step="mid")
+    ax.fill_between(centers, tilt, 0, where=(tilt < 0), color=palette["ink_muted"], alpha=0.75, step="mid")
+    ax.axhline(0, color=palette["axis"], linewidth=1.0)
+    ax.axvline(45, color=palette["axis"], linewidth=0.8, linestyle=":")
+
+    ax.set_ylim(-55, 55)
+    ax.set_xlim(0, max_min)
+    ax.set_xlabel("Minute")
+    ax.set_ylabel("Field tilt (final-third touch share)")
+    ax.set_yticks([-50, -25, 0, 25, 50])
+    ax.set_yticklabels([f"{snap.opponent_name.split(' ')[-1]} 100%", "75%", "Even", "75%", f"{name.split(' ')[-1]} 100%"],
+                        fontsize=9)
+
+    overall = snap.field_tilt()
+    components.header(fig, kicker="Field Tilt",
+                       title=f"{name}'s final-third share across their matchday-1 fixture: {overall:.0%}",
+                       dek=f"vs {snap.opponent_name}  ·  share of final-third touches, 5-minute buckets",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_field_tilt_over_time_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 26. Ball recoveries by third (both teams' own matches)
+# ---------------------------------------------------------------------------
+
+def recoveries_by_third(boh, hkr):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.24, 0.16, 0.66, 0.56])
+
+    def by_third(snap):
+        r = snap.own(snap.recoveries)
+        return [sum(1 for x in r if x["x"] < 35), sum(1 for x in r if 35 <= x["x"] < 70),
+                sum(1 for x in r if x["x"] >= 70)]
+
+    boh_counts = by_third(boh)
+    hkr_counts = by_third(hkr)
+    zone_labels = ["Defensive third", "Middle third", "Attacking third"]
+    n = len(zone_labels)
+    ypos = np.arange(n)[::-1]
+    maxval = max(boh_counts + hkr_counts) * 1.2 or 1
+    for y, label, b, h in zip(ypos, zone_labels, boh_counts, hkr_counts):
+        ax.barh(y + 0.18, b, height=0.32, color=BOH_C)
+        ax.barh(y - 0.18, h, height=0.32, color=HKR_C)
+        ax.text(b + maxval * 0.015, y + 0.18, str(b), va="center", fontsize=10, color=palette["ink_primary"])
+        ax.text(h + maxval * 0.015, y - 0.18, str(h), va="center", fontsize=10, color=palette["ink_primary"])
+    ax.set_yticks(ypos)
+    ax.set_yticklabels(zone_labels, fontsize=11.5, color=palette["ink_primary"])
+    ax.set_xlim(0, maxval)
+    ax.set_xlabel("Ball recoveries")
+    ax.grid(axis="x")
+    ax.set_axisbelow(True)
+
+    legend_elems = [Line2D([0], [0], marker="s", color=palette["surface"], markerfacecolor=BOH_C,
+                            markersize=12, label=md.FIXTURE_HOME_NAME, linewidth=0),
+                    Line2D([0], [0], marker="s", color=palette["surface"], markerfacecolor=HKR_C,
+                            markersize=12, label=md.FIXTURE_AWAY_NAME, linewidth=0)]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 0.02), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Recoveries",
+                       title="Where each side won the ball back, matchday 1",
+                       dek="Ball recoveries by pitch third, each team's own fixture",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "26_recoveries_by_third.png")
+
+
+# ---------------------------------------------------------------------------
+# 27. Turnovers in dangerous areas (both teams' own matches)
+# ---------------------------------------------------------------------------
+
+def turnovers_dangerous(boh, hkr):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    ax1 = fig.add_axes([0.02, 0.10, 0.47, 0.62])
+    ax2 = fig.add_axes([0.51, 0.10, 0.47, 0.62])
+    pitch.draw(ax=ax1)
+    pitch.draw(ax=ax2)
+
+    for ax, snap, color, name in ((ax1, boh, BOH_C, md.FIXTURE_HOME_NAME), (ax2, hkr, HKR_C, md.FIXTURE_AWAY_NAME)):
+        t = snap.own(snap.turnovers)
+        xs = [p["x"] for p in t]; ys = [p["y"] for p in t]
+        pitch.scatter(xs, ys, ax=ax, s=70, color=color, alpha=0.75, edgecolors=palette["surface"],
+                      linewidth=0.6, zorder=4)
+        ax.set_title(f"{name} ({len(t)})", color=color, fontsize=12, fontweight="bold", family="sans-serif")
+
+    components.header(fig, kicker="Turnovers",
+                       title="Lost possession in the attacking half, matchday 1",
+                       dek="Failed passes and Dispossessed events beyond the halfway line, own goal on the left, "
+                           "attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "27_turnovers_dangerous.png")
+
+
+# ---------------------------------------------------------------------------
+# 28-29. Crossing map -- one page per team
+# ---------------------------------------------------------------------------
+
+def crossing_map_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    ax = fig.add_axes([0.05, 0.10, 0.90, 0.62])
+    pitch.draw(ax=ax)
+
+    crosses = [p for p in snap.own(snap.passes) if p["is_cross"] and p["end_x"] is not None]
+    completed = [p for p in crosses if p["completed"]]
+    incomplete = [p for p in crosses if not p["completed"]]
+    for p in incomplete:
+        pitch.arrows(p["x"], p["y"], p["end_x"], p["end_y"], ax=ax, color=palette["ink_muted"],
+                    alpha=0.35, width=1.4, headwidth=5, headlength=5, zorder=2)
+    for p in completed:
+        pitch.arrows(p["x"], p["y"], p["end_x"], p["end_y"], ax=ax, color=color,
+                    alpha=0.85, width=2.0, headwidth=6, headlength=6, zorder=4)
+
+    legend_elems = [Line2D([0], [0], color=color, lw=2.2, label=f"Completed ({len(completed)})"),
+                    Line2D([0], [0], color=palette["ink_muted"], lw=1.8, alpha=0.6, label=f"Incomplete ({len(incomplete)})")]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 0.05), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Crossing",
+                       title=f"{name}: {len(crosses)} crosses, matchday 1",
+                       dek="Own goal on the left, attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_crossing_map_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 30-31. Zone 14 & half-space map -- one page per team
+# ---------------------------------------------------------------------------
+
+def zone14_halfspace_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    ax = fig.add_axes([0.05, 0.10, 0.90, 0.62])
+    pitch.draw(ax=ax)
+
+    z0, z1, zy0, zy1 = md.ZONE14
+    ax.add_patch(plt.Rectangle((z0, zy0), z1 - z0, zy1 - zy0, facecolor=CATEGORICAL_DARK[3],
+                                alpha=0.18, edgecolor=CATEGORICAL_DARK[3], linewidth=1.0, zorder=1))
+    for x0, x1, y0, y1 in md.HALF_SPACES:
+        ax.add_patch(plt.Rectangle((x0, y0), x1 - x0, y1 - y0, facecolor=color, alpha=0.10,
+                                    edgecolor=color, linewidth=0.8, zorder=1))
+
+    passes = [p for p in snap.own(snap.passes) if p["completed"] and p["end_x"] is not None]
+    z14 = [p for p in passes if z0 <= p["end_x"] < z1 and zy0 <= p["end_y"] < zy1]
+    hs = [p for p in passes if any(x0 <= p["end_x"] < x1 and y0 <= p["end_y"] < y1 for x0, x1, y0, y1 in md.HALF_SPACES)]
+    for p in hs:
+        pitch.scatter(p["end_x"], p["end_y"], ax=ax, s=50, color=color, alpha=0.7, zorder=3)
+    for p in z14:
+        pitch.scatter(p["end_x"], p["end_y"], ax=ax, s=70, color=CATEGORICAL_DARK[3], alpha=0.8, zorder=4)
+
+    legend_elems = [Line2D([0], [0], marker="o", color=palette["surface"], markerfacecolor=color,
+                            markersize=9, label=f"Half-space reception ({len(hs)})", linewidth=0),
+                    Line2D([0], [0], marker="o", color=palette["surface"], markerfacecolor=CATEGORICAL_DARK[3],
+                            markersize=9, label=f"Zone-14 reception ({len(z14)})", linewidth=0)]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 0.05), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Creative Zones",
+                       title=f"{name}: half-space and zone-14 receptions, matchday 1",
+                       dek="Completed-pass receptions in the two most dangerous central-lane zones, attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_zone14_halfspace_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 32-33. Long ball targets -- one page per team
+# ---------------------------------------------------------------------------
+
+def long_balls_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    ax = fig.add_axes([0.03, 0.10, 0.55, 0.62])
+    pitch.draw(ax=ax)
+
+    lb = [p for p in snap.own(snap.passes) if p["is_long_ball"] and p["completed"] and p["end_x"] is not None]
+    by_player = {}
+    for p in lb:
+        by_player.setdefault(p["player"], []).append(p)
+    for pl, pts in by_player.items():
+        xs = [p["end_x"] for p in pts]; ys = [p["end_y"] for p in pts]
+        pitch.scatter(xs, ys, ax=ax, s=90 + 30 * len(pts), color=color, alpha=0.7,
+                      edgecolors=palette["surface"], linewidth=0.6, zorder=4)
+
+    top = sorted(by_player.items(), key=lambda kv: -len(kv[1]))[:8]
+    ax2 = fig.add_axes([0.63, 0.16, 0.33, 0.50])
+    ypos = np.arange(len(top))[::-1]
+    ax2.barh(ypos, [len(v) for _, v in top], color=color)
+    ax2.set_yticks(ypos)
+    ax2.set_yticklabels([k for k, _ in top], fontsize=10)
+    ax2.set_xlabel("Completed long balls received")
+
+    components.header(fig, kicker="Long Balls",
+                       title=f"{name}: {len(lb)} completed long balls, matchday 1",
+                       dek="Reception locations, own goal on the left, attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_long_balls_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 34-35. Shot assists map -- one page per team
+# ---------------------------------------------------------------------------
+
+def shot_assists_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    ax = fig.add_axes([0.05, 0.10, 0.90, 0.62])
+    pitch.draw(ax=ax)
+
+    assists = [a for a in snap.assists if a["contestantId"] == snap.team_id]
+    for a in assists:
+        marker_c = GOOD_C if a["is_goal"] else color
+        pitch.arrows(a["x"], a["y"], a["end_x"], a["end_y"], ax=ax, color=marker_c,
+                    alpha=0.85, width=2.0, headwidth=6, headlength=6, zorder=4)
+        pitch.scatter(a["shot_x"], a["shot_y"], ax=ax, s=60 + a["shot_xg"] * 500,
+                     color=marker_c, edgecolors=palette["surface"], linewidth=0.8, zorder=5)
+
+    legend_elems = [Line2D([0], [0], color=GOOD_C, lw=2.2, label="Assist -> goal"),
+                    Line2D([0], [0], color=color, lw=2.2, label="Assist -> other shot")]
+    fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 0.05), fontsize=10.5, labelcolor=palette["ink_secondary"])
+
+    components.header(fig, kicker="Chance Creation",
+                       title=f"{name}: {len(assists)} shot assists, matchday 1",
+                       dek="Own goal on the left, attacking right  ·  a shot with no intervening teammate pass "
+                           "gets no assist credited",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_shot_assists_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 36-37. Key passes leaderboard -- one page per team
+# ---------------------------------------------------------------------------
+
+def key_passes_leaderboard_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.20, 0.16, 0.72, 0.58])
+
+    by_player = {}
+    for a in snap.assists:
+        if a["contestantId"] != snap.team_id:
+            continue
+        by_player.setdefault(a["assister"], {"n": 0, "xg": 0.0})
+        by_player[a["assister"]]["n"] += 1
+        by_player[a["assister"]]["xg"] += a["shot_xg"]
+
+    top = sorted(by_player.items(), key=lambda kv: -kv[1]["xg"])[:10][::-1]
+    ypos = np.arange(len(top))
+    vals = [d["xg"] for _, d in top]
+    ax.barh(ypos, vals, color=color)
+    ax.set_yticks(ypos)
+    ax.set_yticklabels([f"{pl} ({d['n']})" for pl, d in top], fontsize=10.5)
+    for y, (pl, d) in zip(ypos, top):
+        ax.text(d["xg"] + max(vals, default=1) * 0.015, y, f"{d['xg']:.2f} xG", va="center", fontsize=9,
+                color=palette["ink_secondary"])
+    ax.set_xlabel("xG of shots assisted")
+
+    components.header(fig, kicker="Chance Creation",
+                       title=f"{name}: who created the most dangerous chances, matchday 1",
+                       dek="Sum of xG on shots each player assisted  ·  count in brackets = shot assists",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_key_passes_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 38-39. xT flow -- one page per team's own matchday-1 fixture
+# ---------------------------------------------------------------------------
+
+def xt_flow_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.08, 0.16, 0.78, 0.60])
+
+    def series(rows):
+        team_passes = sorted([p for p in rows if p["completed"]], key=lambda p: p["minute"])
+        mins, cum, total = [0.0], [0.0], 0.0
+        for p in team_passes:
+            mins.append(p["minute"]); cum.append(total)
+            total += max(0.0, p["xt_added"])
+            mins.append(p["minute"]); cum.append(total)
+        mins.append(96); cum.append(total)
+        return mins, cum
+
+    own_passes = snap.own(snap.passes)
+    opp_passes = snap.against(snap.passes)
+    for rows, color_, label in ((own_passes, color, name), (opp_passes, palette["ink_muted"], snap.opponent_name)):
+        mins, cum = series(rows)
+        ax.plot(mins, cum, color=color_, linewidth=2.4, zorder=4)
+        ax.fill_between(mins, cum, step=None, color=color_, alpha=0.10, zorder=1)
+        ax.annotate(f"{label}\n{cum[-1]:.2f} xT", xy=(1, cum[-1]), xycoords=("axes fraction", "data"),
+                    xytext=(10, 0), textcoords="offset points", color=color_, fontsize=10,
+                    fontweight="bold", va="center", ha="left", annotation_clip=False)
+
+    ax.axvline(45, color=palette["axis"], linewidth=0.8, linestyle=":")
+    ax.set_xlim(0, 100)
+    ax.set_xlabel("Minute")
+    ax.set_ylabel("Cumulative xT added (completed passes)")
+
+    own_xt = sum(max(0.0, p["xt_added"]) for p in own_passes if p["completed"])
+    opp_xt = sum(max(0.0, p["xt_added"]) for p in opp_passes if p["completed"])
+    verb = "out-threatened" if own_xt > opp_xt else "were out-threatened by"
+    components.header(fig, kicker="xT Flow",
+                       title=f"{name} {verb} {snap.opponent_name} at matchday 1",
+                       dek="Cumulative expected threat (xT) added by completed passes  ·  own xT proxy model "
+                           "(distance+angle geometry, not a possession-value model -- see match_data.py)",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_xt_flow_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 40-41. xT leaderboard -- one page per team
+# ---------------------------------------------------------------------------
+
+def xt_leaderboard_team_page(snap, color, name, page_num, slug):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.20, 0.16, 0.72, 0.58])
+
+    by_player = {}
+    for p in snap.own(snap.passes):
+        if not p["completed"]:
+            continue
+        by_player[p["player"]] = by_player.get(p["player"], 0) + max(0.0, p["xt_added"])
+    top = sorted(by_player.items(), key=lambda kv: -kv[1])[:10][::-1]
+    ypos = np.arange(len(top))
+    vals = [v for _, v in top]
+    ax.barh(ypos, vals, color=color)
+    ax.set_yticks(ypos)
+    ax.set_yticklabels([p for p, _ in top], fontsize=10.5, color=palette["ink_primary"])
+    for y, v in zip(ypos, vals):
+        ax.text(v + max(vals, default=1) * 0.02, y, f"{v:.2f}", va="center", fontsize=9, color=palette["ink_secondary"])
+    ax.set_xlabel("xT added")
+
+    components.header(fig, kicker="Threat Creation",
+                       title=f"{name}: who generated the most expected threat, matchday 1",
+                       dek="Sum of positive xT added by completed passes, own xT proxy model",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, f"{page_num}_xt_leaderboard_{slug}.png")
+
+
+# ---------------------------------------------------------------------------
+# 42. Shot zones heatmap (both teams' own matches)
+# ---------------------------------------------------------------------------
+
+def shot_zones_heatmap(boh, hkr):
+    fig, palette = new_fig()
+    pitch = new_pitch(palette)
+    ax1 = fig.add_axes([0.02, 0.10, 0.47, 0.62])
+    ax2 = fig.add_axes([0.51, 0.10, 0.47, 0.62])
+    pitch.draw(ax=ax1)
+    pitch.draw(ax=ax2)
+
+    for ax, snap, color, name in ((ax1, boh, BOH_C, md.FIXTURE_HOME_NAME), (ax2, hkr, HKR_C, md.FIXTURE_AWAY_NAME)):
+        shots = snap.own(snap.shots)
+        xs = [s["x"] for s in shots]; ys = [s["y"] for s in shots]
+        cmap = "Greens" if color == BOH_C else "Blues"
+        if xs:
+            stats = pitch.bin_statistic(xs, ys, statistic="count", bins=(6, 4))
+            pitch.heatmap(stats, ax=ax, cmap=cmap, edgecolors=palette["surface"], alpha=0.9, zorder=1)
+        ax.set_title(f"{name} ({len(shots)} shots)", color=color, fontsize=12, fontweight="bold", family="sans-serif")
+
+    components.header(fig, kicker="Shot Origin",
+                       title="Where each side's shots came from, matchday 1",
+                       dek="Shot count density by pitch zone, each team's own fixture, attacking right",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "42_shot_zones_heatmap.png")
+
+
+# ---------------------------------------------------------------------------
+# 46-47. League-wide bonus pages (14-team matchday-1 sample)
+# ---------------------------------------------------------------------------
+
+def pace_vs_volume_ranking(league):
+    """The user's requested "m/s vs amount of passes" chart -- pass tempo
+    vs total pass volume, all 14 teams with a matchday-1 feed. Both fixture
+    sides highlighted."""
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.10, 0.16, 0.82, 0.58])
+
+    for tid, tm in league.teams.items():
+        x, y = tm.pass_volume(), tm.pass_tempo_mps()
+        is_boh = tid == md.BOHEMIANS_ID
+        is_hkr = tid == md.HRADEC_ID
+        color = BOH_C if is_boh else (HKR_C if is_hkr else LEAGUE_MUTED)
+        ax.scatter([x], [y], s=170 if (is_boh or is_hkr) else 60, color=color,
+                   edgecolors=palette["ink_primary"] if (is_boh or is_hkr) else "none", linewidth=1.6,
+                   zorder=5 if (is_boh or is_hkr) else 3)
+        if is_hkr:
+            offset = (12, -16)  # Jablonec sits just above Hradec's point -- label below clears it
+        elif is_boh:
+            offset = (11, 9)
+        else:
+            offset = (7, 5)
+        ax.annotate(tm.team_name, xy=(x, y), xytext=offset, textcoords="offset points",
+                    fontsize=9.5 if (is_boh or is_hkr) else 8,
+                    color=palette["ink_primary"] if (is_boh or is_hkr) else palette["ink_muted"],
+                    fontweight="bold" if (is_boh or is_hkr) else "normal")
+
+    ax.set_xlabel("Passes completed, matchday 1")
+    ax.set_ylabel("Pass tempo (m/s)")
+
+    components.header(fig, kicker="Tempo",
+                       title="Pace of play vs pass volume, matchday 1",
+                       dek="Pass tempo = pass distance ÷ time to the next event (gaps >8s excluded)  ·  "
+                           "14-team matchday-1 sample, not a season  ·  both fixture sides highlighted",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "46_pace_vs_volume.png")
+
+
+def verticality_ranking(league):
+    fig, palette = new_fig()
+    ax = fig.add_axes([0.22, 0.12, 0.70, 0.62])
+    ranking = league.ranking(lambda tm: tm.verticality())
+    ypos = np.arange(len(ranking))[::-1]
+
+    def color_for(tid):
+        if tid == md.BOHEMIANS_ID:
+            return BOH_C
+        if tid == md.HRADEC_ID:
+            return HKR_C
+        return palette["axis"]
+
+    colors = [color_for(tid) for tid, _ in ranking]
+    ax.barh(ypos, [v for _, v in ranking], color=colors)
+    ax.set_yticks(ypos)
+    ax.set_yticklabels([f"#{i+1}  {md.ALL_TEAM_NAMES[tid]}" for i, (tid, _) in enumerate(ranking)], fontsize=10)
+    for y, (tid, v) in zip(ypos, ranking):
+        weight = "bold" if tid in (md.BOHEMIANS_ID, md.HRADEC_ID) else "normal"
+        ax.text(v + max(v2 for _, v2 in ranking) * 0.015, y, f"{v:.1f}", va="center", fontsize=9.5,
+                color=palette["ink_primary"], fontweight=weight)
+    avg = sum(v for _, v in ranking) / len(ranking)
+    ax.axvline(avg, color=palette["ink_muted"], linewidth=1.0, linestyle="--")
+    ax.text(avg, len(ranking) - 0.3, " sample avg", fontsize=8, color=palette["ink_muted"], va="bottom")
+
+    components.header(fig, kicker="League Ranking",
+                       title="Team verticality, matchday 1",
+                       dek="Avg forward distance (m) per completed forward pass  ·  14-team matchday-1 sample",
+                       palette=palette)
+    components.footer(fig, source=md.SOURCE, palette=palette)
+    save(fig, "47_verticality_ranking.png")
 
 
 def main():
     boh = md.TeamSnapshot(md.BOHEMIANS_ID)
     hkr = md.TeamSnapshot(md.HRADEC_ID)
     sim = md.simulate_scorelines(boh.own(boh.shots), hkr.own(hkr.shots))
+    league = md.LeagueMW1()
 
     cover()
     fixture_context(boh, hkr)
     shot_maps_mw1(boh, hkr)
     xg_snapshot(boh, hkr)
-    pass_network_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "05", "bohemians")
-    pass_network_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "06", "hradec")
-    touch_heatmap_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "07", "bohemians", "Greens")
-    touch_heatmap_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "08", "hradec", "Blues")
+    xg_flow_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "05", "bohemians")
+    xg_flow_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "06", "hradec")
+    shot_quality_table_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "07", "bohemians")
+    shot_quality_table_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "08", "hradec")
+    goal_buildups_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "09", "bohemians")
+    goal_buildups_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "10", "hradec")
+    pass_network_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "11", "bohemians")
+    pass_network_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "12", "hradec")
+    progressive_passes_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "13", "bohemians")
+    progressive_passes_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "14", "hradec")
+    passing_directness_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "15", "bohemians")
+    passing_directness_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "16", "hradec")
+    touch_heatmap_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "17", "bohemians", "Greens")
+    touch_heatmap_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "18", "hradec", "Blues")
     possession_thirds(boh, hkr)
     progression_bars(boh, hkr)
+    field_tilt_over_time_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "21", "bohemians")
+    field_tilt_over_time_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "22", "hradec")
     ppda_pressing(boh, hkr)
     defensive_actions(boh, hkr)
     duels_discipline(boh, hkr)
-    key_players_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "14", "bohemians")
-    key_players_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "15", "hradec")
+    recoveries_by_third(boh, hkr)
+    turnovers_dangerous(boh, hkr)
+    crossing_map_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "28", "bohemians")
+    crossing_map_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "29", "hradec")
+    zone14_halfspace_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "30", "bohemians")
+    zone14_halfspace_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "31", "hradec")
+    long_balls_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "32", "bohemians")
+    long_balls_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "33", "hradec")
+    shot_assists_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "34", "bohemians")
+    shot_assists_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "35", "hradec")
+    key_passes_leaderboard_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "36", "bohemians")
+    key_passes_leaderboard_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "37", "hradec")
+    xt_flow_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "38", "bohemians")
+    xt_flow_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "39", "hradec")
+    xt_leaderboard_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "40", "bohemians")
+    xt_leaderboard_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "41", "hradec")
+    shot_zones_heatmap(boh, hkr)
+    key_players_team_page(boh, BOH_C, md.FIXTURE_HOME_NAME, "43", "bohemians")
+    key_players_team_page(hkr, HKR_C, md.FIXTURE_AWAY_NAME, "44", "hradec")
     team_radar(boh, hkr)
+    pace_vs_volume_ranking(league)
+    verticality_ranking(league)
     keys_to_the_game(boh, hkr)
     win_probability(boh, hkr, sim)
     report_card(boh, hkr, sim)
