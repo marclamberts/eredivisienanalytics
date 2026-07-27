@@ -106,7 +106,7 @@ def cover(scores):
     fig.text(0.5, 0.215, f"{md.COMPETITION}  ·  {md.VENUE}", fontsize=12,
               color=palette["ink_secondary"], family="sans-serif", ha="center", va="center")
 
-    fig.text(0.5, 0.13, f"{components.MARK} POST-MATCH ANALYSIS  ·  30 PAGES", fontsize=13, fontweight="bold",
+    fig.text(0.5, 0.13, f"{components.MARK} POST-MATCH ANALYSIS  ·  50 PAGES", fontsize=13, fontweight="bold",
               color=palette["accent"], family="sans-serif", ha="center", va="center")
 
     components.brand_mark(fig, palette=palette, right=0.94, y=0.93)
