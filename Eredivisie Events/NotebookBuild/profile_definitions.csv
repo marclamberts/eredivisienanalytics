@@ -22,7 +22,7 @@ Centre-Back,Centre Back,4,Possession wins,possession_wins_per90,higher,actions/9
 Centre-Back,Centre Back,5,Pass completion,pass_completion_pct,higher,%,450,17,Overall pass completion.
 Centre-Back,Centre Back,6,Progressive passing,progressive_passes_per90,higher,passes/90,450,17,Progressive passes per 90.
 Centre-Back,Centre Back,7,Pass xT,xt_from_all_passes_per90,higher,xT/90,450,17,Expected threat added by all passes per 90.
-Centre-Back,Centre Back,8,Error control,errors_per_100_def_actions,lower,errors/100,450,17,Errors per 100 defensive actions; lower is better.
+Centre-Back,Centre Back,8,Error control,errors_per_100_defensive_actions,lower,errors/100,450,17,Errors per 100 defensive actions; lower is better.
 Centre-Forward,Centre Forward,1,Non-penalty goals,non_penalty_goals_per90,higher,goals/90,450,55,Non-penalty goals per 90.
 Centre-Forward,Centre Forward,2,Non-penalty xG,non_penalty_xg_per90,higher,xG/90,450,55,Non-penalty expected goals per 90.
 Centre-Forward,Centre Forward,3,Shooting,shots_per90,higher,shots/90,450,55,Shots per 90.
