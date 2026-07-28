@@ -94,6 +94,66 @@
       "kind": "team"
     },
     {
+      "name": "Player Situational Splits",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_situational_splits.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Team Situational Splits",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/team_situational_splits.csv",
+      "kind": "team"
+    },
+    {
+      "name": "Player Box Entries",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_box_entries.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Team Box Entries",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/team_box_entries.csv",
+      "kind": "team"
+    },
+    {
+      "name": "Player Crosses",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_crosses.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Team Crosses",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/team_crosses.csv",
+      "kind": "team"
+    },
+    {
+      "name": "Player Disruption",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_disruption.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Team Disruption",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/team_disruption.csv",
+      "kind": "team"
+    },
+    {
+      "name": "Player Goal Kicks",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_goal_kicks.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Team Goal Kicks",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/team_goal_kicks.csv",
+      "kind": "team"
+    },
+    {
+      "name": "Player Interceptions",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/player_interceptions.csv",
+      "kind": "player"
+    },
+    {
+      "name": "Team Interceptions",
+      "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/team_interceptions.csv",
+      "kind": "team"
+    },
+    {
       "name": "Metric Dictionary",
       "csv": "/Users/marclamberts/Event data/data/competitions/Eredivisie 2025-2026/Aggregated/NotebookBuild/metric_dictionary.csv",
       "kind": "dictionary"
