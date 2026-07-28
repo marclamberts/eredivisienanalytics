@@ -20,7 +20,9 @@ OUT_DIR = Path(__file__).resolve().parent
 def load_eredivisie_ratings() -> pd.DataFrame:
     df = pd.read_excel(DATA_PATH)
     ered = df[df["league"] == "Eredivisie"].copy()
-    ered = ered.sort_values("rating", ascending=True).reset_index(drop=True)
+    # Descending by rank (worst first) so the best (lowest) rank lands last,
+    # i.e. at the top of the horizontal bar chart.
+    ered = ered.sort_values("rank", ascending=False).reset_index(drop=True)
     return ered
 
 
@@ -31,28 +33,33 @@ def build_chart(df: pd.DataFrame, mode: str) -> None:
     ax = fig.add_axes([0.30, 0.10, 0.60, 0.66])
 
     leader = df["team"].iloc[-1]
-    bars = ax.barh(df["team"], df["rating"], height=0.62)
-    accent_index = len(df) - 1  # leader sits last after ascending sort (top of chart)
+    worst_rank = df["rank"].max()
+    # Invert rank into bar length so the best (lowest-numbered) global rank
+    # reads as the longest, most prominent bar; the real rank is annotated.
+    bar_values = worst_rank - df["rank"] + 10
+    bars = ax.barh(df["team"], bar_values, height=0.62)
+    accent_index = len(df) - 1  # leader sits last after sort (top of chart)
     components.highlight_bars(bars, accent_index=accent_index, palette=palette)
 
-    ax.set_xlim(70, 92)
-    ax.set_xlabel("Opta power rating (0-100 global scale)")
+    ax.set_xlim(0, bar_values.max() * 1.12)
+    ax.set_xticks([])
+    ax.set_xlabel("Global club rank (Opta, all leagues worldwide) — lower is better")
     ax.set_ylabel("")
-    ax.grid(axis="x", visible=True)
+    ax.grid(axis="x", visible=False)
     ax.grid(axis="y", visible=False)
     ax.tick_params(axis="y", labelsize=10)
 
-    for i, (team, rating) in enumerate(zip(df["team"], df["rating"])):
+    for i, (team, rank, value) in enumerate(zip(df["team"], df["rank"], bar_values)):
         color = palette["accent"] if i == accent_index else palette["ink_secondary"]
         weight = "bold" if i == accent_index else "normal"
-        ax.text(rating + 0.25, i, f"{rating:.1f}", va="center", ha="left",
+        ax.text(value + bar_values.max() * 0.012, i, f"#{rank:,}", va="center", ha="left",
                  fontsize=9.5, color=color, fontweight=weight)
 
     components.header(
         fig,
         kicker="Power Rating",
-        title=f"{leader} stands alone atop the Eredivisie",
-        dek="Opta club power ratings (0-100 global scale), current Eredivisie clubs",
+        title=f"{leader} is the only Eredivisie club inside the world's top 50",
+        dek="Opta global club power ranking (#1 = best of ~13,800 rated clubs), current Eredivisie clubs",
         palette=palette,
     )
     components.footer(fig, source="Opta club power rankings", palette=palette)
