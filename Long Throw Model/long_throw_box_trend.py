@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from long_throw_box_shot_trend import season_stats, SEASONS, SEASON_LABELS  # noqa: E402
 
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
-SOURCE = "Opta event data, Eredivisie 2022/23-2025/26 · long throw-ins (qualifier 107, >=25m) · box = x>=83, 21.1<=y<=78.9"
+SOURCE = "Opta event data, Eredivisie 2022/23-2025/26 · long throw-ins (qualifier 107, >=25m)"
 
 
 def make_chart(stats, mode, out_path):
@@ -32,10 +32,10 @@ def make_chart(stats, mode, out_path):
     box_pct = [s[1] for s in stats]
     box_delta = box_pct[-1] - box_pct[0]
 
-    fig = plt.figure(figsize=(14.5, 8.2))
+    fig = plt.figure(figsize=(11.5, 8.2))
 
     # --- main panel: 4-season trend line -------------------------------
-    ax = fig.add_axes([0.065, 0.14, 0.58, 0.56])
+    ax = fig.add_axes([0.09, 0.14, 0.84, 0.56])
     xw = np.arange(len(SEASONS))
     ax.plot(xw, box_pct, marker="o", markersize=7, color=palette["accent"], linewidth=2.6, zorder=4)
 
@@ -53,24 +53,6 @@ def make_chart(stats, mode, out_path):
         spine.set_visible(False)
     ax.set_title("Long throw-ins landing in the penalty area, by season",
                 fontsize=11.5, color=palette["ink_secondary"], loc="left", pad=10)
-
-    # --- side panel: the 2022/23 -> 2025/26 difference -----------------
-    ax2 = fig.add_axes([0.705, 0.30, 0.245, 0.24])
-    yb = np.array([0])
-    ax2.barh(yb, [box_delta], height=0.42, color=palette["accent"], zorder=3)
-    ax2.axvline(0, color=palette["axis"], linewidth=1.0, zorder=2)
-    ax2.text(box_delta + (0.05 if box_delta >= 0 else -0.05), 0, f"{box_delta:+.1f}pp", va="center",
-            ha="left" if box_delta >= 0 else "right", fontsize=10.5, fontweight="bold",
-            color=palette["ink_primary"])
-    ax2.set_yticks(yb)
-    ax2.set_yticklabels(["Reaches\nthe box"], fontsize=10)
-    lim = max(abs(box_delta) * 2.6, 1.0)
-    ax2.set_xlim(-lim, lim)
-    ax2.tick_params(axis="x", colors=palette["ink_muted"], labelsize=9)
-    ax2.set_xlabel("Change, 2022/23 -> 2025/26 (pp)", fontsize=9.5, color=palette["ink_secondary"])
-    for spine in ax2.spines.values():
-        spine.set_visible(False)
-    ax2.set_title("Net change", fontsize=11.5, color=palette["ink_secondary"], loc="left", pad=10)
 
     components.header(
         fig, kicker="Long throw-ins",
