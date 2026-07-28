@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from long_throw_box_shot_trend import season_stats, SEASONS, SEASON_LABELS  # noqa: E402
 
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
-SOURCE = "Opta event data, Eredivisie 2022/23-2025/26 · long throw-ins (qualifier 107, >=25m)"
+SOURCE = "Opta/StatsPerform - Eredivisie 2023-2026 Long Throw data"
 
 
 def make_chart(stats, mode, out_path):

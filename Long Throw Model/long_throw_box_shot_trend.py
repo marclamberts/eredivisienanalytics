@@ -41,8 +41,7 @@ OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 EVENTS_DIR = os.path.join(os.path.dirname(OUT_DIR), "Eredivisie Events")
 SEASONS = ["2022-2023", "2023-2024", "2024-2025", "2025-2026"]
 SEASON_LABELS = ["2022/23", "2023/24", "2024/25", "2025/26"]
-SOURCE = ("Opta event data, Eredivisie 2022/23-2025/26 · long throw-ins (qualifier 107, >=25m) · "
-          "box = x>=83, 21.1<=y<=78.9 · shot window = 5s")
+SOURCE = "Opta/StatsPerform - Eredivisie 2023-2026 Long Throw data"
 
 THROW_IN_QID = 107
 PASS_END_X_QID, PASS_END_Y_QID = 140, 141
