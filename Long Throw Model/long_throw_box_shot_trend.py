@@ -115,9 +115,7 @@ def season_stats(season):
 
 def make_chart(stats, mode, out_path):
     palette, _ = style.apply(mode)
-    box_pct = [s[1] for s in stats]
     combo_pct = [s[2] for s in stats]
-    box_delta = box_pct[-1] - box_pct[0]
     combo_delta = combo_pct[-1] - combo_pct[0]
 
     fig = plt.figure(figsize=(14.5, 8.2))
@@ -125,46 +123,35 @@ def make_chart(stats, mode, out_path):
     # --- main panel: 4-season trend line -------------------------------
     ax = fig.add_axes([0.065, 0.14, 0.58, 0.56])
     xw = np.arange(len(SEASONS))
-    ax.plot(xw, box_pct, marker="o", markersize=7, color=palette["axis"], linewidth=2.2, zorder=3)
     ax.plot(xw, combo_pct, marker="o", markersize=7, color=palette["accent"], linewidth=2.6, zorder=4)
 
-    for i, v in enumerate(box_pct):
-        ax.text(i, v + 0.45, f"{v:.1f}%", ha="center", fontsize=9.5, color=palette["ink_secondary"])
     for i, v in enumerate(combo_pct):
-        ax.text(i, v - 0.75, f"{v:.1f}%", ha="center", fontsize=9.5, color=palette["accent"], fontweight="bold")
-
-    components.label_endpoint(ax, xw[-1], box_pct[-1], "  Reaches the box", palette["ink_secondary"], palette=palette)
-    components.label_endpoint(ax, xw[-1], combo_pct[-1], "  ...and a shot within 5s", palette["accent"], palette=palette)
+        ax.text(i, v + 0.12, f"{v:.1f}%", ha="center", fontsize=9.5, color=palette["accent"], fontweight="bold")
 
     ax.set_xticks(xw)
     ax.set_xticklabels(SEASON_LABELS, fontsize=10.5)
     ax.set_ylabel("Share of long throw-ins (%)", fontsize=10.5, color=palette["ink_secondary"])
     ax.set_xlim(-0.3, len(SEASONS) - 0.1)
-    ax.set_ylim(0, max(box_pct) + 4)
+    ax.set_ylim(0, max(combo_pct) + 1.2)
     ax.tick_params(colors=palette["ink_muted"])
     ax.grid(True, axis="y", color=palette["grid"], linewidth=0.7, zorder=0)
     for spine in ax.spines.values():
         spine.set_visible(False)
-    ax.set_title("Long throw-in outcomes by season", fontsize=11.5, color=palette["ink_secondary"],
-                loc="left", pad=10)
+    ax.set_title("Long throw-ins reaching the box with a shot within 5s, by season",
+                fontsize=11.5, color=palette["ink_secondary"], loc="left", pad=10)
 
     # --- side panel: the 2022/23 -> 2025/26 difference -----------------
-    ax2 = fig.add_axes([0.705, 0.20, 0.245, 0.44])
-    cats = ["Reaches\nthe box", "...+ shot\nwithin 5s"]
-    deltas = [box_delta, combo_delta]
-    bar_colors = [palette["ink_secondary"], palette["accent"]]
-    yb = np.arange(len(cats))
-    ax2.barh(yb, deltas, height=0.42, color=bar_colors, zorder=3)
+    ax2 = fig.add_axes([0.705, 0.30, 0.245, 0.24])
+    yb = np.array([0])
+    ax2.barh(yb, [combo_delta], height=0.42, color=palette["accent"], zorder=3)
     ax2.axvline(0, color=palette["axis"], linewidth=1.0, zorder=2)
-    for i, d in enumerate(deltas):
-        ax2.text(d + (0.03 if d >= 0 else -0.03), i, f"{d:+.1f}pp", va="center",
-                 ha="left" if d >= 0 else "right", fontsize=10.5, fontweight="bold",
-                 color=palette["ink_primary"])
+    ax2.text(combo_delta + (0.03 if combo_delta >= 0 else -0.03), 0, f"{combo_delta:+.1f}pp", va="center",
+            ha="left" if combo_delta >= 0 else "right", fontsize=10.5, fontweight="bold",
+            color=palette["ink_primary"])
     ax2.set_yticks(yb)
-    ax2.set_yticklabels(cats, fontsize=10)
-    lim = max(abs(d) for d in deltas) * 2.6
+    ax2.set_yticklabels(["...+ shot\nwithin 5s"], fontsize=10)
+    lim = max(abs(combo_delta) * 2.6, 0.5)
     ax2.set_xlim(-lim, lim)
-    ax2.invert_yaxis()
     ax2.tick_params(axis="x", colors=palette["ink_muted"], labelsize=9)
     ax2.set_xlabel("Change, 2022/23 -> 2025/26 (pp)", fontsize=9.5, color=palette["ink_secondary"])
     for spine in ax2.spines.values():
@@ -174,8 +161,8 @@ def make_chart(stats, mode, out_path):
     components.header(
         fig, kicker="Long throw-ins",
         title="Barely 2% of long throw-ins turn into a shot within 5 seconds",
-        dek=f"Eredivisie 2022/23-2025/26  ·  reaches the box: {box_pct[0]:.1f}% -> {box_pct[-1]:.1f}%  ·  "
-            f"box + shot within 5s: {combo_pct[0]:.1f}% -> {combo_pct[-1]:.1f}%  ({combo_delta:+.1f}pp)",
+        dek=f"Eredivisie 2022/23-2025/26  ·  reaches the box AND a shot follows within 5s: "
+            f"{combo_pct[0]:.1f}% -> {combo_pct[-1]:.1f}%  ({combo_delta:+.1f}pp)",
         palette=palette)
     components.footer(fig, source=SOURCE, palette=palette)
 
