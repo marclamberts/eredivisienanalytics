@@ -1,8 +1,8 @@
 """
 Second Balls After Open-Play Crosses -- Eredivisie 2025/26
 ================================================================
-Where does the loose ball actually land after a cross is headed or
-cleared away? Same "second contested action" method as
+When this team crosses (attacking), do they win the second ball?
+Same "second contested action" method as
 PSV Season Report/Scripts/set_piece_second_balls.py (built for a
 team's own corners, free kicks and long throws), applied here to a
 team's own OPEN-PLAY crosses -- the same population the cross model
@@ -23,11 +23,25 @@ window) for a contested action (aerial duel, tackle, interception,
 clearance, ball recovery). The SECOND such contested action is "the
 second ball" -- the first is usually just the target player's initial
 header/contact -- allowing at most one clean pass in between (e.g. a
-knockdown headed on to a teammate). Plotted wherever that second
-contest happened, with x/y normalized per team per period to
-"distance from this team's own goal" (own goal on the left) so every
-cross reads the same regardless of which end they defended that half
--- same convention as Goal Kick Model/goalkick_pitch_map.py.
+knockdown headed on to a teammate). Restricted to second balls that
+land in the attacking half (x >= 50): a contest that rebounds back
+past halfway is a broken-down transition, not really the crossing
+phase anymore.
+
+No home/away or half-time flip is applied. Checked against this feed's
+own shot locations (both teams, every period, several matches): raw x
+already sits high (75-97) whenever a team shoots, in BOTH periods --
+each event's x/y is relative to the ACTING team's own attacking
+direction (0 = their own goal, 100 = the goal they attack), not a
+shared physical pitch frame. A period-based direction flip (the
+convention used by Goal Kick Model/goalkick_pitch_map.py, built for a
+differently-behaved feed) would silently scatter events onto the
+wrong end of the pitch here. The same per-team-relative convention
+also means an opposing player's event needs converting into our frame
+via (100-x, 100-y) before use -- confirmed exactly against aerial-duel
+pairs, which this feed logs twice (once per player, cross-referenced
+by qualifier 233): the two copies' coordinates are exact (100-x,
+100-y) mirrors of each other. See dedupe_aerial_duels/to_own_frame.
 
 In Marc Lamberts' Meridian house style (housestyle/ package at the
 repo root).
@@ -43,7 +57,7 @@ import sys
 
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
-from mplsoccer import Pitch
+from mplsoccer import VerticalPitch
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from housestyle import style, components  # noqa: E402
@@ -59,8 +73,7 @@ CONTESTED_TYPES = {44, 7, 8, 12, 49}  # Aerial, Tackle, Interception, Clearance,
 WINDOW_EVENTS = 5
 WINDOW_MIN = 12 / 60
 MAX_CLEAN_PASSES_BETWEEN = 1
-X_SCALE, Y_SCALE = 1.05, 0.68
-GOAL_X = 105.0
+ATTACKING_HALF_X = 50.0
 
 PREFIX_RE = re.compile(r"^(CSD|CD|CS|SD)\s+")
 
@@ -71,10 +84,6 @@ def clean_name(name):
 
 def qmap(e):
     return {q["qualifierId"]: q.get("value") for q in e.get("qualifier", []) or []}
-
-
-def to_m(x, y):
-    return x * X_SCALE, y * Y_SCALE
 
 
 def minute_value(e):
@@ -101,32 +110,6 @@ def build_team_map(files):
     return team_to_cid
 
 
-def compute_attack_directions(files):
-    """(match_file, contestant_id, period_id) -> 1 if the team attacks
-    toward higher x that period, else -1. Same average-pass-position
-    heuristic as Disruption/league_disruption_visuals.py, recomputed
-    here so this script isn't tied to that module's own DATA_DIR."""
-    directions = {}
-    for fn in files:
-        basename = os.path.basename(fn)
-        with open(fn) as f:
-            data = json.load(f)
-        sums = {}
-        for e in data["event"]:
-            if e.get("typeId") != T_PASS or e.get("x") is None:
-                continue
-            if e["x"] == 0 and e["y"] == 0:
-                continue
-            key = (e["contestantId"], e["periodId"])
-            s = sums.setdefault(key, [0.0, 0])
-            s[0] += e["x"]
-            s[1] += 1
-        for (cid, period), (total, n) in sums.items():
-            avg_x = total / n if n else 50
-            directions[(basename, cid, period)] = 1 if avg_x < 50 else -1
-    return directions
-
-
 def is_open_play_cross(e):
     if e.get("typeId") != T_PASS:
         return False
@@ -136,17 +119,59 @@ def is_open_play_cross(e):
     return not (FREEKICK_QID in q or CORNER_QID in q or THROWIN_QID in q)
 
 
-def collect(files, cid, directions):
+def dedupe_aerial_duels(evs, cid):
+    """Aerial duels (typeId 44) are logged TWICE -- once per player, each in
+    that player's own team's coordinate frame, cross-referenced by
+    qualifier 233 (each copy's value is the other copy's eventId).
+    Confirmed on this feed: the pair's (x, y) are exact (100-x, 100-y)
+    mirrors of each other, and outcome is 1 for the winner's copy, 0 for
+    the loser's -- so left undeduped, a single real duel is scanned as two
+    separate "contested actions" back to back. Keep one merged copy per
+    duel, preferring the side belonging to `cid` (already in our frame)."""
+    by_event_id = {e.get("eventId"): e for e in evs if e.get("typeId") == 44}
+    drop = set()
+    for eid, e in by_event_id.items():
+        if eid in drop:
+            continue
+        try:
+            partner_id = int(qmap(e).get(233))
+        except (TypeError, ValueError):
+            continue
+        partner = by_event_id.get(partner_id)
+        if partner is None or partner.get("eventId") in drop:
+            continue
+        loser_id = partner.get("eventId") if e.get("contestantId") == cid else eid
+        drop.add(loser_id)
+    return [e for e in evs if not (e.get("typeId") == 44 and e.get("eventId") in drop)]
+
+
+def to_own_frame(e):
+    """x/y on this feed are relative to the ACTING player's own team's
+    attacking direction (0 = their own goal, 100 = the goal they attack),
+    not a shared physical pitch frame -- confirmed via the aerial-duel
+    pairs above and via clearance/shot locations across periods and
+    home/away sides. An event authored by the opposing team therefore
+    needs converting into our own frame via the same (100-x, 100-y)
+    mirror before it can be plotted or compared against our own events."""
+    x, y = float(e["x"]), float(e["y"])
+    if e.get("_own"):
+        return x, y
+    return 100.0 - x, 100.0 - y
+
+
+def collect(files, cid):
     events_out = []
     for fn in files:
-        basename = os.path.basename(fn)
         with open(fn) as f:
             data = json.load(f)
         evs = [e for e in data["event"] if e.get("periodId") in (1, 2)]
         evs.sort(key=lambda e: (e["periodId"], minute_value(e), e.get("eventId", 0)))
+        evs = dedupe_aerial_duels(evs, cid)
+        for e in evs:
+            e["_own"] = e.get("contestantId") == cid
 
         for i, e in enumerate(evs):
-            if e.get("contestantId") != cid or not is_open_play_cross(e):
+            if not e["_own"] or not is_open_play_cross(e):
                 continue
 
             t0 = minute_value(e)
@@ -171,12 +196,10 @@ def collect(files, cid, directions):
             if sb is None or sb.get("x") is None or sb.get("y") is None:
                 continue
 
-            period = e["periodId"]
-            direction = directions.get((basename, cid, period), 1)
-            x, y = to_m(float(sb["x"]), float(sb["y"]))
-            if direction == -1:
-                x, y = GOAL_X - x, 68.0 - y
-            won = sb.get("contestantId") == cid
+            x, y = to_own_frame(sb)
+            if x < ATTACKING_HALF_X:
+                continue
+            won = sb["_own"] and sb.get("outcome") == 1
             events_out.append({"x": x, "y": y, "won": won})
     return events_out
 
@@ -187,16 +210,16 @@ def make_plot(team_name, events, mode, out_path):
     n_won = sum(1 for e in events if e["won"])
     pct = n_won / n_total * 100 if n_total else 0
 
-    fig = plt.figure(figsize=(11, 8.6))
-    pitch = Pitch(pitch_type="uefa", pitch_color=palette["surface"], line_color=palette["axis"],
-                  linewidth=1.1, half=False, line_zorder=2)
-    ax = fig.add_axes([0.05, 0.10, 0.90, 0.62])
+    fig = plt.figure(figsize=(9.5, 11))
+    pitch = VerticalPitch(pitch_type="opta", pitch_color=palette["surface"], line_color=palette["axis"],
+                          linewidth=1.1, half=True, line_zorder=2)
+    ax = fig.add_axes([0.08, 0.10, 0.84, 0.65])
     pitch.draw(ax=ax)
 
     for e in sorted(events, key=lambda e: e["won"]):
         color = palette["accent"] if e["won"] else palette["axis"]
         alpha = 0.9 if e["won"] else 0.45
-        pitch.scatter(e["x"], e["y"], ax=ax, s=90, color=color,
+        pitch.scatter(e["x"], e["y"], ax=ax, s=100, color=color,
                      edgecolors=palette["surface"], linewidths=1.2, alpha=alpha, zorder=3)
 
     legend_elems = [
@@ -205,14 +228,14 @@ def make_plot(team_name, events, mode, out_path):
         Line2D([0], [0], marker="o", color="none", markerfacecolor=palette["axis"], markersize=10,
               alpha=0.6, label="Second ball won by opposition"),
     ]
-    ax.legend(handles=legend_elems, loc="upper center", bbox_to_anchor=(0.5, -0.03), ncol=2,
+    ax.legend(handles=legend_elems, loc="upper center", bbox_to_anchor=(0.5, -0.03), ncol=1,
              frameon=False, fontsize=9.5, labelcolor=palette["ink_secondary"])
 
     components.header(
         fig, kicker="Crosses -- Second Balls",
         title=f"{clean_name(team_name)}: {n_won} of {n_total} second balls off open-play crosses ({pct:.0f}%)",
-        dek="Eredivisie 2025/26  ·  Season  ·  open-play crosses only  ·  "
-            "pitch runs own goal (left) to opponent goal (right)",
+        dek="Eredivisie 2025/26  ·  Season  ·  attacking half only  ·  "
+            "second contested action after the cross",
         palette=palette)
     components.footer(fig, source=SOURCE, palette=palette)
 
@@ -242,8 +265,7 @@ def main():
         raise SystemExit(f"Team '{team_name}' not found. Options: {sorted(team_to_cid)}")
     cid = team_to_cid[match]
 
-    directions = compute_attack_directions(files)
-    events = collect(files, cid, directions)
+    events = collect(files, cid)
     if not events:
         raise SystemExit(f"No identifiable second-ball contests found for '{match}'")
 
