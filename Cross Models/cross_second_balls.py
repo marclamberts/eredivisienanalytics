@@ -162,6 +162,7 @@ def to_own_frame(e):
 def collect(files, cid):
     events_out = []
     for fn in files:
+        basename = os.path.basename(fn)
         with open(fn) as f:
             data = json.load(f)
         evs = [e for e in data["event"] if e.get("periodId") in (1, 2)]
@@ -200,7 +201,7 @@ def collect(files, cid):
             if x < ATTACKING_HALF_X:
                 continue
             won = sb["_own"] and sb.get("outcome") == 1
-            events_out.append({"x": x, "y": y, "won": won})
+            events_out.append({"x": x, "y": y, "won": won, "basename": basename, "sb": sb})
     return events_out
 
 
