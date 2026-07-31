@@ -464,6 +464,37 @@ def build_shot_assists(events, directions, shots):
     return rows
 
 
+def simulate_scorelines(besiktas_shots, opponent_shots, n=20000, seed=42, cap=6):
+    """Monte Carlo simulation over the TIE's pooled shot-xG lists (both legs'
+    shots combined per side): each shot converts independently at its own
+    xG. Used retrospectively here (the tie is already played) to ask "how
+    likely was a scoreline like the actual 3-0 aggregate, given the
+    underlying chance quality" -- not a pre-match prediction."""
+    import random
+    rng = random.Random(seed)
+    bes_xgs = [s["xg"] for s in besiktas_shots]
+    opp_xgs = [s["xg"] for s in opponent_shots]
+
+    score_counts = {}
+    bes_goals, opp_goals = [], []
+    for _ in range(n):
+        h = sum(1 for xg in bes_xgs if rng.random() < xg)
+        a = sum(1 for xg in opp_xgs if rng.random() < xg)
+        bes_goals.append(h)
+        opp_goals.append(a)
+        key = (min(h, cap), min(a, cap))
+        score_counts[key] = score_counts.get(key, 0) + 1
+
+    bes_win = sum(1 for h, a in zip(bes_goals, opp_goals) if h > a) / n
+    draw = sum(1 for h, a in zip(bes_goals, opp_goals) if h == a) / n
+    opp_win = sum(1 for h, a in zip(bes_goals, opp_goals) if h < a) / n
+    return {
+        "score_counts": score_counts, "n": n, "cap": cap,
+        "besiktas_win": bes_win, "draw": draw, "opponent_win": opp_win,
+        "besiktas_goal_dist": bes_goals, "opponent_goal_dist": opp_goals,
+    }
+
+
 class Leg:
     """One played leg of the tie -- its own events, shots, passes etc, plus
     convenience filters keyed to Besiktas vs "the opponent" rather than
