@@ -4,21 +4,29 @@ pre-match preview (Chance liga, CZ 2026-2027, matchday 3, 2026-08-09).
 
 Unlike the post-match reports in this repo, there is no event feed for
 THIS fixture -- it hasn't been played yet. Instead this pulls each team's
-own matchday-1 event feed (Hradec's 2-1 win at home over FK Pardubice;
-Ostrava's 1-0 win away at FC Zlín) as the early-season form/style base,
-one file per team rather than one shared file for both. Same Opta MA3
-event feed conventions as the rest of this repo (see Disruption/build_
-disruption_model.py, and the post-match report's own match_data.py in
-the sibling "Hradec Kralove vs Pardubice" folder, which this file's
-geometry/xG/PPDA functions are carried over from unchanged). Structurally
-this file is the same template as the sibling "Ostrava vs Slavia Praha"
-and "Bohemians vs Hradec Kralove" pre-match previews, re-pointed at a
-different fixture -- the BOHEMIANS_ID/HRADEC_ID/TEPLICE_ID/PARDUBICE_ID
-constants below are left untouched (not renamed) because ALL_MATCHES
-further down still needs them correct as 4 of the 14 teams in the
-league-wide matchday-1 sample; HRADEC_ID doubles as this fixture's home
-team (it was already one of those 4), and OSTRAVA_ID (this fixture's away
-team) is likewise already correct from the sibling Slavia-fixture report.
+SEASON-TO-DATE totals -- every match they have actually played so far,
+pooled together, not a single matchday-1 snapshot -- as the early-season
+form/style base. As of today that is 2 matches each: Hradec drew 0-0 away
+at Bohemians 1905 after winning 2-1 at home over FK Pardubice; Ostrava
+lost 0-4 at home to Slavia Praha after winning 1-0 away at FC Zlín. Same
+Opta MA3 event feed conventions as the rest of this repo (see
+Disruption/build_disruption_model.py, and the post-match report's own
+match_data.py in the sibling "Hradec Kralove vs Pardubice" folder, which
+this file's geometry/xG/PPDA functions are carried over from unchanged).
+Structurally this file is the same template as the sibling "Ostrava vs
+Slavia Praha" and "Bohemians vs Hradec Kralove" pre-match previews,
+re-pointed at a different fixture -- the BOHEMIANS_ID/HRADEC_ID/
+TEPLICE_ID/PARDUBICE_ID constants below are left untouched (not renamed)
+because ALL_MATCHES further down still needs them correct as 4 of the 16
+teams in the league-wide season sample; HRADEC_ID doubles as this
+fixture's home team, and OSTRAVA_ID (this fixture's away team) is
+likewise already correct from the sibling Slavia-fixture report.
+ALL_MATCHES itself was expanded from 7 matchday-1-only files to all 16
+matchday-1 + matchday-2 files once matchday 2 finished, which is also
+where the previously-missing SK Artis Brno vs FK Mladá Boleslav game
+(this league has 16 teams, not 14 -- that 8th matchday-1 fixture simply
+hadn't been added to the repo yet when the earlier sibling reports were
+built) came in.
 
 Team IDs cross-checked two ways: (1) goal-scorer contestantId counts in
 the Hradec-Pardubice feed against that match's 2-1 final score, and the
@@ -44,6 +52,8 @@ PARDUBICE_ID = "4xbgquadoen1b303u4hi9nhg9"
 
 OSTRAVA_ID = "dfvvrv84skv23rsn1k6kt4slc"
 ZLIN_ID = "aj1nbeiatqrs6e47mnhjidn15"
+ARTIS_BRNO_ID = "6onh4wiqdb8r50qa6oyxlbafg"
+MLADA_BOLESLAV_ID = "2qui2adwsi022vu84b8gdw4z0"
 
 TEAM_NAMES = {
     HRADEC_ID: "FC Hradec Králové",
@@ -65,22 +75,7 @@ COMPETITION = "Chance Liga 2026/27, Matchday 3"
 VENUE = "FINEP Arena, Hradec Králové"
 MATCH_DATE = "2026-08-09"
 KICKOFF_LOCAL = "17:00"
-SOURCE = "Opta event data (each team's own matchday-1 fixture) + own xG model"
-
-# Each team's own matchday-1 fixture: (event file, that team's opponent id,
-# opponent name, venue, own final score as "W/D/L H-A")
-TEAM_MW1 = {
-    HRADEC_ID: dict(
-        path=os.path.join(EVENTS_DIR, "2026-07-26_FC Hradec Králové - FK Pardubice.json"),
-        opponent_id=PARDUBICE_ID, opponent_name="FK Pardubice", venue="FINEP Arena, Hradec Králové",
-        was_home=True, result="Won 2-1 at home",
-    ),
-    OSTRAVA_ID: dict(
-        path=os.path.join(EVENTS_DIR, "2026-07-25_FC Zlín - FC Baník Ostrava.json"),
-        opponent_id=ZLIN_ID, opponent_name="FC Zlín", venue="Stadion Letná, Zlín",
-        was_home=False, result="Won 1-0 away",
-    ),
-}
+SOURCE = "Opta event data (every match each team has played this season) + own xG model"
 
 X_SCALE, Y_SCALE = 1.05, 0.68     # Opta 0-100 units -> metres (105 x 68 pitch)
 GOAL_X = 105.0
@@ -150,7 +145,12 @@ def load_match(path):
 
 
 def team_name(cid):
-    return TEAM_NAMES.get(cid, cid)
+    # Falls back to ALL_TEAM_NAMES (all 16 teams, defined later in this module)
+    # so TeamSnapshot.team_name resolves correctly for any team in the league
+    # sample, not just this fixture's two sides in the small TEAM_NAMES dict.
+    if cid in TEAM_NAMES:
+        return TEAM_NAMES[cid]
+    return ALL_TEAM_NAMES.get(cid, cid)
 
 
 def team_short(cid):
@@ -351,11 +351,15 @@ def build_pressing_actions(events, directions):
     return rows
 
 
-def compute_ppda(passes, pressing_actions, contestant_id, opponent_id, lo=None, hi=None):
+def compute_ppda(passes, pressing_actions, contestant_id, lo=None, hi=None):
+    """Opponent = "not contestant_id" rather than a single fixed id, so this
+    still works when passes/pressing_actions are pooled across several
+    matches (each match only ever has two sides, so "not us" == "whichever
+    opponent we faced that game")."""
     def in_window(m):
         return (lo is None or m >= lo) and (hi is None or m < hi)
 
-    opp_passes = sum(1 for p in passes if p["contestantId"] == opponent_id
+    opp_passes = sum(1 for p in passes if p["contestantId"] != contestant_id
                       and in_window(p["minute"]) and p["x"] <= PPDA_ZONE_M)
     def_actions = sum(1 for d in pressing_actions if d["contestantId"] == contestant_id
                        and in_window(d["minute"]) and d["x"] >= (105.0 - PPDA_ZONE_M))
@@ -525,38 +529,82 @@ def build_shot_assists(events, directions, shots):
 
 
 class TeamSnapshot:
-    """Everything derived from one team's own matchday-1 fixture: its shots,
-    passes, defensive/pressing actions, touches, cards etc, indexable by
-    either that team's contestantId (its own numbers) or its MW1
-    opponent's (numbers conceded)."""
+    """Everything derived from ALL of a team's played matches so far this
+    season (season-to-date totals, not a single matchday snapshot): shots,
+    passes, defensive/pressing actions, touches, cards etc, pooled across
+    every match in ALL_TEAM_MATCHES[team_id] and indexable by either that
+    team's own contestantId (its own numbers) or "not that id" (numbers
+    conceded, whichever opponent was on the other side of each match).
+
+    Per-match info (opponent, venue, own result) is kept in
+    self.matches for anything that needs a per-match breakdown (e.g. a
+    match log), while every aggregate stat below is summed/pooled/averaged
+    across the full list."""
 
     def __init__(self, team_id):
-        info = TEAM_MW1[team_id]
+        records = ALL_TEAM_MATCHES[team_id]
         self.team_id = team_id
         self.team_name = team_name(team_id)
-        self.opponent_id = info["opponent_id"]
-        self.opponent_name = info["opponent_name"]
-        self.venue = info["venue"]
-        self.result = info["result"]
-        self.match_details, self.events = load_match(info["path"])
-        self.directions = compute_attack_directions(self.events)
-        self.shots = build_shots(self.events, self.directions)
-        self.passes = build_passes(self.events, self.directions)
-        self.defs = build_defensive_actions(self.events, self.directions)
-        self.pressing = build_pressing_actions(self.events, self.directions)
-        self.recoveries = build_recoveries(self.events, self.directions)
-        self.cards = build_cards(self.events)
-        self.touches = build_touches(self.events, self.directions)
-        self.duels = build_duels(self.events, self.directions)
-        self.subs = build_substitutions(self.events)
-        self.turnovers = build_turnovers(self.events, self.directions)
-        self.assists = build_shot_assists(self.events, self.directions, self.shots)
+        self.matches = []
+        self.shots, self.passes, self.defs, self.pressing = [], [], [], []
+        self.recoveries, self.cards, self.touches, self.duels = [], [], [], []
+        self.subs, self.turnovers, self.assists = [], [], []
+
+        for idx, m in enumerate(records):
+            is_home = m["home_id"] == team_id
+            opponent_id = m["away_id"] if is_home else m["home_id"]
+            opponent_name = m["away_name"] if is_home else m["home_name"]
+            match_details, events = load_match(m["path"])
+            directions = compute_attack_directions(events)
+            shots = build_shots(events, directions)
+            for s in shots:
+                s["match_idx"] = idx  # which entry in self.matches this shot's own build-up chain lives in
+
+            scores = match_details["scores"]["ft"]
+            own_score = scores["home"] if is_home else scores["away"]
+            opp_score = scores["away"] if is_home else scores["home"]
+            outcome = "Won" if own_score > opp_score else ("Lost" if own_score < opp_score else "Drew")
+            venue_desc = "at home" if is_home else "away"
+            result = f"{outcome} {own_score}-{opp_score} {venue_desc}"
+
+            self.matches.append(dict(
+                matchday=m["matchday"], opponent_id=opponent_id, opponent_name=opponent_name,
+                was_home=is_home, outcome=outcome, own_score=own_score, opp_score=opp_score,
+                result=result, events=events, directions=directions,
+            ))
+            self.shots += shots
+            self.passes += build_passes(events, directions)
+            self.defs += build_defensive_actions(events, directions)
+            self.pressing += build_pressing_actions(events, directions)
+            self.recoveries += build_recoveries(events, directions)
+            self.cards += build_cards(events)
+            self.touches += build_touches(events, directions)
+            self.duels += build_duels(events, directions)
+            self.subs += build_substitutions(events)
+            self.turnovers += build_turnovers(events, directions)
+            self.assists += build_shot_assists(events, directions, shots)
+
+        self.matches_played = len(self.matches)
+        self.wins = sum(1 for m in self.matches if m["outcome"] == "Won")
+        self.draws = sum(1 for m in self.matches if m["outcome"] == "Drew")
+        self.losses = sum(1 for m in self.matches if m["outcome"] == "Lost")
+        self.points = self.wins * 3 + self.draws
+        self.record = f"{self.wins}W {self.draws}D {self.losses}L"
 
     def own(self, rows):
         return [r for r in rows if r["contestantId"] == self.team_id]
 
     def against(self, rows):
-        return [r for r in rows if r["contestantId"] == self.opponent_id]
+        return [r for r in rows if r["contestantId"] != self.team_id]
+
+    @property
+    def opponents_label(self):
+        """A single opponent's name if only one match is on record, else a
+        generic plural -- used in dek/caption text that used to say "vs
+        {single opponent}" when every page was built from one match."""
+        if self.matches_played == 1:
+            return self.matches[0]["opponent_name"]
+        return "their opponents"
 
     @property
     def xg_for(self):
@@ -567,7 +615,7 @@ class TeamSnapshot:
         return sum(s["xg"] for s in self.against(self.shots))
 
     def ppda_for(self):
-        return compute_ppda(self.passes, self.pressing, self.team_id, self.opponent_id)
+        return compute_ppda(self.passes, self.pressing, self.team_id)
 
     def verticality(self):
         fwd = [p["end_x"] - p["x"] for p in self.own(self.passes)
@@ -597,33 +645,37 @@ class TeamSnapshot:
 
     def pass_tempo_mps(self):
         """Avg metres/second of this team's completed passes -- pass
-        distance divided by the time gap to the next event in the match
-        (any team). Gaps > 8s (stoppages, fouls, VAR checks) are excluded
-        as noise, not genuine tempo."""
-        ordered = sorted(self.events, key=lambda e: (e["periodId"], event_time(e), e["eventId"]))
+        distance divided by the time gap to the next event in that same
+        match (any team). Gaps > 8s (stoppages, fouls, VAR checks) are
+        excluded as noise, not genuine tempo. Computed per match (event
+        order only means anything within one match) then pooled across
+        every match played."""
         speeds = []
-        for i in range(len(ordered) - 1):
-            e = ordered[i]
-            if e["typeId"] != T_PASS or e.get("contestantId") != self.team_id or e.get("outcome") != 1:
-                continue
-            nxt = ordered[i + 1]
-            if nxt["periodId"] != e["periodId"]:
-                continue
-            dt = event_time(nxt) - event_time(e)
-            if dt <= 0 or dt > 8:
-                continue
-            q = qmap(e)
-            if Q_END_X not in q or Q_END_Y not in q:
-                continue
-            x, y = norm_xy(e, self.directions)
-            xm, ym = to_m(x, y)
-            d = self.directions.get((e["contestantId"], e["periodId"]), 1)
-            ex, ey = float(q[Q_END_X]), float(q[Q_END_Y])
-            if d == -1:
-                ex, ey = 100.0 - ex, 100.0 - ey
-            exm, eym = to_m(ex, ey)
-            dist = math.hypot(exm - xm, eym - ym)
-            speeds.append(dist / dt)
+        for m in self.matches:
+            events, directions = m["events"], m["directions"]
+            ordered = sorted(events, key=lambda e: (e["periodId"], event_time(e), e["eventId"]))
+            for i in range(len(ordered) - 1):
+                e = ordered[i]
+                if e["typeId"] != T_PASS or e.get("contestantId") != self.team_id or e.get("outcome") != 1:
+                    continue
+                nxt = ordered[i + 1]
+                if nxt["periodId"] != e["periodId"]:
+                    continue
+                dt = event_time(nxt) - event_time(e)
+                if dt <= 0 or dt > 8:
+                    continue
+                q = qmap(e)
+                if Q_END_X not in q or Q_END_Y not in q:
+                    continue
+                x, y = norm_xy(e, directions)
+                xm, ym = to_m(x, y)
+                d = directions.get((e["contestantId"], e["periodId"]), 1)
+                ex, ey = float(q[Q_END_X]), float(q[Q_END_Y])
+                if d == -1:
+                    ex, ey = 100.0 - ex, 100.0 - ey
+                exm, eym = to_m(ex, ey)
+                dist = math.hypot(exm - xm, eym - ym)
+                speeds.append(dist / dt)
         return sum(speeds) / len(speeds) if speeds else 0.0
 
     def pass_volume(self):
@@ -663,122 +715,76 @@ def simulate_scorelines(home_shots, away_shots, n=20000, seed=42, cap=6):
 
 
 # ---------------------------------------------------------------------------
-# 14-team matchday-1 league sample (all 7 event feeds this repo has for the
-# round), used only by the pace-vs-volume and verticality-ranking pages --
-# a single round, not a season, same convention as the Sparta Praha report's
-# LeagueMW1. Distinct from TEAM_MW1 above, which only covers this fixture's
-# two sides.
+# Full 16-team league sample -- every match feed this repo has for the
+# season so far (matchdays 1-2, 16 matches, all 16 teams), used by the
+# pace-vs-volume and verticality-ranking pages and by TeamSnapshot itself
+# for this fixture's two sides. Season to date, not a single round -- once
+# more matchdays are played, adding their event files to ALL_MATCHES is
+# the only change needed for every page to pick them up automatically,
+# since TeamSnapshot pools over however many matches ALL_TEAM_MATCHES
+# lists for a given team.
 # ---------------------------------------------------------------------------
 
 ALL_MATCHES = [
-    dict(path=os.path.join(EVENTS_DIR, "2026-07-25_FC Viktoria Plzeň - FC Slovan Liberec.json"),
+    # Matchday 1 (2026-07-25 to 2026-07-27)
+    dict(matchday=1, path=os.path.join(EVENTS_DIR, "2026-07-25_FC Viktoria Plzeň - FC Slovan Liberec.json"),
          home_id="c6fx1460nlkawjgh67sp7a1hd", home_name="Viktoria Plzeň",
          away_id="2c4rs2vp0tyjiqa7y3gfttf24", away_name="Slovan Liberec"),
-    dict(path=os.path.join(EVENTS_DIR, "2026-07-25_FC Zbrojovka Brno - AC Sparta Praha.json"),
+    dict(matchday=1, path=os.path.join(EVENTS_DIR, "2026-07-25_FC Zbrojovka Brno - AC Sparta Praha.json"),
          home_id="6k350zwynsc23f0sxw9akgc6y", home_name="Zbrojovka Brno",
          away_id="5ocdn3a6s75u0d0dy0rbou0xc", away_name="Sparta Praha"),
-    dict(path=os.path.join(EVENTS_DIR, "2026-07-25_FC Zlín - FC Baník Ostrava.json"),
-         home_id="aj1nbeiatqrs6e47mnhjidn15", home_name="Zlín",
-         away_id="dfvvrv84skv23rsn1k6kt4slc", away_name="Baník Ostrava"),
-    dict(path=os.path.join(EVENTS_DIR, "2026-07-25_FK Teplice - Bohemians Praha 1905.json"),
+    dict(matchday=1, path=os.path.join(EVENTS_DIR, "2026-07-25_FC Zlín - FC Baník Ostrava.json"),
+         home_id=ZLIN_ID, home_name="Zlín", away_id=OSTRAVA_ID, away_name="Baník Ostrava"),
+    dict(matchday=1, path=os.path.join(EVENTS_DIR, "2026-07-25_FK Teplice - Bohemians Praha 1905.json"),
          home_id=TEPLICE_ID, home_name="Teplice", away_id=BOHEMIANS_ID, away_name="Bohemians 1905"),
-    dict(path=os.path.join(EVENTS_DIR, "2026-07-26_FC Hradec Králové - FK Pardubice.json"),
+    dict(matchday=1, path=os.path.join(EVENTS_DIR, "2026-07-26_FC Hradec Králové - FK Pardubice.json"),
          home_id=HRADEC_ID, home_name="Hradec Králové", away_id=PARDUBICE_ID, away_name="Pardubice"),
-    dict(path=os.path.join(EVENTS_DIR, "2026-07-26_FK Jablonec - SK Sigma Olomouc.json"),
+    dict(matchday=1, path=os.path.join(EVENTS_DIR, "2026-07-26_FK Jablonec - SK Sigma Olomouc.json"),
          home_id="bdz8tx20ekj1ryi2e2u13jdl", home_name="Jablonec",
          away_id="dchxm00ei80l8ljbcfpdill8k", away_name="Sigma Olomouc"),
-    dict(path=os.path.join(EVENTS_DIR, "2026-07-26_SK Slavia Praha - 1. FC Slovácko.json"),
+    dict(matchday=1, path=os.path.join(EVENTS_DIR, "2026-07-26_SK Slavia Praha - 1. FC Slovácko.json"),
          home_id="8kpapuorr6hf0vosnovbreqqd", home_name="Slavia Praha",
          away_id="bp5x8iw8pstucx6s4iqht6xqf", away_name="Slovácko"),
+    dict(matchday=1, path=os.path.join(EVENTS_DIR, "2026-07-27_SK Artis Brno - FK Mladá Boleslav.json"),
+         home_id=ARTIS_BRNO_ID, home_name="Artis Brno", away_id=MLADA_BOLESLAV_ID, away_name="Mladá Boleslav"),
+    # Matchday 2 (2026-07-31 to 2026-08-02)
+    dict(matchday=2, path=os.path.join(EVENTS_DIR, "2026-07-31_AC Sparta Praha - FC Zlín.json"),
+         home_id="5ocdn3a6s75u0d0dy0rbou0xc", home_name="Sparta Praha", away_id=ZLIN_ID, away_name="Zlín"),
+    dict(matchday=2, path=os.path.join(EVENTS_DIR, "2026-08-01_1. FC Slovácko - SK Artis Brno.json"),
+         home_id="bp5x8iw8pstucx6s4iqht6xqf", home_name="Slovácko", away_id=ARTIS_BRNO_ID, away_name="Artis Brno"),
+    dict(matchday=2, path=os.path.join(EVENTS_DIR, "2026-08-01_FC Baník Ostrava - SK Slavia Praha.json"),
+         home_id=OSTRAVA_ID, home_name="Baník Ostrava",
+         away_id="8kpapuorr6hf0vosnovbreqqd", away_name="Slavia Praha"),
+    dict(matchday=2, path=os.path.join(EVENTS_DIR, "2026-08-01_FC Slovan Liberec - FK Teplice.json"),
+         home_id="2c4rs2vp0tyjiqa7y3gfttf24", home_name="Slovan Liberec", away_id=TEPLICE_ID, away_name="Teplice"),
+    dict(matchday=2, path=os.path.join(EVENTS_DIR, "2026-08-01_FC Viktoria Plzeň - FC Zbrojovka Brno.json"),
+         home_id="c6fx1460nlkawjgh67sp7a1hd", home_name="Viktoria Plzeň",
+         away_id="6k350zwynsc23f0sxw9akgc6y", away_name="Zbrojovka Brno"),
+    dict(matchday=2, path=os.path.join(EVENTS_DIR, "2026-08-02_Bohemians Praha 1905 - FC Hradec Králové.json"),
+         home_id=BOHEMIANS_ID, home_name="Bohemians 1905", away_id=HRADEC_ID, away_name="Hradec Králové"),
+    dict(matchday=2, path=os.path.join(EVENTS_DIR, "2026-08-02_FK Pardubice - FK Jablonec.json"),
+         home_id=PARDUBICE_ID, home_name="Pardubice", away_id="bdz8tx20ekj1ryi2e2u13jdl", away_name="Jablonec"),
+    dict(matchday=2, path=os.path.join(EVENTS_DIR, "2026-08-02_SK Sigma Olomouc - FK Mladá Boleslav.json"),
+         home_id="dchxm00ei80l8ljbcfpdill8k", home_name="Sigma Olomouc",
+         away_id=MLADA_BOLESLAV_ID, away_name="Mladá Boleslav"),
 ]
 
 ALL_TEAM_NAMES = {}
-ALL_TEAM_MATCH_FILE = {}
+ALL_TEAM_MATCHES = {}
 for m in ALL_MATCHES:
     ALL_TEAM_NAMES[m["home_id"]] = m["home_name"]
     ALL_TEAM_NAMES[m["away_id"]] = m["away_name"]
-    ALL_TEAM_MATCH_FILE[m["home_id"]] = m
-    ALL_TEAM_MATCH_FILE[m["away_id"]] = m
+    ALL_TEAM_MATCHES.setdefault(m["home_id"], []).append(m)
+    ALL_TEAM_MATCHES.setdefault(m["away_id"], []).append(m)
 
 
-class TeamMW1:
-    """Like TeamSnapshot, but for any of the 14 teams in ALL_MATCHES rather
-    than just this fixture's two sides -- the per-team unit the 14-team
-    league sample is built from."""
-
-    def __init__(self, team_id):
-        info = ALL_TEAM_MATCH_FILE[team_id]
-        self.team_id = team_id
-        self.team_name = ALL_TEAM_NAMES[team_id]
-        self.opponent_id = info["away_id"] if team_id == info["home_id"] else info["home_id"]
-        self.match_details, self.events = load_match(info["path"])
-        self.directions = compute_attack_directions(self.events)
-        self.shots = build_shots(self.events, self.directions)
-        self.passes = build_passes(self.events, self.directions)
-        self.defs = build_defensive_actions(self.events, self.directions)
-        self.pressing = build_pressing_actions(self.events, self.directions)
-        self.touches = build_touches(self.events, self.directions)
-
-    def own(self, rows):
-        return [r for r in rows if r["contestantId"] == self.team_id]
-
-    def against(self, rows):
-        return [r for r in rows if r["contestantId"] == self.opponent_id]
-
-    def ppda_for(self):
-        return compute_ppda(self.passes, self.pressing, self.team_id, self.opponent_id)
-
-    def verticality(self):
-        fwd = [p["end_x"] - p["x"] for p in self.own(self.passes)
-               if p["completed"] and p["end_x"] is not None and p["end_x"] > p["x"]]
-        return sum(fwd) / len(fwd) if fwd else 0.0
-
-    def touch_share(self):
-        h = len(self.own(self.touches))
-        a = len(self.against(self.touches))
-        return h / (h + a) if (h + a) else float("nan")
-
-    def field_tilt(self):
-        h = sum(1 for t in self.own(self.touches) if t["x"] >= 70)
-        a = sum(1 for t in self.against(self.touches) if t["x"] >= 70)
-        return h / (h + a) if (h + a) else float("nan")
-
-    def pass_tempo_mps(self):
-        ordered = sorted(self.events, key=lambda e: (e["periodId"], event_time(e), e["eventId"]))
-        speeds = []
-        for i in range(len(ordered) - 1):
-            e = ordered[i]
-            if e["typeId"] != T_PASS or e.get("contestantId") != self.team_id or e.get("outcome") != 1:
-                continue
-            nxt = ordered[i + 1]
-            if nxt["periodId"] != e["periodId"]:
-                continue
-            dt = event_time(nxt) - event_time(e)
-            if dt <= 0 or dt > 8:
-                continue
-            q = qmap(e)
-            if Q_END_X not in q or Q_END_Y not in q:
-                continue
-            x, y = norm_xy(e, self.directions)
-            xm, ym = to_m(x, y)
-            d = self.directions.get((e["contestantId"], e["periodId"]), 1)
-            ex, ey = float(q[Q_END_X]), float(q[Q_END_Y])
-            if d == -1:
-                ex, ey = 100.0 - ex, 100.0 - ey
-            exm, eym = to_m(ex, ey)
-            dist = math.hypot(exm - xm, eym - ym)
-            speeds.append(dist / dt)
-        return sum(speeds) / len(speeds) if speeds else 0.0
-
-    def pass_volume(self):
-        return len(self.own(self.passes))
-
-
-class LeagueMW1:
-    """All 14 teams with a matchday-1 feed in this repo, one TeamMW1 each."""
+class LeagueSeason:
+    """Every team with a match feed in this repo, one season-to-date
+    TeamSnapshot each (pools however many matches ALL_TEAM_MATCHES lists
+    for that team -- 2 each right now, matchdays 1-2)."""
 
     def __init__(self):
-        self.teams = {tid: TeamMW1(tid) for tid in ALL_TEAM_NAMES}
+        self.teams = {tid: TeamSnapshot(tid) for tid in ALL_TEAM_NAMES}
 
     def ranking(self, metric_fn, reverse=True):
         vals = [(tid, metric_fn(tm)) for tid, tm in self.teams.items()]
@@ -790,7 +796,10 @@ if __name__ == "__main__":
     boh = TeamSnapshot(HRADEC_ID)
     hkr = TeamSnapshot(OSTRAVA_ID)
     for snap in (boh, hkr):
-        print(team_name(snap.team_id), "MW1:", snap.result, "vs", snap.opponent_name)
+        print(team_name(snap.team_id), f"({snap.matches_played} matches played):", snap.record,
+              f"({snap.points} pts)")
+        for m in snap.matches:
+            print(f"    MD{m['matchday']}: {m['result']} vs {m['opponent_name']}")
         print("  xG for/against:", round(snap.xg_for, 2), round(snap.xg_against, 2))
         print("  shots for/against:", len(snap.own(snap.shots)), len(snap.against(snap.shots)))
         print("  PPDA:", round(snap.ppda_for(), 2))

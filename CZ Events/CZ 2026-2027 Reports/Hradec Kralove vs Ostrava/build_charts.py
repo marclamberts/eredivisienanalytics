@@ -7,14 +7,17 @@ Hradec Králové). Fixture not yet played.
 Same template as the sibling "Ostrava vs Slavia Praha" and "Bohemians vs
 Hradec Kralove" pre-match previews, re-pointed at this fixture: Meridian
 house style (dark), and since there is no shared event feed for a match
-that hasn't been played yet, every page is built from each team's OWN
-matchday-1 fixture --
-  FC Hradec Králové: won 2-1 at home over FK Pardubice
-  FC Baník Ostrava: won 1-0 away at FC Zlín
+that hasn't been played yet, every page is built from each team's
+SEASON-TO-DATE totals -- every match played so far, pooled together --
+rather than a single matchday snapshot:
+  FC Hradec Králové: 2 matches played, 1W 1D 0L (won 2-1 at home over
+  Pardubice, drew 0-0 away at Bohemians 1905)
+  FC Baník Ostrava: 2 matches played, 1W 0D 1L (won 1-0 away at Zlín,
+  lost 0-4 at home to Slavia Praha)
 -- as an early-season form/style snapshot, not a head-to-head. That is
-one match of data per team; every page is scoped to what a single match
-can honestly support (team-level shape and volume, not multi-game trend
-lines), and is labelled as such.
+still a small sample (2 matches per team); every page is scoped to what
+that can honestly support (team-level shape and volume, not a settled
+multi-game trend), and is labelled as such.
 
 Full 50-page scope from the start (see the sibling Bohemians report for
 the earlier 19-to-50-page expansion this was carried over from): xG
@@ -23,10 +26,10 @@ scatter, plus the full per-team repertoire this repo's post-match
 reports establish (shot log, goal build-ups, pass networks, progressive
 passes, passing directness, touch heatmaps, field tilt over time,
 crossing, zone-14/half-space maps, long balls, shot assists, key
-passes) plus a handful of combined-team and 14-team league-sample pages
-(recoveries, turnovers, shot zones, verticality ranking). The 14-team
-league sample reuses the same matchday-1 event feeds and "single round,
-not a season" framing as the sibling Sparta Praha report's LeagueMW1.
+passes) plus a handful of combined-team and 16-team league-sample pages
+(recoveries, turnovers, shot zones, verticality ranking). The 16-team
+league sample pools every matchday-1 + matchday-2 event feed this repo
+has (LeagueSeason) -- season to date, not a single round.
 
 Data: Opta MA3 event feed (CZ Events/CZ 2026-2027), parsed in
 match_data.py; shots scored with the same own distance+angle xG model as
@@ -87,7 +90,7 @@ def team_color(cid):
         return HKR_C
     if cid == md.OSTRAVA_ID:
         return OST_C
-    return None  # opponent from a team's own MW1 game -- caller supplies a muted color
+    return None  # a non-fixture opponent -- caller supplies a muted color
 
 
 def team_short(cid):
@@ -119,7 +122,7 @@ def cover():
 
     fig.text(0.5, 0.19, f"{components.MARK} PRE-MATCH PREVIEW  ·  50 PAGES", fontsize=13, fontweight="bold",
               color=palette["accent"], family="sans-serif", ha="center", va="center")
-    fig.text(0.5, 0.145, "Built from each team's matchday-1 fixture -- early-season form, not head-to-head",
+    fig.text(0.5, 0.145, "Built from each team's matches played so far this season -- early-season form, not head-to-head",
               fontsize=9.5, color=palette["ink_muted"], family="sans-serif", ha="center", va="center")
 
     components.brand_mark(fig, palette=palette, right=0.94, y=0.93)
@@ -155,28 +158,31 @@ def fixture_context(boh, hkr):
     col_x = [0.0, 0.52]
     for x, snap, name, color in zip(col_x, (boh, hkr), (md.FIXTURE_HOME_NAME, md.FIXTURE_AWAY_NAME), (HKR_C, OST_C)):
         y = 0.58
-        ax.text(x, y, name, fontsize=14, fontweight="bold", color=color, va="top", family="serif")
-        y -= 0.09
-        ax.text(x, y, f"Matchday 1: {snap.result} vs {snap.opponent_name}", fontsize=10.5,
-                color=palette["ink_primary"], va="top")
+        ax.text(x, y, f"{name}  ({snap.record}, {snap.points} pts)", fontsize=14, fontweight="bold",
+                color=color, va="top", family="serif")
         y -= 0.075
+        for m in snap.matches:
+            ax.text(x, y, f"MD{m['matchday']}: {m['result']} vs {m['opponent_name']}", fontsize=10.5,
+                    color=palette["ink_primary"], va="top")
+            y -= 0.06
+        y -= 0.015
         ax.text(x, y, f"xG created / conceded: {snap.xg_for:.2f} / {snap.xg_against:.2f}", fontsize=10.5,
                 color=palette["ink_secondary"], va="top")
-        y -= 0.075
+        y -= 0.06
         ax.text(x, y, f"Shots for / against: {len(snap.own(snap.shots))} / {len(snap.against(snap.shots))}",
                 fontsize=10.5, color=palette["ink_secondary"], va="top")
-        y -= 0.075
+        y -= 0.06
         ax.text(x, y, f"PPDA (pressing intensity): {snap.ppda_for():.1f}", fontsize=10.5,
                 color=palette["ink_secondary"], va="top")
 
-    fig.text(0.06, 0.155, "Every page in this preview is built from that one matchday-1 fixture per team -- "
-                          "an early-season style snapshot, not a multi-game trend or a head-to-head "
-                          "(these two sides have not yet met this season).",
+    fig.text(0.06, 0.155, "Every page in this preview is built from all of that team's matches played so far "
+                          "this season, pooled together -- an early-season style snapshot (still just 2 games "
+                          "each), not a head-to-head (these two sides have not yet met this season).",
               fontsize=9, color=palette["ink_muted"], ha="left", va="top", wrap=True)
 
     components.header(fig, kicker="Fixture Preview",
                        title=f"{md.FIXTURE_HOME_NAME} host {md.FIXTURE_AWAY_NAME}",
-                       dek="What each side showed in their opening match of the season",
+                       dek="What each side has shown across their matches so far this season",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "02_fixture_context.png")
@@ -205,7 +211,7 @@ def shot_maps_mw1(boh, hkr):
             else:
                 pitch.scatter(s["x"], s["y"], ax=ax, s=size, marker="o", facecolors="none",
                               edgecolors=c, linewidth=1.4, alpha=0.8, zorder=4)
-        ax.set_title(f"{name}\n{snap.result} vs {snap.opponent_name}", color=color, fontsize=12,
+        ax.set_title(f"{name}\n{snap.record} across {snap.matches_played} matches", color=color, fontsize=12,
                      fontweight="bold", family="sans-serif")
 
     legend_elems = [Line2D([0], [0], marker="o", color=palette["surface"], markerfacecolor=palette["ink_muted"],
@@ -215,9 +221,9 @@ def shot_maps_mw1(boh, hkr):
     fig.legend(handles=legend_elems, loc="lower center", ncol=2, frameon=False,
                bbox_to_anchor=(0.5, 0.03), fontsize=10.5, labelcolor=palette["ink_secondary"])
 
-    components.header(fig, kicker="Matchday 1",
-                       title="Shot maps from each side's opening match, own goal on the left",
-                       dek="Filled = goal  ·  Size = xG  ·  Own team's own colour, muted = conceded",
+    components.header(fig, kicker="Season So Far",
+                       title="Shot maps from every match played this season, own goal on the left",
+                       dek="Filled = goal  ·  Size = xG  ·  Own team's own colour, muted = conceded  ·  all matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "03_shot_maps_mw1.png")
@@ -262,8 +268,9 @@ def xg_snapshot(boh, hkr):
                bbox_to_anchor=(0.5, 0.02), fontsize=10.5, labelcolor=palette["ink_secondary"])
 
     components.header(fig, kicker="Chance Quality",
-                       title="Hradec created more, and gave up far less, on opening day",
-                       dek="Matchday-1 shot numbers, own xG model  ·  one match per side",
+                       title="Hradec have created more, and given up much less, so far this season",
+                       dek=f"Season-to-date shot numbers, own xG model  ·  {boh.matches_played} matches "
+                           f"for Hradec, {hkr.matches_played} for Ostrava",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "04_xg_snapshot.png")
@@ -358,8 +365,8 @@ def pass_network_team_page(snap, color, name, page_num, slug):
     ax2.set_ylim(0, 1.03)
 
     components.header(fig, kicker="Pass Network",
-                       title=f"{name}: how they built play at matchday 1",
-                       dek=f"Average completed-pass position (≥ 6 passes) vs {snap.opponent_name}, attacking right",
+                       title=f"{name}: how they've built play so far this season",
+                       dek=f"Average completed-pass position (≥ 6 passes), {snap.matches_played} matches pooled, attacking right",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_pass_network_{slug}.png")
@@ -382,8 +389,8 @@ def touch_heatmap_team_page(snap, color, name, page_num, slug, cmap):
     pitch.heatmap(stats, ax=ax, cmap=cmap, edgecolors=palette["surface"], alpha=0.92, zorder=1)
 
     components.header(fig, kicker="Territory",
-                       title=f"{name}: where they spent their {len(xs)} touches at matchday 1",
-                       dek=f"Touch density by pitch zone vs {snap.opponent_name}, attacking right",
+                       title=f"{name}: where they've spent their {len(xs)} touches so far this season",
+                       dek=f"Touch density by pitch zone, {snap.matches_played} matches pooled, attacking right",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_touch_heatmap_{slug}.png")
@@ -433,8 +440,8 @@ def possession_thirds(boh, hkr):
                bbox_to_anchor=(0.5, 0.06), fontsize=10.5, labelcolor=palette["ink_secondary"])
 
     components.header(fig, kicker="Possession",
-                       title="Each side's territory split at matchday 1",
-                       dek="Distribution of touches across pitch thirds, own attacking direction",
+                       title="Each side's territory split so far this season",
+                       dek="Distribution of touches across pitch thirds, own attacking direction, matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "19_possession_thirds.png")
@@ -481,8 +488,8 @@ def progression_bars(boh, hkr):
                bbox_to_anchor=(0.5, 0.02), fontsize=10.5, labelcolor=palette["ink_secondary"])
 
     components.header(fig, kicker="Progression",
-                       title="How each side moved the ball forward at matchday 1",
-                       dek="Progressive pass = completed pass cutting ≥25% off the distance to goal",
+                       title="How each side has moved the ball forward so far this season",
+                       dek="Progressive pass = completed pass cutting ≥25% off the distance to goal, matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "20_progression_bars.png")
@@ -501,7 +508,7 @@ def ppda_pressing(boh, hkr):
     labels = ["0-15", "15-30", "30-45", "45-60", "60-75", "75-90+"]
 
     def bucketed(snap):
-        return [md.compute_ppda(snap.passes, snap.pressing, snap.team_id, snap.opponent_id, lo, hi)
+        return [md.compute_ppda(snap.passes, snap.pressing, snap.team_id, lo, hi)
                 for lo, hi in buckets]
 
     for ax, snap, color, name in ((ax1, boh, HKR_C, md.FIXTURE_HOME_NAME), (ax2, hkr, OST_C, md.FIXTURE_AWAY_NAME)):
@@ -525,8 +532,9 @@ def ppda_pressing(boh, hkr):
         ax.set_ylabel("PPDA")
 
     components.header(fig, kicker="Pressing",
-                       title="Pressing intensity at matchday 1, by 15-minute window",
-                       dek="Passes per defensive action in the opponent's own 60%  ·  lower = more intense press",
+                       title="Pressing intensity so far this season, by 15-minute window",
+                       dek="Passes per defensive action in the opponent's own 60%  ·  lower = more intense press  ·  "
+                           "windows pooled across matches played",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "23_ppda_pressing.png")
@@ -568,8 +576,8 @@ def defensive_actions(boh, hkr):
                bbox_to_anchor=(0.5, 0.02), fontsize=10.5, labelcolor=palette["ink_secondary"])
 
     components.header(fig, kicker="Defending",
-                       title="Where each side won the ball back at matchday 1",
-                       dek="Tackles, interceptions and clearances, own goal on the left, attacking right",
+                       title="Where each side has won the ball back so far this season",
+                       dek="Tackles, interceptions and clearances, own goal on the left, attacking right, matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "24_defensive_actions.png")
@@ -648,8 +656,8 @@ def duels_discipline(boh, hkr):
                bbox_to_anchor=(0.5, 0.03), fontsize=10.5, labelcolor=palette["ink_secondary"])
 
     components.header(fig, kicker="Physicality",
-                       title="Duels contested and discipline at matchday 1",
-                       dek="Tackle, aerial and loose-ball duels, plus fouls and cards",
+                       title="Duels contested and discipline so far this season",
+                       dek="Tackle, aerial and loose-ball duels, plus fouls and cards, matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "25_duels_discipline.png")
@@ -682,15 +690,15 @@ def key_players_team_page(snap, color, name, page_num, slug):
     for y, v in zip(ypos, vals):
         ax.text(v + max(vals, default=1) * 0.02, y, f"{v:.1f}", va="center", fontsize=9.5,
                 color=palette["ink_secondary"])
-    ax.set_xlabel("Impact score (matchday 1)")
+    ax.set_xlabel("Impact score (season to date)")
 
     fig.text(0.5, 0.10, "Simple composite: xG + 3×goals + 0.15×progressive pass + 0.35×box entry + "
-                         "0.3×defensive action  ·  not an official rating, one match of evidence",
+                         f"0.3×defensive action  ·  not an official rating, {snap.matches_played} matches of evidence",
               ha="center", fontsize=8.8, color=palette["ink_muted"])
 
     components.header(fig, kicker="Players To Watch",
-                       title=f"{name}: who stood out at matchday 1",
-                       dek=f"vs {snap.opponent_name}  ·  shooting, progression and defending combined",
+                       title=f"{name}: who has stood out so far this season",
+                       dek=f"{snap.matches_played} matches pooled  ·  shooting, progression and defending combined",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_key_players_{slug}.png")
@@ -741,8 +749,9 @@ def team_radar(boh, hkr):
                fontsize=10.5, labelcolor=palette["ink_secondary"])
 
     components.header(fig, kicker="Shape Comparison",
-                       title="Matchday-1 numbers side by side",
-                       dek="Each axis normalized to the better of the two teams that match (=1.0)  ·  different opponents",
+                       title="Season-to-date numbers side by side",
+                       dek="Each axis normalized to the better of the two teams that metric (=1.0)  ·  "
+                           "different opponents, matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "45_team_radar.png")
@@ -759,41 +768,40 @@ def keys_to_the_game(boh, hkr):
 
     points = []
     if hkr.xg_against < boh.xg_against:
-        points.append(f"Ostrava conceded less ({hkr.xg_against:.2f} xG) than Hradec did "
-                       f"({boh.xg_against:.2f} xG) on opening day.")
+        points.append(f"Ostrava have conceded less ({hkr.xg_against:.2f} xG) than Hradec have "
+                       f"({boh.xg_against:.2f} xG) across their {hkr.matches_played} matches so far.")
     else:
-        points.append(f"Hradec conceded far less ({boh.xg_against:.2f} xG) than Ostrava did "
-                       f"({hkr.xg_against:.2f} xG) -- Ostrava's front line will need to work harder for "
-                       f"clean chances than they did at Zlín, where they won 1-0 despite giving up almost "
-                       "as much chance quality as they created.")
+        points.append(f"Hradec have conceded far less ({boh.xg_against:.2f} xG across {boh.matches_played} "
+                       f"matches) than Ostrava have ({hkr.xg_against:.2f} xG) -- most of that gap came in "
+                       f"Ostrava's 0-4 home defeat to Slavia Praha, so their defensive record is shakier than "
+                       "the single opening win suggests.")
     if boh.ppda_for() < hkr.ppda_for():
-        points.append(f"Hradec pressed higher on opening day (PPDA {boh.ppda_for():.1f} vs "
+        points.append(f"Hradec have pressed higher so far (PPDA {boh.ppda_for():.1f} vs "
                        f"{hkr.ppda_for():.1f}) -- expect them to try to disrupt Ostrava's build-up early "
                        f"rather than sit off.")
     else:
-        points.append(f"Ostrava pressed considerably higher on opening day (PPDA {hkr.ppda_for():.1f} vs "
+        points.append(f"Ostrava have pressed considerably higher so far (PPDA {hkr.ppda_for():.1f} vs "
                        f"Hradec's {boh.ppda_for():.1f}) -- if that intensity travels on the road, Hradec's "
                        f"buildup play will be under pressure from the first whistle.")
     b_touch = sum(1 for t in boh.own(boh.touches) if t["x"] >= 70)
     h_touch = sum(1 for t in hkr.own(hkr.touches) if t["x"] >= 70)
     if h_touch > b_touch:
-        points.append(f"Ostrava actually had more final-third touches in their opener ({h_touch} vs "
-                       f"Hradec's {b_touch}) but converted them less efficiently ({hkr.xg_for:.2f} xG from "
+        points.append(f"Ostrava have actually racked up more final-third touches ({h_touch} vs "
+                       f"Hradec's {b_touch}) but converted them far less efficiently ({hkr.xg_for:.2f} xG from "
                        f"{len(hkr.own(hkr.shots))} shots vs Hradec's {boh.xg_for:.2f} from "
-                       f"{len(boh.own(boh.shots))}) -- territory alone won't be enough without sharper "
-                       "shot selection away from home.")
+                       f"{len(boh.own(boh.shots))}) -- territory alone hasn't been enough for them without "
+                       "sharper shot selection.")
     else:
-        points.append(f"Hradec spent more of their opener in the final third ({b_touch} touches there vs "
-                       f"Ostrava's {h_touch}) -- if that territorial edge holds at home, Ostrava will need "
+        points.append(f"Hradec have spent more of their matches in the final third ({b_touch} touches there "
+                       f"vs Ostrava's {h_touch}) -- if that territorial edge holds at home, Ostrava will need "
                        "to defend deep for longer spells.")
-    points.append(f"Both sides won their openers by a single goal, so this is a tight early-season form "
-                   f"clash rather than a form mismatch: Hradec's 2-1 home win over "
-                   f"{md.TEAM_MW1[md.HRADEC_ID]['opponent_name']} against Ostrava's 1-0 away win at "
-                   f"{md.TEAM_MW1[md.OSTRAVA_ID]['opponent_name']} -- similar scorelines, but Hradec did it "
-                   "with clearly the better underlying chance quality.")
+    points.append(f"This reads as a genuine form gap, not a coin-flip: Hradec sit unbeaten so far "
+                   f"({boh.record}, {boh.points} pts) with the far better underlying numbers, while Ostrava "
+                   f"({hkr.record}, {hkr.points} pts) followed their opening win with a 0-4 home defeat to "
+                   "Slavia Praha -- the away trip to Hradec is a tough spot to arrest that slide.")
 
-    fig.text(0.5, 0.045, "★ Small-sample caveat: every number above is drawn from one match per team "
-                          "(matchday 1). Treat as early style signal, not settled form.",
+    fig.text(0.5, 0.075, f"★ Small-sample caveat: every number above is drawn from {boh.matches_played} "
+                          "matches per team so far this season. Treat as an early style signal, not settled form.",
               ha="center", fontsize=9, color=palette["ink_muted"], style="italic")
 
     ax = fig.add_axes([0.08, 0.16, 0.84, 0.58])
@@ -809,14 +817,14 @@ def keys_to_the_game(boh, hkr):
 
     components.header(fig, kicker="Keys To The Game",
                        title="Four things worth watching for on 2026-08-09",
-                       dek="Reasoned from each side's matchday-1 numbers",
+                       dek="Reasoned from each side's season-to-date numbers",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "48_keys_to_the_game.png")
 
 
 # ---------------------------------------------------------------------------
-# 18. Win probability (Monte Carlo, cross-paired MW1 shot lists)
+# 18. Win probability (Monte Carlo, cross-paired season-to-date shot lists)
 # ---------------------------------------------------------------------------
 
 def _donut(ax, frac, color, palette, label, sublabel):
@@ -863,7 +871,7 @@ def win_probability(boh, hkr, sim):
                        title=(f"{md.FIXTURE_HOME_NAME} rate as favourites ({sim['home_win']:.0%})"
                               if sim["home_win"] >= sim["away_win"]
                               else f"{md.FIXTURE_AWAY_NAME} rate as favourites ({sim['away_win']:.0%})"),
-                       dek=f"{n:,}-simulation Monte Carlo cross-pairing each side's matchday-1 shot xG list "
+                       dek=f"{n:,}-simulation Monte Carlo cross-pairing each side's season-to-date shot xG list "
                            "-- an early-season projection, not a fitted model",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
@@ -888,7 +896,7 @@ def report_card(boh, hkr, sim):
     bp = boh.own(boh.passes)
     hp = hkr.own(hkr.passes)
     rows = [
-        ("Matchday-1 result", boh.result, hkr.result),
+        ("Season record", f"{boh.record} ({boh.points} pts)", f"{hkr.record} ({hkr.points} pts)"),
         ("xG created", f"{boh.xg_for:.2f}", f"{hkr.xg_for:.2f}"),
         ("xG conceded", f"{boh.xg_against:.2f}", f"{hkr.xg_against:.2f}"),
         ("Pass accuracy", f"{sum(1 for p in bp if p['completed']) / len(bp):.0%}",
@@ -916,7 +924,7 @@ def report_card(boh, hkr, sim):
 
 
 # ---------------------------------------------------------------------------
-# 05-06. xG flow -- one page per team's own matchday-1 fixture
+# 05-06. xG flow -- one page per team, every match played so far
 # ---------------------------------------------------------------------------
 
 def xg_flow_team_page(snap, color, name, page_num, slug):
@@ -935,7 +943,7 @@ def xg_flow_team_page(snap, color, name, page_num, slug):
 
     own_shots = snap.own(snap.shots)
     opp_shots = snap.against(snap.shots)
-    for rows, color_, label in ((own_shots, color, name), (opp_shots, palette["ink_muted"], snap.opponent_name)):
+    for rows, color_, label in ((own_shots, color, name), (opp_shots, palette["ink_muted"], snap.opponents_label)):
         mins, cum = series(rows)
         ax.plot(mins, cum, color=color_, linewidth=2.4, zorder=4)
         ax.fill_between(mins, cum, step=None, color=color_, alpha=0.10, zorder=1)
@@ -953,64 +961,78 @@ def xg_flow_team_page(snap, color, name, page_num, slug):
 
     ax.axvline(45, color=palette["axis"], linewidth=0.8, linestyle=":")
     ax.set_xlim(0, 100)
-    ax.set_xlabel("Minute")
+    ax.set_xlabel("Minute of match")
     ax.set_ylabel("Cumulative xG")
 
     components.header(fig, kicker="xG Flow",
-                       title=f"{name}: cumulative xG at matchday 1 ({snap.result})",
-                       dek=f"vs {snap.opponent_name}  ·  own xG model, this team's coloured, opponent muted",
+                       title=f"{name}: cumulative xG so far this season ({snap.record})",
+                       dek=f"{snap.matches_played} matches pooled by minute-of-match  ·  own xG model, this team's coloured, opponents muted",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_xg_flow_{slug}.png")
 
 
 # ---------------------------------------------------------------------------
-# 07-08. Shot quality table -- one page per team's own matchday-1 fixture
+# 07-08. Shot quality table -- one page per team, every match played so far
 # ---------------------------------------------------------------------------
 
 def shot_quality_table_team_page(snap, color, name, page_num, slug):
     fig, palette = new_fig()
-    ax = fig.add_axes([0.05, 0.12, 0.90, 0.62])
-    ax.axis("off")
 
     both = snap.own(snap.shots) + snap.against(snap.shots)
-    ordered = sorted(both, key=lambda s: s["minute"])
-    cols = ["Min", "Team", "Player", "Situation", "Body", "Outcome", "xG"]
-    widths = [0.06, 0.20, 0.24, 0.16, 0.12, 0.12, 0.10]
-    x0 = [sum(widths[:i]) for i in range(len(widths))]
+    ordered = sorted(both, key=lambda s: (snap.matches[s["match_idx"]]["matchday"], s["minute"]))
+    cols = ["MD", "Min", "Team", "Player", "Situation", "Body", "Outcome", "xG"]
+    widths = [0.06, 0.08, 0.20, 0.24, 0.16, 0.12, 0.09, 0.05]
 
-    header_y = 1.0
-    for x, w, label in zip(x0, widths, cols):
-        ax.text(x, header_y, label, fontsize=10.5, fontweight="bold", color=palette["ink_primary"],
-                va="top", ha="left")
-    ax.axhline(header_y - 0.025, xmin=0, xmax=1, color=palette["axis"], linewidth=1.0)
+    # Season totals run to 2+ matches' worth of shots (vs. a single match), so
+    # split into two side-by-side columns once the list gets too long for one
+    # column to stay legible at a fixed font size.
+    n_cols = 2 if len(ordered) > 22 else 1
+    col_bounds = [0.03, 0.51] if n_cols == 2 else [0.05]
+    col_w = 0.46 if n_cols == 2 else 0.90
+    per_col = math.ceil(len(ordered) / n_cols)
+    chunks = [ordered[i:i + per_col] for i in range(0, len(ordered), per_col)] or [[]]
 
-    row_h = 0.95 / max(len(ordered), 1)
-    for i, s in enumerate(ordered):
-        y = header_y - 0.05 - i * row_h
-        is_own = s["contestantId"] == snap.team_id
-        c = color if is_own else palette["ink_muted"]
-        weight = "bold" if s["is_goal"] else "normal"
-        vals = [f"{s['minute']}'", name.split(" ")[-1] if is_own else snap.opponent_name.split(" ")[-1],
-                s["player"], s["situation"], "Head" if s["is_header"] else "Foot", s["outcome"], f"{s['xg']:.2f}"]
-        for x, w, v in zip(x0, widths, vals):
-            ax.text(x, y, v, fontsize=9.5, color=c if x == x0[1] else palette["ink_primary"],
-                    fontweight=weight, va="top", ha="left")
-        if s["is_goal"]:
-            ax.text(0.985, y, "★", fontsize=11, color=GOOD_C, va="top", ha="right")
-    ax.set_xlim(0, 1)
-    ax.set_ylim(header_y - 0.05 - len(ordered) * row_h, 1.03)
+    for col_x0, chunk in zip(col_bounds, chunks):
+        ax = fig.add_axes([col_x0, 0.12, col_w, 0.62])
+        ax.axis("off")
+        ax.set_xlim(0, 1)
+        x0 = [sum(widths[:i]) for i in range(len(widths))]
+
+        header_y = 1.0
+        for x, w, label in zip(x0, widths, cols):
+            ax.text(x, header_y, label, fontsize=9.5, fontweight="bold", color=palette["ink_primary"],
+                    va="top", ha="left")
+        ax.axhline(header_y - 0.025, xmin=0, xmax=1, color=palette["axis"], linewidth=1.0)
+
+        row_h = 0.95 / max(per_col, 1)
+        for i, s in enumerate(chunk):
+            y = header_y - 0.05 - i * row_h
+            is_own = s["contestantId"] == snap.team_id
+            c = color if is_own else palette["ink_muted"]
+            weight = "bold" if s["is_goal"] else "normal"
+            match = snap.matches[s["match_idx"]]
+            team_label = name.split(" ")[-1] if is_own else match["opponent_name"].split(" ")[-1]
+            outcome_label = f"★ {s['outcome']}" if s["is_goal"] else s["outcome"]
+            vals = [str(match["matchday"]), f"{s['minute']}'", team_label,
+                    s["player"], s["situation"], "Head" if s["is_header"] else "Foot", outcome_label, f"{s['xg']:.2f}"]
+            fsize = 8.5 if n_cols == 2 else 9.5
+            for x, w, v in zip(x0, widths, vals):
+                col_color = GOOD_C if (x == x0[6] and s["is_goal"]) else (c if x == x0[2] else palette["ink_primary"])
+                ax.text(x, y, v, fontsize=fsize, color=col_color,
+                        fontweight=weight, va="top", ha="left")
+        ax.set_ylim(header_y - 0.05 - per_col * row_h, 1.03)
 
     components.header(fig, kicker="Shot Log",
-                       title=f"{name}: all {len(ordered)} shots of their matchday-1 fixture",
-                       dek=f"vs {snap.opponent_name}  ·  own xG model: distance + angle to goal, header penalty applied",
+                       title=f"{name}: all {len(ordered)} shots across their {snap.matches_played} matches this season",
+                       dek="own xG model: distance + angle to goal, header penalty applied  ·  MD = matchday",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_shot_quality_table_{slug}.png")
 
 
 # ---------------------------------------------------------------------------
-# 09-10. Goal build-ups -- one page per team's own matchday-1 fixture
+# 09-10. Goal build-ups -- one page per team, every match played so far
 # ---------------------------------------------------------------------------
 
 def goal_buildups_team_page(snap, color, name, page_num, slug):
@@ -1018,7 +1040,8 @@ def goal_buildups_team_page(snap, color, name, page_num, slug):
     pitch = new_pitch(palette)
 
     both = snap.own(snap.shots) + snap.against(snap.shots)
-    goals = sorted([s for s in both if s["is_goal"]], key=lambda s: s["minute"])
+    goals = sorted([s for s in both if s["is_goal"]],
+                   key=lambda s: (snap.matches[s["match_idx"]]["matchday"], s["minute"]))
     n = max(len(goals), 1)
     axes = [fig.add_axes([0.02 + i * (0.96 / n), 0.10, 0.96 / n - 0.02, 0.62]) for i in range(len(goals))]
 
@@ -1026,14 +1049,16 @@ def goal_buildups_team_page(snap, color, name, page_num, slug):
         pitch.draw(ax=ax)
         is_own = g["contestantId"] == snap.team_id
         c = color if is_own else palette["ink_muted"]
-        team_events = [e for e in snap.events if e["contestantId"] == g["contestantId"]
+        match = snap.matches[g["match_idx"]]
+        match_events, match_directions = match["events"], match["directions"]
+        team_events = [e for e in match_events if e["contestantId"] == g["contestantId"]
                        and e.get("x") is not None and e["typeId"] in (1, 3, 61)
                        and md.event_time(e) <= g["minute"] * 60 + 59]
         team_events.sort(key=lambda e: (e["periodId"], md.event_time(e), e["eventId"]))
         chain = team_events[-4:]
         pts = []
         for e in chain:
-            x, y = md.norm_xy(e, snap.directions)
+            x, y = md.norm_xy(e, match_directions)
             xm, ym = md.to_m(x, y)
             pts.append((xm, ym))
         pts.append((g["x"], g["y"]))
@@ -1046,16 +1071,16 @@ def goal_buildups_team_page(snap, color, name, page_num, slug):
                         headwidth=6, headlength=6, zorder=3)
         pitch.scatter(g["x"], g["y"], ax=ax, s=260, marker="*", color=palette["ink_primary"],
                       edgecolors=c, linewidth=1.6, zorder=6)
-        team_label = name if is_own else snap.opponent_name
-        ax.set_title(f"{g['minute']}'  {g['player']}\n{team_label}", color=c,
-                     fontsize=11, fontweight="bold", family="sans-serif")
+        team_label = name if is_own else match["opponent_name"]
+        ax.set_title(f"MD{match['matchday']} {g['minute']}'  {g['player']}\n{team_label}", color=c,
+                     fontsize=10.5, fontweight="bold", family="sans-serif")
 
-    fig.text(0.5, 0.085, "Last 4 touches before each goal, both teams, this team's own matchday-1 fixture",
+    fig.text(0.5, 0.085, "Last 4 touches before each goal, both teams, across this team's matches played so far",
               ha="center", fontsize=9, color=palette["ink_muted"])
 
     components.header(fig, kicker="Goal Build-Ups",
-                       title=f"{name}'s matchday 1: how all {len(goals)} goals were made",
-                       dek=f"{snap.result} vs {snap.opponent_name}",
+                       title=f"{name}: how all {len(goals)} goals so far this season were made",
+                       dek=f"{snap.record} across {snap.matches_played} matches",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_goal_buildups_{slug}.png")
@@ -1132,7 +1157,7 @@ def passing_directness_team_page(snap, color, name, page_num, slug):
 
 
 # ---------------------------------------------------------------------------
-# 21-22. Field tilt over time -- one page per team's own matchday-1 fixture
+# 21-22. Field tilt over time -- one page per team, every match played so far
 # ---------------------------------------------------------------------------
 
 def field_tilt_over_time_team_page(snap, color, name, page_num, slug):
@@ -1165,13 +1190,13 @@ def field_tilt_over_time_team_page(snap, color, name, page_num, slug):
     ax.set_xlabel("Minute")
     ax.set_ylabel("Field tilt (final-third touch share)")
     ax.set_yticks([-50, -25, 0, 25, 50])
-    ax.set_yticklabels([f"{snap.opponent_name.split(' ')[-1]} 100%", "75%", "Even", "75%", f"{name.split(' ')[-1]} 100%"],
+    ax.set_yticklabels(["Opponents 100%", "75%", "Even", "75%", f"{name.split(' ')[-1]} 100%"],
                         fontsize=9)
 
     overall = snap.field_tilt()
     components.header(fig, kicker="Field Tilt",
-                       title=f"{name}'s final-third share across their matchday-1 fixture: {overall:.0%}",
-                       dek=f"vs {snap.opponent_name}  ·  share of final-third touches, 5-minute buckets",
+                       title=f"{name}'s final-third share so far this season: {overall:.0%}",
+                       dek=f"{snap.matches_played} matches pooled by minute-of-match  ·  share of final-third touches, 5-minute buckets",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_field_tilt_over_time_{slug}.png")
@@ -1216,8 +1241,8 @@ def recoveries_by_third(boh, hkr):
                bbox_to_anchor=(0.5, 0.02), fontsize=10.5, labelcolor=palette["ink_secondary"])
 
     components.header(fig, kicker="Recoveries",
-                       title="Where each side won the ball back, matchday 1",
-                       dek="Ball recoveries by pitch third, each team's own fixture",
+                       title="Where each side has won the ball back so far this season",
+                       dek="Ball recoveries by pitch third, matches played so far pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "26_recoveries_by_third.png")
@@ -1243,9 +1268,9 @@ def turnovers_dangerous(boh, hkr):
         ax.set_title(f"{name} ({len(t)})", color=color, fontsize=12, fontweight="bold", family="sans-serif")
 
     components.header(fig, kicker="Turnovers",
-                       title="Lost possession in the attacking half, matchday 1",
+                       title="Lost possession in the attacking half, season to date",
                        dek="Failed passes and Dispossessed events beyond the halfway line, own goal on the left, "
-                           "attacking right",
+                           "attacking right, matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "27_turnovers_dangerous.png")
@@ -1277,8 +1302,8 @@ def crossing_map_team_page(snap, color, name, page_num, slug):
                bbox_to_anchor=(0.5, 0.05), fontsize=10.5, labelcolor=palette["ink_secondary"])
 
     components.header(fig, kicker="Crossing",
-                       title=f"{name}: {len(crosses)} crosses, matchday 1",
-                       dek="Own goal on the left, attacking right",
+                       title=f"{name}: {len(crosses)} crosses so far this season",
+                       dek=f"Own goal on the left, attacking right  ·  {snap.matches_played} matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_crossing_map_{slug}.png")
@@ -1317,8 +1342,9 @@ def zone14_halfspace_team_page(snap, color, name, page_num, slug):
                bbox_to_anchor=(0.5, 0.05), fontsize=10.5, labelcolor=palette["ink_secondary"])
 
     components.header(fig, kicker="Creative Zones",
-                       title=f"{name}: half-space and zone-14 receptions, matchday 1",
-                       dek="Completed-pass receptions in the two most dangerous central-lane zones, attacking right",
+                       title=f"{name}: half-space and zone-14 receptions so far this season",
+                       dek=f"Completed-pass receptions in the two most dangerous central-lane zones, attacking "
+                           f"right  ·  {snap.matches_played} matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_zone14_halfspace_{slug}.png")
@@ -1352,8 +1378,8 @@ def long_balls_team_page(snap, color, name, page_num, slug):
     ax2.set_xlabel("Completed long balls received")
 
     components.header(fig, kicker="Long Balls",
-                       title=f"{name}: {len(lb)} completed long balls, matchday 1",
-                       dek="Reception locations, own goal on the left, attacking right",
+                       title=f"{name}: {len(lb)} completed long balls so far this season",
+                       dek=f"Reception locations, own goal on the left, attacking right  ·  {snap.matches_played} matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_long_balls_{slug}.png")
@@ -1383,9 +1409,9 @@ def shot_assists_team_page(snap, color, name, page_num, slug):
                bbox_to_anchor=(0.5, 0.05), fontsize=10.5, labelcolor=palette["ink_secondary"])
 
     components.header(fig, kicker="Chance Creation",
-                       title=f"{name}: {len(assists)} shot assists, matchday 1",
+                       title=f"{name}: {len(assists)} shot assists so far this season",
                        dek="Own goal on the left, attacking right  ·  a shot with no intervening teammate pass "
-                           "gets no assist credited",
+                           f"gets no assist credited  ·  {snap.matches_played} matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_shot_assists_{slug}.png")
@@ -1419,15 +1445,16 @@ def key_passes_leaderboard_team_page(snap, color, name, page_num, slug):
     ax.set_xlabel("xG of shots assisted")
 
     components.header(fig, kicker="Chance Creation",
-                       title=f"{name}: who created the most dangerous chances, matchday 1",
-                       dek="Sum of xG on shots each player assisted  ·  count in brackets = shot assists",
+                       title=f"{name}: who has created the most dangerous chances so far this season",
+                       dek=f"Sum of xG on shots each player assisted  ·  count in brackets = shot assists  ·  "
+                           f"{snap.matches_played} matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_key_passes_{slug}.png")
 
 
 # ---------------------------------------------------------------------------
-# 38-39. xT flow -- one page per team's own matchday-1 fixture
+# 38-39. xT flow -- one page per team, every match played so far
 # ---------------------------------------------------------------------------
 
 def xt_flow_team_page(snap, color, name, page_num, slug):
@@ -1446,7 +1473,7 @@ def xt_flow_team_page(snap, color, name, page_num, slug):
 
     own_passes = snap.own(snap.passes)
     opp_passes = snap.against(snap.passes)
-    for rows, color_, label in ((own_passes, color, name), (opp_passes, palette["ink_muted"], snap.opponent_name)):
+    for rows, color_, label in ((own_passes, color, name), (opp_passes, palette["ink_muted"], snap.opponents_label)):
         mins, cum = series(rows)
         ax.plot(mins, cum, color=color_, linewidth=2.4, zorder=4)
         ax.fill_between(mins, cum, step=None, color=color_, alpha=0.10, zorder=1)
@@ -1456,15 +1483,15 @@ def xt_flow_team_page(snap, color, name, page_num, slug):
 
     ax.axvline(45, color=palette["axis"], linewidth=0.8, linestyle=":")
     ax.set_xlim(0, 100)
-    ax.set_xlabel("Minute")
+    ax.set_xlabel("Minute of match")
     ax.set_ylabel("Cumulative xT added (completed passes)")
 
     own_xt = sum(max(0.0, p["xt_added"]) for p in own_passes if p["completed"])
     opp_xt = sum(max(0.0, p["xt_added"]) for p in opp_passes if p["completed"])
-    verb = "out-threatened" if own_xt > opp_xt else "were out-threatened by"
+    verb = "have out-threatened" if own_xt > opp_xt else "have been out-threatened by"
     components.header(fig, kicker="xT Flow",
-                       title=f"{name} {verb} {snap.opponent_name} at matchday 1",
-                       dek="Cumulative expected threat (xT) added by completed passes  ·  own xT proxy model "
+                       title=f"{name} {verb} their opponents so far this season",
+                       dek=f"{snap.matches_played} matches pooled by minute-of-match  ·  own xT proxy model "
                            "(distance+angle geometry, not a possession-value model -- see match_data.py)",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
@@ -1495,8 +1522,8 @@ def xt_leaderboard_team_page(snap, color, name, page_num, slug):
     ax.set_xlabel("xT added")
 
     components.header(fig, kicker="Threat Creation",
-                       title=f"{name}: who generated the most expected threat, matchday 1",
-                       dek="Sum of positive xT added by completed passes, own xT proxy model",
+                       title=f"{name}: who has generated the most expected threat so far this season",
+                       dek=f"Sum of positive xT added by completed passes, own xT proxy model  ·  {snap.matches_played} matches pooled",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, f"{page_num}_xt_leaderboard_{slug}.png")
@@ -1524,21 +1551,21 @@ def shot_zones_heatmap(boh, hkr):
         ax.set_title(f"{name} ({len(shots)} shots)", color=color, fontsize=12, fontweight="bold", family="sans-serif")
 
     components.header(fig, kicker="Shot Origin",
-                       title="Where each side's shots came from, matchday 1",
-                       dek="Shot count density by pitch zone, each team's own fixture, attacking right",
+                       title="Where each side's shots have come from, season to date",
+                       dek="Shot count density by pitch zone, matches pooled, attacking right",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "42_shot_zones_heatmap.png")
 
 
 # ---------------------------------------------------------------------------
-# 46-47. League-wide bonus pages (14-team matchday-1 sample)
+# 46-47. League-wide bonus pages (16-team season-to-date sample)
 # ---------------------------------------------------------------------------
 
 def pace_vs_volume_ranking(league):
     """The user's requested "m/s vs amount of passes" chart -- pass tempo
-    vs total pass volume, all 14 teams with a matchday-1 feed. Both fixture
-    sides highlighted."""
+    vs total pass volume, all 16 teams with a match feed, season-to-date
+    totals (2 matches each right now). Both fixture sides highlighted."""
     fig, palette = new_fig()
     ax = fig.add_axes([0.10, 0.16, 0.82, 0.58])
 
@@ -1556,18 +1583,18 @@ def pace_vs_volume_ranking(league):
             offset = (11, 9)
         else:
             offset = (7, 5)
-        ax.annotate(tm.team_name, xy=(x, y), xytext=offset, textcoords="offset points",
+        ax.annotate(md.ALL_TEAM_NAMES[tid], xy=(x, y), xytext=offset, textcoords="offset points",
                     fontsize=9.5 if (is_boh or is_hkr) else 8,
                     color=palette["ink_primary"] if (is_boh or is_hkr) else palette["ink_muted"],
                     fontweight="bold" if (is_boh or is_hkr) else "normal")
 
-    ax.set_xlabel("Passes completed, matchday 1")
+    ax.set_xlabel("Passes completed, season to date")
     ax.set_ylabel("Pass tempo (m/s)")
 
     components.header(fig, kicker="Tempo",
-                       title="Pace of play vs pass volume, matchday 1",
+                       title="Pace of play vs pass volume, season to date",
                        dek="Pass tempo = pass distance ÷ time to the next event (gaps >8s excluded)  ·  "
-                           "14-team matchday-1 sample, not a season  ·  both fixture sides highlighted",
+                           "16-team season-to-date sample (2 matches each)  ·  both fixture sides highlighted",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "46_pace_vs_volume.png")
@@ -1599,8 +1626,8 @@ def verticality_ranking(league):
     ax.text(avg, len(ranking) - 0.3, " sample avg", fontsize=8, color=palette["ink_muted"], va="bottom")
 
     components.header(fig, kicker="League Ranking",
-                       title="Team verticality, matchday 1",
-                       dek="Avg forward distance (m) per completed forward pass  ·  14-team matchday-1 sample",
+                       title="Team verticality, season to date",
+                       dek="Avg forward distance (m) per completed forward pass  ·  16-team season-to-date sample (2 matches each)",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "47_verticality_ranking.png")
@@ -1610,7 +1637,7 @@ def main():
     boh = md.TeamSnapshot(md.HRADEC_ID)
     hkr = md.TeamSnapshot(md.OSTRAVA_ID)
     sim = md.simulate_scorelines(boh.own(boh.shots), hkr.own(hkr.shots))
-    league = md.LeagueMW1()
+    league = md.LeagueSeason()
 
     cover()
     fixture_context(boh, hkr)
