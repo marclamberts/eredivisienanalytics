@@ -4,16 +4,26 @@ Ostrava post-match report (Chance liga, CZ 2026-2027, matchday 3).
 
 Opta MA3 event feed -- same typeId/qualifierId conventions as the rest of
 this repo (see Disruption/build_disruption_model.py, Goal Kick Model/
-build_goalkick_shot_model.py). No packaged xG feed for the Czech league
-data, so shots are scored with a small distance+angle geometric model
-(own model, not provider-supplied -- flagged as such in every chart's
-source line, same convention as the sibling Hradec Kralove vs Pardubice
-template this report follows). This own model is a known simplification
-of a real provider xG model (checked against Opta's own published
-figures for a different Hradec match: Opta had 0.99/2.33, this model
-produced a more extreme 0.34/3.60 for the same shots) -- treat this
-report's xG numbers as a consistent, comparable-within-this-repo proxy,
-not a substitute for a calibrated provider model.
+build_goalkick_shot_model.py).
+
+Shots are scored with the repo's real trained xG model
+(Model/model_xg.pkl, via Model/xg_model.py) rather than the small ad hoc
+distance+angle geometric formula most other reports in this repo still
+use -- same fix as the sibling Hradec Kralove vs Besiktas report, whose
+match_data.py docstring has the full write-up of why (that model was
+checked against Opta's own published xG for a Hradec match and came out
+much better calibrated: 0.99/2.33 vs the geometric model's 0.34/3.60 for
+the same shots). The xT proxy (xt_value, further down) is deliberately
+left on the old geometric model -- it's a smooth location-value surface,
+not a real shot probability.
+
+Before wiring in the new model, this report's compute_attack_directions()
+output was checked against the same failure mode discovered in the
+Besiktas report (a per-half flip heuristic that misfires when a team's
+average pass x lands close to the 50 threshold): all four (team, period)
+combinations here land at direction=1 well clear of that threshold
+(41.9-46.4), so no flip ever fires and there's nothing to fix in this
+match -- left unchanged.
 
 Team IDs cross-checked against the goal-scorer contestantId counts and
 the 2-1 final score in matchDetails/scores/ft (Hradec won at home).
@@ -25,11 +35,17 @@ Usage: import this module from the chart scripts in this folder.
 import json
 import math
 import os
+import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 DATA_PATH = os.path.join(
     REPO_ROOT, "CZ Events", "CZ 2026-2027", "2026-08-09_FC Hradec Králové - FC Baník Ostrava.json",
 )
+
+sys.path.insert(0, REPO_ROOT)
+from Model.xg_model import XGModel  # noqa: E402
+
+_XG_MODEL = XGModel.load()
 
 HOME_ID = "1v75g4bk8vzrvu0jmaro6lila"
 AWAY_ID = "dfvvrv84skv23rsn1k6kt4slc"
@@ -38,7 +54,7 @@ AWAY_NAME = "FC Baník Ostrava"
 COMPETITION = "Chance Liga 2026/27, Matchday 3"
 VENUE = "FINEP Arena, Hradec Králové"
 MATCH_DATE = "2026-08-09"
-SOURCE = "Opta event data + own xG model"
+SOURCE = "Opta event data + trained xG model (Model/model_xg.pkl)"
 
 X_SCALE, Y_SCALE = 1.05, 0.68     # Opta 0-100 units -> metres (105 x 68 pitch)
 GOAL_X = 105.0
@@ -199,7 +215,10 @@ def build_shots(events, directions):
         x, y = norm_xy(e, directions)
         xm, ym = to_m(x, y)
         is_header = has_q(e, Q_HEAD)
-        xg = shot_xg(xm, ym, is_header)
+        qids = {q["qualifierId"] for q in e.get("qualifier", []) or []}
+        dist = math.hypot(GOAL_X - xm, GOAL_Y - ym)
+        angle = shot_angle_deg(xm, ym)
+        xg = _XG_MODEL.score(dist, angle, ym, qids)
         outcome = {T_GOAL: "Goal", T_ATTEMPT_SAVED: "Saved", T_MISS: "Miss", T_POST: "Post"}[e["typeId"]]
         if has_q(e, Q_FROM_CORNER):
             situation = "Corner"
