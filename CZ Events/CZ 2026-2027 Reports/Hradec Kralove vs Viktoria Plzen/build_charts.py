@@ -180,8 +180,8 @@ def fixture_context(hkr, plz):
                 color=palette["ink_secondary"], va="top")
 
     fig.text(0.06, 0.155, "Every page in this preview is built from all of that team's matches played so far "
-                          "this season, pooled together -- an early-season style snapshot (3 games for Hradec, "
-                          "2 for Plzeň), not a head-to-head (these two sides have not yet met this season).",
+                          "this season, pooled together -- an early-season style snapshot (3 games each), "
+                          "not a head-to-head (these two sides have not yet met this season).",
               fontsize=9, color=palette["ink_muted"], ha="left", va="top", wrap=True)
 
     components.header(fig, kicker="Fixture Preview",
@@ -272,7 +272,7 @@ def xg_snapshot(hkr, plz):
                bbox_to_anchor=(0.5, 0.065), fontsize=10.5, labelcolor=palette["ink_secondary"])
 
     components.header(fig, kicker="Chance Quality",
-                       title="Hradec have created more and conceded a bit less, so far this season",
+                       title="Plzeň have actually created more, but leaked far more at the back",
                        dek=f"Season-to-date shot numbers, trained xG model  ·  {hkr.matches_played} matches "
                            f"for Hradec, {plz.matches_played} for Plzeň",
                        palette=palette)
@@ -775,10 +775,10 @@ def keys_to_the_game(hkr, plz):
         points.append(f"Plzeň have conceded less ({plz.xg_against:.2f} xG) than Hradec have "
                        f"({hkr.xg_against:.2f} xG) across their {plz.matches_played} matches so far.")
     else:
-        points.append(f"Hradec have conceded a bit less ({hkr.xg_against:.2f} xG across {hkr.matches_played} "
-                       f"matches) than Plzeň have ({plz.xg_against:.2f} xG) -- most of that gap came in "
-                       f"Plzeň's 1-3 home defeat to Slovan Liberec, so their defensive record is shakier than "
-                       "the single draw with Zbrojovka Brno suggests.")
+        points.append(f"Hradec have conceded far less ({hkr.xg_against:.2f} xG across {hkr.matches_played} "
+                       f"matches) than Plzeň have ({plz.xg_against:.2f} xG) -- Plzeň have now shipped goals in "
+                       f"bunches twice, 1-3 at home to Slovan Liberec and 5-5 away at Teplice, so their defence "
+                       "is the clearer weakness of the two sides, not their attack.")
     if abs(hkr.ppda_for() - plz.ppda_for()) < 1.0:
         points.append(f"Pressing intensity is essentially a wash so far (PPDA {hkr.ppda_for():.1f} for Hradec "
                        f"vs {plz.ppda_for():.1f} for Plzeň) -- neither side has shown a clear high-press "
@@ -788,27 +788,27 @@ def keys_to_the_game(hkr, plz):
                        f"{plz.ppda_for():.1f}) -- expect them to try to disrupt Plzeň's build-up early "
                        f"rather than sit off.")
     else:
-        points.append(f"Plzeň have pressed considerably higher so far (PPDA {plz.ppda_for():.1f} vs "
-                       f"Hradec's {hkr.ppda_for():.1f}) -- if that intensity travels on the road, Hradec's "
-                       f"buildup play will be under pressure from the first whistle.")
+        points.append(f"Plzeň have actually pressed higher so far (PPDA {plz.ppda_for():.1f} vs "
+                       f"Hradec's {hkr.ppda_for():.1f}) -- their shootout at Teplice suggests an open, "
+                       "end-to-end approach rather than a settled defensive block, which could suit Hradec on "
+                       "the counter.")
     b_touch = sum(1 for t in hkr.own(hkr.touches) if t["x"] >= 70)
     h_touch = sum(1 for t in plz.own(plz.touches) if t["x"] >= 70)
-    if h_touch > b_touch:
-        points.append(f"Plzeň have actually racked up more final-third touches ({h_touch} vs "
-                       f"Hradec's {b_touch}) but converted them far less efficiently ({plz.xg_for:.2f} xG from "
-                       f"{len(plz.own(plz.shots))} shots vs Hradec's {hkr.xg_for:.2f} from "
-                       f"{len(hkr.own(hkr.shots))}) -- territory alone hasn't been enough for them without "
-                       "sharper shot selection.")
+    if plz.xg_for > hkr.xg_for:
+        points.append(f"Plzeň have actually created more (xG {plz.xg_for:.2f} from {len(plz.own(plz.shots))} "
+                       f"shots) than Hradec have (xG {hkr.xg_for:.2f} from {len(hkr.own(hkr.shots))}), and their "
+                       f"final-third touch count ({h_touch}) is now essentially level with Hradec's ({b_touch}) "
+                       "-- the 5-5 at Teplice was an extreme match, but Plzeň's attacking numbers are real, not "
+                       "a fluke of one wild scoreline.")
     else:
         points.append(f"Hradec have spent more of their matches in the final third ({b_touch} touches there "
                        f"vs Plzeň's {h_touch}) -- if that territorial edge holds at home, Plzeň will need "
                        "to defend deep for longer spells.")
-    points.append(f"This reads as a real but not overwhelming gap: Hradec are unbeaten so far "
-                   f"({hkr.record}, {hkr.points} pts, {hkr.matches_played} matches played) and have the better "
-                   f"underlying numbers, while Plzeň ({plz.record}, {plz.points} pts) are still searching for "
-                   "their first win, having followed their opening defeat with a home draw against Zbrojovka "
-                   "Brno -- but Hradec's edge in xG for/against is moderate, not one-sided, so this is not a "
-                   "guaranteed home banker.")
+    points.append(f"This is not the mismatch it looked like after two rounds: Hradec are unbeaten "
+                   f"({hkr.record}, {hkr.points} pts, {hkr.matches_played} matches played) and still have the "
+                   f"much tighter defensive record, but Plzeň's own attack ({plz.record}, {plz.points} pts) has "
+                   "caught up on the underlying numbers after their 5-5 shootout at Teplice -- this now reads "
+                   "as a game with goals in it at both ends, not a routine home banker.")
 
     fig.text(0.5, 0.075, f"★ Small-sample caveat: every number above is drawn from {hkr.matches_played} matches "
                           f"for Hradec and {plz.matches_played} for Plzeň so far this season. Treat as an early "
@@ -1576,7 +1576,7 @@ def shot_zones_heatmap(hkr, plz):
 def pace_vs_volume_ranking(league):
     """The user's requested "m/s vs amount of passes" chart -- pass tempo
     vs total pass volume, all 16 teams with a match feed, season-to-date
-    totals (2 matches each for most teams, 3 for Hradec, whose matchday-3 game has since been played). Both fixture sides highlighted."""
+    totals (3 matches each -- matchday 3 is complete for all 16 teams). Both fixture sides highlighted."""
     fig, palette = new_fig()
     ax = fig.add_axes([0.10, 0.16, 0.82, 0.58])
 
@@ -1589,9 +1589,13 @@ def pace_vs_volume_ranking(league):
                    edgecolors=palette["ink_primary"] if (is_boh or is_hkr) else "none", linewidth=1.6,
                    zorder=5 if (is_boh or is_hkr) else 3)
         if is_boh:
-            offset = (7, 9)  # Hradec (3 matches pooled) has by far the highest pass volume -- clear of neighbours
+            offset = (7, 12)  # Jablonec sits just above/right of Hradec's point -- label offset up clears it
         elif is_hkr:
-            offset = (7, 9)  # Plzeň's nearest neighbour (Sigma Olomouc) sits well to its lower-left
+            offset = (7, 9)  # Plzeň's nearest neighbours (Slavia, Sigma Olomouc) sit clear on either side
+        elif tid == md.TEPLICE_ID:
+            offset = (7, 12)  # Teplice and Slavia Praha sit almost on top of each other -- split up/down
+        elif tid == "8kpapuorr6hf0vosnovbreqqd":  # Slavia Praha
+            offset = (7, -12)
         else:
             offset = (7, 5)
         ax.annotate(md.ALL_TEAM_NAMES[tid], xy=(x, y), xytext=offset, textcoords="offset points",
@@ -1605,7 +1609,7 @@ def pace_vs_volume_ranking(league):
     components.header(fig, kicker="Tempo",
                        title="Pace of play vs pass volume, season to date",
                        dek="Pass tempo = pass distance ÷ time to the next event (gaps >8s excluded)  ·  "
-                           "16-team sample (2 matches each, 3 for Hradec)  ·  fixture sides highlighted",
+                           "16-team sample (3 matches each)  ·  fixture sides highlighted",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "46_pace_vs_volume.png")
@@ -1638,7 +1642,7 @@ def verticality_ranking(league):
 
     components.header(fig, kicker="League Ranking",
                        title="Team verticality, season to date",
-                       dek="Avg forward distance (m) per completed forward pass  ·  16-team sample (2 matches each, 3 for Hradec)",
+                       dek="Avg forward distance (m) per completed forward pass  ·  16-team sample (3 matches each)",
                        palette=palette)
     components.footer(fig, source=md.SOURCE, palette=palette)
     save(fig, "47_verticality_ranking.png")
