@@ -5,11 +5,36 @@ Jimnastik Kulübü post-match report (European qualifier, leg 1 of 2,
 
 Opta MA3 event feed -- same typeId/qualifierId conventions as the rest of
 this repo (see Disruption/build_disruption_model.py, Goal Kick Model/
-build_goalkick_shot_model.py). No packaged xG feed for this data, so shots
-are scored with a small distance+angle geometric model (own model, not
-provider-supplied -- flagged as such in every chart's source line, same
-convention as the sibling Hradec Kralove vs Pardubice template this report
-follows).
+build_goalkick_shot_model.py).
+
+Two fixes specific to THIS report, made after the user flagged this
+match's xG as looking too extreme (own model had it 0.34-3.60 vs Opta's
+own published 0.99-2.33):
+
+1. Shots (build_shots' xg field) are now scored with the repo's real
+   trained model (Model/model_xg.pkl, via Model/xg_model.py) instead of
+   the small ad hoc distance+angle geometric formula every other report
+   in this repo still uses. The xT proxy (xt_value, further down) is
+   deliberately left on the old geometric model -- it's a smooth
+   "value of this location" surface, not a real shot probability, and
+   isn't part of what the user flagged.
+
+2. compute_attack_directions()'s per-half flip is disabled for this
+   report (see its docstring below for the evidence). Validating the
+   new model surfaced a real, separate bug: it has no floor/ceiling
+   clamp like the old geometric model did, so a mislocated shot that
+   the old model silently floored to ~0.015 instead produced ~1.0 xG,
+   making an existing data bug visible. 8 of Hradec's 12 shots were
+   landing ~9-24m from their OWN goal (period 2 only) -- checked
+   against Beşiktaş's own directions (stayed unflipped both halves,
+   which is only possible if the feed doesn't need per-half correction
+   in the first place -- two teams can't really both attack the same
+   end in the same period) and confirmed by re-deriving every shot in
+   the match assuming NO flip at all: 33 of 34 shots land in the
+   sensible 55-105m attacking-third range, the one exception being a
+   genuine deep, low-quality speculative effort, not a bug. Per user
+   instruction this fix is scoped to this report only -- the shared
+   heuristic other report folders still use is untouched.
 
 Unlike the domestic Chance Liga matches in this repo, this feed's
 matchDetails carries no competition/tournament name -- only leg=1,
@@ -26,11 +51,17 @@ Usage: import this module from the chart scripts in this folder.
 import json
 import math
 import os
+import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 DATA_PATH = os.path.join(
     REPO_ROOT, "CZ Events", "CZ 2026-2027", "2026-08-06_FC Hradec Králové - Beşiktaş Jimnastik Kulübü.json",
 )
+
+sys.path.insert(0, REPO_ROOT)
+from Model.xg_model import XGModel  # noqa: E402
+
+_XG_MODEL = XGModel.load()
 
 HOME_ID = "1v75g4bk8vzrvu0jmaro6lila"
 AWAY_ID = "2ez9cvam9lp9jyhng3eh3znb4"
@@ -39,7 +70,7 @@ AWAY_NAME = "Beşiktaş Jimnastik Kulübü"
 COMPETITION = "European Qualifier, Leg 1 of 2"
 VENUE = "FINEP Arena, Hradec Králové"
 MATCH_DATE = "2026-08-06"
-SOURCE = "Opta event data + own xG model"
+SOURCE = "Opta event data + trained xG model (Model/model_xg.pkl)"
 
 X_SCALE, Y_SCALE = 1.05, 0.68     # Opta 0-100 units -> metres (105 x 68 pitch)
 GOAL_X = 105.0
@@ -125,22 +156,16 @@ def to_m(x, y):
 
 
 def compute_attack_directions(events):
-    """(contestantId, periodId) -> 1 if that team attacks toward higher x
-    that period, else -1. Derived from each team's average pass-event x per
-    period: a team building mostly in x<50 that period is attacking toward
-    x=100 (same heuristic as Disruption/league_disruption_visuals.py's
-    compute_attack_directions, scoped to this one match)."""
-    sums = {}
-    for e in events:
-        if e["typeId"] != T_PASS or e.get("x") is None:
-            continue
-        if e["x"] == 0 and e["y"] == 0:
-            continue
-        key = (e["contestantId"], e["periodId"])
-        s = sums.setdefault(key, [0.0, 0])
-        s[0] += e["x"]
-        s[1] += 1
-    return {key: (1 if (total / n if n else 50) < 50 else -1) for key, (total, n) in sums.items()}
+    """Disabled for THIS report (see module docstring for the full
+    evidence): this feed's events already come oriented per acting
+    contestantId (own goal always at x=0, attacking toward x=100),
+    not from a fixed shared-stadium coordinate frame -- so no per-half
+    correction is needed, and applying one (the average-pass-x<50
+    heuristic used by the sibling report templates in this repo)
+    actively corrupts whichever half happens to land close to the 50
+    threshold. Returning {} makes norm_xy()'s directions.get(key, 1)
+    fall back to the default (no flip) for every event unconditionally."""
+    return {}
 
 
 def norm_xy(e, directions):
@@ -200,7 +225,10 @@ def build_shots(events, directions):
         x, y = norm_xy(e, directions)
         xm, ym = to_m(x, y)
         is_header = has_q(e, Q_HEAD)
-        xg = shot_xg(xm, ym, is_header)
+        qids = {q["qualifierId"] for q in e.get("qualifier", []) or []}
+        dist = math.hypot(GOAL_X - xm, GOAL_Y - ym)
+        angle = shot_angle_deg(xm, ym)
+        xg = _XG_MODEL.score(dist, angle, ym, qids)
         outcome = {T_GOAL: "Goal", T_ATTEMPT_SAVED: "Saved", T_MISS: "Miss", T_POST: "Post"}[e["typeId"]]
         if has_q(e, Q_FROM_CORNER):
             situation = "Corner"
