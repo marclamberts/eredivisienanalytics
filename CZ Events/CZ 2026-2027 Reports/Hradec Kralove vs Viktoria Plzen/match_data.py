@@ -7,43 +7,42 @@ Unlike the post-match reports in this repo, there is no event feed for
 THIS fixture -- it hasn't been played yet. Instead this pulls each
 team's SEASON-TO-DATE totals -- every match they have actually played
 so far, pooled together, not a single matchday-1 snapshot -- as the
-early-season form/style base. As of today that is 3 matches for Hradec
-Králové (won 2-1 at home over Pardubice, drew 0-0 away at Bohemians
-1905, won 2-1 at home over Baník Ostrava) and 2 matches for Viktoria
-Plzeň (lost 1-3 at home to Slovan Liberec, drew 1-1 at home with
-Zbrojovka Brno) -- Plzeň's own matchday-3 fixture (vs Teplice, also
-2026-08-08) has not been played yet either, so their total stays at 2
-matches even though this preview looks ahead to their matchday-5 game.
-Same Opta MA3 event feed conventions as the rest of this repo (see
-Disruption/build_disruption_model.py, and the post-match report's own
-match_data.py in the sibling "Hradec Kralove vs Pardubice" folder, which
-this file's geometry/xG/PPDA functions are carried over from unchanged).
-Structurally this file is the same template as the sibling "Teplice vs
-Viktoria Plzen" pre-match preview, re-pointed at a different fixture --
-the BOHEMIANS_ID/HRADEC_ID/TEPLICE_ID/PARDUBICE_ID/OSTRAVA_ID/ZLIN_ID/
-ARTIS_BRNO_ID/MLADA_BOLESLAV_ID/PLZEN_ID/LIBEREC_ID/ZBROJOVKA_ID
+early-season form/style base. As of this rebuild, matchdays 1-3 are
+complete and every one of the 16 teams in ALL_MATCHES has 3 matches on
+file: Hradec Králové is 2W 1D 0L (won 2-1 at home over Pardubice, drew
+0-0 away at Bohemians 1905, won 2-1 at home over Baník Ostrava) and
+Viktoria Plzeň is 0W 2D 1L (lost 1-3 at home to Slovan Liberec, drew
+1-1 at home with Zbrojovka Brno, then drew a wild 5-5 away at Teplice
+in their actual matchday-3 fixture, played 2026-08-08 since the sibling
+"Teplice vs Viktoria Plzen" pre-match report was built for that same
+game). Same Opta MA3 event feed conventions as the rest of this repo
+(see Disruption/build_disruption_model.py, and the post-match report's
+own match_data.py in the sibling "Hradec Kralove vs Pardubice" folder,
+which this file's geometry/xG/PPDA functions are carried over from
+unchanged). Structurally this file is the same template as the sibling
+"Teplice vs Viktoria Plzen" pre-match preview, re-pointed at a different
+fixture -- the BOHEMIANS_ID/HRADEC_ID/TEPLICE_ID/PARDUBICE_ID/OSTRAVA_ID/
+ZLIN_ID/ARTIS_BRNO_ID/MLADA_BOLESLAV_ID/PLZEN_ID/LIBEREC_ID/ZBROJOVKA_ID
 constants below are left untouched (not renamed) because ALL_MATCHES
-further down still needs them correct as 11 of the 16 teams in the
-league-wide season sample; HRADEC_ID and PLZEN_ID double as this
-fixture's home and away teams (both were already among those 11 via
-earlier reports' need for them).
+further down still needs them correct as all 11 non-inline-literal teams
+in the league-wide season sample; HRADEC_ID and PLZEN_ID double as this
+fixture's home and away teams.
 
-ALL_MATCHES also gains one entry compared to the sibling "Teplice vs
-Viktoria Plzen" report: Hradec Králové's matchday-3 game against Baník
-Ostrava now has an event feed (it has been played since that report was
-built, 2026-08-09), so this file's Hradec Králové snapshot correctly
-pools 3 matches instead of 2. Every other team in ALL_MATCHES still has
-only its matchday-1 + matchday-2 games on file.
+ALL_MATCHES' matchday-3 section now lists all 8 matchday-3 games (all
+played and on file as of this rebuild), not just Hradec Králové's, so
+every team in the 16-team league sample pools exactly 3 matches.
 
 Shots are scored with the repo's real trained xG model
 (Model/model_xg.pkl, via Model/xg_model.py). The xT proxy (xt_value,
 further down) is deliberately left on the old geometric model -- it's a
 smooth location-value surface, not a real shot probability.
-compute_attack_directions()'s per-half flip heuristic was checked
-against the same failure mode found in the Besiktas and Teplice-vs-
-Plzen reports for both of this fixture's teams' own matches (see the
-sanity check block at the bottom of this file); it's left in place
-unless that check reports a problem.
+compute_attack_directions()'s per-half flip heuristic is disabled (see
+its own docstring) -- re-verified against this fuller matchday-1-3
+dataset via the diagnostic block at the bottom of this file plus a
+direct shot-location check for both fixture teams' matches (including
+Plzeň's new, shot-heavy 5-5 draw at Teplice); every shot for both teams,
+across all 6 combined matches, lands in a sensible attacking-third x
+range with the flip off.
 
 Team IDs cross-checked two ways: (1) goal-scorer contestantId counts in
 the Hradec-Pardubice feed against that match's 2-1 final score, the
@@ -90,6 +89,7 @@ TEAM_NAMES = {
     OSTRAVA_ID: "FC Baník Ostrava",
     LIBEREC_ID: "FC Slovan Liberec",
     ZBROJOVKA_ID: "FC Zbrojovka Brno",
+    TEPLICE_ID: "FK Teplice",
 }
 TEAM_SHORT = {
     HRADEC_ID: "Hradec Kr.",
@@ -99,6 +99,7 @@ TEAM_SHORT = {
     OSTRAVA_ID: "Ostrava",
     LIBEREC_ID: "Liberec",
     ZBROJOVKA_ID: "Zbrojovka Brno",
+    TEPLICE_ID: "Teplice",
 }
 
 # This fixture (not yet played)
@@ -200,15 +201,16 @@ def compute_attack_directions(events):
     locations in the Hradec Kralove vs Besiktas report, and the sibling
     "Teplice vs Viktoria Plzen" report reproduced the same failure on two
     of the teams pooled into THIS report's own data (Plzeň's matchday-1 and
-    matchday-2 games -- the same underlying event files, since Plzeň's
-    season-to-date total is unchanged here). Re-running the diagnostic for
-    this report's actual fixture teams (Hradec Kralove's 3 matches, Plzeň's
-    2) with the flip disabled confirms every shot -- both teams, every
-    match -- lands in a sensible attacking-third x range (roughly 75-105m
-    of 105m); Hradec's own avg-pass-x-per-period never crosses 50 either
-    way, so disabling costs Hradec nothing while fixing Plzeň's data.
-    Returning {} makes norm_xy()'s directions.get(key, 1) default to
-    no-flip for every event."""
+    matchday-2 games -- the same underlying event files). Re-verified after
+    this rebuild added the full matchday-3 round (all 16 teams now on 3
+    matches, including Plzeň's actual matchday-3 fixture, a 5-5 draw at
+    Teplice with 33 combined shots): with the flip disabled, every shot for
+    both fixture teams, across all 6 combined matches (Hradec's 3 + Plzeň's
+    3), lands in a sensible attacking-third x range (roughly 75-105m of
+    105m); Hradec's own avg-pass-x-per-period never crosses 50 either way,
+    so disabling costs Hradec nothing while fixing Plzeň's data. Returning
+    {} makes norm_xy()'s directions.get(key, 1) default to no-flip for
+    every event."""
     return {}
 
 
@@ -807,11 +809,28 @@ ALL_MATCHES = [
     dict(matchday=2, path=os.path.join(EVENTS_DIR, "2026-08-02_SK Sigma Olomouc - FK Mladá Boleslav.json"),
          home_id="dchxm00ei80l8ljbcfpdill8k", home_name="Sigma Olomouc",
          away_id=MLADA_BOLESLAV_ID, away_name="Mladá Boleslav"),
-    # Matchday 3 -- only Hradec Kralove's game has been played + has an event
-    # feed so far (2026-08-09); every other team in this table is still on
-    # its matchday-1 + matchday-2 totals.
+    # Matchday 3 (2026-08-07 to 2026-08-09) -- all 8 games now played and on file
+    dict(matchday=3, path=os.path.join(EVENTS_DIR, "2026-08-07_FC Zbrojovka Brno - FC Slovan Liberec.json"),
+         home_id="6k350zwynsc23f0sxw9akgc6y", home_name="Zbrojovka Brno",
+         away_id="2c4rs2vp0tyjiqa7y3gfttf24", away_name="Slovan Liberec"),
+    dict(matchday=3, path=os.path.join(EVENTS_DIR, "2026-08-08_FC Zlín - Bohemians Praha 1905.json"),
+         home_id=ZLIN_ID, home_name="Zlín", away_id=BOHEMIANS_ID, away_name="Bohemians 1905"),
+    dict(matchday=3, path=os.path.join(EVENTS_DIR, "2026-08-08_FK Mladá Boleslav - AC Sparta Praha.json"),
+         home_id=MLADA_BOLESLAV_ID, home_name="Mladá Boleslav",
+         away_id="5ocdn3a6s75u0d0dy0rbou0xc", away_name="Sparta Praha"),
+    dict(matchday=3, path=os.path.join(EVENTS_DIR, "2026-08-08_FK Teplice - FC Viktoria Plzeň.json"),
+         home_id=TEPLICE_ID, home_name="Teplice", away_id=PLZEN_ID, away_name="Viktoria Plzeň"),
     dict(matchday=3, path=os.path.join(EVENTS_DIR, "2026-08-09_FC Hradec Králové - FC Baník Ostrava.json"),
          home_id=HRADEC_ID, home_name="Hradec Králové", away_id=OSTRAVA_ID, away_name="Baník Ostrava"),
+    dict(matchday=3, path=os.path.join(EVENTS_DIR, "2026-08-09_FK Jablonec - 1. FC Slovácko.json"),
+         home_id="bdz8tx20ekj1ryi2e2u13jdl", home_name="Jablonec",
+         away_id="bp5x8iw8pstucx6s4iqht6xqf", away_name="Slovácko"),
+    dict(matchday=3, path=os.path.join(EVENTS_DIR, "2026-08-09_SK Artis Brno - SK Sigma Olomouc.json"),
+         home_id=ARTIS_BRNO_ID, home_name="Artis Brno",
+         away_id="dchxm00ei80l8ljbcfpdill8k", away_name="Sigma Olomouc"),
+    dict(matchday=3, path=os.path.join(EVENTS_DIR, "2026-08-09_SK Slavia Praha - FK Pardubice.json"),
+         home_id="8kpapuorr6hf0vosnovbreqqd", home_name="Slavia Praha",
+         away_id=PARDUBICE_ID, away_name="Pardubice"),
 ]
 
 ALL_TEAM_NAMES = {}
